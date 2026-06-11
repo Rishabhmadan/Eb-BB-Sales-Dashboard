@@ -1191,6 +1191,62 @@ function registerEventListeners() {
 
     // 9. RFQ Granularity button bindings
     registerRFQEvents();
+
+    // ==========================================
+    // MOBILE RESPONSIVE LOGIC
+    // ==========================================
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const sidebar = document.getElementById('app-sidebar');
+    const sidebarOverlay = document.getElementById('sidebar-overlay');
+    const mobileFilterToggleBtn = document.getElementById('mobile-filter-toggle-btn');
+    const filterBar = document.getElementById('app-filter-bar');
+
+    // Toggle Sidebar Drawer
+    if (mobileMenuBtn && sidebar && sidebarOverlay) {
+        const toggleSidebar = () => {
+            sidebar.classList.toggle('open');
+            sidebarOverlay.classList.toggle('active');
+        };
+
+        mobileMenuBtn.addEventListener('click', toggleSidebar);
+        sidebarOverlay.addEventListener('click', toggleSidebar);
+
+        // Close sidebar when clicking menu items on mobile
+        const menuItems = document.querySelectorAll('.menu-item');
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                if (window.innerWidth <= 900) {
+                    sidebar.classList.remove('open');
+                    sidebarOverlay.classList.remove('active');
+                }
+            });
+        });
+    }
+
+    // Toggle Filter Collapsible
+    if (mobileFilterToggleBtn && filterBar) {
+        mobileFilterToggleBtn.addEventListener('click', () => {
+            filterBar.classList.toggle('expanded');
+            
+            // Change button content to reflect state
+            if (filterBar.classList.contains('expanded')) {
+                mobileFilterToggleBtn.innerHTML = '<i class="fa-solid fa-sliders"></i> Hide Filters';
+            } else {
+                mobileFilterToggleBtn.innerHTML = '<i class="fa-solid fa-sliders"></i> View & Apply Filters';
+            }
+        });
+        
+        // When reset filters is clicked, collapse filter bar on mobile
+        const resetBtn = document.getElementById('reset-filters-btn');
+        if (resetBtn) {
+            resetBtn.addEventListener('click', () => {
+                if (window.innerWidth <= 900) {
+                    filterBar.classList.remove('expanded');
+                    mobileFilterToggleBtn.innerHTML = '<i class="fa-solid fa-sliders"></i> View & Apply Filters';
+                }
+            });
+        }
+    }
 }
 
 // Export filtered leads data to CSV

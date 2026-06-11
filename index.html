@@ -18,8 +18,22 @@
 </head>
 <body class="light-theme">
     <div class="app-container">
+        <!-- Mobile Header -->
+        <div class="mobile-header">
+            <button class="menu-toggle-btn" id="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="mobile-brand">
+                <img src="logo.png" alt="Elecbits Logo" class="mobile-brand-logo">
+            </div>
+            <div class="mobile-avatar">RM</div>
+        </div>
+
+        <!-- Sidebar Overlay -->
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
         <!-- Sidebar Navigation -->
-        <aside class="sidebar">
+        <aside class="sidebar" id="app-sidebar">
             <div class="sidebar-brand">
                 <img src="logo.png" alt="Elecbits Logo" class="brand-logo">
             </div>
@@ -91,8 +105,13 @@
                 </div>
             </header>
 
+            <!-- Mobile Filter Toggle Button -->
+            <button class="mobile-filter-toggle-btn" id="mobile-filter-toggle-btn">
+                <i class="fa-solid fa-sliders"></i> View & Apply Filters
+            </button>
+
             <!-- Global Filter Bar -->
-            <section class="filter-bar">
+            <section class="filter-bar" id="app-filter-bar">
                 <div class="filter-group">
                     <label for="global-search"><i class="fa-solid fa-magnifying-glass"></i> Search Leads</label>
                     <input type="text" id="global-search" placeholder="Search opportunity, company, email...">
