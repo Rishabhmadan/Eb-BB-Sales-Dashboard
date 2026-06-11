@@ -543,6 +543,7 @@ body {
     backdrop-filter: blur(12px);
     box-shadow: var(--shadow-main);
     min-height: 340px;
+    min-width: 0; /* Safeguard flex/grid children from stretching */
 }
 
 .span-2 {
@@ -1018,6 +1019,8 @@ body {
     .chart-card {
         min-height: 300px;
         padding: 16px;
+        overflow: hidden; /* Prevent text/table wrapping from breaking mobile card bounds */
+        min-width: 0;
     }
 }
 
