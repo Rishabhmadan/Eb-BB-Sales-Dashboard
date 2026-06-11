@@ -352,6 +352,24 @@ body {
     border-color: var(--text-secondary);
 }
 
+.currency-toggle {
+    display: flex;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    overflow: hidden;
+    background-color: var(--bg-card);
+    gap: 1px;
+}
+
+.currency-toggle button {
+    border-radius: 0 !important;
+    border: none !important;
+    padding: 8px 14px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 11px;
+}
+
 .currency-toggle button.active {
     background: var(--color-blue);
     color: #ffffff;
@@ -538,6 +556,17 @@ body {
 .chart-header {
     display: flex;
     flex-direction: column;
+}
+
+.chart-header.header-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.granularity-selector {
+    display: flex;
+    gap: 6px;
 }
 
 .chart-header h3 {
@@ -1116,6 +1145,10 @@ body {
     .data-table th, .data-table td {
         padding: 10px 12px;
         font-size: 11px;
+    }
+
+    .data-table td {
+        white-space: nowrap;
     }
 
     /* Chart Canvas heights for mobiles */
