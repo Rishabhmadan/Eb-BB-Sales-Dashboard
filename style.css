@@ -766,6 +766,9 @@ body {
 .mobile-filter-toggle-btn {
     display: none;
 }
+.sidebar-close-btn {
+    display: none;
+}
 
 /* ==========================================
    RESPONSIVE MEDIA QUERIES
@@ -812,12 +815,16 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: var(--border-radius-sm);
-        transition: background-color var(--transition-fast);
+        border-radius: 50%;
+        transition: background-color var(--transition-fast), transform var(--transition-fast);
     }
     
     .menu-toggle-btn:hover {
         background-color: var(--hover-bg);
+        transform: scale(1.05);
+    }
+    .menu-toggle-btn:active {
+        transform: scale(0.95);
     }
     
     .mobile-brand {
@@ -868,6 +875,31 @@ body {
         left: 0;
         box-shadow: 5px 0 25px rgba(0, 0, 0, 0.25);
     }
+    
+    .sidebar-close-btn {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        color: var(--text-secondary);
+        font-size: 20px;
+        cursor: pointer;
+        width: 36px;
+        height: 36px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: all var(--transition-fast);
+        z-index: 1020;
+    }
+    
+    .sidebar-close-btn:hover {
+        background-color: var(--hover-bg);
+        color: var(--text-primary);
+        transform: rotate(90deg);
+    }
 
     /* Sidebar Overlay Backdrop */
     .sidebar-overlay {
@@ -897,29 +929,35 @@ body {
         padding: 20px;
     }
 
-    /* Collapsible Filter Bar */
+    /* Collapsible Filter Bar - Modern Premium Gradient Styling */
     .mobile-filter-toggle-btn {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 8px;
+        gap: 10px;
         width: 100%;
-        padding: 12px;
-        background-color: var(--bg-card);
-        border: 1px solid var(--border-color);
-        border-radius: var(--border-radius-sm);
-        color: var(--text-primary);
+        padding: 14px;
+        background: linear-gradient(135deg, var(--color-blue), #0000cc);
+        border: none;
+        border-radius: var(--border-radius-md);
+        color: #ffffff;
         font-weight: 600;
-        font-size: 13px;
+        font-size: 14px;
         cursor: pointer;
         margin-bottom: 20px;
-        box-shadow: var(--shadow-main);
+        box-shadow: 0 4px 15px rgba(0, 0, 255, 0.2);
         transition: all var(--transition-fast);
     }
     
     .mobile-filter-toggle-btn:hover {
-        background-color: var(--hover-bg);
-        border-color: var(--text-secondary);
+        background: linear-gradient(135deg, #0000cc, #000099);
+        box-shadow: 0 6px 20px rgba(0, 0, 255, 0.3);
+        transform: translateY(-1px);
+    }
+    
+    .mobile-filter-toggle-btn:active {
+        transform: translateY(1px);
+        box-shadow: 0 2px 10px rgba(0, 0, 255, 0.15);
     }
     
     .filter-bar {
@@ -964,13 +1002,15 @@ body {
     }
     
     .app-header h1 {
-        font-size: 20px;
+        font-size: 22px;
+        font-weight: 800;
     }
     
     .app-header .subtitle {
-        font-size: 12px;
+        font-size: 13px;
     }
 
+    /* 2x2 Grid for Actions Bar */
     .header-right {
         width: 100%;
         display: flex;
@@ -980,6 +1020,16 @@ body {
     
     .header-right .currency-toggle {
         flex: 1 1 calc(50% - 4px);
+        display: flex;
+        align-items: stretch;
+    }
+    
+    .header-right .currency-toggle button {
+        flex: 1;
+        justify-content: center;
+        text-align: center;
+        padding: 8px 0;
+        font-size: 11px;
     }
     
     .header-right #reset-filters-btn {
@@ -987,13 +1037,15 @@ body {
         justify-content: center;
         padding: 8px 12px;
         font-size: 11px;
+        border-radius: var(--border-radius-sm);
     }
     
     .rate-badge, .last-updated {
         flex: 1 1 calc(50% - 4px);
         justify-content: center;
-        padding: 6px 12px;
+        padding: 8px 12px;
         font-size: 10px;
+        border-radius: var(--border-radius-sm);
     }
 
     /* Horizontal scroll for granular toggles in RFQ tab */
@@ -1048,7 +1100,7 @@ body {
     }
     
     .kpi-data .value {
-        font-size: 16px;
+        font-size: 18px;
         letter-spacing: -0.2px;
     }
     

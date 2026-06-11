@@ -1208,16 +1208,26 @@ function registerEventListeners() {
             sidebarOverlay.classList.toggle('active');
         };
 
+        const closeSidebar = () => {
+            sidebar.classList.remove('open');
+            sidebarOverlay.classList.remove('active');
+        };
+
         mobileMenuBtn.addEventListener('click', toggleSidebar);
         sidebarOverlay.addEventListener('click', toggleSidebar);
+
+        // Close button inside sidebar
+        const sidebarCloseBtn = document.getElementById('sidebar-close-btn');
+        if (sidebarCloseBtn) {
+            sidebarCloseBtn.addEventListener('click', closeSidebar);
+        }
 
         // Close sidebar when clicking menu items on mobile
         const menuItems = document.querySelectorAll('.menu-item');
         menuItems.forEach(item => {
             item.addEventListener('click', () => {
                 if (window.innerWidth <= 900) {
-                    sidebar.classList.remove('open');
-                    sidebarOverlay.classList.remove('active');
+                    closeSidebar();
                 }
             });
         });
