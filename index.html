@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EB-BB Sales Application</title>
+    <link rel="icon" type="image/png" href="favicon.png?v=2">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <img src="logo.png" alt="Elecbits Logo" class="brand-logo">
+            </div>
+            <nav class="sidebar-menu">
+                <a href="#" class="menu-item active" data-tab="overview">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <span>Overview</span>
+                </a>
+                <a href="#" class="menu-item" data-tab="pipeline">
+                    <i class="fa-solid fa-filter"></i>
+                    <span>Pipeline Funnel</span>
+                </a>
+                <a href="#" class="menu-item" data-tab="team">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Sales Team</span>
+                </a>
+                <a href="#" class="menu-item" data-tab="geo">
+                    <i class="fa-solid fa-earth-americas"></i>
+                    <span>Geography</span>
+                </a>
+                <a href="#" class="menu-item" data-tab="rfq">
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                    <span>RFQ Tracking</span>
+                </a>
+                <a href="#" class="menu-item" data-tab="explorer">
+                    <i class="fa-solid fa-database"></i>
+                    <span>Data Explorer</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="theme-toggle" id="theme-toggle-btn">
+                    <i class="fa-solid fa-sun"></i>
+                    <span id="theme-text">Light Mode</span>
+                </div>
+                <div class="user-profile">
+                    <div class="avatar">RM</div>
+                    <div class="user-info">
+                        <h4>Rishabh Madan</h4>
+                        <span>Admin Account</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Workspace -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="app-header">
+                <div class="header-left">
+                    <h1 id="page-title">Executive Overview</h1>
+                    <p class="subtitle">Pipeline analytics and sales forecasts</p>
+                </div>
+                <div class="header-right">
+                    <div class="currency-toggle" style="display:flex; border: 1px solid var(--border-color); border-radius: var(--border-radius-sm); overflow:hidden; background-color: var(--bg-card); gap: 1px;">
+                        <button class="btn btn-sm active" id="btn-currency-inr" style="border-radius:0; border:none; padding: 8px 14px; font-weight:600; cursor:pointer; font-size:11px;">₹ INR</button>
+                        <button class="btn btn-sm btn-secondary" id="btn-currency-usd" style="border-radius:0; border:none; padding: 8px 14px; font-weight:600; cursor:pointer; font-size:11px;">$ USD</button>
+                    </div>
+                    <div class="rate-badge" id="rate-badge" title="Live USD to INR Exchange Rate">
+                        <span class="rate-status-dot" id="rate-status-dot"></span>
+                        <span id="rate-text">Rate: $1 = ₹83.00</span>
+                    </div>
+                    <button class="btn btn-secondary" id="reset-filters-btn">
+                        <i class="fa-solid fa-arrow-rotate-left"></i> Reset Filters
+                    </button>
+                    <div class="last-updated">
+                        <span class="pulse-indicator"></span>
+                        Last updated: Just Now
+                    </div>
+                </div>
+            </header>
+
+            <!-- Global Filter Bar -->
+            <section class="filter-bar">
+                <div class="filter-group">
+                    <label for="global-search"><i class="fa-solid fa-magnifying-glass"></i> Search Leads</label>
+                    <input type="text" id="global-search" placeholder="Search opportunity, company, email...">
+                </div>
+                <div class="filter-group">
+                    <label for="filter-salesperson"><i class="fa-solid fa-user-tie"></i> Salesperson</label>
+                    <select id="filter-salesperson">
+                        <option value="all">All Salespersons</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-stage"><i class="fa-solid fa-route"></i> Stage</label>
+                    <select id="filter-stage">
+                        <option value="all">All Stages</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-industry"><i class="fa-solid fa-industry"></i> Industry Segment</label>
+                    <select id="filter-industry">
+                        <option value="all">All Industries</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-type"><i class="fa-solid fa-tags"></i> Opportunity Type</label>
+                    <select id="filter-type">
+                        <option value="all">All Types</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-status"><i class="fa-solid fa-circle-question"></i> Won/Lost Status</label>
+                    <select id="filter-status">
+                        <option value="all">All Statuses</option>
+                        <option value="Won">Won</option>
+                        <option value="Pending">Pending (Open)</option>
+                    </select>
+                </div>
+            </section>
+
+            <!-- Tab Content: Overview -->
+            <div class="tab-content active" id="tab-overview">
+                <!-- KPI Dashboard Cards -->
+                <section class="kpi-grid">
+                    <div class="kpi-card">
+                        <div class="kpi-icon icon-blue">
+                            <i class="fa-solid fa-users-rectangle"></i>
+                        </div>
+                        <div class="kpi-data">
+                            <h3>Total Leads</h3>
+                            <div class="value" id="kpi-total-leads">0</div>
+                            <div class="change positive">
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                                <span>Active Pipeline</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="kpi-card">
+                        <div class="kpi-icon icon-emerald">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                        </div>
+                        <div class="kpi-data">
+                            <h3>Expected Revenue</h3>
+                            <div class="value" id="kpi-expected-revenue">$0M</div>
+                            <div class="change positive">
+                                <i class="fa-solid fa-circle-info"></i>
+                                <span>Weighted Value</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="kpi-card">
+                        <div class="kpi-icon icon-gold">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <div class="kpi-data">
+                             <h3>Won Deals</h3>
+                             <div class="value" id="kpi-won-deals">0</div>
+                             <div class="change positive">
+                                 <i class="fa-solid fa-circle-check"></i>
+                                 <span>Closed Leads</span>
+                             </div>
+                        </div>
+                    </div>
+
+                    <div class="kpi-card">
+                        <div class="kpi-icon icon-purple">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+                        <div class="kpi-data">
+                            <h3>Won Value</h3>
+                            <div class="value" id="kpi-won-value">$0M</div>
+                            <div class="change positive">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <span>Closed Won</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Visualization Grid -->
+                <section class="visuals-grid">
+                    <!-- Left: Pipeline Inflow Trend -->
+                    <div class="chart-card span-2">
+                        <div class="chart-header">
+                            <h3>Lead Inflow & Revenue Trend</h3>
+                            <p>Monthly distribution of lead creation and expected deal value</p>
+                        </div>
+                        <div class="chart-body">
+                            <canvas id="chart-trend"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Right: Opportunity Type Mix -->
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <h3>Revenue by Product Type</h3>
+                            <p>Distribution of expected revenue across services</p>
+                        </div>
+                        <div class="chart-body flex-center">
+                            <canvas id="chart-type"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Left: Salesperson Pipeline -->
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <h3>Sales Team Performance</h3>
+                            <p>Active pipeline value per salesperson</p>
+                        </div>
+                        <div class="chart-body">
+                            <canvas id="chart-salesperson"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Middle: Stage Distribution -->
+                    <div class="chart-card span-2">
+                        <div class="chart-header">
+                            <h3>Deals & Revenue by Stage</h3>
+                            <p>Breakdown of pipeline value across lead stages</p>
+                        </div>
+                        <div class="chart-body">
+                            <canvas id="chart-stages"></canvas>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Tab Content: Pipeline -->
+            <div class="tab-content" id="tab-pipeline">
+                <section class="visuals-grid">
+                    <div class="chart-card span-3">
+                        <div class="chart-header">
+                            <h3>Stage Funnel Analysis</h3>
+                            <p>Visualizing deal value and volume progression from qualification to close</p>
+                        </div>
+                        <div class="chart-body-large">
+                            <canvas id="chart-funnel-stages"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-card span-3">
+                        <div class="chart-header">
+                            <h3>Conversion Rate Details</h3>
+                            <p>Performance metrics and counts for each stage</p>
+                        </div>
+                        <div class="table-container">
+                            <table class="data-table" id="pipeline-summary-table">
+                                <thead>
+                                    <tr>
+                                        <th>Stage</th>
+                                        <th>Deals Count</th>
+                                        <th>% of Total Leads</th>
+                                        <th>Total Expected Revenue</th>
+                                        <th>Avg. Deal Value</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Populated dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Tab Content: Sales Team -->
+            <div class="tab-content" id="tab-team">
+                <section class="visuals-grid">
+                    <div class="chart-card span-2">
+                        <div class="chart-header">
+                             <h3>Salesperson Revenue & Pipeline</h3>
+                             <p>Comparison of closed-won values against total expected opportunity value</p>
+                        </div>
+                        <div class="chart-body">
+                            <canvas id="chart-team-performance"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <h3>Lead Source Contribution</h3>
+                            <p>Where is the team getting their high-value leads?</p>
+                        </div>
+                        <div class="chart-body">
+                            <canvas id="chart-team-sources"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-card span-3">
+                        <div class="chart-header">
+                            <h3>Sales Representative Leaderboard</h3>
+                            <p>Detailed performance scorecard for each salesperson</p>
+                        </div>
+                        <div class="table-container">
+                            <table class="data-table" id="salesperson-leaderboard">
+                                <thead>
+                                     <tr>
+                                         <th>Salesperson</th>
+                                         <th>Total Leads</th>
+                                         <th>Won Deals</th>
+                                         <th>Expected Revenue</th>
+                                         <th>Won Revenue</th>
+                                         <th>Avg. Lead Value</th>
+                                     </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Populated dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Tab Content: Geography -->
+            <div class="tab-content" id="tab-geo">
+                <section class="visuals-grid">
+                    <div class="chart-card span-2">
+                        <div class="chart-header">
+                            <h3>Leads & Value by Territory (Top States)</h3>
+                            <p>Regional concentration of leads and pipeline revenue</p>
+                        </div>
+                        <div class="chart-body">
+                            <canvas id="chart-geo-states"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <h3>International Distribution (Countries)</h3>
+                            <p>Global revenue distribution across lead country fields</p>
+                        </div>
+                        <div class="chart-body">
+                            <canvas id="chart-geo-countries"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-card span-3">
+                        <div class="chart-header">
+                            <h3>Top Cities by Lead Count and Revenue</h3>
+                            <p>Focus locations for sales visits and marketing campaigns</p>
+                        </div>
+                        <div class="table-container">
+                            <table class="data-table" id="geo-city-table">
+                                <thead>
+                                    <tr>
+                                        <th>City</th>
+                                        <th>State</th>
+                                        <th>Country</th>
+                                        <th>Lead Count</th>
+                                        <th>Total Expected Revenue</th>
+                                        <th>Avg. Lead Size</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Populated dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Tab Content: RFQ Tracking -->
+            <div class="tab-content" id="tab-rfq">
+                <!-- RFQ KPI Cards -->
+                <section class="kpi-grid">
+                    <div class="kpi-card">
+                        <div class="kpi-icon icon-blue">
+                            <i class="fa-solid fa-file-signature"></i>
+                        </div>
+                        <div class="kpi-data">
+                            <h3>RFQs Received</h3>
+                            <div class="value" id="kpi-rfq-count">0</div>
+                            <div class="change positive">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>Total Submissions</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="kpi-card">
+                        <div class="kpi-icon icon-emerald">
+                            <i class="fa-solid fa-sack-dollar"></i>
+                        </div>
+                        <div class="kpi-data">
+                            <h3>RFQ Total Value</h3>
+                            <div class="value" id="kpi-rfq-revenue">₹0M</div>
+                            <div class="change positive">
+                                <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                                <span>Gross Forecast</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="kpi-card">
+                        <div class="kpi-icon icon-purple">
+                            <i class="fa-solid fa-calculator"></i>
+                        </div>
+                        <div class="kpi-data">
+                            <h3>Average RFQ Size</h3>
+                            <div class="value" id="kpi-rfq-avg">₹0M</div>
+                            <div class="change positive">
+                                <i class="fa-solid fa-chart-line-up"></i>
+                                <span>Average Deal Value</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="kpi-card">
+                        <div class="kpi-icon icon-gold">
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </div>
+                        <div class="kpi-data">
+                            <h3>Active RFQ Pipeline</h3>
+                            <div class="value" id="kpi-rfq-active">0</div>
+                            <div class="change positive">
+                                <i class="fa-solid fa-hourglass-half"></i>
+                                <span>In-progress RFQs</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Visualization Grid -->
+                <section class="visuals-grid">
+                    <!-- Left: RFQ Trend with Granularity Selector -->
+                    <div class="chart-card span-2">
+                        <div class="chart-header" style="display:flex; flex-direction:row; justify-content:space-between; align-items:center;">
+                            <div>
+                                <h3>RFQs Received Trend</h3>
+                                <p>Volume count of RFQs grouped by date interval</p>
+                            </div>
+                            <div class="granularity-selector" id="rfq-grain-toggle" style="display:flex; gap:6px;">
+                                <button class="btn btn-sm btn-secondary" data-grain="daily">Daily</button>
+                                <button class="btn btn-sm btn-secondary" data-grain="weekly">Weekly</button>
+                                <button class="btn btn-sm btn-secondary active" data-grain="monthly">Monthly</button>
+                                <button class="btn btn-sm btn-secondary" data-grain="quarterly">Quarterly</button>
+                                <button class="btn btn-sm btn-secondary" data-grain="annual">Yearly</button>
+                            </div>
+                        </div>
+                        <div class="chart-body">
+                            <canvas id="chart-rfq-trend"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Right: RFQs by Opportunity Type -->
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <h3>RFQs by Product Type</h3>
+                            <p>Opportunity type breakdown for RFQs</p>
+                        </div>
+                        <div class="chart-body flex-center">
+                            <canvas id="chart-rfq-type"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Left: RFQs by Salesperson -->
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <h3>RFQs by Salesperson</h3>
+                            <p>Number of RFQs handled by each representative</p>
+                        </div>
+                        <div class="chart-body">
+                            <canvas id="chart-rfq-salesperson"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Middle: RFQs by Territory -->
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <h3>RFQs by State</h3>
+                            <p>Top regional sources of RFQs</p>
+                        </div>
+                        <div class="chart-body">
+                            <canvas id="chart-rfq-geo"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Right: RFQ Conversion / Stage status -->
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <h3>RFQ Stage Status</h3>
+                            <p>Current pipeline stage distribution of RFQs</p>
+                        </div>
+                        <div class="chart-body flex-center">
+                            <canvas id="chart-rfq-status"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Bottom: RFQ Details Table -->
+                    <div class="chart-card span-3" id="rfq-ledger-container" style="min-height:auto;">
+                        <div class="chart-header">
+                            <h3>RFQ Documents Ledger</h3>
+                            <p>Detailed ledger showing all opportunities containing RFQ dates</p>
+                            <div id="rfq-filter-indicator" style="display:none; margin-top:8px; font-size:12px; color:var(--color-blue); font-weight:600; align-items:center; gap:8px;">
+                                <i class="fa-solid fa-filter"></i>
+                                <span>Filtered by Chart: <span id="rfq-filter-val" style="color:var(--text-primary);">None</span></span>
+                                <button class="btn btn-sm btn-secondary" id="btn-clear-rfq-filter" style="padding: 2px 6px; font-size:10px; margin-left:8px; cursor:pointer;">
+                                    <i class="fa-solid fa-xmark"></i> Clear
+                                </button>
+                            </div>
+                        </div>
+                        <div class="table-container">
+                            <table class="data-table" id="rfq-ledger-table">
+                                <thead>
+                                    <tr>
+                                        <th>Opportunity</th>
+                                        <th>Company</th>
+                                        <th>Salesperson</th>
+                                        <th>RFQ Date</th>
+                                        <th>Expected Revenue</th>
+                                        <th>Stage</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Populated dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Tab Content: Data Explorer -->
+            <div class="tab-content" id="tab-explorer">
+                <div class="explorer-controls">
+                    <div class="download-box">
+                        <button class="btn btn-emerald" id="btn-export-csv">
+                            <i class="fa-solid fa-file-csv"></i> Export Filtered CSV
+                        </button>
+                    </div>
+                </div>
+
+                <div class="table-card">
+                    <div class="table-container">
+                        <table class="data-table" id="main-data-table">
+                            <thead>
+                                <tr>
+                                    <th data-sort="Opportunity">Opportunity <i class="fa-solid fa-sort"></i></th>
+                                    <th data-sort="Company Name">Company <i class="fa-solid fa-sort"></i></th>
+                                    <th data-sort="Salesperson">Salesperson <i class="fa-solid fa-sort"></i></th>
+                                    <th data-sort="Stage">Stage <i class="fa-solid fa-sort"></i></th>
+                                    <th data-sort="Opportunity Type">Type <i class="fa-solid fa-sort"></i></th>
+                                    <th data-sort="Expected Revenue" class="num-col">Expected Revenue <i class="fa-solid fa-sort"></i></th>
+                                    <th data-sort="Created on">Created On <i class="fa-solid fa-sort"></i></th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="explorer-table-body">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-pagination">
+                        <span class="pagination-info" id="pagination-info">Showing 1 to 10 of 100 entries</span>
+                        <div class="pagination-buttons">
+                            <button class="btn btn-sm btn-secondary" id="btn-prev-page" disabled><i class="fa-solid fa-chevron-left"></i> Prev</button>
+                            <span class="page-num" id="current-page-display">1</span>
+                            <button class="btn btn-sm btn-secondary" id="btn-next-page">Next <i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Script to Load Data and Handle Interactions -->
+    <script src="app.js"></script>
+</body>
+</html>
