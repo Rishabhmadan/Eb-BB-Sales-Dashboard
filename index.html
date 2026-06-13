@@ -156,14 +156,20 @@
                     </select>
                 </div>
                 <div class="filter-group">
-                    <label for="filter-rfq-period"><i class="fa-solid fa-calendar-days"></i> RFQ Period</label>
+                    <label for="filter-rfq-period"><i class="fa-solid fa-calendar-days"></i> RFQ Period Type</label>
                     <select id="filter-rfq-period">
                         <option value="all">All Time</option>
-                        <option value="daily">Daily (Today)</option>
-                        <option value="weekly">Weekly (This Week)</option>
-                        <option value="monthly">Monthly (This Month)</option>
-                        <option value="quarterly">Quarterly (This Quarter)</option>
-                        <option value="annually">Annually (This Year)</option>
+                        <option value="daily">Daily</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="quarterly">Quarterly</option>
+                        <option value="annually">Annually</option>
+                    </select>
+                </div>
+                <div class="filter-group" id="filter-rfq-value-group" style="display: none;">
+                    <label for="filter-rfq-value"><i class="fa-solid fa-calendar-check"></i> Select Period</label>
+                    <select id="filter-rfq-value">
+                        <option value="all">All</option>
                     </select>
                 </div>
             </section>

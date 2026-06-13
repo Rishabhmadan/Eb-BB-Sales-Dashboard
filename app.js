@@ -151,6 +151,54 @@ function populateFilters() {
     }
 }
 
+// Handle dynamic population of RFQ Period selector values
+function handleRFQPeriodTypeChange() {
+    const elPeriod = document.getElementById('filter-rfq-period');
+    const elValueGroup = document.getElementById('filter-rfq-value-group');
+    const elValueSelect = document.getElementById('filter-rfq-value');
+    
+    if (!elPeriod || !elValueGroup || !elValueSelect) return;
+    
+    const granularity = elPeriod.value;
+    
+    if (granularity === 'all') {
+        elValueGroup.style.display = 'none';
+        elValueSelect.innerHTML = '<option value="all">All</option>';
+        elValueSelect.value = 'all';
+    } else {
+        elValueGroup.style.display = 'flex';
+        
+        let allText = 'All';
+        if (granularity === 'daily') allText = 'All Days';
+        else if (granularity === 'weekly') allText = 'All Weeks';
+        else if (granularity === 'monthly') allText = 'All Months';
+        else if (granularity === 'quarterly') allText = 'All Quarters';
+        else if (granularity === 'annually') allText = 'All Years';
+        
+        // Extract unique labels based on rfq date descending
+        const sortedLeadsForLabels = [...allLeads]
+            .filter(lead => lead['RFQ Date'])
+            .sort((a, b) => new Date(b['RFQ Date']) - new Date(a['RFQ Date']));
+
+        const labels = [];
+        sortedLeadsForLabels.forEach(lead => {
+            const label = getLabelForRFQDate(lead['RFQ Date'], granularity);
+            if (label && !labels.includes(label)) {
+                labels.push(label);
+            }
+        });
+        
+        let optionsHTML = `<option value="all">${allText}</option>`;
+        labels.forEach(label => {
+            optionsHTML += `<option value="${label}">${label}</option>`;
+        });
+        elValueSelect.innerHTML = optionsHTML;
+        elValueSelect.value = 'all';
+    }
+    
+    applyFilters();
+}
+
 // Apply current filter selections to the dataset
 function applyFilters() {
     selectedRFQInterval = null;
@@ -161,6 +209,7 @@ function applyFilters() {
     const elType = document.getElementById('filter-type');
     const elStatus = document.getElementById('filter-status');
     const elRFQPeriod = document.getElementById('filter-rfq-period');
+    const elRFQValue = document.getElementById('filter-rfq-value');
     const searchEl = document.getElementById('global-search');
     
     const fSalesperson = elSalesperson ? elSalesperson.value : 'all';
@@ -169,6 +218,7 @@ function applyFilters() {
     const fType = elType ? elType.value : 'all';
     const fStatus = elStatus ? elStatus.value : 'all';
     const fRFQPeriod = elRFQPeriod ? elRFQPeriod.value : 'all';
+    const fRFQValue = elRFQValue ? elRFQValue.value : 'all';
     const searchQuery = searchEl ? searchEl.value.toLowerCase().trim() : '';
 
     filteredLeads = allLeads.filter(lead => {
@@ -181,35 +231,10 @@ function applyFilters() {
             if (fStatus === 'Pending' && lead['Won/Lost'] === 'Won') return false;
         }
         
-        if (fRFQPeriod !== 'all') {
+        if (fRFQPeriod !== 'all' && fRFQValue !== 'all') {
             const rfqDateStr = lead['RFQ Date'];
             if (!rfqDateStr) return false;
-            
-            const rfqDate = new Date(rfqDateStr);
-            if (isNaN(rfqDate.getTime())) return false;
-
-            const today = new Date();
-            const todayStart = new Date(today.getFullYear(), today.getMonth(), today.getDate());
-
-            if (fRFQPeriod === 'daily') {
-                if (rfqDate < todayStart) return false;
-            } else if (fRFQPeriod === 'weekly') {
-                const day = today.getDay();
-                const diff = today.getDate() - day + (day === 0 ? -6 : 1);
-                const thisWeekStart = new Date(today.getFullYear(), today.getMonth(), diff);
-                thisWeekStart.setHours(0, 0, 0, 0);
-                if (rfqDate < thisWeekStart) return false;
-            } else if (fRFQPeriod === 'monthly') {
-                const thisMonthStart = new Date(today.getFullYear(), today.getMonth(), 1);
-                if (rfqDate < thisMonthStart) return false;
-            } else if (fRFQPeriod === 'quarterly') {
-                const currentQuarterMonth = Math.floor(today.getMonth() / 3) * 3;
-                const thisQuarterStart = new Date(today.getFullYear(), currentQuarterMonth, 1);
-                if (rfqDate < thisQuarterStart) return false;
-            } else if (fRFQPeriod === 'annually') {
-                const thisYearStart = new Date(today.getFullYear(), 0, 1);
-                if (rfqDate < thisYearStart) return false;
-            }
+            if (getLabelForRFQDate(rfqDateStr, fRFQPeriod) !== fRFQValue) return false;
         }
         
         if (searchQuery) {
@@ -1091,7 +1116,7 @@ function registerEventListeners() {
     });
 
     // 2. Dropdown Filter Selection triggers recalculations
-    const dropdowns = ['filter-salesperson', 'filter-stage', 'filter-industry', 'filter-type', 'filter-status', 'filter-rfq-period'];
+    const dropdowns = ['filter-salesperson', 'filter-stage', 'filter-industry', 'filter-type', 'filter-status', 'filter-rfq-value'];
     dropdowns.forEach(id => {
         const el = document.getElementById(id);
         if (el) {
@@ -1101,6 +1126,13 @@ function registerEventListeners() {
         }
     });
 
+    const elPeriod = document.getElementById('filter-rfq-period');
+    if (elPeriod) {
+        elPeriod.addEventListener('change', () => {
+            handleRFQPeriodTypeChange();
+        });
+    }
+
     // 3. Reset filters button
     const resetBtn = document.getElementById('reset-filters-btn');
     if (resetBtn) {
@@ -1109,9 +1141,13 @@ function registerEventListeners() {
                 const el = document.getElementById(id);
                 if (el) el.value = 'all';
             });
+            const elPeriod = document.getElementById('filter-rfq-period');
+            if (elPeriod) elPeriod.value = 'all';
+            
             const globalSearchEl = document.getElementById('global-search');
             if (globalSearchEl) globalSearchEl.value = '';
-            applyFilters();
+            
+            handleRFQPeriodTypeChange();
         });
     }
 
@@ -1871,7 +1907,7 @@ function getLabelForRFQDate(dateStr, granularity) {
     } else if (granularity === 'quarterly') {
         const quarter = Math.floor(date.getMonth() / 3) + 1;
         return `Q${quarter} ${date.getFullYear()}`;
-    } else if (granularity === 'annual') {
+    } else if (granularity === 'annual' || granularity === 'annually') {
         return `${date.getFullYear()}`;
     }
     return '';
