@@ -231,6 +231,20 @@ function openLeadDetailsModal(oppName) {
     const cleanDate = lead['Created on'] ? lead['Created on'].substring(0, 10) : (lead['RFQ Date'] ? lead['RFQ Date'].substring(0, 10) : 'N/A');
     document.getElementById('detail-created-on').textContent = cleanDate;
     
+    // Closed Date display
+    const closedDateVal = lead['Closed Date'] || lead['Date Closed'];
+    const closedGroup = document.getElementById('detail-closed-on-group');
+    const closedEl = document.getElementById('detail-closed-on');
+    if (closedGroup && closedEl) {
+        if (closedDateVal) {
+            closedGroup.style.display = 'block';
+            closedEl.textContent = closedDateVal.substring(0, 10);
+        } else {
+            closedGroup.style.display = 'none';
+            closedEl.textContent = 'N/A';
+        }
+    }
+    
     // Stage status formatting
     let statusSuffix = ' (Pending)';
     if (lead['Won/Lost'] === 'Won' || lead['Stage'] === 'Won') statusSuffix = ' (Won)';
@@ -451,12 +465,12 @@ function restoreFilters() {
             else if (rfqPeriodVal === 'annually') allText = 'All Years';
             
             const sortedLeadsForLabels = [...allLeads]
-                .filter(lead => lead['RFQ Date'])
-                .sort((a, b) => new Date(b['RFQ Date']) - new Date(a['RFQ Date']));
+                .filter(lead => getLeadRFQDate(lead))
+                .sort((a, b) => new Date(getLeadRFQDate(b)) - new Date(getLeadRFQDate(a)));
 
             const labels = [];
             sortedLeadsForLabels.forEach(lead => {
-                const label = getLabelForRFQDate(lead['RFQ Date'], rfqPeriodVal);
+                const label = getLabelForRFQDate(getLeadRFQDate(lead), rfqPeriodVal);
                 if (label && !labels.includes(label)) {
                     labels.push(label);
                 }
@@ -505,12 +519,12 @@ function handleRFQPeriodTypeChange() {
         
         // Extract unique labels based on rfq date descending
         const sortedLeadsForLabels = [...allLeads]
-            .filter(lead => lead['RFQ Date'])
-            .sort((a, b) => new Date(b['RFQ Date']) - new Date(a['RFQ Date']));
+            .filter(lead => getLeadRFQDate(lead))
+            .sort((a, b) => new Date(getLeadRFQDate(b)) - new Date(getLeadRFQDate(a)));
 
         const labels = [];
         sortedLeadsForLabels.forEach(lead => {
-            const label = getLabelForRFQDate(lead['RFQ Date'], granularity);
+            const label = getLabelForRFQDate(getLeadRFQDate(lead), granularity);
             if (label && !labels.includes(label)) {
                 labels.push(label);
             }
@@ -570,7 +584,7 @@ function applyFilters() {
         }
         
         if (fRFQPeriod !== 'all' && fRFQValue !== 'all') {
-            const rfqDateStr = lead['RFQ Date'];
+            const rfqDateStr = getLeadRFQDate(lead);
             if (!rfqDateStr) return false;
             if (getLabelForRFQDate(rfqDateStr, fRFQPeriod) !== fRFQValue) return false;
         }
@@ -1865,7 +1879,7 @@ function exportFilteredCSV() {
 // ==========================================
 
 function updateRFQKPIs() {
-    const rfqLeads = filteredLeads.filter(lead => lead['RFQ Date'] !== null);
+    const rfqLeads = filteredLeads.filter(lead => getLeadRFQDate(lead) !== null);
     const rfqCount = rfqLeads.length;
     const rfqRevenue = rfqLeads.reduce((sum, lead) => sum + lead['Expected Revenue'], 0);
     const rfqAvg = rfqCount > 0 ? (rfqRevenue / rfqCount) : 0;
@@ -1883,16 +1897,16 @@ function updateRFQCharts() {
     const textColor = isDark ? '#9ca3af' : '#64748b';
     const gridColor = isDark ? 'rgba(255, 255, 255, 0.05)' : 'rgba(0, 0, 0, 0.05)';
     
-    const rfqLeads = filteredLeads.filter(lead => lead['RFQ Date'] !== null);
+    const rfqLeads = filteredLeads.filter(lead => getLeadRFQDate(lead) !== null);
 
     // 1. RFQ Trend Chart
     const rfqTrendData = {};
     if (rfqLeads.length > 0) {
         // Find min and max dates
-        let minDate = new Date(rfqLeads[0]['RFQ Date']);
-        let maxDate = new Date(rfqLeads[0]['RFQ Date']);
+        let minDate = new Date(getLeadRFQDate(rfqLeads[0]));
+        let maxDate = new Date(getLeadRFQDate(rfqLeads[0]));
         rfqLeads.forEach(lead => {
-            const d = new Date(lead['RFQ Date']);
+            const d = new Date(getLeadRFQDate(lead));
             if (d < minDate) minDate = d;
             if (d > maxDate) maxDate = d;
         });
@@ -1964,7 +1978,7 @@ function updateRFQCharts() {
 
         // Fill in actual data points
         rfqLeads.forEach(lead => {
-            const dateStr = lead['RFQ Date'];
+            const dateStr = getLeadRFQDate(lead);
             if (!dateStr) return;
             const date = new Date(dateStr);
             if (isNaN(date.getTime())) return;
@@ -2311,19 +2325,19 @@ function renderRFQTable() {
         if (filterIndicator) filterIndicator.style.display = 'none';
     }
 
-    let rfqLeads = filteredLeads.filter(lead => lead['RFQ Date'] !== null);
+    let rfqLeads = filteredLeads.filter(lead => getLeadRFQDate(lead) !== null);
     
     // Apply chart click interval filter if set
     if (selectedRFQInterval) {
         rfqLeads = rfqLeads.filter(lead => {
-            return getLabelForRFQDate(lead['RFQ Date'], rfqGranularity) === selectedRFQInterval;
+            return getLabelForRFQDate(getLeadRFQDate(lead), rfqGranularity) === selectedRFQInterval;
         });
     }
 
-    rfqLeads.sort((a, b) => new Date(b['RFQ Date']) - new Date(a['RFQ Date']));
+    rfqLeads.sort((a, b) => new Date(getLeadRFQDate(b)) - new Date(getLeadRFQDate(a)));
 
     if (rfqLeads.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="7" style="text-align:center; color: var(--text-muted); padding:30px;">No RFQs match filter settings.</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="8" style="text-align:center; color: var(--text-muted); padding:30px;">No RFQs match filter settings.</td></tr>`;
         return;
     }
 
@@ -2342,12 +2356,15 @@ function renderRFQTable() {
 
         const shortName = lead['Opportunity'] ? lead['Opportunity'].split(' - ')[0] : 'N/A';
         const cleanDate = lead['RFQ Date'] ? lead['RFQ Date'].substring(0, 10) : 'N/A';
+        const closedDateVal = lead['Closed Date'] || lead['Date Closed'];
+        const cleanClosedDate = closedDateVal ? closedDateVal.substring(0, 10) : '-';
 
         tr.innerHTML = `
             <td><span class="clickable-opportunity" onclick="openLeadDetailsModal('${lead['Opportunity'].replace(/'/g, "\\'")}')" title="${lead['Opportunity']}">${shortName}</span></td>
             <td>${lead['Company Name'] || 'N/A'}</td>
             <td>${lead['Salesperson']}</td>
             <td class="num-col">${cleanDate}</td>
+            <td class="num-col">${cleanClosedDate}</td>
             <td class="num-col" style="font-weight:600;">${formatCurrency(lead['Expected Revenue'])}</td>
             <td><span style="color:var(--color-blue); font-weight:500;">${lead['Stage']}</span></td>
             <td><span class="badge ${badgeClass}">${badgeText}</span></td>
@@ -2376,6 +2393,15 @@ function registerRFQEvents() {
             renderRFQTable();
         });
     }
+}
+
+// Helper: returns the effective date for RFQ tracking (Win Date for won leads, RFQ Received Date otherwise)
+function getLeadRFQDate(lead) {
+    if (!lead) return null;
+    if ((lead['Won/Lost'] === 'Won' || lead['Stage'] === 'Won') && (lead['Closed Date'] || lead['Date Closed'])) {
+        return lead['Closed Date'] || lead['Date Closed'];
+    }
+    return lead['RFQ Date'];
 }
 
 // Helper: formats Odoo RFQ Date string into equivalent X-Axis label string
@@ -2422,11 +2448,12 @@ function initAIAssistant() {
 
 // Convert dataset to compact, comma-separated representation for the model context
 function convertLeadsToCSV(leads) {
-    const headers = ['Opportunity', 'Company', 'Salesperson', 'Expected Revenue', 'Stage', 'Won/Lost', 'RFQ Date', 'Contact Name', 'Email', 'Phone'];
+    const headers = ['Opportunity', 'Company', 'Salesperson', 'Expected Revenue', 'Stage', 'Won/Lost', 'RFQ Date', 'Closed Date', 'Contact Name', 'Email', 'Phone'];
     let csv = headers.join(',') + '\n';
     
     leads.forEach(lead => {
         const phone = lead['Phone'] || lead['Mobile'] || lead['Contact No'] || lead['Contact no'] || 'N/A';
+        const closedDateVal = lead['Closed Date'] || lead['Date Closed'] || 'N/A';
         const row = [
             (lead['Opportunity'] || 'N/A').replace(/,/g, ' ').substring(0, 45).trim(),
             (lead['Company Name'] || 'N/A').replace(/,/g, ' ').substring(0, 35).trim(),
@@ -2435,6 +2462,7 @@ function convertLeadsToCSV(leads) {
             (lead['Stage'] || 'Undefined').replace(/,/g, ' ').trim(),
             (lead['Won/Lost'] || 'Pending').replace(/,/g, ' ').trim(),
             lead['RFQ Date'] ? lead['RFQ Date'].substring(0, 10) : (lead['Created on'] ? lead['Created on'].substring(0, 10) : 'N/A'),
+            closedDateVal.substring(0, 10),
             (lead['Contact Name'] || 'N/A').replace(/,/g, ' ').trim(),
             (lead['Email'] || 'N/A').replace(/,/g, ' ').trim(),
             phone.replace(/,/g, ' ').trim()

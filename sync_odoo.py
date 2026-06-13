@@ -51,7 +51,8 @@ FIELD_MAPPING = {
     'probability': 'Won/Lost',              # Resolved via logic (100% -> "Won", else "Pending")
     'country_id': 'Country',                # Many2one -> resolved to name
     'state_id': 'State',                    # Many2one -> resolved to name
-    'city': 'City'
+    'city': 'City',
+    'date_closed': 'Closed Date'
 }
 
 def clean_many2one(value):
@@ -113,7 +114,7 @@ def sync_leads_from_odoo():
                 # Apply special mapping/extraction logic
                 if odoo_field in ['source_id', 'user_id', 'stage_id', 'country_id', 'state_id']:
                     val = clean_many2one(val)
-                elif odoo_field in ['create_date', 'x_rfq_date', 'date_deadline']:
+                elif odoo_field in ['create_date', 'x_rfq_date', 'date_deadline', 'date_closed']:
                     val = format_date(val)
                 elif odoo_field == 'probability':
                     # Map probability to Won/Lost (e.g. 100% is Won, otherwise Pending or check stage name)

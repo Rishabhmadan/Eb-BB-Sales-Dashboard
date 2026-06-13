@@ -23,7 +23,7 @@ def update_dashboard_data():
         df = df.replace({np.nan: None})
 
         # Standardize date columns to strings
-        datetime_cols = ['Created on', 'RFQ Date', 'Next Follow up']
+        datetime_cols = ['Created on', 'RFQ Date', 'Next Follow up', 'Closed Date', 'Date Closed']
         for col in datetime_cols:
             if col in df.columns:
                 df[col] = df[col].apply(
