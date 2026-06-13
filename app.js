@@ -2123,8 +2123,8 @@ Be concise, clear, and professional. Do not make up any information.
 When asked to summarize, compile tables, or list items, construct markdown tables and lists.
 Return your answers in standard markdown. Do not mention "systemInstruction", "JSON context", or "compact leads". Focus on giving the exact answers based on the provided leads dataset.`;
 
-        // Fetch Gemini 1.5 Flash API
-        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${geminiApiKey}`, {
+        // Fetch Gemini 3.5 Flash API
+        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent?key=${geminiApiKey}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
