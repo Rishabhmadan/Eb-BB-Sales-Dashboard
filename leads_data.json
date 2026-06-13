@@ -740,12 +740,12 @@
     "Revenue (Millions USD)": 0.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 500000.0,
-    "Stage": "RFQ Received",
-    "Won/Lost": "Pending",
+    "Stage": "Won",
+    "Won/Lost": "Won",
     "Country": false,
     "State": false,
     "City": false,
-    "Closed Date": null
+    "Closed Date": "2026-06-13 19:02:42"
   },
   {
     "Created on": "2026-06-10 07:38:22",
