@@ -284,6 +284,35 @@
                             <canvas id="chart-stages"></canvas>
                         </div>
                     </div>
+
+                    <!-- Bottom: Hot Opportunities -->
+                    <div class="chart-card span-3">
+                        <div class="chart-header" style="display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <h3>🔥 Hot Opportunities (Top 20 by Expected Revenue)</h3>
+                                <p>High-value active deals requiring immediate attention</p>
+                            </div>
+                            <span class="badge badge-pending" id="hot-opps-count" style="font-size: 12px; padding: 4px 8px;">0 Active Deals</span>
+                        </div>
+                        <div class="table-container">
+                            <table class="data-table" id="hot-opportunities-table">
+                                <thead>
+                                    <tr>
+                                        <th>Opportunity</th>
+                                        <th>Company</th>
+                                        <th>Salesperson</th>
+                                        <th>Stage</th>
+                                        <th class="num-col">Expected Revenue</th>
+                                        <th>Created On</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Populated dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </section>
             </div>
 

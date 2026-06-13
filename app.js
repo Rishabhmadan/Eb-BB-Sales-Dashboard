@@ -1135,6 +1135,52 @@ function updateCharts() {
 
 // Render dynamic tables based on currently active tab
 function renderTables() {
+    // 0. OVERVIEW TAB - Hot Opportunities Table
+    if (activeTab === 'overview') {
+        const tbody = document.querySelector('#hot-opportunities-table tbody');
+        if (tbody) {
+            tbody.innerHTML = '';
+            
+            // Filter active open opportunities
+            const activeOpenLeads = filteredLeads.filter(lead => {
+                const isWon = lead['Won/Lost'] === 'Won' || lead['Stage'] === 'Won';
+                const isLost = lead['Stage'] === 'Dropped' || lead['Stage'] === 'Lost' || lead['Won/Lost'] === 'Lost';
+                return !isWon && !isLost;
+            });
+            
+            // Update counter badge
+            const countBadge = document.getElementById('hot-opps-count');
+            if (countBadge) {
+                countBadge.textContent = `${activeOpenLeads.length.toLocaleString()} Active Deals`;
+            }
+
+            const top20 = activeOpenLeads
+                .sort((a, b) => b['Expected Revenue'] - a['Expected Revenue'])
+                .slice(0, 20);
+
+            if (top20.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="7" style="text-align:center; color: var(--text-muted); padding:40px;">No active open opportunities found.</td></tr>`;
+            } else {
+                top20.forEach(lead => {
+                    const tr = document.createElement('tr');
+                    const cleanDate = lead['Created on'] ? lead['Created on'].substring(0, 10) : 'N/A';
+                    const shortOppName = lead['Opportunity'] ? lead['Opportunity'].split(' - ')[0] : 'N/A';
+                    
+                    tr.innerHTML = `
+                        <td><span style="font-weight:600; color:var(--text-primary);" title="${lead['Opportunity']}">${shortOppName}</span></td>
+                        <td><span style="font-weight:500;" title="${lead['Company Name']}">${lead['Company Name'] || 'N/A'}</span></td>
+                        <td><span class="clickable-count" onclick="goToExplorerFilter('salesperson', '${lead['Salesperson'].replace(/'/g, "\\'")}')">${lead['Salesperson']}</span></td>
+                        <td><span class="clickable-count" onclick="goToExplorerFilter('stage', '${lead['Stage'].replace(/'/g, "\\'")}')">${lead['Stage']}</span></td>
+                        <td class="num-col" style="font-weight:600; color: var(--color-blue);">${formatCurrency(lead['Expected Revenue'])}</td>
+                        <td>${cleanDate}</td>
+                        <td><span class="badge badge-pending">Active</span></td>
+                    `;
+                    tbody.appendChild(tr);
+                });
+            }
+        }
+    }
+
     if (activeTab === 'rfq') {
         renderRFQTable();
     }
