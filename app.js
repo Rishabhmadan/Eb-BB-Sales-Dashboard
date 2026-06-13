@@ -1151,7 +1151,7 @@ function renderTables() {
             // Update counter badge
             const countBadge = document.getElementById('hot-opps-count');
             if (countBadge) {
-                countBadge.textContent = `${activeOpenLeads.length.toLocaleString()} Active Deals`;
+                countBadge.textContent = `${activeOpenLeads.length.toLocaleString()} Active Leads`;
             }
 
             const top20 = activeOpenLeads
