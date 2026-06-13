@@ -50,7 +50,7 @@ FIELD_MAPPING = {
     'probability': 'Won/Lost',              # Resolved via logic (100% -> "Won", else "Pending")
     'country_id': 'Country',                # Many2one -> resolved to name
     'state_id': 'State',                    # Many2one -> resolved to name
-    'x_studio_city': 'City',
+    'city': 'City',
     'date_closed': 'Closed Date'
 }
 
