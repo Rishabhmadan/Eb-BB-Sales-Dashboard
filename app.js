@@ -1293,14 +1293,16 @@ function renderTables() {
             } else {
                 top20.forEach(lead => {
                     const tr = document.createElement('tr');
+                    tr.className = 'clickable-row';
+                    tr.setAttribute('onclick', `openLeadDetailsModal('${lead['Opportunity'].replace(/'/g, "\\'")}')`);
                     const cleanDate = lead['Created on'] ? lead['Created on'].substring(0, 10) : 'N/A';
                     const shortOppName = lead['Opportunity'] ? lead['Opportunity'].split(' - ')[0] : 'N/A';
                     
                     tr.innerHTML = `
-                        <td><span class="clickable-opportunity" onclick="openLeadDetailsModal('${lead['Opportunity'].replace(/'/g, "\\'")}')" title="${lead['Opportunity']}">${shortOppName}</span></td>
+                        <td><span class="clickable-opportunity" title="${lead['Opportunity']}">${shortOppName}</span></td>
                         <td><span style="font-weight:500;" title="${lead['Company Name']}">${lead['Company Name'] || 'N/A'}</span></td>
-                        <td><span class="clickable-count" onclick="goToExplorerFilter('salesperson', '${lead['Salesperson'].replace(/'/g, "\\'")}')">${lead['Salesperson']}</span></td>
-                        <td><span class="clickable-count" onclick="goToExplorerFilter('stage', '${lead['Stage'].replace(/'/g, "\\'")}')">${lead['Stage']}</span></td>
+                        <td>${lead['Salesperson']}</td>
+                        <td>${lead['Stage']}</td>
                         <td class="num-col" style="font-weight:600; color: var(--color-blue);">${formatCurrency(lead['Expected Revenue'])}</td>
                         <td>${cleanDate}</td>
                         <td><span class="badge badge-pending">Active</span></td>

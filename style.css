@@ -1599,4 +1599,13 @@ body {
     text-decoration: underline;
 }
 
+.clickable-row {
+    cursor: pointer;
+}
+
+.clickable-row:hover .clickable-opportunity {
+    color: var(--color-blue);
+    text-decoration: underline;
+}
+
 
