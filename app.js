@@ -210,7 +210,7 @@ function goToExplorerFilter(type, value) {
     }
     
     applyFilters();
-    switchTab('explorer');
+    switchTab('explorer', true);
 }
 
 
@@ -240,8 +240,50 @@ function populateFilters() {
     }
 }
 
+// Reset filter values in DOM, localStorage and apply new state
+function resetFilters(skipApply = false) {
+    const dropdowns = ['filter-salesperson', 'filter-stage', 'filter-industry', 'filter-type', 'filter-status', 'filter-rfq-value'];
+    dropdowns.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.value = 'all';
+    });
+    const elPeriod = document.getElementById('filter-rfq-period');
+    if (elPeriod) elPeriod.value = 'all';
+    
+    const globalSearchEl = document.getElementById('global-search');
+    if (globalSearchEl) globalSearchEl.value = '';
+    
+    const elValueGroup = document.getElementById('filter-rfq-value-group');
+    if (elValueGroup) elValueGroup.style.display = 'none';
+    const elValueSelect = document.getElementById('filter-rfq-value');
+    if (elValueSelect) {
+        elValueSelect.innerHTML = '<option value="all">All</option>';
+        elValueSelect.value = 'all';
+    }
+    
+    localStorage.setItem('filter_salesperson', 'all');
+    localStorage.setItem('filter_stage', 'all');
+    localStorage.setItem('filter_industry', 'all');
+    localStorage.setItem('filter_type', 'all');
+    localStorage.setItem('filter_status', 'all');
+    localStorage.setItem('filter_rfq_period', 'all');
+    localStorage.setItem('filter_rfq_value', 'all');
+    localStorage.setItem('filter_search', '');
+    
+    if (!skipApply) {
+        applyFilters();
+    }
+}
+
 // Switch active dashboard tab
-function switchTab(tabName) {
+function switchTab(tabName, preventReset = false) {
+    if (!preventReset) {
+        resetFilters(true);
+        filteredLeads = [...allLeads];
+        currentPage = 1;
+        updateKPIs();
+    }
+
     const menuItems = document.querySelectorAll('.menu-item');
     const targetItem = Array.from(menuItems).find(mi => mi.getAttribute('data-tab') === tabName);
     if (!targetItem) return;
@@ -1416,17 +1458,7 @@ function registerEventListeners() {
     const resetBtn = document.getElementById('reset-filters-btn');
     if (resetBtn) {
         resetBtn.addEventListener('click', () => {
-            dropdowns.forEach(id => {
-                const el = document.getElementById(id);
-                if (el) el.value = 'all';
-            });
-            const elPeriod = document.getElementById('filter-rfq-period');
-            if (elPeriod) elPeriod.value = 'all';
-            
-            const globalSearchEl = document.getElementById('global-search');
-            if (globalSearchEl) globalSearchEl.value = '';
-            
-            handleRFQPeriodTypeChange();
+            resetFilters();
         });
     }
 
