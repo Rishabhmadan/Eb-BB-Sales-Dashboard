@@ -182,6 +182,38 @@ function getRegionForState(state, country) {
     return 'International';
 }
 
+// Filter leads and redirect user to Data Explorer tab
+function goToExplorerFilter(type, value) {
+    if (type === 'stage') {
+        const elStage = document.getElementById('filter-stage');
+        if (elStage) elStage.value = value;
+        // Adjust status filter if we are looking for Won deals or a non-won stage
+        const elStatus = document.getElementById('filter-status');
+        if (elStatus) {
+            if (value === 'Won') {
+                elStatus.value = 'Won';
+            } else if (elStatus.value === 'Won') {
+                elStatus.value = 'all';
+            }
+        }
+    } else if (type === 'salesperson') {
+        const elSalesperson = document.getElementById('filter-salesperson');
+        if (elSalesperson) elSalesperson.value = value;
+    } else if (type === 'salesperson-won') {
+        const elSalesperson = document.getElementById('filter-salesperson');
+        if (elSalesperson) elSalesperson.value = value;
+        const elStatus = document.getElementById('filter-status');
+        if (elStatus) elStatus.value = 'Won';
+    } else if (type === 'city') {
+        const searchEl = document.getElementById('global-search');
+        if (searchEl) searchEl.value = value;
+    }
+    
+    applyFilters();
+    switchTab('explorer');
+}
+
+
 
 // Populate filter dropdowns with unique options
 function populateFilters() {
@@ -1134,7 +1166,7 @@ function renderTables() {
                 
                 tr.innerHTML = `
                     <td><strong>${stage}</strong></td>
-                    <td class="num-col">${data.count.toLocaleString()}</td>
+                    <td class="num-col"><span class="clickable-count" onclick="goToExplorerFilter('stage', '${stage.replace(/'/g, "\\'")}')">${data.count.toLocaleString()}</span></td>
                     <td class="num-col">${pct}</td>
                     <td class="num-col" style="color: var(--color-blue); font-weight: 600;">${formatCurrency(data.revenue)}</td>
                     <td class="num-col">${avgVal}</td>
@@ -1171,8 +1203,8 @@ function renderTables() {
                 
                 tr.innerHTML = `
                     <td><strong>${salesperson}</strong></td>
-                    <td class="num-col">${data.leads.toLocaleString()}</td>
-                    <td class="num-col">${data.won.toLocaleString()}</td>
+                    <td class="num-col"><span class="clickable-count" onclick="goToExplorerFilter('salesperson', '${salesperson.replace(/'/g, "\\'")}')">${data.leads.toLocaleString()}</span></td>
+                    <td class="num-col"><span class="clickable-count" onclick="goToExplorerFilter('salesperson-won', '${salesperson.replace(/'/g, "\\'")}')">${data.won.toLocaleString()}</span></td>
                     <td class="num-col">${formatCurrency(data.revenue)}</td>
                     <td class="num-col" style="color: var(--color-emerald); font-weight: 600;">${formatCurrency(data.wonRevenue)}</td>
                     <td class="num-col">${avgVal}</td>
@@ -1209,7 +1241,7 @@ function renderTables() {
                     <td><strong>${city}</strong></td>
                     <td>${state}</td>
                     <td>${country}</td>
-                    <td class="num-col">${data.count.toLocaleString()}</td>
+                    <td class="num-col"><span class="clickable-count" onclick="goToExplorerFilter('city', '${city.replace(/'/g, "\\'")}')">${data.count.toLocaleString()}</span></td>
                     <td class="num-col" style="color: var(--color-blue); font-weight:600;">${formatCurrency(data.revenue)}</td>
                     <td class="num-col">${avgVal}</td>
                 `;
@@ -1531,6 +1563,30 @@ function registerEventListeners() {
         }
     }
     
+    // Clickable KPI totals to view in list view
+    const kpiTotalLeads = document.getElementById('kpi-total-leads');
+    if (kpiTotalLeads) {
+        kpiTotalLeads.classList.add('clickable-count-kpi');
+        kpiTotalLeads.title = "Click to view in Data Explorer";
+        kpiTotalLeads.addEventListener('click', () => {
+            switchTab('explorer');
+        });
+    }
+
+    const kpiWonDeals = document.getElementById('kpi-won-deals');
+    if (kpiWonDeals) {
+        kpiWonDeals.classList.add('clickable-count-kpi');
+        kpiWonDeals.title = "Click to view won leads in Data Explorer";
+        kpiWonDeals.addEventListener('click', () => {
+            const elStatus = document.getElementById('filter-status');
+            if (elStatus) {
+                elStatus.value = 'Won';
+                applyFilters();
+            }
+            switchTab('explorer');
+        });
+    }
+
     // Initialize AI Assistant
     initAIAssistant();
 }

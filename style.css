@@ -1555,3 +1555,34 @@ body {
     gap: 12px;
     margin-top: 20px;
 }
+
+/* Clickable count indicators */
+.clickable-count {
+    color: var(--color-blue);
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+    padding: 2px 6px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 255, 0.04);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.clickable-count:hover {
+    background-color: rgba(0, 0, 255, 0.1);
+    color: var(--color-blue-hover, #2563eb);
+    text-decoration: underline;
+}
+
+.clickable-count-kpi {
+    cursor: pointer;
+    transition: color var(--transition-fast), transform var(--transition-fast);
+    display: inline-block;
+}
+
+.clickable-count-kpi:hover {
+    color: var(--color-blue);
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
