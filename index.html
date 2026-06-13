@@ -755,6 +755,66 @@
         </div>
     </div>
 
+    <!-- Lead Details Modal -->
+    <div class="modal-overlay" id="lead-details-modal" style="display: none;">
+        <div class="modal-content" style="max-width: 520px;">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-address-card" style="color: var(--color-blue); margin-right: 6px;"></i> Lead Details</h3>
+                <button class="modal-close" id="btn-close-lead-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div style="display: flex; flex-direction: column; gap: 16px;">
+                    <div>
+                        <h4 style="font-size: 16px; margin: 0; color: var(--text-primary);" id="detail-opp-name">Opportunity Name</h4>
+                        <p style="font-size: 13px; margin: 4px 0 0 0; color: var(--text-muted);" id="detail-company-name">Company Name</p>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); padding: 16px 0;">
+                        <div>
+                            <label style="font-size: 10px; text-transform: uppercase; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 4px;">Expected Revenue</label>
+                            <span style="font-size: 15px; font-weight: 700; color: var(--color-blue);" id="detail-revenue">$0.00</span>
+                        </div>
+                        <div>
+                            <label style="font-size: 10px; text-transform: uppercase; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 4px;">Stage & Status</label>
+                            <span style="font-size: 14px; font-weight: 600;" id="detail-stage-status">Stage</span>
+                        </div>
+                        <div>
+                            <label style="font-size: 10px; text-transform: uppercase; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 4px;">Salesperson</label>
+                            <span style="font-size: 14px;" id="detail-salesperson">Salesperson</span>
+                        </div>
+                        <div>
+                            <label style="font-size: 10px; text-transform: uppercase; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 4px;">Created On</label>
+                            <span style="font-size: 14px;" id="detail-created-on">Created On</span>
+                        </div>
+                    </div>
+                    
+                    <div style="background: var(--bg-input); padding: 12px; border-radius: var(--border-radius-sm); border: 1px solid var(--border-color);">
+                        <h5 style="margin: 0 0 8px 0; font-size: 11px; text-transform: uppercase; font-weight: 700; color: var(--text-muted);"><i class="fa-solid fa-address-book"></i> Client Contact Information</h5>
+                        <div style="display: flex; flex-direction: column; gap: 6px;">
+                            <div>
+                                <span style="font-size: 11px; font-weight: 600; color: var(--text-muted); display: inline-block; width: 100px;">Contact Person:</span>
+                                <span style="font-size: 13px; font-weight: 600; color: var(--text-primary);" id="detail-contact-name">Name</span>
+                            </div>
+                            <div>
+                                <span style="font-size: 11px; font-weight: 600; color: var(--text-muted); display: inline-block; width: 100px;">Email Address:</span>
+                                <span style="font-size: 13px; font-weight: 600; color: var(--color-blue);" id="detail-email">email@domain.com</span>
+                            </div>
+                            <div>
+                                <span style="font-size: 11px; font-weight: 600; color: var(--text-muted); display: inline-block; width: 100px;">Location:</span>
+                                <span style="font-size: 13px;" id="detail-location">City, State, Country</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer" style="gap: 12px;">
+                <button class="btn btn-secondary" id="btn-copy-sales-sheet"><i class="fa-solid fa-copy"></i> Copy Sales Sheet</button>
+                <button class="btn btn-secondary" id="btn-copy-email"><i class="fa-solid fa-clipboard"></i> Copy Email</button>
+                <a class="btn btn-primary" id="btn-send-email-action" href="#" target="_blank" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px;"><i class="fa-solid fa-paper-plane"></i> Send Email</a>
+            </div>
+        </div>
+    </div>
+
     <!-- Script to Load Data and Handle Interactions -->
     <script src="app.js?v=12"></script>
 </body>

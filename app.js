@@ -10,6 +10,8 @@ let rfqGranularity = 'monthly';
 let selectedRFQInterval = null;
 let activeCurrency = 'INR';
 let usdToInrRate = 83.0; // 1 USD = 83 INR (fallback rate)
+let selectedLeadForModal = null;
+
 
 // Fetch exchange rate from API
 async function fetchExchangeRate() {
@@ -212,6 +214,55 @@ function goToExplorerFilter(type, value) {
     applyFilters();
     switchTab('explorer', true);
 }
+
+// Open Lead Details Modal and populate information
+function openLeadDetailsModal(oppName) {
+    const lead = allLeads.find(l => l['Opportunity'] === oppName);
+    if (!lead) return;
+    
+    selectedLeadForModal = lead;
+    
+    // Populate simple elements
+    document.getElementById('detail-opp-name').textContent = lead['Opportunity'] || 'N/A';
+    document.getElementById('detail-company-name').textContent = lead['Company Name'] || 'N/A';
+    document.getElementById('detail-revenue').textContent = formatCurrency(lead['Expected Revenue'] || 0);
+    document.getElementById('detail-salesperson').textContent = lead['Salesperson'] || 'Unassigned';
+    
+    const cleanDate = lead['Created on'] ? lead['Created on'].substring(0, 10) : (lead['RFQ Date'] ? lead['RFQ Date'].substring(0, 10) : 'N/A');
+    document.getElementById('detail-created-on').textContent = cleanDate;
+    
+    // Stage status formatting
+    let statusSuffix = ' (Pending)';
+    if (lead['Won/Lost'] === 'Won' || lead['Stage'] === 'Won') statusSuffix = ' (Won)';
+    else if (lead['Stage'] === 'Dropped' || lead['Stage'] === 'Lost') statusSuffix = ' (Dropped)';
+    document.getElementById('detail-stage-status').textContent = (lead['Stage'] || 'Open') + statusSuffix;
+    
+    // Contact Info
+    document.getElementById('detail-contact-name').textContent = lead['Contact Name'] || 'N/A';
+    document.getElementById('detail-email').textContent = lead['Email'] || 'N/A';
+    
+    const locationParts = [lead['City'], lead['State'], lead['Country']].filter(Boolean);
+    document.getElementById('detail-location').textContent = locationParts.join(', ') || 'N/A';
+    
+    // Mailto action pre-fill
+    const emailLink = document.getElementById('btn-send-email-action');
+    if (emailLink) {
+        if (lead['Email']) {
+            emailLink.style.display = 'inline-flex';
+            const subject = `Sales Follow-up: ${lead['Opportunity']}`;
+            const clientName = lead['Contact Name'] || 'Client';
+            const body = `Hi ${clientName},\n\nHope you are doing well.\n\nI wanted to follow up on your interest in "${lead['Opportunity']}". Let us know a convenient time to connect.\n\nBest regards,\n${lead['Salesperson'] || 'Sales Team'}`;
+            emailLink.href = `mailto:${lead['Email']}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        } else {
+            emailLink.style.display = 'none';
+        }
+    }
+    
+    // Show Modal
+    const modal = document.getElementById('lead-details-modal');
+    if (modal) modal.style.display = 'flex';
+}
+
 
 
 
@@ -1209,7 +1260,7 @@ function renderTables() {
                     const shortOppName = lead['Opportunity'] ? lead['Opportunity'].split(' - ')[0] : 'N/A';
                     
                     tr.innerHTML = `
-                        <td><span style="font-weight:600; color:var(--text-primary);" title="${lead['Opportunity']}">${shortOppName}</span></td>
+                        <td><span class="clickable-opportunity" onclick="openLeadDetailsModal('${lead['Opportunity'].replace(/'/g, "\\'")}')" title="${lead['Opportunity']}">${shortOppName}</span></td>
                         <td><span style="font-weight:500;" title="${lead['Company Name']}">${lead['Company Name'] || 'N/A'}</span></td>
                         <td><span class="clickable-count" onclick="goToExplorerFilter('salesperson', '${lead['Salesperson'].replace(/'/g, "\\'")}')">${lead['Salesperson']}</span></td>
                         <td><span class="clickable-count" onclick="goToExplorerFilter('stage', '${lead['Stage'].replace(/'/g, "\\'")}')">${lead['Stage']}</span></td>
@@ -1410,7 +1461,7 @@ function renderTables() {
             const shortOppName = lead['Opportunity'] ? lead['Opportunity'].split(' - ')[0] : 'N/A';
 
             tr.innerHTML = `
-                <td><span style="font-weight:600; color:var(--text-primary);" title="${lead['Opportunity']}">${shortOppName}</span></td>
+                <td><span class="clickable-opportunity" onclick="openLeadDetailsModal('${lead['Opportunity'].replace(/'/g, "\\'")}')" title="${lead['Opportunity']}">${shortOppName}</span></td>
                 <td><span style="font-weight:500;" title="${lead['Company Name']}">${lead['Company Name'] || 'N/A'}</span></td>
                 <td>${lead['Salesperson']}</td>
                 <td><span style="color:var(--color-blue); font-weight:500;">${lead['Stage']}</span></td>
@@ -1662,6 +1713,77 @@ function registerEventListeners() {
                 applyFilters();
             }
             switchTab('explorer');
+        });
+    }
+
+    // Lead details modal close listener
+    const btnCloseLead = document.getElementById('btn-close-lead-modal');
+    const leadModal = document.getElementById('lead-details-modal');
+    if (btnCloseLead && leadModal) {
+        btnCloseLead.addEventListener('click', () => { leadModal.style.display = 'none'; });
+        leadModal.addEventListener('click', (e) => {
+            if (e.target === leadModal) leadModal.style.display = 'none';
+        });
+    }
+
+    // Copy lead email listener
+    const btnCopyEmail = document.getElementById('btn-copy-email');
+    if (btnCopyEmail) {
+        btnCopyEmail.addEventListener('click', () => {
+            if (selectedLeadForModal && selectedLeadForModal['Email']) {
+                navigator.clipboard.writeText(selectedLeadForModal['Email']);
+                
+                // Temporary button feedback
+                const origText = btnCopyEmail.innerHTML;
+                btnCopyEmail.innerHTML = '<i class="fa-solid fa-check"></i> Copied!';
+                btnCopyEmail.style.borderColor = 'var(--color-emerald)';
+                btnCopyEmail.style.color = 'var(--color-emerald)';
+                setTimeout(() => {
+                    btnCopyEmail.innerHTML = origText;
+                    btnCopyEmail.style.borderColor = '';
+                    btnCopyEmail.style.color = '';
+                }, 2000);
+            } else {
+                alert('No email address available for this lead.');
+            }
+        });
+    }
+
+    // Copy Sales Sheet listener
+    const btnCopySalesSheet = document.getElementById('btn-copy-sales-sheet');
+    if (btnCopySalesSheet) {
+        btnCopySalesSheet.addEventListener('click', () => {
+            if (selectedLeadForModal) {
+                const lead = selectedLeadForModal;
+                const locationParts = [lead['City'], lead['State'], lead['Country']].filter(Boolean);
+                const salesSheetText = 
+`=== EB-BB LEAD SALES SHEET ===
+Opportunity: ${lead['Opportunity'] || 'N/A'}
+Company: ${lead['Company Name'] || 'N/A'}
+Expected Revenue: ${formatCurrency(lead['Expected Revenue'] || 0)}
+Stage: ${lead['Stage'] || 'Open'} (${lead['Won/Lost'] || 'Pending'})
+Salesperson: ${lead['Salesperson'] || 'Unassigned'}
+Created On: ${lead['Created on'] || 'N/A'}
+
+--- Client Contact Details ---
+Contact Person: ${lead['Contact Name'] || 'N/A'}
+Email Address: ${lead['Email'] || 'N/A'}
+Location: ${locationParts.join(', ') || 'N/A'}
+==============================`;
+                
+                navigator.clipboard.writeText(salesSheetText);
+                
+                // Temporary button feedback
+                const origText = btnCopySalesSheet.innerHTML;
+                btnCopySalesSheet.innerHTML = '<i class="fa-solid fa-check"></i> Sheet Copied!';
+                btnCopySalesSheet.style.borderColor = 'var(--color-emerald)';
+                btnCopySalesSheet.style.color = 'var(--color-emerald)';
+                setTimeout(() => {
+                    btnCopySalesSheet.innerHTML = origText;
+                    btnCopySalesSheet.style.borderColor = '';
+                    btnCopySalesSheet.style.color = '';
+                }, 2000);
+            }
         });
     }
 
@@ -2186,7 +2308,7 @@ function renderRFQTable() {
         const cleanDate = lead['RFQ Date'] ? lead['RFQ Date'].substring(0, 10) : 'N/A';
 
         tr.innerHTML = `
-            <td><strong>${shortName}</strong></td>
+            <td><span class="clickable-opportunity" onclick="openLeadDetailsModal('${lead['Opportunity'].replace(/'/g, "\\'")}')" title="${lead['Opportunity']}">${shortName}</span></td>
             <td>${lead['Company Name'] || 'N/A'}</td>
             <td>${lead['Salesperson']}</td>
             <td class="num-col">${cleanDate}</td>
@@ -2264,7 +2386,7 @@ function initAIAssistant() {
 
 // Convert dataset to compact, comma-separated representation for the model context
 function convertLeadsToCSV(leads) {
-    const headers = ['Opportunity', 'Company', 'Salesperson', 'Expected Revenue', 'Stage', 'Won/Lost', 'RFQ Date'];
+    const headers = ['Opportunity', 'Company', 'Salesperson', 'Expected Revenue', 'Stage', 'Won/Lost', 'RFQ Date', 'Contact Name', 'Email'];
     let csv = headers.join(',') + '\n';
     
     leads.forEach(lead => {
@@ -2275,7 +2397,9 @@ function convertLeadsToCSV(leads) {
             lead['Expected Revenue'] || 0,
             (lead['Stage'] || 'Undefined').replace(/,/g, ' ').trim(),
             (lead['Won/Lost'] || 'Pending').replace(/,/g, ' ').trim(),
-            lead['RFQ Date'] ? lead['RFQ Date'].substring(0, 10) : (lead['Created on'] ? lead['Created on'].substring(0, 10) : 'N/A')
+            lead['RFQ Date'] ? lead['RFQ Date'].substring(0, 10) : (lead['Created on'] ? lead['Created on'].substring(0, 10) : 'N/A'),
+            (lead['Contact Name'] || 'N/A').replace(/,/g, ' ').trim(),
+            (lead['Email'] || 'N/A').replace(/,/g, ' ').trim()
         ];
         csv += row.join(',') + '\n';
     });

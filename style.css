@@ -1586,3 +1586,17 @@ body {
     transform: scale(1.05);
 }
 
+/* Clickable opportunity detail triggers */
+.clickable-opportunity {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--text-primary);
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.clickable-opportunity:hover {
+    color: var(--color-blue);
+    text-decoration: underline;
+}
+
+
