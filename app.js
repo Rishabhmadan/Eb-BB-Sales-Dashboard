@@ -1812,6 +1812,17 @@ Location: ${locationParts.join(', ') || 'N/A'}
         });
     }
 
+    // Close modals when Escape key is pressed
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            const apiModal = document.getElementById('api-modal');
+            if (apiModal) apiModal.style.display = 'none';
+            
+            const leadModal = document.getElementById('lead-details-modal');
+            if (leadModal) leadModal.style.display = 'none';
+        }
+    });
+
     // Initialize AI Assistant
     initAIAssistant();
 }
