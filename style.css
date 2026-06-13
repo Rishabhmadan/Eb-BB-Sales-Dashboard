@@ -1646,5 +1646,14 @@ body {
     min-height: 0;
 }
 
+/* Modal Stacking order overrides */
+#lead-details-modal {
+    z-index: 1100;
+}
+#api-modal {
+    z-index: 1100;
+}
+
+
 
 
