@@ -160,6 +160,7 @@ function applyFilters() {
     const elIndustry = document.getElementById('filter-industry');
     const elType = document.getElementById('filter-type');
     const elStatus = document.getElementById('filter-status');
+    const elRFQPeriod = document.getElementById('filter-rfq-period');
     const searchEl = document.getElementById('global-search');
     
     const fSalesperson = elSalesperson ? elSalesperson.value : 'all';
@@ -167,6 +168,7 @@ function applyFilters() {
     const fIndustry = elIndustry ? elIndustry.value : 'all';
     const fType = elType ? elType.value : 'all';
     const fStatus = elStatus ? elStatus.value : 'all';
+    const fRFQPeriod = elRFQPeriod ? elRFQPeriod.value : 'all';
     const searchQuery = searchEl ? searchEl.value.toLowerCase().trim() : '';
 
     filteredLeads = allLeads.filter(lead => {
@@ -177,6 +179,37 @@ function applyFilters() {
         if (fStatus !== 'all') {
             if (fStatus === 'Won' && lead['Won/Lost'] !== 'Won') return false;
             if (fStatus === 'Pending' && lead['Won/Lost'] === 'Won') return false;
+        }
+        
+        if (fRFQPeriod !== 'all') {
+            const rfqDateStr = lead['RFQ Date'];
+            if (!rfqDateStr) return false;
+            
+            const rfqDate = new Date(rfqDateStr);
+            if (isNaN(rfqDate.getTime())) return false;
+
+            const today = new Date();
+            const todayStart = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+
+            if (fRFQPeriod === 'daily') {
+                if (rfqDate < todayStart) return false;
+            } else if (fRFQPeriod === 'weekly') {
+                const day = today.getDay();
+                const diff = today.getDate() - day + (day === 0 ? -6 : 1);
+                const thisWeekStart = new Date(today.getFullYear(), today.getMonth(), diff);
+                thisWeekStart.setHours(0, 0, 0, 0);
+                if (rfqDate < thisWeekStart) return false;
+            } else if (fRFQPeriod === 'monthly') {
+                const thisMonthStart = new Date(today.getFullYear(), today.getMonth(), 1);
+                if (rfqDate < thisMonthStart) return false;
+            } else if (fRFQPeriod === 'quarterly') {
+                const currentQuarterMonth = Math.floor(today.getMonth() / 3) * 3;
+                const thisQuarterStart = new Date(today.getFullYear(), currentQuarterMonth, 1);
+                if (rfqDate < thisQuarterStart) return false;
+            } else if (fRFQPeriod === 'annually') {
+                const thisYearStart = new Date(today.getFullYear(), 0, 1);
+                if (rfqDate < thisYearStart) return false;
+            }
         }
         
         if (searchQuery) {
@@ -1058,11 +1091,14 @@ function registerEventListeners() {
     });
 
     // 2. Dropdown Filter Selection triggers recalculations
-    const dropdowns = ['filter-salesperson', 'filter-stage', 'filter-industry', 'filter-type', 'filter-status'];
+    const dropdowns = ['filter-salesperson', 'filter-stage', 'filter-industry', 'filter-type', 'filter-status', 'filter-rfq-period'];
     dropdowns.forEach(id => {
-        document.getElementById(id).addEventListener('change', () => {
-            applyFilters();
-        });
+        const el = document.getElementById(id);
+        if (el) {
+            el.addEventListener('change', () => {
+                applyFilters();
+            });
+        }
     });
 
     // 3. Reset filters button
