@@ -2842,6 +2842,25 @@ function setupAIEventListeners() {
             handleUserMessage(query);
         });
     });
+
+    // AI Quick Actions
+    const btnAiSummary = document.getElementById('btn-ai-summary');
+    if (btnAiSummary) {
+        btnAiSummary.addEventListener('click', () => {
+            const userMsg = "📊 Generate Executive Pipeline Summary";
+            const apiPrompt = "Please generate a structured, professional executive summary of the active sales pipeline. Focus on general health, top-performing salespeople, and critical risks based on the currently filtered leads dataset. Present it with headers and bullet points.";
+            handleUserMessage(userMsg, apiPrompt);
+        });
+    }
+
+    const btnAiProb = document.getElementById('btn-ai-prob');
+    if (btnAiProb) {
+        btnAiProb.addEventListener('click', () => {
+            const userMsg = "🔮 Predict Top 5 Wins";
+            const apiPrompt = "Analyze the active leads dataset and predict the top 5 leads that have the highest probability of closing as 'Won' this week. Explain the rationale/reasons for each of the 5 recommendations clearly, referencing their expected revenue, stage, salesperson, and timeline. Format it as a numbered list.";
+            handleUserMessage(userMsg, apiPrompt);
+        });
+    }
 }
 
 // Append a system notification to the chat area
@@ -2857,7 +2876,7 @@ function addSystemMessage(text) {
 }
 
 // Handle sending user query and loading AI reply
-async function handleUserMessage(text) {
+async function handleUserMessage(text, customPrompt = '') {
     const chatMessages = document.getElementById('chat-messages');
     if (!chatMessages) return;
     
@@ -2886,10 +2905,11 @@ async function handleUserMessage(text) {
     chatMessages.appendChild(typingDiv);
     chatMessages.scrollTop = chatMessages.scrollHeight;
     
+    const promptToSend = customPrompt || text;
     // Push user message to local history
     aiChatHistory.push({
         role: "user",
-        parts: [{ text: text }]
+        parts: [{ text: promptToSend }]
     });
 
     // Keep chat history clean and prevent memory blowup (limit to last 20 messages)
