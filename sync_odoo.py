@@ -4,12 +4,26 @@ import xmlrpc.client
 from datetime import datetime
 
 # =====================================================================
-# ODOO CONNECTION CONFIGURATION
+# LOAD ENVIRONMENT VARIABLES FROM .ENV
 # =====================================================================
-ODOO_URL = "https://your-company.odoo.com"  # e.g., https://mycompany.odoo.com
-ODOO_DB = "your-database-name"            # Odoo database name
-ODOO_USER = "your-username-or-email"      # Your login email
-ODOO_API_KEY = "your-api-key-or-password" # Best practice: Use an API key from Odoo Preferences
+# Simple helper to load .env file if it exists locally without external dependencies
+if os.path.exists(".env"):
+    with open(".env", "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if line and not line.startswith("#") and "=" in line:
+                key, val = line.split("=", 1)
+                # Strip potential surrounding quotes from values
+                val = val.strip().strip('"').strip("'")
+                os.environ[key.strip()] = val
+
+# =====================================================================
+# ODOO CONNECTION CONFIGURATION (LOADED SECURELY)
+# =====================================================================
+ODOO_URL = os.environ.get("ODOO_URL", "https://your-company.odoo.com")
+ODOO_DB = os.environ.get("ODOO_DB", "your-database-name")
+ODOO_USER = os.environ.get("ODOO_USER", "your-username-or-email")
+ODOO_API_KEY = os.environ.get("ODOO_API_KEY", "your-api-key-or-password")
 
 # =====================================================================
 # FIELD MAPPING: ODOO TECHNICAL FIELDS -> DASHBOARD JSON FIELDS
