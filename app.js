@@ -1920,16 +1920,36 @@ function getLabelForRFQDate(dateStr, granularity) {
     }
     return '';
 }
-
 // ==========================================
 // AI ASSISTANT JS LOGIC
 // ==========================================
 let geminiApiKey = localStorage.getItem('gemini_api_key') || '';
+let aiChatHistory = [];
 
 // Initialize AI Assistant UI
 function initAIAssistant() {
     updateAPIKeyStatus();
     setupAIEventListeners();
+}
+
+// Convert dataset to compact, comma-separated representation for the model context
+function convertLeadsToCSV(leads) {
+    const headers = ['Opportunity', 'Company', 'Salesperson', 'Expected Revenue', 'Stage', 'Won/Lost', 'RFQ Date'];
+    let csv = headers.join(',') + '\n';
+    
+    leads.forEach(lead => {
+        const row = [
+            (lead['Opportunity'] || 'N/A').replace(/,/g, ' ').substring(0, 45).trim(),
+            (lead['Company Name'] || 'N/A').replace(/,/g, ' ').substring(0, 35).trim(),
+            (lead['Salesperson'] || 'Unassigned').replace(/,/g, ' ').trim(),
+            lead['Expected Revenue'] || 0,
+            (lead['Stage'] || 'Undefined').replace(/,/g, ' ').trim(),
+            (lead['Won/Lost'] || 'Pending').replace(/,/g, ' ').trim(),
+            lead['RFQ Date'] ? lead['RFQ Date'].substring(0, 10) : (lead['Created on'] ? lead['Created on'].substring(0, 10) : 'N/A')
+        ];
+        csv += row.join(',') + '\n';
+    });
+    return csv;
 }
 
 // Update UI Indicators for API Key
@@ -1977,7 +1997,23 @@ function setupAIEventListeners() {
     const chatForm = document.getElementById('chat-form');
     const chatInput = document.getElementById('chat-input');
     const suggestions = document.querySelectorAll('.suggestion-btn');
+    const btnClearChat = document.getElementById('btn-clear-chat');
     
+    // Clear Chat
+    if (btnClearChat) {
+        btnClearChat.addEventListener('click', () => {
+            aiChatHistory = [];
+            const chatMessages = document.getElementById('chat-messages');
+            if (chatMessages) {
+                chatMessages.innerHTML = `
+                    <div class="message system-message">
+                        Chat history cleared. Welcome to the Elecbits AI Sales Assistant! Ask me anything about your sales data.
+                    </div>
+                `;
+            }
+        });
+    }
+
     // Toggle Modal
     if (trigger && modal) {
         trigger.addEventListener('click', () => { modal.style.display = 'flex'; });
@@ -2057,7 +2093,7 @@ async function handleUserMessage(text) {
     const chatMessages = document.getElementById('chat-messages');
     if (!chatMessages) return;
     
-    // 1. Add User Bubble
+    // 1. Add User Bubble to UI
     const userDiv = document.createElement('div');
     userDiv.className = 'message user-message';
     userDiv.textContent = text;
@@ -2072,7 +2108,7 @@ async function handleUserMessage(text) {
         return;
     }
     
-    // 2. Add Typing Indicator
+    // 2. Add Typing Indicator to UI
     const typingDiv = document.createElement('div');
     typingDiv.className = 'message ai-message typing-indicator';
     typingDiv.innerHTML = `
@@ -2083,17 +2119,20 @@ async function handleUserMessage(text) {
     chatMessages.appendChild(typingDiv);
     chatMessages.scrollTop = chatMessages.scrollHeight;
     
+    // Push user message to local history
+    aiChatHistory.push({
+        role: "user",
+        parts: [{ text: text }]
+    });
+
+    // Keep chat history clean and prevent memory blowup (limit to last 20 messages)
+    if (aiChatHistory.length > 20) {
+        aiChatHistory.shift();
+    }
+    
     try {
-        // Prepare context
-        const compactLeads = filteredLeads.map(lead => ({
-            Opp: lead['Opportunity'] ? lead['Opportunity'].substring(0, 45) : 'N/A',
-            Co: lead['Company Name'] ? lead['Company Name'].substring(0, 35) : 'N/A',
-            SP: lead['Salesperson'] || 'Unassigned',
-            Rev: lead['Expected Revenue'],
-            Stg: lead['Stage'] || 'Undefined',
-            WL: lead['Won/Lost'] || 'Pending',
-            Date: lead['RFQ Date'] ? lead['RFQ Date'].substring(0, 10) : (lead['Created on'] ? lead['Created on'].substring(0, 10) : 'N/A')
-        }));
+        // Convert active leads to token-efficient CSV format
+        const csvData = convertLeadsToCSV(filteredLeads);
         
         const totalExpectedRevenue = filteredLeads.reduce((sum, lead) => sum + lead['Expected Revenue'], 0);
         const wonLeads = filteredLeads.filter(lead => lead['Won/Lost'] === 'Won');
@@ -2109,19 +2148,25 @@ async function handleUserMessage(text) {
         };
 
         const systemInstruction = `You are the Elecbits AI Sales Assistant, an expert data analyst for the Mahakal Eb-BB Sales Dashboard.
-You have access to the active filtered leads dataset containing ${compactLeads.length} records.
-Current aggregated stats in dashboard context:
+You have access to the active filtered leads dataset. Below is the dataset in CSV format:
+=== START DATASET ===
+${csvData}
+=== END DATASET ===
+
+Current Aggregated Stats in Dashboard:
 - Total expected revenue: ${formatCurrency(totalExpectedRevenue)}
 - Won deals: ${wonLeads.length}
 - Won revenue: ${formatCurrency(wonRevenue)}
-- Active filters applied in dashboard: ${JSON.stringify(activeFilters)}
+- Active filters applied: ${JSON.stringify(activeFilters)}
 - Active Currency: ${activeCurrency} (Exchange rate: $1 = ₹${usdToInrRate})
 - Today's date: June 13, 2026.
 
-Use this data to answer the user's questions. 
-Be concise, clear, and professional. Do not make up any information.
-When asked to summarize, compile tables, or list items, construct markdown tables and lists.
-Return your answers in standard markdown. Do not mention "systemInstruction", "JSON context", or "compact leads". Focus on giving the exact answers based on the provided leads dataset.`;
+Rules:
+1. Answer the user's questions based on the provided CSV dataset.
+2. Be concise, clear, and professional. Do not make up any information.
+3. If the user asks for a table or list, construct a clean markdown table or list.
+4. Do not output raw JSON or internal CSV headers/code. Only give the final parsed answer.
+5. Use the conversation history to understand follow-ups. If the user says something like "means week 24", check the previous user message to see what they are referring to.`;
 
         // Fetch Gemini 3.5 Flash API
         const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent?key=${geminiApiKey}`, {
@@ -2130,12 +2175,7 @@ Return your answers in standard markdown. Do not mention "systemInstruction", "J
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                contents: [{
-                    role: "user",
-                    parts: [{
-                        text: `Here is the compact leads dataset JSON:\n${JSON.stringify(compactLeads)}\n\nUser Question: ${text}`
-                    }]
-                }],
+                contents: aiChatHistory,
                 systemInstruction: {
                     parts: [{
                         text: systemInstruction
@@ -2157,9 +2197,17 @@ Return your answers in standard markdown. Do not mention "systemInstruction", "J
         const aiText = data.candidates?.[0]?.content?.parts?.[0]?.text || "Sorry, I could not generate a response.";
         
         // Remove typing indicator
-        chatMessages.removeChild(typingDiv);
+        if (chatMessages.contains(typingDiv)) {
+            chatMessages.removeChild(typingDiv);
+        }
         
-        // 3. Add AI message bubble
+        // Push AI message to local history
+        aiChatHistory.push({
+            role: "model",
+            parts: [{ text: aiText }]
+        });
+        
+        // 3. Add AI message bubble to UI
         const aiDiv = document.createElement('div');
         aiDiv.className = 'message ai-message';
         aiDiv.innerHTML = parseAITextToHTML(aiText);
@@ -2168,8 +2216,12 @@ Return your answers in standard markdown. Do not mention "systemInstruction", "J
         
     } catch (error) {
         console.error("Gemini API Error:", error);
-        chatMessages.removeChild(typingDiv);
-        addSystemMessage(`Error: ${error.message}. Please verify your API Key and internet connection.`);
+        if (chatMessages.contains(typingDiv)) {
+            chatMessages.removeChild(typingDiv);
+        }
+        // Remove the failed user query from history so they can retry
+        aiChatHistory.pop();
+        addSystemMessage(`Error: ${error.message}. Please verify your API Key and connection.`);
     }
 }
 

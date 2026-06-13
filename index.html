@@ -634,9 +634,14 @@
                                     <p class="subtitle" style="margin: 0; font-size: 11px; color: var(--text-muted);">Ask questions about your sales team, revenue, and leads</p>
                                 </div>
                             </div>
-                            <div class="api-key-indicator" id="api-key-trigger">
-                                <span class="status-dot offline" id="api-status-dot"></span>
-                                <span id="api-status-text">Gemini API Key Required</span>
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <button class="btn btn-secondary" id="btn-clear-chat" style="padding: 6px 12px; font-size: 11px; display: flex; align-items: center; gap: 6px; border-radius: 20px; cursor: pointer;">
+                                    <i class="fa-solid fa-trash-can"></i> Clear Chat
+                                </button>
+                                <div class="api-key-indicator" id="api-key-trigger">
+                                    <span class="status-dot offline" id="api-status-dot"></span>
+                                    <span id="api-status-text">Gemini API Key Required</span>
+                                </div>
                             </div>
                         </div>
                         
