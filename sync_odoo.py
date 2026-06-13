@@ -34,24 +34,23 @@ ODOO_API_KEY = os.environ.get("ODOO_API_KEY", "your-api-key-or-password")
 FIELD_MAPPING = {
     'create_date': 'Created on',
     'source_id': 'Source',                  # Many2one -> resolved to name
-    'x_rfq_date': 'RFQ Date',               # Adjust if name is different in your Odoo
+    'x_studio_rfq_date': 'RFQ Date',
     'partner_name': 'Company Name',         # Or partner_id
     'name': 'Opportunity',
     'contact_name': 'Contact Name',
     'email_from': 'Email',
     'phone': 'Phone',                       # Standard Odoo phone field
-    'mobile': 'Mobile',                     # Standard Odoo mobile field
     'user_id': 'Salesperson',               # Many2one -> resolved to name
-    'date_deadline': 'Next Follow up',      # Adjust if using a custom follow up date field
-    'x_industry_segment': 'Industry Segment', # Custom field name
-    'x_revenue_millions': 'Revenue (Millions USD)', # Custom field name
-    'x_opportunity_type': 'Opportunity Type', # Custom field name
-    'planned_revenue': 'Expected Revenue',   # Standard Odoo field is planned_revenue (Expected Revenue)
+    'x_studio_next_follow_up': 'Next Follow up',
+    'x_studio_selection_field_2c7_1jm37ueas': 'Industry Segment',
+    'x_studio_expected_rev': 'Revenue (Millions USD)',
+    'x_studio_type': 'Opportunity Type',
+    'expected_revenue': 'Expected Revenue',   # Odoo 19.0 uses expected_revenue instead of planned_revenue
     'stage_id': 'Stage',                    # Many2one -> resolved to name
     'probability': 'Won/Lost',              # Resolved via logic (100% -> "Won", else "Pending")
     'country_id': 'Country',                # Many2one -> resolved to name
     'state_id': 'State',                    # Many2one -> resolved to name
-    'city': 'City',
+    'x_studio_city': 'City',
     'date_closed': 'Closed Date'
 }
 
@@ -114,7 +113,7 @@ def sync_leads_from_odoo():
                 # Apply special mapping/extraction logic
                 if odoo_field in ['source_id', 'user_id', 'stage_id', 'country_id', 'state_id']:
                     val = clean_many2one(val)
-                elif odoo_field in ['create_date', 'x_rfq_date', 'date_deadline', 'date_closed']:
+                elif odoo_field in ['create_date', 'x_studio_rfq_date', 'x_studio_next_follow_up', 'date_closed']:
                     val = format_date(val)
                 elif odoo_field == 'probability':
                     # Map probability to Won/Lost (e.g. 100% is Won, otherwise Pending or check stage name)
