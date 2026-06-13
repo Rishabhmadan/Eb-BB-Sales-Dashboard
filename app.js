@@ -135,6 +135,54 @@ function getCurrencyDetails() {
     };
 }
 
+// Map a state/country to a regional classification
+function getRegionForState(state, country) {
+    if (!country && !state) return 'Unknown / Other';
+    
+    const countryLower = (country || '').trim().toLowerCase();
+    if (countryLower && countryLower !== 'india') {
+        return 'International';
+    }
+    
+    const s = (state || '').trim().toLowerCase();
+    if (!s) {
+        if (countryLower === 'india') {
+            return 'Other India';
+        }
+        return 'Unknown / Other';
+    }
+    
+    if (s.includes('delhi') || s.includes('haryana') || s.includes('uttar pradesh') || s.includes('up (in)') || 
+        s.includes('punjab') || s.includes('rajasthan') || s.includes('himachal') || s.includes('jammu') || 
+        s.includes('kashmir') || s.includes('uttarakhand') || s.includes('chandigarh') || s.includes('ladakh')) {
+        return 'North India';
+    }
+    if (s.includes('karnataka') || s.includes('tamil nadu') || s.includes('telangana') || s.includes('kerala') || 
+        s.includes('andhra pradesh') || s.includes('lakshadweep') || s.includes('puducherry') || s.includes('chennai') || s.includes('bangalore')) {
+        return 'South India';
+    }
+    if (s.includes('maharashtra') || s.includes('gujarat') || s.includes('goa') || s.includes('daman') || s.includes('diu') || s.includes('dadra') || s.includes('mumbai') || s.includes('pune')) {
+        return 'West India';
+    }
+    if (s.includes('madhya pradesh') || s.includes('chhattisgarh') || s.includes('mp (in)')) {
+        return 'Central India';
+    }
+    if (s.includes('west bengal') || s.includes('bihar') || s.includes('jharkhand') || s.includes('odisha') || s.includes('orissa') || s.includes('kolkata')) {
+        return 'East India';
+    }
+    if (s.includes('assam') || s.includes('sikkim') || s.includes('arunachal') || s.includes('manipur') || 
+        s.includes('meghalaya') || s.includes('mizoram') || s.includes('nagaland') || s.includes('tripura')) {
+        return 'Northeast India';
+    }
+    
+    if (s.includes('(in)') || countryLower === 'india') {
+        return 'Other India';
+    }
+    
+    return 'International';
+}
+
+
 // Populate filter dropdowns with unique options
 function populateFilters() {
     const filterSelectors = {
@@ -940,12 +988,16 @@ function updateCharts() {
     if (activeTab === 'geo') {
         const stateData = {};
         const countryData = {};
+        const regionData = {};
         
         filteredLeads.forEach(lead => {
             const st = lead['State'] || 'Unknown';
             const cnt = lead['Country'] || 'Unknown';
             stateData[st] = (stateData[st] || 0) + lead['Expected Revenue'];
             countryData[cnt] = (countryData[cnt] || 0) + lead['Expected Revenue'];
+            
+            const r = getRegionForState(lead['State'], lead['Country']);
+            regionData[r] = (regionData[r] || 0) + lead['Expected Revenue'];
         });
 
         // Top 8 States
@@ -988,6 +1040,38 @@ function updateCharts() {
                 datasets: [{
                     data: sortedCountries.map(x => x[1] / currDetails.scale),
                     backgroundColor: ['#10b981', '#0000ff', '#8b5cf6', '#f59e0b', '#f43f5e'],
+                    borderWidth: isDark ? 2 : 1,
+                    borderColor: isDark ? '#111827' : '#ffffff'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: { color: textColor, font: { family: 'Outfit', size: 10 } }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return ` ${context.label}: ${currDetails.symbol}${context.raw.toFixed(1)}M`;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Region-wise Distribution
+        const sortedRegions = Object.entries(regionData).sort((a, b) => b[1] - a[1]);
+        renderChart('chart-geo-regions', {
+            type: 'doughnut',
+            data: {
+                labels: sortedRegions.map(x => x[0]),
+                datasets: [{
+                    data: sortedRegions.map(x => x[1] / currDetails.scale),
+                    backgroundColor: ['#8b5cf6', '#0000ff', '#10b981', '#f59e0b', '#f43f5e', '#06b6d4', '#ec4899', '#64748b'],
                     borderWidth: isDark ? 2 : 1,
                     borderColor: isDark ? '#111827' : '#ffffff'
                 }]
