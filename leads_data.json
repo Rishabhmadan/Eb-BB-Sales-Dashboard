@@ -3336,12 +3336,12 @@
     "Revenue (Millions USD)": 1.3,
     "Opportunity Type": "Other/TBD",
     "Expected Revenue": 120856.86,
-    "Stage": "RFQ Received",
+    "Stage": "Won",
     "Won/Lost": "Won",
     "Country": false,
     "State": false,
     "City": false,
-    "Closed Date": "2026-06-13 07:33:10"
+    "Closed Date": "2026-06-13 19:57:23"
   },
   {
     "Created on": "2026-06-13 07:22:21",
@@ -22788,28 +22788,6 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
-    "City": false,
-    "Closed Date": null
-  },
-  {
-    "Created on": "2026-04-30 06:11:41",
-    "Source": "Zoom Info",
-    "RFQ Date": null,
-    "Company Name": "ChargeMOD",
-    "Opportunity": "ChargeMOD",
-    "Contact Name": "Mithun Krishnan",
-    "Email": "mithun@chargemod.com",
-    "Phone": "+91 81138 70132",
-    "Salesperson": "Kundan Pandey",
-    "Next Follow up": null,
-    "Industry Segment": "Automotive & EV",
-    "Revenue (Millions USD)": 1.27,
-    "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
-    "Stage": "Open",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": "Kerala (IN)",
     "City": false,
     "Closed Date": null
   },
