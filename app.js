@@ -87,11 +87,17 @@ async function initApp() {
         // Set up filters dropdown options
         populateFilters();
         
+        const savedTab = localStorage.getItem('active_tab') || 'overview';
+        activeTab = savedTab;
+
         // Apply filters (which will calculate KPIs, draw charts and render table)
         applyFilters();
 
         // Register event listeners
         registerEventListeners();
+        
+        // Switch to the saved tab to initialize the charts and UI for it
+        switchTab(savedTab);
 
     } catch (error) {
         console.error('Error initializing application:', error);
@@ -148,6 +154,50 @@ function populateFilters() {
             option.textContent = val;
             selectElement.appendChild(option);
         });
+    }
+}
+
+// Switch active dashboard tab
+function switchTab(tabName) {
+    const menuItems = document.querySelectorAll('.menu-item');
+    const targetItem = Array.from(menuItems).find(mi => mi.getAttribute('data-tab') === tabName);
+    if (!targetItem) return;
+    
+    // Toggle active state in sidebar
+    menuItems.forEach(mi => mi.classList.remove('active'));
+    targetItem.classList.add('active');
+    
+    activeTab = tabName;
+    localStorage.setItem('active_tab', tabName);
+    
+    // Update page headers
+    const pageTitles = {
+        overview: 'Executive Overview',
+        pipeline: 'Pipeline Funnel Analysis',
+        team: 'Sales Team Performance',
+        geo: 'Geographic Distribution',
+        rfq: 'RFQ Tracking',
+        explorer: 'Leads Data Explorer',
+        ai: 'AI Sales Assistant'
+    };
+    const titleEl = document.getElementById('page-title');
+    if (titleEl && pageTitles[tabName]) {
+        titleEl.textContent = pageTitles[tabName];
+    }
+    
+    // Hide all tabs, show active one
+    document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+    const tabEl = document.getElementById(`tab-${tabName}`);
+    if (tabEl) {
+        tabEl.classList.add('active');
+    }
+    
+    // Redraw/initialize charts & tables for the active tab
+    updateCharts();
+    renderTables();
+    
+    if (activeTab === 'ai') {
+        updateAICardStats();
     }
 }
 
@@ -1085,38 +1135,8 @@ function registerEventListeners() {
     menuItems.forEach(item => {
         item.addEventListener('click', (e) => {
             e.preventDefault();
-            
-            // Toggle active state
-            menuItems.forEach(mi => mi.classList.remove('active'));
-            item.classList.add('active');
-            
-            // Show corresponding tab view
             const tabName = item.getAttribute('data-tab');
-            activeTab = tabName;
-            
-            // Update page headers
-            const pageTitles = {
-                overview: 'Executive Overview',
-                pipeline: 'Pipeline Funnel Analysis',
-                team: 'Sales Team Performance',
-                geo: 'Geographic Distribution',
-                rfq: 'RFQ Tracking',
-                explorer: 'Leads Data Explorer',
-                ai: 'AI Sales Assistant'
-            };
-            document.getElementById('page-title').textContent = pageTitles[tabName];
-            
-            // Hide all tabs, show active one
-            document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
-            document.getElementById(`tab-${tabName}`).classList.add('active');
-            
-            // Redraw/initialize charts & tables for the active tab
-            updateCharts();
-            renderTables();
-            
-            if (activeTab === 'ai') {
-                updateAICardStats();
-            }
+            switchTab(tabName);
         });
     });
 
