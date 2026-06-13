@@ -238,7 +238,9 @@ function openLeadDetailsModal(oppName) {
     document.getElementById('detail-stage-status').textContent = (lead['Stage'] || 'Open') + statusSuffix;
     
     // Contact Info
+    const phone = lead['Phone'] || lead['Mobile'] || lead['Contact No'] || lead['Contact no'] || '';
     document.getElementById('detail-contact-name').textContent = lead['Contact Name'] || 'N/A';
+    document.getElementById('detail-phone').textContent = phone || 'N/A';
     document.getElementById('detail-email').textContent = lead['Email'] || 'N/A';
     
     const locationParts = [lead['City'], lead['State'], lead['Country']].filter(Boolean);
@@ -256,6 +258,27 @@ function openLeadDetailsModal(oppName) {
         } else {
             emailLink.style.display = 'none';
         }
+    }
+    
+    // Phone actions pre-fill
+    const callLink = document.getElementById('btn-call-client');
+    const waLink = document.getElementById('btn-whatsapp-client');
+    
+    if (phone) {
+        const cleanPhone = phone.replace(/[^0-9]/g, '');
+        
+        if (callLink) {
+            callLink.style.display = 'inline-flex';
+            callLink.href = `tel:${phone}`;
+        }
+        if (waLink) {
+            waLink.style.display = 'inline-flex';
+            const waText = `Hi ${lead['Contact Name'] || 'Client'},\n\nFollowing up from Eb-BB Sales team regarding opportunity: ${lead['Opportunity']}. Let us know if we can connect.`;
+            waLink.href = `https://wa.me/${cleanPhone}?text=${encodeURIComponent(waText)}`;
+        }
+    } else {
+        if (callLink) callLink.style.display = 'none';
+        if (waLink) waLink.style.display = 'none';
     }
     
     // Show Modal
@@ -1755,6 +1778,7 @@ function registerEventListeners() {
         btnCopySalesSheet.addEventListener('click', () => {
             if (selectedLeadForModal) {
                 const lead = selectedLeadForModal;
+                const phone = lead['Phone'] || lead['Mobile'] || lead['Contact No'] || lead['Contact no'] || 'N/A';
                 const locationParts = [lead['City'], lead['State'], lead['Country']].filter(Boolean);
                 const salesSheetText = 
 `=== EB-BB LEAD SALES SHEET ===
@@ -1767,6 +1791,7 @@ Created On: ${lead['Created on'] || 'N/A'}
 
 --- Client Contact Details ---
 Contact Person: ${lead['Contact Name'] || 'N/A'}
+Contact No: ${phone}
 Email Address: ${lead['Email'] || 'N/A'}
 Location: ${locationParts.join(', ') || 'N/A'}
 ==============================`;
@@ -2386,10 +2411,11 @@ function initAIAssistant() {
 
 // Convert dataset to compact, comma-separated representation for the model context
 function convertLeadsToCSV(leads) {
-    const headers = ['Opportunity', 'Company', 'Salesperson', 'Expected Revenue', 'Stage', 'Won/Lost', 'RFQ Date', 'Contact Name', 'Email'];
+    const headers = ['Opportunity', 'Company', 'Salesperson', 'Expected Revenue', 'Stage', 'Won/Lost', 'RFQ Date', 'Contact Name', 'Email', 'Phone'];
     let csv = headers.join(',') + '\n';
     
     leads.forEach(lead => {
+        const phone = lead['Phone'] || lead['Mobile'] || lead['Contact No'] || lead['Contact no'] || 'N/A';
         const row = [
             (lead['Opportunity'] || 'N/A').replace(/,/g, ' ').substring(0, 45).trim(),
             (lead['Company Name'] || 'N/A').replace(/,/g, ' ').substring(0, 35).trim(),
@@ -2399,7 +2425,8 @@ function convertLeadsToCSV(leads) {
             (lead['Won/Lost'] || 'Pending').replace(/,/g, ' ').trim(),
             lead['RFQ Date'] ? lead['RFQ Date'].substring(0, 10) : (lead['Created on'] ? lead['Created on'].substring(0, 10) : 'N/A'),
             (lead['Contact Name'] || 'N/A').replace(/,/g, ' ').trim(),
-            (lead['Email'] || 'N/A').replace(/,/g, ' ').trim()
+            (lead['Email'] || 'N/A').replace(/,/g, ' ').trim(),
+            phone.replace(/,/g, ' ').trim()
         ];
         csv += row.join(',') + '\n';
     });

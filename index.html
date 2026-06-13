@@ -796,6 +796,10 @@
                                 <span style="font-size: 13px; font-weight: 600; color: var(--text-primary);" id="detail-contact-name">Name</span>
                             </div>
                             <div>
+                                <span style="font-size: 11px; font-weight: 600; color: var(--text-muted); display: inline-block; width: 100px;">Contact No:</span>
+                                <span style="font-size: 13px; font-weight: 600; color: var(--text-primary);" id="detail-phone">N/A</span>
+                            </div>
+                            <div>
                                 <span style="font-size: 11px; font-weight: 600; color: var(--text-muted); display: inline-block; width: 100px;">Email Address:</span>
                                 <span style="font-size: 13px; font-weight: 600; color: var(--color-blue);" id="detail-email">email@domain.com</span>
                             </div>
@@ -807,9 +811,11 @@
                     </div>
                 </div>
             </div>
-            <div class="modal-footer" style="gap: 12px;">
+            <div class="modal-footer" style="gap: 12px; flex-wrap: wrap;">
                 <button class="btn btn-secondary" id="btn-copy-sales-sheet"><i class="fa-solid fa-copy"></i> Copy Sales Sheet</button>
                 <button class="btn btn-secondary" id="btn-copy-email"><i class="fa-solid fa-clipboard"></i> Copy Email</button>
+                <a class="btn btn-secondary" id="btn-call-client" href="#" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px;"><i class="fa-solid fa-phone"></i> Call</a>
+                <a class="btn btn-emerald" id="btn-whatsapp-client" href="#" target="_blank" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px; background-color: #25d366; border-color: #25d366; color: white;"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
                 <a class="btn btn-primary" id="btn-send-email-action" href="#" target="_blank" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px;"><i class="fa-solid fa-paper-plane"></i> Send Email</a>
             </div>
         </div>

@@ -39,6 +39,8 @@ FIELD_MAPPING = {
     'name': 'Opportunity',
     'contact_name': 'Contact Name',
     'email_from': 'Email',
+    'phone': 'Phone',                       # Standard Odoo phone field
+    'mobile': 'Mobile',                     # Standard Odoo mobile field
     'user_id': 'Salesperson',               # Many2one -> resolved to name
     'date_deadline': 'Next Follow up',      # Adjust if using a custom follow up date field
     'x_industry_segment': 'Industry Segment', # Custom field name
