@@ -87,6 +87,9 @@ async function initApp() {
         // Set up filters dropdown options
         populateFilters();
         
+        // Restore saved filter selections
+        restoreFilters();
+        
         const savedTab = localStorage.getItem('active_tab') || 'overview';
         activeTab = savedTab;
 
@@ -201,6 +204,85 @@ function switchTab(tabName) {
     }
 }
 
+// Restore saved filter values from localStorage
+function restoreFilters() {
+    const fields = [
+        { id: 'filter-salesperson', key: 'filter_salesperson' },
+        { id: 'filter-stage', key: 'filter_stage' },
+        { id: 'filter-industry', key: 'filter_industry' },
+        { id: 'filter-type', key: 'filter_type' },
+        { id: 'filter-status', key: 'filter_status' }
+    ];
+    
+    fields.forEach(f => {
+        const el = document.getElementById(f.id);
+        const val = localStorage.getItem(f.key);
+        if (el && val !== null) {
+            el.value = val;
+        }
+    });
+
+    const searchEl = document.getElementById('global-search');
+    const searchVal = localStorage.getItem('filter_search');
+    if (searchEl && searchVal !== null) {
+        searchEl.value = searchVal;
+    }
+
+    const elPeriod = document.getElementById('filter-rfq-period');
+    const elValueGroup = document.getElementById('filter-rfq-value-group');
+    const elValueSelect = document.getElementById('filter-rfq-value');
+    
+    const rfqPeriodVal = localStorage.getItem('filter_rfq_period');
+    const rfqValueVal = localStorage.getItem('filter_rfq_value');
+
+    if (elPeriod && rfqPeriodVal !== null) {
+        elPeriod.value = rfqPeriodVal;
+        
+        if (rfqPeriodVal === 'all') {
+            if (elValueGroup) elValueGroup.style.display = 'none';
+            if (elValueSelect) {
+                elValueSelect.innerHTML = '<option value="all">All</option>';
+                elValueSelect.value = 'all';
+            }
+        } else {
+            if (elValueGroup) elValueGroup.style.display = 'flex';
+            
+            let allText = 'All';
+            if (rfqPeriodVal === 'daily') allText = 'All Days';
+            else if (rfqPeriodVal === 'weekly') allText = 'All Weeks';
+            else if (rfqPeriodVal === 'monthly') allText = 'All Months';
+            else if (rfqPeriodVal === 'quarterly') allText = 'All Quarters';
+            else if (rfqPeriodVal === 'annually') allText = 'All Years';
+            
+            const sortedLeadsForLabels = [...allLeads]
+                .filter(lead => lead['RFQ Date'])
+                .sort((a, b) => new Date(b['RFQ Date']) - new Date(a['RFQ Date']));
+
+            const labels = [];
+            sortedLeadsForLabels.forEach(lead => {
+                const label = getLabelForRFQDate(lead['RFQ Date'], rfqPeriodVal);
+                if (label && !labels.includes(label)) {
+                    labels.push(label);
+                }
+            });
+            
+            if (elValueSelect) {
+                let optionsHTML = `<option value="all">${allText}</option>`;
+                labels.forEach(label => {
+                    optionsHTML += `<option value="${label}">${label}</option>`;
+                });
+                elValueSelect.innerHTML = optionsHTML;
+                
+                if (rfqValueVal !== null) {
+                    elValueSelect.value = rfqValueVal;
+                } else {
+                    elValueSelect.value = 'all';
+                }
+            }
+        }
+    }
+}
+
 // Handle dynamic population of RFQ Period selector values
 function handleRFQPeriodTypeChange() {
     const elPeriod = document.getElementById('filter-rfq-period');
@@ -270,6 +352,16 @@ function applyFilters() {
     const fRFQPeriod = elRFQPeriod ? elRFQPeriod.value : 'all';
     const fRFQValue = elRFQValue ? elRFQValue.value : 'all';
     const searchQuery = searchEl ? searchEl.value.toLowerCase().trim() : '';
+
+    // Save current selections to localStorage to persist across refreshes
+    localStorage.setItem('filter_salesperson', fSalesperson);
+    localStorage.setItem('filter_stage', fStage);
+    localStorage.setItem('filter_industry', fIndustry);
+    localStorage.setItem('filter_type', fType);
+    localStorage.setItem('filter_status', fStatus);
+    localStorage.setItem('filter_rfq_period', fRFQPeriod);
+    localStorage.setItem('filter_rfq_value', fRFQValue);
+    localStorage.setItem('filter_search', searchEl ? searchEl.value : '');
 
     filteredLeads = allLeads.filter(lead => {
         if (fSalesperson !== 'all' && lead['Salesperson'] !== fSalesperson) return false;
