@@ -18,6 +18,6 @@ else
     echo "Server starting at http://localhost:8000"
     # Automatically open the browser (macOS native command)
     open "http://localhost:8000"
-    # Start the python HTTP server
-    python3 -m http.server 8000
+    # Start the python HTTP server with cache busting
+    python3 server.py
 fi

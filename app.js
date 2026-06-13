@@ -12,6 +12,58 @@ let activeCurrency = 'INR';
 let usdToInrRate = 83.0; // 1 USD = 83 INR (fallback rate)
 let selectedLeadForModal = null;
 
+const VALID_TABS = ['overview', 'pipeline', 'team', 'geo', 'rfq', 'explorer', 'ai'];
+
+function showModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.style.display = 'flex';
+        if (!history.state || history.state.modalId !== modalId) {
+            history.pushState({ tab: activeTab, modalId: modalId }, '', window.location.hash || '#' + activeTab);
+        }
+    }
+}
+
+function hideModal(modalId, isPopState = false) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.style.display = 'none';
+        if (!isPopState) {
+            if (history.state && history.state.modalId === modalId) {
+                history.back();
+            }
+        }
+    }
+}
+
+window.addEventListener('popstate', (e) => {
+    console.log('popstate event fired. State:', e.state, 'Location Hash:', window.location.hash);
+    const state = e.state;
+    const activeModalId = state && state.modalId;
+    
+    // Close modals that shouldn't be open
+    ['lead-details-modal', 'api-modal', 'leads-list-modal'].forEach(id => {
+        if (id !== activeModalId) {
+            hideModal(id, true);
+        }
+    });
+    
+    // Open modal if specified in the state
+    if (activeModalId) {
+        showModal(activeModalId);
+    }
+    
+    // Switch tab
+    if (state && state.tab && VALID_TABS.includes(state.tab)) {
+        switchTab(state.tab, true, false); // preventReset = true, pushState = false
+    } else {
+        const hash = window.location.hash.replace('#', '');
+        if (VALID_TABS.includes(hash)) {
+            switchTab(hash, true, false);
+        }
+    }
+});
+
 
 // Fetch exchange rate from API
 async function fetchExchangeRate() {
@@ -92,8 +144,17 @@ async function initApp() {
         // Restore saved filter selections
         restoreFilters();
         
-        const savedTab = localStorage.getItem('active_tab') || 'overview';
-        activeTab = savedTab;
+        let initialTab = 'overview';
+        const hash = window.location.hash.replace('#', '');
+        if (VALID_TABS.includes(hash)) {
+            initialTab = hash;
+        } else {
+            const savedTab = localStorage.getItem('active_tab') || 'overview';
+            if (VALID_TABS.includes(savedTab)) {
+                initialTab = savedTab;
+            }
+        }
+        activeTab = initialTab;
 
         // Apply filters (which will calculate KPIs, draw charts and render table)
         applyFilters();
@@ -101,8 +162,11 @@ async function initApp() {
         // Register event listeners
         registerEventListeners();
         
-        // Switch to the saved tab to initialize the charts and UI for it
-        switchTab(savedTab);
+        // Initialize history state
+        history.replaceState({ tab: initialTab }, '', '#' + initialTab);
+
+        // Switch to the saved tab to initialize the charts and UI for it without resetting filters
+        switchTab(initialTab, true, false);
 
     } catch (error) {
         console.error('Error initializing application:', error);
@@ -184,35 +248,152 @@ function getRegionForState(state, country) {
     return 'International';
 }
 
-// Filter leads and redirect user to Data Explorer tab
-function goToExplorerFilter(type, value) {
-    if (type === 'stage') {
-        const elStage = document.getElementById('filter-stage');
-        if (elStage) elStage.value = value;
-        // Adjust status filter if we are looking for Won deals or a non-won stage
-        const elStatus = document.getElementById('filter-status');
-        if (elStatus) {
-            if (value === 'Won') {
-                elStatus.value = 'Won';
-            } else if (elStatus.value === 'Won') {
-                elStatus.value = 'all';
-            }
-        }
-    } else if (type === 'salesperson') {
-        const elSalesperson = document.getElementById('filter-salesperson');
-        if (elSalesperson) elSalesperson.value = value;
-    } else if (type === 'salesperson-won') {
-        const elSalesperson = document.getElementById('filter-salesperson');
-        if (elSalesperson) elSalesperson.value = value;
-        const elStatus = document.getElementById('filter-status');
-        if (elStatus) elStatus.value = 'Won';
-    } else if (type === 'city') {
-        const searchEl = document.getElementById('global-search');
-        if (searchEl) searchEl.value = value;
+let currentModalLeads = [];
+let modalSearchLeads = [];
+let modalFilterType = '';
+let modalFilterValue = '';
+
+// Export leads shown in the popup modal to CSV
+function exportModalCSV(leads, title) {
+    if (!leads || leads.length === 0) {
+        alert('No records to export.');
+        return;
     }
     
-    applyFilters();
-    switchTab('explorer', true);
+    // Select headers
+    const cols = ['Opportunity', 'Company Name', 'Contact Name', 'Salesperson', 'Stage', 'Opportunity Type', 'Expected Revenue', 'Created on', 'Won/Lost', 'Country', 'State', 'City'];
+    
+    // CSV Header row
+    let csvContent = "data:text/csv;charset=utf-8," 
+        + cols.map(c => `"${c.replace(/"/g, '""')}"`).join(",") + "\n";
+        
+    // CSV Data rows
+    leads.forEach(lead => {
+        const row = cols.map(c => {
+            const val = lead[c] !== null && lead[c] !== undefined ? String(lead[c]) : '';
+            return `"${val.replace(/"/g, '""')}"`;
+        });
+        csvContent += row.join(",") + "\n";
+    });
+    
+    // Create download trigger
+    const fileName = title.toLowerCase().replace(/[^a-z0-9]/g, '_') + '_export';
+    const encodedUri = encodeURI(csvContent);
+    const link = document.createElement("a");
+    link.setAttribute("href", encodedUri);
+    link.setAttribute("download", `${fileName}_${new Date().toISOString().slice(0,10)}.csv`);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+// Render the leads table inside the popup modal
+function renderModalLeadsTable(leads) {
+    const tbody = document.getElementById('modal-leads-table-body');
+    if (!tbody) return;
+    tbody.innerHTML = '';
+    
+    if (leads.length === 0) {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td colspan="8" style="text-align:center; color: var(--text-muted); padding: 40px;">No matching records found.</td>`;
+        tbody.appendChild(tr);
+        return;
+    }
+    
+    leads.forEach(lead => {
+        const tr = document.createElement('tr');
+        tr.className = 'clickable-row';
+        
+        let badgeClass = 'badge-pending';
+        let badgeText = 'Pending';
+        if (lead['Won/Lost'] === 'Won' || lead['Stage'] === 'Won') {
+            badgeClass = 'badge-won';
+            badgeText = 'Won';
+        } else if (lead['Stage'] === 'Dropped') {
+            badgeClass = 'badge-dropped';
+            badgeText = 'Dropped';
+        }
+        
+        const cleanDate = lead['Created on'] ? lead['Created on'].substring(0, 10) : 'N/A';
+        const shortOppName = lead['Opportunity'] ? lead['Opportunity'].split(' - ')[0] : 'N/A';
+        
+        // Escape opportunity name for the onclick handler
+        const escOppName = lead['Opportunity'].replace(/'/g, "\\'");
+        
+        tr.innerHTML = `
+            <td><span class="clickable-opportunity" onclick="openLeadDetailsModal('${escOppName}')" title="${lead['Opportunity']}">${shortOppName}</span></td>
+            <td><span style="font-weight:500;" title="${lead['Company Name']}">${lead['Company Name'] || 'N/A'}</span></td>
+            <td>${lead['Salesperson'] || 'Unassigned'}</td>
+            <td><span style="color:var(--color-blue); font-weight:500;">${lead['Stage']}</span></td>
+            <td>${lead['Opportunity Type'] || 'N/A'}</td>
+            <td class="num-col" style="font-weight:600;">${formatCurrency(lead['Expected Revenue'] || 0)}</td>
+            <td>${cleanDate}</td>
+            <td><span class="badge ${badgeClass}">${badgeText}</span></td>
+        `;
+        
+        tbody.appendChild(tr);
+    });
+}
+
+// Instead of switching to Data Explorer, open a popup modal with filtered leads list
+function goToExplorerFilter(type, value) {
+    console.log('goToExplorerFilter intercepted to show modal for type:', type, 'value:', value);
+    
+    // Clear search box in modal
+    const searchInput = document.getElementById('modal-search');
+    if (searchInput) searchInput.value = '';
+    
+    modalFilterType = type;
+    modalFilterValue = value || '';
+    
+    // Determine title, subtitle and filter the leads
+    let title = 'Leads List';
+    let subtitle = '';
+    let leads = [];
+    
+    if (type === 'total') {
+        leads = [...filteredLeads];
+        title = 'Total Leads';
+        subtitle = `Showing all ${leads.length.toLocaleString()} leads matching current filters`;
+    } else if (type === 'won') {
+        leads = filteredLeads.filter(l => l['Won/Lost'] === 'Won');
+        title = 'Won Leads';
+        subtitle = `Showing all ${leads.length.toLocaleString()} won leads matching current filters`;
+    } else if (type === 'stage') {
+        leads = filteredLeads.filter(l => l['Stage'] === value);
+        title = `Stage: ${value}`;
+        subtitle = `Showing ${leads.length.toLocaleString()} leads currently in stage "${value}"`;
+    } else if (type === 'salesperson') {
+        leads = filteredLeads.filter(l => l['Salesperson'] === value);
+        title = `Leads for ${value}`;
+        subtitle = `Showing ${leads.length.toLocaleString()} leads assigned to ${value}`;
+    } else if (type === 'salesperson-won') {
+        leads = filteredLeads.filter(l => l['Salesperson'] === value && l['Won/Lost'] === 'Won');
+        title = `Won Leads for ${value}`;
+        subtitle = `Showing ${leads.length.toLocaleString()} won leads assigned to ${value}`;
+    } else if (type === 'city') {
+        leads = filteredLeads.filter(l => l['City'] === value);
+        title = `Leads in ${value}`;
+        subtitle = `Showing ${leads.length.toLocaleString()} leads located in ${value}`;
+    } else {
+        leads = [...filteredLeads];
+        subtitle = `Showing ${leads.length.toLocaleString()} leads`;
+    }
+    
+    currentModalLeads = leads;
+    modalSearchLeads = leads;
+    
+    // Update titles in UI
+    const modalTitleEl = document.getElementById('leads-list-modal-title');
+    const modalSubtitleEl = document.getElementById('leads-list-modal-subtitle');
+    if (modalTitleEl) modalTitleEl.textContent = title;
+    if (modalSubtitleEl) modalSubtitleEl.textContent = subtitle;
+    
+    // Render the table
+    renderModalLeadsTable(leads);
+    
+    // Show the modal
+    showModal('leads-list-modal');
 }
 
 // Open Lead Details Modal and populate information
@@ -296,8 +477,7 @@ function openLeadDetailsModal(oppName) {
     }
     
     // Show Modal
-    const modal = document.getElementById('lead-details-modal');
-    if (modal) modal.style.display = 'flex';
+    showModal('lead-details-modal');
 }
 
 
@@ -364,7 +544,8 @@ function resetFilters(skipApply = false) {
 }
 
 // Switch active dashboard tab
-function switchTab(tabName, preventReset = false) {
+function switchTab(tabName, preventReset = false, pushState = true) {
+    console.log('switchTab called with tabName:', tabName, 'preventReset:', preventReset, 'pushState:', pushState);
     if (!preventReset) {
         resetFilters(true);
         filteredLeads = [...allLeads];
@@ -382,6 +563,13 @@ function switchTab(tabName, preventReset = false) {
     
     activeTab = tabName;
     localStorage.setItem('active_tab', tabName);
+    
+    // Update hash and history state
+    if (pushState) {
+        if (window.location.hash !== '#' + tabName) {
+            history.pushState({ tab: tabName }, '', '#' + tabName);
+        }
+    }
     
     // Update page headers
     const pageTitles = {
@@ -543,6 +731,7 @@ function handleRFQPeriodTypeChange() {
 
 // Apply current filter selections to the dataset
 function applyFilters() {
+    console.log('applyFilters started...');
     selectedRFQInterval = null;
     
     const elSalesperson = document.getElementById('filter-salesperson');
@@ -613,6 +802,7 @@ function applyFilters() {
     updateKPIs();
     updateCharts();
     renderTables();
+    console.log('applyFilters finished. fStatus:', fStatus, 'filteredLeads length:', filteredLeads.length);
 }
 
 // Update dashboard KPI cards
@@ -1732,26 +1922,27 @@ function registerEventListeners() {
     }
     
     // Clickable KPI totals to view in list view
-    const kpiTotalLeads = document.getElementById('kpi-total-leads');
-    if (kpiTotalLeads) {
-        kpiTotalLeads.classList.add('clickable-count-kpi');
-        kpiTotalLeads.title = "Click to view in Data Explorer";
-        kpiTotalLeads.addEventListener('click', () => {
-            switchTab('explorer');
+    const cardTotalLeads = document.getElementById('card-total-leads');
+    if (cardTotalLeads) {
+        cardTotalLeads.title = "Click to view total leads list";
+        cardTotalLeads.addEventListener('click', () => {
+            goToExplorerFilter('total');
         });
     }
 
-    const kpiWonDeals = document.getElementById('kpi-won-deals');
-    if (kpiWonDeals) {
-        kpiWonDeals.classList.add('clickable-count-kpi');
-        kpiWonDeals.title = "Click to view won leads in Data Explorer";
-        kpiWonDeals.addEventListener('click', () => {
-            const elStatus = document.getElementById('filter-status');
-            if (elStatus) {
-                elStatus.value = 'Won';
-                applyFilters();
-            }
-            switchTab('explorer');
+    const cardWonDeals = document.getElementById('card-won-deals');
+    if (cardWonDeals) {
+        cardWonDeals.title = "Click to view won leads list";
+        cardWonDeals.addEventListener('click', () => {
+            goToExplorerFilter('won');
+        });
+    }
+
+    const cardWonValue = document.getElementById('card-won-value');
+    if (cardWonValue) {
+        cardWonValue.title = "Click to view won leads list";
+        cardWonValue.addEventListener('click', () => {
+            goToExplorerFilter('won');
         });
     }
 
@@ -1759,9 +1950,61 @@ function registerEventListeners() {
     const btnCloseLead = document.getElementById('btn-close-lead-modal');
     const leadModal = document.getElementById('lead-details-modal');
     if (btnCloseLead && leadModal) {
-        btnCloseLead.addEventListener('click', () => { leadModal.style.display = 'none'; });
+        btnCloseLead.addEventListener('click', () => { hideModal('lead-details-modal'); });
         leadModal.addEventListener('click', (e) => {
-            if (e.target === leadModal) leadModal.style.display = 'none';
+            if (e.target === leadModal) hideModal('lead-details-modal');
+        });
+    }
+
+    // Leads list modal event listeners
+    const btnCloseLeadsList = document.getElementById('btn-close-leads-list-modal');
+    const leadsListModal = document.getElementById('leads-list-modal');
+    if (btnCloseLeadsList && leadsListModal) {
+        btnCloseLeadsList.addEventListener('click', () => { hideModal('leads-list-modal'); });
+        leadsListModal.addEventListener('click', (e) => {
+            if (e.target === leadsListModal) hideModal('leads-list-modal');
+        });
+    }
+
+    // Leads list modal search box
+    const modalSearchInput = document.getElementById('modal-search');
+    if (modalSearchInput) {
+        modalSearchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase().trim();
+            if (!query) {
+                currentModalLeads = modalSearchLeads;
+            } else {
+                currentModalLeads = modalSearchLeads.filter(lead => {
+                    const opp = (lead['Opportunity'] || '').toLowerCase();
+                    const comp = (lead['Company Name'] || '').toLowerCase();
+                    const sales = (lead['Salesperson'] || '').toLowerCase();
+                    const stage = (lead['Stage'] || '').toLowerCase();
+                    const type = (lead['Opportunity Type'] || '').toLowerCase();
+                    const city = (lead['City'] || '').toLowerCase();
+                    const state = (lead['State'] || '').toLowerCase();
+                    const country = (lead['Country'] || '').toLowerCase();
+                    
+                    return opp.includes(query) || 
+                           comp.includes(query) || 
+                           sales.includes(query) || 
+                           stage.includes(query) || 
+                           type.includes(query) || 
+                           city.includes(query) || 
+                           state.includes(query) || 
+                           country.includes(query);
+                });
+            }
+            renderModalLeadsTable(currentModalLeads);
+        });
+    }
+
+    // Leads list modal CSV export
+    const btnModalExport = document.getElementById('btn-modal-export');
+    if (btnModalExport) {
+        btnModalExport.addEventListener('click', () => {
+            const titleEl = document.getElementById('leads-list-modal-title');
+            const title = titleEl ? titleEl.textContent : 'Leads_List';
+            exportModalCSV(currentModalLeads, title);
         });
     }
 
@@ -1832,10 +2075,13 @@ Location: ${locationParts.join(', ') || 'N/A'}
     window.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
             const apiModal = document.getElementById('api-modal');
-            if (apiModal) apiModal.style.display = 'none';
+            if (apiModal && apiModal.style.display === 'flex') hideModal('api-modal');
             
             const leadModal = document.getElementById('lead-details-modal');
-            if (leadModal) leadModal.style.display = 'none';
+            if (leadModal && leadModal.style.display === 'flex') hideModal('lead-details-modal');
+            
+            const leadsListModal = document.getElementById('leads-list-modal');
+            if (leadsListModal && leadsListModal.style.display === 'flex') hideModal('leads-list-modal');
         }
     });
 
@@ -2538,15 +2784,15 @@ function setupAIEventListeners() {
 
     // Toggle Modal
     if (trigger && modal) {
-        trigger.addEventListener('click', () => { modal.style.display = 'flex'; });
+        trigger.addEventListener('click', () => { showModal('api-modal'); });
     }
     if (btnClose && modal) {
-        btnClose.addEventListener('click', () => { modal.style.display = 'none'; });
+        btnClose.addEventListener('click', () => { hideModal('api-modal'); });
     }
     // Close modal if clicking overlay
     if (modal) {
         modal.addEventListener('click', (e) => {
-            if (e.target === modal) modal.style.display = 'none';
+            if (e.target === modal) hideModal('api-modal');
         });
     }
     
@@ -2558,7 +2804,7 @@ function setupAIEventListeners() {
                 geminiApiKey = key;
                 localStorage.setItem('gemini_api_key', key);
                 updateAPIKeyStatus();
-                modal.style.display = 'none';
+                hideModal('api-modal');
                 addSystemMessage("Gemini API key saved successfully. You can now chat!");
             } else {
                 alert("Please enter a valid API Key.");
@@ -2572,7 +2818,7 @@ function setupAIEventListeners() {
             geminiApiKey = '';
             localStorage.removeItem('gemini_api_key');
             updateAPIKeyStatus();
-            modal.style.display = 'none';
+            hideModal('api-modal');
             addSystemMessage("Gemini API key removed. You will need to enter a key to chat.");
         });
     }
@@ -2624,8 +2870,7 @@ async function handleUserMessage(text) {
     
     // Check key
     if (!geminiApiKey) {
-        const modal = document.getElementById('api-modal');
-        if (modal) modal.style.display = 'flex';
+        showModal('api-modal');
         addSystemMessage("Please enter your Gemini API Key first to chat.");
         return;
     }

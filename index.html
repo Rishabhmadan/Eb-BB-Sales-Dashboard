@@ -182,7 +182,7 @@
             <div class="tab-content active" id="tab-overview">
                 <!-- KPI Dashboard Cards -->
                 <section class="kpi-grid">
-                    <div class="kpi-card">
+                    <div class="kpi-card clickable" id="card-total-leads">
                         <div class="kpi-icon icon-blue">
                             <i class="fa-solid fa-users-rectangle"></i>
                         </div>
@@ -210,7 +210,7 @@
                         </div>
                     </div>
 
-                    <div class="kpi-card">
+                    <div class="kpi-card clickable" id="card-won-deals">
                         <div class="kpi-icon icon-gold">
                             <i class="fa-solid fa-trophy"></i>
                         </div>
@@ -224,7 +224,7 @@
                         </div>
                     </div>
 
-                    <div class="kpi-card">
+                    <div class="kpi-card clickable" id="card-won-value">
                         <div class="kpi-icon icon-purple">
                             <i class="fa-solid fa-wallet"></i>
                         </div>
@@ -826,7 +826,56 @@
         </div>
     </div>
 
+    <!-- Leads List Modal -->
+    <div class="modal-overlay" id="leads-list-modal" style="display: none;">
+        <div class="modal-content modal-content-wide">
+            <div class="modal-header">
+                <div>
+                    <h3 style="font-size: 16px; font-weight: 700; color: var(--text-primary); display: flex; align-items: center; gap: 8px; margin: 0;">
+                        <i class="fa-solid fa-list-check" style="color: var(--color-blue);"></i> 
+                        <span id="leads-list-modal-title">Leads List</span>
+                    </h3>
+                    <p id="leads-list-modal-subtitle" style="margin: 4px 0 0 0; font-size: 12px; color: var(--text-muted);"></p>
+                </div>
+                <button class="modal-close" id="btn-close-leads-list-modal">&times;</button>
+            </div>
+            <div class="modal-body-scrollable">
+                <!-- Search and Action Bar inside Modal -->
+                <div style="display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 4px;">
+                    <div style="position: relative; flex: 1; max-width: 380px;">
+                        <i class="fa-solid fa-magnifying-glass" style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 12px;"></i>
+                        <input type="text" id="modal-search" placeholder="Search leads in this list..." style="width: 100%; padding: 8px 12px 8px 34px; border: 1px solid var(--border-color); border-radius: var(--border-radius-sm); background: var(--bg-input); color: var(--text-primary); outline: none; font-size: 13px; transition: border-color 0.2s ease;">
+                    </div>
+                    <button class="btn btn-emerald" id="btn-modal-export" style="display: inline-flex; align-items: center; gap: 8px; font-size: 13px; padding: 8px 16px; cursor: pointer;">
+                        <i class="fa-solid fa-file-csv"></i> Export CSV
+                    </button>
+                </div>
+                
+                <!-- Table Container with scrolling -->
+                <div style="overflow-x: auto; border: 1px solid var(--border-color); border-radius: var(--border-radius-sm); max-height: 480px; overflow-y: auto;">
+                    <table class="data-table" id="modal-leads-table">
+                        <thead style="position: sticky; top: 0; z-index: 10; background-color: var(--bg-card);">
+                            <tr>
+                                <th>Opportunity</th>
+                                <th>Company</th>
+                                <th>Salesperson</th>
+                                <th>Stage</th>
+                                <th>Type</th>
+                                <th class="num-col">Expected Revenue</th>
+                                <th>Created On</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="modal-leads-table-body">
+                            <!-- populated dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Script to Load Data and Handle Interactions -->
-    <script src="app.js?v=12"></script>
+    <script src="app.js?v=15"></script>
 </body>
 </html>
