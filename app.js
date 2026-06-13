@@ -63,7 +63,7 @@ async function initApp() {
         // Fetch live exchange rate from API
         await fetchExchangeRate();
 
-        const response = await fetch('leads_data.json');
+        const response = await fetch('leads_data.json?t=' + new Date().getTime());
         if (!response.ok) {
             throw new Error('Failed to load leads_data.json');
         }
