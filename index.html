@@ -69,6 +69,10 @@
                     <i class="fa-solid fa-database"></i>
                     <span>Data Explorer</span>
                 </a>
+                <a href="#" class="menu-item" data-tab="ai">
+                    <i class="fa-solid fa-robot"></i>
+                    <span>AI Assistant</span>
+                </a>
             </nav>
             <div class="sidebar-footer">
                 <div class="theme-toggle" id="theme-toggle-btn">
@@ -616,7 +620,96 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Tab Content: AI Assistant -->
+            <div class="tab-content" id="tab-ai">
+                <div class="ai-container">
+                    <!-- Chat Panel (Left) -->
+                    <div class="chat-panel">
+                        <div class="chat-header">
+                            <div class="chat-title-group">
+                                <i class="fa-solid fa-robot chat-icon"></i>
+                                <div>
+                                    <h3>AI Sales Assistant</h3>
+                                    <p class="subtitle" style="margin: 0; font-size: 11px; color: var(--text-muted);">Ask questions about your sales team, revenue, and leads</p>
+                                </div>
+                            </div>
+                            <div class="api-key-indicator" id="api-key-trigger">
+                                <span class="status-dot offline" id="api-status-dot"></span>
+                                <span id="api-status-text">Gemini API Key Required</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Messages Area -->
+                        <div class="chat-messages" id="chat-messages">
+                            <div class="message system-message">
+                                Welcome to the Elecbits AI Sales Assistant! Ask me anything about your sales data. E.g., "Who has won the most deals?" or "Show me a monthly revenue summary".
+                            </div>
+                        </div>
+                        
+                        <!-- Chat Input Area -->
+                        <div class="chat-input-container">
+                            <form id="chat-form" style="display: flex; gap: 12px; width: 100%;">
+                                <input type="text" id="chat-input" placeholder="Ask a question about your sales data..." required autocomplete="off">
+                                <button type="submit" class="btn btn-primary" id="btn-send-message" style="display: flex; align-items: center; gap: 6px; padding: 10px 20px;">
+                                    <i class="fa-solid fa-paper-plane"></i> Send
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- Info Panel (Right) -->
+                    <div class="info-panel">
+                        <div class="info-card">
+                            <h4><i class="fa-solid fa-database"></i> Context Summary</h4>
+                            <div class="info-stat">
+                                <span>Leads in Context:</span>
+                                <strong id="ai-stat-leads">1,702</strong>
+                            </div>
+                            <div class="info-stat">
+                                <span>Total Expected Revenue:</span>
+                                <strong id="ai-stat-revenue">Loading...</strong>
+                            </div>
+                            <div class="info-stat">
+                                <span>Closed Won Deals:</span>
+                                <strong id="ai-stat-won">Loading...</strong>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <h4><i class="fa-solid fa-lightbulb"></i> Suggested Questions</h4>
+                            <div class="suggestions-list">
+                                <button class="suggestion-btn">Who is the top salesperson by won revenue?</button>
+                                <button class="suggestion-btn">What is our win rate for each industry segment?</button>
+                                <button class="suggestion-btn">Summarize the RFQ count and value by month.</button>
+                                <button class="suggestion-btn">Which country has the highest expected revenue?</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
+    </div>
+
+    <!-- API Key Configuration Modal -->
+    <div class="modal-overlay" id="api-modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-key"></i> Configure Gemini API Key</h3>
+                <button class="modal-close" id="btn-close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>To use the AI Sales Assistant, you need a Gemini API Key. Your key is stored securely in your browser's local storage and is only sent directly to Google's official API servers.</p>
+                <p>You can get a free API Key from <a href="https://aistudio.google.com/" target="_blank" style="color: var(--color-blue); text-decoration: underline;">Google AI Studio</a>.</p>
+                <div class="filter-group" style="margin-top: 10px;">
+                    <label for="input-api-key" style="font-size: 11px; font-weight: 600; color: var(--text-muted); text-transform: uppercase;">Gemini API Key</label>
+                    <input type="password" id="input-api-key" placeholder="AIzaSy..." style="padding: 10px; border: 1px solid var(--border-color); border-radius: var(--border-radius-sm); background: var(--bg-input); color: var(--text-primary); outline: none;">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="btn-remove-key">Remove Key</button>
+                <button class="btn btn-primary" id="btn-save-key">Save Key</button>
+            </div>
+        </div>
     </div>
 
     <!-- Script to Load Data and Handle Interactions -->

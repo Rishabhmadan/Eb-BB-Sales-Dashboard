@@ -1101,7 +1101,8 @@ function registerEventListeners() {
                 team: 'Sales Team Performance',
                 geo: 'Geographic Distribution',
                 rfq: 'RFQ Tracking',
-                explorer: 'Leads Data Explorer'
+                explorer: 'Leads Data Explorer',
+                ai: 'AI Sales Assistant'
             };
             document.getElementById('page-title').textContent = pageTitles[tabName];
             
@@ -1112,6 +1113,10 @@ function registerEventListeners() {
             // Redraw/initialize charts & tables for the active tab
             updateCharts();
             renderTables();
+            
+            if (activeTab === 'ai') {
+                updateAICardStats();
+            }
         });
     });
 
@@ -1329,6 +1334,9 @@ function registerEventListeners() {
             });
         }
     }
+    
+    // Initialize AI Assistant
+    initAIAssistant();
 }
 
 // Export filtered leads data to CSV
@@ -1911,4 +1919,334 @@ function getLabelForRFQDate(dateStr, granularity) {
         return `${date.getFullYear()}`;
     }
     return '';
+}
+
+// ==========================================
+// AI ASSISTANT JS LOGIC
+// ==========================================
+let geminiApiKey = localStorage.getItem('gemini_api_key') || '';
+
+// Initialize AI Assistant UI
+function initAIAssistant() {
+    updateAPIKeyStatus();
+    setupAIEventListeners();
+}
+
+// Update UI Indicators for API Key
+function updateAPIKeyStatus() {
+    const dot = document.getElementById('api-status-dot');
+    const text = document.getElementById('api-status-text');
+    const input = document.getElementById('input-api-key');
+    
+    if (geminiApiKey) {
+        if (dot) { dot.className = 'status-dot online'; }
+        if (text) { text.textContent = 'AI Assistant Connected'; }
+        if (input) { input.value = geminiApiKey; }
+    } else {
+        if (dot) { dot.className = 'status-dot offline'; }
+        if (text) { text.textContent = 'Gemini API Key Required'; }
+        if (input) { input.value = ''; }
+    }
+}
+
+// Update the right-side summary cards in the AI tab
+function updateAICardStats() {
+    const elLeads = document.getElementById('ai-stat-leads');
+    const elRev = document.getElementById('ai-stat-revenue');
+    const elWon = document.getElementById('ai-stat-won');
+    
+    if (!elLeads || !elRev || !elWon) return;
+    
+    const totalLeads = filteredLeads.length;
+    const totalExpectedRevenue = filteredLeads.reduce((sum, lead) => sum + lead['Expected Revenue'], 0);
+    const wonDealsCount = filteredLeads.filter(lead => lead['Won/Lost'] === 'Won').length;
+    
+    elLeads.textContent = totalLeads.toLocaleString();
+    elRev.textContent = formatCurrency(totalExpectedRevenue);
+    elWon.textContent = wonDealsCount.toLocaleString();
+}
+
+// Setup AI Tab specific event listeners
+function setupAIEventListeners() {
+    const trigger = document.getElementById('api-key-trigger');
+    const modal = document.getElementById('api-modal');
+    const btnClose = document.getElementById('btn-close-modal');
+    const btnSave = document.getElementById('btn-save-key');
+    const btnRemove = document.getElementById('btn-remove-key');
+    const inputKey = document.getElementById('input-api-key');
+    const chatForm = document.getElementById('chat-form');
+    const chatInput = document.getElementById('chat-input');
+    const suggestions = document.querySelectorAll('.suggestion-btn');
+    
+    // Toggle Modal
+    if (trigger && modal) {
+        trigger.addEventListener('click', () => { modal.style.display = 'flex'; });
+    }
+    if (btnClose && modal) {
+        btnClose.addEventListener('click', () => { modal.style.display = 'none'; });
+    }
+    // Close modal if clicking overlay
+    if (modal) {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) modal.style.display = 'none';
+        });
+    }
+    
+    // Save Key
+    if (btnSave && inputKey && modal) {
+        btnSave.addEventListener('click', () => {
+            const key = inputKey.value.trim();
+            if (key) {
+                geminiApiKey = key;
+                localStorage.setItem('gemini_api_key', key);
+                updateAPIKeyStatus();
+                modal.style.display = 'none';
+                addSystemMessage("Gemini API key saved successfully. You can now chat!");
+            } else {
+                alert("Please enter a valid API Key.");
+            }
+        });
+    }
+    
+    // Remove Key
+    if (btnRemove && inputKey && modal) {
+        btnRemove.addEventListener('click', () => {
+            geminiApiKey = '';
+            localStorage.removeItem('gemini_api_key');
+            updateAPIKeyStatus();
+            modal.style.display = 'none';
+            addSystemMessage("Gemini API key removed. You will need to enter a key to chat.");
+        });
+    }
+    
+    // Chat Form Submit
+    if (chatForm && chatInput) {
+        chatForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const message = chatInput.value.trim();
+            if (!message) return;
+            
+            chatInput.value = '';
+            handleUserMessage(message);
+        });
+    }
+    
+    // Suggested Questions
+    suggestions.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const query = btn.textContent;
+            handleUserMessage(query);
+        });
+    });
+}
+
+// Append a system notification to the chat area
+function addSystemMessage(text) {
+    const chatMessages = document.getElementById('chat-messages');
+    if (!chatMessages) return;
+    
+    const div = document.createElement('div');
+    div.className = 'message system-message';
+    div.textContent = text;
+    chatMessages.appendChild(div);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+// Handle sending user query and loading AI reply
+async function handleUserMessage(text) {
+    const chatMessages = document.getElementById('chat-messages');
+    if (!chatMessages) return;
+    
+    // 1. Add User Bubble
+    const userDiv = document.createElement('div');
+    userDiv.className = 'message user-message';
+    userDiv.textContent = text;
+    chatMessages.appendChild(userDiv);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+    
+    // Check key
+    if (!geminiApiKey) {
+        const modal = document.getElementById('api-modal');
+        if (modal) modal.style.display = 'flex';
+        addSystemMessage("Please enter your Gemini API Key first to chat.");
+        return;
+    }
+    
+    // 2. Add Typing Indicator
+    const typingDiv = document.createElement('div');
+    typingDiv.className = 'message ai-message typing-indicator';
+    typingDiv.innerHTML = `
+        <div class="typing-dot"></div>
+        <div class="typing-dot"></div>
+        <div class="typing-dot"></div>
+    `;
+    chatMessages.appendChild(typingDiv);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+    
+    try {
+        // Prepare context
+        const compactLeads = filteredLeads.map(lead => ({
+            Opp: lead['Opportunity'] ? lead['Opportunity'].substring(0, 45) : 'N/A',
+            Co: lead['Company Name'] ? lead['Company Name'].substring(0, 35) : 'N/A',
+            SP: lead['Salesperson'] || 'Unassigned',
+            Rev: lead['Expected Revenue'],
+            Stg: lead['Stage'] || 'Undefined',
+            WL: lead['Won/Lost'] || 'Pending',
+            Date: lead['RFQ Date'] ? lead['RFQ Date'].substring(0, 10) : (lead['Created on'] ? lead['Created on'].substring(0, 10) : 'N/A')
+        }));
+        
+        const totalExpectedRevenue = filteredLeads.reduce((sum, lead) => sum + lead['Expected Revenue'], 0);
+        const wonLeads = filteredLeads.filter(lead => lead['Won/Lost'] === 'Won');
+        const wonRevenue = wonLeads.reduce((sum, lead) => sum + lead['Expected Revenue'], 0);
+        const activeFilters = {
+            salesperson: document.getElementById('filter-salesperson').value,
+            stage: document.getElementById('filter-stage').value,
+            industry: document.getElementById('filter-industry').value,
+            type: document.getElementById('filter-type').value,
+            status: document.getElementById('filter-status').value,
+            rfqPeriod: document.getElementById('filter-rfq-period').value,
+            rfqValue: document.getElementById('filter-rfq-value').value
+        };
+
+        const systemInstruction = `You are the Elecbits AI Sales Assistant, an expert data analyst for the Mahakal Eb-BB Sales Dashboard.
+You have access to the active filtered leads dataset containing ${compactLeads.length} records.
+Current aggregated stats in dashboard context:
+- Total expected revenue: ${formatCurrency(totalExpectedRevenue)}
+- Won deals: ${wonLeads.length}
+- Won revenue: ${formatCurrency(wonRevenue)}
+- Active filters applied in dashboard: ${JSON.stringify(activeFilters)}
+- Active Currency: ${activeCurrency} (Exchange rate: $1 = ₹${usdToInrRate})
+- Today's date: June 13, 2026.
+
+Use this data to answer the user's questions. 
+Be concise, clear, and professional. Do not make up any information.
+When asked to summarize, compile tables, or list items, construct markdown tables and lists.
+Return your answers in standard markdown. Do not mention "systemInstruction", "JSON context", or "compact leads". Focus on giving the exact answers based on the provided leads dataset.`;
+
+        // Fetch Gemini 1.5 Flash API
+        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${geminiApiKey}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                contents: [{
+                    role: "user",
+                    parts: [{
+                        text: `Here is the compact leads dataset JSON:\n${JSON.stringify(compactLeads)}\n\nUser Question: ${text}`
+                    }]
+                }],
+                systemInstruction: {
+                    parts: [{
+                        text: systemInstruction
+                    }]
+                },
+                generationConfig: {
+                    temperature: 0.15,
+                    maxOutputTokens: 2048
+                }
+            })
+        });
+        
+        if (!response.ok) {
+            const errData = await response.json();
+            throw new Error(errData.error?.message || `API error ${response.status}`);
+        }
+        
+        const data = await response.json();
+        const aiText = data.candidates?.[0]?.content?.parts?.[0]?.text || "Sorry, I could not generate a response.";
+        
+        // Remove typing indicator
+        chatMessages.removeChild(typingDiv);
+        
+        // 3. Add AI message bubble
+        const aiDiv = document.createElement('div');
+        aiDiv.className = 'message ai-message';
+        aiDiv.innerHTML = parseAITextToHTML(aiText);
+        chatMessages.appendChild(aiDiv);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+        
+    } catch (error) {
+        console.error("Gemini API Error:", error);
+        chatMessages.removeChild(typingDiv);
+        addSystemMessage(`Error: ${error.message}. Please verify your API Key and internet connection.`);
+    }
+}
+
+// Safe, lightweight markdown and table parser for rendering AI responses
+function parseAITextToHTML(text) {
+    // Escape HTML to prevent XSS (custom tags will be added safely)
+    let html = text
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;");
+
+    // Table parsing
+    const lines = html.split('\n');
+    let inTable = false;
+    let tableHTML = '';
+    const processedLines = [];
+
+    for (let i = 0; i < lines.length; i++) {
+        const line = lines[i].trim();
+        if (line.startsWith('|') && line.endsWith('|')) {
+            if (!inTable) {
+                inTable = true;
+                tableHTML = '<div class="table-container" style="margin: 14px 0;"><table class="data-table" style="width:100%; font-size:12px; border-collapse:collapse;">';
+            }
+            
+            const cells = line.split('|').map(c => c.trim()).filter((c, idx, arr) => idx > 0 && idx < arr.length - 1);
+            
+            if (line.includes('---')) {
+                continue;
+            }
+            
+            if (tableHTML.includes('<thead>')) {
+                if (!tableHTML.includes('<tbody>')) {
+                    tableHTML += '<tbody>';
+                }
+                tableHTML += '<tr>' + cells.map(c => `<td style="border: 1px solid var(--border-color); padding: 8px 12px;">${c}</td>`).join('') + '</tr>';
+            } else {
+                tableHTML += '<thead><tr style="background: var(--bg-input); font-weight:600;">' + cells.map(c => `<th style="border: 1px solid var(--border-color); padding: 8px 12px; text-align: left;">${c}</th>`).join('') + '</tr></thead>';
+            }
+        } else {
+            if (inTable) {
+                inTable = false;
+                if (tableHTML.includes('<tbody>')) {
+                    tableHTML += '</tbody>';
+                }
+                tableHTML += '</table></div>';
+                processedLines.push(tableHTML);
+                tableHTML = '';
+            }
+            processedLines.push(line);
+        }
+    }
+    if (inTable) {
+        if (tableHTML.includes('<tbody>')) {
+            tableHTML += '</tbody>';
+        }
+        tableHTML += '</table></div>';
+        processedLines.push(tableHTML);
+    }
+
+    html = processedLines.join('\n');
+
+    // Bold (**text**)
+    html = html.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+    
+    // Inline code (`code`)
+    html = html.replace(/`(.*?)`/g, "<code>$1</code>");
+    
+    // Code blocks (```lang ... ```)
+    html = html.replace(/```(\w*)\n([\s\S]*?)```/g, "<pre style=\"background: var(--bg-input); padding: 12px; border-radius: 6px; overflow-x:auto;\"><code class=\"language-$1\">$2</code></pre>");
+    
+    // Unordered lists (- item)
+    html = html.replace(/^\s*-\s+(.*)$/gm, "<li style=\"margin-left: 20px; list-style-type: disc;\">$1</li>");
+    
+    // Line breaks
+    html = html.replace(/\n/g, "<br>");
+    html = html.replace(/(<br>){2,}/g, "<br><br>");
+
+    return html;
 }
