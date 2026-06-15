@@ -713,6 +713,52 @@
     "Expected Closing": null
   },
   {
+    "Created on": "2026-06-15 09:34:39",
+    "Source": "Other",
+    "RFQ Date": "2026-06-15",
+    "Company Name": "KAZAM EV TECH PRIVATE LIMITED",
+    "Opportunity": "KAZAM EV TECH PRIVATE LIMITED's opportunity",
+    "Contact Name": "Jaiganesh",
+    "Email": "r.jaiganesh@kazam.in",
+    "Phone": "+91 86751 97811",
+    "Salesperson": "Rishabh Madan",
+    "Next Follow up": "2026-06-16",
+    "Industry Segment": "Automotive & EV",
+    "Revenue (Millions USD)": 0.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 500000.0,
+    "Stage": "RFQ Received",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": false,
+    "City": "Bengaluru",
+    "Closed Date": null,
+    "Expected Closing": "2026-06-15"
+  },
+  {
+    "Created on": "2026-06-15 09:33:17",
+    "Source": "Other",
+    "RFQ Date": "2026-06-15",
+    "Company Name": "Revinoxx Technologies",
+    "Opportunity": "Revinoxx Technologies's opportunity",
+    "Contact Name": "Amit",
+    "Email": "Amit.kumar@revvinoxtechnologies.com",
+    "Phone": "+91 85868 68018",
+    "Salesperson": "Rishabh Madan",
+    "Next Follow up": "2026-06-16",
+    "Industry Segment": "EMS & Electronics Mfg",
+    "Revenue (Millions USD)": 0.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 2300000.0,
+    "Stage": "RFQ Received",
+    "Won/Lost": "Pending",
+    "Country": false,
+    "State": false,
+    "City": false,
+    "Closed Date": null,
+    "Expected Closing": "2026-06-17"
+  },
+  {
     "Created on": "2026-06-13 06:37:17",
     "Source": false,
     "RFQ Date": "2026-06-11",
@@ -848,7 +894,7 @@
     "State": false,
     "City": false,
     "Closed Date": null,
-    "Expected Closing": "2026-06-19"
+    "Expected Closing": "2026-06-16"
   },
   {
     "Created on": "2026-06-08 04:31:01",
@@ -2688,7 +2734,7 @@
     "State": false,
     "City": "Bangalore",
     "Closed Date": null,
-    "Expected Closing": "2026-06-19"
+    "Expected Closing": "2026-06-17"
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -3654,7 +3700,7 @@
     "State": false,
     "City": false,
     "Closed Date": null,
-    "Expected Closing": "2026-06-19"
+    "Expected Closing": "2026-06-16"
   },
   {
     "Created on": "2026-06-13 04:14:58",
@@ -3723,7 +3769,7 @@
     "State": "Karnataka (IN)",
     "City": "Bengaluru",
     "Closed Date": null,
-    "Expected Closing": "2026-06-15"
+    "Expected Closing": "2026-06-19"
   },
   {
     "Created on": "2026-06-08 04:39:27",
@@ -5817,6 +5863,29 @@
     "City": "New Delhi",
     "Closed Date": null,
     "Expected Closing": "2026-11-29"
+  },
+  {
+    "Created on": "2026-06-15 09:36:16",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "Yulu",
+    "Opportunity": "Yulu's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Automotive & EV",
+    "Revenue (Millions USD)": 28.0,
+    "Opportunity Type": "Box Build",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Karnataka (IN)",
+    "City": "Bengaluru",
+    "Closed Date": null,
+    "Expected Closing": null
   },
   {
     "Created on": "2026-06-15 08:58:11",
@@ -20015,9 +20084,9 @@
     "RFQ Date": null,
     "Company Name": "VETO SWITCHGEARS AND CABLES LIMITED",
     "Opportunity": "Veto Switchgears & Cables Ltd.",
-    "Contact Name": "Akshay Kumar Gurnani",
+    "Contact Name": "Lokesh Bhati",
     "Email": "NA",
-    "Phone": "+91 141 410 0444",
+    "Phone": "+91 80006 11645",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "Power Electronics & Electrical",
