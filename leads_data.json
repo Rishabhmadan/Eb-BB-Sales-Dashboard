@@ -17181,7 +17181,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 3.72
+    "Probability": 18.4
   },
   {
     "Created on": "2026-05-18 07:13:50",
@@ -18926,14 +18926,14 @@
     "Revenue (Millions USD)": 2.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 100000.0,
-    "Stage": "Connected",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 55.29
+    "Probability": 71.15
   },
   {
     "Created on": "2026-05-12 13:13:44",
