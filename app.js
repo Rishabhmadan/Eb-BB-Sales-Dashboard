@@ -2683,6 +2683,16 @@ function renderExecutivePOTimeline() {
             else if (lead['Stage'] === 'RFQ Expected') confidence = 85;
         }
         confidence = Math.round(confidence);
+
+        // Color coding logic: >=90 green, >=80 orange, >=50 yellow, <50 red
+        let confidenceColor = 'var(--color-rose)'; // Red (<50)
+        if (confidence >= 90) {
+            confidenceColor = 'var(--color-emerald)'; // Green
+        } else if (confidence >= 80) {
+            confidenceColor = '#f97316'; // Orange
+        } else if (confidence >= 50) {
+            confidenceColor = 'var(--color-gold)'; // Yellow
+        }
         
         const cardClass = isConfirmed ? 'executive-milestone-card confirmed' : 'executive-milestone-card';
 
@@ -2699,10 +2709,10 @@ function renderExecutivePOTimeline() {
                 <div style="margin-top: 4px;">
                     <div style="display:flex; justify-content:space-between; font-size:9px; color: var(--text-muted); margin-bottom:3px;">
                         <span>Deal Closure Confidence</span>
-                        <span>${confidence}%</span>
+                        <span style="color: ${confidenceColor}; font-weight: 700;">${confidence}%</span>
                     </div>
                     <div style="width: 100%; height: 6px; background-color: var(--border-color); border-radius: 3px; overflow:hidden;">
-                        <div style="width: ${confidence}%; height: 100%; background-color: ${isConfirmed ? 'var(--color-emerald)' : 'var(--color-blue)'}; border-radius: 3px;"></div>
+                        <div style="width: ${confidence}%; height: 100%; background-color: ${confidenceColor}; border-radius: 3px;"></div>
                     </div>
                 </div>
 
