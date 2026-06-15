@@ -613,9 +613,18 @@
 
                     <!-- Closures & PO Projections Section -->
                     <div class="chart-card span-2">
-                        <div class="chart-header">
-                            <h3>Expected PO Closures Timeline</h3>
-                            <p>Revenue timeline of upcoming closures (Confirmed Odoo dates & projected average turnaround)</p>
+                        <div class="chart-header header-row">
+                            <div>
+                                <h3>Expected PO Closures Timeline</h3>
+                                <p>Revenue timeline of upcoming closures (Confirmed Odoo dates & projected average turnaround)</p>
+                            </div>
+                            <div class="granularity-selector" id="rfq-closures-grain-toggle">
+                                <button class="btn btn-sm btn-secondary" data-grain="daily">Daily</button>
+                                <button class="btn btn-sm btn-secondary" data-grain="weekly">Weekly</button>
+                                <button class="btn btn-sm btn-secondary active" data-grain="monthly">Monthly</button>
+                                <button class="btn btn-sm btn-secondary" data-grain="quarterly">Quarterly</button>
+                                <button class="btn btn-sm btn-secondary" data-grain="annual">Yearly</button>
+                            </div>
                         </div>
                         <div class="chart-body">
                             <canvas id="chart-rfq-closures-timeline"></canvas>

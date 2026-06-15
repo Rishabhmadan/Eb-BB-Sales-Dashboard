@@ -9,6 +9,7 @@ const rowsPerPage = 12;
 let rfqGranularity = 'monthly';
 let selectedRFQInterval = null;
 let selectedRFQClosureInterval = null;
+let rfqClosuresGranularity = 'monthly';
 let rfqAvgTurnaround = 27;
 let activeCurrency = 'INR';
 let usdToInrRate = 83.0; // 1 USD = 83 INR (fallback rate)
@@ -2245,19 +2246,7 @@ function updateRFQCharts() {
             if (d > maxDate) maxDate = d;
         });
 
-        // Initialize helper to get week key
-        function getWeekKey(d) {
-            const target = new Date(d.valueOf());
-            const dayNr = (d.getDay() + 6) % 7;
-            target.setDate(target.getDate() - dayNr + 3);
-            const firstThursday = target.valueOf();
-            target.setMonth(0, 1);
-            if (target.getDay() !== 4) {
-                target.setMonth(0, 1 + ((4 - target.getDay()) + 7) % 7);
-            }
-            const weekNum = 1 + Math.ceil((firstThursday - target) / 604800000);
-            return `${d.getFullYear()}-W${weekNum.toString().padStart(2, '0')}`;
-        }
+
 
         // Pre-populate all intervals in range with 0s
         if (rfqGranularity === 'daily') {
@@ -2665,20 +2654,79 @@ function updateRFQCharts() {
     });
     const avgTurnaround = validPairs > 0 ? (totalDays / validPairs) : 27;
 
-    // 6. Expected PO Closures Timeline (6-month forward-looking)
-    const closureMonths = [];
-    const closureData = {}; // key: "YYYY-MM" -> { confirmed: 0, projected: 0 }
+    // 6. Expected PO Closures Timeline (Dynamic forward-looking granularity)
+    const closureIntervals = [];
+    const closureData = {}; // key depends on granularity -> { confirmed: 0, projected: 0 }
     
     const nowTemp = new Date();
-    // Generate next 6 months starting from current month
-    for (let i = 0; i < 6; i++) {
-        const d = new Date(nowTemp.getFullYear(), nowTemp.getMonth() + i, 1);
-        const key = `${d.getFullYear()}-${(d.getMonth() + 1).toString().padStart(2, '0')}`;
-        closureMonths.push({
-            key: key,
-            label: d.toLocaleDateString('en-US', { month: 'short', year: 'numeric' })
-        });
-        closureData[key] = { confirmed: 0, projected: 0 };
+    const refDate = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate());
+
+    if (rfqClosuresGranularity === 'daily') {
+        // Generate next 30 days
+        for (let i = 0; i < 30; i++) {
+            const d = new Date(refDate.getTime() + i * 24 * 60 * 60 * 1000);
+            const key = d.toISOString().substring(0, 10);
+            closureIntervals.push({
+                key: key,
+                label: d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
+            });
+            closureData[key] = { confirmed: 0, projected: 0 };
+        }
+    } else if (rfqClosuresGranularity === 'weekly') {
+        // Generate next 12 weeks
+        const d = new Date(refDate.getTime());
+        const day = d.getDay();
+        const diff = d.getDate() - day + (day === 0 ? -6 : 1);
+        d.setDate(diff);
+        
+        for (let i = 0; i < 12; i++) {
+            const key = getWeekKey(d);
+            closureIntervals.push({
+                key: key,
+                label: key.replace('-W', ' Wk ')
+            });
+            closureData[key] = { confirmed: 0, projected: 0 };
+            d.setDate(d.getDate() + 7);
+        }
+    } else if (rfqClosuresGranularity === 'monthly') {
+        // Generate next 6 months
+        for (let i = 0; i < 6; i++) {
+            const d = new Date(refDate.getFullYear(), refDate.getMonth() + i, 1);
+            const key = `${d.getFullYear()}-${(d.getMonth() + 1).toString().padStart(2, '0')}`;
+            closureIntervals.push({
+                key: key,
+                label: d.toLocaleDateString('en-US', { month: 'short', year: 'numeric' })
+            });
+            closureData[key] = { confirmed: 0, projected: 0 };
+        }
+    } else if (rfqClosuresGranularity === 'quarterly') {
+        // Generate next 6 quarters
+        let currYr = refDate.getFullYear();
+        let currQ = Math.floor(refDate.getMonth() / 3) + 1;
+        for (let i = 0; i < 6; i++) {
+            const key = `${currYr}-Q${currQ}`;
+            closureIntervals.push({
+                key: key,
+                label: `Q${currQ} ${currYr}`
+            });
+            closureData[key] = { confirmed: 0, projected: 0 };
+            currQ++;
+            if (currQ > 4) {
+                currQ = 1;
+                currYr++;
+            }
+        }
+    } else if (rfqClosuresGranularity === 'annual') {
+        // Generate next 3 years
+        let startYr = refDate.getFullYear();
+        for (let i = 0; i < 3; i++) {
+            const key = `${startYr + i}`;
+            closureIntervals.push({
+                key: key,
+                label: `${startYr + i}`
+            });
+            closureData[key] = { confirmed: 0, projected: 0 };
+        }
     }
 
     // Filter active RFQ leads
@@ -2688,7 +2736,20 @@ function updateRFQCharts() {
         const isConfirmed = !!lead['Expected Closing'];
         const expDate = getLeadExpectedClosingDate(lead, avgTurnaround);
         if (expDate) {
-            const key = `${expDate.getFullYear()}-${(expDate.getMonth() + 1).toString().padStart(2, '0')}`;
+            let key = '';
+            if (rfqClosuresGranularity === 'daily') {
+                key = expDate.toISOString().substring(0, 10);
+            } else if (rfqClosuresGranularity === 'weekly') {
+                key = getWeekKey(expDate);
+            } else if (rfqClosuresGranularity === 'monthly') {
+                key = `${expDate.getFullYear()}-${(expDate.getMonth() + 1).toString().padStart(2, '0')}`;
+            } else if (rfqClosuresGranularity === 'quarterly') {
+                const quarter = Math.floor(expDate.getMonth() / 3) + 1;
+                key = `${expDate.getFullYear()}-Q${quarter}`;
+            } else if (rfqClosuresGranularity === 'annual') {
+                key = `${expDate.getFullYear()}`;
+            }
+
             if (closureData[key] !== undefined) {
                 if (isConfirmed) {
                     closureData[key].confirmed += (lead['Expected Revenue'] || 0) / currDetails.scale;
@@ -2699,9 +2760,9 @@ function updateRFQCharts() {
         }
     });
 
-    const labelsClosures = closureMonths.map(m => m.label);
-    const confirmedValues = closureMonths.map(m => closureData[m.key].confirmed);
-    const projectedValues = closureMonths.map(m => closureData[m.key].projected);
+    const labelsClosures = closureIntervals.map(m => m.label);
+    const confirmedValues = closureIntervals.map(m => closureData[m.key].confirmed);
+    const projectedValues = closureIntervals.map(m => closureData[m.key].projected);
 
     renderChart('chart-rfq-closures-timeline', {
         type: 'bar',
@@ -2851,12 +2912,26 @@ function renderRFQTable() {
         });
     }
 
-    // Apply chart click expected closure month filter if set
+    // Apply chart click expected closure interval filter if set
     if (selectedRFQClosureInterval) {
         rfqLeads = rfqLeads.filter(lead => {
             const expDate = getLeadExpectedClosingDate(lead, rfqAvgTurnaround);
             if (!expDate) return false;
-            const label = expDate.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+            
+            let label = '';
+            if (rfqClosuresGranularity === 'daily') {
+                label = expDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+            } else if (rfqClosuresGranularity === 'weekly') {
+                label = getWeekKey(expDate).replace('-W', ' Wk ');
+            } else if (rfqClosuresGranularity === 'monthly') {
+                label = expDate.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+            } else if (rfqClosuresGranularity === 'quarterly') {
+                const quarter = Math.floor(expDate.getMonth() / 3) + 1;
+                label = `Q${quarter} ${expDate.getFullYear()}`;
+            } else if (rfqClosuresGranularity === 'annual') {
+                label = expDate.getFullYear().toString();
+            }
+            
             return label === selectedRFQClosureInterval;
         });
     }
@@ -2913,6 +2988,20 @@ function registerRFQEvents() {
         });
     });
 
+    const closureButtons = document.querySelectorAll('#rfq-closures-grain-toggle button');
+    if (closureButtons) {
+        closureButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                closureButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                rfqClosuresGranularity = btn.getAttribute('data-grain');
+                selectedRFQClosureInterval = null; // Clear active chart filter on granularity switch
+                updateRFQCharts();
+                renderRFQTable();
+            });
+        });
+    }
+
     const clearBtn = document.getElementById('btn-clear-rfq-filter');
     if (clearBtn) {
         clearBtn.addEventListener('click', () => {
@@ -2921,6 +3010,20 @@ function registerRFQEvents() {
             renderRFQTable();
         });
     }
+}
+
+// Helper: returns ISO week key (e.g. "2026-W24") for a given Date object
+function getWeekKey(d) {
+    const target = new Date(d.valueOf());
+    const dayNr = (d.getDay() + 6) % 7;
+    target.setDate(target.getDate() - dayNr + 3);
+    const firstThursday = target.valueOf();
+    target.setMonth(0, 1);
+    if (target.getDay() !== 4) {
+        target.setMonth(0, 1 + ((4 - target.getDay()) + 7) % 7);
+    }
+    const weekNum = 1 + Math.ceil((firstThursday - target) / 604800000);
+    return `${d.getFullYear()}-W${weekNum.toString().padStart(2, '0')}`;
 }
 
 // Helper: returns the effective date for RFQ tracking (Win Date for won leads, RFQ Received Date otherwise)
