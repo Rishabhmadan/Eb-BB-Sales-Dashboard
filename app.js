@@ -2181,7 +2181,6 @@ function registerEventListeners() {
             }
         });
     }
-    }
 
     // 2. Dropdown Filter Selection triggers recalculations
     const dropdowns = ['filter-salesperson', 'filter-stage', 'filter-industry', 'filter-type', 'filter-status', 'filter-rfq-value'];
