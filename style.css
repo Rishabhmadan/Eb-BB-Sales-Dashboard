@@ -1654,6 +1654,13 @@ body {
     z-index: 1100;
 }
 
+/* Compact styling for upcoming closures table in RFQ tracking */
+#upcoming-closures-table th,
+#upcoming-closures-table td {
+    padding: 10px 12px;
+    white-space: nowrap;
+}
+
 
 
 

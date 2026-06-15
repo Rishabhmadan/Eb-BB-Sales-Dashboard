@@ -8,6 +8,8 @@ let currentPage = 1;
 const rowsPerPage = 12;
 let rfqGranularity = 'monthly';
 let selectedRFQInterval = null;
+let selectedRFQClosureInterval = null;
+let rfqAvgTurnaround = 27;
 let activeCurrency = 'INR';
 let usdToInrRate = 83.0; // 1 USD = 83 INR (fallback rate)
 let selectedLeadForModal = null;
@@ -2199,6 +2201,7 @@ function updateRFQKPIs() {
         }
     });
     const avgTurnaround = validPairs > 0 ? (totalDays / validPairs) : 27; // Fallback to 27 days
+    rfqAvgTurnaround = avgTurnaround;
     document.getElementById('kpi-rfq-turnaround-days').textContent = Math.round(avgTurnaround) + ' Days';
 
     // Calculate Expected Closures within the next 30 days
@@ -2706,7 +2709,7 @@ function updateRFQCharts() {
             labels: labelsClosures,
             datasets: [
                 {
-                    label: `Confirmed Odoo Closures (${activeCurrency})`,
+                    label: `Confirmed Closures (${activeCurrency})`,
                     data: confirmedValues,
                     backgroundColor: '#10b981', // Emerald
                     borderRadius: 4
@@ -2720,6 +2723,28 @@ function updateRFQCharts() {
             ]
         },
         options: {
+            onClick: (event, elements, chart) => {
+                if (elements.length > 0) {
+                    const firstElement = elements[0];
+                    const dataIndex = firstElement.index;
+                    const clickedLabel = chart.data.labels[dataIndex];
+                    if (selectedRFQClosureInterval === clickedLabel) {
+                        selectedRFQClosureInterval = null;
+                    } else {
+                        selectedRFQClosureInterval = clickedLabel;
+                        selectedRFQInterval = null; // Clear standard RFQ Date filter to avoid conflict
+                    }
+                    renderRFQTable();
+                    if (selectedRFQClosureInterval) {
+                        const ledgerContainer = document.getElementById('rfq-ledger-container');
+                        if (ledgerContainer) {
+                            setTimeout(() => {
+                                ledgerContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            }, 80);
+                        }
+                    }
+                }
+            },
             responsive: true,
             maintainAspectRatio: false,
             plugins: {
@@ -2784,7 +2809,7 @@ function updateRFQCharts() {
                 const dateStr = item.expDate.toISOString().substring(0, 10);
                 const valStr = formatCurrency(item.lead['Expected Revenue'] || 0);
                 const sourceBadge = item.isConfirmed 
-                    ? `<span class="badge badge-won" style="font-size: 9px; padding: 2px 4px;">Odoo</span>`
+                    ? `<span class="badge badge-won" style="font-size: 9px; padding: 2px 4px;">Confirmed</span>`
                     : `<span class="badge badge-pending" style="font-size: 9px; padding: 2px 4px; background-color: rgba(0, 0, 255, 0.1); color: var(--color-blue);">Projected</span>`;
                 
                 tr.innerHTML = `
@@ -2809,7 +2834,10 @@ function renderRFQTable() {
     const filterVal = document.getElementById('rfq-filter-val');
     if (selectedRFQInterval) {
         if (filterIndicator) filterIndicator.style.display = 'flex';
-        if (filterVal) filterVal.textContent = selectedRFQInterval;
+        if (filterVal) filterVal.textContent = `RFQ Date: ${selectedRFQInterval}`;
+    } else if (selectedRFQClosureInterval) {
+        if (filterIndicator) filterIndicator.style.display = 'flex';
+        if (filterVal) filterVal.textContent = `Expected Closing: ${selectedRFQClosureInterval}`;
     } else {
         if (filterIndicator) filterIndicator.style.display = 'none';
     }
@@ -2820,6 +2848,16 @@ function renderRFQTable() {
     if (selectedRFQInterval) {
         rfqLeads = rfqLeads.filter(lead => {
             return getLabelForRFQDate(getLeadRFQDate(lead), rfqGranularity) === selectedRFQInterval;
+        });
+    }
+
+    // Apply chart click expected closure month filter if set
+    if (selectedRFQClosureInterval) {
+        rfqLeads = rfqLeads.filter(lead => {
+            const expDate = getLeadExpectedClosingDate(lead, rfqAvgTurnaround);
+            if (!expDate) return false;
+            const label = expDate.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+            return label === selectedRFQClosureInterval;
         });
     }
 
@@ -2879,6 +2917,7 @@ function registerRFQEvents() {
     if (clearBtn) {
         clearBtn.addEventListener('click', () => {
             selectedRFQInterval = null;
+            selectedRFQClosureInterval = null;
             renderRFQTable();
         });
     }
