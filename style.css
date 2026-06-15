@@ -1823,3 +1823,21 @@ body {
     text-decoration: underline;
     opacity: 0.85;
 }
+
+.executive-milestone-card.selected {
+    border-color: var(--color-blue) !important;
+    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(0, 0, 255, 0.08) 100%) !important;
+    box-shadow: 0 0 0 1px var(--color-blue) !important;
+}
+.executive-milestone-card.confirmed.selected {
+    border-color: var(--color-emerald) !important;
+    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(16, 185, 129, 0.08) 100%) !important;
+    box-shadow: 0 0 0 1px var(--color-emerald) !important;
+}
+.clickable-opp-title {
+    cursor: pointer;
+    color: var(--color-blue) !important;
+}
+.clickable-opp-title:hover {
+    text-decoration: underline !important;
+}

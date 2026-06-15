@@ -17,6 +17,8 @@ let rfqAvgTurnaround = 27;
 let activeCurrency = 'INR';
 let usdToInrRate = 83.0; // 1 USD = 83 INR (fallback rate)
 let selectedLeadForModal = null;
+let selectedExecutiveClosureIds = new Set();
+let currentUpcomingPOTimelineLeads = [];
 
 const VALID_TABS = ['overview', 'pipeline', 'team', 'geo', 'rfq', 'explorer', 'ai'];
 
@@ -2588,6 +2590,46 @@ function renderTables() {
     }
 }
 
+function toggleExecutiveClosureSelection(leadId, cardEl) {
+    if (selectedExecutiveClosureIds.has(leadId)) {
+        selectedExecutiveClosureIds.delete(leadId);
+        cardEl.classList.remove('selected');
+        const icon = cardEl.querySelector('.select-icon');
+        if (icon) icon.style.opacity = 0;
+    } else {
+        selectedExecutiveClosureIds.add(leadId);
+        cardEl.classList.add('selected');
+        const icon = cardEl.querySelector('.select-icon');
+        if (icon) icon.style.opacity = 1;
+    }
+    updateExecutivePOTotal();
+}
+
+function updateExecutivePOTotal() {
+    let totalRevenue = 0;
+    let selectedCount = 0;
+    
+    currentUpcomingPOTimelineLeads.forEach(item => {
+        if (selectedExecutiveClosureIds.has(item.lead.id)) {
+            totalRevenue += item.lead['Expected Revenue'] || 0;
+            selectedCount += 1;
+        }
+    });
+    
+    if (selectedCount === 0) {
+        currentUpcomingPOTimelineLeads.forEach(item => {
+            totalRevenue += item.lead['Expected Revenue'] || 0;
+        });
+    }
+
+    const totalDisplayEl = document.getElementById('executive-closures-total-value');
+    if (totalDisplayEl) {
+        const prefix = selectedCount > 0 ? `Selected (${selectedCount}):` : 'Total:';
+        totalDisplayEl.parentNode.firstElementChild.textContent = prefix;
+        totalDisplayEl.textContent = formatCurrency(totalRevenue);
+    }
+}
+
 // 0b. OVERVIEW TAB - Executive PO Closures Milestone Timeline
 function renderExecutivePOTimeline() {
     const timelineContainer = document.getElementById('executive-po-timeline');
@@ -2644,17 +2686,8 @@ function renderExecutivePOTimeline() {
         return a.expDate - b.expDate; // Soonest close date first
     });
 
-    // Calculate total expected revenue for the filtered list
-    let totalRevenue = 0;
-    upcomingList.forEach(item => {
-        totalRevenue += item.lead['Expected Revenue'] || 0;
-    });
-
-    // Update UI element for the total value
-    const totalDisplayEl = document.getElementById('executive-closures-total-value');
-    if (totalDisplayEl) {
-        totalDisplayEl.textContent = formatCurrency(totalRevenue);
-    }
+    currentUpcomingPOTimelineLeads = upcomingList;
+    updateExecutivePOTotal();
 
     if (upcomingList.length === 0) {
         timelineContainer.innerHTML = `
@@ -2701,13 +2734,19 @@ function renderExecutivePOTimeline() {
             confidenceColor = 'var(--color-gold)'; // Yellow
         }
         
+        const isSelected = selectedExecutiveClosureIds.has(lead.id);
         const cardClass = isConfirmed ? 'executive-milestone-card confirmed' : 'executive-milestone-card';
+        const selectedClass = isSelected ? ' selected' : '';
+        const iconOpacity = isSelected ? 1 : 0;
 
         const milestoneHTML = `
-            <div class="${cardClass}" onclick="openLeadDetailsModal('${lead.id}')">
-                <span class="milestone-date-badge">${dateLabel}</span>
+            <div class="${cardClass}${selectedClass}" onclick="toggleExecutiveClosureSelection('${lead.id}', this)">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                    <span class="milestone-date-badge">${dateLabel}</span>
+                    <i class="fa-solid fa-circle-check select-icon" style="color: ${confidenceColor}; font-size: 14px; opacity: ${iconOpacity}; transition: opacity 0.2s ease;"></i>
+                </div>
                 <div>
-                    <h4 class="milestone-opp" title="${lead['Opportunity']}">${shortOpp}</h4>
+                    <h4 class="milestone-opp clickable-opp-title" title="${lead['Opportunity']}" onclick="event.stopPropagation(); openLeadDetailsModal('${lead.id}')">${shortOpp}</h4>
                     <p class="milestone-company"><span class="clickable-company-name" onclick="event.stopPropagation(); openCompanyModal(this.textContent)">${company}</span></p>
                 </div>
                 <div class="milestone-revenue">${revStr}</div>
