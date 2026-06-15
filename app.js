@@ -130,7 +130,8 @@ async function initApp() {
         allLeads = await response.json();
         
         // Clean some values
-        allLeads.forEach(lead => {
+        allLeads.forEach((lead, index) => {
+            lead.id = 'lead_' + index;
             lead['Expected Revenue'] = parseFloat(lead['Expected Revenue']) || 0;
             lead['Revenue (Millions USD)'] = parseFloat(lead['Revenue (Millions USD)']) || 0;
             // Clean Salesperson if null
@@ -180,24 +181,40 @@ async function initApp() {
     }
 }
 
-// Format numbers as currency (auto-scale: Billions, Millions, Thousands)
+// Format numbers as currency (auto-scale: Billions, Millions, Thousands for USD; Crores, Lakhs, Thousands for INR)
 function formatCurrency(value) {
-    let val = value;
+    let val = parseFloat(value);
+    if (isNaN(val)) val = 0;
     let symbol = '₹';
     
     if (activeCurrency === 'USD') {
-        val = value / usdToInrRate;
+        val = val / usdToInrRate;
         symbol = '$';
+        
+        if (val >= 1e9) {
+            return `${symbol}${(val / 1e9).toFixed(2)}B`;
+        } else if (val >= 1e6) {
+            return `${symbol}${(val / 1e6).toFixed(2)}M`;
+        } else if (val >= 1e3) {
+            return `${symbol}${(val / 1e3).toFixed(0)}K`;
+        }
+        return `${symbol}${val.toFixed(0)}`;
+    } else {
+        // INR formatting: Crores (Cr), Lakhs (L), Thousands (K)
+        if (val >= 1e7) {
+            return `${symbol}${(val / 1e7).toFixed(2)}Cr`;
+        } else if (val >= 1e5) {
+            return `${symbol}${(val / 1e5).toFixed(2)}L`;
+        } else if (val >= 1e3) {
+            return `${symbol}${(val / 1e3).toFixed(0)}K`;
+        }
+        return `${symbol}${val.toFixed(0)}`;
     }
-    
-    if (val >= 1e9) {
-        return `${symbol}${(val / 1e9).toFixed(2)}B`;
-    } else if (val >= 1e6) {
-        return `${symbol}${(val / 1e6).toFixed(2)}M`;
-    } else if (val >= 1e3) {
-        return `${symbol}${(val / 1e3).toFixed(0)}K`;
-    }
-    return `${symbol}${val.toFixed(0)}`;
+}
+
+function formatChartValue(v) {
+    const currDetails = getCurrencyDetails();
+    return formatCurrency(v * currDetails.scale);
 }
 
 function getCurrencyDetails() {
@@ -323,11 +340,8 @@ function renderModalLeadsTable(leads) {
         const cleanDate = lead['Created on'] ? lead['Created on'].substring(0, 10) : 'N/A';
         const shortOppName = lead['Opportunity'] ? lead['Opportunity'].split(' - ')[0] : 'N/A';
         
-        // Escape opportunity name for the onclick handler
-        const escOppName = lead['Opportunity'].replace(/'/g, "\\'");
-        
         tr.innerHTML = `
-            <td><span class="clickable-opportunity" onclick="openLeadDetailsModal('${escOppName}')" title="${lead['Opportunity']}">${shortOppName}</span></td>
+            <td><span class="clickable-opportunity" onclick="openLeadDetailsModal('${lead.id}')" title="${lead['Opportunity']}">${shortOppName}</span></td>
             <td><span class="clickable-company-name" onclick="event.stopPropagation(); openCompanyModal(this.textContent)" title="${lead['Company Name']}">${lead['Company Name'] || 'N/A'}</span></td>
             <td>${lead['Salesperson'] || 'Unassigned'}</td>
             <td><span style="color:var(--color-blue); font-weight:500;">${lead['Stage']}</span></td>
@@ -403,8 +417,8 @@ function goToExplorerFilter(type, value) {
 }
 
 // Open Lead Details Modal and populate information
-function openLeadDetailsModal(oppName) {
-    const lead = allLeads.find(l => l['Opportunity'] === oppName);
+function openLeadDetailsModal(leadId) {
+    const lead = allLeads.find(l => l.id === leadId);
     if (!lead) return;
     
     selectedLeadForModal = lead;
@@ -578,7 +592,7 @@ function openCompanyModal(companyName) {
         // On click, close company modal and show lead details modal
         tr.onclick = (e) => {
             hideModal('company-details-modal');
-            openLeadDetailsModal(lead['Opportunity']);
+            openLeadDetailsModal(lead.id);
         };
         
         let statusBadge = '';
@@ -1707,7 +1721,7 @@ function updateCharts() {
                         yAxisID: 'y'
                     },
                     {
-                        label: `Expected Revenue in Millions (${activeCurrency}) (Right Axis)`,
+                        label: activeCurrency === 'USD' ? 'Expected Revenue in Millions (USD) (Right Axis)' : 'Expected Revenue (INR) (Right Axis)',
                         data: revenues,
                         borderColor: '#10b981',
                         backgroundColor: 'rgba(16, 185, 129, 0.05)',
@@ -1725,6 +1739,16 @@ function updateCharts() {
                     legend: {
                         position: 'top',
                         labels: { color: textColor, font: { family: 'Outfit', size: 11 } }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                if (context.datasetIndex === 1) {
+                                    return ` ${context.dataset.label}: ${formatChartValue(context.raw)}`;
+                                }
+                                return ` ${context.dataset.label}: ${context.raw}`;
+                            }
+                        }
                     }
                 },
                 scales: {
@@ -1747,7 +1771,7 @@ function updateCharts() {
                         ticks: {
                             color: textColor,
                             font: { family: 'Outfit' },
-                            callback: function(value) { return currDetails.symbol + value.toFixed(1) + 'M'; }
+                            callback: function(value) { return formatChartValue(value); }
                         }
                     }
                 }
@@ -1790,7 +1814,7 @@ function updateCharts() {
                     tooltip: {
                         callbacks: {
                             label: function(context) {
-                                return ` ${context.label}: ${currDetails.symbol}${context.raw.toFixed(1)}M`;
+                                return ` ${context.label}: ${formatChartValue(context.raw)}`;
                             }
                         }
                     }
@@ -1817,7 +1841,7 @@ function updateCharts() {
             data: {
                 labels: labels,
                 datasets: [{
-                    label: `Expected Revenue in Millions (${activeCurrency})`,
+                    label: activeCurrency === 'USD' ? 'Expected Revenue in Millions (USD)' : 'Expected Revenue (INR)',
                     data: data,
                     backgroundColor: '#8b5cf6',
                     borderRadius: 4
@@ -1828,12 +1852,23 @@ function updateCharts() {
                 responsive: true,
                 maintainAspectRatio: false,
                 plugins: {
-                    legend: { display: false }
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return ` ${context.label}: ${formatChartValue(context.raw)}`;
+                            }
+                        }
+                    }
                 },
                 scales: {
                     x: {
                         grid: { color: gridColor },
-                        ticks: { color: textColor, font: { family: 'Outfit' } }
+                        ticks: {
+                            color: textColor,
+                            font: { family: 'Outfit' },
+                            callback: function(v) { return formatChartValue(v); }
+                        }
                     },
                     y: {
                         grid: { display: false },
@@ -1869,7 +1904,7 @@ function updateCharts() {
                 labels: labels,
                 datasets: [
                     {
-                        label: `Total Expected Revenue in Millions (${activeCurrency})`,
+                        label: activeCurrency === 'USD' ? 'Total Expected Revenue in Millions (USD)' : 'Total Expected Revenue (INR)',
                         data: revenues,
                         backgroundColor: '#0000ff',
                         borderRadius: 4,
@@ -1894,6 +1929,16 @@ function updateCharts() {
                 plugins: {
                     legend: {
                         labels: { color: textColor, font: { family: 'Outfit', size: 11 } }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                if (context.datasetIndex === 0) {
+                                    return ` ${context.dataset.label}: ${formatChartValue(context.raw)}`;
+                                }
+                                return ` ${context.dataset.label}: ${context.raw}`;
+                            }
+                        }
                     }
                 },
                 scales: {
@@ -1905,7 +1950,11 @@ function updateCharts() {
                         type: 'linear',
                         position: 'left',
                         grid: { color: gridColor },
-                        ticks: { color: textColor, font: { family: 'Outfit' } }
+                        ticks: {
+                            color: textColor,
+                            font: { family: 'Outfit' },
+                            callback: function(v) { return formatChartValue(v); }
+                        }
                     },
                     y1: {
                         type: 'linear',
@@ -1963,7 +2012,7 @@ function updateCharts() {
                 labels: labels,
                 datasets: [
                     {
-                        label: `Total Expected Revenue in Millions (${activeCurrency})`,
+                        label: activeCurrency === 'USD' ? 'Total Expected Revenue in Millions (USD)' : 'Total Expected Revenue (INR)',
                         data: revenues,
                         backgroundColor: 'rgba(0, 0, 255, 0.75)',
                         borderColor: '#0000ff',
@@ -1989,6 +2038,16 @@ function updateCharts() {
                     legend: {
                         position: 'top',
                         labels: { color: textColor, font: { family: 'Outfit', size: 11 } }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                if (context.datasetIndex === 0) {
+                                    return ` ${context.dataset.label}: ${formatChartValue(context.raw)}`;
+                                }
+                                return ` ${context.dataset.label}: ${context.raw}`;
+                            }
+                        }
                     }
                 },
                 scales: {
@@ -2003,7 +2062,7 @@ function updateCharts() {
                         ticks: {
                             color: textColor,
                             font: { family: 'Outfit' },
-                            callback: function(v) { return currDetails.symbol + v + 'M'; }
+                            callback: function(v) { return formatChartValue(v); }
                         }
                     },
                     y1: {
@@ -2045,7 +2104,7 @@ function updateCharts() {
                 labels: labels,
                 datasets: [
                     {
-                        label: `Total Expected Revenue in Millions (${activeCurrency})`,
+                        label: activeCurrency === 'USD' ? 'Total Expected Revenue in Millions (USD)' : 'Total Expected Revenue (INR)',
                         data: pipelineVal,
                         backgroundColor: 'rgba(139, 92, 246, 0.4)',
                         borderColor: '#8b5cf6',
@@ -2053,7 +2112,7 @@ function updateCharts() {
                         borderRadius: 4
                     },
                     {
-                        label: `Won Value in Millions (${activeCurrency})`,
+                        label: activeCurrency === 'USD' ? 'Won Value in Millions (USD)' : 'Won Value (INR)',
                         data: wonVal,
                         backgroundColor: '#10b981',
                         borderRadius: 4
@@ -2067,6 +2126,13 @@ function updateCharts() {
                     legend: {
                         position: 'top',
                         labels: { color: textColor, font: { family: 'Outfit', size: 11 } }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return ` ${context.dataset.label}: ${formatChartValue(context.raw)}`;
+                            }
+                        }
                     }
                 },
                 scales: {
@@ -2081,7 +2147,7 @@ function updateCharts() {
                         ticks: {
                             color: textColor,
                             font: { family: 'Outfit' },
-                            callback: function(v) { return currDetails.symbol + v + 'M'; }
+                            callback: function(v) { return formatChartValue(v); }
                         }
                     }
                 }
@@ -2125,7 +2191,7 @@ function updateCharts() {
                     tooltip: {
                         callbacks: {
                             label: function(context) {
-                                return ` ${context.label}: ${currDetails.symbol}${context.raw.toFixed(1)}M`;
+                                return ` ${context.label}: ${formatChartValue(context.raw)}`;
                             }
                         }
                     }
@@ -2163,7 +2229,7 @@ function updateCharts() {
             data: {
                 labels: sortedStates.map(x => x[0]),
                 datasets: [{
-                    label: `Expected Revenue in Millions (${activeCurrency})`,
+                    label: activeCurrency === 'USD' ? 'Expected Revenue in Millions (USD)' : 'Expected Revenue (INR)',
                     data: sortedStates.map(x => x[1] / currDetails.scale),
                     backgroundColor: 'rgba(0, 0, 255, 0.85)',
                     borderRadius: 4
@@ -2173,11 +2239,24 @@ function updateCharts() {
                 indexAxis: 'y',
                 responsive: true,
                 maintainAspectRatio: false,
-                plugins: { legend: { display: false } },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return ` ${context.label}: ${formatChartValue(context.raw)}`;
+                            }
+                        }
+                    }
+                },
                 scales: {
                     x: {
                         grid: { color: gridColor },
-                        ticks: { color: textColor, font: { family: 'Outfit' } }
+                        ticks: {
+                            color: textColor,
+                            font: { family: 'Outfit' },
+                            callback: function(v) { return formatChartValue(v); }
+                        }
                     },
                     y: {
                         grid: { display: false },
@@ -2211,7 +2290,7 @@ function updateCharts() {
                     tooltip: {
                         callbacks: {
                             label: function(context) {
-                                return ` ${context.label}: ${currDetails.symbol}${context.raw.toFixed(1)}M`;
+                                return ` ${context.label}: ${formatChartValue(context.raw)}`;
                             }
                         }
                     }
@@ -2243,7 +2322,7 @@ function updateCharts() {
                     tooltip: {
                         callbacks: {
                             label: function(context) {
-                                return ` ${context.label}: ${currDetails.symbol}${context.raw.toFixed(1)}M`;
+                                return ` ${context.label}: ${formatChartValue(context.raw)}`;
                             }
                         }
                     }
@@ -2288,7 +2367,7 @@ function renderTables() {
                 top20.forEach(lead => {
                     const tr = document.createElement('tr');
                     tr.className = 'clickable-row';
-                    tr.setAttribute('onclick', `openLeadDetailsModal('${lead['Opportunity'].replace(/'/g, "\\'")}')`);
+                    tr.setAttribute('onclick', `openLeadDetailsModal('${lead.id}')`);
                     const cleanDate = lead['Created on'] ? lead['Created on'].substring(0, 10) : 'N/A';
                     const shortOppName = lead['Opportunity'] ? lead['Opportunity'].split(' - ')[0] : 'N/A';
                     
@@ -2495,7 +2574,7 @@ function renderTables() {
             const shortOppName = lead['Opportunity'] ? lead['Opportunity'].split(' - ')[0] : 'N/A';
 
             tr.innerHTML = `
-                <td><span class="clickable-opportunity" onclick="openLeadDetailsModal('${lead['Opportunity'].replace(/'/g, "\\'")}')" title="${lead['Opportunity']}">${shortOppName}</span></td>
+                <td><span class="clickable-opportunity" onclick="openLeadDetailsModal('${lead.id}')" title="${lead['Opportunity']}">${shortOppName}</span></td>
                 <td><span class="clickable-company-name" onclick="event.stopPropagation(); openCompanyModal(this.textContent)" title="${lead['Company Name']}">${lead['Company Name'] || 'N/A'}</span></td>
                 <td>${lead['Salesperson']}</td>
                 <td><span style="color:var(--color-blue); font-weight:500;">${lead['Stage']}</span></td>
@@ -2592,7 +2671,7 @@ function renderExecutivePOTimeline() {
         const cardClass = isConfirmed ? 'executive-milestone-card confirmed' : 'executive-milestone-card';
 
         const milestoneHTML = `
-            <div class="${cardClass}" onclick="openLeadDetailsModal('${lead['Opportunity'].replace(/'/g, "\\'")}')">
+            <div class="${cardClass}" onclick="openLeadDetailsModal('${lead.id}')">
                 <span class="milestone-date-badge">${dateLabel}</span>
                 <div>
                     <h4 class="milestone-opp" title="${lead['Opportunity']}">${shortOpp}</h4>
@@ -3498,7 +3577,7 @@ function updateRFQCharts() {
                     }
                 },
                 {
-                    label: `RFQ Value in Millions (${activeCurrency}) (Right Axis)`,
+                    label: activeCurrency === 'USD' ? 'RFQ Value in Millions (USD) (Right Axis)' : 'RFQ Value (INR) (Right Axis)',
                     data: revenues,
                     borderColor: '#10b981',
                     backgroundColor: 'transparent',
@@ -3547,6 +3626,16 @@ function updateRFQCharts() {
                 legend: {
                     position: 'top',
                     labels: { color: textColor, font: { family: 'Outfit', size: 11 } }
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            if (context.datasetIndex === 1) {
+                                return ` ${context.dataset.label}: ${formatChartValue(context.raw)}`;
+                            }
+                            return ` ${context.dataset.label}: ${context.raw}`;
+                        }
+                    }
                 }
             },
             scales: {
@@ -3570,7 +3659,7 @@ function updateRFQCharts() {
                     ticks: {
                         color: textColor,
                         font: { family: 'Outfit' },
-                        callback: function(v) { return currDetails.symbol + v + 'M'; }
+                        callback: function(v) { return formatChartValue(v); }
                     }
                 }
             }
@@ -3607,7 +3696,7 @@ function updateRFQCharts() {
                 tooltip: {
                     callbacks: {
                         label: function(context) {
-                            return ` ${context.label}: ${currDetails.symbol}${context.raw.toFixed(1)}M`;
+                            return ` ${context.label}: ${formatChartValue(context.raw)}`;
                         }
                     }
                 }
@@ -3942,7 +4031,7 @@ function updateRFQCharts() {
                 tooltip: {
                     callbacks: {
                         label: function(context) {
-                            return ` ${context.dataset.label}: ${currDetails.symbol}${context.raw.toFixed(2)}M`;
+                            return ` ${context.dataset.label}: ${formatChartValue(context.raw)}`;
                         }
                     }
                 }
@@ -3959,7 +4048,7 @@ function updateRFQCharts() {
                     ticks: {
                         color: textColor,
                         font: { family: 'Outfit' },
-                        callback: function(v) { return currDetails.symbol + v + 'M'; }
+                        callback: function(v) { return formatChartValue(v); }
                     }
                 }
             }
@@ -4000,7 +4089,7 @@ function updateRFQCharts() {
                     : `<span class="badge badge-pending" style="font-size: 9px; padding: 2px 4px; background-color: rgba(0, 0, 255, 0.1); color: var(--color-blue);">Projected</span>`;
                 
                 tr.innerHTML = `
-                    <td><span class="clickable-opportunity" onclick="openLeadDetailsModal('${item.lead['Opportunity'].replace(/'/g, "\\'")}')" title="${item.lead['Opportunity']}" style="font-weight: 500;">${shortOpp}</span></td>
+                    <td><span class="clickable-opportunity" onclick="openLeadDetailsModal('${item.lead.id}')" title="${item.lead['Opportunity']}" style="font-weight: 500;">${shortOpp}</span></td>
                     <td>${dateStr}</td>
                     <td class="num-col" style="font-weight: 600;">${valStr}</td>
                     <td style="text-align: center;">${sourceBadge}</td>
@@ -4088,7 +4177,7 @@ function renderRFQTable() {
         const cleanClosedDate = closedDateVal ? closedDateVal.substring(0, 10) : '-';
 
         tr.innerHTML = `
-            <td><span class="clickable-opportunity" onclick="openLeadDetailsModal('${lead['Opportunity'].replace(/'/g, "\\'")}')" title="${lead['Opportunity']}">${shortName}</span></td>
+            <td><span class="clickable-opportunity" onclick="openLeadDetailsModal('${lead.id}')" title="${lead['Opportunity']}">${shortName}</span></td>
             <td><span class="clickable-company-name" onclick="event.stopPropagation(); openCompanyModal(this.textContent)" title="${lead['Company Name']}">${lead['Company Name'] || 'N/A'}</span></td>
             <td>${lead['Salesperson']}</td>
             <td class="num-col">${cleanDate}</td>
