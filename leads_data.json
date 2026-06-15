@@ -4245,7 +4245,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": "2026-06-26",
-    "Probability": 40.98
+    "Probability": 40.0
   },
   {
     "Created on": "2026-05-21 07:39:55",
@@ -4257,7 +4257,7 @@
     "Email": "sahuln@edutech.com",
     "Phone": "+91 90001 49290",
     "Salesperson": "Ruchit Nambiar",
-    "Next Follow up": "2026-06-15",
+    "Next Follow up": "2026-06-17",
     "Industry Segment": "Other",
     "Revenue (Millions USD)": 4.43,
     "Opportunity Type": "Component Sourcing",
@@ -5337,7 +5337,7 @@
     "Email": "arminder@stancebeam.com",
     "Phone": "+91 99990 33500",
     "Salesperson": "Ruchit Nambiar",
-    "Next Follow up": "2026-06-15",
+    "Next Follow up": "2026-06-17",
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 0.27,
     "Opportunity Type": "Design",
@@ -26673,7 +26673,7 @@
     "Email": "tarun.g@constelli.com",
     "Phone": "+91 70227 39934",
     "Salesperson": "Ruchit Nambiar",
-    "Next Follow up": "2026-05-05",
+    "Next Follow up": "2026-06-17",
     "Industry Segment": "Aerospace & Defense",
     "Revenue (Millions USD)": 4.43,
     "Opportunity Type": "PCB Assembly",
