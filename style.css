@@ -352,6 +352,13 @@ body {
     border-color: var(--text-secondary);
 }
 
+.btn-secondary.active,
+.granularity-selector button.active {
+    background-color: var(--color-blue) !important;
+    color: #ffffff !important;
+    border-color: var(--color-blue) !important;
+}
+
 .currency-toggle {
     display: flex;
     border: 1px solid var(--border-color);

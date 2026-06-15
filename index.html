@@ -292,12 +292,23 @@
                                 <h3>Upcoming PO Closures (Pipeline Forecast)</h3>
                                 <p>Major deals projected to close soonest with win probability progress and sales reps</p>
                             </div>
-                            <div class="granularity-selector" id="executive-closures-grain-toggle">
-                                <button class="btn btn-sm btn-secondary" data-grain="daily">Daily (7d)</button>
-                                <button class="btn btn-sm btn-secondary" data-grain="weekly">Weekly (30d)</button>
-                                <button class="btn btn-sm btn-secondary active" data-grain="monthly">Monthly (90d)</button>
-                                <button class="btn btn-sm btn-secondary" data-grain="quarterly">Quarterly (180d)</button>
-                                <button class="btn btn-sm btn-secondary" data-grain="annual">Yearly (365d)</button>
+                            <div class="granularity-selector" id="executive-closures-filter-group" style="display: flex; gap: 8px; align-items: center;">
+                                <select id="executive-closures-grain" style="background-color: var(--bg-input); border: 1px solid var(--border-color); color: var(--text-primary); padding: 8px 12px; border-radius: var(--border-radius-sm); font-size: 13px; outline: none; font-weight: 600; cursor: pointer; transition: border-color var(--transition-fast);">
+                                    <option value="all">All Horizons</option>
+                                    <option value="date">Date</option>
+                                    <option value="week">Week</option>
+                                    <option value="month">Month</option>
+                                    <option value="year">Year</option>
+                                </select>
+                                <div class="custom-multiselect-container" id="executive-closures-value-container" style="position: relative; display: inline-block;">
+                                    <button type="button" id="executive-multiselect-btn" class="btn btn-sm btn-secondary" style="font-weight: 600; cursor: pointer; padding: 8px 12px; font-size: 13px; border-radius: var(--border-radius-sm); border: 1px solid var(--border-color); background-color: var(--bg-input); color: var(--text-primary); display: flex; align-items: center; gap: 8px; min-width: 150px; justify-content: space-between; box-sizing: border-box; height: 37px;">
+                                        <span id="executive-multiselect-label">All Periods</span>
+                                        <i class="fa-solid fa-chevron-down" style="font-size: 10px;"></i>
+                                    </button>
+                                    <div id="executive-multiselect-dropdown" style="display: none; position: absolute; top: 100%; right: 0; z-index: 100; min-width: 220px; max-height: 250px; overflow-y: auto; background-color: var(--bg-sidebar); border: 1px solid var(--border-color); border-radius: var(--border-radius-sm); box-shadow: var(--shadow-main); padding: 10px; margin-top: 5px; flex-direction: column; gap: 6px; box-sizing: border-box;">
+                                        <!-- Filled dynamically -->
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="executive-timeline-container" id="executive-po-timeline">
@@ -636,7 +647,7 @@
                         <div class="chart-header header-row">
                             <div>
                                 <h3>Expected PO Closures Timeline</h3>
-                                <p>Revenue timeline of upcoming closures (Confirmed Odoo dates & projected average turnaround)</p>
+                                <p>Revenue timeline of upcoming closures (Expected Odoo dates & projected average turnaround)</p>
                             </div>
                             <div class="granularity-selector" id="rfq-closures-grain-toggle">
                                 <button class="btn btn-sm btn-secondary" data-grain="daily">Daily</button>

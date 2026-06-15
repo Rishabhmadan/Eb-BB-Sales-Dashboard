@@ -11,6 +11,8 @@ let selectedRFQInterval = null;
 let selectedRFQClosureInterval = null;
 let rfqClosuresGranularity = 'monthly';
 let executiveClosuresGranularity = 'monthly';
+let executiveClosuresGrainFilter = 'all';
+let executiveClosuresCheckedValues = [];
 let rfqAvgTurnaround = 27;
 let activeCurrency = 'INR';
 let usdToInrRate = 83.0; // 1 USD = 83 INR (fallback rate)
@@ -439,7 +441,7 @@ function openLeadDetailsModal(oppName) {
             if (expDate) {
                 expGroup.style.display = 'block';
                 const isConfirmed = !!lead['Expected Closing'];
-                const label = isConfirmed ? ' (Confirmed)' : ' (Projected)';
+                const label = isConfirmed ? '' : ' (Projected)';
                 expEl.textContent = expDate.toISOString().substring(0, 10) + label;
             } else {
                 expGroup.style.display = 'none';
@@ -550,6 +552,47 @@ function resetFilters(skipApply = false) {
     if (elValueSelect) {
         elValueSelect.innerHTML = '<option value="all">All</option>';
         elValueSelect.value = 'all';
+    }
+    
+    // Reset executive closures selectors
+    const elExecGrain = document.getElementById('executive-closures-grain');
+    if (elExecGrain) elExecGrain.value = 'all';
+    executiveClosuresGrainFilter = 'all';
+    executiveClosuresCheckedValues = [];
+    localStorage.setItem('executive_closures_grain_filter', 'all');
+    localStorage.removeItem('executive_closures_checked_values');
+    populateExecutiveClosuresMultiselect();
+
+    // Reset currency
+    activeCurrency = 'INR';
+    localStorage.setItem('active_currency', 'INR');
+    const btnInr = document.getElementById('btn-currency-inr');
+    const btnUsd = document.getElementById('btn-currency-usd');
+    if (btnInr && btnUsd) {
+        btnInr.classList.add('active');
+        btnInr.classList.remove('btn-secondary');
+        btnUsd.classList.remove('active');
+        btnUsd.classList.add('btn-secondary');
+    }
+
+    // Reset RFQ granularities
+    rfqGranularity = 'monthly';
+    rfqClosuresGranularity = 'monthly';
+    localStorage.setItem('rfq_granularity', 'monthly');
+    localStorage.setItem('rfq_closures_granularity', 'monthly');
+    
+    const rfqButtons = document.querySelectorAll('#rfq-grain-toggle button');
+    rfqButtons.forEach(btn => {
+        if (btn.getAttribute('data-grain') === 'monthly') btn.classList.add('active');
+        else btn.classList.remove('active');
+    });
+
+    const closureButtons = document.querySelectorAll('#rfq-closures-grain-toggle button');
+    if (closureButtons) {
+        closureButtons.forEach(btn => {
+            if (btn.getAttribute('data-grain') === 'monthly') btn.classList.add('active');
+            else btn.classList.remove('active');
+        });
     }
     
     localStorage.setItem('filter_salesperson', 'all');
@@ -698,6 +741,91 @@ function restoreFilters() {
                     elValueSelect.value = rfqValueVal;
                 } else {
                     elValueSelect.value = 'all';
+                }
+            }
+        }
+    }
+
+    // Restore active currency toggle state
+    const savedCurrency = localStorage.getItem('active_currency');
+    if (savedCurrency !== null) {
+        activeCurrency = savedCurrency;
+        const btnInr = document.getElementById('btn-currency-inr');
+        const btnUsd = document.getElementById('btn-currency-usd');
+        if (btnInr && btnUsd) {
+            if (activeCurrency === 'INR') {
+                btnInr.classList.add('active');
+                btnInr.classList.remove('btn-secondary');
+                btnUsd.classList.remove('active');
+                btnUsd.classList.add('btn-secondary');
+            } else {
+                btnUsd.classList.add('active');
+                btnUsd.classList.remove('btn-secondary');
+                btnInr.classList.remove('active');
+                btnInr.classList.add('btn-secondary');
+            }
+        }
+    }
+
+    // Restore RFQ granularity
+    const savedRfqGran = localStorage.getItem('rfq_granularity');
+    if (savedRfqGran !== null) {
+        rfqGranularity = savedRfqGran;
+        const buttons = document.querySelectorAll('#rfq-grain-toggle button');
+        buttons.forEach(btn => {
+            if (btn.getAttribute('data-grain') === savedRfqGran) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+    }
+
+    // Restore RFQ closures granularity
+    const savedRfqClosuresGran = localStorage.getItem('rfq_closures_granularity');
+    if (savedRfqClosuresGran !== null) {
+        rfqClosuresGranularity = savedRfqClosuresGran;
+        const closureButtons = document.querySelectorAll('#rfq-closures-grain-toggle button');
+        if (closureButtons) {
+            closureButtons.forEach(btn => {
+                if (btn.getAttribute('data-grain') === savedRfqClosuresGran) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+        }
+    }
+
+    // Restore executive closures filter values
+    const elExecGrain = document.getElementById('executive-closures-grain');
+    const elExecContainer = document.getElementById('executive-closures-value-container');
+    if (elExecGrain && elExecContainer) {
+        const savedGrain = localStorage.getItem('executive_closures_grain_filter');
+        if (savedGrain !== null) {
+            elExecGrain.value = savedGrain;
+            executiveClosuresGrainFilter = savedGrain;
+            
+            populateExecutiveClosuresMultiselect();
+            
+            const savedCheckedStr = localStorage.getItem('executive_closures_checked_values');
+            if (savedCheckedStr !== null) {
+                try {
+                    executiveClosuresCheckedValues = JSON.parse(savedCheckedStr);
+                    // Update checkboxes in DOM to match restored state
+                    const checkboxes = document.querySelectorAll('.exec-closure-checkbox');
+                    checkboxes.forEach(cb => {
+                        cb.checked = executiveClosuresCheckedValues.includes(cb.value);
+                    });
+                    
+                    const selectAllCb = document.getElementById('exec-select-all-checkbox');
+                    if (selectAllCb) {
+                        selectAllCb.checked = checkboxes.length > 0 && executiveClosuresCheckedValues.length === checkboxes.length;
+                    }
+                    
+                    updateMultiselectLabel();
+                } catch(e) {
+                    console.error("Failed to parse saved checked values", e);
                 }
             }
         }
@@ -1734,6 +1862,9 @@ function renderExecutivePOTimeline() {
     if (!timelineContainer) return;
     timelineContainer.innerHTML = '';
 
+    // Dynamically update the specific period values select dropdown options
+    populateExecutiveClosuresMultiselect();
+
     // Filter active RFQ leads (must have RFQ Date, stage not in Won, Dropped, Lost)
     const activeRFQs = filteredLeads.filter(lead => 
         getLeadRFQDate(lead) !== null && 
@@ -1743,22 +1874,8 @@ function renderExecutivePOTimeline() {
     const refDate = new Date();
     refDate.setHours(0, 0, 0, 0); // Start of today
 
-    // Calculate maximum date horizon based on executive selector
-    let maxDate = new Date(refDate.getTime() + 90 * 24 * 60 * 60 * 1000); // Default 90 days (monthly)
-    if (executiveClosuresGranularity === 'daily') {
-        maxDate = new Date(refDate.getTime() + 7 * 24 * 60 * 60 * 1000);
-    } else if (executiveClosuresGranularity === 'weekly') {
-        maxDate = new Date(refDate.getTime() + 30 * 24 * 60 * 60 * 1000);
-    } else if (executiveClosuresGranularity === 'monthly') {
-        maxDate = new Date(refDate.getTime() + 90 * 24 * 60 * 60 * 1000);
-    } else if (executiveClosuresGranularity === 'quarterly') {
-        maxDate = new Date(refDate.getTime() + 180 * 24 * 60 * 60 * 1000);
-    } else if (executiveClosuresGranularity === 'annual') {
-        maxDate = new Date(refDate.getTime() + 365 * 24 * 60 * 60 * 1000);
-    }
-
-    // Map and calculate projected/confirmed closing dates
-    const upcomingList = activeRFQs.map(lead => {
+    // Map and calculate projected expected closing dates
+    let upcomingList = activeRFQs.map(lead => {
         const isConfirmed = !!lead['Expected Closing'];
         const expDate = getLeadExpectedClosingDate(lead, rfqAvgTurnaround);
         return {
@@ -1767,9 +1884,26 @@ function renderExecutivePOTimeline() {
             isConfirmed: isConfirmed
         };
     })
-    .filter(item => item.expDate !== null && item.expDate >= refDate && item.expDate <= maxDate)
-    .sort((a, b) => a.expDate - b.expDate)
-    .slice(0, 4); // Display top 4 milestone cards side-by-side
+    .filter(item => item.expDate !== null && item.expDate >= refDate);
+
+    // Apply specific Date, Week, Month, Year filter
+    if (executiveClosuresCheckedValues.length > 0) {
+        upcomingList = upcomingList.filter(item => {
+            let itemKey = '';
+            if (executiveClosuresGrainFilter === 'all' || executiveClosuresGrainFilter === 'date') {
+                itemKey = item.expDate.toISOString().substring(0, 10);
+            } else if (executiveClosuresGrainFilter === 'week') {
+                itemKey = getWeekKey(item.expDate);
+            } else if (executiveClosuresGrainFilter === 'month') {
+                itemKey = `${item.expDate.getFullYear()}-${(item.expDate.getMonth() + 1).toString().padStart(2, '0')}`;
+            } else if (executiveClosuresGrainFilter === 'year') {
+                itemKey = `${item.expDate.getFullYear()}`;
+            }
+            return executiveClosuresCheckedValues.includes(itemKey);
+        });
+    }
+
+    upcomingList.sort((a, b) => a.expDate - b.expDate);
 
     if (upcomingList.length === 0) {
         timelineContainer.innerHTML = `
@@ -1790,7 +1924,7 @@ function renderExecutivePOTimeline() {
         const company = lead['Company Name'] || 'N/A';
         const revStr = formatCurrency(lead['Expected Revenue'] || 0);
         const dateStr = expDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
-        const badgeLabel = isConfirmed ? 'Confirmed' : 'Projected';
+        const dateLabel = isConfirmed ? dateStr : `${dateStr} (Projected)`;
         
         // Initials for avatar
         const salesRep = lead['Salesperson'] || 'Unassigned';
@@ -1806,7 +1940,7 @@ function renderExecutivePOTimeline() {
 
         const milestoneHTML = `
             <div class="${cardClass}" onclick="openLeadDetailsModal('${lead['Opportunity'].replace(/'/g, "\\'")}')">
-                <span class="milestone-date-badge">${dateStr} (${badgeLabel})</span>
+                <span class="milestone-date-badge">${dateLabel}</span>
                 <div>
                     <h4 class="milestone-opp" title="${lead['Opportunity']}">${shortOpp}</h4>
                     <p class="milestone-company">${company}</p>
@@ -1837,6 +1971,133 @@ function renderExecutivePOTimeline() {
     });
 }
 
+function populateExecutiveClosuresMultiselect() {
+    const grainEl = document.getElementById('executive-closures-grain');
+    const containerEl = document.getElementById('executive-closures-value-container');
+    const dropdownEl = document.getElementById('executive-multiselect-dropdown');
+    const labelEl = document.getElementById('executive-multiselect-label');
+    if (!grainEl || !containerEl || !dropdownEl || !labelEl) return;
+
+    containerEl.style.display = 'inline-block';
+    const granularity = grainEl.value;
+
+    const activeRFQs = filteredLeads.filter(lead => 
+        getLeadRFQDate(lead) !== null && 
+        !['Won', 'Dropped', 'Lost'].includes(lead['Stage'])
+    );
+
+    const refDate = new Date();
+    refDate.setHours(0, 0, 0, 0);
+
+    // Get expected dates
+    const dates = activeRFQs.map(lead => getLeadExpectedClosingDate(lead, rfqAvgTurnaround))
+        .filter(d => d !== null && d >= refDate);
+
+    // Extract unique labels based on granularity
+    const items = [];
+    dates.forEach(d => {
+        let key = '';
+        let label = '';
+        if (granularity === 'all' || granularity === 'date') {
+            key = d.toISOString().substring(0, 10);
+            label = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+        } else if (granularity === 'week') {
+            key = getWeekKey(d);
+            label = key.replace('-W', ' Wk ');
+        } else if (granularity === 'month') {
+            key = `${d.getFullYear()}-${(d.getMonth() + 1).toString().padStart(2, '0')}`;
+            label = d.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+        } else if (granularity === 'year') {
+            key = `${d.getFullYear()}`;
+            label = key;
+        }
+
+        if (key && !items.some(item => item.key === key)) {
+            items.push({ key, label, dateObj: d });
+        }
+    });
+
+    // Sort items by dateObj ascending
+    items.sort((a, b) => a.dateObj - b.dateObj);
+
+    // Read stored checked values if any, or default to all checked
+    let savedCheckedStr = localStorage.getItem('executive_closures_checked_values');
+    let savedGrain = localStorage.getItem('executive_closures_grain_filter');
+    
+    // If the grain has changed since last save, we reset the checked list to all of them
+    if (savedGrain !== granularity) {
+        savedCheckedStr = null;
+    }
+    
+    let checkedKeys = [];
+    if (savedCheckedStr !== null) {
+        try {
+            checkedKeys = JSON.parse(savedCheckedStr);
+        } catch(e) {
+            checkedKeys = items.map(it => it.key);
+        }
+    } else {
+        checkedKeys = items.map(it => it.key);
+    }
+    
+    // Filter out keys that do not exist in the new items list
+    checkedKeys = checkedKeys.filter(k => items.some(it => it.key === k));
+    
+    // If empty (and items is not empty), default to checking everything
+    if (checkedKeys.length === 0 && items.length > 0 && savedCheckedStr === null) {
+        checkedKeys = items.map(it => it.key);
+    }
+
+    executiveClosuresCheckedValues = checkedKeys;
+    localStorage.setItem('executive_closures_checked_values', JSON.stringify(executiveClosuresCheckedValues));
+
+    // Populate dropdown HTML
+    let dropdownHTML = '';
+    
+    // Add "Select All" option
+    const allChecked = items.length > 0 && checkedKeys.length === items.length;
+    dropdownHTML += `
+        <label style="display: flex; align-items: center; gap: 8px; font-size: 12px; cursor: pointer; color: var(--text-primary); padding: 6px; border-radius: 4px; font-weight: 600; border-bottom: 1px solid var(--border-color); margin-bottom: 4px; box-sizing: border-box; width: 100%;">
+            <input type="checkbox" id="exec-select-all-checkbox" ${allChecked ? 'checked' : ''} style="cursor: pointer;">
+            <span>Select All</span>
+        </label>
+    `;
+
+    items.forEach(item => {
+        const isChecked = checkedKeys.includes(item.key);
+        dropdownHTML += `
+            <label style="display: flex; align-items: center; gap: 8px; font-size: 12px; cursor: pointer; color: var(--text-primary); padding: 4px 6px; border-radius: 4px; box-sizing: border-box; width: 100%;">
+                <input type="checkbox" value="${item.key}" class="exec-closure-checkbox" ${isChecked ? 'checked' : ''} style="cursor: pointer;">
+                <span>${item.label}</span>
+            </label>
+        `;
+    });
+
+    dropdownEl.innerHTML = dropdownHTML;
+
+    // Update label text
+    updateMultiselectLabel();
+}
+
+function updateMultiselectLabel() {
+    const labelEl = document.getElementById('executive-multiselect-label');
+    const checkboxes = document.querySelectorAll('.exec-closure-checkbox');
+    if (!labelEl) return;
+
+    const total = checkboxes.length;
+    const checkedCount = executiveClosuresCheckedValues.length;
+
+    if (total === 0) {
+        labelEl.textContent = 'No Periods';
+    } else if (checkedCount === total) {
+        labelEl.textContent = 'All Periods';
+    } else if (checkedCount === 0) {
+        labelEl.textContent = 'None Selected';
+    } else {
+        labelEl.textContent = `${checkedCount} Selected`;
+    }
+}
+
 // Set up UI interactions, search, sorting and sidebar clicks
 function registerEventListeners() {
     // 1. Sidebar tab switching
@@ -1848,17 +2109,78 @@ function registerEventListeners() {
             switchTab(tabName);
         });
     });
-    // 1b. Executive closures timeline granularity toggle
-    const execClosureButtons = document.querySelectorAll('#executive-closures-grain-toggle button');
-    if (execClosureButtons) {
-        execClosureButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                execClosureButtons.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                executiveClosuresGranularity = btn.getAttribute('data-grain');
-                renderExecutivePOTimeline();
-            });
+    // 1b. Executive closures timeline granularity selectors
+    const elExecGrain = document.getElementById('executive-closures-grain');
+    const elExecValueContainer = document.getElementById('executive-closures-value-container');
+    const multiselectBtn = document.getElementById('executive-multiselect-btn');
+    const dropdownEl = document.getElementById('executive-multiselect-dropdown');
+
+    if (elExecGrain) {
+        elExecGrain.addEventListener('change', () => {
+            executiveClosuresGrainFilter = elExecGrain.value;
+            localStorage.setItem('executive_closures_grain_filter', executiveClosuresGrainFilter);
+            localStorage.removeItem('executive_closures_checked_values'); // Reset checked selections on grain change
+            renderExecutivePOTimeline();
         });
+    }
+
+    if (multiselectBtn && dropdownEl) {
+        multiselectBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isOpen = dropdownEl.style.display === 'flex';
+            dropdownEl.style.display = isOpen ? 'none' : 'flex';
+        });
+
+        // Close dropdown when clicking outside
+        window.addEventListener('click', () => {
+            dropdownEl.style.display = 'none';
+        });
+
+        dropdownEl.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent closing dropdown when clicking inside it
+        });
+
+        // Delegate checkbox changes
+        dropdownEl.addEventListener('change', (e) => {
+            const target = e.target;
+            if (target.id === 'exec-select-all-checkbox') {
+                const checked = target.checked;
+                const checkboxes = document.querySelectorAll('.exec-closure-checkbox');
+                checkboxes.forEach(cb => {
+                    cb.checked = checked;
+                });
+                
+                if (checked) {
+                    executiveClosuresCheckedValues = Array.from(checkboxes).map(cb => cb.value);
+                } else {
+                    executiveClosuresCheckedValues = [];
+                }
+                localStorage.setItem('executive_closures_checked_values', JSON.stringify(executiveClosuresCheckedValues));
+                updateMultiselectLabel();
+                renderExecutivePOTimeline();
+            } else if (target.classList.contains('exec-closure-checkbox')) {
+                const val = target.value;
+                if (target.checked) {
+                    if (!executiveClosuresCheckedValues.includes(val)) {
+                        executiveClosuresCheckedValues.push(val);
+                    }
+                } else {
+                    executiveClosuresCheckedValues = executiveClosuresCheckedValues.filter(v => v !== val);
+                }
+                
+                // Update select all checkbox state
+                const selectAllCb = document.getElementById('exec-select-all-checkbox');
+                const checkboxes = document.querySelectorAll('.exec-closure-checkbox');
+                if (selectAllCb) {
+                    selectAllCb.checked = checkboxes.length > 0 && executiveClosuresCheckedValues.length === checkboxes.length;
+                }
+                
+                localStorage.setItem('executive_closures_checked_values', JSON.stringify(executiveClosuresCheckedValues));
+                updateMultiselectLabel();
+                renderExecutivePOTimeline();
+            }
+        });
+    }
     }
 
     // 2. Dropdown Filter Selection triggers recalculations
@@ -1973,6 +2295,7 @@ function registerEventListeners() {
         btnInr.addEventListener('click', () => {
             if (activeCurrency === 'INR') return;
             activeCurrency = 'INR';
+            localStorage.setItem('active_currency', 'INR');
             btnInr.classList.add('active');
             btnInr.classList.remove('btn-secondary');
             btnUsd.classList.remove('active');
@@ -1986,6 +2309,7 @@ function registerEventListeners() {
         btnUsd.addEventListener('click', () => {
             if (activeCurrency === 'USD') return;
             activeCurrency = 'USD';
+            localStorage.setItem('active_currency', 'USD');
             btnUsd.classList.add('active');
             btnUsd.classList.remove('btn-secondary');
             btnInr.classList.remove('active');
@@ -2896,7 +3220,7 @@ function updateRFQCharts() {
             labels: labelsClosures,
             datasets: [
                 {
-                    label: `Confirmed Closures (${activeCurrency})`,
+                    label: `Expected Closures (${activeCurrency})`,
                     data: confirmedValues,
                     backgroundColor: '#10b981', // Emerald
                     borderRadius: 4
@@ -2996,7 +3320,7 @@ function updateRFQCharts() {
                 const dateStr = item.expDate.toISOString().substring(0, 10);
                 const valStr = formatCurrency(item.lead['Expected Revenue'] || 0);
                 const sourceBadge = item.isConfirmed 
-                    ? `<span class="badge badge-won" style="font-size: 9px; padding: 2px 4px;">Confirmed</span>`
+                    ? `<span class="badge badge-won" style="font-size: 9px; padding: 2px 4px;">Expected</span>`
                     : `<span class="badge badge-pending" style="font-size: 9px; padding: 2px 4px; background-color: rgba(0, 0, 255, 0.1); color: var(--color-blue);">Projected</span>`;
                 
                 tr.innerHTML = `
@@ -3108,6 +3432,7 @@ function registerRFQEvents() {
             buttons.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             rfqGranularity = btn.getAttribute('data-grain');
+            localStorage.setItem('rfq_granularity', rfqGranularity);
             selectedRFQInterval = null; // Clear active chart filter on granularity switch
             updateRFQCharts();
             renderRFQTable();
@@ -3121,6 +3446,7 @@ function registerRFQEvents() {
                 closureButtons.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 rfqClosuresGranularity = btn.getAttribute('data-grain');
+                localStorage.setItem('rfq_closures_granularity', rfqClosuresGranularity);
                 selectedRFQClosureInterval = null; // Clear active chart filter on granularity switch
                 updateRFQCharts();
                 renderRFQTable();
