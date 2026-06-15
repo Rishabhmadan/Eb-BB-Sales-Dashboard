@@ -293,6 +293,10 @@
                                 <p>Major deals projected to close soonest with win probability progress and sales reps</p>
                             </div>
                             <div class="granularity-selector" id="executive-closures-filter-group" style="display: flex; gap: 8px; align-items: center;">
+                                <div id="executive-closures-total-container" style="display: flex; align-items: center; gap: 8px; background: var(--bg-input); border: 1px solid var(--border-color); padding: 6px 14px; border-radius: var(--border-radius-sm); height: 37px; box-sizing: border-box; margin-right: 8px;">
+                                    <span style="font-size: 11px; font-weight: 600; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.5px;">Total:</span>
+                                    <span id="executive-closures-total-value" style="font-size: 14px; font-weight: 700; color: var(--color-blue);">₹0.00</span>
+                                </div>
                                 <select id="executive-closures-grain" style="background-color: var(--bg-input); border: 1px solid var(--border-color); color: var(--text-primary); padding: 8px 12px; border-radius: var(--border-radius-sm); font-size: 13px; outline: none; font-weight: 600; cursor: pointer; transition: border-color var(--transition-fast);">
                                     <option value="all">All Horizons</option>
                                     <option value="date">Date</option>
@@ -1109,6 +1113,6 @@
     </div>
 
     <!-- Script to Load Data and Handle Interactions -->
-    <script src="app.js?v=19"></script>
+    <script src="app.js?v=20"></script>
 </body>
 </html>

@@ -2637,6 +2637,18 @@ function renderExecutivePOTimeline() {
 
     upcomingList.sort((a, b) => a.expDate - b.expDate);
 
+    // Calculate total expected revenue for the filtered list
+    let totalRevenue = 0;
+    upcomingList.forEach(item => {
+        totalRevenue += item.lead['Expected Revenue'] || 0;
+    });
+
+    // Update UI element for the total value
+    const totalDisplayEl = document.getElementById('executive-closures-total-value');
+    if (totalDisplayEl) {
+        totalDisplayEl.textContent = formatCurrency(totalRevenue);
+    }
+
     if (upcomingList.length === 0) {
         timelineContainer.innerHTML = `
             <div style="grid-column: 1 / -1; text-align: center; color: var(--text-muted); padding: 30px; border: 1px dashed var(--border-color); border-radius: var(--border-radius-md); width: 100%;">
