@@ -3224,6 +3224,9 @@ Location: ${locationParts.join(', ') || 'N/A'}
             
             const leadsListModal = document.getElementById('leads-list-modal');
             if (leadsListModal && leadsListModal.style.display === 'flex') hideModal('leads-list-modal');
+            
+            const companyModal = document.getElementById('company-details-modal');
+            if (companyModal && companyModal.style.display === 'flex') hideModal('company-details-modal');
         }
     });
 
