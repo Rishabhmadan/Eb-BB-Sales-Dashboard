@@ -117,7 +117,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": "2026-06-29",
-    "Probability": 83.63
+    "Probability": 60.0
   },
   {
     "Created on": "2026-06-08 11:41:14",
@@ -381,7 +381,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": "2026-06-15",
-    "Probability": 80.0
+    "Probability": 85.0
   },
   {
     "Created on": "2026-05-15 05:47:44",
@@ -429,7 +429,7 @@
     "City": "Dhule",
     "Closed Date": null,
     "Expected Closing": "2026-06-26",
-    "Probability": 60.0
+    "Probability": 50.0
   },
   {
     "Created on": "2026-05-09 04:59:41",
@@ -669,7 +669,7 @@
     "City": "Coimbatore",
     "Closed Date": null,
     "Expected Closing": "2026-06-30",
-    "Probability": 70.0
+    "Probability": 50.0
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -8013,7 +8013,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 58.96
+    "Probability": 65.15
   },
   {
     "Created on": "2026-06-10 06:02:54",
