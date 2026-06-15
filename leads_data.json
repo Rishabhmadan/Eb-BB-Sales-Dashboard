@@ -1642,7 +1642,7 @@
     "Email": "vijay@hoags.in",
     "Phone": "+91 88673 21328",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-06-13",
+    "Next Follow up": "2026-06-15",
     "Industry Segment": "IoT & Smart Devices",
     "Revenue (Millions USD)": 1.8,
     "Opportunity Type": "Component Sourcing",
@@ -1653,7 +1653,7 @@
     "State": "Karnataka (IN)",
     "City": "Bengaluru",
     "Closed Date": null,
-    "Expected Closing": "2026-06-29"
+    "Expected Closing": "2026-06-19"
   },
   {
     "Created on": "2026-04-21 07:34:45",
@@ -2688,7 +2688,7 @@
     "State": false,
     "City": "Bangalore",
     "Closed Date": null,
-    "Expected Closing": "2026-07-15"
+    "Expected Closing": "2026-06-19"
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -3654,7 +3654,7 @@
     "State": false,
     "City": false,
     "Closed Date": null,
-    "Expected Closing": null
+    "Expected Closing": "2026-06-19"
   },
   {
     "Created on": "2026-06-13 04:14:58",
