@@ -515,6 +515,34 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="kpi-card">
+                        <div class="kpi-icon icon-emerald">
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+                        <div class="kpi-data">
+                            <h3>Expected Closures (30d)</h3>
+                            <div class="value" id="kpi-rfq-closures-value">₹0M</div>
+                            <div class="change positive">
+                                <i class="fa-solid fa-crosshairs"></i>
+                                <span id="kpi-rfq-closures-count">0 Deals</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="kpi-card">
+                        <div class="kpi-icon icon-purple">
+                            <i class="fa-solid fa-business-time"></i>
+                        </div>
+                        <div class="kpi-data">
+                            <h3>Avg Turnaround Days</h3>
+                            <div class="value" id="kpi-rfq-turnaround-days">0 Days</div>
+                            <div class="change positive">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>RFQ to Win Date</span>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
                 <!-- Visualization Grid -->
@@ -580,6 +608,41 @@
                         </div>
                         <div class="chart-body flex-center">
                             <canvas id="chart-rfq-status"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Closures & PO Projections Section -->
+                    <div class="chart-card span-2">
+                        <div class="chart-header">
+                            <h3>Expected PO Closures Timeline</h3>
+                            <p>Revenue timeline of upcoming closures (Confirmed Odoo dates & projected average turnaround)</p>
+                        </div>
+                        <div class="chart-body">
+                            <canvas id="chart-rfq-closures-timeline"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <h3>Top Upcoming Closures / POs</h3>
+                            <p>Pending RFQs nearing their expected closing date</p>
+                        </div>
+                        <div class="chart-body" style="overflow-y: auto; max-height: 280px; padding: 0;">
+                            <div class="table-container" style="max-height: 280px;">
+                                <table class="data-table" id="upcoming-closures-table" style="font-size: 11px; margin: 0; width: 100%;">
+                                    <thead>
+                                        <tr>
+                                            <th>Opportunity</th>
+                                            <th>Expected Date</th>
+                                            <th class="num-col">Value</th>
+                                            <th>Source</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Populated dynamically -->
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
 
@@ -802,6 +865,10 @@
                         <div id="detail-closed-on-group" style="display: none;">
                             <label style="font-size: 10px; text-transform: uppercase; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 4px;">Closed Date / Win Date</label>
                             <span style="font-size: 14px;" id="detail-closed-on">N/A</span>
+                        </div>
+                        <div id="detail-expected-closing-group" style="display: none;">
+                            <label style="font-size: 10px; text-transform: uppercase; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 4px;">Expected Closing</label>
+                            <span style="font-size: 14px; color: var(--color-emerald); font-weight: 600;" id="detail-expected-closing">N/A</span>
                         </div>
                     </div>
                     

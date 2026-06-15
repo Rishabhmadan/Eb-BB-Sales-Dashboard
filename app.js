@@ -425,6 +425,25 @@ function openLeadDetailsModal(oppName) {
             closedEl.textContent = 'N/A';
         }
     }
+
+    // Expected Closing display
+    const expGroup = document.getElementById('detail-expected-closing-group');
+    const expEl = document.getElementById('detail-expected-closing');
+    if (expGroup && expEl) {
+        if (!['Won', 'Dropped'].includes(lead['Stage'])) {
+            const expDate = getLeadExpectedClosingDate(lead);
+            if (expDate) {
+                expGroup.style.display = 'block';
+                const isConfirmed = !!lead['Expected Closing'];
+                const label = isConfirmed ? ' (Confirmed)' : ' (Projected)';
+                expEl.textContent = expDate.toISOString().substring(0, 10) + label;
+            } else {
+                expGroup.style.display = 'none';
+            }
+        } else {
+            expGroup.style.display = 'none';
+        }
+    }
     
     // Stage status formatting
     let statusSuffix = ' (Pending)';
@@ -2126,6 +2145,26 @@ function exportFilteredCSV() {
 // RFQ TRACKING LOGIC & RENDERING
 // ==========================================
 
+// Helper to get expected closing date of a lead (using actual Expected Closing field, or projecting with historical average turnaround)
+function getLeadExpectedClosingDate(lead, avgDays = 27) {
+    if (!lead) return null;
+    if (lead['Expected Closing']) {
+        return new Date(lead['Expected Closing']);
+    }
+    // For pending/active leads, we project based on RFQ Date or Created on
+    if (!['Won', 'Dropped'].includes(lead['Stage'])) {
+        const baseDateStr = lead['RFQ Date'] || lead['Created on'];
+        if (baseDateStr) {
+            const d = new Date(baseDateStr);
+            if (!isNaN(d.getTime())) {
+                d.setDate(d.getDate() + Math.round(avgDays));
+                return d;
+            }
+        }
+    }
+    return null;
+}
+
 function updateRFQKPIs() {
     const rfqLeads = filteredLeads.filter(lead => getLeadRFQDate(lead) !== null);
     const rfqCount = rfqLeads.length;
@@ -2137,6 +2176,50 @@ function updateRFQKPIs() {
     document.getElementById('kpi-rfq-revenue').textContent = formatCurrency(rfqRevenue);
     document.getElementById('kpi-rfq-avg').textContent = formatCurrency(rfqAvg);
     document.getElementById('kpi-rfq-active').textContent = rfqActive.toLocaleString();
+
+    // Calculate historical average turnaround days for won leads
+    const wonLeads = filteredLeads.filter(lead => (lead['Won/Lost'] === 'Won' || lead['Stage'] === 'Won'));
+    let totalDays = 0;
+    let validPairs = 0;
+    wonLeads.forEach(lead => {
+        const rfqStr = lead['RFQ Date'];
+        const closedStr = lead['Closed Date'] || lead['Date Closed'];
+        if (rfqStr && closedStr) {
+            const rfqD = new Date(rfqStr);
+            const closedD = new Date(closedStr);
+            if (!isNaN(rfqD.getTime()) && !isNaN(closedD.getTime())) {
+                const diffTime = closedD - rfqD;
+                const diffDays = diffTime / (1000 * 60 * 60 * 24);
+                // Exclude anomalies (like negative values or > 365 days)
+                if (diffDays >= 0 && diffDays < 365) {
+                    totalDays += diffDays;
+                    validPairs++;
+                }
+            }
+        }
+    });
+    const avgTurnaround = validPairs > 0 ? (totalDays / validPairs) : 27; // Fallback to 27 days
+    document.getElementById('kpi-rfq-turnaround-days').textContent = Math.round(avgTurnaround) + ' Days';
+
+    // Calculate Expected Closures within the next 30 days
+    const activeLeads = filteredLeads.filter(lead => !['Won', 'Dropped'].includes(lead['Stage']));
+    const now = new Date();
+    const refDate = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    const end30d = new Date(refDate.getTime() + 30 * 24 * 60 * 60 * 1000);
+
+    let closuresValue = 0;
+    let closuresCount = 0;
+
+    activeLeads.forEach(lead => {
+        const expDate = getLeadExpectedClosingDate(lead, avgTurnaround);
+        if (expDate && expDate >= refDate && expDate <= end30d) {
+            closuresValue += lead['Expected Revenue'] || 0;
+            closuresCount++;
+        }
+    });
+
+    document.getElementById('kpi-rfq-closures-value').textContent = formatCurrency(closuresValue);
+    document.getElementById('kpi-rfq-closures-count').textContent = `${closuresCount} Deals`;
 }
 
 function updateRFQCharts() {
@@ -2556,6 +2639,164 @@ function updateRFQCharts() {
             }
         }
     });
+
+    // Calculate historical average turnaround days for won leads
+    const wonLeads = filteredLeads.filter(lead => (lead['Won/Lost'] === 'Won' || lead['Stage'] === 'Won'));
+    let totalDays = 0;
+    let validPairs = 0;
+    wonLeads.forEach(lead => {
+        const rfqStr = lead['RFQ Date'];
+        const closedStr = lead['Closed Date'] || lead['Date Closed'];
+        if (rfqStr && closedStr) {
+            const rfqD = new Date(rfqStr);
+            const closedD = new Date(closedStr);
+            if (!isNaN(rfqD.getTime()) && !isNaN(closedD.getTime())) {
+                const diffTime = closedD - rfqD;
+                const diffDays = diffTime / (1000 * 60 * 60 * 24);
+                if (diffDays >= 0 && diffDays < 365) {
+                    totalDays += diffDays;
+                    validPairs++;
+                }
+            }
+        }
+    });
+    const avgTurnaround = validPairs > 0 ? (totalDays / validPairs) : 27;
+
+    // 6. Expected PO Closures Timeline (6-month forward-looking)
+    const closureMonths = [];
+    const closureData = {}; // key: "YYYY-MM" -> { confirmed: 0, projected: 0 }
+    
+    const nowTemp = new Date();
+    // Generate next 6 months starting from current month
+    for (let i = 0; i < 6; i++) {
+        const d = new Date(nowTemp.getFullYear(), nowTemp.getMonth() + i, 1);
+        const key = `${d.getFullYear()}-${(d.getMonth() + 1).toString().padStart(2, '0')}`;
+        closureMonths.push({
+            key: key,
+            label: d.toLocaleDateString('en-US', { month: 'short', year: 'numeric' })
+        });
+        closureData[key] = { confirmed: 0, projected: 0 };
+    }
+
+    // Filter active RFQ leads
+    const activeRFQs = filteredLeads.filter(lead => getLeadRFQDate(lead) !== null && !['Won', 'Dropped'].includes(lead['Stage']));
+    
+    activeRFQs.forEach(lead => {
+        const isConfirmed = !!lead['Expected Closing'];
+        const expDate = getLeadExpectedClosingDate(lead, avgTurnaround);
+        if (expDate) {
+            const key = `${expDate.getFullYear()}-${(expDate.getMonth() + 1).toString().padStart(2, '0')}`;
+            if (closureData[key] !== undefined) {
+                if (isConfirmed) {
+                    closureData[key].confirmed += (lead['Expected Revenue'] || 0) / currDetails.scale;
+                } else {
+                    closureData[key].projected += (lead['Expected Revenue'] || 0) / currDetails.scale;
+                }
+            }
+        }
+    });
+
+    const labelsClosures = closureMonths.map(m => m.label);
+    const confirmedValues = closureMonths.map(m => closureData[m.key].confirmed);
+    const projectedValues = closureMonths.map(m => closureData[m.key].projected);
+
+    renderChart('chart-rfq-closures-timeline', {
+        type: 'bar',
+        data: {
+            labels: labelsClosures,
+            datasets: [
+                {
+                    label: `Confirmed Odoo Closures (${activeCurrency})`,
+                    data: confirmedValues,
+                    backgroundColor: '#10b981', // Emerald
+                    borderRadius: 4
+                },
+                {
+                    label: `Projected (Turnaround Avg) (${activeCurrency})`,
+                    data: projectedValues,
+                    backgroundColor: 'rgba(0, 0, 255, 0.4)', // Semi-transparent blue
+                    borderRadius: 4
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'top',
+                    labels: { color: textColor, font: { family: 'Outfit', size: 10 } }
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            return ` ${context.dataset.label}: ${currDetails.symbol}${context.raw.toFixed(2)}M`;
+                        }
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    stacked: true,
+                    grid: { display: false },
+                    ticks: { color: textColor, font: { family: 'Outfit' } }
+                },
+                y: {
+                    stacked: true,
+                    grid: { color: gridColor },
+                    ticks: {
+                        color: textColor,
+                        font: { family: 'Outfit' },
+                        callback: function(v) { return currDetails.symbol + v + 'M'; }
+                    }
+                }
+            }
+        }
+    });
+
+    // 7. Populate Upcoming Closures Table
+    const tableBody = document.querySelector('#upcoming-closures-table tbody');
+    if (tableBody) {
+        tableBody.innerHTML = '';
+        const now = new Date();
+        const refDate = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+        
+        // Map active RFQs to their projected expected closing dates
+        const upcomingList = activeRFQs.map(lead => {
+            const isConfirmed = !!lead['Expected Closing'];
+            const expDate = getLeadExpectedClosingDate(lead, avgTurnaround);
+            return {
+                lead: lead,
+                expDate: expDate,
+                isConfirmed: isConfirmed
+            };
+        })
+        .filter(item => item.expDate !== null && item.expDate >= refDate)
+        .sort((a, b) => a.expDate - b.expDate)
+        .slice(0, 10); // Show top 10 upcoming closures
+
+        if (upcomingList.length === 0) {
+            tableBody.innerHTML = `<tr><td colspan="4" style="text-align:center; color: var(--text-muted); padding:20px;">No upcoming closures found.</td></tr>`;
+        } else {
+            upcomingList.forEach(item => {
+                const tr = document.createElement('tr');
+                const shortOpp = item.lead['Opportunity'] ? item.lead['Opportunity'].split(' - ')[0] : 'N/A';
+                const dateStr = item.expDate.toISOString().substring(0, 10);
+                const valStr = formatCurrency(item.lead['Expected Revenue'] || 0);
+                const sourceBadge = item.isConfirmed 
+                    ? `<span class="badge badge-won" style="font-size: 9px; padding: 2px 4px;">Odoo</span>`
+                    : `<span class="badge badge-pending" style="font-size: 9px; padding: 2px 4px; background-color: rgba(0, 0, 255, 0.1); color: var(--color-blue);">Projected</span>`;
+                
+                tr.innerHTML = `
+                    <td><span class="clickable-opportunity" onclick="openLeadDetailsModal('${item.lead['Opportunity'].replace(/'/g, "\\'")}')" title="${item.lead['Opportunity']}" style="font-weight: 500;">${shortOpp}</span></td>
+                    <td>${dateStr}</td>
+                    <td class="num-col" style="font-weight: 600;">${valStr}</td>
+                    <td style="text-align: center;">${sourceBadge}</td>
+                `;
+                tableBody.appendChild(tr);
+            });
+        }
+    }
 }
 
 function renderRFQTable() {
