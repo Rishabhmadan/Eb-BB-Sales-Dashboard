@@ -618,7 +618,7 @@
     "State": "Tamil Nadu (IN)",
     "City": "Coimbatore",
     "Closed Date": null,
-    "Expected Closing": "2026-06-18"
+    "Expected Closing": "2026-06-30"
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -2796,7 +2796,7 @@
     "Industry Segment": "EMS & Electronics Mfg",
     "Revenue (Millions USD)": 6.2,
     "Opportunity Type": "PCB fabrication",
-    "Expected Revenue": 4200000.0,
+    "Expected Revenue": 420000.0,
     "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -2819,7 +2819,7 @@
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 5.8,
     "Opportunity Type": "PCB Assembly",
-    "Expected Revenue": 1500000.0,
+    "Expected Revenue": 300000.0,
     "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
