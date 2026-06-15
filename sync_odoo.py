@@ -122,6 +122,9 @@ def sync_leads_from_odoo():
                 
                 lead[dashboard_key] = val
             
+            # Map probability as numerical value
+            lead['Probability'] = rec.get('probability')
+            
             processed_leads.append(lead)
 
         # 4. Save to leads_data.json

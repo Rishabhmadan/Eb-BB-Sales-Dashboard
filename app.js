@@ -2674,11 +2674,15 @@ function renderExecutivePOTimeline() {
         const salesRep = lead['Salesperson'] || 'Unassigned';
         const initials = salesRep.split(' ').map(n => n[0]).join('').substring(0, 2);
 
-        // Calculate progress percentage based on stage to give a visual UX
-        let progress = 20;
-        if (lead['Stage'] === 'Connected') progress = 40;
-        else if (lead['Stage'] === 'RFQ Received') progress = 70;
-        else if (lead['Stage'] === 'RFQ Expected') progress = 85;
+        // Fetch probability % from Odoo, fallback to stage-based calculation if undefined
+        let confidence = lead['Probability'];
+        if (confidence === undefined || confidence === null || isNaN(parseFloat(confidence))) {
+            confidence = 20;
+            if (lead['Stage'] === 'Connected') confidence = 40;
+            else if (lead['Stage'] === 'RFQ Received') confidence = 70;
+            else if (lead['Stage'] === 'RFQ Expected') confidence = 85;
+        }
+        confidence = Math.round(confidence);
         
         const cardClass = isConfirmed ? 'executive-milestone-card confirmed' : 'executive-milestone-card';
 
@@ -2694,11 +2698,11 @@ function renderExecutivePOTimeline() {
                 <!-- Progress indicator for win probability/stage -->
                 <div style="margin-top: 4px;">
                     <div style="display:flex; justify-content:space-between; font-size:9px; color: var(--text-muted); margin-bottom:3px;">
-                        <span>Deal Stage</span>
-                        <span>${progress}%</span>
+                        <span>Deal Closure Confidence</span>
+                        <span>${confidence}%</span>
                     </div>
                     <div style="width: 100%; height: 6px; background-color: var(--border-color); border-radius: 3px; overflow:hidden;">
-                        <div style="width: ${progress}%; height: 100%; background-color: ${isConfirmed ? 'var(--color-emerald)' : 'var(--color-blue)'}; border-radius: 3px;"></div>
+                        <div style="width: ${confidence}%; height: 100%; background-color: ${isConfirmed ? 'var(--color-emerald)' : 'var(--color-blue)'}; border-radius: 3px;"></div>
                     </div>
                 </div>
 
