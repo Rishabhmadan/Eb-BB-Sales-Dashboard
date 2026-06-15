@@ -735,6 +735,27 @@ body {
     color: var(--color-rose);
 }
 
+.badge-purple {
+    background-color: rgba(139, 92, 246, 0.15);
+    color: var(--color-purple);
+}
+
+.badge-blue {
+    background-color: rgba(0, 0, 255, 0.15);
+    color: var(--color-blue);
+}
+
+.badge-emerald {
+    background-color: rgba(16, 185, 129, 0.15);
+    color: var(--color-emerald);
+}
+
+.badge-rose {
+    background-color: rgba(244, 63, 94, 0.15);
+    color: var(--color-rose);
+}
+
+
 /* Pagination */
 .table-pagination {
     padding: 16px 24px;

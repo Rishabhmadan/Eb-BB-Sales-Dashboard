@@ -995,20 +995,20 @@
     </div>
     <!-- Company Details Modal -->
     <div class="modal-overlay" id="company-details-modal" style="display: none;">
-        <div class="modal-content modal-content-wide">
+        <div class="modal-content modal-content-wide" style="width: 1100px; max-width: 95%;">
             <div class="modal-header">
                 <h3><i class="fa-solid fa-building" style="color: var(--color-blue); margin-right: 6px;"></i> Company Details</h3>
                 <button class="modal-close" id="btn-close-company-modal">&times;</button>
             </div>
-            <div class="modal-body-scrollable">
-                <div style="display: flex; flex-direction: column; gap: 20px;">
-                    <div>
-                        <h4 style="font-size: 20px; margin: 0; color: var(--text-primary);" id="company-detail-name">Company Name</h4>
-                        <p style="font-size: 13px; margin: 4px 0 0 0; color: var(--text-muted);" id="company-detail-industry">Industry Segment</p>
-                    </div>
-
-                    <!-- Two columns: Contact Info & Financial Summary -->
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div class="modal-body-scrollable" style="overflow-y: hidden;">
+                <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 24px; height: 550px; max-height: 70vh;">
+                    <!-- Left Column: Odoo Data -->
+                    <div style="display: flex; flex-direction: column; gap: 20px; border-right: 1px solid var(--border-color); padding-right: 20px; overflow-y: auto;">
+                        <div>
+                            <h4 style="font-size: 22px; margin: 0; color: var(--text-primary);" id="company-detail-name">Company Name</h4>
+                            <p style="font-size: 13px; margin: 4px 0 0 0; color: var(--text-muted);" id="company-detail-industry">Industry Segment</p>
+                        </div>
+                        
                         <!-- Contact Info Card -->
                         <div style="background: var(--bg-input); padding: 16px; border-radius: var(--border-radius-sm); border: 1px solid var(--border-color);">
                             <h5 style="margin: 0 0 12px 0; font-size: 12px; text-transform: uppercase; font-weight: 700; color: var(--text-muted);"><i class="fa-solid fa-address-book"></i> Contact Information</h5>
@@ -1032,7 +1032,7 @@
                             </div>
                         </div>
 
-                        <!-- Financial / Opportunity Summary Card -->
+                        <!-- Sales Summary Card -->
                         <div style="background: var(--bg-input); padding: 16px; border-radius: var(--border-radius-sm); border: 1px solid var(--border-color);">
                             <h5 style="margin: 0 0 12px 0; font-size: 12px; text-transform: uppercase; font-weight: 700; color: var(--text-muted);"><i class="fa-solid fa-chart-line"></i> Sales Summary</h5>
                             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
@@ -1058,28 +1058,49 @@
                                 <span style="font-size: 13px; font-weight: 600; color: var(--text-primary);" id="company-detail-primary-rep">N/A</span>
                             </div>
                         </div>
+
+                        <!-- History / Opportunities Table -->
+                        <div>
+                            <h5 style="margin: 0 0 10px 0; font-size: 12px; text-transform: uppercase; font-weight: 700; color: var(--text-muted);"><i class="fa-solid fa-list-check"></i> Opportunity History</h5>
+                            <div style="overflow-x: auto; border: 1px solid var(--border-color); border-radius: var(--border-radius-sm);">
+                                <table class="data-table" id="company-opp-table" style="width: 100%; margin-bottom: 0; font-size: 12px;">
+                                    <thead>
+                                        <tr>
+                                            <th>Opportunity</th>
+                                            <th>Stage</th>
+                                            <th class="num-col">Expected Revenue</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="company-opp-table-body">
+                                        <!-- populated dynamically -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- History / Opportunities Table -->
-                    <div>
-                        <h5 style="margin: 0 0 10px 0; font-size: 13px; text-transform: uppercase; font-weight: 700; color: var(--text-primary);"><i class="fa-solid fa-list-check"></i> Opportunity History</h5>
-                        <div style="overflow-x: auto; border: 1px solid var(--border-color); border-radius: var(--border-radius-sm);">
-                            <table class="data-table" id="company-opp-table" style="width: 100%; margin-bottom: 0;">
-                                <thead>
-                                    <tr>
-                                        <th>Opportunity</th>
-                                        <th>Salesperson</th>
-                                        <th>Stage</th>
-                                        <th>Type</th>
-                                        <th class="num-col">Expected Revenue</th>
-                                        <th>Created On</th>
-                                        <th>Status</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="company-opp-table-body">
-                                    <!-- populated dynamically -->
-                                </tbody>
-                            </table>
+                    <!-- Right Column: Elecbits AI Company Research -->
+                    <div style="display: flex; flex-direction: column; gap: 16px; overflow-y: auto;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <h5 style="margin: 0; font-size: 14px; text-transform: uppercase; font-weight: 700; color: var(--color-purple); display: inline-flex; align-items: center; gap: 8px;">
+                                <i class="fa-solid fa-brain"></i> Elecbits AI Company Research
+                            </h5>
+                            <span id="ai-research-status" class="badge badge-purple" style="font-size: 10px; font-weight: 600; text-transform: uppercase;">Ready</span>
+                        </div>
+
+                        <div id="ai-research-container" style="flex: 1; background: var(--bg-input); border: 1px solid var(--border-color); border-radius: var(--border-radius-sm); padding: 16px; overflow-y: auto; font-family: 'Inter', sans-serif;">
+                            <!-- AI Content will be populated dynamically -->
+                            <div id="ai-research-placeholder" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; text-align: center; gap: 12px; color: var(--text-muted); padding: 20px;">
+                                <i class="fa-solid fa-magnifying-glass-chart" style="font-size: 40px; color: var(--color-purple); opacity: 0.7;"></i>
+                                <div>
+                                    <p style="font-weight: 600; margin: 0; color: var(--text-primary);">Deep AI Company Profiler</p>
+                                    <p style="font-size: 12px; margin: 4px 0 0 0; line-height: 1.4;">Research website, products, sub-segments, strengths, and Elecbits partnership opportunities automatically using AI.</p>
+                                </div>
+                                <button id="btn-start-ai-research" class="btn btn-primary" style="background: var(--color-purple); border-color: var(--color-purple); font-size: 12px; padding: 8px 16px; display: inline-flex; align-items: center; gap: 8px; margin-top: 10px; cursor: pointer;">
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i> Start AI Research
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1088,6 +1109,6 @@
     </div>
 
     <!-- Script to Load Data and Handle Interactions -->
-    <script src="app.js?v=16"></script>
+    <script src="app.js?v=17"></script>
 </body>
 </html>

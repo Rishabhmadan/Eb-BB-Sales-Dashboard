@@ -575,16 +575,11 @@ function openCompanyModal(companyName) {
         const tr = document.createElement('tr');
         tr.style.cursor = 'pointer';
         
-        // Escape opportunity name for JS function arg
-        const escOppName = (lead['Opportunity'] || '').replace(/'/g, "\\'");
-        
         // On click, close company modal and show lead details modal
         tr.onclick = (e) => {
             hideModal('company-details-modal');
             openLeadDetailsModal(lead['Opportunity']);
         };
-        
-        const cleanDate = lead['Created on'] ? lead['Created on'].substring(0, 10) : (lead['RFQ Date'] ? lead['RFQ Date'].substring(0, 10) : 'N/A');
         
         let statusBadge = '';
         if (lead['Won/Lost'] === 'Won' || lead['Stage'] === 'Won') {
@@ -595,20 +590,573 @@ function openCompanyModal(companyName) {
             statusBadge = `<span class="badge badge-blue">Open</span>`;
         }
         
+        const shortOpp = lead['Opportunity'] ? lead['Opportunity'].split(' - ')[0] : 'N/A';
+        
         tr.innerHTML = `
-            <td><span class="clickable-opportunity" style="font-weight: 500;">${lead['Opportunity'] || 'N/A'}</span></td>
-            <td>${lead['Salesperson'] || 'Unassigned'}</td>
+            <td><span class="clickable-opportunity" style="font-weight: 500;" title="${lead['Opportunity']}">${shortOpp}</span></td>
             <td>${lead['Stage'] || 'Open'}</td>
-            <td>${lead['Opportunity Type'] || 'N/A'}</td>
             <td class="num-col">${formatCurrency(lead['Expected Revenue'] || 0)}</td>
-            <td>${cleanDate}</td>
             <td>${statusBadge}</td>
         `;
         tbody.appendChild(tr);
     });
     
+    // Trigger AI Company Profiling & Research
+    loadAICompanyResearch(companyName, primaryLead['Industry Segment'] || 'Other');
+    
     showModal('company-details-modal');
 }
+
+// Pre-populated high-fidelity company details for key accounts (Elecbits Target Formats)
+const PRE_POPULATED_COMPANY_PROFILES = {
+    "Zeno": {
+        website: "https://zeno.earth/",
+        industry: "Electric Mobility (EV) & Clean Energy",
+        subSegment: [
+            "Electric Motorcycles",
+            "Battery-as-a-Service (BaaS)",
+            "Battery Swapping Infrastructure",
+            "Energy Storage Solutions"
+        ],
+        founded: "2022",
+        headquarters: "Bozeman, Montana, USA",
+        indiaPresence: "Bengaluru, Karnataka",
+        employees: "Approximately 50–200 employees globally",
+        businessModel: [
+            "Electric vehicle sales",
+            "Battery subscription services",
+            "Battery swapping network",
+            "Energy services platform"
+        ],
+        targetMarkets: [
+            "India",
+            "East Africa",
+            "Emerging markets globally"
+        ],
+        revenue: "~USD 3.18 Million",
+        investors: [
+            "Toyota Ventures",
+            "Lowercarbon Capital",
+            "4DX Ventures",
+            "MCJ Collective",
+            "Active Impact Investments"
+        ],
+        products: [
+            {
+                name: "Zeno Emara Electric Motorcycle",
+                specs: [
+                    "Peak Power: 8 kW",
+                    "Top Speed: 90 km/h",
+                    "Range: Up to 100 km",
+                    "Payload Capacity: 250 kg",
+                    "Charging Options: Home charging, Fast charging, Battery swapping",
+                    "Target Customers: Delivery fleets, Commercial riders, Rural transportation operators"
+                ]
+            },
+            {
+                name: "Zeno Emara ADV",
+                specs: [
+                    "Peak Power: 10 kW",
+                    "Top Speed: 100 km/h",
+                    "Supports additional swappable batteries",
+                    "Bluetooth connectivity",
+                    "Integrated navigation system",
+                    "Designed for utility and adventure applications"
+                ]
+            },
+            {
+                name: "Battery Platform",
+                specs: [
+                    "Swappable lithium battery packs",
+                    "Battery subscription model",
+                    "Smart battery monitoring",
+                    "Battery lifecycle management",
+                    "Fleet energy optimization"
+                ]
+            }
+        ],
+        targetCustomers: [
+            "Last-mile delivery companies",
+            "Logistics operators",
+            "Ride-hailing fleets",
+            "Commercial mobility providers",
+            "Rural transportation providers",
+            "Government electrification projects",
+            "Fleet operators in emerging markets"
+        ],
+        strengths: [
+            "Focused on high-growth emerging markets",
+            "Lower vehicle ownership cost through battery subscription",
+            "Reduced downtime via battery swapping",
+            "Vehicles designed for rugged operating conditions",
+            "Strong leadership team with experience from Tesla, Lucid, Ola Electric, Ather, Hero MotoCorp, Apple."
+        ],
+        elecbitsOpportunities: {
+            "Battery Systems": [
+                "Battery pack assembly",
+                "Battery enclosure manufacturing",
+                "Thermal management systems",
+                "Battery testing solutions",
+                "Battery monitoring electronics"
+            ],
+            "EV Electronics": [
+                "Vehicle Control Units (VCU)",
+                "Battery Management Systems (BMS)",
+                "Motor controllers",
+                "Power electronics",
+                "DC-DC converters",
+                "Power distribution units"
+            ],
+            "Connectivity & IoT": [
+                "GPS modules",
+                "Telematics devices",
+                "Cellular communication modules",
+                "Embedded computing platforms",
+                "Fleet monitoring hardware"
+            ],
+            "Charging & Swapping Infrastructure": [
+                "Industrial controllers",
+                "RFID systems",
+                "HMI displays",
+                "Smart energy meters",
+                "Remote monitoring hardware",
+                "IoT gateways"
+            ],
+            "Manufacturing & Sourcing": [
+                "ODM/OEM electronics manufacturing",
+                "Product engineering support",
+                "Supply-chain localization",
+                "Taiwan component sourcing",
+                "India-based electronics manufacturing"
+            ]
+        }
+    }
+};
+PRE_POPULATED_COMPANY_PROFILES["Zeno Moto"] = PRE_POPULATED_COMPANY_PROFILES["Zeno"];
+
+// Render HTML layout for pre-populated companies
+function renderAIProfileHTML(profile) {
+    return `
+        <div style="display:flex; flex-direction:column; gap:16px;">
+            <!-- Header/Meta -->
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; border-bottom:1px solid var(--border-color); padding-bottom:12px;">
+                <div>
+                    <span style="font-size:10px; font-weight:700; text-transform:uppercase; color:var(--text-muted); display:block;">Website</span>
+                    <a href="${profile.website}" target="_blank" style="color:var(--color-blue); font-size:13px; font-weight:600; text-decoration:none;"><i class="fa-solid fa-earth-americas"></i> ${profile.website}</a>
+                </div>
+                <div>
+                    <span style="font-size:10px; font-weight:700; text-transform:uppercase; color:var(--text-muted); display:block;">Founded</span>
+                    <span style="font-size:13px; font-weight:600; color:var(--text-primary);">${profile.founded}</span>
+                </div>
+                <div>
+                    <span style="font-size:10px; font-weight:700; text-transform:uppercase; color:var(--text-muted); display:block;">Employees</span>
+                    <span style="font-size:13px; font-weight:600; color:var(--text-primary);">${profile.employees}</span>
+                </div>
+            </div>
+
+            <!-- Locations -->
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; background:var(--bg-card); padding:12px; border-radius:4px; border:1px solid var(--border-color);">
+                <div>
+                    <span style="font-size:10px; font-weight:700; text-transform:uppercase; color:var(--text-muted); display:block;"><i class="fa-solid fa-map-location-dot"></i> Global HQ</span>
+                    <span style="font-size:12px; font-weight:600; color:var(--text-primary);">${profile.headquarters}</span>
+                </div>
+                <div>
+                    <span style="font-size:10px; font-weight:700; text-transform:uppercase; color:var(--text-muted); display:block;"><i class="fa-solid fa-location-dot"></i> India Presence</span>
+                    <span style="font-size:12px; font-weight:600; color:var(--text-primary);">${profile.indiaPresence}</span>
+                </div>
+            </div>
+
+            <!-- Segments & Target Markets -->
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+                <div>
+                    <span style="font-size:11px; font-weight:700; text-transform:uppercase; color:var(--text-muted); display:block; margin-bottom:6px;">Sub-Segments</span>
+                    <ul style="margin:0; padding-left:16px; font-size:12px; line-height:1.6; color:var(--text-primary);">
+                        ${profile.subSegment.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+                <div>
+                    <span style="font-size:11px; font-weight:700; text-transform:uppercase; color:var(--text-muted); display:block; margin-bottom:6px;">Target Markets</span>
+                    <ul style="margin:0; padding-left:16px; font-size:12px; line-height:1.6; color:var(--text-primary);">
+                        ${profile.targetMarkets.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Financials & Investors -->
+            <div style="border-top:1px solid var(--border-color); padding-top:12px;">
+                <h6 style="margin:0 0 8px 0; font-size:12px; font-weight:700; color:var(--text-primary); text-transform:uppercase;"><i class="fa-solid fa-hand-holding-dollar"></i> Revenue & Funding</h6>
+                <div style="display:flex; flex-direction:column; gap:8px; background:rgba(16, 185, 129, 0.05); border:1px solid rgba(16, 185, 129, 0.2); padding:12px; border-radius:4px;">
+                    <div>
+                        <span style="font-size:10px; font-weight:700; color:var(--text-muted); text-transform:uppercase;">Estimated Revenue:</span>
+                        <strong style="color:var(--color-emerald); font-size:14px; margin-left:6px;">${profile.revenue}</strong>
+                    </div>
+                    <div>
+                        <span style="font-size:10px; font-weight:700; color:var(--text-muted); text-transform:uppercase; display:block; margin-bottom:4px;">Key Investors:</span>
+                        <div style="display:flex; flex-wrap:wrap; gap:6px;">
+                            ${profile.investors.map(inv => `<span class="badge badge-purple" style="font-size:10px; padding:2px 8px;">${inv}</span>`).join('')}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business Model -->
+            <div style="border-top:1px solid var(--border-color); padding-top:12px;">
+                <h6 style="margin:0 0 8px 0; font-size:12px; font-weight:700; color:var(--text-primary); text-transform:uppercase;"><i class="fa-solid fa-briefcase"></i> Business Model</h6>
+                <div style="display:flex; flex-wrap:wrap; gap:8px;">
+                    ${profile.businessModel.map(bm => `<span style="font-size:11px; font-weight:600; padding:4px 10px; border-radius:4px; background:var(--bg-card); border:1px solid var(--border-color); color:var(--text-primary);"><i class="fa-solid fa-check" style="color:var(--color-emerald); margin-right:4px;"></i> ${bm}</span>`).join('')}
+                </div>
+            </div>
+
+            <!-- Key Products -->
+            <div style="border-top:1px solid var(--border-color); padding-top:12px;">
+                <h6 style="margin:0 0 8px 0; font-size:12px; font-weight:700; color:var(--text-primary); text-transform:uppercase;"><i class="fa-solid fa-boxes-stacked"></i> Key Products & Platform</h6>
+                <div style="display:flex; flex-direction:column; gap:10px;">
+                    ${profile.products.map(prod => `
+                        <div style="background:var(--bg-card); border:1px solid var(--border-color); border-radius:4px; padding:10px;">
+                            <span style="font-size:12px; font-weight:700; color:var(--color-blue); display:block; margin-bottom:4px;">${prod.name}</span>
+                            <ul style="margin:0; padding-left:14px; font-size:11px; line-height:1.5; color:var(--text-muted);">
+                                ${prod.specs.map(spec => `<li>${spec}</li>`).join('')}
+                            </ul>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+
+            <!-- Target Customers & Strengths -->
+            <div style="border-top:1px solid var(--border-color); padding-top:12px; display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+                <div>
+                    <h6 style="margin:0 0 8px 0; font-size:12px; font-weight:700; color:var(--text-primary); text-transform:uppercase;"><i class="fa-solid fa-users"></i> Target Customers</h6>
+                    <ul style="margin:0; padding-left:14px; font-size:11px; line-height:1.5; color:var(--text-muted);">
+                        ${profile.targetCustomers.map(tc => `<li>${tc}</li>`).join('')}
+                    </ul>
+                </div>
+                <div>
+                    <h6 style="margin:0 0 8px 0; font-size:12px; font-weight:700; color:var(--text-primary); text-transform:uppercase;"><i class="fa-solid fa-star"></i> Key Strengths</h6>
+                    <ul style="margin:0; padding-left:14px; font-size:11px; line-height:1.5; color:var(--text-muted);">
+                        ${profile.strengths.map(ks => `<li>${ks}</li>`).join('')}
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Opportunities for Elecbits -->
+            <div style="border-top:1px solid var(--border-color); padding-top:12px; background:rgba(139, 92, 246, 0.03); border:1px dashed var(--color-purple); padding:16px; border-radius:6px;">
+                <h6 style="margin:0 0 12px 0; font-size:13px; font-weight:800; color:var(--color-purple); text-transform:uppercase; display:flex; align-items:center; gap:6px;">
+                    <i class="fa-solid fa-lightbulb"></i> Opportunities for Elecbits
+                </h6>
+                <div style="display:flex; flex-direction:column; gap:10px;">
+                    ${Object.entries(profile.elecbitsOpportunities).map(([cat, opps]) => `
+                        <div>
+                            <span style="font-size:11px; font-weight:700; color:var(--text-primary); display:block; margin-bottom:4px;">${cat}</span>
+                            <div style="display:flex; flex-wrap:wrap; gap:4px;">
+                                ${opps.map(opp => `<span style="font-size:10px; font-weight:600; padding:2px 8px; border-radius:2px; background:var(--bg-card); border:1px solid var(--border-color); color:var(--text-muted);">${opp}</span>`).join('')}
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+// Convert Gemini Markdown text output to styled HTML
+function formatAIResearchReport(text) {
+    if (!text) return '';
+    const lines = text.split('\n');
+    let html = '<div class="ai-research-report" style="display:flex; flex-direction:column; gap:12px; font-size:12px; line-height:1.6;">';
+    let inList = false;
+    let inSubList = false;
+    
+    lines.forEach(line => {
+        let trimmed = line.trim();
+        if (!trimmed) {
+            if (inSubList) { html += '</ul>'; inSubList = false; }
+            if (inList) { html += '</ul>'; inList = false; }
+            return;
+        }
+        
+        // Headers (e.g. "Revenue & Funding", "Key Products", etc.)
+        if (!trimmed.startsWith('•') && !trimmed.startsWith('*') && !trimmed.startsWith('-') && !trimmed.startsWith('#') && (trimmed.match(/^[A-Za-z\s&–]+$/) || (trimmed.includes(':') && !trimmed.startsWith('http') && trimmed.indexOf(':') < 20))) {
+            if (inSubList) { html += '</ul>'; inSubList = false; }
+            if (inList) { html += '</ul>'; inList = false; }
+            
+            if (trimmed.includes(':')) {
+                const parts = trimmed.split(':');
+                const label = parts[0].trim();
+                const val = parts.slice(1).join(':').trim();
+                html += `<div><span style="font-weight:700; color:var(--text-muted); text-transform:uppercase; font-size:10px; display:block;">${label}</span><strong style="font-size:14px; color:var(--text-primary);">${val}</strong></div>`;
+            } else {
+                html += `<h6 style="margin:16px 0 6px 0; font-size:13px; font-weight:800; color:var(--color-purple); text-transform:uppercase; border-bottom:1px solid var(--border-color); padding-bottom:4px;">${trimmed}</h6>`;
+            }
+            return;
+        }
+        
+        // Sub-list items (indented with * or -)
+        if (line.startsWith('  ') || line.startsWith('\t') || trimmed.startsWith('*') || trimmed.startsWith('-')) {
+            if (!inSubList) {
+                if (!inList) {
+                    html += '<ul style="margin:0; padding-left:16px; list-style-type:circle;">';
+                    inList = true;
+                }
+                html += '<ul style="margin:0 0 6px 0; padding-left:16px; list-style-type:square;">';
+                inSubList = true;
+            }
+            const content = trimmed.replace(/^[\*\-\s\•]+/, '');
+            html += `<li>${content}</li>`;
+            return;
+        }
+        
+        // Main list items (starts with • or * or - at root level)
+        if (trimmed.startsWith('•') || trimmed.startsWith('*') || trimmed.startsWith('-')) {
+            if (inSubList) { html += '</ul>'; inSubList = false; }
+            if (!inList) {
+                html += '<ul style="margin:0 0 8px 0; padding-left:16px; list-style-type:disc;">';
+                inList = true;
+            }
+            const content = trimmed.replace(/^[•\*\-\s]+/, '');
+            
+            // Format bold inline prefix if present (e.g. "Website: http...")
+            let formattedContent = content;
+            if (content.includes(':')) {
+                const idx = content.indexOf(':');
+                const label = content.substring(0, idx).replace(/\*\*/g, '').trim();
+                const val = content.substring(idx + 1).trim();
+                
+                // If it is a website, make it a link
+                if (val.startsWith('http')) {
+                    formattedContent = `<span style="font-weight:600; color:var(--text-primary);">${label}:</span> <a href="${val}" target="_blank" style="color:var(--color-blue); text-decoration:none;"><i class="fa-solid fa-link"></i> ${val}</a>`;
+                } else {
+                    formattedContent = `<span style="font-weight:600; color:var(--text-primary);">${label}:</span> ${val}`;
+                }
+            }
+            
+            html += `<li style="margin-bottom:4px;">${formattedContent}</li>`;
+            return;
+        }
+        
+        // Normal text
+        if (inSubList) { html += '</ul>'; inSubList = false; }
+        if (inList) { html += '</ul>'; inList = false; }
+        html += `<p style="margin:4px 0;">${trimmed}</p>`;
+    });
+    
+    if (inSubList) { html += '</ul>'; }
+    if (inList) { html += '</ul>'; }
+    html += '</div>';
+    return html;
+}
+
+// Perform AI Research profiling or load cache
+async function loadAICompanyResearch(companyName, industrySegment) {
+    const statusEl = document.getElementById('ai-research-status');
+    const container = document.getElementById('ai-research-container');
+    if (!statusEl || !container) return;
+    
+    const normName = companyName.trim();
+    
+    // 1. Check if we have pre-populated data (like Zeno/Zeno Moto)
+    const matchedKey = Object.keys(PRE_POPULATED_COMPANY_PROFILES).find(k => 
+        k.toLowerCase() === normName.toLowerCase() || 
+        normName.toLowerCase().startsWith(k.toLowerCase()) || 
+        k.toLowerCase().startsWith(normName.toLowerCase())
+    );
+    
+    if (matchedKey) {
+        statusEl.textContent = 'Elecbits Gold Profile';
+        statusEl.className = 'badge badge-emerald';
+        container.innerHTML = renderAIProfileHTML(PRE_POPULATED_COMPANY_PROFILES[matchedKey]);
+        return;
+    }
+    
+    // 2. Check if we have cached AI research in localStorage
+    const cacheKey = `ai_research_${normName.toLowerCase()}`;
+    const cached = localStorage.getItem(cacheKey);
+    if (cached) {
+        statusEl.textContent = 'AI Cached';
+        statusEl.className = 'badge badge-emerald';
+        container.innerHTML = formatAIResearchReport(cached);
+        return;
+    }
+    
+    // 3. Show placeholder with "Start AI Research" button
+    statusEl.textContent = 'Ready';
+    statusEl.className = 'badge badge-purple';
+    
+    container.innerHTML = `
+        <div id="ai-research-placeholder" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; text-align: center; gap: 12px; color: var(--text-muted); padding: 20px;">
+            <i class="fa-solid fa-magnifying-glass-chart" style="font-size: 40px; color: var(--color-purple); opacity: 0.7;"></i>
+            <div>
+                <p style="font-weight: 600; margin: 0; color: var(--text-primary);">Deep AI Company Profiler</p>
+                <p style="font-size: 12px; margin: 4px 0 0 0; line-height: 1.4;">Research website, products, sub-segments, strengths, and Elecbits partnership opportunities automatically using AI.</p>
+            </div>
+            <button id="btn-start-ai-research" class="btn btn-primary" style="background: var(--color-purple); border-color: var(--color-purple); font-size: 12px; padding: 8px 16px; display: inline-flex; align-items: center; gap: 8px; margin-top: 10px; cursor: pointer;">
+                <i class="fa-solid fa-wand-magic-sparkles"></i> Start AI Research
+            </button>
+        </div>
+    `;
+    
+    // Bind onclick
+    const btnStart = document.getElementById('btn-start-ai-research');
+    if (btnStart) {
+        btnStart.onclick = async () => {
+            // Check if key is available
+            if (!geminiApiKey) {
+                container.innerHTML = `
+                    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; text-align: center; gap: 12px; color: var(--text-muted); padding: 20px;">
+                        <i class="fa-solid fa-key" style="font-size: 36px; color: var(--color-gold); opacity: 0.8;"></i>
+                        <div>
+                            <p style="font-weight: 600; margin: 0; color: var(--text-primary);">API Key Required</p>
+                            <p style="font-size: 12px; margin: 4px 0 0 0; line-height: 1.4;">Real-time AI research requires a Gemini API Key. Please save your key in the **AI Assistant** tab sidebar or configure it below.</p>
+                        </div>
+                        <div style="display:flex; gap:8px; width:100%; max-width:300px; margin-top:10px;">
+                            <input type="password" id="modal-api-key-input" placeholder="Enter Gemini API Key..." style="flex:1; padding:6px 10px; border:1px solid var(--border-color); border-radius:4px; font-size:12px; background:var(--bg-card); color:var(--text-primary); outline:none;">
+                            <button id="btn-save-modal-key" class="btn btn-emerald" style="font-size:12px; padding:6px 12px; cursor:pointer;">Save</button>
+                        </div>
+                    </div>
+                `;
+                
+                const btnSaveModalKey = document.getElementById('btn-save-modal-key');
+                const modalKeyInput = document.getElementById('modal-api-key-input');
+                if (btnSaveModalKey && modalKeyInput) {
+                    btnSaveModalKey.onclick = () => {
+                        const key = modalKeyInput.value.trim();
+                        if (key) {
+                            geminiApiKey = key;
+                            localStorage.setItem('gemini_api_key', key);
+                            updateAPIKeyStatus();
+                            btnStart.click(); // retry
+                        } else {
+                            alert("Please enter a valid key.");
+                        }
+                    };
+                }
+                return;
+            }
+            
+            // Generate research
+            statusEl.textContent = 'Researching...';
+            statusEl.className = 'badge badge-purple';
+            container.innerHTML = `
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; text-align: center; gap: 16px; color: var(--text-muted); padding: 20px;">
+                    <div class="typing-indicator" style="display:flex; gap:6px;">
+                        <div class="typing-dot" style="width:8px; height:8px; background:var(--color-purple); border-radius:50%; animation: bounce 1.4s infinite ease-in-out both;"></div>
+                        <div class="typing-dot" style="width:8px; height:8px; background:var(--color-purple); border-radius:50%; animation: bounce 1.4s infinite ease-in-out both; animation-delay: 0.2s;"></div>
+                        <div class="typing-dot" style="width:8px; height:8px; background:var(--color-purple); border-radius:50%; animation: bounce 1.4s infinite ease-in-out both; animation-delay: 0.4s;"></div>
+                    </div>
+                    <div>
+                        <p style="font-weight: 600; margin: 0; color: var(--text-primary);">Elecbits AI is Researching "${companyName}"</p>
+                        <p style="font-size: 11px; margin: 4px 0 0 0; line-height: 1.4;">Analyzing products, website, target markets, strengths, and hardware engineering opportunities...</p>
+                    </div>
+                </div>
+            `;
+            
+            try {
+                const prompt = `You are a market research AI assistant for Elecbits, an electronics design and manufacturing partner (ODM/OEM).
+Analyze the company "${companyName}" (Industry Segment: ${industrySegment}) and generate a comprehensive profile in the following exact format:
+
+Company Name: ${companyName}
+• Website: [website URL, e.g. https://domain.com or N/A]
+• Industry Segment : [e.g. Electric Mobility (EV) & Clean Energy or matching segment]
+• Sub-Segment :
+  * [sub-segment 1]
+  * [sub-segment 2]
+• Founded: [estimated founded year]
+• Global Headquarters: [HQ Location]
+• India Presence: [India offices/presence, e.g. Bengaluru, India or N/A]
+• Employee Strength: [estimated headcount, e.g. 50-200]
+• Business Model:
+  * [business model point 1]
+  * [business model point 2]
+• Target Markets :
+  * [target market 1]
+  * [target market 2]
+
+Revenue & Funding
+• Estimated Revenue: [revenue estimate, e.g. ~USD 2 Million]
+• Key Investors :
+  * [investor 1]
+  * [investor 2]
+
+Key Products
+[product 1]
+• [details/specs]
+• [details/specs]
+[product 2]
+• [details/specs]
+
+Target Customers
+• [customer type 1]
+• [customer type 2]
+
+Key Strengths
+• [strength 1]
+• [strength 2]
+
+Opportunities for Elecbits
+Battery Systems
+• [opp 1]
+• [opp 2]
+EV Electronics
+• [opp 1]
+• [opp 2]
+Connectivity & IoT
+• [opp 1]
+• [opp 2]
+Charging & Swapping Infrastructure
+• [opp 1]
+• [opp 2]
+Manufacturing & Sourcing
+• [opp 1]
+• [opp 2]
+
+Rules:
+1. Follow the template layout exactly.
+2. Use realistic industry/market facts for "${companyName}".
+3. Keep the Elecbits Opportunities highly technical (PCBA, IoT modules, VCU, BMS, smart meters, component sourcing, localization).
+4. Output only the plain text in the exact layout, no conversational intros.`;
+
+                const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent?key=${geminiApiKey}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        contents: [{ role: "user", parts: [{ text: prompt }] }]
+                    })
+                });
+                
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                const data = await res.json();
+                
+                const replyText = data.candidates?.[0]?.content?.parts?.[0]?.text;
+                if (!replyText) throw new Error("Empty response from AI");
+                
+                // Cache it
+                localStorage.setItem(cacheKey, replyText);
+                
+                // Display it
+                statusEl.textContent = 'AI Researched';
+                statusEl.className = 'badge badge-emerald';
+                container.innerHTML = formatAIResearchReport(replyText);
+                
+            } catch (err) {
+                console.error("AI Research Error:", err);
+                statusEl.textContent = 'Error';
+                statusEl.className = 'badge badge-rose';
+                container.innerHTML = `
+                    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; text-align: center; gap: 12px; color: var(--text-rose); padding: 20px;">
+                        <i class="fa-solid fa-circle-exclamation" style="font-size: 36px; opacity: 0.8;"></i>
+                        <div>
+                            <p style="font-weight: 600; margin: 0;">AI Generation Failed</p>
+                            <p style="font-size: 11px; margin: 4px 0 0 0; line-height: 1.4; color:var(--text-muted);">Unable to contact Gemini API. Please check your network connection, API key, and try again.</p>
+                        </div>
+                        <button id="btn-retry-ai-research" class="btn btn-secondary" style="font-size: 12px; padding: 6px 12px; margin-top: 10px; cursor: pointer;">Retry</button>
+                    </div>
+                `;
+                const btnRetry = document.getElementById('btn-retry-ai-research');
+                if (btnRetry) btnRetry.onclick = () => btnStart.click();
+            }
+        };
+    }
+}
+
 
 
 
