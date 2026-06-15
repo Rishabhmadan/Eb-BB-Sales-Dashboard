@@ -2148,21 +2148,24 @@ function exportFilteredCSV() {
 // RFQ TRACKING LOGIC & RENDERING
 // ==========================================
 
-// Helper to get expected closing date of a lead (using actual Expected Closing field, or projecting with historical average turnaround)
 function getLeadExpectedClosingDate(lead, avgDays = 27) {
     if (!lead) return null;
+    
+    // Dropped, Won, or Lost opportunities can never be expected to close in the future
+    if (['Won', 'Dropped', 'Lost'].includes(lead['Stage'])) {
+        return null;
+    }
+    
     if (lead['Expected Closing']) {
         return new Date(lead['Expected Closing']);
     }
     // For pending/active leads, we project based on RFQ Date or Created on
-    if (!['Won', 'Dropped'].includes(lead['Stage'])) {
-        const baseDateStr = lead['RFQ Date'] || lead['Created on'];
-        if (baseDateStr) {
-            const d = new Date(baseDateStr);
-            if (!isNaN(d.getTime())) {
-                d.setDate(d.getDate() + Math.round(avgDays));
-                return d;
-            }
+    const baseDateStr = lead['RFQ Date'] || lead['Created on'];
+    if (baseDateStr) {
+        const d = new Date(baseDateStr);
+        if (!isNaN(d.getTime())) {
+            d.setDate(d.getDate() + Math.round(avgDays));
+            return d;
         }
     }
     return null;
