@@ -1834,10 +1834,4 @@ body {
     background: linear-gradient(135deg, var(--bg-card) 0%, rgba(16, 185, 129, 0.08) 100%) !important;
     box-shadow: 0 0 0 1px var(--color-emerald) !important;
 }
-.clickable-opp-title {
-    cursor: pointer;
-    color: var(--color-blue) !important;
-}
-.clickable-opp-title:hover {
-    text-decoration: underline !important;
-}
+

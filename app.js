@@ -2591,16 +2591,24 @@ function renderTables() {
 }
 
 function toggleExecutiveClosureSelection(leadId, cardEl) {
+    const icon = cardEl.querySelector('.select-icon');
     if (selectedExecutiveClosureIds.has(leadId)) {
         selectedExecutiveClosureIds.delete(leadId);
         cardEl.classList.remove('selected');
-        const icon = cardEl.querySelector('.select-icon');
-        if (icon) icon.style.opacity = 0;
+        if (icon) {
+            icon.className = 'fa-regular fa-circle select-icon';
+            icon.style.color = 'var(--text-muted)';
+            icon.style.opacity = '0.6';
+        }
     } else {
         selectedExecutiveClosureIds.add(leadId);
         cardEl.classList.add('selected');
-        const icon = cardEl.querySelector('.select-icon');
-        if (icon) icon.style.opacity = 1;
+        if (icon) {
+            icon.className = 'fa-solid fa-circle-check select-icon';
+            const activeColor = icon.dataset.color || 'var(--color-blue)';
+            icon.style.color = activeColor;
+            icon.style.opacity = '1';
+        }
     }
     updateExecutivePOTotal();
 }
@@ -2737,16 +2745,19 @@ function renderExecutivePOTimeline() {
         const isSelected = selectedExecutiveClosureIds.has(lead.id);
         const cardClass = isConfirmed ? 'executive-milestone-card confirmed' : 'executive-milestone-card';
         const selectedClass = isSelected ? ' selected' : '';
-        const iconOpacity = isSelected ? 1 : 0;
+        
+        const iconClass = isSelected ? 'fa-solid fa-circle-check' : 'fa-regular fa-circle';
+        const iconColor = isSelected ? confidenceColor : 'var(--text-muted)';
+        const iconOpacity = isSelected ? '1' : '0.6';
 
         const milestoneHTML = `
-            <div class="${cardClass}${selectedClass}" onclick="toggleExecutiveClosureSelection('${lead.id}', this)">
+            <div class="${cardClass}${selectedClass}" onclick="openLeadDetailsModal('${lead.id}')">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
                     <span class="milestone-date-badge">${dateLabel}</span>
-                    <i class="fa-solid fa-circle-check select-icon" style="color: ${confidenceColor}; font-size: 14px; opacity: ${iconOpacity}; transition: opacity 0.2s ease;"></i>
+                    <i class="${iconClass} select-icon" data-color="${confidenceColor}" style="color: ${iconColor}; font-size: 16px; opacity: ${iconOpacity}; cursor: pointer; transition: all 0.2s ease; padding: 4px;" onclick="event.stopPropagation(); toggleExecutiveClosureSelection('${lead.id}', this.closest('.executive-milestone-card'))"></i>
                 </div>
                 <div>
-                    <h4 class="milestone-opp clickable-opp-title" title="${lead['Opportunity']}" onclick="event.stopPropagation(); openLeadDetailsModal('${lead.id}')">${shortOpp}</h4>
+                    <h4 class="milestone-opp" title="${lead['Opportunity']}">${shortOpp}</h4>
                     <p class="milestone-company"><span class="clickable-company-name" onclick="event.stopPropagation(); openCompanyModal(this.textContent)">${company}</span></p>
                 </div>
                 <div class="milestone-revenue">${revStr}</div>
