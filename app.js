@@ -10,6 +10,7 @@ let rfqGranularity = 'monthly';
 let selectedRFQInterval = null;
 let selectedRFQClosureInterval = null;
 let rfqClosuresGranularity = 'monthly';
+let executiveClosuresGranularity = 'monthly';
 let rfqAvgTurnaround = 27;
 let activeCurrency = 'INR';
 let usdToInrRate = 83.0; // 1 USD = 83 INR (fallback rate)
@@ -1742,6 +1743,20 @@ function renderExecutivePOTimeline() {
     const refDate = new Date();
     refDate.setHours(0, 0, 0, 0); // Start of today
 
+    // Calculate maximum date horizon based on executive selector
+    let maxDate = new Date(refDate.getTime() + 90 * 24 * 60 * 60 * 1000); // Default 90 days (monthly)
+    if (executiveClosuresGranularity === 'daily') {
+        maxDate = new Date(refDate.getTime() + 7 * 24 * 60 * 60 * 1000);
+    } else if (executiveClosuresGranularity === 'weekly') {
+        maxDate = new Date(refDate.getTime() + 30 * 24 * 60 * 60 * 1000);
+    } else if (executiveClosuresGranularity === 'monthly') {
+        maxDate = new Date(refDate.getTime() + 90 * 24 * 60 * 60 * 1000);
+    } else if (executiveClosuresGranularity === 'quarterly') {
+        maxDate = new Date(refDate.getTime() + 180 * 24 * 60 * 60 * 1000);
+    } else if (executiveClosuresGranularity === 'annual') {
+        maxDate = new Date(refDate.getTime() + 365 * 24 * 60 * 60 * 1000);
+    }
+
     // Map and calculate projected/confirmed closing dates
     const upcomingList = activeRFQs.map(lead => {
         const isConfirmed = !!lead['Expected Closing'];
@@ -1752,7 +1767,7 @@ function renderExecutivePOTimeline() {
             isConfirmed: isConfirmed
         };
     })
-    .filter(item => item.expDate !== null && item.expDate >= refDate)
+    .filter(item => item.expDate !== null && item.expDate >= refDate && item.expDate <= maxDate)
     .sort((a, b) => a.expDate - b.expDate)
     .slice(0, 4); // Display top 4 milestone cards side-by-side
 
@@ -1833,6 +1848,18 @@ function registerEventListeners() {
             switchTab(tabName);
         });
     });
+    // 1b. Executive closures timeline granularity toggle
+    const execClosureButtons = document.querySelectorAll('#executive-closures-grain-toggle button');
+    if (execClosureButtons) {
+        execClosureButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                execClosureButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                executiveClosuresGranularity = btn.getAttribute('data-grain');
+                renderExecutivePOTimeline();
+            });
+        });
+    }
 
     // 2. Dropdown Filter Selection triggers recalculations
     const dropdowns = ['filter-salesperson', 'filter-stage', 'filter-industry', 'filter-type', 'filter-status', 'filter-rfq-value'];
