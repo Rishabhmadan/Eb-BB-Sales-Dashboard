@@ -14,7 +14,7 @@
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
-    <link rel="stylesheet" href="style.css?v=12">
+    <link rel="stylesheet" href="style.css?v=13">
 </head>
 <body class="light-theme">
     <div class="app-container">
@@ -882,7 +882,7 @@
                 <div style="display: flex; flex-direction: column; gap: 16px;">
                     <div>
                         <h4 style="font-size: 16px; margin: 0; color: var(--text-primary);" id="detail-opp-name">Opportunity Name</h4>
-                        <p style="font-size: 13px; margin: 4px 0 0 0; color: var(--text-muted);" id="detail-company-name">Company Name</p>
+                        <p class="clickable-company-name" style="font-size: 13px; margin: 4px 0 0 0; display: inline-block;" id="detail-company-name">Company Name</p>
                     </div>
                     
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); padding: 16px 0;">
@@ -993,8 +993,101 @@
             </div>
         </div>
     </div>
+    <!-- Company Details Modal -->
+    <div class="modal-overlay" id="company-details-modal" style="display: none;">
+        <div class="modal-content modal-content-wide">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-building" style="color: var(--color-blue); margin-right: 6px;"></i> Company Details</h3>
+                <button class="modal-close" id="btn-close-company-modal">&times;</button>
+            </div>
+            <div class="modal-body-scrollable">
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                    <div>
+                        <h4 style="font-size: 20px; margin: 0; color: var(--text-primary);" id="company-detail-name">Company Name</h4>
+                        <p style="font-size: 13px; margin: 4px 0 0 0; color: var(--text-muted);" id="company-detail-industry">Industry Segment</p>
+                    </div>
+
+                    <!-- Two columns: Contact Info & Financial Summary -->
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <!-- Contact Info Card -->
+                        <div style="background: var(--bg-input); padding: 16px; border-radius: var(--border-radius-sm); border: 1px solid var(--border-color);">
+                            <h5 style="margin: 0 0 12px 0; font-size: 12px; text-transform: uppercase; font-weight: 700; color: var(--text-muted);"><i class="fa-solid fa-address-book"></i> Contact Information</h5>
+                            <div style="display: flex; flex-direction: column; gap: 8px;">
+                                <div>
+                                    <span style="font-size: 12px; font-weight: 600; color: var(--text-muted); display: inline-block; width: 120px;">Contact Person:</span>
+                                    <span style="font-size: 13px; font-weight: 600; color: var(--text-primary);" id="company-detail-contact-person">N/A</span>
+                                </div>
+                                <div>
+                                    <span style="font-size: 12px; font-weight: 600; color: var(--text-muted); display: inline-block; width: 120px;">Phone:</span>
+                                    <span style="font-size: 13px; font-weight: 600; color: var(--text-primary);" id="company-detail-phone">N/A</span>
+                                </div>
+                                <div>
+                                    <span style="font-size: 12px; font-weight: 600; color: var(--text-muted); display: inline-block; width: 120px;">Email:</span>
+                                    <span style="font-size: 13px; font-weight: 600; color: var(--color-blue);" id="company-detail-email">N/A</span>
+                                </div>
+                                <div>
+                                    <span style="font-size: 12px; font-weight: 600; color: var(--text-muted); display: inline-block; width: 120px;">Location:</span>
+                                    <span style="font-size: 13px;" id="company-detail-location">N/A</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Financial / Opportunity Summary Card -->
+                        <div style="background: var(--bg-input); padding: 16px; border-radius: var(--border-radius-sm); border: 1px solid var(--border-color);">
+                            <h5 style="margin: 0 0 12px 0; font-size: 12px; text-transform: uppercase; font-weight: 700; color: var(--text-muted);"><i class="fa-solid fa-chart-line"></i> Sales Summary</h5>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                                <div>
+                                    <label style="font-size: 10px; text-transform: uppercase; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 2px;">Total Value</label>
+                                    <span style="font-size: 15px; font-weight: 700; color: var(--text-primary);" id="company-detail-total-value">$0.00</span>
+                                </div>
+                                <div>
+                                    <label style="font-size: 10px; text-transform: uppercase; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 2px;">Won Value</label>
+                                    <span style="font-size: 15px; font-weight: 700; color: var(--color-emerald);" id="company-detail-won-value">$0.00</span>
+                                </div>
+                                <div>
+                                    <label style="font-size: 10px; text-transform: uppercase; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 2px;">Open Value</label>
+                                    <span style="font-size: 15px; font-weight: 700; color: var(--color-gold);" id="company-detail-open-value">$0.00</span>
+                                </div>
+                                <div>
+                                    <label style="font-size: 10px; text-transform: uppercase; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 2px;">Total Opportunities</label>
+                                    <span style="font-size: 15px; font-weight: 700; color: var(--color-blue);" id="company-detail-opp-count">0</span>
+                                </div>
+                            </div>
+                            <div style="margin-top: 10px; border-top: 1px solid var(--border-color); padding-top: 10px;">
+                                <label style="font-size: 10px; text-transform: uppercase; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 2px;">Primary Sales Representative</label>
+                                <span style="font-size: 13px; font-weight: 600; color: var(--text-primary);" id="company-detail-primary-rep">N/A</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- History / Opportunities Table -->
+                    <div>
+                        <h5 style="margin: 0 0 10px 0; font-size: 13px; text-transform: uppercase; font-weight: 700; color: var(--text-primary);"><i class="fa-solid fa-list-check"></i> Opportunity History</h5>
+                        <div style="overflow-x: auto; border: 1px solid var(--border-color); border-radius: var(--border-radius-sm);">
+                            <table class="data-table" id="company-opp-table" style="width: 100%; margin-bottom: 0;">
+                                <thead>
+                                    <tr>
+                                        <th>Opportunity</th>
+                                        <th>Salesperson</th>
+                                        <th>Stage</th>
+                                        <th>Type</th>
+                                        <th class="num-col">Expected Revenue</th>
+                                        <th>Created On</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="company-opp-table-body">
+                                    <!-- populated dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Script to Load Data and Handle Interactions -->
-    <script src="app.js?v=15"></script>
+    <script src="app.js?v=16"></script>
 </body>
 </html>

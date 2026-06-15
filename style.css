@@ -1657,6 +1657,9 @@ body {
 #lead-details-modal {
     z-index: 1100;
 }
+#company-details-modal {
+    z-index: 1200;
+}
 #api-modal {
     z-index: 1100;
 }
@@ -1790,7 +1793,12 @@ body {
     color: var(--color-blue);
     text-transform: uppercase;
 }
-
-
-
-
+.clickable-company-name {
+    color: var(--color-blue);
+    cursor: pointer;
+    font-weight: 500;
+}
+.clickable-company-name:hover {
+    text-decoration: underline;
+    opacity: 0.85;
+}

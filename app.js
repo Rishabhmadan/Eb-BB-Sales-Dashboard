@@ -48,7 +48,7 @@ window.addEventListener('popstate', (e) => {
     const activeModalId = state && state.modalId;
     
     // Close modals that shouldn't be open
-    ['lead-details-modal', 'api-modal', 'leads-list-modal'].forEach(id => {
+    ['lead-details-modal', 'api-modal', 'leads-list-modal', 'company-details-modal'].forEach(id => {
         if (id !== activeModalId) {
             hideModal(id, true);
         }
@@ -328,7 +328,7 @@ function renderModalLeadsTable(leads) {
         
         tr.innerHTML = `
             <td><span class="clickable-opportunity" onclick="openLeadDetailsModal('${escOppName}')" title="${lead['Opportunity']}">${shortOppName}</span></td>
-            <td><span style="font-weight:500;" title="${lead['Company Name']}">${lead['Company Name'] || 'N/A'}</span></td>
+            <td><span class="clickable-company-name" onclick="event.stopPropagation(); openCompanyModal(this.textContent)" title="${lead['Company Name']}">${lead['Company Name'] || 'N/A'}</span></td>
             <td>${lead['Salesperson'] || 'Unassigned'}</td>
             <td><span style="color:var(--color-blue); font-weight:500;">${lead['Stage']}</span></td>
             <td>${lead['Opportunity Type'] || 'N/A'}</td>
@@ -503,6 +503,111 @@ function openLeadDetailsModal(oppName) {
     
     // Show Modal
     showModal('lead-details-modal');
+}
+
+// Open Company Details Modal and aggregate details from Odoo data
+function openCompanyModal(companyName) {
+    if (!companyName || companyName === 'N/A') return;
+    
+    // Filter all opportunities matching this company name
+    const companyLeads = allLeads.filter(l => l['Company Name'] === companyName);
+    if (companyLeads.length === 0) return;
+    
+    // Let's use the most recent lead (or any lead with valid contact info) to populate general contact info
+    const primaryLead = companyLeads.find(l => l['Contact Name'] || l['Email'] || l['Phone']) || companyLeads[0];
+    
+    // Populate Modal Elements
+    document.getElementById('company-detail-name').textContent = companyName;
+    document.getElementById('company-detail-industry').textContent = primaryLead['Industry Segment'] || 'Other';
+    
+    // Contact Info
+    const phone = primaryLead['Phone'] || primaryLead['Mobile'] || primaryLead['Contact No'] || primaryLead['Contact no'] || 'N/A';
+    document.getElementById('company-detail-contact-person').textContent = primaryLead['Contact Name'] || 'N/A';
+    document.getElementById('company-detail-phone').textContent = phone;
+    document.getElementById('company-detail-email').textContent = primaryLead['Email'] || 'N/A';
+    
+    const locationParts = [primaryLead['City'], primaryLead['State'], primaryLead['Country']].filter(Boolean);
+    document.getElementById('company-detail-location').textContent = locationParts.join(', ') || 'N/A';
+    
+    // Financial / Sales Summary
+    let totalValue = 0;
+    let wonValue = 0;
+    let openValue = 0;
+    const salesReps = {};
+    
+    companyLeads.forEach(lead => {
+        const value = parseFloat(lead['Expected Revenue']) || 0;
+        totalValue += value;
+        
+        if (lead['Won/Lost'] === 'Won' || lead['Stage'] === 'Won') {
+            wonValue += value;
+        } else if (lead['Stage'] !== 'Dropped' && lead['Stage'] !== 'Lost') {
+            openValue += value;
+        }
+        
+        const rep = lead['Salesperson'];
+        if (rep) {
+            salesReps[rep] = (salesReps[rep] || 0) + 1;
+        }
+    });
+    
+    // Primary Sales Rep is the one with the most opportunities for this company
+    let primaryRep = 'Unassigned';
+    let maxCount = 0;
+    for (const [rep, count] of Object.entries(salesReps)) {
+        if (count > maxCount) {
+            maxCount = count;
+            primaryRep = rep;
+        }
+    }
+    
+    document.getElementById('company-detail-total-value').textContent = formatCurrency(totalValue);
+    document.getElementById('company-detail-won-value').textContent = formatCurrency(wonValue);
+    document.getElementById('company-detail-open-value').textContent = formatCurrency(openValue);
+    document.getElementById('company-detail-opp-count').textContent = companyLeads.length;
+    document.getElementById('company-detail-primary-rep').textContent = primaryRep;
+    
+    // Populate Opportunity History Table
+    const tbody = document.getElementById('company-opp-table-body');
+    tbody.innerHTML = '';
+    
+    companyLeads.forEach(lead => {
+        const tr = document.createElement('tr');
+        tr.style.cursor = 'pointer';
+        
+        // Escape opportunity name for JS function arg
+        const escOppName = (lead['Opportunity'] || '').replace(/'/g, "\\'");
+        
+        // On click, close company modal and show lead details modal
+        tr.onclick = (e) => {
+            hideModal('company-details-modal');
+            openLeadDetailsModal(lead['Opportunity']);
+        };
+        
+        const cleanDate = lead['Created on'] ? lead['Created on'].substring(0, 10) : (lead['RFQ Date'] ? lead['RFQ Date'].substring(0, 10) : 'N/A');
+        
+        let statusBadge = '';
+        if (lead['Won/Lost'] === 'Won' || lead['Stage'] === 'Won') {
+            statusBadge = `<span class="badge badge-emerald">Won</span>`;
+        } else if (lead['Stage'] === 'Dropped' || lead['Stage'] === 'Lost') {
+            statusBadge = `<span class="badge badge-rose">Dropped</span>`;
+        } else {
+            statusBadge = `<span class="badge badge-blue">Open</span>`;
+        }
+        
+        tr.innerHTML = `
+            <td><span class="clickable-opportunity" style="font-weight: 500;">${lead['Opportunity'] || 'N/A'}</span></td>
+            <td>${lead['Salesperson'] || 'Unassigned'}</td>
+            <td>${lead['Stage'] || 'Open'}</td>
+            <td>${lead['Opportunity Type'] || 'N/A'}</td>
+            <td class="num-col">${formatCurrency(lead['Expected Revenue'] || 0)}</td>
+            <td>${cleanDate}</td>
+            <td>${statusBadge}</td>
+        `;
+        tbody.appendChild(tr);
+    });
+    
+    showModal('company-details-modal');
 }
 
 
@@ -1641,7 +1746,7 @@ function renderTables() {
                     
                     tr.innerHTML = `
                         <td><span class="clickable-opportunity" title="${lead['Opportunity']}">${shortOppName}</span></td>
-                        <td><span style="font-weight:500;" title="${lead['Company Name']}">${lead['Company Name'] || 'N/A'}</span></td>
+                        <td><span class="clickable-company-name" onclick="event.stopPropagation(); openCompanyModal(this.textContent)" title="${lead['Company Name']}">${lead['Company Name'] || 'N/A'}</span></td>
                         <td>${lead['Salesperson']}</td>
                         <td>${lead['Stage']}</td>
                         <td class="num-col" style="font-weight:600; color: var(--color-blue);">${formatCurrency(lead['Expected Revenue'])}</td>
@@ -1843,7 +1948,7 @@ function renderTables() {
 
             tr.innerHTML = `
                 <td><span class="clickable-opportunity" onclick="openLeadDetailsModal('${lead['Opportunity'].replace(/'/g, "\\'")}')" title="${lead['Opportunity']}">${shortOppName}</span></td>
-                <td><span style="font-weight:500;" title="${lead['Company Name']}">${lead['Company Name'] || 'N/A'}</span></td>
+                <td><span class="clickable-company-name" onclick="event.stopPropagation(); openCompanyModal(this.textContent)" title="${lead['Company Name']}">${lead['Company Name'] || 'N/A'}</span></td>
                 <td>${lead['Salesperson']}</td>
                 <td><span style="color:var(--color-blue); font-weight:500;">${lead['Stage']}</span></td>
                 <td>${lead['Opportunity Type']}</td>
@@ -1943,7 +2048,7 @@ function renderExecutivePOTimeline() {
                 <span class="milestone-date-badge">${dateLabel}</span>
                 <div>
                     <h4 class="milestone-opp" title="${lead['Opportunity']}">${shortOpp}</h4>
-                    <p class="milestone-company">${company}</p>
+                    <p class="milestone-company"><span class="clickable-company-name" onclick="event.stopPropagation(); openCompanyModal(this.textContent)">${company}</span></p>
                 </div>
                 <div class="milestone-revenue">${revStr}</div>
                 
@@ -2421,6 +2526,27 @@ function registerEventListeners() {
         btnCloseLead.addEventListener('click', () => { hideModal('lead-details-modal'); });
         leadModal.addEventListener('click', (e) => {
             if (e.target === leadModal) hideModal('lead-details-modal');
+        });
+    }
+
+    // Company details modal close listener
+    const btnCloseCompany = document.getElementById('btn-close-company-modal');
+    const companyModal = document.getElementById('company-details-modal');
+    if (btnCloseCompany && companyModal) {
+        btnCloseCompany.addEventListener('click', () => { hideModal('company-details-modal'); });
+        companyModal.addEventListener('click', (e) => {
+            if (e.target === companyModal) hideModal('company-details-modal');
+        });
+    }
+
+    // Clickable company name inside Lead details modal
+    const detailCompanyEl = document.getElementById('detail-company-name');
+    if (detailCompanyEl) {
+        detailCompanyEl.addEventListener('click', () => {
+            const companyName = detailCompanyEl.textContent;
+            if (companyName && companyName !== 'N/A') {
+                openCompanyModal(companyName);
+            }
         });
     }
 
@@ -3412,7 +3538,7 @@ function renderRFQTable() {
 
         tr.innerHTML = `
             <td><span class="clickable-opportunity" onclick="openLeadDetailsModal('${lead['Opportunity'].replace(/'/g, "\\'")}')" title="${lead['Opportunity']}">${shortName}</span></td>
-            <td>${lead['Company Name'] || 'N/A'}</td>
+            <td><span class="clickable-company-name" onclick="event.stopPropagation(); openCompanyModal(this.textContent)" title="${lead['Company Name']}">${lead['Company Name'] || 'N/A'}</span></td>
             <td>${lead['Salesperson']}</td>
             <td class="num-col">${cleanDate}</td>
             <td class="num-col">${cleanClosedDate}</td>
