@@ -2635,7 +2635,14 @@ function renderExecutivePOTimeline() {
         });
     }
 
-    upcomingList.sort((a, b) => a.expDate - b.expDate);
+    upcomingList.sort((a, b) => {
+        const probA = a.lead['Probability'] || 0;
+        const probB = b.lead['Probability'] || 0;
+        if (probB !== probA) {
+            return probB - probA; // Highest confidence first
+        }
+        return a.expDate - b.expDate; // Soonest close date first
+    });
 
     // Calculate total expected revenue for the filtered list
     let totalRevenue = 0;
