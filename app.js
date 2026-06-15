@@ -3364,20 +3364,25 @@ Location: ${locationParts.join(', ') || 'N/A'}
         });
     }
 
-    // Close modals when Escape key is pressed
+    // Close modals or clear tile selection when Escape key is pressed
     window.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
             const apiModal = document.getElementById('api-modal');
-            if (apiModal && apiModal.style.display === 'flex') hideModal('api-modal');
-            
             const leadModal = document.getElementById('lead-details-modal');
-            if (leadModal && leadModal.style.display === 'flex') hideModal('lead-details-modal');
-            
             const leadsListModal = document.getElementById('leads-list-modal');
-            if (leadsListModal && leadsListModal.style.display === 'flex') hideModal('leads-list-modal');
-            
             const companyModal = document.getElementById('company-details-modal');
-            if (companyModal && companyModal.style.display === 'flex') hideModal('company-details-modal');
+            
+            let modalClosed = false;
+            
+            if (apiModal && apiModal.style.display === 'flex') { hideModal('api-modal'); modalClosed = true; }
+            if (leadModal && leadModal.style.display === 'flex') { hideModal('lead-details-modal'); modalClosed = true; }
+            if (leadsListModal && leadsListModal.style.display === 'flex') { hideModal('leads-list-modal'); modalClosed = true; }
+            if (companyModal && companyModal.style.display === 'flex') { hideModal('company-details-modal'); modalClosed = true; }
+            
+            if (!modalClosed && selectedExecutiveClosureIds.size > 0) {
+                selectedExecutiveClosureIds.clear();
+                renderExecutivePOTimeline();
+            }
         }
     });
 
