@@ -1661,6 +1661,129 @@ body {
     white-space: nowrap;
 }
 
+/* Executive Overview Timeline UX */
+.executive-timeline-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 10px 0;
+    margin-top: 15px;
+}
+
+.executive-milestone-card {
+    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(0, 0, 255, 0.03) 100%);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.executive-milestone-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--color-blue);
+}
+
+.executive-milestone-card.confirmed::before {
+    background-color: var(--color-emerald);
+}
+
+.executive-milestone-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(0, 0, 255, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.milestone-date-badge {
+    align-self: flex-start;
+    padding: 4px 8px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 255, 0.1);
+    color: var(--color-blue);
+}
+
+.executive-milestone-card.confirmed .milestone-date-badge {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: var(--color-emerald);
+}
+
+.milestone-opp {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+
+.milestone-company {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin: 4px 0 0 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.milestone-revenue {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin: 4px 0;
+}
+
+.milestone-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border-color);
+    padding-top: 10px;
+    margin-top: 4px;
+}
+
+.milestone-salesperson {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    color: var(--text-secondary);
+}
+
+.sales-avatar {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--color-purple);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.milestone-stage {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--color-blue);
+    text-transform: uppercase;
+}
+
 
 
 

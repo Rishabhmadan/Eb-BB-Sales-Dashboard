@@ -1523,6 +1523,7 @@ function renderTables() {
                 });
             }
         }
+        renderExecutivePOTimeline();
     }
 
     if (activeTab === 'rfq') {
@@ -1724,6 +1725,101 @@ function renderTables() {
             tbody.appendChild(tr);
         });
     }
+}
+
+// 0b. OVERVIEW TAB - Executive PO Closures Milestone Timeline
+function renderExecutivePOTimeline() {
+    const timelineContainer = document.getElementById('executive-po-timeline');
+    if (!timelineContainer) return;
+    timelineContainer.innerHTML = '';
+
+    // Filter active RFQ leads (must have RFQ Date, stage not in Won, Dropped, Lost)
+    const activeRFQs = filteredLeads.filter(lead => 
+        getLeadRFQDate(lead) !== null && 
+        !['Won', 'Dropped', 'Lost'].includes(lead['Stage'])
+    );
+
+    const refDate = new Date();
+    refDate.setHours(0, 0, 0, 0); // Start of today
+
+    // Map and calculate projected/confirmed closing dates
+    const upcomingList = activeRFQs.map(lead => {
+        const isConfirmed = !!lead['Expected Closing'];
+        const expDate = getLeadExpectedClosingDate(lead, rfqAvgTurnaround);
+        return {
+            lead: lead,
+            expDate: expDate,
+            isConfirmed: isConfirmed
+        };
+    })
+    .filter(item => item.expDate !== null && item.expDate >= refDate)
+    .sort((a, b) => a.expDate - b.expDate)
+    .slice(0, 4); // Display top 4 milestone cards side-by-side
+
+    if (upcomingList.length === 0) {
+        timelineContainer.innerHTML = `
+            <div style="grid-column: 1 / -1; text-align: center; color: var(--text-muted); padding: 30px; border: 1px dashed var(--border-color); border-radius: var(--border-radius-md); width: 100%;">
+                <i class="fa-solid fa-hourglass-empty" style="font-size: 24px; margin-bottom: 8px; color: var(--color-blue); display: block;"></i>
+                <p style="margin: 0; font-size: 13px;">No upcoming PO closures projected for the active pipeline.</p>
+            </div>
+        `;
+        return;
+    }
+
+    upcomingList.forEach(item => {
+        const lead = item.lead;
+        const isConfirmed = item.isConfirmed;
+        const expDate = item.expDate;
+        
+        const shortOpp = lead['Opportunity'] ? lead['Opportunity'].split(' - ')[0] : 'N/A';
+        const company = lead['Company Name'] || 'N/A';
+        const revStr = formatCurrency(lead['Expected Revenue'] || 0);
+        const dateStr = expDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+        const badgeLabel = isConfirmed ? 'Confirmed' : 'Projected';
+        
+        // Initials for avatar
+        const salesRep = lead['Salesperson'] || 'Unassigned';
+        const initials = salesRep.split(' ').map(n => n[0]).join('').substring(0, 2);
+
+        // Calculate progress percentage based on stage to give a visual UX
+        let progress = 20;
+        if (lead['Stage'] === 'Connected') progress = 40;
+        else if (lead['Stage'] === 'RFQ Received') progress = 70;
+        else if (lead['Stage'] === 'RFQ Expected') progress = 85;
+        
+        const cardClass = isConfirmed ? 'executive-milestone-card confirmed' : 'executive-milestone-card';
+
+        const milestoneHTML = `
+            <div class="${cardClass}" onclick="openLeadDetailsModal('${lead['Opportunity'].replace(/'/g, "\\'")}')">
+                <span class="milestone-date-badge">${dateStr} (${badgeLabel})</span>
+                <div>
+                    <h4 class="milestone-opp" title="${lead['Opportunity']}">${shortOpp}</h4>
+                    <p class="milestone-company">${company}</p>
+                </div>
+                <div class="milestone-revenue">${revStr}</div>
+                
+                <!-- Progress indicator for win probability/stage -->
+                <div style="margin-top: 4px;">
+                    <div style="display:flex; justify-content:space-between; font-size:9px; color: var(--text-muted); margin-bottom:3px;">
+                        <span>Deal Stage</span>
+                        <span>${progress}%</span>
+                    </div>
+                    <div style="width: 100%; height: 6px; background-color: var(--border-color); border-radius: 3px; overflow:hidden;">
+                        <div style="width: ${progress}%; height: 100%; background-color: ${isConfirmed ? 'var(--color-emerald)' : 'var(--color-blue)'}; border-radius: 3px;"></div>
+                    </div>
+                </div>
+
+                <div class="milestone-footer">
+                    <div class="milestone-salesperson">
+                        <div class="sales-avatar">${initials}</div>
+                        <span>${salesRep}</span>
+                    </div>
+                    <span class="milestone-stage">${lead['Stage']}</span>
+                </div>
+            </div>
+        `;
+        timelineContainer.insertAdjacentHTML('beforeend', milestoneHTML);
+    });
 }
 
 // Set up UI interactions, search, sorting and sidebar clicks
