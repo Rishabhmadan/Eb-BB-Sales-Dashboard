@@ -19,6 +19,8 @@ let usdToInrRate = 83.0; // 1 USD = 83 INR (fallback rate)
 let selectedLeadForModal = null;
 let selectedExecutiveClosureIds = new Set();
 let currentUpcomingPOTimelineLeads = [];
+let selectedOverdueClosureIds = new Set();
+let currentOverduePOTimelineLeads = [];
 
 const VALID_TABS = ['overview', 'pipeline', 'team', 'geo', 'rfq', 'explorer', 'ai'];
 
@@ -2386,6 +2388,7 @@ function renderTables() {
                 });
             }
         }
+        renderExecutiveOverdueTimeline();
         renderExecutivePOTimeline();
     }
 
@@ -2636,6 +2639,177 @@ function updateExecutivePOTotal() {
         totalDisplayEl.parentNode.firstElementChild.textContent = prefix;
         totalDisplayEl.textContent = formatCurrency(totalRevenue);
     }
+}
+
+function toggleOverdueClosureSelection(leadId, cardEl) {
+    const icon = cardEl.querySelector('.select-icon');
+    if (selectedOverdueClosureIds.has(leadId)) {
+        selectedOverdueClosureIds.delete(leadId);
+        cardEl.classList.remove('selected');
+        if (icon) {
+            icon.className = 'fa-regular fa-circle select-icon';
+            icon.style.color = 'var(--text-muted)';
+            icon.style.opacity = '0.6';
+        }
+    } else {
+        selectedOverdueClosureIds.add(leadId);
+        cardEl.classList.add('selected');
+        if (icon) {
+            icon.className = 'fa-solid fa-circle-check select-icon';
+            icon.style.color = 'var(--color-rose)';
+            icon.style.opacity = '1';
+        }
+    }
+    updateOverduePOTotal();
+}
+
+function updateOverduePOTotal() {
+    let totalRevenue = 0;
+    let selectedCount = 0;
+    
+    currentOverduePOTimelineLeads.forEach(item => {
+        if (selectedOverdueClosureIds.has(item.lead.id)) {
+            totalRevenue += item.lead['Expected Revenue'] || 0;
+            selectedCount += 1;
+        }
+    });
+    
+    if (selectedCount === 0) {
+        currentOverduePOTimelineLeads.forEach(item => {
+            totalRevenue += item.lead['Expected Revenue'] || 0;
+        });
+    }
+
+    const totalDisplayEl = document.getElementById('executive-overdue-total-value');
+    if (totalDisplayEl) {
+        const prefix = selectedCount > 0 ? `Selected (${selectedCount}):` : 'Total Overdue:';
+        totalDisplayEl.parentNode.firstElementChild.textContent = prefix;
+        totalDisplayEl.textContent = formatCurrency(totalRevenue);
+    }
+}
+
+// 0c. OVERVIEW TAB - Executive Overdue PO Closures Timeline
+function renderExecutiveOverdueTimeline() {
+    const timelineContainer = document.getElementById('executive-overdue-timeline');
+    if (!timelineContainer) return;
+    timelineContainer.innerHTML = '';
+
+    // Filter active RFQ leads (must have RFQ Date, stage not in Won, Dropped, Lost)
+    const activeRFQs = filteredLeads.filter(lead => 
+        getLeadRFQDate(lead) !== null && 
+        !['Won', 'Dropped', 'Lost'].includes(lead['Stage'])
+    );
+
+    const refDate = new Date();
+    refDate.setHours(0, 0, 0, 0); // Start of today
+
+    // Map and calculate projected expected closing dates
+    let overdueList = activeRFQs.map(lead => {
+        const isConfirmed = !!lead['Expected Closing'];
+        const expDate = getLeadExpectedClosingDate(lead, rfqAvgTurnaround);
+        return {
+            lead: lead,
+            expDate: expDate,
+            isConfirmed: isConfirmed
+        };
+    })
+    .filter(item => item.expDate !== null && item.expDate < refDate);
+
+    // Sort overdue list: oldest expected closing date first (most overdue first)
+    overdueList.sort((a, b) => {
+        return a.expDate - b.expDate; 
+    });
+
+    currentOverduePOTimelineLeads = overdueList;
+    updateOverduePOTotal();
+
+    if (overdueList.length === 0) {
+        timelineContainer.innerHTML = `
+            <div style="grid-column: 1 / -1; text-align: center; color: var(--text-muted); padding: 30px; border: 1px dashed var(--border-color); border-radius: var(--border-radius-md); width: 100%;">
+                <i class="fa-solid fa-circle-check" style="font-size: 24px; margin-bottom: 8px; color: var(--color-emerald); display: block;"></i>
+                <p style="margin: 0; font-size: 13px; color: var(--text-muted);">No overdue PO closures. All deals are on track!</p>
+            </div>
+        `;
+        return;
+    }
+
+    overdueList.forEach(item => {
+        const lead = item.lead;
+        const isConfirmed = item.isConfirmed;
+        const expDate = item.expDate;
+        
+        const shortOpp = lead['Opportunity'] ? lead['Opportunity'].split(' - ')[0] : 'N/A';
+        const company = lead['Company Name'] || 'N/A';
+        const revStr = formatCurrency(lead['Expected Revenue'] || 0);
+        const dateStr = expDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+        const dateLabel = isConfirmed ? dateStr : `${dateStr} (Projected)`;
+        
+        // Initials for avatar
+        const salesRep = lead['Salesperson'] || 'Unassigned';
+        const initials = salesRep.split(' ').map(n => n[0]).join('').substring(0, 2);
+
+        // Fetch probability %
+        let confidence = lead['Probability'];
+        if (confidence === undefined || confidence === null || isNaN(parseFloat(confidence))) {
+            confidence = 20;
+            if (lead['Stage'] === 'Connected') confidence = 40;
+            else if (lead['Stage'] === 'RFQ Received') confidence = 70;
+            else if (lead['Stage'] === 'RFQ Expected') confidence = 85;
+        }
+        confidence = Math.round(confidence);
+
+        // Color coding logic: >=90 green, >=80 orange, >=50 yellow, <50 red
+        let confidenceColor = 'var(--color-rose)'; // Red (<50)
+        if (confidence >= 90) {
+            confidenceColor = 'var(--color-emerald)'; // Green
+        } else if (confidence >= 80) {
+            confidenceColor = '#f97316'; // Orange
+        } else if (confidence >= 50) {
+            confidenceColor = 'var(--color-gold)'; // Yellow
+        }
+        
+        const isSelected = selectedOverdueClosureIds.has(lead.id);
+        const cardClass = 'executive-milestone-card overdue';
+        const selectedClass = isSelected ? ' selected' : '';
+        
+        const iconClass = isSelected ? 'fa-solid fa-circle-check' : 'fa-regular fa-circle';
+        const iconColor = isSelected ? 'var(--color-rose)' : 'var(--text-muted)';
+        const iconOpacity = isSelected ? '1' : '0.6';
+
+        const milestoneHTML = `
+            <div class="${cardClass}${selectedClass}" onclick="openLeadDetailsModal('${lead.id}')">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                    <span class="milestone-date-badge">${dateLabel}</span>
+                    <i class="${iconClass} select-icon" data-color="var(--color-rose)" style="color: ${iconColor}; font-size: 16px; opacity: ${iconOpacity}; cursor: pointer; transition: all 0.2s ease; padding: 4px;" onclick="event.stopPropagation(); toggleOverdueClosureSelection('${lead.id}', this.closest('.executive-milestone-card'))"></i>
+                </div>
+                <div>
+                    <h4 class="milestone-opp" title="${lead['Opportunity']}">${shortOpp}</h4>
+                    <p class="milestone-company"><span class="clickable-company-name" onclick="event.stopPropagation(); openCompanyModal(this.textContent)">${company}</span></p>
+                </div>
+                <div class="milestone-revenue">${revStr}</div>
+                
+                <!-- Progress indicator for win probability/stage -->
+                <div style="margin-top: 4px;">
+                    <div style="display:flex; justify-content:space-between; font-size:9px; color: var(--text-muted); margin-bottom:3px;">
+                        <span>Deal Closure Confidence</span>
+                        <span style="color: ${confidenceColor}; font-weight: 700;">${confidence}%</span>
+                    </div>
+                    <div style="width: 100%; height: 6px; background-color: var(--border-color); border-radius: 3px; overflow:hidden;">
+                        <div style="width: ${confidence}%; height: 100%; background-color: ${confidenceColor}; border-radius: 3px;"></div>
+                    </div>
+                </div>
+
+                <div class="milestone-footer">
+                    <div class="milestone-salesperson">
+                        <div class="sales-avatar">${initials}</div>
+                        <span>${salesRep}</span>
+                    </div>
+                    <span class="milestone-stage">${lead['Stage']}</span>
+                </div>
+            </div>
+        `;
+        timelineContainer.insertAdjacentHTML('beforeend', milestoneHTML);
+    });
 }
 
 // 0b. OVERVIEW TAB - Executive PO Closures Milestone Timeline
@@ -3390,9 +3564,11 @@ Location: ${locationParts.join(', ') || 'N/A'}
             if (leadsListModal && leadsListModal.style.display === 'flex') { hideModal('leads-list-modal'); modalClosed = true; }
             if (companyModal && companyModal.style.display === 'flex') { hideModal('company-details-modal'); modalClosed = true; }
             
-            if (!modalClosed && selectedExecutiveClosureIds.size > 0) {
+            if (!modalClosed && (selectedExecutiveClosureIds.size > 0 || selectedOverdueClosureIds.size > 0)) {
                 selectedExecutiveClosureIds.clear();
+                selectedOverdueClosureIds.clear();
                 renderExecutivePOTimeline();
+                renderExecutiveOverdueTimeline();
             }
         }
     });

@@ -1835,3 +1835,20 @@ body {
     box-shadow: 0 0 0 1px var(--color-emerald) !important;
 }
 
+/* Overdue milestone card customization */
+.executive-milestone-card.overdue::before {
+    background-color: var(--color-rose);
+}
+.executive-milestone-card.overdue .milestone-date-badge {
+    background-color: rgba(244, 63, 94, 0.1);
+    color: var(--color-rose);
+}
+.executive-milestone-card.overdue.selected {
+    border-color: var(--color-rose) !important;
+    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(244, 63, 94, 0.08) 100%) !important;
+    box-shadow: 0 0 0 1px var(--color-rose) !important;
+}
+.executive-milestone-card.overdue:hover {
+    border-color: rgba(244, 63, 94, 0.2);
+}
+

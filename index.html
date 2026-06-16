@@ -285,6 +285,25 @@
                         </div>
                     </div>
 
+                    <!-- Executive Overdue Card: Milestone Timeline -->
+                    <div class="chart-card span-3" id="executive-overdue-timeline-card" style="min-height: auto;">
+                        <div class="chart-header header-row">
+                            <div>
+                                <h3>Overdue PO Closures (Action Required)</h3>
+                                <p>Deals with expected closing dates in the past. Update expected dates or close the deal.</p>
+                            </div>
+                            <div class="granularity-selector" style="display: flex; gap: 8px; align-items: center;">
+                                <div id="executive-overdue-total-container" style="display: flex; align-items: center; gap: 8px; background: var(--bg-input); border: 1px solid var(--border-color); padding: 6px 14px; border-radius: var(--border-radius-sm); height: 37px; box-sizing: border-box; margin-right: 8px;">
+                                    <span style="font-size: 11px; font-weight: 600; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.5px;">Total Overdue:</span>
+                                    <span id="executive-overdue-total-value" style="font-size: 14px; font-weight: 700; color: var(--color-rose);">₹0.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="executive-timeline-container" id="executive-overdue-timeline">
+                            <!-- Populated dynamically with overdue milestone cards -->
+                        </div>
+                    </div>
+
                     <!-- Executive Forecast Card: Milestone Timeline -->
                     <div class="chart-card span-3" id="executive-closures-timeline-card" style="min-height: auto;">
                         <div class="chart-header header-row">
