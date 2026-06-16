@@ -1852,3 +1852,132 @@ body {
     border-color: rgba(244, 63, 94, 0.2);
 }
 
+/* Card header, body, progress bar layout elements for Grid / default layout */
+.milestone-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+.milestone-card-header .select-icon {
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 4px;
+}
+.milestone-card-body {
+    display: block;
+}
+.milestone-card-progress {
+    margin-top: 4px;
+}
+.milestone-progress-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+    color: var(--text-muted);
+    margin-bottom: 3px;
+}
+.milestone-confidence-val {
+    font-weight: 700;
+}
+.milestone-progress-track {
+    width: 100%;
+    height: 6px;
+    background-color: var(--border-color);
+    border-radius: 3px;
+    overflow: hidden;
+}
+.milestone-progress-bar {
+    height: 100%;
+    border-radius: 3px;
+}
+
+/* Rowwise / List View layout rules */
+.executive-timeline-container.rowwise-view {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.executive-timeline-container.rowwise-view .executive-milestone-card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 14px 24px;
+    min-height: auto;
+}
+
+.executive-timeline-container.rowwise-view .executive-milestone-card::before {
+    width: 4px;
+    height: 100%;
+}
+
+.executive-timeline-container.rowwise-view .milestone-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 0;
+    flex-shrink: 0;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.executive-timeline-container.rowwise-view .milestone-card-body {
+    flex: 2;
+    min-width: 150px;
+}
+
+.executive-timeline-container.rowwise-view .milestone-revenue {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    flex: 1;
+    text-align: right;
+    min-width: 100px;
+}
+
+.executive-timeline-container.rowwise-view .milestone-card-progress {
+    flex: 2;
+    margin-top: 0;
+    min-width: 160px;
+}
+
+.executive-timeline-container.rowwise-view .milestone-footer {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1.5;
+    justify-content: flex-end;
+    min-width: 180px;
+}
+
+/* Mobile responsive rowwise layout */
+@media (max-width: 992px) {
+    .executive-timeline-container.rowwise-view .executive-milestone-card {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+        padding: 20px;
+    }
+    .executive-timeline-container.rowwise-view .milestone-card-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .executive-timeline-container.rowwise-view .milestone-revenue {
+        text-align: left;
+        font-size: 18px;
+        margin: 4px 0;
+    }
+    .executive-timeline-container.rowwise-view .milestone-footer {
+        border-top: 1px solid var(--border-color);
+        padding-top: 10px;
+        margin-top: 4px;
+        justify-content: space-between;
+    }
+}
+

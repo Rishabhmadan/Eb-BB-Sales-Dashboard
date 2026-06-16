@@ -297,6 +297,14 @@
                                     <span style="font-size: 11px; font-weight: 600; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.5px;">Total Overdue:</span>
                                     <span id="executive-overdue-total-value" style="font-size: 14px; font-weight: 700; color: var(--color-rose);">₹0.00</span>
                                 </div>
+                                <div class="view-toggle-group" data-target="overdue" style="display: flex; background: var(--bg-input); border: 1px solid var(--border-color); border-radius: var(--border-radius-sm); padding: 2px; height: 37px; box-sizing: border-box; align-items: center;">
+                                    <button type="button" class="view-toggle-btn active" data-view="grid" title="Grid View" style="background: var(--bg-card); border: none; border-radius: 6px; width: 33px; height: 31px; color: var(--text-primary); cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; font-size: 14px; padding: 0;">
+                                        <i class="fa-solid fa-table-cells"></i>
+                                    </button>
+                                    <button type="button" class="view-toggle-btn" data-view="list" title="Row/List View" style="background: transparent; border: none; border-radius: 6px; width: 33px; height: 31px; color: var(--text-muted); cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; font-size: 14px; padding: 0;">
+                                        <i class="fa-solid fa-list"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         <div class="executive-timeline-container" id="executive-overdue-timeline">
@@ -315,6 +323,14 @@
                                 <div id="executive-closures-total-container" style="display: flex; align-items: center; gap: 8px; background: var(--bg-input); border: 1px solid var(--border-color); padding: 6px 14px; border-radius: var(--border-radius-sm); height: 37px; box-sizing: border-box; margin-right: 8px;">
                                     <span style="font-size: 11px; font-weight: 600; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.5px;">Total:</span>
                                     <span id="executive-closures-total-value" style="font-size: 14px; font-weight: 700; color: var(--color-blue);">₹0.00</span>
+                                </div>
+                                <div class="view-toggle-group" data-target="upcoming" style="display: flex; background: var(--bg-input); border: 1px solid var(--border-color); border-radius: var(--border-radius-sm); padding: 2px; height: 37px; box-sizing: border-box; align-items: center; margin-right: 8px;">
+                                    <button type="button" class="view-toggle-btn active" data-view="grid" title="Grid View" style="background: var(--bg-card); border: none; border-radius: 6px; width: 33px; height: 31px; color: var(--text-primary); cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; font-size: 14px; padding: 0;">
+                                        <i class="fa-solid fa-table-cells"></i>
+                                    </button>
+                                    <button type="button" class="view-toggle-btn" data-view="list" title="Row/List View" style="background: transparent; border: none; border-radius: 6px; width: 33px; height: 31px; color: var(--text-muted); cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; font-size: 14px; padding: 0;">
+                                        <i class="fa-solid fa-list"></i>
+                                    </button>
                                 </div>
                                 <select id="executive-closures-grain" style="background-color: var(--bg-input); border: 1px solid var(--border-color); color: var(--text-primary); padding: 8px 12px; border-radius: var(--border-radius-sm); font-size: 13px; outline: none; font-weight: 600; cursor: pointer; transition: border-color var(--transition-fast);">
                                     <option value="all">All Horizons</option>

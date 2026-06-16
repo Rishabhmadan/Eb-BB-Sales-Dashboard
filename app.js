@@ -21,6 +21,7 @@ let selectedExecutiveClosureIds = new Set();
 let currentUpcomingPOTimelineLeads = [];
 let selectedOverdueClosureIds = new Set();
 let currentOverduePOTimelineLeads = [];
+let executiveTimelineView = localStorage.getItem('executive_timeline_view') || 'grid';
 
 const VALID_TABS = ['overview', 'pipeline', 'team', 'geo', 'rfq', 'explorer', 'ai'];
 
@@ -178,6 +179,9 @@ async function initApp() {
 
         // Switch to the saved tab to initialize the charts and UI for it without resetting filters
         switchTab(initialTab, true, false);
+
+        // Sync view toggle state and update styles/layout on load
+        setExecutiveTimelineView(executiveTimelineView);
 
     } catch (error) {
         console.error('Error initializing application:', error);
@@ -2694,6 +2698,12 @@ function renderExecutiveOverdueTimeline() {
     if (!timelineContainer) return;
     timelineContainer.innerHTML = '';
 
+    if (executiveTimelineView === 'list') {
+        timelineContainer.classList.add('rowwise-view');
+    } else {
+        timelineContainer.classList.remove('rowwise-view');
+    }
+
     // Filter active RFQ leads (must have RFQ Date, stage not in Won, Dropped, Lost)
     const activeRFQs = filteredLeads.filter(lead => 
         getLeadRFQDate(lead) !== null && 
@@ -2778,24 +2788,23 @@ function renderExecutiveOverdueTimeline() {
 
         const milestoneHTML = `
             <div class="${cardClass}${selectedClass}" onclick="openLeadDetailsModal('${lead.id}')">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                <div class="milestone-card-header">
                     <span class="milestone-date-badge">${dateLabel}</span>
-                    <i class="${iconClass} select-icon" data-color="var(--color-rose)" style="color: ${iconColor}; font-size: 16px; opacity: ${iconOpacity}; cursor: pointer; transition: all 0.2s ease; padding: 4px;" onclick="event.stopPropagation(); toggleOverdueClosureSelection('${lead.id}', this.closest('.executive-milestone-card'))"></i>
+                    <i class="${iconClass} select-icon" data-color="var(--color-rose)" style="color: ${iconColor}; opacity: ${iconOpacity};" onclick="event.stopPropagation(); toggleOverdueClosureSelection('${lead.id}', this.closest('.executive-milestone-card'))"></i>
                 </div>
-                <div>
+                <div class="milestone-card-body">
                     <h4 class="milestone-opp" title="${lead['Opportunity']}">${shortOpp}</h4>
                     <p class="milestone-company"><span class="clickable-company-name" onclick="event.stopPropagation(); openCompanyModal(this.textContent)">${company}</span></p>
                 </div>
                 <div class="milestone-revenue">${revStr}</div>
                 
-                <!-- Progress indicator for win probability/stage -->
-                <div style="margin-top: 4px;">
-                    <div style="display:flex; justify-content:space-between; font-size:9px; color: var(--text-muted); margin-bottom:3px;">
-                        <span>Deal Closure Confidence</span>
-                        <span style="color: ${confidenceColor}; font-weight: 700;">${confidence}%</span>
+                <div class="milestone-card-progress">
+                    <div class="milestone-progress-header">
+                        <span>Deal Confidence</span>
+                        <span class="milestone-confidence-val" style="color: ${confidenceColor};">${confidence}%</span>
                     </div>
-                    <div style="width: 100%; height: 6px; background-color: var(--border-color); border-radius: 3px; overflow:hidden;">
-                        <div style="width: ${confidence}%; height: 100%; background-color: ${confidenceColor}; border-radius: 3px;"></div>
+                    <div class="milestone-progress-track">
+                        <div class="milestone-progress-bar" style="width: ${confidence}%; background-color: ${confidenceColor};"></div>
                     </div>
                 </div>
 
@@ -2817,6 +2826,12 @@ function renderExecutivePOTimeline() {
     const timelineContainer = document.getElementById('executive-po-timeline');
     if (!timelineContainer) return;
     timelineContainer.innerHTML = '';
+
+    if (executiveTimelineView === 'list') {
+        timelineContainer.classList.add('rowwise-view');
+    } else {
+        timelineContainer.classList.remove('rowwise-view');
+    }
 
     // Dynamically update the specific period values select dropdown options
     populateExecutiveClosuresMultiselect();
@@ -2926,24 +2941,23 @@ function renderExecutivePOTimeline() {
 
         const milestoneHTML = `
             <div class="${cardClass}${selectedClass}" onclick="openLeadDetailsModal('${lead.id}')">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                <div class="milestone-card-header">
                     <span class="milestone-date-badge">${dateLabel}</span>
-                    <i class="${iconClass} select-icon" data-color="${confidenceColor}" style="color: ${iconColor}; font-size: 16px; opacity: ${iconOpacity}; cursor: pointer; transition: all 0.2s ease; padding: 4px;" onclick="event.stopPropagation(); toggleExecutiveClosureSelection('${lead.id}', this.closest('.executive-milestone-card'))"></i>
+                    <i class="${iconClass} select-icon" data-color="${confidenceColor}" style="color: ${iconColor}; opacity: ${iconOpacity};" onclick="event.stopPropagation(); toggleExecutiveClosureSelection('${lead.id}', this.closest('.executive-milestone-card'))"></i>
                 </div>
-                <div>
+                <div class="milestone-card-body">
                     <h4 class="milestone-opp" title="${lead['Opportunity']}">${shortOpp}</h4>
                     <p class="milestone-company"><span class="clickable-company-name" onclick="event.stopPropagation(); openCompanyModal(this.textContent)">${company}</span></p>
                 </div>
                 <div class="milestone-revenue">${revStr}</div>
                 
-                <!-- Progress indicator for win probability/stage -->
-                <div style="margin-top: 4px;">
-                    <div style="display:flex; justify-content:space-between; font-size:9px; color: var(--text-muted); margin-bottom:3px;">
-                        <span>Deal Closure Confidence</span>
-                        <span style="color: ${confidenceColor}; font-weight: 700;">${confidence}%</span>
+                <div class="milestone-card-progress">
+                    <div class="milestone-progress-header">
+                        <span>Deal Confidence</span>
+                        <span class="milestone-confidence-val" style="color: ${confidenceColor};">${confidence}%</span>
                     </div>
-                    <div style="width: 100%; height: 6px; background-color: var(--border-color); border-radius: 3px; overflow:hidden;">
-                        <div style="width: ${confidence}%; height: 100%; background-color: ${confidenceColor}; border-radius: 3px;"></div>
+                    <div class="milestone-progress-track">
+                        <div class="milestone-progress-bar" style="width: ${confidence}%; background-color: ${confidenceColor};"></div>
                     </div>
                 </div>
 
@@ -3087,6 +3101,30 @@ function updateMultiselectLabel() {
     }
 }
 
+function setExecutiveTimelineView(view) {
+    executiveTimelineView = view;
+    localStorage.setItem('executive_timeline_view', view);
+    
+    // Update active states of toggle buttons
+    document.querySelectorAll('.view-toggle-group').forEach(group => {
+        const btns = group.querySelectorAll('.view-toggle-btn');
+        btns.forEach(btn => {
+            if (btn.getAttribute('data-view') === view) {
+                btn.classList.add('active');
+                btn.style.background = 'var(--bg-card)';
+                btn.style.color = 'var(--text-primary)';
+            } else {
+                btn.classList.remove('active');
+                btn.style.background = 'transparent';
+                btn.style.color = 'var(--text-muted)';
+            }
+        });
+    });
+
+    renderExecutiveOverdueTimeline();
+    renderExecutivePOTimeline();
+}
+
 // Set up UI interactions, search, sorting and sidebar clicks
 function registerEventListeners() {
     // 1. Sidebar tab switching
@@ -3096,6 +3134,17 @@ function registerEventListeners() {
             e.preventDefault();
             const tabName = item.getAttribute('data-tab');
             switchTab(tabName);
+        });
+    });
+
+    // 1a. View toggle button group handlers
+    document.querySelectorAll('.view-toggle-group').forEach(group => {
+        group.addEventListener('click', (e) => {
+            const btn = e.target.closest('.view-toggle-btn');
+            if (btn) {
+                const view = btn.getAttribute('data-view');
+                setExecutiveTimelineView(view);
+            }
         });
     });
     // 1b. Executive closures timeline granularity selectors
