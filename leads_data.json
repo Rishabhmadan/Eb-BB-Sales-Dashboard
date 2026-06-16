@@ -138,7 +138,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": false,
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": "2026-06-12",
     "Probability": 40.57
@@ -162,7 +162,7 @@
     "Won/Lost": "Won",
     "Country": "India",
     "State": false,
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": "2026-06-11 11:45:40",
     "Expected Closing": "2026-06-11",
     "Probability": 100.0
@@ -258,7 +258,7 @@
     "Won/Lost": "Won",
     "Country": "India",
     "State": false,
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": "2026-05-30 12:25:41",
     "Expected Closing": "2026-05-25",
     "Probability": 100.0
@@ -330,7 +330,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 30.36
@@ -354,7 +354,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 20.0
@@ -402,7 +402,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": "2026-06-24",
     "Probability": 20.0
@@ -428,7 +428,7 @@
     "State": "Maharashtra (IN)",
     "City": "Dhule",
     "Closed Date": null,
-    "Expected Closing": "2026-06-26",
+    "Expected Closing": "2026-07-02",
     "Probability": 50.0
   },
   {
@@ -474,7 +474,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 50.0
@@ -498,7 +498,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 40.0
@@ -546,7 +546,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 37.38
@@ -570,7 +570,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 20.0
@@ -618,7 +618,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 39.28
@@ -642,7 +642,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": "2026-07-15",
     "Probability": 30.0
@@ -738,7 +738,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 31.08
@@ -786,7 +786,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": false,
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": "2026-06-15",
     "Probability": 27.48
@@ -930,7 +930,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": "2026-06-12",
     "Probability": 42.52
@@ -1026,7 +1026,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": "2026-06-01",
     "Probability": 43.9
@@ -1098,7 +1098,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 77.32
@@ -1146,7 +1146,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 50.0
@@ -1170,7 +1170,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": "2026-06-17",
     "Probability": 3.07
@@ -1314,7 +1314,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 69.17
@@ -1482,7 +1482,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 97.27
@@ -1650,7 +1650,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.17
@@ -1794,7 +1794,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": "2026-06-19",
     "Probability": 40.0
@@ -1842,7 +1842,7 @@
     "Won/Lost": "Won",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": "2026-04-21 07:26:51",
     "Expected Closing": "2026-01-19",
     "Probability": 100.0
@@ -1890,7 +1890,7 @@
     "Won/Lost": "Won",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": "2026-04-20 21:28:18",
     "Expected Closing": "2026-03-25",
     "Probability": 100.0
@@ -1962,7 +1962,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 39.28
@@ -2010,7 +2010,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 39.28
@@ -2082,7 +2082,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.79
@@ -3114,7 +3114,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 31.08
@@ -3138,7 +3138,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 69.88
@@ -3162,7 +3162,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 41.22
@@ -3186,7 +3186,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 31.08
@@ -3210,7 +3210,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": false,
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 76.36
@@ -3234,7 +3234,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": false,
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 76.36
@@ -3354,7 +3354,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 42.51
@@ -3426,7 +3426,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 81.52
@@ -3570,7 +3570,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 2.39
@@ -3954,7 +3954,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": "2026-06-19",
     "Probability": 25.0
@@ -4170,7 +4170,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 50.0
@@ -4194,7 +4194,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": "2026-07-22",
     "Probability": 50.0
@@ -4266,7 +4266,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 30.0
@@ -4650,7 +4650,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 20.0
@@ -4866,7 +4866,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 39.28
@@ -4914,7 +4914,7 @@
     "Won/Lost": "Won",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": "2026-04-21 11:31:45",
     "Expected Closing": "2026-02-18",
     "Probability": 100.0
@@ -4962,7 +4962,7 @@
     "Won/Lost": "Won",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": "2026-04-21 07:23:44",
     "Expected Closing": "2026-01-20",
     "Probability": 100.0
@@ -5010,7 +5010,7 @@
     "Won/Lost": "Won",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": "2026-04-20 21:36:53",
     "Expected Closing": "2026-04-17",
     "Probability": 100.0
@@ -5058,7 +5058,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 20.0
@@ -5202,7 +5202,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": "2026-06-29",
     "Probability": 50.0
@@ -5490,7 +5490,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 41.22
@@ -5826,7 +5826,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 7.45
@@ -6144,8 +6144,32 @@
     "Probability": 33.51
   },
   {
+    "Created on": "2026-06-16 05:55:16",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "Mercury EV Tech Limited",
+    "Opportunity": "Mercury EV Tech Limited's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Automotive & EV",
+    "Revenue (Millions USD)": 12.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Gujarat (IN)",
+    "City": "Vadodara",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 91.41
+  },
+  {
     "Created on": "2026-06-16 05:46:50",
-    "Source": false,
+    "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "Dash Dynamic Pvt Ltd",
     "Opportunity": "Dash Dynamic Pvt Ltd's opportunity",
@@ -6154,18 +6178,18 @@
     "Phone": false,
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
-    "Industry Segment": false,
+    "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 5.0,
-    "Opportunity Type": false,
+    "Opportunity Type": "Box Build",
     "Expected Revenue": 0.0,
     "Stage": "Market Research",
     "Won/Lost": "Pending",
-    "Country": false,
-    "State": false,
-    "City": false,
+    "Country": "India",
+    "State": "Delhi (IN)",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 95.48
+    "Probability": 96.31
   },
   {
     "Created on": "2026-06-16 05:44:02",
@@ -6378,7 +6402,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 32.24
@@ -6402,7 +6426,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 16.3
@@ -6642,7 +6666,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 32.24
@@ -6978,7 +7002,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.0
@@ -7074,7 +7098,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.0
@@ -7098,7 +7122,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.0
@@ -7194,7 +7218,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 30.0
@@ -7242,7 +7266,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.09
@@ -7338,7 +7362,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 25.14
@@ -7506,7 +7530,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 27.7
@@ -7866,7 +7890,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 27.7
@@ -7962,7 +7986,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 27.7
@@ -8058,7 +8082,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 27.7
@@ -8154,7 +8178,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 27.7
@@ -8202,7 +8226,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 27.7
@@ -8538,7 +8562,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 17.22
@@ -8610,7 +8634,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.0
@@ -9042,7 +9066,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.22
@@ -9066,7 +9090,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 18.76
@@ -9762,7 +9786,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": false,
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 91.87
@@ -9810,7 +9834,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.22
@@ -10002,7 +10026,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.22
@@ -10098,7 +10122,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.22
@@ -10266,7 +10290,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 89.83
@@ -10314,7 +10338,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 13.18
@@ -10386,7 +10410,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 30.0
@@ -10434,7 +10458,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.1
@@ -10506,7 +10530,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.1
@@ -10554,7 +10578,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 34.9
@@ -10626,7 +10650,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 35.24
@@ -10722,7 +10746,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 35.24
@@ -10890,7 +10914,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.14
@@ -10962,7 +10986,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 35.24
@@ -11010,7 +11034,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 2.07
@@ -11034,7 +11058,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 35.24
@@ -11154,7 +11178,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 30.0
@@ -11178,7 +11202,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 89.67
@@ -11202,7 +11226,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 6.34
@@ -11322,7 +11346,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 35.24
@@ -11418,7 +11442,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 67.54
@@ -11442,7 +11466,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 35.24
@@ -11466,7 +11490,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 30.0
@@ -11586,7 +11610,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.14
@@ -11730,7 +11754,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 35.24
@@ -11754,7 +11778,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 35.24
@@ -12282,7 +12306,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.22
@@ -12354,7 +12378,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.22
@@ -12858,7 +12882,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 3.61
@@ -13050,7 +13074,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 6.66
@@ -13122,7 +13146,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 6.66
@@ -13578,7 +13602,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.0
@@ -13650,7 +13674,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": false,
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 94.84
@@ -13722,7 +13746,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.0
@@ -13770,7 +13794,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 17.22
@@ -14250,7 +14274,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.05
@@ -14274,7 +14298,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 20.52
@@ -14322,7 +14346,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.09
@@ -14346,7 +14370,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.0
@@ -14418,7 +14442,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 20.0
@@ -14466,7 +14490,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 17.22
@@ -14562,7 +14586,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 39.4
@@ -14586,7 +14610,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 39.4
@@ -14634,7 +14658,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.0
@@ -14682,7 +14706,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.0
@@ -14874,7 +14898,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 57.35
@@ -14946,7 +14970,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 40.0
@@ -15042,7 +15066,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 86.94
@@ -15090,7 +15114,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 5.11
@@ -15114,7 +15138,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 5.56
@@ -15138,7 +15162,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 55.02
@@ -15162,7 +15186,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 97.28
@@ -15186,7 +15210,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.02
@@ -15210,7 +15234,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.4
@@ -16314,7 +16338,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 2.07
@@ -16338,7 +16362,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.52
@@ -16362,7 +16386,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 11.84
@@ -16650,7 +16674,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.52
@@ -16674,7 +16698,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 82.78
@@ -16746,7 +16770,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.0
@@ -16794,7 +16818,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.0
@@ -16890,7 +16914,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 69.17
@@ -16914,7 +16938,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": false,
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 25.96
@@ -17034,7 +17058,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.0
@@ -17178,7 +17202,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 69.17
@@ -17394,7 +17418,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 86.13
@@ -17466,7 +17490,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 88.46
@@ -17490,7 +17514,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.52
@@ -17586,7 +17610,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 35.24
@@ -17706,7 +17730,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 35.24
@@ -17850,7 +17874,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 2.56
@@ -18306,7 +18330,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 85.67
@@ -18474,7 +18498,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.76
@@ -18618,7 +18642,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 94.79
@@ -18762,7 +18786,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 74.62
@@ -18786,7 +18810,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 74.62
@@ -18810,7 +18834,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 74.62
@@ -18858,7 +18882,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 74.62
@@ -18930,7 +18954,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 74.62
@@ -18954,7 +18978,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 20.09
@@ -18978,7 +19002,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 19.49
@@ -19242,7 +19266,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.52
@@ -19362,7 +19386,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 30.0
@@ -19386,7 +19410,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 90.09
@@ -19410,7 +19434,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 2.54
@@ -19578,7 +19602,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.52
@@ -19626,7 +19650,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 69.17
@@ -19674,7 +19698,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.52
@@ -19722,7 +19746,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.22
@@ -19746,7 +19770,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 18.76
@@ -19770,7 +19794,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.52
@@ -19818,7 +19842,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 90.09
@@ -20058,7 +20082,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 26.27
@@ -20130,7 +20154,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.22
@@ -20418,7 +20442,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.22
@@ -20442,7 +20466,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.22
@@ -20610,7 +20634,7 @@
     "Won/Lost": "Pending",
     "Country": false,
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 42.65
@@ -20682,7 +20706,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.52
@@ -20706,7 +20730,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.22
@@ -20826,7 +20850,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.52
@@ -20898,7 +20922,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.75
@@ -20946,7 +20970,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.22
@@ -20970,7 +20994,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.22
@@ -21114,7 +21138,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 86.13
@@ -21138,7 +21162,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 2.8
@@ -21306,7 +21330,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 69.17
@@ -21330,7 +21354,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 86.13
@@ -21402,7 +21426,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.52
@@ -21474,7 +21498,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.52
@@ -21570,7 +21594,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.52
@@ -21642,7 +21666,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.52
@@ -21666,7 +21690,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.52
@@ -21690,7 +21714,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.52
@@ -21714,7 +21738,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.52
@@ -21786,7 +21810,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 2.8
@@ -21834,7 +21858,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 62.84
@@ -21930,7 +21954,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.52
@@ -21954,7 +21978,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.52
@@ -22074,7 +22098,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 3.23
@@ -22093,12 +22117,12 @@
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 75.0,
     "Opportunity Type": "PCB Assembly",
-    "Expected Revenue": 5000000.0,
+    "Expected Revenue": 100000.0,
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.52
@@ -22194,7 +22218,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.52
@@ -22218,7 +22242,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.52
@@ -22242,7 +22266,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 2.8
@@ -22266,7 +22290,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 34.9
@@ -22386,7 +22410,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 3.96
@@ -22482,7 +22506,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 96.49
@@ -22530,7 +22554,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 22.4
@@ -22554,7 +22578,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.52
@@ -22578,7 +22602,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.52
@@ -22597,12 +22621,12 @@
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 260.0,
     "Opportunity Type": "PCB Assembly",
-    "Expected Revenue": 5000000.0,
+    "Expected Revenue": 100000.0,
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 34.9
@@ -22746,7 +22770,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 2.8
@@ -22770,7 +22794,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 2.8
@@ -22794,7 +22818,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 18.98
@@ -22818,7 +22842,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 36.55
@@ -23154,7 +23178,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.52
@@ -23370,7 +23394,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 96.49
@@ -23394,7 +23418,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 41.35
@@ -23418,7 +23442,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 27.7
@@ -23778,7 +23802,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.52
@@ -23826,7 +23850,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 96.49
@@ -23994,7 +24018,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 3.97
@@ -24018,7 +24042,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 30.0
@@ -24138,7 +24162,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 88.41
@@ -24186,7 +24210,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 86.13
@@ -24330,7 +24354,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.22
@@ -24426,7 +24450,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.52
@@ -24498,7 +24522,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 37.86
@@ -24618,7 +24642,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 69.17
@@ -24738,7 +24762,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.05
@@ -24930,7 +24954,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 22.4
@@ -24954,7 +24978,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 5.1
@@ -25122,7 +25146,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 25.31
@@ -25170,7 +25194,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 25.31
@@ -25194,7 +25218,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 22.4
@@ -25578,7 +25602,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 72.21
@@ -25602,7 +25626,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.1
@@ -25650,7 +25674,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 35.24
@@ -25746,7 +25770,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.91
@@ -25890,7 +25914,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 30.0
@@ -25962,7 +25986,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 25.31
@@ -26034,7 +26058,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 2.07
@@ -26178,7 +26202,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.22
@@ -26274,7 +26298,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 39.28
@@ -26394,7 +26418,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 32.64
@@ -26418,7 +26442,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.14
@@ -26490,7 +26514,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 2.8
@@ -26562,7 +26586,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 39.28
@@ -26706,7 +26730,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 2.26
@@ -26730,7 +26754,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 25.31
@@ -26754,7 +26778,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 22.4
@@ -26826,7 +26850,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 23.9
@@ -26898,7 +26922,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 25.31
@@ -26922,7 +26946,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.45
@@ -26946,7 +26970,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 25.31
@@ -26970,7 +26994,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 25.31
@@ -26994,7 +27018,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 25.31
@@ -27138,7 +27162,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.05
@@ -27162,7 +27186,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 30.0
@@ -27354,7 +27378,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 25.31
@@ -27450,7 +27474,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 3.07
@@ -27522,7 +27546,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 9.36
@@ -27594,7 +27618,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.0
@@ -27666,7 +27690,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 79.46
@@ -27690,7 +27714,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.93
@@ -27714,7 +27738,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 25.31
@@ -27762,7 +27786,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 25.31
@@ -27906,7 +27930,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 40.78
@@ -27930,7 +27954,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.29
@@ -27954,7 +27978,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 63.55
@@ -28026,7 +28050,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.76
@@ -28122,7 +28146,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 34.52
@@ -28794,7 +28818,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 91.74
@@ -29082,7 +29106,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 72.21
@@ -29658,7 +29682,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": false,
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 54.39
@@ -29706,7 +29730,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 17.57
@@ -30450,7 +30474,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 7.82
@@ -30498,7 +30522,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.33
@@ -30546,7 +30570,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.34
@@ -30594,7 +30618,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.3
@@ -30666,7 +30690,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 5.55
@@ -30786,7 +30810,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 9.35
@@ -30906,7 +30930,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 9.35
@@ -31026,7 +31050,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.33
@@ -31242,7 +31266,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.27
@@ -31674,7 +31698,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 4.32
@@ -31770,7 +31794,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.33
@@ -32178,7 +32202,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.13
@@ -32298,7 +32322,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 19.1
@@ -32826,7 +32850,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.98
@@ -32850,7 +32874,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": false,
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 6.08
@@ -32898,7 +32922,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 7.24
@@ -32994,7 +33018,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 4.11
@@ -33162,7 +33186,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 36.01
@@ -33186,7 +33210,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": false,
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 20.89
@@ -33210,7 +33234,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 4.32
@@ -33354,7 +33378,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 8.86
@@ -33642,7 +33666,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 2.1
@@ -34170,7 +34194,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 69.88
@@ -34194,7 +34218,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 83.05
@@ -34218,7 +34242,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 93.04
@@ -34242,7 +34266,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 19.1
@@ -34266,7 +34290,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 54.86
@@ -34290,7 +34314,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 54.86
@@ -34338,7 +34362,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 69.88
@@ -34386,7 +34410,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 19.1
@@ -34410,7 +34434,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 69.88
@@ -34434,7 +34458,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 19.1
@@ -34458,7 +34482,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.39
@@ -35154,7 +35178,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": false,
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 2.07
@@ -35322,7 +35346,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 14.46
@@ -35346,7 +35370,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.05
@@ -35370,7 +35394,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 31.1
@@ -35394,7 +35418,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.51
@@ -35586,7 +35610,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 74.45
@@ -35682,7 +35706,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 37.0
@@ -36090,7 +36114,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 91.74
@@ -36306,7 +36330,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.03
@@ -36378,7 +36402,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.49
@@ -36474,7 +36498,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 4.34
@@ -36642,7 +36666,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 31.1
@@ -36714,7 +36738,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 31.1
@@ -36738,7 +36762,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 69.83
@@ -36762,7 +36786,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 20.86
@@ -36810,7 +36834,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 31.1
@@ -36858,7 +36882,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 2.96
@@ -36906,7 +36930,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 74.45
@@ -37002,7 +37026,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 31.1
@@ -37146,7 +37170,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 10.28
@@ -37170,7 +37194,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 42.51
@@ -37266,7 +37290,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 97.39
@@ -37314,7 +37338,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 42.51
@@ -37362,7 +37386,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 31.1
@@ -37386,7 +37410,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 69.83
@@ -37458,7 +37482,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 31.1
@@ -37554,7 +37578,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 31.1
@@ -37602,7 +37626,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 10.28
@@ -37650,7 +37674,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 74.45
@@ -37674,7 +37698,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 42.51
@@ -37746,7 +37770,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 10.28
@@ -37986,7 +38010,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 96.45
@@ -38058,7 +38082,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.45
@@ -38298,7 +38322,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 6.82
@@ -38706,7 +38730,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.73
@@ -38898,7 +38922,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 2.18
@@ -38994,7 +39018,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.89
@@ -39378,7 +39402,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.22
@@ -39426,7 +39450,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.4
@@ -39642,7 +39666,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 7.86
@@ -39858,7 +39882,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 29.46
@@ -39930,7 +39954,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.73
@@ -39954,7 +39978,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.4
@@ -40122,7 +40146,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.4
@@ -40194,7 +40218,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 1.18
@@ -40290,7 +40314,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.45
@@ -40362,7 +40386,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 90.0
@@ -40458,7 +40482,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.53
@@ -40938,7 +40962,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 18.73
@@ -41058,7 +41082,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.07
@@ -41298,7 +41322,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Gurgaon",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 2.18
