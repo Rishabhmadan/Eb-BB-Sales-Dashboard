@@ -22,6 +22,7 @@ let currentUpcomingPOTimelineLeads = [];
 let selectedOverdueClosureIds = new Set();
 let currentOverduePOTimelineLeads = [];
 let executiveTimelineView = localStorage.getItem('executive_timeline_view') || 'grid';
+let currentAIResearchCompany = null;
 
 const VALID_TABS = ['overview', 'pipeline', 'team', 'geo', 'rfq', 'explorer', 'ai'];
 
@@ -973,6 +974,10 @@ async function loadAICompanyResearch(companyName, industrySegment) {
     const container = document.getElementById('ai-research-container');
     if (!statusEl || !container) return;
     
+    currentAIResearchCompany = companyName;
+    const btnCopy = document.getElementById('btn-copy-ai-research');
+    if (btnCopy) btnCopy.style.display = 'none';
+    
     const normName = companyName.trim();
     
     // 1. Check if we have pre-populated data (like Zeno/Zeno Moto)
@@ -986,6 +991,7 @@ async function loadAICompanyResearch(companyName, industrySegment) {
         statusEl.textContent = 'Elecbits Gold Profile';
         statusEl.className = 'badge badge-emerald';
         container.innerHTML = renderAIProfileHTML(PRE_POPULATED_COMPANY_PROFILES[matchedKey]);
+        if (btnCopy) btnCopy.style.display = 'inline-flex';
         return;
     }
     
@@ -996,12 +1002,14 @@ async function loadAICompanyResearch(companyName, industrySegment) {
         statusEl.textContent = 'AI Cached';
         statusEl.className = 'badge badge-emerald';
         container.innerHTML = formatAIResearchReport(cached);
+        if (btnCopy) btnCopy.style.display = 'inline-flex';
         return;
     }
     
     // 3. Show placeholder with "Start AI Research" button
     statusEl.textContent = 'Ready';
     statusEl.className = 'badge badge-purple';
+    if (btnCopy) btnCopy.style.display = 'none';
     
     container.innerHTML = `
         <div id="ai-research-placeholder" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; text-align: center; gap: 12px; color: var(--text-muted); padding: 20px;">
@@ -1022,6 +1030,7 @@ async function loadAICompanyResearch(companyName, industrySegment) {
         btnStart.onclick = async () => {
             // Check if key is available
             if (!geminiApiKey) {
+                if (btnCopy) btnCopy.style.display = 'none';
                 container.innerHTML = `
                     <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; text-align: center; gap: 12px; color: var(--text-muted); padding: 20px;">
                         <i class="fa-solid fa-key" style="font-size: 36px; color: var(--color-gold); opacity: 0.8;"></i>
@@ -1057,6 +1066,7 @@ async function loadAICompanyResearch(companyName, industrySegment) {
             // Generate research
             statusEl.textContent = 'Researching...';
             statusEl.className = 'badge badge-purple';
+            if (btnCopy) btnCopy.style.display = 'none';
             container.innerHTML = `
                 <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; text-align: center; gap: 16px; color: var(--text-muted); padding: 20px;">
                     <div class="typing-indicator" style="display:flex; gap:6px;">
@@ -1157,11 +1167,13 @@ Rules:
                 statusEl.textContent = 'AI Researched';
                 statusEl.className = 'badge badge-emerald';
                 container.innerHTML = formatAIResearchReport(replyText);
+                if (btnCopy) btnCopy.style.display = 'inline-flex';
                 
             } catch (err) {
                 console.error("AI Research Error:", err);
                 statusEl.textContent = 'Error';
                 statusEl.className = 'badge badge-rose';
+                if (btnCopy) btnCopy.style.display = 'none';
                 container.innerHTML = `
                     <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; text-align: center; gap: 12px; color: var(--text-rose); padding: 20px;">
                         <i class="fa-solid fa-circle-exclamation" style="font-size: 36px; opacity: 0.8;"></i>
@@ -1179,9 +1191,103 @@ Rules:
     }
 }
 
-
-
-
+// Convert research profile or raw report to plain text for clipboard copying
+function getProfileAsText(companyName) {
+    if (!companyName) return null;
+    const normName = companyName.trim();
+    
+    // 1. Check if we have pre-populated data (like Zeno/Zeno Moto)
+    const matchedKey = Object.keys(PRE_POPULATED_COMPANY_PROFILES).find(k => 
+        k.toLowerCase() === normName.toLowerCase() || 
+        normName.toLowerCase().startsWith(k.toLowerCase()) || 
+        k.toLowerCase().startsWith(normName.toLowerCase())
+    );
+    
+    if (matchedKey) {
+        const p = PRE_POPULATED_COMPANY_PROFILES[matchedKey];
+        let text = `Company Name: ${companyName}\n`;
+        text += `• Website: ${p.website || 'N/A'}\n`;
+        text += `• Industry Segment: ${p.industry || 'N/A'}\n`;
+        if (p.subSegment && p.subSegment.length > 0) {
+            text += `• Sub-Segment:\n`;
+            p.subSegment.forEach(item => {
+                text += `  * ${item}\n`;
+            });
+        }
+        text += `• Founded: ${p.founded || 'N/A'}\n`;
+        text += `• Global Headquarters: ${p.headquarters || 'N/A'}\n`;
+        text += `• India Presence: ${p.indiaPresence || 'N/A'}\n`;
+        text += `• Employee Strength: ${p.employees || 'N/A'}\n`;
+        if (p.businessModel && p.businessModel.length > 0) {
+            text += `• Business Model:\n`;
+            p.businessModel.forEach(item => {
+                text += `  * ${item}\n`;
+            });
+        }
+        if (p.targetMarkets && p.targetMarkets.length > 0) {
+            text += `• Target Markets:\n`;
+            p.targetMarkets.forEach(item => {
+                text += `  * ${item}\n`;
+            });
+        }
+        text += `\nRevenue & Funding\n`;
+        text += `• Estimated Revenue: ${p.revenue || 'N/A'}\n`;
+        if (p.investors && p.investors.length > 0) {
+            text += `• Key Investors:\n`;
+            p.investors.forEach(item => {
+                text += `  * ${item}\n`;
+            });
+        }
+        if (p.products && p.products.length > 0) {
+            text += `\nKey Products\n`;
+            p.products.forEach(prod => {
+                text += `${prod.name}\n`;
+                if (prod.specs) {
+                    prod.specs.forEach(spec => {
+                        text += `• ${spec}\n`;
+                    });
+                }
+            });
+        }
+        if (p.targetCustomers && p.targetCustomers.length > 0) {
+            text += `\nTarget Customers\n`;
+            p.targetCustomers.forEach(item => {
+                text += `• ${item}\n`;
+            });
+        }
+        if (p.strengths && p.strengths.length > 0) {
+            text += `\nKey Strengths\n`;
+            p.strengths.forEach(item => {
+                text += `• ${item}\n`;
+            });
+        }
+        if (p.elecbitsOpportunities) {
+            text += `\nOpportunities for Elecbits\n`;
+            for (const category in p.elecbitsOpportunities) {
+                text += `${category}\n`;
+                p.elecbitsOpportunities[category].forEach(item => {
+                    text += `• ${item}\n`;
+                });
+            }
+        }
+        return text;
+    }
+    
+    // 2. Check if we have cached AI research in localStorage
+    const cacheKey = `ai_research_${normName.toLowerCase()}`;
+    const cached = localStorage.getItem(cacheKey);
+    if (cached) {
+        return cached;
+    }
+    
+    // Fallback: Return plain text content of the container element
+    const container = document.getElementById('ai-research-container');
+    if (container) {
+        return container.innerText;
+    }
+    
+    return null;
+}
 
 // Populate filter dropdowns with unique options
 function populateFilters() {
@@ -3622,6 +3728,30 @@ Location: ${locationParts.join(', ') || 'N/A'}
         }
     });
 
+    // Copy AI Company Research listener
+    const btnCopyAIResearch = document.getElementById('btn-copy-ai-research');
+    if (btnCopyAIResearch) {
+        btnCopyAIResearch.addEventListener('click', () => {
+            if (currentAIResearchCompany) {
+                const text = getProfileAsText(currentAIResearchCompany);
+                if (text) {
+                    navigator.clipboard.writeText(text);
+                    
+                    // Temporary button feedback
+                    const origContent = btnCopyAIResearch.innerHTML;
+                    btnCopyAIResearch.innerHTML = '<i class="fa-solid fa-check"></i> Copied!';
+                    btnCopyAIResearch.style.borderColor = 'var(--color-emerald)';
+                    btnCopyAIResearch.style.color = 'var(--color-emerald)';
+                    setTimeout(() => {
+                        btnCopyAIResearch.innerHTML = origContent;
+                        btnCopyAIResearch.style.borderColor = '';
+                        btnCopyAIResearch.style.color = '';
+                    }, 2000);
+                }
+            }
+        });
+    }
+
     // Initialize AI Assistant
     initAIAssistant();
 }
@@ -4556,12 +4686,9 @@ function getWeekKey(d) {
     return `${d.getFullYear()}-W${weekNum.toString().padStart(2, '0')}`;
 }
 
-// Helper: returns the effective date for RFQ tracking (Win Date for won leads, RFQ Received Date otherwise)
+// Helper: returns the effective date for RFQ tracking (always RFQ Date)
 function getLeadRFQDate(lead) {
     if (!lead) return null;
-    if ((lead['Won/Lost'] === 'Won' || lead['Stage'] === 'Won') && (lead['Closed Date'] || lead['Date Closed'])) {
-        return lead['Closed Date'] || lead['Date Closed'];
-    }
     return lead['RFQ Date'];
 }
 
