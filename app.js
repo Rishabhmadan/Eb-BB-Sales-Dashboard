@@ -1192,6 +1192,66 @@ Rules:
 }
 
 // Convert research profile or raw report to plain text for clipboard copying
+// Beautify raw markdown/AI generated research text into a clean plain text report
+function beautifyRawResearchText(companyName, rawText) {
+    if (!rawText) return '';
+    const lines = rawText.split('\n');
+    let beautified = '';
+    
+    beautified += `==================================================\n`;
+    beautified += `          ELECBITS AI MARKET RESEARCH REPORT      \n`;
+    beautified += `==================================================\n\n`;
+    
+    const mainSections = [
+        "Revenue & Funding",
+        "Key Products",
+        "Target Customers",
+        "Key Strengths",
+        "Opportunities for Elecbits",
+        "Sub-Segment",
+        "Business Model",
+        "Target Markets"
+    ];
+    
+    lines.forEach(line => {
+        let trimmed = line.trim();
+        // Remove markdown bolding
+        trimmed = trimmed.replace(/\*\*/g, '');
+        
+        if (!trimmed) {
+            beautified += '\n';
+            return;
+        }
+        
+        // Check if line is a main section header
+        const isHeader = mainSections.some(sec => trimmed.toLowerCase() === sec.toLowerCase());
+        
+        if (isHeader) {
+            beautified += `\n--------------------------------------------------\n`;
+            beautified += `${trimmed.toUpperCase()}\n`;
+            beautified += `--------------------------------------------------\n`;
+        } else if (trimmed.startsWith('Company Name:')) {
+            beautified += `COMPANY PROFILE: ${trimmed.split(':')[1].trim().toUpperCase()}\n`;
+            beautified += `--------------------------------------------------\n`;
+        } else {
+            // Re-format standard bullet items
+            if (trimmed.startsWith('•') || trimmed.startsWith('*') || trimmed.startsWith('-')) {
+                // Keep the indentation if it was nested
+                const indent = line.startsWith('  ') || line.startsWith('\t') ? '  ' : '';
+                const bulletChar = indent ? '▪' : '•';
+                const rest = trimmed.replace(/^[•\*\-\s]+/, '');
+                beautified += `${indent}${bulletChar} ${rest}\n`;
+            } else {
+                beautified += `${trimmed}\n`;
+            }
+        }
+    });
+    
+    beautified += `\n==================================================\n`;
+    // Clean up multiple consecutive newlines
+    return beautified.replace(/\n{3,}/g, '\n\n');
+}
+
 function getProfileAsText(companyName) {
     if (!companyName) return null;
     const normName = companyName.trim();
@@ -1205,71 +1265,95 @@ function getProfileAsText(companyName) {
     
     if (matchedKey) {
         const p = PRE_POPULATED_COMPANY_PROFILES[matchedKey];
-        let text = `Company Name: ${companyName}\n`;
+        let text = `==================================================\n`;
+        text += `          ELECBITS AI MARKET RESEARCH REPORT      \n`;
+        text += `==================================================\n\n`;
+        text += `COMPANY PROFILE: ${companyName.toUpperCase()}\n`;
+        text += `--------------------------------------------------\n`;
         text += `• Website: ${p.website || 'N/A'}\n`;
         text += `• Industry Segment: ${p.industry || 'N/A'}\n`;
-        if (p.subSegment && p.subSegment.length > 0) {
-            text += `• Sub-Segment:\n`;
-            p.subSegment.forEach(item => {
-                text += `  * ${item}\n`;
-            });
-        }
         text += `• Founded: ${p.founded || 'N/A'}\n`;
         text += `• Global Headquarters: ${p.headquarters || 'N/A'}\n`;
         text += `• India Presence: ${p.indiaPresence || 'N/A'}\n`;
         text += `• Employee Strength: ${p.employees || 'N/A'}\n`;
+        
+        if (p.subSegment && p.subSegment.length > 0) {
+            text += `\nSUB-SEGMENTS:\n`;
+            p.subSegment.forEach(item => {
+                text += `  ▪ ${item}\n`;
+            });
+        }
+        
         if (p.businessModel && p.businessModel.length > 0) {
-            text += `• Business Model:\n`;
+            text += `\nBUSINESS MODEL:\n`;
             p.businessModel.forEach(item => {
-                text += `  * ${item}\n`;
+                text += `  ▪ ${item}\n`;
             });
         }
+        
         if (p.targetMarkets && p.targetMarkets.length > 0) {
-            text += `• Target Markets:\n`;
+            text += `\nTARGET MARKETS:\n`;
             p.targetMarkets.forEach(item => {
-                text += `  * ${item}\n`;
+                text += `  ▪ ${item}\n`;
             });
         }
-        text += `\nRevenue & Funding\n`;
+        
+        text += `\n--------------------------------------------------\n`;
+        text += `REVENUE & FUNDING\n`;
+        text += `--------------------------------------------------\n`;
         text += `• Estimated Revenue: ${p.revenue || 'N/A'}\n`;
         if (p.investors && p.investors.length > 0) {
             text += `• Key Investors:\n`;
             p.investors.forEach(item => {
-                text += `  * ${item}\n`;
+                text += `  ▪ ${item}\n`;
             });
         }
+        
         if (p.products && p.products.length > 0) {
-            text += `\nKey Products\n`;
+            text += `\n--------------------------------------------------\n`;
+            text += `KEY PRODUCTS & PLATFORMS\n`;
+            text += `--------------------------------------------------\n`;
             p.products.forEach(prod => {
-                text += `${prod.name}\n`;
+                text += `\n🔹 ${prod.name}\n`;
                 if (prod.specs) {
                     prod.specs.forEach(spec => {
-                        text += `• ${spec}\n`;
+                        text += `  • ${spec}\n`;
                     });
                 }
             });
         }
+        
         if (p.targetCustomers && p.targetCustomers.length > 0) {
-            text += `\nTarget Customers\n`;
+            text += `\n--------------------------------------------------\n`;
+            text += `TARGET CUSTOMERS\n`;
+            text += `--------------------------------------------------\n`;
             p.targetCustomers.forEach(item => {
                 text += `• ${item}\n`;
             });
         }
+        
         if (p.strengths && p.strengths.length > 0) {
-            text += `\nKey Strengths\n`;
+            text += `\n--------------------------------------------------\n`;
+            text += `KEY STRENGTHS\n`;
+            text += `--------------------------------------------------\n`;
             p.strengths.forEach(item => {
                 text += `• ${item}\n`;
             });
         }
+        
         if (p.elecbitsOpportunities) {
-            text += `\nOpportunities for Elecbits\n`;
+            text += `\n--------------------------------------------------\n`;
+            text += `OPPORTUNITIES FOR ELECBITS\n`;
+            text += `--------------------------------------------------\n`;
             for (const category in p.elecbitsOpportunities) {
-                text += `${category}\n`;
+                text += `\n▪ ${category.toUpperCase()}\n`;
                 p.elecbitsOpportunities[category].forEach(item => {
-                    text += `• ${item}\n`;
+                    text += `  • ${item}\n`;
                 });
             }
         }
+        
+        text += `\n==================================================\n`;
         return text;
     }
     
@@ -1277,13 +1361,13 @@ function getProfileAsText(companyName) {
     const cacheKey = `ai_research_${normName.toLowerCase()}`;
     const cached = localStorage.getItem(cacheKey);
     if (cached) {
-        return cached;
+        return beautifyRawResearchText(companyName, cached);
     }
     
     // Fallback: Return plain text content of the container element
     const container = document.getElementById('ai-research-container');
     if (container) {
-        return container.innerText;
+        return beautifyRawResearchText(companyName, container.innerText);
     }
     
     return null;
