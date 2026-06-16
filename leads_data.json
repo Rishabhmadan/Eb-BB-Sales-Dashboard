@@ -6144,6 +6144,54 @@
     "Probability": 33.51
   },
   {
+    "Created on": "2026-06-16 06:14:21",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "CAL-ON EV",
+    "Opportunity": "CAL-ON EV's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Automotive & EV",
+    "Revenue (Millions USD)": 4.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Telangana (IN)",
+    "City": "Hyderabad",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 70.32
+  },
+  {
+    "Created on": "2026-06-16 06:11:22",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "REACH- EV Charging Solutions",
+    "Opportunity": "REACH- EV Charging Solutions's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Automotive & EV",
+    "Revenue (Millions USD)": 5.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Delhi (IN)",
+    "City": "Delhi",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 96.31
+  },
+  {
     "Created on": "2026-06-16 05:55:16",
     "Source": "Zoom Info",
     "RFQ Date": null,
@@ -6834,7 +6882,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "New Delhi (IN)",
-    "City": "New Delhi",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 39.96
@@ -7770,7 +7818,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "New Delhi (IN)",
-    "City": "New Delhi",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 40.86
@@ -8166,8 +8214,8 @@
     "Company Name": "upliance.ai",
     "Opportunity": "upliance.ai's opportunity",
     "Contact Name": "Kripa Raheja",
-    "Email": "NA",
-    "Phone": "+91 89049 62940",
+    "Email": "kripa@upliance.ai",
+    "Phone": "+91 97390 55300",
     "Salesperson": "Aadit Nair",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -8181,7 +8229,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 0.62
+    "Probability": 0.97
   },
   {
     "Created on": "2026-06-10 05:45:47",
@@ -8610,7 +8658,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "New Delhi (IN)",
-    "City": "New Delhi",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 2.52
@@ -10194,7 +10242,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Delhi (IN)",
-    "City": "New Delhi",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 55.06
@@ -12042,7 +12090,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "New Delhi (IN)",
-    "City": "New Delhi",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 91.5
@@ -17586,7 +17634,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "New Delhi (IN)",
-    "City": "New Delhi",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 93.47
@@ -19362,7 +19410,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "New Delhi (IN)",
-    "City": "New Delhi",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 25.57
@@ -20322,7 +20370,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "New Delhi (IN)",
-    "City": "New Delhi",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 25.96
@@ -20946,7 +20994,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "New Delhi (IN)",
-    "City": "New Delhi",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 34.22
@@ -21210,7 +21258,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "New Delhi (IN)",
-    "City": "New Delhi",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 60.0
@@ -22050,7 +22098,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "New Delhi (IN)",
-    "City": "New Delhi",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 45.78
@@ -24906,7 +24954,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": false,
-    "City": "New Delhi",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 47.67
@@ -25842,7 +25890,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Delhi (IN)",
-    "City": "New Delhi",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 98.96
@@ -25890,7 +25938,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "New Delhi (IN)",
-    "City": "New Delhi",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 99.44
@@ -28194,7 +28242,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "New Delhi (IN)",
-    "City": "New Delhi",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 98.18
@@ -28218,7 +28266,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "New Delhi (IN)",
-    "City": "New Delhi",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 19.1
@@ -29058,7 +29106,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "New Delhi (IN)",
-    "City": "New Delhi",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 83.22
@@ -30738,7 +30786,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "New Delhi (IN)",
-    "City": "New Delhi",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 99.16
@@ -31554,7 +31602,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "New Delhi (IN)",
-    "City": "New Delhi",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 31.08
@@ -31818,7 +31866,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "New Delhi (IN)",
-    "City": "New Delhi",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 19.1
@@ -35298,7 +35346,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": false,
-    "City": "New Delhi",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 20.51
