@@ -521,7 +521,7 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
@@ -1145,7 +1145,7 @@
     "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
@@ -1457,7 +1457,7 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
@@ -2006,14 +2006,14 @@
     "Revenue (Millions USD)": 1500.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 2000000.0,
-    "Stage": "Dropped",
+    "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Telangana (IN)",
     "City": "Tirupati",
     "Closed Date": null,
     "Expected Closing": "2026-06-30",
-    "Probability": 83.22
+    "Probability": 6.74
   },
   {
     "Created on": "2026-04-17 11:53:54",
@@ -6161,11 +6161,11 @@
     "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": "2026-11-29",
-    "Probability": 33.51
+    "Probability": 73.23
   },
   {
     "Created on": "2026-06-16 11:35:43",
@@ -7697,11 +7697,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 93.08
+    "Probability": 96.31
   },
   {
     "Created on": "2026-06-15 07:11:57",
@@ -7745,11 +7745,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 93.08
+    "Probability": 96.31
   },
   {
     "Created on": "2026-06-15 06:38:42",
@@ -7985,11 +7985,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 39.96
+    "Probability": 95.32
   },
   {
     "Created on": "2026-06-13 07:24:13",
@@ -8297,11 +8297,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 22.15
+    "Probability": 44.28
   },
   {
     "Created on": "2026-06-11 06:05:43",
@@ -8921,11 +8921,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 40.86
+    "Probability": 44.28
   },
   {
     "Created on": "2026-06-10 09:12:05",
@@ -9089,11 +9089,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 31.33
+    "Probability": 44.28
   },
   {
     "Created on": "2026-06-10 07:10:41",
@@ -9185,7 +9185,7 @@
     "Stage": "Need Warm Intro",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
@@ -9593,11 +9593,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 22.15
+    "Probability": 44.28
   },
   {
     "Created on": "2026-06-09 12:13:06",
@@ -9761,11 +9761,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 2.52
+    "Probability": 33.7
   },
   {
     "Created on": "2026-06-09 11:45:52",
@@ -10289,11 +10289,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 25.96
+    "Probability": 44.28
   },
   {
     "Created on": "2026-06-09 06:36:46",
@@ -10385,11 +10385,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 89.5
+    "Probability": 92.55
   },
   {
     "Created on": "2026-06-08 15:39:09",
@@ -11129,11 +11129,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.69
+    "Probability": 96.94
   },
   {
     "Created on": "2026-06-08 10:42:06",
@@ -11369,11 +11369,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 31.33
+    "Probability": 44.28
   },
   {
     "Created on": "2026-06-08 10:00:45",
@@ -11393,11 +11393,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Okhla",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 34.72
+    "Probability": 59.49
   },
   {
     "Created on": "2026-06-08 09:50:48",
@@ -11969,11 +11969,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 47.67
+    "Probability": 44.28
   },
   {
     "Created on": "2026-06-04 10:33:13",
@@ -12041,11 +12041,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 95.28
+    "Probability": 98.02
   },
   {
     "Created on": "2026-06-04 09:43:21",
@@ -12113,11 +12113,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 40.51
+    "Probability": 62.52
   },
   {
     "Created on": "2026-06-04 09:03:10",
@@ -12257,11 +12257,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.94
+    "Probability": 91.08
   },
   {
     "Created on": "2026-06-04 07:05:00",
@@ -13193,11 +13193,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 91.5
+    "Probability": 91.08
   },
   {
     "Created on": "2026-06-02 06:59:46",
@@ -13217,11 +13217,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 91.5
+    "Probability": 91.08
   },
   {
     "Created on": "2026-06-02 06:54:43",
@@ -13241,11 +13241,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 47.67
+    "Probability": 44.28
   },
   {
     "Created on": "2026-06-02 06:45:42",
@@ -13841,11 +13841,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 96.01
+    "Probability": 96.31
   },
   {
     "Created on": "2026-06-01 12:08:29",
@@ -13889,11 +13889,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 30.25
+    "Probability": 44.28
   },
   {
     "Created on": "2026-06-01 11:53:32",
@@ -14321,11 +14321,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 30.25
+    "Probability": 44.28
   },
   {
     "Created on": "2026-06-01 07:34:12",
@@ -14393,11 +14393,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 93.06
+    "Probability": 92.55
   },
   {
     "Created on": "2026-06-01 07:16:35",
@@ -14465,11 +14465,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 30.25
+    "Probability": 44.28
   },
   {
     "Created on": "2026-06-01 07:02:21",
@@ -14489,11 +14489,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.21
+    "Probability": 49.14
   },
   {
     "Created on": "2026-06-01 06:55:23",
@@ -14513,11 +14513,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 30.25
+    "Probability": 44.28
   },
   {
     "Created on": "2026-06-01 06:51:12",
@@ -14537,11 +14537,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 36.99
+    "Probability": 44.28
   },
   {
     "Created on": "2026-06-01 06:44:05",
@@ -14657,11 +14657,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 22.15
+    "Probability": 44.28
   },
   {
     "Created on": "2026-05-29 06:42:27",
@@ -14729,11 +14729,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 22.15
+    "Probability": 44.28
   },
   {
     "Created on": "2026-05-29 06:02:01",
@@ -14801,11 +14801,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 85.47
+    "Probability": 95.93
   },
   {
     "Created on": "2026-05-29 05:35:05",
@@ -15137,11 +15137,11 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.13
+    "Probability": 96.14
   },
   {
     "Created on": "2026-05-26 11:05:41",
@@ -15185,11 +15185,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 85.63
+    "Probability": 96.31
   },
   {
     "Created on": "2026-05-26 10:33:21",
@@ -15353,11 +15353,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.84
+    "Probability": 96.31
   },
   {
     "Created on": "2026-05-26 09:21:33",
@@ -15569,11 +15569,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 22.15
+    "Probability": 44.28
   },
   {
     "Created on": "2026-05-26 05:01:14",
@@ -15665,11 +15665,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 85.47
+    "Probability": 95.93
   },
   {
     "Created on": "2026-05-25 11:55:56",
@@ -16553,11 +16553,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 97.2
+    "Probability": 96.31
   },
   {
     "Created on": "2026-05-20 10:44:28",
@@ -16601,11 +16601,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 82.67
+    "Probability": 95.93
   },
   {
     "Created on": "2026-05-20 10:32:13",
@@ -16697,11 +16697,11 @@
     "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 22.15
+    "Probability": 44.28
   },
   {
     "Created on": "2026-05-20 07:50:07",
@@ -16721,11 +16721,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 3.52
+    "Probability": 33.7
   },
   {
     "Created on": "2026-05-20 07:46:35",
@@ -17729,11 +17729,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.84
+    "Probability": 96.31
   },
   {
     "Created on": "2026-05-19 06:11:39",
@@ -18185,11 +18185,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.84
+    "Probability": 96.31
   },
   {
     "Created on": "2026-05-18 10:49:38",
@@ -18737,11 +18737,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 93.47
+    "Probability": 95.93
   },
   {
     "Created on": "2026-05-18 05:29:51",
@@ -19385,11 +19385,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Okhla",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 22.15
+    "Probability": 44.28
   },
   {
     "Created on": "2026-05-15 05:46:46",
@@ -19457,11 +19457,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 22.15
+    "Probability": 44.28
   },
   {
     "Created on": "2026-05-14 11:43:44",
@@ -20513,11 +20513,11 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 25.57
+    "Probability": 45.61
   },
   {
     "Created on": "2026-05-12 09:47:15",
@@ -21473,11 +21473,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 25.96
+    "Probability": 44.28
   },
   {
     "Created on": "2026-05-11 06:24:49",
@@ -21953,11 +21953,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 25.96
+    "Probability": 44.28
   },
   {
     "Created on": "2026-05-09 11:12:41",
@@ -22097,11 +22097,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 34.22
+    "Probability": 93.78
   },
   {
     "Created on": "2026-05-09 10:06:29",
@@ -22169,11 +22169,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 25.96
+    "Probability": 44.28
   },
   {
     "Created on": "2026-05-09 07:49:19",
@@ -22193,11 +22193,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 25.96
+    "Probability": 44.28
   },
   {
     "Created on": "2026-05-09 07:42:56",
@@ -22241,11 +22241,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 44.23
+    "Probability": 44.28
   },
   {
     "Created on": "2026-05-09 07:10:05",
@@ -22361,7 +22361,7 @@
     "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "New Delhi",
     "Closed Date": null,
     "Expected Closing": null,
@@ -22553,11 +22553,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.71
+    "Probability": 96.31
   },
   {
     "Created on": "2026-05-08 10:56:50",
@@ -23201,11 +23201,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.78
+    "Probability": 44.28
   },
   {
     "Created on": "2026-05-07 12:30:09",
@@ -23609,11 +23609,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 96.65
+    "Probability": 96.31
   },
   {
     "Created on": "2026-05-07 11:04:47",
@@ -23801,11 +23801,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 40.86
+    "Probability": 44.28
   },
   {
     "Created on": "2026-05-07 10:26:54",
@@ -24353,11 +24353,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 97.2
+    "Probability": 96.31
   },
   {
     "Created on": "2026-05-06 06:15:56",
@@ -24881,11 +24881,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 97.2
+    "Probability": 96.31
   },
   {
     "Created on": "2026-05-05 10:44:18",
@@ -25937,11 +25937,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 97.2
+    "Probability": 96.31
   },
   {
     "Created on": "2026-05-04 11:32:18",
@@ -26225,11 +26225,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 42.39
+    "Probability": 62.52
   },
   {
     "Created on": "2026-04-30 12:49:50",
@@ -27017,11 +27017,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 55.4
+    "Probability": 49.14
   },
   {
     "Created on": "2026-04-27 06:55:59",
@@ -27041,11 +27041,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 99.44
+    "Probability": 66.97
   },
   {
     "Created on": "2026-04-27 06:13:44",
@@ -27089,11 +27089,11 @@
     "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 44.23
+    "Probability": 44.28
   },
   {
     "Created on": "2026-04-27 04:44:19",
@@ -27833,11 +27833,11 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 93.04
+    "Probability": 50.48
   },
   {
     "Created on": "2026-04-20 11:04:18",
@@ -28385,11 +28385,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 37.72
+    "Probability": 33.7
   },
   {
     "Created on": "2026-04-16 06:38:10",
@@ -29345,11 +29345,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 98.18
+    "Probability": 96.31
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -29369,11 +29369,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 19.1
+    "Probability": 17.34
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -29753,11 +29753,11 @@
     "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 93.04
+    "Probability": 64.11
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -30209,11 +30209,11 @@
     "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 83.22
+    "Probability": 75.51
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -31889,11 +31889,11 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 99.16
+    "Probability": 21.21
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -32705,11 +32705,11 @@
     "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 31.08
+    "Probability": 30.58
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -32801,11 +32801,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 7.15
+    "Probability": 17.34
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -32969,11 +32969,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 19.1
+    "Probability": 17.34
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -34841,11 +34841,11 @@
     "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 54.86
+    "Probability": 20.33
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -35537,11 +35537,11 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 99.17
+    "Probability": 21.21
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -37385,11 +37385,11 @@
     "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.89
+    "Probability": 17.34
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -37841,11 +37841,11 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.46
+    "Probability": 62.58
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -39569,11 +39569,11 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 49.2
+    "Probability": 62.58
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -39905,11 +39905,11 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.46
+    "Probability": 45.61
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -41249,11 +41249,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 62.28
+    "Probability": 92.55
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -42521,11 +42521,11 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 20.62
+    "Probability": 50.48
   },
   {
     "Created on": "2026-04-09 05:33:03",
