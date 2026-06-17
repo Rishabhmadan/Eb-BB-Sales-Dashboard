@@ -9621,7 +9621,7 @@
     "City": "Nashik",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 11.84
+    "Probability": 7.45
   },
   {
     "Created on": "2026-06-10 09:43:01",
@@ -17558,14 +17558,14 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 100000.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Uttar Pradesh (IN)",
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 80.25
+    "Probability": 65.93
   },
   {
     "Created on": "2026-05-20 07:29:54",
@@ -27845,23 +27845,23 @@
     "RFQ Date": null,
     "Company Name": "GoBoult",
     "Opportunity": "GoBoult",
-    "Contact Name": "Prabhav Mohta",
-    "Email": false,
-    "Phone": "+91 77386 94578",
+    "Contact Name": "Varun Gupta",
+    "Email": "NA",
+    "Phone": "+91 98737 37473",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-12",
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 96.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 200000.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 66.97
+    "Probability": 34.18
   },
   {
     "Created on": "2026-04-27 06:13:44",
