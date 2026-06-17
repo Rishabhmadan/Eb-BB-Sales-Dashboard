@@ -6216,6 +6216,30 @@
     "Probability": 73.23
   },
   {
+    "Created on": "2026-06-17 06:43:55",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "LIANCHUANG ELECTRONIC INDIA PRIVATE LIMITED",
+    "Opportunity": "LIANCHUANG ELECTRONIC INDIA PRIVATE LIMITED's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "EMS & Electronics Mfg",
+    "Revenue (Millions USD)": 10.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Uttar Pradesh (IN)",
+    "City": "Noida",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 99.02
+  },
+  {
     "Created on": "2026-06-17 06:39:51",
     "Source": "Zoom Info",
     "RFQ Date": null,
@@ -19289,11 +19313,11 @@
     "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Maharashtra (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 44.06
+    "Probability": 46.95
   },
   {
     "Created on": "2026-05-15 11:34:32",
@@ -26369,11 +26393,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 47.67
+    "Probability": 46.95
   },
   {
     "Created on": "2026-05-04 11:12:11",
@@ -31553,11 +31577,11 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.78
+    "Probability": 19.78
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -34189,15 +34213,15 @@
     "Industry Segment": "EMS & Electronics Mfg",
     "Revenue (Millions USD)": 33.3,
     "Opportunity Type": "Other/TBD",
-    "Expected Revenue": 200000.0,
-    "Stage": "Open",
+    "Expected Revenue": 100000.0,
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 11.84
+    "Probability": 14.45
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -36017,11 +36041,11 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Maharashtra (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 13.68
+    "Probability": 22.37
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -36737,11 +36761,11 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 20.51
+    "Probability": 64.15
   },
   {
     "Created on": "2026-04-09 05:33:03",
