@@ -6216,6 +6216,30 @@
     "Probability": 73.23
   },
   {
+    "Created on": "2026-06-17 09:12:11",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "QORVO SEMICONDUCTOR PRIVATE LIMITED",
+    "Opportunity": "QORVO SEMICONDUCTOR PRIVATE LIMITED's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "IoT & Smart Devices",
+    "Revenue (Millions USD)": 300.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Karnataka (IN)",
+    "City": "Bengaluru",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 25.08
+  },
+  {
     "Created on": "2026-06-17 09:03:00",
     "Source": "Zoom Info",
     "RFQ Date": null,
@@ -9657,7 +9681,7 @@
     "Email": "shailesh.fartale@gogate.in",
     "Phone": "+91 77740 09423",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": null,
+    "Next Follow up": "2026-06-18",
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 22.0,
     "Opportunity Type": "Component Sourcing",
@@ -9669,7 +9693,7 @@
     "City": "Nashik",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 8.24
+    "Probability": 20.0
   },
   {
     "Created on": "2026-06-10 09:43:01",
@@ -29286,22 +29310,22 @@
     "Company Name": "Axonify Technologies",
     "Opportunity": "Axonify Tech Systems",
     "Contact Name": "Ravi Mahankali",
-    "Email": "ravi@axonifytech.com",
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-12",
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 26.5,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 200000.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Telangana (IN)",
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 91.28
+    "Probability": 56.41
   },
   {
     "Created on": "2026-04-16 05:55:06",
@@ -36905,11 +36929,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Uttar Pradesh (IN)",
+    "State": false,
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 35.32
+    "Probability": 8.71
   },
   {
     "Created on": "2026-04-09 05:33:03",
