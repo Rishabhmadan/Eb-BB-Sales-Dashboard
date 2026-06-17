@@ -465,6 +465,10 @@ function goToExplorerFilter(type, value) {
         leads = dataset.filter(l => l['City'] === value);
         title = `Leads in ${value}`;
         subtitle = `Showing ${leads.length.toLocaleString()} leads located in ${value}`;
+    } else if (type === 'product-type') {
+        leads = dataset.filter(l => l['Opportunity Type'] === value);
+        title = `Product Type: ${value}`;
+        subtitle = `Showing ${leads.length.toLocaleString()} leads for "${value}"`;
     } else {
         leads = [...dataset];
         subtitle = `Showing ${leads.length.toLocaleString()} leads`;
@@ -2144,6 +2148,16 @@ function updateCharts() {
             options: {
                 responsive: true,
                 maintainAspectRatio: false,
+                onClick: (event, elements, chart) => {
+                    if (elements && elements.length > 0) {
+                        const index = elements[0].index;
+                        const label = chart.data.labels[index];
+                        goToExplorerFilter('product-type', label);
+                    }
+                },
+                onHover: (event, elements) => {
+                    event.native.target.style.cursor = elements.length > 0 ? 'pointer' : 'default';
+                },
                 plugins: {
                     legend: {
                         position: 'bottom',
@@ -2189,6 +2203,16 @@ function updateCharts() {
                 indexAxis: 'y',
                 responsive: true,
                 maintainAspectRatio: false,
+                onClick: (event, elements, chart) => {
+                    if (elements && elements.length > 0) {
+                        const index = elements[0].index;
+                        const label = chart.data.labels[index];
+                        goToExplorerFilter('salesperson', label);
+                    }
+                },
+                onHover: (event, elements) => {
+                    event.native.target.style.cursor = elements.length > 0 ? 'pointer' : 'default';
+                },
                 plugins: {
                     legend: { display: false },
                     tooltip: {
@@ -2274,6 +2298,16 @@ function updateCharts() {
             options: {
                 responsive: true,
                 maintainAspectRatio: false,
+                onClick: (event, elements, chart) => {
+                    if (elements && elements.length > 0) {
+                        const index = elements[0].index;
+                        const label = chart.data.labels[index];
+                        goToExplorerFilter('stage', label);
+                    }
+                },
+                onHover: (event, elements) => {
+                    event.native.target.style.cursor = elements.length > 0 ? 'pointer' : 'default';
+                },
                 plugins: {
                     legend: {
                         labels: { color: textColor, font: { family: 'Outfit', size: 11 } }
@@ -2372,6 +2406,16 @@ function updateCharts() {
             options: {
                 responsive: true,
                 maintainAspectRatio: false,
+                onClick: (event, elements, chart) => {
+                    if (elements && elements.length > 0) {
+                        const index = elements[0].index;
+                        const label = chart.data.labels[index];
+                        goToExplorerFilter('stage', label);
+                    }
+                },
+                onHover: (event, elements) => {
+                    event.native.target.style.cursor = elements.length > 0 ? 'pointer' : 'default';
+                },
                 plugins: {
                     legend: {
                         position: 'top',
