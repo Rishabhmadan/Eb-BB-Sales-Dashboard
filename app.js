@@ -384,12 +384,16 @@ function goToExplorerFilter(type, value) {
     
     const dataset = (type === 'rfq' || type === 'rfq-inflow' || activeTab === 'rfq') 
         ? filteredLeads 
-        : (type === 'total' ? filteredOverviewLeadsNoStatus : filteredOverviewLeads);
+        : (type === 'total' || type === 'market-research' ? filteredOverviewLeadsNoStatus : filteredOverviewLeads);
     
     if (type === 'total') {
-        leads = [...dataset];
+        leads = dataset.filter(l => l['Stage'] !== 'Market Research');
         title = 'Total Leads';
-        subtitle = `Showing all ${leads.length.toLocaleString()} leads matching current filters`;
+        subtitle = `Showing all ${leads.length.toLocaleString()} leads matching current filters (excluding Market Research)`;
+    } else if (type === 'market-research') {
+        leads = dataset.filter(l => l['Stage'] === 'Market Research');
+        title = 'Market Research Leads';
+        subtitle = `Showing all ${leads.length.toLocaleString()} leads in stage "Market Research" matching current filters`;
     } else if (type === 'won') {
         leads = dataset.filter(l => l['Won/Lost'] === 'Won');
         title = 'Won Leads';
@@ -1893,9 +1897,12 @@ function applyFilters() {
 
 // Update dashboard KPI cards
 function updateKPIs() {
-    const totalLeads = filteredOverviewLeadsNoStatus.length;
+    const totalLeadsList = filteredOverviewLeadsNoStatus.filter(lead => lead['Stage'] !== 'Market Research');
+    const marketResearchList = filteredOverviewLeadsNoStatus.filter(lead => lead['Stage'] === 'Market Research');
     
-    const totalExpectedRevenue = filteredOverviewLeadsNoStatus.reduce((sum, lead) => sum + lead['Expected Revenue'], 0);
+    const totalLeads = totalLeadsList.length;
+    const totalExpectedRevenue = totalLeadsList.reduce((sum, lead) => sum + lead['Expected Revenue'], 0);
+    const marketResearchCount = marketResearchList.length;
     
     const wonDealsLeads = filteredOverviewLeads.filter(lead => lead['Won/Lost'] === 'Won');
     const wonDealsCount = wonDealsLeads.length;
@@ -1906,6 +1913,11 @@ function updateKPIs() {
     document.getElementById('kpi-expected-revenue').textContent = formatCurrency(totalExpectedRevenue);
     document.getElementById('kpi-won-deals').textContent = wonDealsCount.toLocaleString();
     document.getElementById('kpi-won-value').textContent = formatCurrency(wonValue);
+    
+    const kpiMarketResearch = document.getElementById('kpi-market-research-leads');
+    if (kpiMarketResearch) {
+        kpiMarketResearch.textContent = marketResearchCount.toLocaleString();
+    }
 
     if (activeTab === 'rfq') {
         updateRFQKPIs();
@@ -3742,9 +3754,17 @@ function registerEventListeners() {
     // Clickable KPI totals to view in list view
     const cardTotalLeads = document.getElementById('card-total-leads');
     if (cardTotalLeads) {
-        cardTotalLeads.title = "Click to view total leads list";
+        cardTotalLeads.title = "Click to view total leads list (excluding Market Research)";
         cardTotalLeads.addEventListener('click', () => {
             goToExplorerFilter('total');
+        });
+    }
+    
+    const cardMarketResearch = document.getElementById('card-market-research-leads');
+    if (cardMarketResearch) {
+        cardMarketResearch.title = "Click to view market research leads list";
+        cardMarketResearch.addEventListener('click', () => {
+            goToExplorerFilter('market-research');
         });
     }
 

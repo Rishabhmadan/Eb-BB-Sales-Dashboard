@@ -510,6 +510,7 @@ body {
 .icon-emerald { background-color: rgba(16, 185, 129, 0.15); color: var(--color-emerald); }
 .icon-gold { background-color: rgba(245, 158, 11, 0.15); color: var(--color-gold); }
 .icon-purple { background-color: rgba(139, 92, 246, 0.15); color: var(--color-purple); }
+.icon-orange { background-color: rgba(249, 115, 22, 0.15); color: #f97316; }
 
 .kpi-data {
     display: flex;
