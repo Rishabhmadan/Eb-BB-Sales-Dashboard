@@ -1963,7 +1963,9 @@ function renderChart(canvasId, config) {
     if (charts[canvasId]) {
         charts[canvasId].destroy();
     }
-    const ctx = document.getElementById(canvasId).getContext('2d');
+    const canvas = document.getElementById(canvasId);
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
     charts[canvasId] = new Chart(ctx, config);
 }
 
