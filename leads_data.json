@@ -16469,9 +16469,9 @@
     "RFQ Date": null,
     "Company Name": "SiSAH Technologies",
     "Opportunity": "SiSAH Technologies's opportunity",
-    "Contact Name": "Kgm Siraji",
-    "Email": "sales@sisah.co.in",
-    "Phone": "+91 81300 79060 / 9650667671",
+    "Contact Name": "Angelina Dimpy",
+    "Email": "NA",
+    "Phone": "+91 96506 67671",
     "Salesperson": "Aadit Nair",
     "Next Follow up": "2026-06-17",
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -16485,7 +16485,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 96.14
+    "Probability": 35.4
   },
   {
     "Created on": "2026-05-26 11:05:41",
@@ -18247,7 +18247,7 @@
     "Opportunity": "Smart-I Electronics Systems",
     "Contact Name": "Mayuresh Choudhari",
     "Email": "mayuresh.c@enviroworld.in",
-    "Phone": "+91 95940 30093",
+    "Phone": "+91 22 6566 6555",
     "Salesperson": "Aadit Nair",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "Industrial Automation & Robotics",
@@ -18261,7 +18261,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 8.79
+    "Probability": 7.83
   },
   {
     "Created on": "2026-05-20 06:21:07",
@@ -40059,7 +40059,7 @@
     "Created on": "2026-04-09 05:33:03",
     "Source": "Other",
     "RFQ Date": null,
-    "Company Name": "Gowtham Sundarraj",
+    "Company Name": "Butterfly Gandhimathi",
     "Opportunity": "Butterfly Gandhimathi",
     "Contact Name": "Karthick",
     "Email": "karthick.l@butterflyindia.com",
@@ -40073,11 +40073,11 @@
     "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Karnataka (IN)",
-    "City": "Bangalore",
+    "State": false,
+    "City": "Karnataka",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 1.58
+    "Probability": 37.21
   },
   {
     "Created on": "2026-04-09 05:33:03",
