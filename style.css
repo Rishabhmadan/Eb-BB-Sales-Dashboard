@@ -2170,3 +2170,143 @@ body {
     }
 }
 
+/* ==========================================
+   PIPELINE FUNNEL FLOW STYLES
+   ========================================== */
+.funnel-flow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 24px 0 16px 0;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.funnel-stage-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.funnel-stage-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px;
+    border-radius: 12px;
+    color: #ffffff !important;
+    font-weight: 500;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    min-height: 58px;
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.funnel-stage-block:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+    filter: brightness(1.1);
+}
+
+.funnel-stage-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    text-align: left;
+}
+
+.funnel-stage-name {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+}
+
+.funnel-stage-active-label {
+    font-size: 11px;
+    opacity: 0.9;
+    font-weight: 400;
+}
+
+.funnel-stage-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+    text-align: right;
+}
+
+.funnel-stage-metrics {
+    font-size: 14px;
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+.funnel-stage-active-metrics {
+    font-size: 11px;
+    opacity: 0.9;
+    font-weight: 400;
+}
+
+/* Funnel Transition Divider and Badge */
+.funnel-transition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    position: relative;
+    width: 100%;
+}
+
+.funnel-transition::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: var(--border-color);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.funnel-transition-badge {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 11px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: var(--shadow-main);
+    z-index: 2;
+    transition: all 0.2s ease;
+}
+
+.funnel-transition-badge:hover {
+    transform: scale(1.05);
+}
+
+.light-theme .funnel-transition-badge {
+    background-color: #f8fafc;
+    color: #2563eb;
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+.dark-theme .funnel-transition-badge {
+    background-color: #1e293b;
+    color: #60a5fa;
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+

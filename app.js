@@ -2675,6 +2675,153 @@ function updateCharts() {
     updateAICardStats();
 }
 
+// Render the Pipeline Funnel Flow widget
+function renderPipelineFunnel() {
+    if (activeTab !== 'pipeline') return;
+
+    const funnelStages = STAGE_WORKFLOW_ORDER.filter(s => s !== 'Dropped');
+    
+    // Calculate current snapshot counts and expected revenue per stage
+    const stageCounts = {};
+    const stageRevenues = {};
+    funnelStages.forEach(st => {
+        stageCounts[st] = 0;
+        stageRevenues[st] = 0;
+    });
+
+    filteredOverviewLeads.forEach(lead => {
+        const st = lead['Stage'];
+        if (stageCounts[st] !== undefined) {
+            stageCounts[st]++;
+            stageRevenues[st] += lead['Expected Revenue'] || 0;
+        }
+    });
+
+    // Compute cumulative (flow-through) values from bottom to top
+    const cumulativeCounts = {};
+    const cumulativeRevenues = {};
+    let runningCount = 0;
+    let runningRevenue = 0;
+
+    for (let i = funnelStages.length - 1; i >= 0; i--) {
+        const st = funnelStages[i];
+        runningCount += stageCounts[st];
+        runningRevenue += stageRevenues[st];
+        cumulativeCounts[st] = runningCount;
+        cumulativeRevenues[st] = runningRevenue;
+    }
+
+    // Update the Summary KPIs in the header
+    const totalLeadsEl = document.getElementById('funnel-total-leads');
+    const winRateEl = document.getElementById('funnel-win-rate');
+    
+    const totalMarketResearchLeads = cumulativeCounts[funnelStages[0]] || 0;
+    const totalWonLeads = stageCounts['Won'] || 0;
+    const overallWinRate = totalMarketResearchLeads > 0 ? (totalWonLeads / totalMarketResearchLeads * 100).toFixed(1) + '%' : '0%';
+
+    if (totalLeadsEl) {
+        totalLeadsEl.textContent = totalMarketResearchLeads.toLocaleString();
+    }
+    if (winRateEl) {
+        winRateEl.textContent = overallWinRate;
+    }
+
+    const funnelWidget = document.getElementById('funnel-flow-widget');
+    if (!funnelWidget) return;
+
+    funnelWidget.innerHTML = '';
+
+    const maxCumulativeCount = Math.max(...Object.values(cumulativeCounts), 1);
+
+    // Gradients matching the design aesthetic
+    const gradients = [
+        'linear-gradient(135deg, #1e3a8a, #3b82f6)', // Market Research: Deep Blue to Blue
+        'linear-gradient(135deg, #2563eb, #60a5fa)', // Open: Royal Blue to Light Blue
+        'linear-gradient(135deg, #0f766e, #14b8a6)', // Connected: Teal to Mint
+        'linear-gradient(135deg, #0d9488, #2dd4bf)', // Follow Up Later: Green-Teal to Cyan
+        'linear-gradient(135deg, #b45309, #f59e0b)', // Need Warm Intro: Brown-Amber to Yellow-Amber
+        'linear-gradient(135deg, #d97706, #fbbf24)', // RFQ Expected: Dark Gold to Light Gold
+        'linear-gradient(135deg, #4f46e5, #818cf8)', // RFQ Received: Indigo to Lavender-Indigo
+        'linear-gradient(135deg, #059669, #34d399)'  // Won: Emerald to Green
+    ];
+
+    const icons = [
+        'fa-magnifying-glass',
+        'fa-folder-open',
+        'fa-handshake',
+        'fa-clock',
+        'fa-envelope',
+        'fa-file-signature',
+        'fa-file-invoice-dollar',
+        'fa-trophy'
+    ];
+
+    funnelStages.forEach((stage, idx) => {
+        const cumulativeCount = cumulativeCounts[stage] || 0;
+        const cumulativeRevenue = cumulativeRevenues[stage] || 0;
+        const activeCount = stageCounts[stage] || 0;
+        const activeRevenue = stageRevenues[stage] || 0;
+
+        // Width calculation: interpolate between 25% and 100%
+        const minWidth = 25;
+        const widthPercent = minWidth + (100 - minWidth) * (cumulativeCount / maxCumulativeCount);
+
+        // Conversion Rate calculation
+        let transitionRateText = '';
+        if (idx > 0) {
+            const prevStage = funnelStages[idx - 1];
+            const prevCumulativeCount = cumulativeCounts[prevStage] || 0;
+            const transitionRate = prevCumulativeCount > 0 ? (cumulativeCount / prevCumulativeCount * 100).toFixed(1) : '0.0';
+            const overallRate = totalMarketResearchLeads > 0 ? (cumulativeCount / totalMarketResearchLeads * 100).toFixed(1) : '0.0';
+            transitionRateText = `
+                <div class="funnel-transition">
+                    <div class="funnel-transition-badge" title="Conversion rate from ${prevStage} to ${stage} is ${transitionRate}%, representing ${overallRate}% of all pipeline entries">
+                        <i class="fa-solid fa-arrow-down"></i>
+                        <span><strong>${transitionRate}%</strong> transition</span>
+                        <span style="opacity: 0.6; font-size: 10px; margin-left: 2px;">(Overall: ${overallRate}%)</span>
+                    </div>
+                </div>
+            `;
+        }
+
+        const stageRow = document.createElement('div');
+        stageRow.className = 'funnel-stage-row';
+
+        const gradient = gradients[idx] || gradients[gradients.length - 1];
+        const icon = icons[idx] || 'fa-tag';
+
+        const formattedCumulativeRevenue = formatCurrency(cumulativeRevenue);
+        const formattedActiveRevenue = formatCurrency(activeRevenue);
+
+        stageRow.innerHTML = `
+            ${transitionRateText}
+            <div class="funnel-stage-block" 
+                 style="width: ${widthPercent}%; background: ${gradient};"
+                 onclick="goToExplorerFilter('stage', '${stage.replace(/'/g, "\\'")}')"
+                 title="Filter Data Explorer by '${stage}' stage">
+                <div class="funnel-stage-left">
+                    <span class="funnel-stage-name">
+                        <i class="fa-solid ${icon}" style="margin-right: 8px;"></i>${idx + 1}. ${stage}
+                    </span>
+                    <span class="funnel-stage-active-label">
+                        Currently in stage: <strong>${activeCount}</strong> deals (${formattedActiveRevenue})
+                    </span>
+                </div>
+                <div class="funnel-stage-right">
+                    <span class="funnel-stage-metrics">
+                        ${cumulativeCount.toLocaleString()} cumulative
+                    </span>
+                    <span class="funnel-stage-active-metrics">
+                        Total Volume: <strong>${formattedCumulativeRevenue}</strong>
+                    </span>
+                </div>
+            </div>
+        `;
+
+        funnelWidget.appendChild(stageRow);
+    });
+}
+
 // Render dynamic tables based on currently active tab
 function renderTables() {
     // 0. OVERVIEW TAB - Hot Opportunities Table
@@ -2733,6 +2880,7 @@ function renderTables() {
 
     // 1. PIPELINE TAB - Conversion Table
     if (activeTab === 'pipeline') {
+        renderPipelineFunnel();
         const stageSummary = {};
         
         filteredOverviewLeads.forEach(lead => {

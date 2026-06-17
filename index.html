@@ -400,6 +400,28 @@
             <div class="tab-content" id="tab-pipeline">
                 <section class="visuals-grid">
                     <div class="chart-card span-3">
+                        <div class="chart-header" style="flex-direction: row; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+                            <div>
+                                <h3>Sales Pipeline Funnel Flow</h3>
+                                <p>Cumulative volume progression and stage-to-stage transition rates</p>
+                            </div>
+                            <div class="funnel-metrics-summary" style="display: flex; gap: 16px; font-size: 13px; color: var(--text-secondary);">
+                                <span style="display: flex; align-items: center; gap: 6px;">
+                                    <span class="dot" style="width: 8px; height: 8px; border-radius: 50%; background-color: var(--color-blue); display: inline-block;"></span>
+                                    <strong>Total Leads:</strong> <span id="funnel-total-leads" style="color: var(--text-primary); font-weight: 600;">0</span>
+                                </span>
+                                <span style="display: flex; align-items: center; gap: 6px;">
+                                    <span class="dot" style="width: 8px; height: 8px; border-radius: 50%; background-color: var(--color-emerald); display: inline-block;"></span>
+                                    <strong>Overall Conversion Rate:</strong> <span id="funnel-win-rate" style="color: var(--text-primary); font-weight: 600;">0%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="funnel-flow-container" id="funnel-flow-widget">
+                            <!-- Populated dynamically -->
+                        </div>
+                    </div>
+
+                    <div class="chart-card span-3">
                         <div class="chart-header">
                             <h3>Stage Funnel Analysis</h3>
                             <p>Visualizing deal value and volume progression from qualification to close</p>
