@@ -40,12 +40,12 @@
     "Expected Revenue": 28798720.0,
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
-    "Country": false,
-    "State": false,
-    "City": false,
+    "Country": "India",
+    "State": "Maharashtra (IN)",
+    "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.54
+    "Probability": 71.57
   },
   {
     "Created on": "2026-06-13 06:46:46",
@@ -64,9 +64,9 @@
     "Expected Revenue": 14575000.0,
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
-    "Country": false,
-    "State": false,
-    "City": false,
+    "Country": "India",
+    "State": "Karnataka (IN)",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 90.0
@@ -137,11 +137,11 @@
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": "2026-06-23",
-    "Probability": 40.57
+    "Probability": 2.66
   },
   {
     "Created on": "2026-06-08 11:38:06",
@@ -161,7 +161,7 @@
     "Stage": "Won",
     "Won/Lost": "Won",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": "2026-06-11 11:45:40",
     "Expected Closing": "2026-06-11",
@@ -257,7 +257,7 @@
     "Stage": "Won",
     "Won/Lost": "Won",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": "2026-05-30 12:25:41",
     "Expected Closing": "2026-05-25",
@@ -784,12 +784,12 @@
     "Expected Revenue": 900000.0,
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
-    "Country": false,
-    "State": false,
-    "City": false,
+    "Country": "India",
+    "State": "Haryana (IN)",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": "2026-06-18",
-    "Probability": 43.63
+    "Probability": 41.1
   },
   {
     "Created on": "2026-06-16 07:50:34",
@@ -808,9 +808,9 @@
     "Expected Revenue": 600000.0,
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
-    "Country": false,
-    "State": false,
-    "City": false,
+    "Country": "India",
+    "State": "Haryana (IN)",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": "2026-06-17",
     "Probability": 90.0
@@ -833,7 +833,7 @@
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": "2026-06-17",
@@ -856,9 +856,9 @@
     "Expected Revenue": 2300000.0,
     "Stage": "Dropped",
     "Won/Lost": "Pending",
-    "Country": false,
-    "State": false,
-    "City": false,
+    "Country": "India",
+    "State": "Haryana (IN)",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": "2026-06-17",
     "Probability": 90.0
@@ -928,9 +928,9 @@
     "Expected Revenue": 500000.0,
     "Stage": "Won",
     "Won/Lost": "Won",
-    "Country": false,
-    "State": false,
-    "City": false,
+    "Country": "India",
+    "State": "Haryana (IN)",
+    "City": "Gurugram",
     "Closed Date": "2026-06-13 19:02:42",
     "Expected Closing": "2026-06-13",
     "Probability": 100.0
@@ -1000,9 +1000,9 @@
     "Expected Revenue": 272819.0,
     "Stage": "Dropped",
     "Won/Lost": "Pending",
-    "Country": false,
-    "State": false,
-    "City": false,
+    "Country": "India",
+    "State": "Telangana (IN)",
+    "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 5.0
@@ -1024,12 +1024,12 @@
     "Expected Revenue": 7000000.0,
     "Stage": "RFQ Expected",
     "Won/Lost": "Pending",
-    "Country": false,
-    "State": false,
-    "City": false,
+    "Country": "India",
+    "State": "Haryana (IN)",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 44.32
+    "Probability": 39.33
   },
   {
     "Created on": "2026-05-30 12:38:55",
@@ -1625,7 +1625,7 @@
     "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": "2026-08-12",
@@ -2321,7 +2321,7 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": "2026-06-02",
@@ -2921,7 +2921,7 @@
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": "2026-06-17",
@@ -3089,11 +3089,11 @@
     "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 20.89
+    "Probability": 0.6
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -3569,11 +3569,11 @@
     "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 33.51
+    "Probability": 3.62
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -3641,7 +3641,7 @@
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": "2026-07-22",
@@ -3760,9 +3760,9 @@
     "Expected Revenue": 138886.0,
     "Stage": "Won",
     "Won/Lost": "Won",
-    "Country": false,
-    "State": false,
-    "City": false,
+    "Country": "India",
+    "State": "Karnataka (IN)",
+    "City": "Bangalore",
     "Closed Date": "2026-06-17 04:44:28",
     "Expected Closing": null,
     "Probability": 100.0
@@ -3784,7 +3784,7 @@
     "Expected Revenue": 120856.86,
     "Stage": "Won",
     "Won/Lost": "Won",
-    "Country": false,
+    "Country": "India",
     "State": false,
     "City": false,
     "Closed Date": "2026-06-16 05:39:20",
@@ -3808,7 +3808,7 @@
     "Expected Revenue": 115922.84,
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
-    "Country": false,
+    "Country": "India",
     "State": false,
     "City": false,
     "Closed Date": null,
@@ -3832,7 +3832,7 @@
     "Expected Revenue": 0.0,
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
-    "Country": false,
+    "Country": "India",
     "State": false,
     "City": false,
     "Closed Date": null,
@@ -3856,9 +3856,9 @@
     "Expected Revenue": 0.0,
     "Stage": "Dropped",
     "Won/Lost": "Pending",
-    "Country": false,
-    "State": false,
-    "City": false,
+    "Country": "India",
+    "State": "Karnataka (IN)",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 60.0
@@ -3952,9 +3952,9 @@
     "Expected Revenue": 464676.0,
     "Stage": "Won",
     "Won/Lost": "Won",
-    "Country": false,
-    "State": false,
-    "City": false,
+    "Country": "India",
+    "State": "Telangana (IN)",
+    "City": "Hyderabad",
     "Closed Date": "2026-06-16 04:13:52",
     "Expected Closing": "2026-06-16",
     "Probability": 100.0
@@ -4713,19 +4713,19 @@
     "Email": "niraj@rk-in.com",
     "Phone": "+919901487866",
     "Salesperson": "Ruchit Nambiar",
-    "Next Follow up": "2026-06-15",
+    "Next Follow up": null,
     "Industry Segment": "Aerospace & Defense",
     "Revenue (Millions USD)": 1.5,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 200000.0,
-    "Stage": "RFQ Received",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 2.4
+    "Probability": 10.0
   },
   {
     "Created on": "2026-05-14 04:54:24",
@@ -5225,11 +5225,11 @@
     "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 83.04
+    "Probability": 4.72
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -5465,11 +5465,11 @@
     "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 76.36
+    "Probability": 8.12
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -5921,11 +5921,11 @@
     "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 20.89
+    "Probability": 0.6
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -6256,12 +6256,12 @@
     "Expected Revenue": 0.0,
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
-    "Country": false,
-    "State": false,
-    "City": false,
+    "Country": "India",
+    "State": "Karnataka (IN)",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 93.41
+    "Probability": 28.54
   },
   {
     "Created on": "2026-06-17 05:08:58",
@@ -6304,9 +6304,9 @@
     "Expected Revenue": 38638.0,
     "Stage": "Won",
     "Won/Lost": "Won",
-    "Country": false,
-    "State": false,
-    "City": false,
+    "Country": "India",
+    "State": "Karnataka (IN)",
+    "City": "Bangalore",
     "Closed Date": "2026-06-17 04:49:29",
     "Expected Closing": null,
     "Probability": 100.0
@@ -6952,9 +6952,9 @@
     "Expected Revenue": 500000.0,
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
-    "Country": false,
-    "State": false,
-    "City": false,
+    "Country": "India",
+    "State": "Telangana (IN)",
+    "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": "2026-06-30",
     "Probability": 50.0
@@ -8128,7 +8128,7 @@
     "Expected Revenue": 24991.0,
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
-    "Country": false,
+    "Country": "India",
     "State": false,
     "City": false,
     "Closed Date": null,
@@ -12040,12 +12040,12 @@
     "Expected Revenue": 0.0,
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
-    "Country": false,
-    "State": false,
-    "City": false,
+    "Country": "India",
+    "State": "Karnataka (IN)",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.61
+    "Probability": 28.54
   },
   {
     "Created on": "2026-06-04 11:07:14",
@@ -12880,12 +12880,12 @@
     "Expected Revenue": 0.0,
     "Stage": "Open",
     "Won/Lost": "Pending",
-    "Country": false,
+    "Country": "India",
     "State": false,
     "City": false,
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 46.95
+    "Probability": 40.04
   },
   {
     "Created on": "2026-06-02 10:49:20",
@@ -14993,11 +14993,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.84
+    "Probability": 25.08
   },
   {
     "Created on": "2026-05-29 05:31:53",
@@ -16192,12 +16192,12 @@
     "Expected Revenue": 0.0,
     "Stage": "Open",
     "Won/Lost": "Pending",
-    "Country": false,
-    "State": false,
-    "City": false,
+    "Country": "India",
+    "State": "Maharashtra (IN)",
+    "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.67
+    "Probability": 65.01
   },
   {
     "Created on": "2026-05-25 06:58:07",
@@ -18257,11 +18257,11 @@
     "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 25.96
+    "Probability": 1.08
   },
   {
     "Created on": "2026-05-18 11:20:12",
@@ -21952,12 +21952,12 @@
     "Expected Revenue": 3000000.0,
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
-    "Country": false,
+    "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 42.65
+    "Probability": 1.14
   },
   {
     "Created on": "2026-05-09 12:09:09",
@@ -29657,11 +29657,11 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 91.68
+    "Probability": 23.73
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -29681,11 +29681,11 @@
     "Stage": "RFQ Expected",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 74.62
+    "Probability": 2.21
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -30065,11 +30065,11 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 84.42
+    "Probability": 12.48
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -30281,11 +30281,11 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 47.39
+    "Probability": 2.09
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -30761,11 +30761,11 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 47.39
+    "Probability": 2.09
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -31001,11 +31001,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 54.39
+    "Probability": 4.04
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -31649,11 +31649,11 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 21.09
+    "Probability": 0.3
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -32849,11 +32849,11 @@
     "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 0.59
+    "Probability": 0.17
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -34193,11 +34193,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.08
+    "Probability": 0.29
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -34529,11 +34529,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 20.89
+    "Probability": 0.6
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -39233,11 +39233,11 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 3.86
+    "Probability": 0.67
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -41657,11 +41657,11 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 13.4
+    "Probability": 1.86
   },
   {
     "Created on": "2026-04-09 05:33:03",
