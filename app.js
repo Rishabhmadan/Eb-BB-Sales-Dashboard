@@ -2252,12 +2252,12 @@ function updateCharts() {
         // Define exact workflow stages to order them logically
         const workflowOrder = [
             'Market Research',
-            'Need Warm Intro',
+            'Open',
             'Connected',
+            'Follow Up Later',
+            'Need Warm Intro',
             'RFQ Expected',
             'RFQ Received',
-            'Open',
-            'Follow Up Later',
             'Won',
             'Dropped'
         ];
