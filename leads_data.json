@@ -3305,11 +3305,11 @@
     "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 65.95
+    "Probability": 85.97
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -3785,8 +3785,8 @@
     "Stage": "Won",
     "Won/Lost": "Won",
     "Country": "India",
-    "State": false,
-    "City": false,
+    "State": "Kerala (IN)",
+    "City": "Trivandrum",
     "Closed Date": "2026-06-16 05:39:20",
     "Expected Closing": null,
     "Probability": 100.0
@@ -3809,8 +3809,8 @@
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
-    "City": false,
+    "State": "Haryana (IN)",
+    "City": "Faridabad",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 80.0
@@ -3833,8 +3833,8 @@
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
-    "City": false,
+    "State": "Haryana (IN)",
+    "City": "Faridabad",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 70.0
@@ -4053,7 +4053,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": "2026-06-22",
-    "Probability": 90.31
+    "Probability": 30.31
   },
   {
     "Created on": "2026-06-05 06:25:24",
@@ -4218,7 +4218,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Telangana (IN)",
-    "City": false,
+    "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 50.0
@@ -4473,7 +4473,7 @@
     "Email": "NA",
     "Phone": "+91 99908 84861",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-06-15",
+    "Next Follow up": "2026-06-18",
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 9.45,
     "Opportunity Type": "Box Build",
@@ -4485,7 +4485,7 @@
     "City": "Navi Mumbai",
     "Closed Date": null,
     "Expected Closing": "2026-06-26",
-    "Probability": 50.0
+    "Probability": 20.0
   },
   {
     "Created on": "2026-05-20 05:15:19",
@@ -4629,7 +4629,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": "2026-06-29",
-    "Probability": 50.0
+    "Probability": 10.0
   },
   {
     "Created on": "2026-05-19 04:08:33",
@@ -5849,11 +5849,11 @@
     "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 20.89
+    "Probability": 32.91
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -8009,11 +8009,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 93.08
+    "Probability": 96.44
   },
   {
     "Created on": "2026-06-15 06:22:11",
@@ -8129,8 +8129,8 @@
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
-    "City": false,
+    "State": "Delhi (IN)",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 30.0
@@ -8157,7 +8157,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 95.32
+    "Probability": 95.49
   },
   {
     "Created on": "2026-06-13 07:24:13",
@@ -8205,7 +8205,7 @@
     "City": "Faridabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 40.36
+    "Probability": 88.26
   },
   {
     "Created on": "2026-06-13 05:22:44",
@@ -9494,14 +9494,14 @@
     "Revenue (Millions USD)": 40.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 3000000.0,
-    "Stage": "Open",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 0.97
+    "Probability": 2.24
   },
   {
     "Created on": "2026-06-10 05:45:47",
@@ -11633,11 +11633,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Haryana (IN)",
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 26.27
+    "Probability": 46.95
   },
   {
     "Created on": "2026-06-08 09:36:38",
@@ -12862,30 +12862,6 @@
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 16.03
-  },
-  {
-    "Created on": "2026-06-03 12:38:48",
-    "Source": false,
-    "RFQ Date": null,
-    "Company Name": "Israel Trade",
-    "Opportunity": "Israel Trade's opportunity",
-    "Contact Name": "Wrushabh Ghodmare",
-    "Email": "wrushabh.ghodmare@israeltrade.gov.il",
-    "Phone": "+91 88887 69269",
-    "Salesperson": "Rishabh Madan",
-    "Next Follow up": null,
-    "Industry Segment": false,
-    "Revenue (Millions USD)": 0.0,
-    "Opportunity Type": false,
-    "Expected Revenue": 0.0,
-    "Stage": "Open",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": false,
-    "City": false,
-    "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 40.04
   },
   {
     "Created on": "2026-06-02 10:49:20",
@@ -16817,11 +16793,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 98.18
+    "Probability": 96.44
   },
   {
     "Created on": "2026-05-20 09:00:57",
@@ -17249,11 +17225,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 98.18
+    "Probability": 96.44
   },
   {
     "Created on": "2026-05-20 05:06:28",
@@ -17273,11 +17249,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 98.18
+    "Probability": 96.44
   },
   {
     "Created on": "2026-05-20 05:02:52",
@@ -34345,30 +34321,6 @@
   },
   {
     "Created on": "2026-04-09 05:33:03",
-    "Source": "XOR",
-    "RFQ Date": null,
-    "Company Name": "TBD",
-    "Opportunity": "TBD",
-    "Contact Name": "Akshay",
-    "Email": "akshayrukade01@gmail.com",
-    "Phone": "+919066717155",
-    "Salesperson": "Kundan Pandey",
-    "Next Follow up": null,
-    "Industry Segment": "Other",
-    "Revenue (Millions USD)": 0.0,
-    "Opportunity Type": "Other/TBD",
-    "Expected Revenue": 0.0,
-    "Stage": "Follow Up Later",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": false,
-    "City": false,
-    "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 50.0
-  },
-  {
-    "Created on": "2026-04-09 05:33:03",
     "Source": "Cold Call",
     "RFQ Date": "2026-05-29",
     "Company Name": "Teknic Euchner",
@@ -36878,14 +36830,14 @@
     "Revenue (Millions USD)": 37.12,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 370000.0,
-    "Stage": "Open",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "West Bengal (IN)",
     "City": "Kolkata",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 0.45
+    "Probability": 13.98
   },
   {
     "Created on": "2026-04-09 05:33:03",
