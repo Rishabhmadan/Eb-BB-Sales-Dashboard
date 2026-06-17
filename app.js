@@ -407,7 +407,7 @@ function goToExplorerFilter(type, value) {
     let subtitle = '';
     let leads = [];
     
-    const dataset = (type === 'rfq' || type === 'rfq-inflow' || activeTab === 'rfq') 
+    const dataset = (type === 'rfq' || type === 'rfq-inflow' || type === 'rfqs-received' || activeTab === 'rfq') 
         ? filteredLeads 
         : (type === 'total' || type === 'market-research' ? filteredOverviewLeadsNoStatus : filteredOverviewLeads);
     
@@ -419,6 +419,10 @@ function goToExplorerFilter(type, value) {
         leads = dataset.filter(l => l['Stage'] === 'Market Research');
         title = 'Market Research Leads';
         subtitle = `Showing all ${leads.length.toLocaleString()} leads in stage "Market Research" matching current filters`;
+    } else if (type === 'rfqs-received') {
+        leads = dataset.filter(l => getLeadRFQDate(l) !== null);
+        title = 'RFQs Received';
+        subtitle = `Showing all ${leads.length.toLocaleString()} RFQs matching current filters`;
     } else if (type === 'won') {
         leads = dataset.filter(l => l['Won/Lost'] === 'Won');
         title = 'Won Leads';
@@ -3826,6 +3830,14 @@ function registerEventListeners() {
         cardWonValue.title = "Click to view won leads list";
         cardWonValue.addEventListener('click', () => {
             goToExplorerFilter('won');
+        });
+    }
+
+    const cardRFQReceived = document.getElementById('card-rfq-received');
+    if (cardRFQReceived) {
+        cardRFQReceived.title = "Click to view RFQs received list";
+        cardRFQReceived.addEventListener('click', () => {
+            goToExplorerFilter('rfqs-received');
         });
     }
 
