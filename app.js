@@ -2650,6 +2650,7 @@ function updateCharts() {
     if (activeTab === 'rfq') {
         updateRFQCharts();
     }
+    updateAICardStats();
 }
 
 // Render dynamic tables based on currently active tab
@@ -5101,6 +5102,32 @@ function setupAIEventListeners() {
     const chatInput = document.getElementById('chat-input');
     const suggestions = document.querySelectorAll('.suggestion-btn');
     const btnClearChat = document.getElementById('btn-clear-chat');
+
+    // Toggle floating chat panel
+    const floatingBtn = document.getElementById('floating-ai-btn');
+    const floatingContainer = document.getElementById('floating-chat-container');
+    const closeBtn = document.getElementById('btn-close-chat');
+
+    if (floatingBtn && floatingContainer) {
+        floatingBtn.addEventListener('click', () => {
+            floatingContainer.classList.toggle('active');
+            if (floatingContainer.classList.contains('active')) {
+                updateAICardStats();
+                // Scroll chat messages to bottom
+                const chatMessages = document.getElementById('chat-messages');
+                if (chatMessages) {
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+                }
+            }
+        });
+    }
+
+    if (closeBtn && floatingContainer) {
+        closeBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            floatingContainer.classList.remove('active');
+        });
+    }
     
     // Clear Chat
     if (btnClearChat) {
