@@ -1,6 +1,7 @@
 // Global state
 let allLeads = [];
 let filteredLeads = [];
+let filteredOverviewLeads = [];
 let activeTab = 'overview';
 let charts = {};
 let currentSort = { column: 'Created on', direction: 'desc' };
@@ -380,32 +381,34 @@ function goToExplorerFilter(type, value) {
     let subtitle = '';
     let leads = [];
     
+    const dataset = (type === 'rfq' || type === 'rfq-inflow' || activeTab === 'rfq') ? filteredLeads : filteredOverviewLeads;
+    
     if (type === 'total') {
-        leads = [...filteredLeads];
+        leads = [...dataset];
         title = 'Total Leads';
         subtitle = `Showing all ${leads.length.toLocaleString()} leads matching current filters`;
     } else if (type === 'won') {
-        leads = filteredLeads.filter(l => l['Won/Lost'] === 'Won');
+        leads = dataset.filter(l => l['Won/Lost'] === 'Won');
         title = 'Won Leads';
         subtitle = `Showing all ${leads.length.toLocaleString()} won leads matching current filters`;
     } else if (type === 'stage') {
-        leads = filteredLeads.filter(l => l['Stage'] === value);
+        leads = dataset.filter(l => l['Stage'] === value);
         title = `Stage: ${value}`;
         subtitle = `Showing ${leads.length.toLocaleString()} leads currently in stage "${value}"`;
     } else if (type === 'salesperson') {
-        leads = filteredLeads.filter(l => l['Salesperson'] === value);
+        leads = dataset.filter(l => l['Salesperson'] === value);
         title = `Leads for ${value}`;
         subtitle = `Showing ${leads.length.toLocaleString()} leads assigned to ${value}`;
     } else if (type === 'salesperson-won') {
-        leads = filteredLeads.filter(l => l['Salesperson'] === value && l['Won/Lost'] === 'Won');
+        leads = dataset.filter(l => l['Salesperson'] === value && l['Won/Lost'] === 'Won');
         title = `Won Leads for ${value}`;
         subtitle = `Showing ${leads.length.toLocaleString()} won leads assigned to ${value}`;
     } else if (type === 'city') {
-        leads = filteredLeads.filter(l => l['City'] === value);
+        leads = dataset.filter(l => l['City'] === value);
         title = `Leads in ${value}`;
         subtitle = `Showing ${leads.length.toLocaleString()} leads located in ${value}`;
     } else {
-        leads = [...filteredLeads];
+        leads = [...dataset];
         subtitle = `Showing ${leads.length.toLocaleString()} leads`;
     }
     
@@ -1480,6 +1483,7 @@ function switchTab(tabName, preventReset = false, pushState = true) {
     if (!preventReset) {
         resetFilters(true);
         filteredLeads = [...allLeads];
+        filteredOverviewLeads = [...allLeads];
         currentPage = 1;
         updateKPIs();
     }
@@ -1811,6 +1815,39 @@ function applyFilters() {
         return true;
     });
 
+    filteredOverviewLeads = allLeads.filter(lead => {
+        if (fSalesperson !== 'all' && lead['Salesperson'] !== fSalesperson) return false;
+        if (fStage !== 'all' && lead['Stage'] !== fStage) return false;
+        if (fIndustry !== 'all' && lead['Industry Segment'] !== fIndustry) return false;
+        if (fType !== 'all' && lead['Opportunity Type'] !== fType) return false;
+        if (fStatus !== 'all') {
+            if (fStatus === 'Won' && lead['Won/Lost'] !== 'Won') return false;
+            if (fStatus === 'Pending' && lead['Won/Lost'] === 'Won') return false;
+        }
+        
+        if (fRFQPeriod !== 'all' && fRFQValue !== 'all') {
+            const overviewDateStr = getLeadOverviewDate(lead);
+            if (!overviewDateStr) return false;
+            if (getLabelForRFQDate(overviewDateStr, fRFQPeriod) !== fRFQValue) return false;
+        }
+        
+        if (searchQuery) {
+            const match = 
+                (lead['Opportunity'] && lead['Opportunity'].toLowerCase().includes(searchQuery)) ||
+                (lead['Company Name'] && lead['Company Name'].toLowerCase().includes(searchQuery)) ||
+                (lead['Contact Name'] && lead['Contact Name'].toLowerCase().includes(searchQuery)) ||
+                (lead['Email'] && lead['Email'].toLowerCase().includes(searchQuery)) ||
+                (lead['Salesperson'] && lead['Salesperson'].toLowerCase().includes(searchQuery)) ||
+                (lead['Stage'] && lead['Stage'].toLowerCase().includes(searchQuery)) ||
+                (lead['Opportunity Type'] && lead['Opportunity Type'].toLowerCase().includes(searchQuery)) ||
+                (lead['Country'] && lead['Country'].toLowerCase().includes(searchQuery)) ||
+                (lead['State'] && lead['State'].toLowerCase().includes(searchQuery)) ||
+                (lead['City'] && lead['City'].toLowerCase().includes(searchQuery));
+            if (!match) return false;
+        }
+        return true;
+    });
+
     // Reset pagination to first page
     currentPage = 1;
 
@@ -1818,16 +1855,16 @@ function applyFilters() {
     updateKPIs();
     updateCharts();
     renderTables();
-    console.log('applyFilters finished. fStatus:', fStatus, 'filteredLeads length:', filteredLeads.length);
+    console.log('applyFilters finished. fStatus:', fStatus, 'filteredLeads length:', filteredLeads.length, 'filteredOverviewLeads length:', filteredOverviewLeads.length);
 }
 
 // Update dashboard KPI cards
 function updateKPIs() {
-    const totalLeads = filteredLeads.length;
+    const totalLeads = filteredOverviewLeads.length;
     
-    const totalExpectedRevenue = filteredLeads.reduce((sum, lead) => sum + lead['Expected Revenue'], 0);
+    const totalExpectedRevenue = filteredOverviewLeads.reduce((sum, lead) => sum + lead['Expected Revenue'], 0);
     
-    const wonDealsLeads = filteredLeads.filter(lead => lead['Won/Lost'] === 'Won');
+    const wonDealsLeads = filteredOverviewLeads.filter(lead => lead['Won/Lost'] === 'Won');
     const wonDealsCount = wonDealsLeads.length;
     const wonValue = wonDealsLeads.reduce((sum, lead) => sum + lead['Expected Revenue'], 0);
     
@@ -1879,8 +1916,8 @@ function updateCharts() {
     if (activeTab === 'overview') {
         const monthlyData = {};
         
-        filteredLeads.forEach(lead => {
-            const dateStr = lead['Created on'];
+        filteredOverviewLeads.forEach(lead => {
+            const dateStr = getLeadOverviewDate(lead);
             if (!dateStr) return;
             const date = new Date(dateStr);
             if (isNaN(date.getTime())) return;
@@ -1980,7 +2017,7 @@ function updateCharts() {
     // 2. REVENUE BY PRODUCT TYPE (Overview Tab)
     if (activeTab === 'overview') {
         const typeData = {};
-        filteredLeads.forEach(lead => {
+        filteredOverviewLeads.forEach(lead => {
             const t = lead['Opportunity Type'];
             typeData[t] = (typeData[t] || 0) + lead['Expected Revenue'];
         });
@@ -2025,7 +2062,7 @@ function updateCharts() {
     if (activeTab === 'overview') {
         const currDetails = getCurrencyDetails();
         const salesData = {};
-        filteredLeads.forEach(lead => {
+        filteredOverviewLeads.forEach(lead => {
             const sp = lead['Salesperson'];
             salesData[sp] = (salesData[sp] || 0) + lead['Expected Revenue'];
         });
@@ -2081,7 +2118,7 @@ function updateCharts() {
     if (activeTab === 'overview') {
         const currDetails = getCurrencyDetails();
         const stageData = {};
-        filteredLeads.forEach(lead => {
+        filteredOverviewLeads.forEach(lead => {
             const st = lead['Stage'];
             if (!stageData[st]) {
                 stageData[st] = { count: 0, revenue: 0 };
@@ -2183,7 +2220,7 @@ function updateCharts() {
         const funnelData = {};
         workflowOrder.forEach(st => funnelData[st] = { count: 0, revenue: 0 });
         
-        filteredLeads.forEach(lead => {
+        filteredOverviewLeads.forEach(lead => {
             const st = lead['Stage'];
             if (funnelData[st] !== undefined) {
                 funnelData[st].count += 1;
@@ -2278,7 +2315,7 @@ function updateCharts() {
     if (activeTab === 'team') {
         const teamScorecard = {};
         
-        filteredLeads.forEach(lead => {
+        filteredOverviewLeads.forEach(lead => {
             const sp = lead['Salesperson'];
             if (!teamScorecard[sp]) {
                 teamScorecard[sp] = { total: 0, won: 0, revenue: 0, wonRevenue: 0 };
@@ -2354,7 +2391,7 @@ function updateCharts() {
 
         // Lead Source Mix
         const sourceData = {};
-        filteredLeads.forEach(lead => {
+        filteredOverviewLeads.forEach(lead => {
             const src = lead['Source'];
             sourceData[src] = (sourceData[src] || 0) + lead['Expected Revenue'];
         });
@@ -2410,7 +2447,7 @@ function updateCharts() {
         const countryData = {};
         const regionData = {};
         
-        filteredLeads.forEach(lead => {
+        filteredOverviewLeads.forEach(lead => {
             const st = lead['State'] || 'Unknown';
             const cnt = lead['Country'] || 'Unknown';
             stateData[st] = (stateData[st] || 0) + lead['Expected Revenue'];
@@ -2543,7 +2580,7 @@ function renderTables() {
             tbody.innerHTML = '';
             
             // Filter active open opportunities
-            const activeOpenLeads = filteredLeads.filter(lead => {
+            const activeOpenLeads = filteredOverviewLeads.filter(lead => {
                 const isWon = lead['Won/Lost'] === 'Won' || lead['Stage'] === 'Won';
                 const isLost = lead['Stage'] === 'Dropped' || lead['Stage'] === 'Lost' || lead['Won/Lost'] === 'Lost';
                 return !isWon && !isLost;
@@ -2594,7 +2631,7 @@ function renderTables() {
     if (activeTab === 'pipeline') {
         const stageSummary = {};
         
-        filteredLeads.forEach(lead => {
+        filteredOverviewLeads.forEach(lead => {
             const st = lead['Stage'];
             if (!stageSummary[st]) {
                 stageSummary[st] = { count: 0, revenue: 0 };
@@ -2606,7 +2643,7 @@ function renderTables() {
         const tbody = document.querySelector('#pipeline-summary-table tbody');
         tbody.innerHTML = '';
         
-        const totalCount = filteredLeads.length;
+        const totalCount = filteredOverviewLeads.length;
         
         Object.entries(stageSummary)
             .sort((a, b) => b[1].revenue - a[1].revenue)
@@ -2630,7 +2667,7 @@ function renderTables() {
     if (activeTab === 'team') {
         const teamData = {};
         
-        filteredLeads.forEach(lead => {
+        filteredOverviewLeads.forEach(lead => {
             const sp = lead['Salesperson'];
             if (!teamData[sp]) {
                 teamData[sp] = { leads: 0, won: 0, revenue: 0, wonRevenue: 0 };
@@ -2668,7 +2705,7 @@ function renderTables() {
     if (activeTab === 'geo') {
         const cityData = {};
         
-        filteredLeads.forEach(lead => {
+        filteredOverviewLeads.forEach(lead => {
             const key = `${lead['City']}||${lead['State']}||${lead['Country']}`;
             if (!cityData[key]) {
                 cityData[key] = { count: 0, revenue: 0 };
@@ -2705,7 +2742,7 @@ function renderTables() {
         const tbody = document.getElementById('explorer-table-body');
         tbody.innerHTML = '';
         
-        let explorerData = filteredLeads;
+        let explorerData = filteredOverviewLeads;
 
         // Apply column sorting
         explorerData.sort((a, b) => {
@@ -4828,6 +4865,16 @@ function getLeadRFQDate(lead) {
     return lead['RFQ Date'];
 }
 
+// Helper: returns the effective date for Executive Overview / general metrics
+function getLeadOverviewDate(lead) {
+    if (!lead) return null;
+    const isWon = lead['Won/Lost'] === 'Won' || lead['Stage'] === 'Won';
+    if (isWon) {
+        return lead['Closed Date'] || lead['Date Closed'] || lead['Created on'];
+    }
+    return lead['Created on'] || lead['RFQ Date'];
+}
+
 // Helper: formats Odoo RFQ Date string into equivalent X-Axis label string
 function getLabelForRFQDate(dateStr, granularity) {
     if (!dateStr) return '';
@@ -4921,9 +4968,9 @@ function updateAICardStats() {
     
     if (!elLeads || !elRev || !elWon) return;
     
-    const totalLeads = filteredLeads.length;
-    const totalExpectedRevenue = filteredLeads.reduce((sum, lead) => sum + lead['Expected Revenue'], 0);
-    const wonDealsCount = filteredLeads.filter(lead => lead['Won/Lost'] === 'Won').length;
+    const totalLeads = filteredOverviewLeads.length;
+    const totalExpectedRevenue = filteredOverviewLeads.reduce((sum, lead) => sum + lead['Expected Revenue'], 0);
+    const wonDealsCount = filteredOverviewLeads.filter(lead => lead['Won/Lost'] === 'Won').length;
     
     elLeads.textContent = totalLeads.toLocaleString();
     elRev.textContent = formatCurrency(totalExpectedRevenue);
@@ -5095,10 +5142,10 @@ async function handleUserMessage(text, customPrompt = '') {
     
     try {
         // Convert active leads to token-efficient CSV format
-        const csvData = convertLeadsToCSV(filteredLeads);
+        const csvData = convertLeadsToCSV(filteredOverviewLeads);
         
-        const totalExpectedRevenue = filteredLeads.reduce((sum, lead) => sum + lead['Expected Revenue'], 0);
-        const wonLeads = filteredLeads.filter(lead => lead['Won/Lost'] === 'Won');
+        const totalExpectedRevenue = filteredOverviewLeads.reduce((sum, lead) => sum + lead['Expected Revenue'], 0);
+        const wonLeads = filteredOverviewLeads.filter(lead => lead['Won/Lost'] === 'Won');
         const wonRevenue = wonLeads.reduce((sum, lead) => sum + lead['Expected Revenue'], 0);
         const activeFilters = {
             salesperson: document.getElementById('filter-salesperson').value,
