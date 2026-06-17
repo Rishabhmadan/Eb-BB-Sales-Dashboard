@@ -28,6 +28,31 @@ let currentAIResearchCompany = null;
 
 const VALID_TABS = ['overview', 'pipeline', 'team', 'geo', 'rfq', 'explorer', 'ai'];
 
+const STAGE_WORKFLOW_ORDER = [
+    'Market Research',
+    'Open',
+    'Connected',
+    'Follow Up Later',
+    'Need Warm Intro',
+    'RFQ Expected',
+    'RFQ Received',
+    'Won',
+    'Dropped'
+];
+
+function sortStages(a, b) {
+    const idxA = STAGE_WORKFLOW_ORDER.indexOf(a);
+    const idxB = STAGE_WORKFLOW_ORDER.indexOf(b);
+    if (idxA === -1 && idxB === -1) {
+        if (!a) return 1;
+        if (!b) return -1;
+        return a.localeCompare(b);
+    }
+    if (idxA === -1) return 1;
+    if (idxB === -1) return -1;
+    return idxA - idxB;
+}
+
 function showModal(modalId) {
     const modal = document.getElementById(modalId);
     if (modal) {
@@ -1396,7 +1421,12 @@ function populateFilters() {
         const selectElement = document.getElementById(config.elementId);
         
         // Get unique sorted values
-        const uniqueValues = [...new Set(allLeads.map(lead => lead[config.col]))].sort();
+        let uniqueValues = [...new Set(allLeads.map(lead => lead[config.col]))];
+        if (config.col === 'Stage') {
+            uniqueValues.sort(sortStages);
+        } else {
+            uniqueValues.sort();
+        }
         
         // Populate dropdown
         uniqueValues.forEach(val => {
@@ -2172,8 +2202,18 @@ function updateCharts() {
             stageData[st].revenue += lead['Expected Revenue'];
         });
 
-        // Sort stages by count or revenue
-        const sortedStages = Object.entries(stageData).sort((a, b) => b[1].revenue - a[1].revenue).slice(0, 8);
+        // Sort stages chronologically using custom order
+        const sortedStages = [];
+        STAGE_WORKFLOW_ORDER.forEach(st => {
+            if (stageData[st]) {
+                sortedStages.push([st, stageData[st]]);
+            }
+        });
+        Object.entries(stageData).forEach(([st, data]) => {
+            if (!STAGE_WORKFLOW_ORDER.includes(st)) {
+                sortedStages.push([st, data]);
+            }
+        });
         const labels = sortedStages.map(x => x[0]);
         const counts = sortedStages.map(x => x[1].count);
         const revenues = sortedStages.map(x => x[1].revenue / currDetails.scale); // Millions
@@ -2249,18 +2289,8 @@ function updateCharts() {
 
     // 5. STAGE FUNNEL ANALYSIS (Pipeline Tab)
     if (activeTab === 'pipeline') {
-        // Define exact workflow stages to order them logically
-        const workflowOrder = [
-            'Market Research',
-            'Open',
-            'Connected',
-            'Follow Up Later',
-            'Need Warm Intro',
-            'RFQ Expected',
-            'RFQ Received',
-            'Won',
-            'Dropped'
-        ];
+        // Use global workflow stages to order them logically
+        const workflowOrder = STAGE_WORKFLOW_ORDER;
         
         const funnelData = {};
         workflowOrder.forEach(st => funnelData[st] = { count: 0, revenue: 0 });
@@ -2690,9 +2720,19 @@ function renderTables() {
         
         const totalCount = filteredOverviewLeads.length;
         
-        Object.entries(stageSummary)
-            .sort((a, b) => b[1].revenue - a[1].revenue)
-            .forEach(([stage, data]) => {
+        const sortedStages = [];
+        STAGE_WORKFLOW_ORDER.forEach(st => {
+            if (stageSummary[st]) {
+                sortedStages.push([st, stageSummary[st]]);
+            }
+        });
+        Object.entries(stageSummary).forEach(([st, data]) => {
+            if (!STAGE_WORKFLOW_ORDER.includes(st)) {
+                sortedStages.push([st, data]);
+            }
+        });
+
+        sortedStages.forEach(([stage, data]) => {
                 const tr = document.createElement('tr');
                 const pct = totalCount > 0 ? (data.count / totalCount * 100).toFixed(1) + '%' : '0%';
                 const avgVal = data.count > 0 ? formatCurrency(data.revenue / data.count) : formatCurrency(0);
@@ -2793,6 +2833,11 @@ function renderTables() {
         explorerData.sort((a, b) => {
             let valA = a[currentSort.column];
             let valB = b[currentSort.column];
+
+            if (currentSort.column === 'Stage') {
+                const result = sortStages(valA, valB);
+                return currentSort.direction === 'asc' ? result : -result;
+            }
 
             // Handle numeric / date comparisons
             if (currentSort.column === 'Expected Revenue') {
