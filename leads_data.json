@@ -25734,8 +25734,8 @@
     "Company Name": "AERON SYSTEMS PRIVATE LIMITED",
     "Opportunity": "Aeron Systems",
     "Contact Name": "Arvind Yadav",
-    "Email": "arvind@aeronsystems.com",
-    "Phone": "+91 79728 66211",
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Aadit Nair",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "IoT & Smart Devices",
@@ -25749,7 +25749,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 8.79
+    "Probability": 66.63
   },
   {
     "Created on": "2026-05-06 05:52:32",
@@ -28286,14 +28286,14 @@
     "Revenue (Millions USD)": 2.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 200000.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 98.07
+    "Probability": 97.02
   },
   {
     "Created on": "2026-04-27 07:03:30",
@@ -32310,22 +32310,22 @@
     "Company Name": "Flip Chip Electronics",
     "Opportunity": "Flip Chip Electronics",
     "Contact Name": "Laxmish Udupa",
-    "Email": "laxmish@flipchipele.com",
-    "Phone": "+91 8023480114",
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-12",
     "Industry Segment": "EMS & Electronics Mfg",
     "Revenue (Millions USD)": 4.2,
     "Opportunity Type": "PCB fabrication",
     "Expected Revenue": 200000.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Madhya Pradesh (IN)",
-    "City": "Indore",
+    "State": false,
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 84.87
+    "Probability": 86.19
   },
   {
     "Created on": "2026-04-09 05:33:03",
