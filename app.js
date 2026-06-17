@@ -2741,8 +2741,8 @@ function renderPipelineFunnel() {
         'linear-gradient(135deg, #2563eb, #3b82f6)', // Follow Up Later: Medium Blue to Sky Blue
         'linear-gradient(135deg, #3b82f6, #4f46e5)', // Need Warm Intro: Sky Blue to Indigo
         'linear-gradient(135deg, #4f46e5, #8b5cf6)', // RFQ Expected: Indigo to Purple
-        'linear-gradient(135deg, #8b5cf6, #d97706)', // RFQ Received: Purple to Dark Gold
-        'linear-gradient(135deg, #d97706, #f59e0b)'  // Won: Dark Gold to Brand Gold/Orange
+        'linear-gradient(135deg, #0b6650, #0d9488)', // RFQ Received: Jade/Teal Green
+        'linear-gradient(135deg, #10b981, #34d399)'  // Won: Bright Emerald Green
     ];
 
     const icons = [
