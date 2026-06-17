@@ -2821,6 +2821,7 @@ function updateExecutivePOTotal() {
         }
     });
     
+    const totalCount = currentUpcomingPOTimelineLeads.length;
     if (selectedCount === 0) {
         currentUpcomingPOTimelineLeads.forEach(item => {
             totalRevenue += item.lead['Expected Revenue'] || 0;
@@ -2829,7 +2830,7 @@ function updateExecutivePOTotal() {
 
     const totalDisplayEl = document.getElementById('executive-closures-total-value');
     if (totalDisplayEl) {
-        const prefix = selectedCount > 0 ? `Selected (${selectedCount}):` : 'Total:';
+        const prefix = selectedCount > 0 ? `Selected (${selectedCount}):` : `Total (${totalCount}):`;
         totalDisplayEl.parentNode.firstElementChild.textContent = prefix;
         totalDisplayEl.textContent = formatCurrency(totalRevenue);
     }
@@ -2868,6 +2869,7 @@ function updateOverduePOTotal() {
         }
     });
     
+    const totalCount = currentOverduePOTimelineLeads.length;
     if (selectedCount === 0) {
         currentOverduePOTimelineLeads.forEach(item => {
             totalRevenue += item.lead['Expected Revenue'] || 0;
@@ -2876,7 +2878,7 @@ function updateOverduePOTotal() {
 
     const totalDisplayEl = document.getElementById('executive-overdue-total-value');
     if (totalDisplayEl) {
-        const prefix = selectedCount > 0 ? `Selected (${selectedCount}):` : 'Total Overdue:';
+        const prefix = selectedCount > 0 ? `Selected (${selectedCount}):` : `Total Overdue (${totalCount}):`;
         totalDisplayEl.parentNode.firstElementChild.textContent = prefix;
         totalDisplayEl.textContent = formatCurrency(totalRevenue);
     }
@@ -3182,33 +3184,42 @@ function populateExecutiveClosuresMultiselect() {
     const refDate = new Date();
     refDate.setHours(0, 0, 0, 0);
 
-    // Get expected dates
-    const dates = activeRFQs.map(lead => getLeadExpectedClosingDate(lead, rfqAvgTurnaround))
-        .filter(d => d !== null && d >= refDate);
+    // Map each lead to its key and dateObj to group and count opportunities
+    const itemsMap = {};
+    activeRFQs.forEach(lead => {
+        const d = getLeadExpectedClosingDate(lead, rfqAvgTurnaround);
+        if (d !== null && d >= refDate) {
+            let key = '';
+            let label = '';
+            if (granularity === 'all' || granularity === 'date') {
+                key = d.toISOString().substring(0, 10);
+                label = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+            } else if (granularity === 'week') {
+                key = getWeekKey(d);
+                label = key.replace('-W', ' Wk ');
+            } else if (granularity === 'month') {
+                key = `${d.getFullYear()}-${(d.getMonth() + 1).toString().padStart(2, '0')}`;
+                label = d.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+            } else if (granularity === 'year') {
+                key = `${d.getFullYear()}`;
+                label = key;
+            }
 
-    // Extract unique labels based on granularity
-    const items = [];
-    dates.forEach(d => {
-        let key = '';
-        let label = '';
-        if (granularity === 'all' || granularity === 'date') {
-            key = d.toISOString().substring(0, 10);
-            label = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
-        } else if (granularity === 'week') {
-            key = getWeekKey(d);
-            label = key.replace('-W', ' Wk ');
-        } else if (granularity === 'month') {
-            key = `${d.getFullYear()}-${(d.getMonth() + 1).toString().padStart(2, '0')}`;
-            label = d.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
-        } else if (granularity === 'year') {
-            key = `${d.getFullYear()}`;
-            label = key;
-        }
-
-        if (key && !items.some(item => item.key === key)) {
-            items.push({ key, label, dateObj: d });
+            if (key) {
+                if (!itemsMap[key]) {
+                    itemsMap[key] = {
+                        key: key,
+                        label: label,
+                        dateObj: d,
+                        count: 0
+                    };
+                }
+                itemsMap[key].count += 1;
+            }
         }
     });
+
+    const items = Object.values(itemsMap);
 
     // Sort items by dateObj ascending
     items.sort((a, b) => a.dateObj - b.dateObj);
@@ -3247,12 +3258,15 @@ function populateExecutiveClosuresMultiselect() {
     // Populate dropdown HTML
     let dropdownHTML = '';
     
+    // Total count of opportunities
+    const totalOppsCount = items.reduce((sum, it) => sum + it.count, 0);
+
     // Add "Select All" option
     const allChecked = items.length > 0 && checkedKeys.length === items.length;
     dropdownHTML += `
         <label style="display: flex; align-items: center; gap: 8px; font-size: 12px; cursor: pointer; color: var(--text-primary); padding: 6px; border-radius: 4px; font-weight: 600; border-bottom: 1px solid var(--border-color); margin-bottom: 4px; box-sizing: border-box; width: 100%;">
             <input type="checkbox" id="exec-select-all-checkbox" ${allChecked ? 'checked' : ''} style="cursor: pointer;">
-            <span>Select All</span>
+            <span>Select All (${totalOppsCount})</span>
         </label>
     `;
 
@@ -3261,7 +3275,7 @@ function populateExecutiveClosuresMultiselect() {
         dropdownHTML += `
             <label style="display: flex; align-items: center; gap: 8px; font-size: 12px; cursor: pointer; color: var(--text-primary); padding: 4px 6px; border-radius: 4px; box-sizing: border-box; width: 100%;">
                 <input type="checkbox" value="${item.key}" class="exec-closure-checkbox" ${isChecked ? 'checked' : ''} style="cursor: pointer;">
-                <span>${item.label}</span>
+                <span>${item.label} (${item.count})</span>
             </label>
         `;
     });
@@ -3280,14 +3294,52 @@ function updateMultiselectLabel() {
     const total = checkboxes.length;
     const checkedCount = executiveClosuresCheckedValues.length;
 
+    // Count how many opportunities are currently checked
+    const grainEl = document.getElementById('executive-closures-grain');
+    const granularity = grainEl ? grainEl.value : 'all';
+    
+    const activeRFQs = filteredLeads.filter(lead => 
+        getLeadRFQDate(lead) !== null && 
+        !['Won', 'Dropped', 'Lost'].includes(lead['Stage'])
+    );
+
+    const refDate = new Date();
+    refDate.setHours(0, 0, 0, 0);
+
+    let checkedOppsCount = 0;
+    let totalOppsCount = 0;
+
+    activeRFQs.forEach(lead => {
+        const d = getLeadExpectedClosingDate(lead, rfqAvgTurnaround);
+        if (d !== null && d >= refDate) {
+            let key = '';
+            if (granularity === 'all' || granularity === 'date') {
+                key = d.toISOString().substring(0, 10);
+            } else if (granularity === 'week') {
+                key = getWeekKey(d);
+            } else if (granularity === 'month') {
+                key = `${d.getFullYear()}-${(d.getMonth() + 1).toString().padStart(2, '0')}`;
+            } else if (granularity === 'year') {
+                key = `${d.getFullYear()}`;
+            }
+            
+            if (key) {
+                totalOppsCount += 1;
+                if (executiveClosuresCheckedValues.includes(key)) {
+                    checkedOppsCount += 1;
+                }
+            }
+        }
+    });
+
     if (total === 0) {
         labelEl.textContent = 'No Periods';
     } else if (checkedCount === total) {
-        labelEl.textContent = 'All Periods';
+        labelEl.textContent = `All Periods (${totalOppsCount})`;
     } else if (checkedCount === 0) {
-        labelEl.textContent = 'None Selected';
+        labelEl.textContent = 'None Selected (0)';
     } else {
-        labelEl.textContent = `${checkedCount} Selected`;
+        labelEl.textContent = `${checkedCount} Selected (${checkedOppsCount})`;
     }
 }
 
