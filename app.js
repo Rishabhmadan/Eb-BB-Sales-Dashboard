@@ -146,6 +146,27 @@ function updateLiveRateBadge(isLive) {
     }
 }
 
+function initTheme() {
+    const savedTheme = localStorage.getItem('theme') || 'light-theme';
+    const body = document.body;
+    
+    body.classList.remove('light-theme', 'dark-theme');
+    body.classList.add(savedTheme);
+    
+    const themeText = document.getElementById('theme-text');
+    const themeBtn = document.getElementById('theme-toggle-btn');
+    if (themeBtn && themeText) {
+        const icon = themeBtn.querySelector('i');
+        if (savedTheme === 'dark-theme') {
+            themeText.textContent = 'Day Mode';
+            if (icon) icon.className = 'fa-solid fa-sun';
+        } else {
+            themeText.textContent = 'Dark Mode';
+            if (icon) icon.className = 'fa-solid fa-moon';
+        }
+    }
+}
+
 // Load data on page load
 document.addEventListener('DOMContentLoaded', () => {
     initApp();
@@ -153,6 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function initApp() {
     try {
+        initTheme();
         // Fetch live exchange rate from API
         await fetchExchangeRate();
 
@@ -3684,12 +3706,14 @@ function registerEventListeners() {
         
         if (body.classList.contains('dark-theme')) {
             body.classList.replace('dark-theme', 'light-theme');
-            themeText.textContent = 'Light Mode';
-            icon.className = 'fa-solid fa-sun';
-        } else {
-            body.classList.replace('light-theme', 'dark-theme');
             themeText.textContent = 'Dark Mode';
             icon.className = 'fa-solid fa-moon';
+            localStorage.setItem('theme', 'light-theme');
+        } else {
+            body.classList.replace('light-theme', 'dark-theme');
+            themeText.textContent = 'Day Mode';
+            icon.className = 'fa-solid fa-sun';
+            localStorage.setItem('theme', 'dark-theme');
         }
         
         // Refresh charts style colors
