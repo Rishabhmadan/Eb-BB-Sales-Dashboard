@@ -769,18 +769,18 @@
   },
   {
     "Created on": "2026-06-17 04:24:29",
-    "Source": false,
-    "RFQ Date": null,
+    "Source": "Other",
+    "RFQ Date": "2026-06-17",
     "Company Name": "Revinoxx Technologies",
-    "Opportunity": "Revinoxx Technologies's opportunity",
+    "Opportunity": "Revinoxx - EB-21-ML-334-02-1739",
     "Contact Name": "Amit",
     "Email": "Amit.kumar@revvinoxtechnologies.com",
     "Phone": "+91 85868 68018",
     "Salesperson": "Rishabh Madan",
-    "Next Follow up": null,
-    "Industry Segment": false,
+    "Next Follow up": "2026-06-18",
+    "Industry Segment": "EMS & Electronics Mfg",
     "Revenue (Millions USD)": 0.0,
-    "Opportunity Type": false,
+    "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 900000.0,
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
@@ -788,8 +788,8 @@
     "State": false,
     "City": false,
     "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 46.59
+    "Expected Closing": "2026-06-18",
+    "Probability": 43.63
   },
   {
     "Created on": "2026-06-16 07:50:34",
@@ -6208,12 +6208,12 @@
     "Expected Revenue": 0.0,
     "Stage": "Market Research",
     "Won/Lost": "Pending",
-    "Country": false,
+    "Country": "India",
     "State": "Tamil Nadu (IN)",
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 98.1
+    "Probability": 97.97
   },
   {
     "Created on": "2026-06-16 11:35:43",
