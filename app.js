@@ -2,6 +2,7 @@
 let allLeads = [];
 let filteredLeads = [];
 let filteredOverviewLeads = [];
+let filteredOverviewLeadsNoStatus = [];
 let activeTab = 'overview';
 let charts = {};
 let currentSort = { column: 'Created on', direction: 'desc' };
@@ -381,7 +382,9 @@ function goToExplorerFilter(type, value) {
     let subtitle = '';
     let leads = [];
     
-    const dataset = (type === 'rfq' || type === 'rfq-inflow' || activeTab === 'rfq') ? filteredLeads : filteredOverviewLeads;
+    const dataset = (type === 'rfq' || type === 'rfq-inflow' || activeTab === 'rfq') 
+        ? filteredLeads 
+        : (type === 'total' ? filteredOverviewLeadsNoStatus : filteredOverviewLeads);
     
     if (type === 'total') {
         leads = [...dataset];
@@ -1484,6 +1487,7 @@ function switchTab(tabName, preventReset = false, pushState = true) {
         resetFilters(true);
         filteredLeads = [...allLeads];
         filteredOverviewLeads = [...allLeads];
+        filteredOverviewLeadsNoStatus = [...allLeads];
         currentPage = 1;
         updateKPIs();
     }
@@ -1848,6 +1852,35 @@ function applyFilters() {
         return true;
     });
 
+    filteredOverviewLeadsNoStatus = allLeads.filter(lead => {
+        if (fSalesperson !== 'all' && lead['Salesperson'] !== fSalesperson) return false;
+        if (fStage !== 'all' && lead['Stage'] !== fStage) return false;
+        if (fIndustry !== 'all' && lead['Industry Segment'] !== fIndustry) return false;
+        if (fType !== 'all' && lead['Opportunity Type'] !== fType) return false;
+        
+        if (fRFQPeriod !== 'all' && fRFQValue !== 'all') {
+            const overviewDateStr = getLeadOverviewDate(lead);
+            if (!overviewDateStr) return false;
+            if (getLabelForRFQDate(overviewDateStr, fRFQPeriod) !== fRFQValue) return false;
+        }
+        
+        if (searchQuery) {
+            const match = 
+                (lead['Opportunity'] && lead['Opportunity'].toLowerCase().includes(searchQuery)) ||
+                (lead['Company Name'] && lead['Company Name'].toLowerCase().includes(searchQuery)) ||
+                (lead['Contact Name'] && lead['Contact Name'].toLowerCase().includes(searchQuery)) ||
+                (lead['Email'] && lead['Email'].toLowerCase().includes(searchQuery)) ||
+                (lead['Salesperson'] && lead['Salesperson'].toLowerCase().includes(searchQuery)) ||
+                (lead['Stage'] && lead['Stage'].toLowerCase().includes(searchQuery)) ||
+                (lead['Opportunity Type'] && lead['Opportunity Type'].toLowerCase().includes(searchQuery)) ||
+                (lead['Country'] && lead['Country'].toLowerCase().includes(searchQuery)) ||
+                (lead['State'] && lead['State'].toLowerCase().includes(searchQuery)) ||
+                (lead['City'] && lead['City'].toLowerCase().includes(searchQuery));
+            if (!match) return false;
+        }
+        return true;
+    });
+
     // Reset pagination to first page
     currentPage = 1;
 
@@ -1855,14 +1888,14 @@ function applyFilters() {
     updateKPIs();
     updateCharts();
     renderTables();
-    console.log('applyFilters finished. fStatus:', fStatus, 'filteredLeads length:', filteredLeads.length, 'filteredOverviewLeads length:', filteredOverviewLeads.length);
+    console.log('applyFilters finished. fStatus:', fStatus, 'filteredLeads length:', filteredLeads.length, 'filteredOverviewLeads length:', filteredOverviewLeads.length, 'filteredOverviewLeadsNoStatus length:', filteredOverviewLeadsNoStatus.length);
 }
 
 // Update dashboard KPI cards
 function updateKPIs() {
-    const totalLeads = filteredOverviewLeads.length;
+    const totalLeads = filteredOverviewLeadsNoStatus.length;
     
-    const totalExpectedRevenue = filteredOverviewLeads.reduce((sum, lead) => sum + lead['Expected Revenue'], 0);
+    const totalExpectedRevenue = filteredOverviewLeadsNoStatus.reduce((sum, lead) => sum + lead['Expected Revenue'], 0);
     
     const wonDealsLeads = filteredOverviewLeads.filter(lead => lead['Won/Lost'] === 'Won');
     const wonDealsCount = wonDealsLeads.length;
