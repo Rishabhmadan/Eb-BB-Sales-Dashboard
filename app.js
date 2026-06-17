@@ -2733,16 +2733,16 @@ function renderPipelineFunnel() {
 
     const maxCumulativeCount = Math.max(...Object.values(cumulativeCounts), 1);
 
-    // Gradients matching the design aesthetic
+    // Gradients matching the Elecbits brand color palette (Brand Blue to Brand Gold/Orange transition)
     const gradients = [
-        'linear-gradient(135deg, #1e3a8a, #3b82f6)', // Market Research: Deep Blue to Blue
-        'linear-gradient(135deg, #2563eb, #60a5fa)', // Open: Royal Blue to Light Blue
-        'linear-gradient(135deg, #0f766e, #14b8a6)', // Connected: Teal to Mint
-        'linear-gradient(135deg, #0d9488, #2dd4bf)', // Follow Up Later: Green-Teal to Cyan
-        'linear-gradient(135deg, #b45309, #f59e0b)', // Need Warm Intro: Brown-Amber to Yellow-Amber
-        'linear-gradient(135deg, #d97706, #fbbf24)', // RFQ Expected: Dark Gold to Light Gold
-        'linear-gradient(135deg, #4f46e5, #818cf8)', // RFQ Received: Indigo to Lavender-Indigo
-        'linear-gradient(135deg, #059669, #34d399)'  // Won: Emerald to Green
+        'linear-gradient(135deg, #000099, #0000ff)', // Market Research: Deep Blue to Brand Blue
+        'linear-gradient(135deg, #0000ff, #1d4ed8)', // Open: Brand Blue to Royal Blue
+        'linear-gradient(135deg, #1d4ed8, #2563eb)', // Connected: Royal Blue to Medium Blue
+        'linear-gradient(135deg, #2563eb, #3b82f6)', // Follow Up Later: Medium Blue to Sky Blue
+        'linear-gradient(135deg, #3b82f6, #4f46e5)', // Need Warm Intro: Sky Blue to Indigo
+        'linear-gradient(135deg, #4f46e5, #8b5cf6)', // RFQ Expected: Indigo to Purple
+        'linear-gradient(135deg, #8b5cf6, #d97706)', // RFQ Received: Purple to Dark Gold
+        'linear-gradient(135deg, #d97706, #f59e0b)'  // Won: Dark Gold to Brand Gold/Orange
     ];
 
     const icons = [
