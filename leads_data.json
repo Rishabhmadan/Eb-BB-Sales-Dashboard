@@ -380,7 +380,7 @@
     "State": "Maharashtra (IN)",
     "City": "Pune",
     "Closed Date": null,
-    "Expected Closing": "2026-06-17",
+    "Expected Closing": "2026-06-18",
     "Probability": 85.0
   },
   {
@@ -745,6 +745,30 @@
   },
   {
     "Created on": "2026-04-09 05:33:03",
+    "Source": "Cold Call",
+    "RFQ Date": "2026-05-04",
+    "Company Name": "The Energy Company",
+    "Opportunity": "The Energy Company - EB-19-PL-425-02-1617",
+    "Contact Name": "Rahul Lamba",
+    "Email": "rahul.lamba@energycompany.in",
+    "Phone": "+91 89010 01523",
+    "Salesperson": "Ruchit Nambiar",
+    "Next Follow up": "2026-06-17",
+    "Industry Segment": "Energy & CleanTech",
+    "Revenue (Millions USD)": 3.0,
+    "Opportunity Type": "Box Build",
+    "Expected Revenue": 573239.0,
+    "Stage": "RFQ Received",
+    "Won/Lost": "Won",
+    "Country": "India",
+    "State": "Karnataka (IN)",
+    "City": "Bangalore",
+    "Closed Date": "2026-06-17 13:09:01",
+    "Expected Closing": "2026-06-17",
+    "Probability": 100.0
+  },
+  {
+    "Created on": "2026-04-09 05:33:03",
     "Source": "Other",
     "RFQ Date": null,
     "Company Name": "Ather Energy ​",
@@ -836,8 +860,8 @@
     "State": "Haryana (IN)",
     "City": "Gurugram",
     "Closed Date": null,
-    "Expected Closing": "2026-06-17",
-    "Probability": 90.0
+    "Expected Closing": "2026-06-18",
+    "Probability": 41.1
   },
   {
     "Created on": "2026-06-15 09:34:39",
@@ -860,7 +884,7 @@
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
-    "Expected Closing": "2026-06-17",
+    "Expected Closing": "2026-06-19",
     "Probability": 90.0
   },
   {
@@ -1006,6 +1030,30 @@
     "Closed Date": null,
     "Expected Closing": "2026-06-12",
     "Probability": 57.08
+  },
+  {
+    "Created on": "2026-06-10 05:45:47",
+    "Source": "Zoom Info",
+    "RFQ Date": "2026-06-17",
+    "Company Name": "Naxnova",
+    "Opportunity": "Naxnova",
+    "Contact Name": "Umesh Mhatre",
+    "Email": "umesh.mhatre@naxnova.com",
+    "Phone": "+91 99231 08057",
+    "Salesperson": "Ruchit Nambiar",
+    "Next Follow up": "2026-06-22",
+    "Industry Segment": "Industrial Automation & Robotics",
+    "Revenue (Millions USD)": 400.0,
+    "Opportunity Type": "PCB Assembly",
+    "Expected Revenue": 400000.0,
+    "Stage": "RFQ Received",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Maharashtra (IN)",
+    "City": "Mumbai",
+    "Closed Date": null,
+    "Expected Closing": "2026-07-15",
+    "Probability": 50.0
   },
   {
     "Created on": "2026-06-08 05:02:19",
@@ -2929,30 +2977,6 @@
   },
   {
     "Created on": "2026-04-09 05:33:03",
-    "Source": "Cold Call",
-    "RFQ Date": "2026-05-04",
-    "Company Name": "The Energy Company",
-    "Opportunity": "The Energy Company - EB-19-PL-425-02-1617",
-    "Contact Name": "Rahul Lamba",
-    "Email": "rahul.lamba@energycompany.in",
-    "Phone": "+91 89010 01523",
-    "Salesperson": "Ruchit Nambiar",
-    "Next Follow up": "2026-06-17",
-    "Industry Segment": "Energy & CleanTech",
-    "Revenue (Millions USD)": 3.0,
-    "Opportunity Type": "Box Build",
-    "Expected Revenue": 462000.0,
-    "Stage": "RFQ Received",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": "Karnataka (IN)",
-    "City": "Bangalore",
-    "Closed Date": null,
-    "Expected Closing": "2026-06-17",
-    "Probability": 90.0
-  },
-  {
-    "Created on": "2026-04-09 05:33:03",
     "Source": "XOR",
     "RFQ Date": "2026-05-25",
     "Company Name": "Trak N Tell",
@@ -4124,7 +4148,7 @@
     "State": "Haryana (IN)",
     "City": "Sonipat",
     "Closed Date": null,
-    "Expected Closing": "2026-06-17",
+    "Expected Closing": "2026-06-18",
     "Probability": 95.0
   },
   {
@@ -7058,26 +7082,26 @@
   {
     "Created on": "2026-06-17 07:05:17",
     "Source": false,
-    "RFQ Date": "2026-06-01",
+    "RFQ Date": "2026-06-17",
     "Company Name": "Abisastha Technologies",
     "Opportunity": "Abisastha Technologies - EB-43-PL-455-02-1684",
     "Contact Name": "Manikandan Gurunathan",
     "Email": "abisasthatech@gmail.com",
     "Phone": "+91 72596 85354",
     "Salesperson": "Ruchit Nambiar",
-    "Next Follow up": null,
+    "Next Follow up": "2026-06-18",
     "Industry Segment": "Other",
     "Revenue (Millions USD)": 0.01,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 608688.0,
-    "Stage": "Dropped",
+    "Expected Revenue": 560205.0,
+    "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": false,
     "State": false,
     "City": false,
     "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 10.0
+    "Expected Closing": "2026-06-30",
+    "Probability": 50.0
   },
   {
     "Created on": "2026-06-17 07:04:06",
@@ -9734,14 +9758,14 @@
     "Revenue (Millions USD)": 14.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 1400000.0,
-    "Stage": "Open",
+    "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 0.09
+    "Probability": 0.86
   },
   {
     "Created on": "2026-06-11 05:31:14",
@@ -9997,15 +10021,15 @@
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 20.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 2000000.0,
-    "Stage": "Open",
+    "Expected Revenue": 100000.0,
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 27.7
+    "Probability": 2.76
   },
   {
     "Created on": "2026-06-10 10:07:45",
@@ -10046,14 +10070,14 @@
     "Revenue (Millions USD)": 23.5,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 2300000.0,
-    "Stage": "Open",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 7.45
+    "Probability": 17.3
   },
   {
     "Created on": "2026-06-10 09:57:41",
@@ -10397,9 +10421,9 @@
     "RFQ Date": null,
     "Company Name": "LIT GROUP",
     "Opportunity": "LIT GROUP's opportunity",
-    "Contact Name": "Simran Sodhi",
-    "Email": "simran.sodhi@litgroup.in",
-    "Phone": "+91 99114 99966",
+    "Contact Name": "Vipin Kumar Mishra",
+    "Email": "NA",
+    "Phone": "+91 70468 61606",
     "Salesperson": "Aadit Nair",
     "Next Follow up": null,
     "Industry Segment": "EMS & Electronics Mfg",
@@ -10413,7 +10437,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 44.28
+    "Probability": 41.22
   },
   {
     "Created on": "2026-06-10 07:10:41",
@@ -10593,7 +10617,7 @@
     "Email": "nc.patro@matel.co.in",
     "Phone": "+91 98998 22999",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": null,
+    "Next Follow up": "2026-06-18",
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 16.0,
     "Opportunity Type": "Box Build",
@@ -10605,7 +10629,7 @@
     "City": "Kondhanpur",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 11.84
+    "Probability": 9.06
   },
   {
     "Created on": "2026-06-10 05:57:43",
@@ -10654,30 +10678,6 @@
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 2.24
-  },
-  {
-    "Created on": "2026-06-10 05:45:47",
-    "Source": "Zoom Info",
-    "RFQ Date": "2026-06-17",
-    "Company Name": "Naxnova",
-    "Opportunity": "Naxnova",
-    "Contact Name": "Umesh Mhatre",
-    "Email": "umesh.mhatre@naxnova.com",
-    "Phone": "+91 99231 08057",
-    "Salesperson": "Ruchit Nambiar",
-    "Next Follow up": null,
-    "Industry Segment": "Industrial Automation & Robotics",
-    "Revenue (Millions USD)": 400.0,
-    "Opportunity Type": "PCB Assembly",
-    "Expected Revenue": 400000.0,
-    "Stage": "RFQ Received",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": "Maharashtra (IN)",
-    "City": "Mumbai",
-    "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 50.0
   },
   {
     "Created on": "2026-06-10 05:40:44",
@@ -11533,7 +11533,7 @@
     "Industry Segment": "IoT & Smart Devices",
     "Revenue (Millions USD)": 13.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 1300000.0,
+    "Expected Revenue": 100000.0,
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -12493,15 +12493,15 @@
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 18.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 1800000.0,
-    "Stage": "Open",
+    "Expected Revenue": 100000.0,
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 1.22
+    "Probability": 2.76
   },
   {
     "Created on": "2026-06-08 10:32:16",
@@ -12652,7 +12652,7 @@
     "Source": "Asia Labex Bengaluru 2026",
     "RFQ Date": null,
     "Company Name": "AMBINOVA TECHNOLOGIES PRIVATE LIMITED",
-    "Opportunity": "AMBINOVA TECHNOLOGIES PRIVATE LIMITED's opportunity",
+    "Opportunity": "AMBINOVA TECHNOLOGIES PRIVATE LIMITED",
     "Contact Name": "Susanta Paul",
     "Email": "paul@ambinova.in",
     "Phone": "+91 89201 56990",
@@ -12662,14 +12662,14 @@
     "Revenue (Millions USD)": 0.32,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 200000.0,
-    "Stage": "Open",
+    "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 55.06
+    "Probability": 40.0
   },
   {
     "Created on": "2026-06-08 10:01:35",
@@ -13334,14 +13334,14 @@
     "Revenue (Millions USD)": 14.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 1400000.0,
-    "Stage": "Open",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 67.73
+    "Probability": 69.71
   },
   {
     "Created on": "2026-06-04 09:54:02",
@@ -14337,7 +14337,7 @@
     "Email": "pk@bioenabletech.com",
     "Phone": "+91 98222 18111",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": null,
+    "Next Follow up": "2026-06-18",
     "Industry Segment": "IoT & Smart Devices",
     "Revenue (Millions USD)": 18.0,
     "Opportunity Type": "Component Sourcing",
@@ -14349,7 +14349,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 16.03
+    "Probability": 9.06
   },
   {
     "Created on": "2026-06-02 07:39:59",
@@ -14697,11 +14697,11 @@
     "Email": "prashant.jain2@mahle.com",
     "Phone": "+91 95278 58507",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": null,
+    "Next Follow up": "2026-06-18",
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 20.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 2000000.0,
+    "Expected Revenue": 200000.0,
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -14709,7 +14709,7 @@
     "City": "Coimbatore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 67.73
+    "Probability": 52.3
   },
   {
     "Created on": "2026-06-02 06:03:48",
@@ -18005,7 +18005,7 @@
     "RFQ Date": null,
     "Company Name": "Lapcare",
     "Opportunity": "Lapcare",
-    "Contact Name": "Muhammad Ghayas",
+    "Contact Name": "Adnan Kamboh",
     "Email": "NA",
     "Phone": "+91 98407 52128",
     "Salesperson": "Riya Gupta",
@@ -18017,11 +18017,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Delhi (IN)",
-    "City": "Delhi",
+    "State": "New Delhi (IN)",
+    "City": "New Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 33.7
+    "Probability": 19.67
   },
   {
     "Created on": "2026-05-20 07:46:35",
@@ -29259,11 +29259,11 @@
     "Created on": "2026-04-20 08:59:11",
     "Source": "Zoom Info",
     "RFQ Date": null,
-    "Company Name": "Riken Suthar",
+    "Company Name": "Bacancy Systems",
     "Opportunity": "Bacancy Systems",
-    "Contact Name": "Nirav Surani",
-    "Email": false,
-    "Phone": "+91 81289 26140",
+    "Contact Name": "Kanji Viroja",
+    "Email": "kanji.viroja@bacancy.com",
+    "Phone": "+91 90336 77821",
     "Salesperson": "Aadit Nair",
     "Next Follow up": "2026-06-17",
     "Industry Segment": "EMS & Electronics Mfg",
@@ -29277,7 +29277,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 36.87
+    "Probability": 27.68
   },
   {
     "Created on": "2026-04-20 04:12:56",
@@ -30149,9 +30149,9 @@
     "RFQ Date": null,
     "Company Name": "Unisem Electronics Pvt",
     "Opportunity": "Unisem Electronics Pvt",
-    "Contact Name": "Kirti R. Nair",
+    "Contact Name": "Eliyas Jose",
     "Email": "NA",
-    "Phone": "+91 95529 26343",
+    "Phone": "+91 99023 30851",
     "Salesperson": "Aadit Nair",
     "Next Follow up": "2026-06-17",
     "Industry Segment": "Semiconductors & Embedded",
@@ -30165,7 +30165,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 1.93
+    "Probability": 0.91
   },
   {
     "Created on": "2026-04-14 05:38:04",
@@ -32958,8 +32958,8 @@
     "Company Name": "Pravaig",
     "Opportunity": "Pravaig",
     "Contact Name": "Priyanka Trivedi",
-    "Email": "priyanka.trivedi@pravaig.com",
-    "Phone": "+91 96432 31965",
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Aadit Nair",
     "Next Follow up": "2026-07-15",
     "Industry Segment": "Automotive & EV",
@@ -32969,11 +32969,11 @@
     "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Karnataka (IN)",
+    "State": false,
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 0.33
+    "Probability": 65.74
   },
   {
     "Created on": "2026-04-09 05:33:03",
