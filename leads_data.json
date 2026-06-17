@@ -16445,9 +16445,9 @@
     "RFQ Date": null,
     "Company Name": "Whitelion",
     "Opportunity": "Whitelion's opportunity",
-    "Contact Name": "Indrajit Rebel",
+    "Contact Name": "Dharmendra Savaliya",
     "Email": "NA",
-    "Phone": "+91 74050 29863",
+    "Phone": "+91 75674 21036",
     "Salesperson": "Aadit Nair",
     "Next Follow up": "2026-06-17",
     "Industry Segment": "IoT & Smart Devices",
@@ -16461,7 +16461,7 @@
     "City": "Surat",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 37.72
+    "Probability": 17.49
   },
   {
     "Created on": "2026-05-26 11:18:22",
@@ -25973,9 +25973,9 @@
     "RFQ Date": null,
     "Company Name": "Sapcon Instruments",
     "Opportunity": "Sapcon Instruments",
-    "Contact Name": "Narendra Mahadik",
-    "Email": "narendra.m@sapcon.in",
-    "Phone": "+91 90746 87017",
+    "Contact Name": "Aditya Rege",
+    "Email": "NA",
+    "Phone": "+91 90395 14942",
     "Salesperson": "Aadit Nair",
     "Next Follow up": "2026-06-18",
     "Industry Segment": "Industrial Automation & Robotics",
@@ -25989,7 +25989,7 @@
     "City": "Indore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 42.16
+    "Probability": 18.28
   },
   {
     "Created on": "2026-05-05 11:38:11",
@@ -27053,9 +27053,9 @@
     "RFQ Date": null,
     "Company Name": "VELMENNI RESEARCH & DEVELOPMENT PRIVATE LIMITED",
     "Opportunity": "Velmenni",
-    "Contact Name": "Ujjwal Minocha",
-    "Email": "ujjwal@velmenni.com",
-    "Phone": "+91 99710 12837",
+    "Contact Name": "Deepak Solanki",
+    "Email": "NA",
+    "Phone": "+91 88009 68965",
     "Salesperson": "Aadit Nair",
     "Next Follow up": "2026-06-22",
     "Industry Segment": "Telecom & Networking",
@@ -27066,10 +27066,10 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Delhi (IN)",
-    "City": "Delhi",
+    "City": "New Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 64.54
+    "Probability": 35.4
   },
   {
     "Created on": "2026-05-04 11:43:18",
@@ -31637,9 +31637,9 @@
     "RFQ Date": null,
     "Company Name": "Chakr Innovation",
     "Opportunity": "Chakr Innovation",
-    "Contact Name": "Kuldeep Singh",
-    "Email": "kuldeep.singh@chakr.in",
-    "Phone": "+91 88009 64422 / +91 99996 95120",
+    "Contact Name": "Anmol Khandelwal",
+    "Email": "NA",
+    "Phone": "+91 99580 57556",
     "Salesperson": "Aadit Nair",
     "Next Follow up": "2026-06-19",
     "Industry Segment": "Energy & CleanTech",
@@ -31649,11 +31649,11 @@
     "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Delhi (IN)",
-    "City": "Delhi",
+    "State": false,
+    "City": "New Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 83.16
+    "Probability": 5.3
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -41862,8 +41862,8 @@
     "Company Name": "Sun Mobility",
     "Opportunity": "SUN Mobility",
     "Contact Name": "Aravinda R. Rao",
-    "Email": "aravinda.rao@sunmobility.com",
-    "Phone": "+91 84519 07410",
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Aadit Nair",
     "Next Follow up": "2026-06-18",
     "Industry Segment": "Automotive & EV",
@@ -41877,7 +41877,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 1.14
+    "Probability": 15.64
   },
   {
     "Created on": "2026-04-09 05:33:03",
