@@ -18029,8 +18029,8 @@
     "RFQ Date": null,
     "Company Name": "AXL World",
     "Opportunity": "AXL World",
-    "Contact Name": "AXL World",
-    "Email": "siddharth@axlworld.com",
+    "Contact Name": "Kajal",
+    "Email": "NA",
     "Phone": "+91 98712 95005",
     "Salesperson": "Aadit Nair",
     "Next Follow up": "2026-06-17",
@@ -18041,11 +18041,11 @@
     "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Delhi (IN)",
-    "City": "Delhi",
+    "State": "New Delhi (IN)",
+    "City": "New Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 44.28
+    "Probability": 17.49
   },
   {
     "Created on": "2026-05-20 07:50:07",
@@ -41861,9 +41861,9 @@
     "RFQ Date": null,
     "Company Name": "Sun Mobility",
     "Opportunity": "SUN Mobility",
-    "Contact Name": "Aravinda R. Rao",
+    "Contact Name": "Praveen Kumar",
     "Email": "NA",
-    "Phone": "NA",
+    "Phone": "+91 97402 72904",
     "Salesperson": "Aadit Nair",
     "Next Follow up": "2026-06-18",
     "Industry Segment": "Automotive & EV",
@@ -41877,7 +41877,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 15.64
+    "Probability": 0.67
   },
   {
     "Created on": "2026-04-09 05:33:03",
