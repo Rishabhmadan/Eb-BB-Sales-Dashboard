@@ -4025,7 +4025,7 @@
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Uttar Pradesh (IN)",
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
@@ -11788,7 +11788,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "Nutritap",
-    "Opportunity": "Nutritap's opportunity",
+    "Opportunity": "Nutritap",
     "Contact Name": "Priyank Tewari",
     "Email": "priyank.tewari@nutritap.in",
     "Phone": "+91 98119 78127",
@@ -36441,7 +36441,7 @@
     "Email": false,
     "Phone": "7840051911, 7840051401/02/03/04",
     "Salesperson": "Ruchit Nambiar",
-    "Next Follow up": "2026-04-21",
+    "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 3.4,
     "Opportunity Type": "PCB Assembly",
@@ -36453,7 +36453,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.51
+    "Probability": 30.0
   },
   {
     "Created on": "2026-04-09 05:33:03",
