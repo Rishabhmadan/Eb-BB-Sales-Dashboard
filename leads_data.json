@@ -4649,7 +4649,7 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Uttar Pradesh (IN)",
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
@@ -6233,11 +6233,11 @@
     "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Uttar Pradesh (IN)",
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.67
+    "Probability": 92.99
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -6334,6 +6334,30 @@
     "Closed Date": null,
     "Expected Closing": "2026-11-29",
     "Probability": 73.23
+  },
+  {
+    "Created on": "2026-06-18 07:22:49",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": false,
+    "Opportunity": "Makino India's opportunity",
+    "Contact Name": "Makino India",
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Industrial Automation & Robotics",
+    "Revenue (Millions USD)": 110.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Haryana (IN)",
+    "City": "Gurugram",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 90.58
   },
   {
     "Created on": "2026-06-18 05:49:22",
@@ -11356,7 +11380,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "DYFO Automation Pvt Ltd",
-    "Opportunity": "DYFO Automation Pvt Ltd's opportunity",
+    "Opportunity": "DYFO Automation Pvt Ltd",
     "Contact Name": "Jayant Sharma",
     "Email": "jayant@dyfolabs.com",
     "Phone": "NA",
@@ -11373,7 +11397,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 97.94
+    "Probability": 98.91
   },
   {
     "Created on": "2026-06-09 11:24:44",
@@ -11865,19 +11889,19 @@
     "Email": "amol.yadwadkar@infoteksoftware.com",
     "Phone": "+91 89757 60379",
     "Salesperson": "Ruchit Nambiar",
-    "Next Follow up": null,
+    "Next Follow up": "2026-06-19",
     "Industry Segment": "IoT & Smart Devices",
     "Revenue (Millions USD)": 20.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 400000.0,
-    "Stage": "Open",
+    "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 7.45
+    "Probability": 7.83
   },
   {
     "Created on": "2026-06-09 06:19:45",
@@ -13685,23 +13709,23 @@
     "RFQ Date": null,
     "Company Name": "Chamberlain Group India",
     "Opportunity": "Chamberlain Group India's opportunity",
-    "Contact Name": "Harshada Khalkar",
-    "Email": "harshada.khalkar@chamberlain.com",
-    "Phone": "+91 788 793 8217",
+    "Contact Name": "Vinay Kumar Raj",
+    "Email": "vinay.raj@chamberlain.com",
+    "Phone": "+91 88842 99311",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-06-18",
+    "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 2000.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 2000000.0,
-    "Stage": "Connected",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.74
+    "Probability": 14.45
   },
   {
     "Created on": "2026-06-04 07:42:21",
@@ -14021,11 +14045,11 @@
     "RFQ Date": null,
     "Company Name": "BCH Electric Ltd",
     "Opportunity": "BCH Electric Ltd's opportunity",
-    "Contact Name": "Manish Tewari",
-    "Email": "manish.tewari@bchindia.com",
-    "Phone": "+91 78381 40884",
+    "Contact Name": "Suresh Kohli",
+    "Email": "suresh_kohli@bchindia.com",
+    "Phone": "+91 98109 15141",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-06-18",
+    "Next Follow up": "2026-06-19",
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 50.0,
     "Opportunity Type": "Component Sourcing",
@@ -14037,7 +14061,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 0.97
+    "Probability": 1.08
   },
   {
     "Created on": "2026-06-04 05:37:12",
@@ -31793,11 +31817,11 @@
     "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Uttar Pradesh (IN)",
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 95.53
+    "Probability": 99.49
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -32726,14 +32750,14 @@
     "Revenue (Millions USD)": 15.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 1500000.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Uttar Pradesh (IN)",
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 84.22
+    "Probability": 95.98
   },
   {
     "Created on": "2026-04-09 05:33:03",
