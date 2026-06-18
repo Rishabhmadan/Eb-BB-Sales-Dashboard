@@ -6605,9 +6605,9 @@
     "RFQ Date": null,
     "Company Name": "PES Electrical Pvt. Ltd.",
     "Opportunity": "PES Electrical Pvt. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Roopsikha",
+    "Email": "NA",
+    "Phone": "+91 81063 63693",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -6621,7 +6621,7 @@
     "City": "Faridabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.58
+    "Probability": 27.89
   },
   {
     "Created on": "2026-06-18 10:42:52",
@@ -6677,9 +6677,9 @@
     "RFQ Date": null,
     "Company Name": "Brize Air Coolers",
     "Opportunity": "Brize Air Coolers's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Kapil Chaudhary",
+    "Email": "kapil.chaudhary@brize.in",
+    "Phone": "+91 97111 94969",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -6693,7 +6693,7 @@
     "City": "Faridabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.58
+    "Probability": 39.73
   },
   {
     "Created on": "2026-06-18 10:25:21",
@@ -6701,9 +6701,9 @@
     "RFQ Date": null,
     "Company Name": "AVERY INDIA LIMITED",
     "Opportunity": "AVERY INDIA LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Basant Sandooja",
+    "Email": "bsandooja@awtxglobal.com",
+    "Phone": "+91 98719 60101",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Infrastructure & Heavy Industry",
@@ -6717,7 +6717,7 @@
     "City": "Faridabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.58
+    "Probability": 39.73
   },
   {
     "Created on": "2026-06-18 10:11:46",
@@ -6725,9 +6725,9 @@
     "RFQ Date": null,
     "Company Name": "STEFEN ELECTRIC PRIVATE LIMITED",
     "Opportunity": "STEFEN ELECTRIC PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Ashish Gupta",
+    "Email": "ashish.gupta@stefenelectric.com",
+    "Phone": "+91 93502 37204",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -6741,7 +6741,7 @@
     "City": "Faridabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.58
+    "Probability": 39.73
   },
   {
     "Created on": "2026-06-18 10:07:33",
