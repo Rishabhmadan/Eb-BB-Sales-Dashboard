@@ -6989,9 +6989,9 @@
     "RFQ Date": null,
     "Company Name": "JEKSON VISION PRIVATE LIMITED",
     "Opportunity": "JEKSON VISION PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Rakesh Mathur",
+    "Email": "rakesh.mathur@jeksonvision.com",
+    "Phone": "+91 93770 12413",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -7005,7 +7005,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 91.71
+    "Probability": 34.64
   },
   {
     "Created on": "2026-06-18 09:02:25",
@@ -7019,7 +7019,7 @@
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
-    "Revenue (Millions USD)": 0.0,
+    "Revenue (Millions USD)": 2.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 0.0,
     "Stage": "Market Research",
@@ -7091,7 +7091,7 @@
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
-    "Revenue (Millions USD)": 2.0,
+    "Revenue (Millions USD)": 3.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
     "Stage": "Market Research",
@@ -7107,11 +7107,11 @@
     "Created on": "2026-06-18 07:22:49",
     "Source": "Zoom Info",
     "RFQ Date": null,
-    "Company Name": false,
+    "Company Name": "Makino India",
     "Opportunity": "Makino India's opportunity",
-    "Contact Name": "Makino India",
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Durga Madhab Sahu",
+    "Email": "durga.sahu@makino.com",
+    "Phone": "+91 83909 09984",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -7125,7 +7125,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.58
+    "Probability": 43.44
   },
   {
     "Created on": "2026-06-18 05:49:22",
@@ -7133,9 +7133,9 @@
     "RFQ Date": null,
     "Company Name": "Rajkamal Barscan Systems Pvt. Ltd",
     "Opportunity": "Rajkamal Barscan Systems Pvt. Ltd's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Mahendra Dhangar",
+    "Email": "NA",
+    "Phone": "+91 98672 94895",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -7149,7 +7149,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 71.14
+    "Probability": 5.29
   },
   {
     "Created on": "2026-06-18 05:40:47",
@@ -7157,9 +7157,9 @@
     "RFQ Date": null,
     "Company Name": "M-TECH INNOVATIONS LIMITED",
     "Opportunity": "M-TECH INNOVATIONS LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Sujit Gandhi",
+    "Email": "sujit@m-techindia.com",
+    "Phone": "+91 98220 71495",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -7173,7 +7173,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 71.14
+    "Probability": 9.34
   },
   {
     "Created on": "2026-06-18 05:32:42",
@@ -7181,9 +7181,9 @@
     "RFQ Date": null,
     "Company Name": "APPALTO ELECTRONICS PRIVATE LIMITED",
     "Opportunity": "APPALTO ELECTRONICS PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Akhilesh Gupta",
+    "Email": "NA",
+    "Phone": "+91 98293 01239",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
@@ -7197,7 +7197,7 @@
     "City": "Indore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 91.71
+    "Probability": 22.32
   },
   {
     "Created on": "2026-06-18 05:14:48",
