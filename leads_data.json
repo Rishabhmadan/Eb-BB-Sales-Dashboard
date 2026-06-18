@@ -950,14 +950,14 @@
     "Revenue (Millions USD)": 0.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 900000.0,
-    "Stage": "RFQ Received",
-    "Won/Lost": "Pending",
+    "Stage": "Won",
+    "Won/Lost": "Won",
     "Country": "India",
     "State": "Haryana (IN)",
     "City": "Gurugram",
-    "Closed Date": null,
+    "Closed Date": "2026-06-18 15:46:45",
     "Expected Closing": "2026-06-18",
-    "Probability": 95.0
+    "Probability": 100.0
   },
   {
     "Created on": "2026-06-16 07:51:20",
@@ -6893,9 +6893,9 @@
     "RFQ Date": null,
     "Company Name": "Elymer International Private Limited",
     "Opportunity": "Elymer International Private Limited's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Arun Ratan",
+    "Email": "arun@elymer.com",
+    "Phone": "+91 98106 35950",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "EMS & Electronics Mfg",
@@ -6909,7 +6909,7 @@
     "City": "Faridabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.58
+    "Probability": 43.44
   },
   {
     "Created on": "2026-06-18 09:26:07",
@@ -6917,13 +6917,13 @@
     "RFQ Date": null,
     "Company Name": "OOB SMARTHOME INDIA PRIVATE LIMITED",
     "Opportunity": "OOB SMARTHOME INDIA PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Pradip Dakhara",
+    "Email": "pradip@oobsmarthome.com",
+    "Phone": "+91 96572 76915",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
-    "Revenue (Millions USD)": 2.0,
+    "Revenue (Millions USD)": 3.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
     "Stage": "Market Research",
@@ -6933,7 +6933,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 91.71
+    "Probability": 34.64
   },
   {
     "Created on": "2026-06-18 09:21:08",
@@ -6941,9 +6941,9 @@
     "RFQ Date": null,
     "Company Name": "KEVIN PROCESS TECHNOLOGIES",
     "Opportunity": "KEVIN PROCESS TECHNOLOGIES's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Bharat Bhatla",
+    "Email": "bhatla@kevin.in",
+    "Phone": "+91 97277 94657",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -6957,7 +6957,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 91.71
+    "Probability": 34.64
   },
   {
     "Created on": "2026-06-18 09:14:27",
@@ -6965,9 +6965,9 @@
     "RFQ Date": null,
     "Company Name": "SPAN Inspection Systems Pvt. Ltd.",
     "Opportunity": "SPAN Inspection Systems Pvt. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Nishit Acharya",
+    "Email": "NA",
+    "Phone": "+91 94275 49314",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -6981,7 +6981,7 @@
     "City": "Gandhinagar",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 91.71
+    "Probability": 22.32
   },
   {
     "Created on": "2026-06-18 09:11:26",
