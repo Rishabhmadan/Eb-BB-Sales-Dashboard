@@ -3945,7 +3945,7 @@
     "Email": "abisasthatech@gmail.com",
     "Phone": "+91 72596 85354",
     "Salesperson": "Ruchit Nambiar",
-    "Next Follow up": "2026-06-18",
+    "Next Follow up": "2026-06-19",
     "Industry Segment": "Other",
     "Revenue (Millions USD)": 0.01,
     "Opportunity Type": "Component Sourcing",
@@ -6558,7 +6558,7 @@
     "Company Name": "MONAD ELECTRONICS",
     "Opportunity": "MONAD ELECTRONICS's opportunity",
     "Contact Name": false,
-    "Email": false,
+    "Email": "NA",
     "Phone": false,
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
@@ -6573,7 +6573,7 @@
     "City": "Jaipur",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 96.44
+    "Probability": 92.17
   },
   {
     "Created on": "2026-06-18 10:50:00",
@@ -6650,7 +6650,7 @@
   {
     "Created on": "2026-06-18 10:41:43",
     "Source": "Other",
-    "RFQ Date": null,
+    "RFQ Date": "2026-06-11",
     "Company Name": "PRS ENTERPRISE",
     "Opportunity": "PRS ENTERPRISE - EB-20-ML-262-02-1708",
     "Contact Name": false,
@@ -6660,16 +6660,16 @@
     "Next Follow up": null,
     "Industry Segment": false,
     "Revenue (Millions USD)": 0.0,
-    "Opportunity Type": false,
+    "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Open",
-    "Won/Lost": "Pending",
+    "Stage": "Won",
+    "Won/Lost": "Won",
     "Country": false,
     "State": false,
     "City": false,
-    "Closed Date": null,
+    "Closed Date": "2026-06-18 15:14:56",
     "Expected Closing": null,
-    "Probability": 90.28
+    "Probability": 100.0
   },
   {
     "Created on": "2026-06-18 10:28:19",
