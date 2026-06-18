@@ -45,7 +45,7 @@
     "City": "Palakkad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 95.88
+    "Probability": 96.12
   },
   {
     "Created on": "2026-06-13 06:46:46",
@@ -4049,7 +4049,7 @@
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Uttar Pradesh (IN)",
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
@@ -33833,11 +33833,11 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Uttar Pradesh (IN)",
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 9.15
+    "Probability": 47.89
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -37553,11 +37553,11 @@
     "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Uttar Pradesh (IN)",
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 8.71
+    "Probability": 46.55
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -39185,11 +39185,11 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Uttar Pradesh (IN)",
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 11.91
+    "Probability": 51.78
   },
   {
     "Created on": "2026-04-09 05:33:03",
