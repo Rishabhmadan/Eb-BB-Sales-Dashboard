@@ -33857,11 +33857,11 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Telangana (IN)",
+    "State": false,
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 2.31
+    "Probability": 9.15
   },
   {
     "Created on": "2026-04-09 05:33:03",
