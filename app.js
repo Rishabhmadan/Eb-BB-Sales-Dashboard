@@ -92,13 +92,17 @@ window.addEventListener('popstate', (e) => {
         showModal(activeModalId);
     }
     
-    // Switch tab
+    // Switch tab only if it has changed from the currently active tab
     if (state && state.tab && VALID_TABS.includes(state.tab)) {
-        switchTab(state.tab, true, false); // preventReset = true, pushState = false
+        if (state.tab !== activeTab) {
+            switchTab(state.tab, true, false); // preventReset = true, pushState = false
+        }
     } else {
         const hash = window.location.hash.replace('#', '');
         if (VALID_TABS.includes(hash)) {
-            switchTab(hash, true, false);
+            if (hash !== activeTab) {
+                switchTab(hash, true, false);
+            }
         }
     }
 });
@@ -465,6 +469,18 @@ function goToExplorerFilter(type, value) {
         leads = dataset.filter(l => l['City'] === value);
         title = `Leads in ${value}`;
         subtitle = `Showing ${leads.length.toLocaleString()} leads located in ${value}`;
+    } else if (type === 'state') {
+        leads = dataset.filter(l => (l['State'] || 'Unknown') === value);
+        title = `Leads in State: ${value}`;
+        subtitle = `Showing ${leads.length.toLocaleString()} leads located in ${value}`;
+    } else if (type === 'country') {
+        leads = dataset.filter(l => (l['Country'] || 'Unknown') === value);
+        title = `Leads in Country: ${value}`;
+        subtitle = `Showing ${leads.length.toLocaleString()} leads located in ${value}`;
+    } else if (type === 'region') {
+        leads = dataset.filter(l => getRegionForState(l['State'], l['Country']) === value);
+        title = `Leads in Region: ${value}`;
+        subtitle = `Showing ${leads.length.toLocaleString()} leads located in region "${value}"`;
     } else if (type === 'product-type') {
         leads = dataset.filter(l => l['Opportunity Type'] === value);
         title = `Product Type: ${value}`;
@@ -2621,6 +2637,16 @@ function updateCharts() {
                 indexAxis: 'y',
                 responsive: true,
                 maintainAspectRatio: false,
+                onClick: (event, elements, chart) => {
+                    if (elements && elements.length > 0) {
+                        const index = elements[0].index;
+                        const label = chart.data.labels[index];
+                        goToExplorerFilter('state', label);
+                    }
+                },
+                onHover: (event, elements) => {
+                    event.native.target.style.cursor = elements.length > 0 ? 'pointer' : 'default';
+                },
                 plugins: {
                     legend: { display: false },
                     tooltip: {
@@ -2664,6 +2690,16 @@ function updateCharts() {
             options: {
                 responsive: true,
                 maintainAspectRatio: false,
+                onClick: (event, elements, chart) => {
+                    if (elements && elements.length > 0) {
+                        const index = elements[0].index;
+                        const label = chart.data.labels[index];
+                        goToExplorerFilter('country', label);
+                    }
+                },
+                onHover: (event, elements) => {
+                    event.native.target.style.cursor = elements.length > 0 ? 'pointer' : 'default';
+                },
                 plugins: {
                     legend: {
                         position: 'bottom',
@@ -2696,6 +2732,16 @@ function updateCharts() {
             options: {
                 responsive: true,
                 maintainAspectRatio: false,
+                onClick: (event, elements, chart) => {
+                    if (elements && elements.length > 0) {
+                        const index = elements[0].index;
+                        const label = chart.data.labels[index];
+                        goToExplorerFilter('region', label);
+                    }
+                },
+                onHover: (event, elements) => {
+                    event.native.target.style.cursor = elements.length > 0 ? 'pointer' : 'default';
+                },
                 plugins: {
                     legend: {
                         position: 'bottom',
