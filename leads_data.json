@@ -7205,9 +7205,9 @@
     "RFQ Date": null,
     "Company Name": "Solus Security Systems Pvt. Ltd.",
     "Opportunity": "Solus Security Systems Pvt. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Narasimha Swamy",
+    "Email": "swamy@solus.co.in",
+    "Phone": "+91 90350 27027",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -7221,7 +7221,7 @@
     "City": "Bengaluru",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 25.08
+    "Probability": 1.38
   },
   {
     "Created on": "2026-06-18 04:35:14",
@@ -7229,9 +7229,9 @@
     "RFQ Date": null,
     "Company Name": "Acoem India",
     "Opportunity": "Acoem India's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Devesh Raghuwanshi",
+    "Email": "devesh.raghuwanshi@acoem.com",
+    "Phone": "+91 91589 75999",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -7245,7 +7245,7 @@
     "City": "Vadodara",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 91.71
+    "Probability": 34.64
   },
   {
     "Created on": "2026-06-18 04:03:33",
@@ -7253,9 +7253,9 @@
     "RFQ Date": null,
     "Company Name": "A-1 Fence Products Company Pvt. Ltd.",
     "Opportunity": "A-1 Fence Products Company Pvt. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Sachin Palkar",
+    "Email": "NA",
+    "Phone": "+91 99694 23775",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -7269,7 +7269,7 @@
     "City": "Thane",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 71.14
+    "Probability": 5.29
   },
   {
     "Created on": "2026-06-17 15:40:38",
@@ -7326,8 +7326,8 @@
     "Company Name": "ALPITRONIC INDIA PRIVATE LIMITED",
     "Opportunity": "ALPITRONIC INDIA PRIVATE LIMITED's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -7341,7 +7341,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 71.14
+    "Probability": 58.72
   },
   {
     "Created on": "2026-06-17 10:39:55",
@@ -7355,7 +7355,7 @@
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
-    "Revenue (Millions USD)": 200.0,
+    "Revenue (Millions USD)": 50.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
     "Stage": "Market Research",
