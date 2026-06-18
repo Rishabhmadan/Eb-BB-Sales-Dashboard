@@ -41,11 +41,11 @@
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
-    "City": "Palakkad",
+    "State": "Karnataka (IN)",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 96.12
+    "Probability": 42.85
   },
   {
     "Created on": "2026-06-13 06:46:46",
@@ -11860,10 +11860,10 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "i-TEK RFID (Infotek Software & Systems)",
-    "Opportunity": "i-TEK RFID (Infotek Software & Systems)'s opportunity",
-    "Contact Name": "Prasad Nhawkar",
-    "Email": "prasad.nhawkar@infoteksoftware.com",
-    "Phone": "+91 98900 00717",
+    "Opportunity": "i-TEK RFID (Infotek Software & Systems)",
+    "Contact Name": "Amol Yadwadkar",
+    "Email": "amol.yadwadkar@infoteksoftware.com",
+    "Phone": "+91 89757 60379",
     "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
@@ -11877,7 +11877,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 8.36
+    "Probability": 7.45
   },
   {
     "Created on": "2026-06-09 06:19:45",
@@ -17528,20 +17528,20 @@
     "Contact Name": "Shivi",
     "Email": "shivi.bakshi@brightblu.com",
     "Phone": "NA",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Elecbits",
     "Next Follow up": null,
     "Industry Segment": false,
-    "Revenue (Millions USD)": 0.0,
+    "Revenue (Millions USD)": 0.1,
     "Opportunity Type": false,
     "Expected Revenue": 0.0,
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
-    "City": "Palakkad",
+    "State": "Karnataka (IN)",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.5
+    "Probability": 35.63
   },
   {
     "Created on": "2026-05-25 06:58:07",
