@@ -4262,7 +4262,7 @@
     "Revenue (Millions USD)": 3.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 24500.0,
-    "Stage": "RFQ Received",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
@@ -9806,14 +9806,14 @@
     "Revenue (Millions USD)": 6.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Telangana (IN)",
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 4.94
+    "Probability": 2.42
   },
   {
     "Created on": "2026-06-15 11:42:26",
@@ -9854,14 +9854,14 @@
     "Revenue (Millions USD)": 8.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 9.36
+    "Probability": 4.69
   },
   {
     "Created on": "2026-06-15 09:58:53",
@@ -9878,14 +9878,14 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Gujarat (IN)",
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 93.43
+    "Probability": 87.14
   },
   {
     "Created on": "2026-06-15 09:43:01",
@@ -9902,14 +9902,14 @@
     "Revenue (Millions USD)": 20.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 4.94
+    "Probability": 2.42
   },
   {
     "Created on": "2026-06-15 09:36:16",
@@ -9998,14 +9998,14 @@
     "Revenue (Millions USD)": 120.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
     "City": "Kancheepuram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 36.39
+    "Probability": 21.42
   },
   {
     "Created on": "2026-06-15 07:22:55",
@@ -10046,14 +10046,14 @@
     "Revenue (Millions USD)": 40.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 53.18
+    "Probability": 35.11
   },
   {
     "Created on": "2026-06-15 07:11:57",
@@ -10118,14 +10118,14 @@
     "Revenue (Millions USD)": 43.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 9.36
+    "Probability": 4.69
   },
   {
     "Created on": "2026-06-15 06:36:11",
@@ -10133,23 +10133,23 @@
     "RFQ Date": null,
     "Company Name": "SEDEMAC",
     "Opportunity": "SEDEMAC's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Bhaskar Sahasrabudhe",
+    "Email": "bhaskar.s@sedemac.com",
+    "Phone": "+91 99000 31910",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 35.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 77.8
+    "Probability": 4.69
   },
   {
     "Created on": "2026-06-15 06:33:51",
