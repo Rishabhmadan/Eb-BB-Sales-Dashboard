@@ -10086,8 +10086,8 @@
     "Company Name": "OPG Mobility",
     "Opportunity": "OPG Mobility's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
@@ -10101,7 +10101,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 96.31
+    "Probability": 93.15
   },
   {
     "Created on": "2026-06-15 06:38:42",
@@ -10109,9 +10109,9 @@
     "RFQ Date": null,
     "Company Name": "Miko",
     "Opportunity": "Miko's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Chintan S. Raikar",
+    "Email": "chintan@miko.ai",
+    "Phone": "+91 96115 96927",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
@@ -10125,7 +10125,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 77.8
+    "Probability": 9.36
   },
   {
     "Created on": "2026-06-15 06:36:11",
