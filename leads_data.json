@@ -14846,14 +14846,14 @@
     "Revenue (Millions USD)": 10.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 300000.0,
-    "Stage": "Open",
+    "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.34
+    "Probability": 26.83
   },
   {
     "Created on": "2026-06-04 06:23:20",
@@ -35221,8 +35221,8 @@
     "Industry Segment": "Aerospace & Defense",
     "Revenue (Millions USD)": 0.03,
     "Opportunity Type": "PCB Assembly",
-    "Expected Revenue": 250000.0,
-    "Stage": "Open",
+    "Expected Revenue": 150000.0,
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
