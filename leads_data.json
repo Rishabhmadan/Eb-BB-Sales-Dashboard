@@ -32,7 +32,7 @@
     "Contact Name": "Shivi",
     "Email": "shivi.bakshi@brightblu.com",
     "Phone": "NA",
-    "Salesperson": "Elecbits",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 0.1,
@@ -45,7 +45,7 @@
     "City": "Palakkad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 96.12
+    "Probability": 96.14
   },
   {
     "Created on": "2026-06-13 06:46:46",
@@ -1022,7 +1022,7 @@
     "Revenue (Millions USD)": 0.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 500000.0,
-    "Stage": "RFQ Received",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
@@ -1132,7 +1132,7 @@
     "Source": "Other",
     "RFQ Date": "2026-06-10",
     "Company Name": "Netradyne",
-    "Opportunity": "Netradyne's opportunity",
+    "Opportunity": "Netradyne - Eb-24-EL-426-02-1715",
     "Contact Name": "Ajit Netradyne",
     "Email": "ajit.shelke@netradyne.com",
     "Phone": "+91 95915 17477",
@@ -1148,7 +1148,7 @@
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
-    "Expected Closing": "2026-06-19",
+    "Expected Closing": "2026-06-26",
     "Probability": 0.13
   },
   {
@@ -6653,7 +6653,7 @@
     "RFQ Date": "2026-06-11",
     "Company Name": "PRS ENTERPRISE",
     "Opportunity": "PRS ENTERPRISE - EB-20-ML-262-02-1708",
-    "Contact Name": false,
+    "Contact Name": "Luv Sharma",
     "Email": false,
     "Phone": false,
     "Salesperson": "Ruchit Nambiar",
