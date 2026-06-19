@@ -9798,8 +9798,8 @@
     "Company Name": "AMO Electric Bikes",
     "Opportunity": "AMO Electric Bikes's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
@@ -9813,7 +9813,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 98.99
+    "Probability": 98.07
   },
   {
     "Created on": "2026-06-15 11:12:50",
