@@ -6614,14 +6614,14 @@
     "Revenue (Millions USD)": 5.3,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 12.18
+    "Probability": 6.2
   },
   {
     "Created on": "2026-06-23 10:12:19",
@@ -6686,14 +6686,14 @@
     "Revenue (Millions USD)": 50.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Uttar Pradesh (IN)",
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 64.16
+    "Probability": 46.04
   },
   {
     "Created on": "2026-06-23 09:56:28",
@@ -6775,7 +6775,7 @@
     "Opportunity": "Voni SmartIoT- (VR Della)'s opportunity",
     "Contact Name": false,
     "Email": "NA",
-    "Phone": false,
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
@@ -6789,7 +6789,7 @@
     "City": "Tiruchirappalli",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 84.3
+    "Probability": 91.46
   },
   {
     "Created on": "2026-06-23 09:40:40",
@@ -6799,7 +6799,7 @@
     "Opportunity": "Autosync's opportunity",
     "Contact Name": false,
     "Email": "NA",
-    "Phone": false,
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
@@ -6813,7 +6813,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 32.8
+    "Probability": 49.34
   },
   {
     "Created on": "2026-06-23 09:35:04",
@@ -6830,14 +6830,14 @@
     "Revenue (Millions USD)": 20.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 8.5
+    "Probability": 4.24
   },
   {
     "Created on": "2026-06-23 09:30:30",
@@ -6854,14 +6854,14 @@
     "Revenue (Millions USD)": 20.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Telangana (IN)",
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 8.5
+    "Probability": 4.24
   },
   {
     "Created on": "2026-06-23 09:28:10",
@@ -6950,14 +6950,14 @@
     "Revenue (Millions USD)": 2.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 31.7
+    "Probability": 49.34
   },
   {
     "Created on": "2026-06-23 09:16:14",
@@ -6974,14 +6974,14 @@
     "Revenue (Millions USD)": 10.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bengaluru",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 12.18
+    "Probability": 6.2
   },
   {
     "Created on": "2026-06-23 09:11:38",
@@ -7039,7 +7039,7 @@
     "Opportunity": "ATOM8 ROBOTIC LABS PRIVATE LIMITED's opportunity",
     "Contact Name": false,
     "Email": "NA",
-    "Phone": false,
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
@@ -7053,7 +7053,7 @@
     "City": "Bengaluru",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 42.17
+    "Probability": 59.27
   },
   {
     "Created on": "2026-06-23 09:02:52",
@@ -7070,14 +7070,14 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Uttar Pradesh (IN)",
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 79.2
+    "Probability": 64.47
   },
   {
     "Created on": "2026-06-23 09:00:01",
@@ -7094,14 +7094,14 @@
     "Revenue (Millions USD)": 6.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 8.5
+    "Probability": 4.24
   },
   {
     "Created on": "2026-06-23 08:52:39",
@@ -7135,7 +7135,7 @@
     "Opportunity": "SOFODOMUS INTELLIGENT SYSTEMS PRIVATE LIMITED's opportunity",
     "Contact Name": false,
     "Email": "NA",
-    "Phone": false,
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
@@ -7149,7 +7149,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 32.8
+    "Probability": 49.34
   },
   {
     "Created on": "2026-06-23 08:45:35",
@@ -7262,14 +7262,14 @@
     "Revenue (Millions USD)": 8.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 8.5
+    "Probability": 4.24
   },
   {
     "Created on": "2026-06-23 08:02:12",
@@ -7286,14 +7286,14 @@
     "Revenue (Millions USD)": 15.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 4.18
+    "Probability": 2.04
   },
   {
     "Created on": "2026-06-23 07:59:30",
@@ -7310,14 +7310,14 @@
     "Revenue (Millions USD)": 12.5,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 50.54
+    "Probability": 32.74
   },
   {
     "Created on": "2026-06-23 07:57:23",
@@ -7375,7 +7375,7 @@
     "Opportunity": "ITVIRT Solutions Pvt Ltd's opportunity",
     "Contact Name": false,
     "Email": "NA",
-    "Phone": false,
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7389,7 +7389,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 42.17
+    "Probability": 59.27
   },
   {
     "Created on": "2026-06-23 07:49:30",
@@ -7478,14 +7478,14 @@
     "Revenue (Millions USD)": 7.3,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Kerala (IN)",
     "City": "Ernakulam",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 37.44
+    "Probability": 22.19
   },
   {
     "Created on": "2026-06-23 07:33:08",
@@ -7565,23 +7565,23 @@
     "RFQ Date": null,
     "Company Name": "SYNEDYNE SYSTEMS PRIVATE LIMITED",
     "Opportunity": "SYNEDYNE SYSTEMS PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Abhinav A. Kalamdani",
+    "Email": "abhinav@synedynesystems.com",
+    "Phone": "+91 94481 33242",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bengaluru",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 61.29
+    "Probability": 6.2
   },
   {
     "Created on": "2026-06-23 07:01:41",
@@ -7589,23 +7589,23 @@
     "RFQ Date": null,
     "Company Name": "DYNOLT TECHNOLOGIES PRIVATE LIMITED",
     "Opportunity": "DYNOLT TECHNOLOGIES PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Vaish Ashutosh",
+    "Email": "ashutosh@dynolt.com",
+    "Phone": "+91 74578 13240",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
-    "Revenue (Millions USD)": 2.0,
+    "Revenue (Millions USD)": 14.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bengaluru",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 61.29
+    "Probability": 6.2
   },
   {
     "Created on": "2026-06-23 06:53:44",
@@ -7613,23 +7613,23 @@
     "RFQ Date": null,
     "Company Name": "Jayem Automotives Pvt Ltd.,",
     "Opportunity": "Jayem Automotives Pvt Ltd.,'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Vikas Thiruvalluru",
+    "Email": "tvikas@jayemauto.com",
+    "Phone": "+91 73373 15489",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 44.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
     "City": "Coimbatore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 92.1
+    "Probability": 32.74
   },
   {
     "Created on": "2026-06-23 06:49:46",
@@ -7637,23 +7637,23 @@
     "RFQ Date": null,
     "Company Name": "Kriti Group",
     "Opportunity": "Kriti Group's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Prafull Anchaliya",
+    "Email": "NA",
+    "Phone": "+91 98745 16475",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 83.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
     "City": "Faridabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 92.1
+    "Probability": 18.62
   },
   {
     "Created on": "2026-06-23 06:41:03",
@@ -7661,23 +7661,23 @@
     "RFQ Date": null,
     "Company Name": "Gandhi Automations Pvt Ltd",
     "Opportunity": "Gandhi Automations Pvt Ltd's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Jayanti Paradkar",
+    "Email": "jayanti@geapl.co.in",
+    "Phone": "+91 84509 66094",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 35.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 51.45
+    "Probability": 4.24
   },
   {
     "Created on": "2026-06-23 06:33:52",
@@ -7685,23 +7685,23 @@
     "RFQ Date": null,
     "Company Name": "XCMG India Manufacturing",
     "Opportunity": "XCMG India Manufacturing's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Dinesh Kumar",
+    "Email": "dinesh.kumar@xcmgindia.com",
+    "Phone": "+91 84282 95566",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 60.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 92.1
+    "Probability": 32.74
   },
   {
     "Created on": "2026-06-23 06:28:25",
@@ -7709,23 +7709,23 @@
     "RFQ Date": null,
     "Company Name": "AGRATAS ENERGY STORAGE SOLUTIONS PRIVATE LIMITED",
     "Opportunity": "AGRATAS ENERGY STORAGE SOLUTIONS PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Ravindra Kulkarni",
+    "Email": "ravindra.kulkarni@agratas.com",
+    "Phone": "+91 98408 18516",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
-    "Revenue (Millions USD)": 184.0,
+    "Revenue (Millions USD)": 200.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 51.45
+    "Probability": 4.24
   },
   {
     "Created on": "2026-06-23 06:25:56",
@@ -7733,23 +7733,23 @@
     "RFQ Date": null,
     "Company Name": "SENVION INDIA WIND POWER SERVICES LLP",
     "Opportunity": "SENVION INDIA WIND POWER SERVICES LLP's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Prafullakumar Dhole",
+    "Email": "prafullakumar.dhole@senvion.in",
+    "Phone": "+91 88796 79330",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Energy & CleanTech",
-    "Revenue (Millions USD)": 300.0,
+    "Revenue (Millions USD)": 3.6,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 51.45
+    "Probability": 4.24
   },
   {
     "Created on": "2026-06-23 05:47:29",
@@ -12893,9 +12893,9 @@
     "RFQ Date": null,
     "Company Name": "Trydan Tech",
     "Opportunity": "Trydan Tech's opportunity",
-    "Contact Name": "Bobin Raj",
-    "Email": "bobin.r@trydantech.com",
-    "Phone": "+91 70349 50397",
+    "Contact Name": "Hari Krishnan",
+    "Email": "hari.k@trydantech.com",
+    "Phone": "+91 97471 67311",
     "Salesperson": "Aadit Nair",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -12909,7 +12909,7 @@
     "City": "Thiruvananthapuram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 22.15
+    "Probability": 22.19
   },
   {
     "Created on": "2026-06-11 07:19:23",
@@ -21293,9 +21293,9 @@
     "RFQ Date": null,
     "Company Name": "TORETO RETAIL PRIVATE LIMITED",
     "Opportunity": "Toreto Retail",
-    "Contact Name": "Sunil Choudhary",
-    "Email": "sunil@toreto.in",
-    "Phone": "NA",
+    "Contact Name": "Kashish Lalit",
+    "Email": "kashish@toreto.in",
+    "Phone": "+91 99997 43774",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -21305,11 +21305,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Delhi (IN)",
-    "City": "Delhi",
+    "State": "New Delhi (IN)",
+    "City": "New Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 95.93
+    "Probability": 22.19
   },
   {
     "Created on": "2026-05-20 10:32:13",
@@ -34958,14 +34958,14 @@
     "Revenue (Millions USD)": 7.61,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 700000.0,
-    "Stage": "Open",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 49.31
+    "Probability": 60.53
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -38318,14 +38318,14 @@
     "Revenue (Millions USD)": 7.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 700000.0,
-    "Stage": "Open",
+    "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Gujarat (IN)",
     "City": "Rajkot",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 0.34
+    "Probability": 3.42
   },
   {
     "Created on": "2026-04-09 05:33:03",
