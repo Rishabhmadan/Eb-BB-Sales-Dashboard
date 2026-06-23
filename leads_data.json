@@ -429,7 +429,7 @@
     "City": "Dhule",
     "Closed Date": null,
     "Expected Closing": "2026-07-02",
-    "Probability": 50.0
+    "Probability": 30.0
   },
   {
     "Created on": "2026-05-09 04:59:41",
@@ -693,7 +693,7 @@
     "City": "Coimbatore",
     "Closed Date": null,
     "Expected Closing": "2026-06-30",
-    "Probability": 50.0
+    "Probability": 30.0
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -787,7 +787,7 @@
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
-    "Closed Date": "2026-06-17 13:09:01",
+    "Closed Date": null,
     "Expected Closing": "2026-06-17",
     "Probability": 100.0
   },
@@ -829,7 +829,7 @@
     "Industry Segment": "EMS & Electronics Mfg",
     "Revenue (Millions USD)": 217.2,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 65000.0,
+    "Expected Revenue": 67558.0,
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": false,
@@ -837,7 +837,7 @@
     "City": false,
     "Closed Date": null,
     "Expected Closing": "2026-06-29",
-    "Probability": 53.98
+    "Probability": 70.0
   },
   {
     "Created on": "2026-06-19 05:54:44",
@@ -4292,8 +4292,8 @@
     "State": "Haryana (IN)",
     "City": "Sonipat",
     "Closed Date": null,
-    "Expected Closing": "2026-06-23",
-    "Probability": 60.0
+    "Expected Closing": "2026-06-24",
+    "Probability": 80.0
   },
   {
     "Created on": "2026-06-08 11:39:26",
@@ -6942,8 +6942,8 @@
     "Company Name": "Phlipton Automation Solutions",
     "Opportunity": "Phlipton Automation Solutions's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": " NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -6957,7 +6957,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 87.23
+    "Probability": 86.26
   },
   {
     "Created on": "2026-06-23 09:08:24",
@@ -6965,23 +6965,23 @@
     "RFQ Date": null,
     "Company Name": "ALISAN SMART HOMES PRIVATE LIMITED",
     "Opportunity": "ALISAN SMART HOMES PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Sanchit Sehgal",
+    "Email": "sanchit.sehgal@alisan.co.in",
+    "Phone": "+91 97183 85111",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 92.1
+    "Probability": 32.74
   },
   {
     "Created on": "2026-06-23 09:05:59",
@@ -7011,11 +7011,11 @@
     "Created on": "2026-06-23 09:02:52",
     "Source": "Zoom Info",
     "RFQ Date": null,
-    "Company Name": "DyfoLabs",
+    "Company Name": "DYFO Automation Pvt Ltd",
     "Opportunity": "DyfoLabs's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Jayant Sharma",
+    "Email": "jayant@dyfolabs.com",
+    "Phone": "+91 99716 89089",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
@@ -7029,7 +7029,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 97.75
+    "Probability": 79.2
   },
   {
     "Created on": "2026-06-23 09:00:01",
@@ -7037,9 +7037,9 @@
     "RFQ Date": null,
     "Company Name": "HOMEONE TECHNOLOGIES LLP",
     "Opportunity": "HOMEONE TECHNOLOGIES LLP's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Sudarshan Mitra",
+    "Email": "sudarshan@homeonetechnologies.com",
+    "Phone": "+91 89045 97679",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
@@ -7053,7 +7053,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 51.45
+    "Probability": 8.5
   },
   {
     "Created on": "2026-06-23 08:52:39",
@@ -7062,8 +7062,8 @@
     "Company Name": "Halox Smart",
     "Opportunity": "Halox Smart's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
@@ -7077,7 +7077,7 @@
     "City": "Kurukshetra",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 92.1
+    "Probability": 91.46
   },
   {
     "Created on": "2026-06-23 08:49:15",
@@ -13157,9 +13157,9 @@
     "RFQ Date": null,
     "Company Name": "Airbound",
     "Opportunity": "Airbound's opportunity",
-    "Contact Name": "Ruturaj Patil",
+    "Contact Name": "Vinod Nayak",
     "Email": "NA",
-    "Phone": "+91 93735 74756",
+    "Phone": "+91 79811 46424",
     "Salesperson": "Aadit Nair",
     "Next Follow up": "2026-06-23",
     "Industry Segment": "Aerospace & Defense",
@@ -13173,7 +13173,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 0.86
+    "Probability": 3.01
   },
   {
     "Created on": "2026-06-11 05:31:14",
@@ -37425,7 +37425,7 @@
     "Email": "udit.jalan@nuconaerospace.com",
     "Phone": "+91 98482 58348",
     "Salesperson": "Ruchit Nambiar",
-    "Next Follow up": "2026-04-11",
+    "Next Follow up": null,
     "Industry Segment": "Aerospace & Defense",
     "Revenue (Millions USD)": 13.0,
     "Opportunity Type": "PCB Assembly",
@@ -37437,7 +37437,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 19.1
+    "Probability": 25.0
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -45198,7 +45198,7 @@
     "Company Name": "Sun Mobility",
     "Opportunity": "SUN Mobility",
     "Contact Name": "Praveen Kumar",
-    "Email": "praveen.kumar@sunmobility.com",
+    "Email": "praveenkumar.br@sunmobility.com",
     "Phone": "+91 97402 72904",
     "Salesperson": "Aadit Nair",
     "Next Follow up": "2026-06-25",
