@@ -309,7 +309,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": "2026-05-25",
-    "Probability": 24.16
+    "Probability": 6.1
   },
   {
     "Created on": "2026-05-22 07:00:40",
@@ -645,7 +645,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 39.28
+    "Probability": 12.14
   },
   {
     "Created on": "2026-04-15 06:53:17",
@@ -833,8 +833,8 @@
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": false,
-    "State": false,
-    "City": false,
+    "State": "Haryana (IN)",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": "2026-06-29",
     "Probability": 70.0
@@ -861,7 +861,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": "2026-06-24",
-    "Probability": 46.5
+    "Probability": 43.77
   },
   {
     "Created on": "2026-06-18 12:10:12",
@@ -881,11 +881,11 @@
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": "2026-06-25",
-    "Probability": 47.5
+    "Probability": 16.01
   },
   {
     "Created on": "2026-06-18 12:06:14",
@@ -905,11 +905,11 @@
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": "2026-06-25",
-    "Probability": 47.5
+    "Probability": 16.01
   },
   {
     "Created on": "2026-06-18 12:03:00",
@@ -977,11 +977,11 @@
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
-    "City": "New Delhi",
+    "State": "Delhi (IN)",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": "2026-06-29",
-    "Probability": 44.53
+    "Probability": 75.78
   },
   {
     "Created on": "2026-06-17 15:32:48",
@@ -1001,8 +1001,8 @@
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": false,
-    "State": false,
-    "City": false,
+    "State": "Uttar Pradesh (IN)",
+    "City": "Ghaziabad",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 50.0
@@ -1293,7 +1293,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": "2026-06-12",
-    "Probability": 57.08
+    "Probability": 76.83
   },
   {
     "Created on": "2026-06-10 05:45:47",
@@ -1821,7 +1821,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 96.49
+    "Probability": 61.19
   },
   {
     "Created on": "2026-04-27 12:23:11",
@@ -2373,7 +2373,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 96.49
+    "Probability": 61.19
   },
   {
     "Created on": "2026-04-13 13:05:03",
@@ -2469,7 +2469,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 79.46
+    "Probability": 31.05
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -4025,11 +4025,11 @@
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": false,
-    "State": false,
-    "City": false,
+    "State": "Haryana (IN)",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": "2026-06-27",
-    "Probability": 56.64
+    "Probability": 68.95
   },
   {
     "Created on": "2026-06-17 07:05:17",
@@ -4048,9 +4048,9 @@
     "Expected Revenue": 300000.0,
     "Stage": "Dropped",
     "Won/Lost": "Pending",
-    "Country": false,
-    "State": false,
-    "City": false,
+    "Country": "India",
+    "State": "Telangana (IN)",
+    "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 50.0
@@ -4314,7 +4314,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Sonipat",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": "2026-06-24",
     "Probability": 80.0
@@ -4410,7 +4410,7 @@
     "Won/Lost": "Won",
     "Country": "India",
     "State": "Haryana (IN)",
-    "City": "Sonipat",
+    "City": "Gurugram",
     "Closed Date": "2026-06-22 04:12:10",
     "Expected Closing": "2026-06-18",
     "Probability": 100.0
@@ -5109,7 +5109,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 81.07
+    "Probability": 8.47
   },
   {
     "Created on": "2026-05-04 11:30:42",
@@ -5229,7 +5229,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 30.88
+    "Probability": 8.47
   },
   {
     "Created on": "2026-04-23 10:13:01",
@@ -5945,7 +5945,7 @@
     "Stage": "RFQ Expected",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
@@ -6065,11 +6065,11 @@
     "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 76.36
+    "Probability": 21.8
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -6504,6 +6504,798 @@
     "Probability": 73.23
   },
   {
+    "Created on": "2026-06-24 10:09:08",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "Caterlux",
+    "Opportunity": "Caterlux's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": false,
+    "Revenue (Millions USD)": 5.0,
+    "Opportunity Type": false,
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Delhi (IN)",
+    "City": "Delhi",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 92.07
+  },
+  {
+    "Created on": "2026-06-24 10:04:50",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "Beston Skyvision Private Limited",
+    "Opportunity": "Beston Skyvision Private Limited's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Consumer Electronics & Appliances",
+    "Revenue (Millions USD)": 5.0,
+    "Opportunity Type": "PCB Assembly",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Uttar Pradesh (IN)",
+    "City": "Noida",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 97.74
+  },
+  {
+    "Created on": "2026-06-24 10:00:17",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "Avyanna Tech Pvt Ltd",
+    "Opportunity": "Avyanna Tech Pvt Ltd's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Industrial Automation & Robotics",
+    "Revenue (Millions USD)": 2.0,
+    "Opportunity Type": "PCB Assembly",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Maharashtra (IN)",
+    "City": "Pune",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 51.35
+  },
+  {
+    "Created on": "2026-06-24 09:58:03",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "SERTEL ELECTRONICS PRIVATE LIMITED",
+    "Opportunity": "SERTEL ELECTRONICS PRIVATE LIMITED's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Industrial Automation & Robotics",
+    "Revenue (Millions USD)": 4.0,
+    "Opportunity Type": "PCB Assembly",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Tamil Nadu (IN)",
+    "City": "Chennai",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 92.07
+  },
+  {
+    "Created on": "2026-06-24 09:53:19",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "EUROCON INSTRUMENTS PRIVATE LIMITED",
+    "Opportunity": "EUROCON INSTRUMENTS PRIVATE LIMITED's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Industrial Automation & Robotics",
+    "Revenue (Millions USD)": 2.0,
+    "Opportunity Type": "PCB Assembly",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Tamil Nadu (IN)",
+    "City": "Chennai",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 92.07
+  },
+  {
+    "Created on": "2026-06-24 09:50:04",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "VERITEK ENGINEERING PRIVATE LIMITED",
+    "Opportunity": "VERITEK ENGINEERING PRIVATE LIMITED's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Industrial Automation & Robotics",
+    "Revenue (Millions USD)": 5.0,
+    "Opportunity Type": "PCB Assembly",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Maharashtra (IN)",
+    "City": "Mumbai",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 51.35
+  },
+  {
+    "Created on": "2026-06-24 09:40:45",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "Pyrosens Technologies India Pvt. Ltd.",
+    "Opportunity": "Pyrosens Technologies India Pvt. Ltd.'s opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Industrial Automation & Robotics",
+    "Revenue (Millions USD)": 3.0,
+    "Opportunity Type": "PCB Assembly",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Rajasthan (IN)",
+    "City": "Udaipur",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 92.07
+  },
+  {
+    "Created on": "2026-06-24 09:34:46",
+    "Source": "XOR",
+    "RFQ Date": null,
+    "Company Name": "Recnaile Pvt Ltd",
+    "Opportunity": "Recnaile",
+    "Contact Name": "Sanjay Prabhakar M",
+    "Email": "growth@recnaile.com",
+    "Phone": "+91 82486 00946",
+    "Salesperson": "Ruchit Nambiar",
+    "Next Follow up": "2026-06-25",
+    "Industry Segment": "Aerospace & Defense",
+    "Revenue (Millions USD)": 0.1,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 750000.0,
+    "Stage": "RFQ Expected",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": false,
+    "City": "Bangalore",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 70.0
+  },
+  {
+    "Created on": "2026-06-24 09:32:46",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "AET DISPLAYS INDIA",
+    "Opportunity": "AET DISPLAYS INDIA's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "IoT & Smart Devices",
+    "Revenue (Millions USD)": 3.2,
+    "Opportunity Type": "PCB Assembly",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Tamil Nadu (IN)",
+    "City": "Chennai",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 92.07
+  },
+  {
+    "Created on": "2026-06-24 09:26:34",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "MIEUX DISPLAY PRIVATE LIMITED",
+    "Opportunity": "MIEUX DISPLAY PRIVATE LIMITED's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "IoT & Smart Devices",
+    "Revenue (Millions USD)": 2.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Uttar Pradesh (IN)",
+    "City": "Noida",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 97.74
+  },
+  {
+    "Created on": "2026-06-24 09:23:15",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "Qwatt Technologies Pvt. Ltd",
+    "Opportunity": "Qwatt Technologies Pvt. Ltd's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Power Electronics & Electrical",
+    "Revenue (Millions USD)": 5.0,
+    "Opportunity Type": "PCB Assembly",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Karnataka (IN)",
+    "City": "Bangalore",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 61.19
+  },
+  {
+    "Created on": "2026-06-24 09:18:14",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "Wattic Motors",
+    "Opportunity": "Wattic Motors's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Power Electronics & Electrical",
+    "Revenue (Millions USD)": 5.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Tamil Nadu (IN)",
+    "City": "Kanchipuram",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 92.07
+  },
+  {
+    "Created on": "2026-06-24 09:13:08",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "PORTESCAP INDIA PRIVATE LIMITED",
+    "Opportunity": "PORTESCAP INDIA PRIVATE LIMITED's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Power Electronics & Electrical",
+    "Revenue (Millions USD)": 250.0,
+    "Opportunity Type": "PCB Assembly",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Maharashtra (IN)",
+    "City": "Thane",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 51.35
+  },
+  {
+    "Created on": "2026-06-24 09:09:08",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "IMPEL GROUP",
+    "Opportunity": "IMPEL GROUP's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Power Electronics & Electrical",
+    "Revenue (Millions USD)": 300.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Gujarat (IN)",
+    "City": "Rajkot",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 92.07
+  },
+  {
+    "Created on": "2026-06-24 07:52:38",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "Elcen Machines Pvt Ltd",
+    "Opportunity": "Elcen Machines Pvt Ltd's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Power Electronics & Electrical",
+    "Revenue (Millions USD)": 2.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Gujarat (IN)",
+    "City": "Vadodara",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 92.07
+  },
+  {
+    "Created on": "2026-06-24 07:47:53",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "Hozon 70",
+    "Opportunity": "Hozon Tech Innovation Pvt. Ltd. (Hozon 70)'s opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Consumer Electronics & Appliances",
+    "Revenue (Millions USD)": 5.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Maharashtra (IN)",
+    "City": "Navi Mumbai",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 51.35
+  },
+  {
+    "Created on": "2026-06-24 07:43:43",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "ZEPCO TECHNOLOGIES PRIVATE LIMITED",
+    "Opportunity": "ZEPCO TECHNOLOGIES PRIVATE LIMITED's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Power Electronics & Electrical",
+    "Revenue (Millions USD)": 5.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Karnataka (IN)",
+    "City": "Bengaluru",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 61.19
+  },
+  {
+    "Created on": "2026-06-24 07:40:02",
+    "Source": false,
+    "RFQ Date": null,
+    "Company Name": "EPTRON ENERGY SOLUTIONS PRIVATE LIMITED",
+    "Opportunity": "EPTRON ENERGY SOLUTIONS PRIVATE LIMITED's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Power Electronics & Electrical",
+    "Revenue (Millions USD)": 4.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Uttar Pradesh (IN)",
+    "City": "Noida",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 99.28
+  },
+  {
+    "Created on": "2026-06-24 07:29:11",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "Jayashree Electrodevices Pvt Ltd",
+    "Opportunity": "Jayashree Electrodevices Pvt Ltd's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Power Electronics & Electrical",
+    "Revenue (Millions USD)": 5.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Maharashtra (IN)",
+    "City": "Pune",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 51.35
+  },
+  {
+    "Created on": "2026-06-24 07:25:32",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "MoveMatic",
+    "Opportunity": "MoveMatic's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Power Electronics & Electrical",
+    "Revenue (Millions USD)": 5.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Maharashtra (IN)",
+    "City": "Aurangabad",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 51.35
+  },
+  {
+    "Created on": "2026-06-24 07:22:04",
+    "Source": false,
+    "RFQ Date": null,
+    "Company Name": "KONMOS TECHNOLOGIES PRIVATE LIMITED",
+    "Opportunity": "KONMOS TECHNOLOGIES PRIVATE LIMITED's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Power Electronics & Electrical",
+    "Revenue (Millions USD)": 5.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Gujarat (IN)",
+    "City": "Rajkot",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 97.37
+  },
+  {
+    "Created on": "2026-06-24 07:17:51",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "LAKSHMI ELECTRICAL DRIVES PVT LIMITED",
+    "Opportunity": "LAKSHMI ELECTRICAL DRIVES PVT LIMITED's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Power Electronics & Electrical",
+    "Revenue (Millions USD)": 10.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Tamil Nadu (IN)",
+    "City": "Coimbatore",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 92.07
+  },
+  {
+    "Created on": "2026-06-24 06:32:12",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "Electromotive Power Drives Private Ltd",
+    "Opportunity": "Electromotive Power Drives Private Ltd's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Power Electronics & Electrical",
+    "Revenue (Millions USD)": 5.0,
+    "Opportunity Type": "Box Build",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Tamil Nadu (IN)",
+    "City": "Coimbatore",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 92.07
+  },
+  {
+    "Created on": "2026-06-24 06:28:43",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "APT Electronics Pvt. Ltd.",
+    "Opportunity": "APT Electronics Pvt. Ltd.'s opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Power Electronics & Electrical",
+    "Revenue (Millions USD)": 4.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Uttar Pradesh (IN)",
+    "City": "Noida",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 97.74
+  },
+  {
+    "Created on": "2026-06-24 06:20:58",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "Hexmoto Controls Pvt Ltd",
+    "Opportunity": "Hexmoto Controls Pvt Ltd's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Power Electronics & Electrical",
+    "Revenue (Millions USD)": 8.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Karnataka (IN)",
+    "City": "Mysore",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 61.19
+  },
+  {
+    "Created on": "2026-06-24 06:18:13",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "TSUYO MANUFACTURING PRIVATE LIMITED",
+    "Opportunity": "TSUYO MANUFACTURING PRIVATE LIMITED's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Automotive & EV",
+    "Revenue (Millions USD)": 15.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Delhi (IN)",
+    "City": "Delhi",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 92.07
+  },
+  {
+    "Created on": "2026-06-24 06:12:44",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "REVOH INNOVATIONS PRIVATE LIMITED",
+    "Opportunity": "REVOH INNOVATIONS PRIVATE LIMITED's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Automotive & EV",
+    "Revenue (Millions USD)": 5.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Tamil Nadu (IN)",
+    "City": "Chennai",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 92.07
+  },
+  {
+    "Created on": "2026-06-24 06:08:27",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "Unipower Transformers Pvt Ltd",
+    "Opportunity": "Unipower Transformers Pvt Ltd's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Power Electronics & Electrical",
+    "Revenue (Millions USD)": 16.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Kerala (IN)",
+    "City": "Ernakulam",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 87.23
+  },
+  {
+    "Created on": "2026-06-24 06:06:12",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "KOTSONS OVERSEAS PRIVATE LIMITED",
+    "Opportunity": "KOTSONS OVERSEAS PRIVATE LIMITED's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Power Electronics & Electrical",
+    "Revenue (Millions USD)": 50.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Rajasthan (IN)",
+    "City": "Alwar",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 92.07
+  },
+  {
+    "Created on": "2026-06-24 05:57:44",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "SPR EMF INNOVATIONS PRIVATE LIMITED",
+    "Opportunity": "SPR EMF INNOVATIONS PRIVATE LIMITED's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Power Electronics & Electrical",
+    "Revenue (Millions USD)": 6.0,
+    "Opportunity Type": "Box Build",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Tamil Nadu (IN)",
+    "City": "Coimbatore",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 92.07
+  },
+  {
+    "Created on": "2026-06-24 05:54:38",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "LS ELECTRIC India",
+    "Opportunity": "LS ELECTRIC India's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Power Electronics & Electrical",
+    "Revenue (Millions USD)": 5.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Karnataka (IN)",
+    "City": "Bangalore",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 61.19
+  },
+  {
+    "Created on": "2026-06-24 05:35:26",
+    "Source": false,
+    "RFQ Date": null,
+    "Company Name": "INSIGHT SEMICONDUCTOR CORPORATION",
+    "Opportunity": "INSIGHT SEMICONDUCTOR CORPORATION's opportunity-EB-43-PL-481-02-1764",
+    "Contact Name": false,
+    "Email": "NA",
+    "Phone": "NA",
+    "Salesperson": "Elecbits",
+    "Next Follow up": null,
+    "Industry Segment": false,
+    "Revenue (Millions USD)": 0.0,
+    "Opportunity Type": false,
+    "Expected Revenue": 0.0,
+    "Stage": "RFQ Received",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Haryana (IN)",
+    "City": "Gurugram",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 95.65
+  },
+  {
+    "Created on": "2026-06-24 05:28:04",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "HEI Power System Pvt. Ltd.",
+    "Opportunity": "HEI Power System Pvt. Ltd.'s opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Semiconductors & Embedded",
+    "Revenue (Millions USD)": 4.1,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Rajasthan (IN)",
+    "City": "Jaipur",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 92.07
+  },
+  {
     "Created on": "2026-06-24 05:24:54",
     "Source": "Zoom Info",
     "RFQ Date": null,
@@ -6605,23 +7397,23 @@
     "RFQ Date": null,
     "Company Name": "Ceremorphic, Inc.",
     "Opportunity": "Ceremorphic, Inc.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Sekhar Abburi",
+    "Email": "sekhar.abburi@ceremorphic.com",
+    "Phone": "+91 98480 15882",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Semiconductors & Embedded",
     "Revenue (Millions USD)": 11.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Telangana (IN)",
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 51.45
+    "Probability": 4.22
   },
   {
     "Created on": "2026-06-24 04:35:41",
@@ -6629,23 +7421,23 @@
     "RFQ Date": null,
     "Company Name": "TENSTORRENT INDIA PRIVATE LIMITED",
     "Opportunity": "TENSTORRENT INDIA PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Pragnajit Datta Roy",
+    "Email": "NA",
+    "Phone": "+91 99723 00807",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Semiconductors & Embedded",
     "Revenue (Millions USD)": 100.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bengaluru",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 61.29
+    "Probability": 3.0
   },
   {
     "Created on": "2026-06-24 04:18:43",
@@ -6653,23 +7445,23 @@
     "RFQ Date": null,
     "Company Name": "SIGNITUDE PRIVATE LIMITED",
     "Opportunity": "SIGNITUDE PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Akshay Kumar",
+    "Email": "akshay.kumar@signitude.com",
+    "Phone": "+91 81231 78903",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Semiconductors & Embedded",
     "Revenue (Millions USD)": 3.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bengaluru",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 61.29
+    "Probability": 6.18
   },
   {
     "Created on": "2026-06-23 12:20:40",
@@ -6738,7 +7530,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 59.59
@@ -6858,7 +7650,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 59.27
@@ -7122,7 +7914,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 6.2
@@ -7194,7 +7986,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 59.27
@@ -7482,7 +8274,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 59.27
@@ -7554,7 +8346,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 6.2
@@ -7722,7 +8514,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 6.2
@@ -7746,7 +8538,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 6.2
@@ -8944,9 +9736,9 @@
     "Expected Revenue": 0.0,
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
-    "Country": false,
-    "State": false,
-    "City": false,
+    "Country": "India",
+    "State": "Karnataka (IN)",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 50.0
@@ -8969,7 +9761,7 @@
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
@@ -9045,7 +9837,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 66.78
+    "Probability": 61.19
   },
   {
     "Created on": "2026-06-19 07:42:31",
@@ -9304,9 +10096,9 @@
     "Expected Revenue": 1311000.0,
     "Stage": "Won",
     "Won/Lost": "Won",
-    "Country": false,
-    "State": false,
-    "City": false,
+    "Country": "India",
+    "State": "Karnataka (IN)",
+    "City": "Bangalore",
     "Closed Date": "2026-06-18 15:14:56",
     "Expected Closing": null,
     "Probability": 100.0
@@ -9789,7 +10581,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 2.59
+    "Probability": 2.03
   },
   {
     "Created on": "2026-06-18 05:40:47",
@@ -9858,7 +10650,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.66
@@ -9928,9 +10720,9 @@
     "Expected Revenue": 0.0,
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
-    "Country": false,
-    "State": false,
-    "City": false,
+    "Country": "India",
+    "State": "Delhi (IN)",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 50.0
@@ -9952,9 +10744,9 @@
     "Expected Revenue": 0.0,
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
-    "Country": false,
-    "State": false,
-    "City": false,
+    "Country": "India",
+    "State": "Delhi (IN)",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 50.0
@@ -10077,7 +10869,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 55.57
+    "Probability": 49.57
   },
   {
     "Created on": "2026-06-17 10:14:24",
@@ -10386,7 +11178,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 0.36
@@ -10533,7 +11325,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 71.14
+    "Probability": 51.35
   },
   {
     "Created on": "2026-06-17 07:46:17",
@@ -10696,12 +11488,12 @@
     "Expected Revenue": 0.0,
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
-    "Country": false,
+    "Country": "India",
     "State": false,
     "City": false,
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 93.41
+    "Probability": 93.37
   },
   {
     "Created on": "2026-06-17 07:13:33",
@@ -10768,9 +11560,9 @@
     "Expected Revenue": 0.0,
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
-    "Country": false,
-    "State": false,
-    "City": false,
+    "Country": "India",
+    "State": "Karnataka (IN)",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 50.0
@@ -10864,12 +11656,12 @@
     "Expected Revenue": 0.0,
     "Stage": "Open",
     "Won/Lost": "Pending",
-    "Country": false,
+    "Country": "India",
     "State": false,
     "City": false,
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.28
+    "Probability": 93.94
   },
   {
     "Created on": "2026-06-17 06:43:55",
@@ -11109,7 +11901,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 28.54
+    "Probability": 76.46
   },
   {
     "Created on": "2026-06-17 04:49:09",
@@ -12717,7 +13509,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 4.69
+    "Probability": 4.22
   },
   {
     "Created on": "2026-06-15 06:36:11",
@@ -13041,19 +13833,19 @@
     "Email": "hari.k@trydantech.com",
     "Phone": "+91 97471 67311",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": null,
+    "Next Follow up": "2026-06-25",
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 7.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 700000.0,
-    "Stage": "Open",
+    "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Kerala (IN)",
     "City": "Thiruvananthapuram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 22.19
+    "Probability": 23.13
   },
   {
     "Created on": "2026-06-11 07:19:23",
@@ -13087,21 +13879,21 @@
     "Opportunity": "AQUAAIRX AUTONOMOUS SYSTEMS's opportunity",
     "Contact Name": "Jitendra K. Saini",
     "Email": "jitendrasaini@aquaairx.com",
-    "Phone": "+91 97179 96567",
+    "Phone": "+91 77387 37763",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": null,
+    "Next Follow up": "2026-06-26",
     "Industry Segment": "Aerospace & Defense",
     "Revenue (Millions USD)": 2.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 200000.0,
-    "Stage": "Open",
+    "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 1.0
+    "Probability": 6.5
   },
   {
     "Created on": "2026-06-11 07:05:53",
@@ -13133,11 +13925,11 @@
     "RFQ Date": null,
     "Company Name": "Aerpace Industries Ltd",
     "Opportunity": "Aerpace Industries Ltd's opportunity",
-    "Contact Name": "Aarav Matiwala",
-    "Email": "aarav.matiwala@aerpace.com",
-    "Phone": "+91 96991 18887",
+    "Contact Name": "Milan H. Shah",
+    "Email": "mshah@aerpace.com",
+    "Phone": "+91 83560 61211",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": null,
+    "Next Follow up": "2026-06-25",
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 1.2,
     "Opportunity Type": "Component Sourcing",
@@ -13149,7 +13941,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.9
+    "Probability": 4.22
   },
   {
     "Created on": "2026-06-11 06:41:01",
@@ -13181,11 +13973,11 @@
     "RFQ Date": null,
     "Company Name": "Redon",
     "Opportunity": "Redon's opportunity",
-    "Contact Name": "Sachin Agarwal",
-    "Email": "sachin@redonindia.com",
-    "Phone": "+91 71840 62366",
+    "Contact Name": "Sumit Aggarwal",
+    "Email": "sumit@redonindia.com",
+    "Phone": "+91 99535 35425",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": null,
+    "Next Follow up": "2026-06-25",
     "Industry Segment": "Aerospace & Defense",
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
@@ -13197,7 +13989,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 1.0
+    "Probability": 6.18
   },
   {
     "Created on": "2026-06-11 06:17:12",
@@ -13221,7 +14013,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 1.0
+    "Probability": 6.18
   },
   {
     "Created on": "2026-06-11 06:10:37",
@@ -13229,9 +14021,9 @@
     "RFQ Date": null,
     "Company Name": "Crimson Energy Experts Pvt Ltd",
     "Opportunity": "Crimson Energy Experts Pvt Ltd's opportunity",
-    "Contact Name": "Gireesh Gopidas",
-    "Email": "gireesh@crimsonenergy.in",
-    "Phone": "+91 84485 82355",
+    "Contact Name": "Manoj Sharma",
+    "Email": "manoj@crimsonenergy.in",
+    "Phone": "+91 70424 29619",
     "Salesperson": "Aadit Nair",
     "Next Follow up": null,
     "Industry Segment": "Aerospace & Defense",
@@ -13241,11 +14033,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Delhi (IN)",
-    "City": "Delhi",
+    "State": "New Delhi (IN)",
+    "City": "New Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 44.28
+    "Probability": 22.19
   },
   {
     "Created on": "2026-06-11 06:05:43",
@@ -14853,7 +15645,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 73.32
+    "Probability": 75.59
   },
   {
     "Created on": "2026-06-09 09:01:28",
@@ -14949,7 +15741,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.9
+    "Probability": 4.22
   },
   {
     "Created on": "2026-06-09 08:02:35",
@@ -15141,7 +15933,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 18.76
+    "Probability": 59.49
   },
   {
     "Created on": "2026-06-09 06:45:01",
@@ -15861,7 +16653,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 8.36
+    "Probability": 4.22
   },
   {
     "Created on": "2026-06-08 11:08:58",
@@ -16121,11 +16913,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 89.46
+    "Probability": 75.83
   },
   {
     "Created on": "2026-06-08 10:26:16",
@@ -16509,7 +17301,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 3.01
+    "Probability": 3.0
   },
   {
     "Created on": "2026-06-08 07:45:09",
@@ -16533,7 +17325,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 8.36
+    "Probability": 4.22
   },
   {
     "Created on": "2026-06-08 07:21:31",
@@ -16653,7 +17445,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 16.03
+    "Probability": 4.22
   },
   {
     "Created on": "2026-06-04 11:39:20",
@@ -16713,19 +17505,19 @@
     "Email": false,
     "Phone": "+91 79829 11678 / 9999079172",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-06-24",
+    "Next Follow up": null,
     "Industry Segment": "Telecom & Networking",
     "Revenue (Millions USD)": 360.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 100000.0,
-    "Stage": "Connected",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Uttar Pradesh (IN)",
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 97.64
+    "Probability": 98.86
   },
   {
     "Created on": "2026-06-04 11:12:51",
@@ -16734,8 +17526,8 @@
     "Company Name": "Lanner Electronics (India)",
     "Opportunity": "Lanner Electronics (India)'s opportunity",
     "Contact Name": "Vicky Pathak",
-    "Email": "vicky_pathak@lannerinc.com",
-    "Phone": "+91 90536 22364 ext. 135",
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Aadit Nair",
     "Next Follow up": null,
     "Industry Segment": "Telecom & Networking",
@@ -16749,7 +17541,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 15.11
+    "Probability": 49.24
   },
   {
     "Created on": "2026-06-04 11:07:14",
@@ -16773,7 +17565,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.2
+    "Probability": 6.18
   },
   {
     "Created on": "2026-06-04 10:51:01",
@@ -17181,7 +17973,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.85
+    "Probability": 6.18
   },
   {
     "Created on": "2026-06-04 06:45:29",
@@ -17373,7 +18165,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 1.08
+    "Probability": 6.18
   },
   {
     "Created on": "2026-06-04 05:37:12",
@@ -17685,7 +18477,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 16.03
+    "Probability": 4.22
   },
   {
     "Created on": "2026-06-02 10:08:10",
@@ -18453,7 +19245,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 59.98
+    "Probability": 4.31
   },
   {
     "Created on": "2026-06-02 05:09:48",
@@ -18861,7 +19653,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 44.06
+    "Probability": 4.22
   },
   {
     "Created on": "2026-06-01 11:00:05",
@@ -19269,7 +20061,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 44.06
+    "Probability": 4.22
   },
   {
     "Created on": "2026-06-01 07:12:30",
@@ -19941,7 +20733,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 4.24
+    "Probability": 4.22
   },
   {
     "Created on": "2026-05-26 11:25:10",
@@ -20253,7 +21045,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.9
+    "Probability": 4.22
   },
   {
     "Created on": "2026-05-26 08:02:42",
@@ -20301,7 +21093,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 20.52
+    "Probability": 6.18
   },
   {
     "Created on": "2026-05-26 07:24:04",
@@ -20493,7 +21285,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 17.22
+    "Probability": 59.49
   },
   {
     "Created on": "2026-05-25 12:31:49",
@@ -20565,7 +21357,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.9
+    "Probability": 4.22
   },
   {
     "Created on": "2026-05-25 10:51:33",
@@ -21141,7 +21933,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 5.56
+    "Probability": 27.81
   },
   {
     "Created on": "2026-05-25 05:16:38",
@@ -21429,7 +22221,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 98.13
+    "Probability": 51.35
   },
   {
     "Created on": "2026-05-20 10:37:46",
@@ -21449,11 +22241,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
-    "City": "New Delhi",
+    "State": "Delhi (IN)",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 22.19
+    "Probability": 32.65
   },
   {
     "Created on": "2026-05-20 10:32:13",
@@ -21477,7 +22269,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 98.13
+    "Probability": 51.35
   },
   {
     "Created on": "2026-05-20 09:04:32",
@@ -21537,7 +22329,7 @@
     "Email": "NA",
     "Phone": "+91 98712 95005",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-06-24",
+    "Next Follow up": "2026-06-25",
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 6.0,
     "Opportunity Type": "Component Sourcing",
@@ -21545,11 +22337,11 @@
     "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
-    "City": "New Delhi",
+    "State": "Delhi (IN)",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 17.49
+    "Probability": 18.56
   },
   {
     "Created on": "2026-05-20 07:50:07",
@@ -21569,11 +22361,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
-    "City": "New Delhi",
+    "State": "Delhi (IN)",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 19.67
+    "Probability": 18.56
   },
   {
     "Created on": "2026-05-20 07:46:35",
@@ -21609,19 +22401,19 @@
     "Email": "NA",
     "Phone": "+91 96010 21554 / +918882117773",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-06-24",
+    "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 15.1,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 1500000.0,
-    "Stage": "Follow Up Later",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 32.87
+    "Probability": 49.24
   },
   {
     "Created on": "2026-05-20 06:52:32",
@@ -21737,11 +22529,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 98.18
+    "Probability": 51.35
   },
   {
     "Created on": "2026-05-20 06:27:31",
@@ -21909,7 +22701,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 98.64
+    "Probability": 51.35
   },
   {
     "Created on": "2026-05-20 05:34:38",
@@ -22005,7 +22797,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 52.46
+    "Probability": 67.35
   },
   {
     "Created on": "2026-05-20 04:21:31",
@@ -22221,7 +23013,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 92.61
+    "Probability": 51.35
   },
   {
     "Created on": "2026-05-19 10:58:31",
@@ -22269,7 +23061,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 49.34
+    "Probability": 49.24
   },
   {
     "Created on": "2026-05-19 10:29:49",
@@ -22341,7 +23133,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 2.07
+    "Probability": 12.14
   },
   {
     "Created on": "2026-05-19 09:54:13",
@@ -22362,7 +23154,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 6.2
@@ -22869,7 +23661,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 38.52
+    "Probability": 6.18
   },
   {
     "Created on": "2026-05-18 11:43:55",
@@ -22937,11 +23729,11 @@
     "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
-    "City": "Bengaluru",
+    "State": "Karnataka (IN)",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 43.13
+    "Probability": 12.14
   },
   {
     "Created on": "2026-05-18 11:20:12",
@@ -23085,7 +23877,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.9
+    "Probability": 4.22
   },
   {
     "Created on": "2026-05-18 10:14:32",
@@ -23685,7 +24477,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 31.7
+    "Probability": 31.61
   },
   {
     "Created on": "2026-05-18 04:41:47",
@@ -23901,7 +24693,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.9
+    "Probability": 4.22
   },
   {
     "Created on": "2026-05-15 10:38:43",
@@ -24045,7 +24837,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.9
+    "Probability": 4.22
   },
   {
     "Created on": "2026-05-15 07:44:31",
@@ -24213,7 +25005,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.9
+    "Probability": 4.22
   },
   {
     "Created on": "2026-05-15 06:03:40",
@@ -24261,7 +25053,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.9
+    "Probability": 4.22
   },
   {
     "Created on": "2026-05-14 12:36:13",
@@ -24285,7 +25077,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 0.67
+    "Probability": 2.03
   },
   {
     "Created on": "2026-05-14 11:52:42",
@@ -24357,7 +25149,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 82.33
+    "Probability": 51.35
   },
   {
     "Created on": "2026-05-14 11:31:07",
@@ -24405,7 +25197,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 8.36
+    "Probability": 4.22
   },
   {
     "Created on": "2026-05-14 11:16:08",
@@ -24501,7 +25293,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 1.76
+    "Probability": 23.88
   },
   {
     "Created on": "2026-05-14 10:41:44",
@@ -24597,7 +25389,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 0.72
+    "Probability": 2.03
   },
   {
     "Created on": "2026-05-14 09:41:43",
@@ -24978,7 +25770,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 17.43
@@ -25197,7 +25989,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 82.33
+    "Probability": 51.35
   },
   {
     "Created on": "2026-05-12 11:27:56",
@@ -25221,7 +26013,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 38.52
+    "Probability": 6.18
   },
   {
     "Created on": "2026-05-12 11:16:22",
@@ -25293,7 +26085,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 38.52
+    "Probability": 6.18
   },
   {
     "Created on": "2026-05-12 10:58:59",
@@ -25749,7 +26541,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 1.22
+    "Probability": 6.18
   },
   {
     "Created on": "2026-05-12 06:13:18",
@@ -26589,7 +27381,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 81.07
+    "Probability": 8.47
   },
   {
     "Created on": "2026-05-09 12:36:33",
@@ -26634,7 +27426,7 @@
     "Won/Lost": "Pending",
     "Country": false,
     "State": "Karnataka (IN)",
-    "City": false,
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 6.88
@@ -27069,7 +27861,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 84.88
+    "Probability": 51.35
   },
   {
     "Created on": "2026-05-09 07:33:31",
@@ -27117,7 +27909,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 13.46
+    "Probability": 8.47
   },
   {
     "Created on": "2026-05-09 07:01:30",
@@ -27209,8 +28001,8 @@
     "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
-    "City": "New Delhi",
+    "State": "Delhi (IN)",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 60.0
@@ -27453,7 +28245,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 2.8
+    "Probability": 3.0
   },
   {
     "Created on": "2026-05-08 10:48:20",
@@ -27570,7 +28362,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bommasandra",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 38.52
@@ -28077,7 +28869,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 54.47
+    "Probability": 4.22
   },
   {
     "Created on": "2026-05-07 12:23:02",
@@ -28173,7 +28965,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 54.47
+    "Probability": 4.22
   },
   {
     "Created on": "2026-05-07 11:53:10",
@@ -28197,7 +28989,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 98.13
+    "Probability": 51.35
   },
   {
     "Created on": "2026-05-07 11:48:32",
@@ -28410,7 +29202,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 6.52
@@ -28725,7 +29517,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 73.63
+    "Probability": 31.61
   },
   {
     "Created on": "2026-05-07 10:00:48",
@@ -28842,10 +29634,10 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.52
+    "Probability": 6.5
   },
   {
     "Created on": "2026-05-06 09:54:37",
@@ -28869,7 +29661,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 98.13
+    "Probability": 51.35
   },
   {
     "Created on": "2026-05-06 09:51:17",
@@ -28989,7 +29781,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 0.71
+    "Probability": 2.14
   },
   {
     "Created on": "2026-05-06 07:27:21",
@@ -29037,7 +29829,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 59.77
+    "Probability": 6.3
   },
   {
     "Created on": "2026-05-06 07:14:29",
@@ -29061,7 +29853,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 98.13
+    "Probability": 51.35
   },
   {
     "Created on": "2026-05-06 07:03:02",
@@ -29273,11 +30065,11 @@
     "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Telangana (IN)",
-    "City": "Bengaluru",
+    "State": "Karnataka (IN)",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 8.5
+    "Probability": 12.14
   },
   {
     "Created on": "2026-05-06 05:55:42",
@@ -29661,7 +30453,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 2.04
+    "Probability": 2.03
   },
   {
     "Created on": "2026-05-05 11:00:18",
@@ -30017,11 +30809,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Maharashtra (IN)",
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 3.97
+    "Probability": 3.0
   },
   {
     "Created on": "2026-05-05 09:53:23",
@@ -30117,7 +30909,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 44.06
+    "Probability": 4.22
   },
   {
     "Created on": "2026-05-05 09:39:28",
@@ -30210,7 +31002,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 12.18
@@ -30354,7 +31146,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 12.18
@@ -30549,7 +31341,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 92.22
+    "Probability": 49.57
   },
   {
     "Created on": "2026-05-04 11:44:04",
@@ -30570,10 +31362,10 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Delhi (IN)",
-    "City": "New Delhi",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 35.4
+    "Probability": 19.39
   },
   {
     "Created on": "2026-05-04 11:43:18",
@@ -30741,7 +31533,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 68.94
+    "Probability": 33.46
   },
   {
     "Created on": "2026-05-04 11:34:28",
@@ -30837,7 +31629,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 30.88
+    "Probability": 8.47
   },
   {
     "Created on": "2026-05-04 11:30:13",
@@ -30957,7 +31749,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 22.4
+    "Probability": 6.18
   },
   {
     "Created on": "2026-04-30 16:59:50",
@@ -31074,7 +31866,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": false,
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 6.2
@@ -31269,7 +32061,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 22.4
+    "Probability": 12.33
   },
   {
     "Created on": "2026-04-30 11:06:40",
@@ -31413,7 +32205,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 22.4
+    "Probability": 17.37
   },
   {
     "Created on": "2026-04-30 09:31:57",
@@ -31625,11 +32417,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Uttar Pradesh (IN)",
-    "City": "New Delhi",
+    "State": "Delhi (IN)",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 46.04
+    "Probability": 18.56
   },
   {
     "Created on": "2026-04-28 07:18:08",
@@ -31737,7 +32529,7 @@
     "Email": "preetam@visiontek.co.in",
     "Phone": "+91 97016 01332",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-06-24",
+    "Next Follow up": "2026-06-26",
     "Industry Segment": "EMS & Electronics Mfg",
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "PCB Assembly",
@@ -31965,7 +32757,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 70.61
+    "Probability": 6.5
   },
   {
     "Created on": "2026-04-25 04:12:12",
@@ -32205,7 +32997,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 1.22
+    "Probability": 6.18
   },
   {
     "Created on": "2026-04-23 07:59:59",
@@ -32417,11 +33209,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
-    "City": "Bengaluru",
+    "State": "Karnataka (IN)",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 37.44
+    "Probability": 12.14
   },
   {
     "Created on": "2026-04-22 11:44:52",
@@ -32901,7 +33693,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 96.61
+    "Probability": 1.21
   },
   {
     "Created on": "2026-04-17 12:17:47",
@@ -33021,7 +33813,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 25.31
+    "Probability": 6.5
   },
   {
     "Created on": "2026-04-17 12:03:44",
@@ -33165,7 +33957,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 25.31
+    "Probability": 6.5
   },
   {
     "Created on": "2026-04-17 09:32:18",
@@ -33189,7 +33981,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 1.05
+    "Probability": 6.5
   },
   {
     "Created on": "2026-04-17 09:27:38",
@@ -33429,7 +34221,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 25.31
+    "Probability": 6.5
   },
   {
     "Created on": "2026-04-16 04:19:53",
@@ -33666,7 +34458,7 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bengaluru",
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 6.2
@@ -33765,7 +34557,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 0.67
+    "Probability": 3.16
   },
   {
     "Created on": "2026-04-14 05:38:04",
@@ -33789,7 +34581,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 25.31
+    "Probability": 6.5
   },
   {
     "Created on": "2026-04-14 05:32:50",
@@ -35201,11 +35993,11 @@
     "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
-    "City": "New Delhi",
+    "State": "Delhi (IN)",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 5.3
+    "Probability": 5.68
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -35225,11 +36017,11 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 84.42
+    "Probability": 33.45
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -35517,7 +36309,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 78.64
+    "Probability": 70.57
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -35921,11 +36713,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.19
+    "Probability": 76.69
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -36138,10 +36930,10 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Delhi (IN)",
-    "City": "New Delhi",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.0
+    "Probability": 5.97
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -36257,11 +37049,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 5.3
+    "Probability": 0.81
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -36285,7 +37077,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 2.99
+    "Probability": 1.71
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -36425,7 +37217,7 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
@@ -36497,7 +37289,7 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
@@ -36569,11 +37361,11 @@
     "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 65.74
+    "Probability": 15.42
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -36621,7 +37413,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 0.34
+    "Probability": 1.8
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -36713,7 +37505,7 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
@@ -36929,7 +37721,7 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
@@ -37101,7 +37893,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 0.6
+    "Probability": 3.52
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -37401,7 +38193,7 @@
     "Email": "santoshhreddy@drogodrones.com",
     "Phone": "+91 70951 92473",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-06-23",
+    "Next Follow up": "2026-06-24",
     "Industry Segment": "Aerospace & Defense",
     "Revenue (Millions USD)": 1.26,
     "Opportunity Type": "PCB Assembly",
@@ -37449,7 +38241,7 @@
     "Email": "anurag.b@thedronedestination.com",
     "Phone": "+91 80104 67949",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-06-24",
+    "Next Follow up": "2026-06-25",
     "Industry Segment": "Aerospace & Defense",
     "Revenue (Millions USD)": 3.1,
     "Opportunity Type": "PCB Assembly",
@@ -37502,14 +38294,14 @@
     "Revenue (Millions USD)": 2.7,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 200000.0,
-    "Stage": "Open",
+    "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Odisha (IN)",
     "City": "Bhadrak",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 8.47
+    "Probability": 7.0
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -37749,7 +38541,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 4.32
+    "Probability": 1.8
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -37838,14 +38630,14 @@
     "Revenue (Millions USD)": 6.6,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 600000.0,
-    "Stage": "Connected",
+    "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 0.33
+    "Probability": 1.8
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -37937,7 +38729,7 @@
     "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
@@ -38249,11 +39041,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 7.0
+    "Probability": 1.71
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -38781,7 +39573,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 14.45
+    "Probability": 8.47
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -39213,7 +40005,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 36.01
+    "Probability": 16.13
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -39401,11 +40193,11 @@
     "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 62.68
+    "Probability": 27.94
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -39833,7 +40625,7 @@
     "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
@@ -40725,7 +41517,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 23.23
+    "Probability": 2.43
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -40985,11 +41777,11 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
-    "City": false,
+    "State": "Uttar Pradesh (IN)",
+    "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 3.6
+    "Probability": 19.14
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -41301,7 +42093,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 10.28
+    "Probability": 23.88
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -41321,8 +42113,8 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
-    "City": "New Delhi",
+    "State": "Delhi (IN)",
+    "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 30.0
@@ -41829,7 +42621,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 93.95
+    "Probability": 30.59
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -42045,7 +42837,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 99.85
+    "Probability": 49.99
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -42237,7 +43029,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 83.24
+    "Probability": 42.88
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -42621,7 +43413,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.46
+    "Probability": 17.65
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -43169,11 +43961,11 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 59.41
+    "Probability": 25.25
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -43265,7 +44057,7 @@
     "Stage": "RFQ Expected",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
@@ -43385,11 +44177,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.0
+    "Probability": 31.03
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -43533,7 +44325,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 70.63
+    "Probability": 17.35
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -45237,7 +46029,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 40.78
+    "Probability": 6.5
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -45261,7 +46053,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 26.22
+    "Probability": 4.53
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -45525,7 +46317,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 48.11
+    "Probability": 61.19
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -45645,7 +46437,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 0.45
+    "Probability": 6.5
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -45837,7 +46629,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 95.11
+    "Probability": 51.35
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -46005,7 +46797,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 0.4
+    "Probability": 6.18
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -46173,7 +46965,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 0.4
+    "Probability": 6.18
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -47133,7 +47925,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 95.11
+    "Probability": 51.35
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -47157,7 +47949,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 0.4
+    "Probability": 6.18
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -47253,7 +48045,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 24.79
+    "Probability": 4.31
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -47277,7 +48069,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 73.17
+    "Probability": 8.63
   },
   {
     "Created on": "2026-04-09 05:33:03",
