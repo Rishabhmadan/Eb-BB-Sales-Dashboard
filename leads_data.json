@@ -782,12 +782,12 @@
     "Revenue (Millions USD)": 3.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 573239.0,
-    "Stage": "RFQ Received",
+    "Stage": "Won",
     "Won/Lost": "Won",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
-    "Closed Date": null,
+    "Closed Date": "2026-06-24 11:55:36",
     "Expected Closing": "2026-06-17",
     "Probability": 100.0
   },
@@ -1226,7 +1226,7 @@
   {
     "Created on": "2026-06-10 09:47:35",
     "Source": "Zoom Info",
-    "RFQ Date": null,
+    "RFQ Date": "2026-06-24",
     "Company Name": "Gogate Electrosystems Pvt. Ltd.",
     "Opportunity": "Gogate Electrosystems Pvt. Ltd.'s opportunity",
     "Contact Name": "Shailesh Fartale",
@@ -1245,7 +1245,7 @@
     "City": "Nashik",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 20.0
+    "Probability": 30.0
   },
   {
     "Created on": "2026-06-10 07:38:22",
@@ -6509,9 +6509,9 @@
     "RFQ Date": null,
     "Company Name": "GEEP INDUSTRIES (INDIA) PRIVATE LIMITED",
     "Opportunity": "GEEP INDUSTRIES (INDIA) PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Jawed Shaikh",
+    "Email": "NA",
+    "Phone": "+91 96645 39231",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -6525,7 +6525,7 @@
     "City": "Thane",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 51.35
+    "Probability": 4.17
   },
   {
     "Created on": "2026-06-24 11:39:28",
@@ -6533,9 +6533,9 @@
     "RFQ Date": null,
     "Company Name": "ADWIN POWER TECHNOLOGY",
     "Opportunity": "ADWIN POWER TECHNOLOGY's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Dheeraj Kumar Dhiman",
+    "Email": "NA",
+    "Phone": "+91 72062 24334",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -6549,7 +6549,7 @@
     "City": "Yamunanagar",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 92.07
+    "Probability": 32.36
   },
   {
     "Created on": "2026-06-24 11:29:22",
@@ -6557,9 +6557,9 @@
     "RFQ Date": null,
     "Company Name": "Hynetic Electronics Pvt. Ltd",
     "Opportunity": "Hynetic Electronics Pvt. Ltd's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Mahesh Babu",
+    "Email": "mahesh@hynetic.com",
+    "Phone": "+91 89041 41824",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -6573,7 +6573,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 61.19
+    "Probability": 12.14
   },
   {
     "Created on": "2026-06-24 11:13:18",
@@ -6581,13 +6581,13 @@
     "RFQ Date": null,
     "Company Name": "LEDURE LIGHTINGS LIMITED",
     "Opportunity": "LEDURE LIGHTINGS LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Mohit Kalia",
+    "Email": "NA",
+    "Phone": "+91 88602 06540",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
-    "Revenue (Millions USD)": 57.4,
+    "Revenue (Millions USD)": 21.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
     "Stage": "Market Research",
@@ -6597,7 +6597,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 97.74
+    "Probability": 60.41
   },
   {
     "Created on": "2026-06-24 11:00:48",
@@ -34213,7 +34213,7 @@
     "Industry Segment": "EMS & Electronics Mfg",
     "Revenue (Millions USD)": 69.7,
     "Opportunity Type": "Design",
-    "Expected Revenue": 8100000.0,
+    "Expected Revenue": 810000.0,
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
