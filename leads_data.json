@@ -1244,7 +1244,7 @@
     "State": "Maharashtra (IN)",
     "City": "Nashik",
     "Closed Date": null,
-    "Expected Closing": null,
+    "Expected Closing": "2026-06-29",
     "Probability": 30.0
   },
   {
@@ -4622,13 +4622,13 @@
     "Revenue (Millions USD)": 9.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 900000.0,
-    "Stage": "RFQ Received",
+    "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": false,
     "City": "Pune",
     "Closed Date": null,
-    "Expected Closing": "2026-06-26",
+    "Expected Closing": null,
     "Probability": 40.0
   },
   {
@@ -4940,7 +4940,7 @@
     "State": false,
     "City": "Hyderabad",
     "Closed Date": null,
-    "Expected Closing": "2026-06-29",
+    "Expected Closing": "2026-06-30",
     "Probability": 40.0
   },
   {
@@ -37289,11 +37289,11 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
-    "City": "Haryana",
+    "State": "Haryana (IN)",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.45
+    "Probability": 92.62
   },
   {
     "Created on": "2026-04-09 05:33:03",
