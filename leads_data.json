@@ -161,11 +161,11 @@
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
+    "State": "Karnataka (IN)",
     "City": "Bengaluru",
     "Closed Date": null,
     "Expected Closing": "2026-06-23",
-    "Probability": 92.54
+    "Probability": 82.01
   },
   {
     "Created on": "2026-06-08 11:38:06",
