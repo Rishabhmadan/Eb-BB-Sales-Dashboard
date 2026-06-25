@@ -1261,7 +1261,7 @@
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 22.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 2200000.0,
+    "Expected Revenue": 200000.0,
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -15278,14 +15278,14 @@
     "Revenue (Millions USD)": 73.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 3000000.0,
-    "Stage": "Open",
+    "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 49.67
+    "Probability": 45.78
   },
   {
     "Created on": "2026-06-10 06:02:54",
