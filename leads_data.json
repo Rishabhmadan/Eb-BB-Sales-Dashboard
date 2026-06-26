@@ -2793,7 +2793,7 @@
     "Email": "pratik@cleanelectric.in",
     "Phone": "+91 77748 14879",
     "Salesperson": "Ruchit Nambiar",
-    "Next Follow up": "2026-06-26",
+    "Next Follow up": "2026-06-27",
     "Industry Segment": "Energy & CleanTech",
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Box Build",
@@ -2805,7 +2805,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": "2026-07-06",
-    "Probability": 40.0
+    "Probability": 20.0
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -6526,6 +6526,30 @@
     "Closed Date": null,
     "Expected Closing": "2026-11-29",
     "Probability": 73.23
+  },
+  {
+    "Created on": "2026-06-26 12:18:44",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "Sidharth Shutters & Automation Pvt Ltd",
+    "Opportunity": "Sidharth Shutters & Automation Pvt Ltd's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Industrial Automation & Robotics",
+    "Revenue (Millions USD)": 6.0,
+    "Opportunity Type": "PCB Assembly",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Rajasthan (IN)",
+    "City": "Jaipur",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 87.6
   },
   {
     "Created on": "2026-06-26 11:32:02",
@@ -16518,8 +16542,8 @@
     "Company Name": "Bharati Robotic Systems",
     "Opportunity": "Bharati Robotic Systems's opportunity",
     "Contact Name": "Adarsh Tiloda",
-    "Email": "adarsh@brsindia.com",
-    "Phone": "+91 97687 69941",
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "Industrial Automation & Robotics",
@@ -16533,7 +16557,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 3.42
+    "Probability": 21.25
   },
   {
     "Created on": "2026-06-11 07:14:57",
@@ -20702,7 +20726,7 @@
     "Revenue (Millions USD)": 10.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 300000.0,
-    "Stage": "Connected",
+    "Stage": "RFQ Expected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
