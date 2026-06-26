@@ -6578,7 +6578,7 @@
   {
     "Created on": "2026-06-26 04:14:27",
     "Source": false,
-    "RFQ Date": null,
+    "RFQ Date": "2026-06-25",
     "Company Name": "DETECT TECHNOLOGIES PRIVATE LIMITED",
     "Opportunity": "DETECT TECHNOLOGIES PRIVATE LIMITED - EB-42-ML-460-02-1767",
     "Contact Name": false,
@@ -6588,7 +6588,7 @@
     "Next Follow up": null,
     "Industry Segment": false,
     "Revenue (Millions USD)": 0.0,
-    "Opportunity Type": false,
+    "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
