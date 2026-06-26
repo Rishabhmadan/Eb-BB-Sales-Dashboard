@@ -6528,6 +6528,30 @@
     "Probability": 73.23
   },
   {
+    "Created on": "2026-06-26 10:43:26",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "FAAC India Pvt Ltd",
+    "Opportunity": "FAAC India Pvt Ltd's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Industrial Automation & Robotics",
+    "Revenue (Millions USD)": 5.0,
+    "Opportunity Type": "PCB Assembly",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Tamil Nadu (IN)",
+    "City": "Chennai",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 87.6
+  },
+  {
     "Created on": "2026-06-26 10:39:03",
     "Source": "Zoom Info",
     "RFQ Date": null,
@@ -16950,8 +16974,8 @@
     "Company Name": "Mahati Industries",
     "Opportunity": "Mahati Industries's opportunity",
     "Contact Name": "Sujay Uday Shah",
-    "Email": "sujay@mahati.com",
-    "Phone": "+91 98220 22500",
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "Power Electronics & Electrical",
@@ -16965,7 +16989,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 11.84
+    "Probability": 21.25
   },
   {
     "Created on": "2026-06-10 09:43:01",
@@ -17198,14 +17222,14 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 1000000.0,
-    "Stage": "Open",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 83.01
+    "Probability": 91.11
   },
   {
     "Created on": "2026-06-10 07:24:51",
