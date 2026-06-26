@@ -6528,6 +6528,30 @@
     "Probability": 73.23
   },
   {
+    "Created on": "2026-06-26 12:51:06",
+    "Source": false,
+    "RFQ Date": null,
+    "Company Name": "KAZAM EV TECH PRIVATE LIMITED",
+    "Opportunity": "KAZAM EV TECH PRIVATE LIMITED's opportunity",
+    "Contact Name": "Akshay Shekhar",
+    "Email": "akshay@kazam.in",
+    "Phone": "+91 88989 45314",
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": false,
+    "Revenue (Millions USD)": 0.0,
+    "Opportunity Type": false,
+    "Expected Revenue": 0.0,
+    "Stage": "Open",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Karnataka (IN)",
+    "City": "Bengaluru",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 29.8
+  },
+  {
     "Created on": "2026-06-26 12:31:51",
     "Source": "Zoom Info",
     "RFQ Date": null,
@@ -7934,14 +7958,14 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
     "City": "Coimbatore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 80.65
+    "Probability": 87.6
   },
   {
     "Created on": "2026-06-25 11:32:45",
@@ -9391,21 +9415,21 @@
     "Opportunity": "EUROCON INSTRUMENTS PRIVATE LIMITED's opportunity",
     "Contact Name": false,
     "Email": "NA",
-    "Phone": false,
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 2.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 67.24
+    "Probability": 86.17
   },
   {
     "Created on": "2026-06-24 09:50:04",
@@ -17342,14 +17366,14 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 500000.0,
-    "Stage": "RFQ Expected",
+    "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 4.3
+    "Probability": 3.91
   },
   {
     "Created on": "2026-06-10 09:17:02",
@@ -18009,19 +18033,19 @@
     "Email": "zain@enord.co",
     "Phone": "+91 82852 48801",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-06-26",
+    "Next Follow up": "2026-06-27",
     "Industry Segment": "Aerospace & Defense",
     "Revenue (Millions USD)": 1.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 100000.0,
-    "Stage": "Follow Up Later",
+    "Stage": "RFQ Expected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 30.73
+    "Probability": 32.12
   },
   {
     "Created on": "2026-06-09 12:13:06",
@@ -25737,7 +25761,7 @@
     "Email": "alhad@agelectronics.in",
     "Phone": "+91 98908 21290",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": null,
+    "Next Follow up": "2026-06-27",
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
@@ -25749,7 +25773,7 @@
     "City": "Nagpur",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 7.45
+    "Probability": 3.71
   },
   {
     "Created on": "2026-05-19 11:27:16",
@@ -25809,7 +25833,7 @@
     "Email": "pankaj@nantatech.com",
     "Phone": "+91 97376 90155",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": null,
+    "Next Follow up": "2026-06-29",
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 6.1,
     "Opportunity Type": "Component Sourcing",
@@ -25817,11 +25841,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Gujarat (IN)",
+    "State": false,
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 22.19
+    "Probability": 24.47
   },
   {
     "Created on": "2026-05-19 10:34:24",
@@ -26597,23 +26621,23 @@
     "RFQ Date": null,
     "Company Name": "Toshi Automation Solutions Limited",
     "Opportunity": "Toshi Automation Solutions Limited",
-    "Contact Name": "Ramesh Chand Sharma",
-    "Email": "ramesh@toshiautomation.com",
-    "Phone": "+91 93159 50726",
+    "Contact Name": "Kajal Thakur",
+    "Email": "kajal.thakur@toshiautomation.com",
+    "Phone": "+91 93159 50724",
     "Salesperson": "Aadit Nair",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 1.68,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 100000.0,
-    "Stage": "Open",
+    "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Uttar Pradesh (IN)",
     "City": "Ghaziabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 77.12
+    "Probability": 61.23
   },
   {
     "Created on": "2026-05-18 11:01:52",
@@ -48006,7 +48030,7 @@
     "Company Name": "NSP",
     "Opportunity": "NSP",
     "Contact Name": "Manoj Kumar",
-    "Email": false,
+    "Email": "NA",
     "Phone": "+91 99453 00632",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": "2026-04-01",
@@ -48021,7 +48045,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 62.58
+    "Probability": 49.3
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -48054,7 +48078,7 @@
     "Company Name": "Cyient DLM",
     "Opportunity": "Cyient DLM",
     "Contact Name": "Boopathy",
-    "Email": false,
+    "Email": "NA",
     "Phone": "9606050352",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": "2026-02-11",
@@ -48069,7 +48093,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 49.2
+    "Probability": 8.12
   },
   {
     "Created on": "2026-04-09 05:33:03",
