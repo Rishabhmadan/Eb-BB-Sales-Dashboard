@@ -17286,8 +17286,8 @@
     "Company Name": "Bhagwati Products Limited",
     "Opportunity": "Bhagwati Products Limited's opportunity",
     "Contact Name": "Sanjeev Rathi",
-    "Email": "sanjeev.rathi@bhagwatiproductsltd.com",
-    "Phone": "+91 98251 32053",
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -17301,7 +17301,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 44.28
+    "Probability": 74.81
   },
   {
     "Created on": "2026-06-10 09:12:05",
@@ -17502,8 +17502,8 @@
     "Company Name": "ANSCER Robotics",
     "Opportunity": "ANSCER Robotics's opportunity",
     "Contact Name": "Raj Mohan",
-    "Email": "raj@anscer.com",
-    "Phone": "+91 74085 62562",
+    "Email": "NA",
+    "Phone": "+91 97394 99716",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "Industrial Automation & Robotics",
@@ -17517,7 +17517,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 27.7
+    "Probability": 4.13
   },
   {
     "Created on": "2026-06-10 06:41:12",
