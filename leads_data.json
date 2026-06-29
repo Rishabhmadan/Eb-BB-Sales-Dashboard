@@ -6504,8 +6504,32 @@
     "Probability": 73.23
   },
   {
+    "Created on": "2026-06-29 07:51:14",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "Spartan Engineering Industries Pvt. Ltd.",
+    "Opportunity": "Spartan Engineering Industries Pvt. Ltd.'s opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Industrial Automation & Robotics",
+    "Revenue (Millions USD)": 120.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Maharashtra (IN)",
+    "City": "Mumbai",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 36.83
+  },
+  {
     "Created on": "2026-06-29 07:42:05",
-    "Source": false,
+    "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "L.T. ELEVATOR PRIVATE LIMITED",
     "Opportunity": "L.T. ELEVATOR PRIVATE LIMITED's opportunity",
@@ -6514,18 +6538,18 @@
     "Phone": false,
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
-    "Industry Segment": false,
+    "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 13.0,
-    "Opportunity Type": false,
+    "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
     "Stage": "Market Research",
     "Won/Lost": "Pending",
-    "Country": false,
-    "State": false,
-    "City": false,
+    "Country": "India",
+    "State": "West Bengal (IN)",
+    "City": "Kolkata",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 95.54
+    "Probability": 36.83
   },
   {
     "Created on": "2026-06-29 07:37:49",
@@ -18629,9 +18653,9 @@
     "RFQ Date": null,
     "Company Name": "Nachi Technology India Pvt Ltd",
     "Opportunity": "Nachi Technology India Pvt. Ltd.",
-    "Contact Name": "Naresh Kumar",
-    "Email": "naresh@nachi-india.com",
-    "Phone": "+91 92143 10620",
+    "Contact Name": "Vivek Samriya",
+    "Email": "vivek@nachi-india.com",
+    "Phone": "+91 72298 33040",
     "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -19430,7 +19454,7 @@
     "Revenue (Millions USD)": 900.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 1000000.0,
-    "Stage": "Open",
+    "Stage": "Need Warm Intro",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
@@ -19581,7 +19605,7 @@
     "City": "Kanakapura",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 25.14
+    "Probability": 30.0
   },
   {
     "Created on": "2026-06-10 05:28:11",
@@ -20030,14 +20054,14 @@
     "Revenue (Millions USD)": 6.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 300000.0,
-    "Stage": "Open",
+    "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Gujarat (IN)",
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 22.15
+    "Probability": 30.0
   },
   {
     "Created on": "2026-06-09 11:21:35",
@@ -20078,7 +20102,7 @@
     "Revenue (Millions USD)": 15.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 400000.0,
-    "Stage": "Open",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Gujarat (IN)",
@@ -20286,8 +20310,8 @@
     "Company Name": "TurboNet Systems Pvt Ltd.",
     "Opportunity": "TurboNet Systems Pvt Ltd.'s opportunity",
     "Contact Name": "Margarita F. Soans",
-    "Email": "margarita@turbonet.co.in",
-    "Phone": "+91 91520 22753",
+    "Email": "NA",
+    "Phone": "+91 99306 66970",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "Industrial Automation & Robotics",
@@ -20301,7 +20325,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 8.36
+    "Probability": 1.42
   },
   {
     "Created on": "2026-06-09 07:37:57",
@@ -21076,7 +21100,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "Supertek",
-    "Opportunity": "Supertek's opportunity",
+    "Opportunity": "Supertek",
     "Contact Name": "Poonam",
     "Email": "support@supertekglassware.com",
     "Phone": "+91 86075 12121",
@@ -21093,7 +21117,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 60.48
+    "Probability": 62.64
   },
   {
     "Created on": "2026-06-08 11:32:11",
@@ -21141,7 +21165,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 4.22
+    "Probability": 20.0
   },
   {
     "Created on": "2026-06-08 11:08:58",
@@ -22062,8 +22086,8 @@
     "Company Name": "Sargent & Greenleaf India",
     "Opportunity": "Sargent & Greenleaf India's opportunity",
     "Contact Name": "Brian B. Leary",
-    "Email": "bleary@sargentandgreenleaf.com",
-    "Phone": "+91 85643 03455",
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "IoT & Smart Devices",
@@ -22077,7 +22101,7 @@
     "City": "Navi Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.9
+    "Probability": 19.69
   },
   {
     "Created on": "2026-06-04 10:43:23",
