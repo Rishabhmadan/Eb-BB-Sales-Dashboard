@@ -6505,7 +6505,7 @@
   },
   {
     "Created on": "2026-06-29 09:35:36",
-    "Source": false,
+    "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "Boldrocchi Group",
     "Opportunity": "Boldrocchi Group's opportunity",
@@ -6514,18 +6514,18 @@
     "Phone": false,
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
-    "Industry Segment": false,
+    "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 50.0,
-    "Opportunity Type": false,
+    "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
     "Stage": "Market Research",
     "Won/Lost": "Pending",
-    "Country": false,
-    "State": false,
-    "City": false,
+    "Country": "India",
+    "State": "Haryana (IN)",
+    "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 95.54
+    "Probability": 92.66
   },
   {
     "Created on": "2026-06-29 09:26:12",
@@ -10687,7 +10687,7 @@
     "Opportunity": "Thermo Electric Company - COTEMP Sensing's opportunity",
     "Contact Name": "Kumar Ranjan",
     "Email": "NA",
-    "Phone": "+91 90545 10813",
+    "Phone": "+91 85273 44151",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -10701,7 +10701,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 21.47
+    "Probability": 23.77
   },
   {
     "Created on": "2026-06-25 06:08:50",
@@ -20532,7 +20532,7 @@
     "Next Follow up": "2026-06-15",
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 4.0,
-    "Opportunity Type": "Component Sourcing",
+    "Opportunity Type": "Box Build",
     "Expected Revenue": 1000000.0,
     "Stage": "Open",
     "Won/Lost": "Pending",
@@ -21494,14 +21494,14 @@
     "Revenue (Millions USD)": 2.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 200000.0,
-    "Stage": "Follow Up Later",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Telangana (IN)",
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 1.5
+    "Probability": 2.93
   },
   {
     "Created on": "2026-06-08 10:29:15",
