@@ -19493,9 +19493,9 @@
     "RFQ Date": null,
     "Company Name": "Auto Ignition Ltd.",
     "Opportunity": "Auto Ignition Ltd",
-    "Contact Name": "Vishnu Dutt Dixit",
-    "Email": "vishnu.dixit@autolek.com",
-    "Phone": "+91 99099 45535",
+    "Contact Name": "Manish Chaube",
+    "Email": "manishchaube@gmail.com",
+    "Phone": "+91 98970 29269",
     "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -20102,7 +20102,7 @@
     "Revenue (Millions USD)": 12.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 300000.0,
-    "Stage": "Need Warm Intro",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "West Bengal (IN)",
@@ -23501,9 +23501,9 @@
     "RFQ Date": null,
     "Company Name": "Furukawa Electric India",
     "Opportunity": "Furukawa Electric India's opportunity",
-    "Contact Name": "Rakesh Singh Rajpoot",
+    "Contact Name": "Indrasen Vishwakarma",
     "Email": "rakesh.rajpoot@furukawaminda.com",
-    "Phone": "+91 98123 42332",
+    "Phone": "+91 96079 00957",
     "Salesperson": "Aadit Nair",
     "Next Follow up": null,
     "Industry Segment": "EMS & Electronics Mfg",
@@ -23517,7 +23517,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 29.76
+    "Probability": 29.88
   },
   {
     "Created on": "2026-06-02 06:45:42",
@@ -46289,11 +46289,11 @@
     "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Delhi (IN)",
+    "State": false,
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 63.55
+    "Probability": 46.15
   },
   {
     "Created on": "2026-04-09 05:33:03",
