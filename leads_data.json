@@ -162,10 +162,10 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bangalore",
+    "City": "Bengaluru",
     "Closed Date": null,
     "Expected Closing": "2026-06-23",
-    "Probability": 86.2
+    "Probability": 84.77
   },
   {
     "Created on": "2026-06-08 11:38:06",
@@ -1748,7 +1748,7 @@
     "State": "Maharashtra (IN)",
     "City": "Pune",
     "Closed Date": null,
-    "Expected Closing": "2026-06-30",
+    "Expected Closing": "2026-07-07",
     "Probability": 30.35
   },
   {
@@ -4436,7 +4436,7 @@
     "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
-    "Expected Closing": "2026-06-29",
+    "Expected Closing": "2026-07-07",
     "Probability": 36.46
   },
   {
@@ -26654,14 +26654,14 @@
     "Revenue (Millions USD)": 1.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 200000.0,
-    "Stage": "Connected",
+    "Stage": "RFQ Expected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Uttar Pradesh (IN)",
     "City": "Ghaziabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 61.37
+    "Probability": 65.74
   },
   {
     "Created on": "2026-05-26 09:38:55",
