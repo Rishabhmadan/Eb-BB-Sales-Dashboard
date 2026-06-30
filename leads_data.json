@@ -12093,7 +12093,7 @@
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 30.66
+    "Probability": 31.55
   },
   {
     "Created on": "2026-06-24 10:54:26",
@@ -20165,9 +20165,9 @@
     "RFQ Date": null,
     "Company Name": "Accolade Electronics Private Limited",
     "Opportunity": "Accolade Electronics Private Limited's opportunity",
-    "Contact Name": "Prashant Mathurkar",
-    "Email": "NA",
-    "Phone": "NA",
+    "Contact Name": "Shriram Deshmukh",
+    "Email": "shriram.deshmukh@accoladeelectronics.com",
+    "Phone": "+91 77740 55095",
     "Salesperson": "Aadit Nair",
     "Next Follow up": null,
     "Industry Segment": "EMS & Electronics Mfg",
@@ -20181,7 +20181,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 21.25
+    "Probability": 4.02
   },
   {
     "Created on": "2026-06-10 09:57:41",
@@ -22973,9 +22973,9 @@
     "RFQ Date": null,
     "Company Name": "V-Marc India Limited",
     "Opportunity": "V-Marc India Limited's opportunity",
-    "Contact Name": "Anurag Madan",
-    "Email": "NA",
-    "Phone": "+91 98199 97606",
+    "Contact Name": "Lata Sachdeva",
+    "Email": "lata.sachdeva@v-marc.in",
+    "Phone": "+91 90688 81530",
     "Salesperson": "Aadit Nair",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -22989,7 +22989,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 3.0
+    "Probability": 10.67
   },
   {
     "Created on": "2026-06-08 07:45:09",
@@ -24374,14 +24374,14 @@
     "Revenue (Millions USD)": 15.7,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 1500000.0,
-    "Stage": "Follow Up Later",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Telangana (IN)",
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 12.42
+    "Probability": 8.08
   },
   {
     "Created on": "2026-06-02 09:19:22",
