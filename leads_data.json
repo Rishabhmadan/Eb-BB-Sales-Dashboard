@@ -4094,7 +4094,7 @@
     "Revenue (Millions USD)": 217.2,
     "Opportunity Type": "PCB fabrication",
     "Expected Revenue": 10000.0,
-    "Stage": "RFQ Received",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": false,
     "State": "Haryana (IN)",
@@ -12223,7 +12223,7 @@
     "Opportunity": "ADWIN POWER TECHNOLOGY's opportunity",
     "Contact Name": "Dheeraj Kumar Dhiman",
     "Email": "NA",
-    "Phone": "+91 72062 24334",
+    "Phone": "+91 1732 282 058",
     "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -12320,7 +12320,7 @@
     "Contact Name": "Ashish Shukla",
     "Email": "ashish@orangeplus.in",
     "Phone": "+91 70002 59199, +91 74113 96297",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 21.0,
@@ -12333,7 +12333,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 70.65
+    "Probability": 66.01
   },
   {
     "Created on": "2026-06-24 10:50:48",
@@ -38246,14 +38246,14 @@
     "Revenue (Millions USD)": 1.5,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 100000.0,
-    "Stage": "Open",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Telangana (IN)",
     "City": "Secunderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 4.02
+    "Probability": 8.08
   },
   {
     "Created on": "2026-04-30 07:27:03",
