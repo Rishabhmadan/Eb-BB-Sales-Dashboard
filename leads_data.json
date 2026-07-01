@@ -6552,6 +6552,30 @@
     "Probability": 73.23
   },
   {
+    "Created on": "2026-07-01 09:14:28",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "GROZ ENGINEERING TOOLS PRIVATE LIMITED",
+    "Opportunity": "GROZ ENGINEERING TOOLS PRIVATE LIMITED's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Industrial Automation & Robotics",
+    "Revenue (Millions USD)": 500.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Haryana (IN)",
+    "City": "Gurugram",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 92.53
+  },
+  {
     "Created on": "2026-07-01 09:02:45",
     "Source": "Zoom Info",
     "RFQ Date": null,
@@ -25613,9 +25637,9 @@
     "RFQ Date": null,
     "Company Name": "Salto Systems India",
     "Opportunity": "Salto Systems India",
-    "Contact Name": "Jasmine Johnson",
-    "Email": "j.johnson@saltosystems.com",
-    "Phone": "+91 77084 50494    (770) 450-1226",
+    "Contact Name": "Heena S. Virjee",
+    "Email": "h.virjee@saltosystems.com",
+    "Phone": "+91 40 4430 5363",
     "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
@@ -25629,7 +25653,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 39.74
+    "Probability": 30.0
   },
   {
     "Created on": "2026-06-02 09:21:42",
