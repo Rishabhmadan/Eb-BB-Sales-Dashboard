@@ -6774,8 +6774,8 @@
     "Company Name": "ConQuerent (Madhu Group)",
     "Opportunity": "ConQuerent (Madhu Group)'s opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
@@ -6789,7 +6789,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 92.53
+    "Probability": 91.62
   },
   {
     "Created on": "2026-07-04 18:26:16",
