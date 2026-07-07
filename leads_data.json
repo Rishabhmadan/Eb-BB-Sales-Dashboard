@@ -6696,6 +6696,30 @@
     "Probability": 73.23
   },
   {
+    "Created on": "2026-07-07 07:44:54",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "Classic Signages Pvt Ltd",
+    "Opportunity": "Classic Signages Pvt Ltd's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Consumer Electronics & Appliances",
+    "Revenue (Millions USD)": 11.3,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Rajasthan (IN)",
+    "City": "Jaipur",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 86.29
+  },
+  {
     "Created on": "2026-07-07 07:33:31",
     "Source": "Zoom Info",
     "RFQ Date": null,
@@ -34157,9 +34181,9 @@
     "RFQ Date": null,
     "Company Name": "Ritesh Das",
     "Opportunity": "Consistent Infosystems",
-    "Contact Name": "Yogesh Agrawal",
-    "Email": "yogesh@consistent.in",
-    "Phone": "+91 6465 450 302, +91 9386850514",
+    "Contact Name": "Aditya Prakash",
+    "Email": "aditya@consistent.in",
+    "Phone": "+91 95993 89108, +91 11 4106 1819",
     "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -34173,7 +34197,7 @@
     "City": "New Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 70.0
+    "Probability": 40.0
   },
   {
     "Created on": "2026-05-20 11:12:57",
