@@ -7662,22 +7662,22 @@
     "Company Name": "VOLTHERM TECHNOLOGIES LLP",
     "Opportunity": "VOLTHERM TECHNOLOGIES LLP's opportunity",
     "Contact Name": "Hardik Shrimali",
-    "Email": "hardik@volthermtechnologies.com",
-    "Phone": "+91 96241 39613",
+    "Email": "NA",
+    "Phone": "+91 74859 18169",
     "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Gujarat (IN)",
     "City": "Gandhinagar",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 44.84
+    "Probability": 18.9
   },
   {
     "Created on": "2026-07-07 12:15:40",
@@ -7717,15 +7717,15 @@
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 7.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Expected Revenue": 500000.0,
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Chattisgarh (IN)",
     "City": "Raipur",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 91.5
+    "Probability": 20.0
   },
   {
     "Created on": "2026-07-07 12:05:55",
@@ -7759,7 +7759,7 @@
     "Opportunity": "NAKODA PRODUCTS's opportunity",
     "Contact Name": "Bhavin Pathak",
     "Email": "NA",
-    "Phone": "+91 99250 07665",
+    "Phone": "+91 265 258 0663",
     "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -8192,7 +8192,7 @@
     "Contact Name": "G.K. Premkumar",
     "Email": "NA",
     "Phone": "+91 99533 20270",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 15.0,
@@ -8205,7 +8205,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 21.48
+    "Probability": 18.9
   },
   {
     "Created on": "2026-07-07 07:26:01",
@@ -8216,7 +8216,7 @@
     "Contact Name": "Sawan Kumar Sinha",
     "Email": "sawan.sinha@indiabulls.com",
     "Phone": "+91 97164 44545",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Aadit Nair",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 10.0,
@@ -8229,7 +8229,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.88
+    "Probability": 5.92
   },
   {
     "Created on": "2026-07-07 07:19:42",
@@ -8240,7 +8240,7 @@
     "Contact Name": "Yogesh Yadav",
     "Email": "NA",
     "Phone": "+91 93114 20890",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 26.0,
@@ -8253,7 +8253,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 50.49
+    "Probability": 46.49
   },
   {
     "Created on": "2026-07-07 07:06:27",
@@ -8264,7 +8264,7 @@
     "Contact Name": "Jalpan Shah",
     "Email": "jalpan.shah@vihanmodular.com",
     "Phone": "+91 91737 50003",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 10.0,
@@ -8277,7 +8277,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.88
+    "Probability": 5.92
   },
   {
     "Created on": "2026-07-07 07:01:36",
@@ -20121,19 +20121,19 @@
     "Email": "NA",
     "Phone": "+91 91769 70336",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-07-08",
+    "Next Follow up": "2026-07-11",
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 6.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 300000.0,
-    "Stage": "Connected",
+    "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 18.9
+    "Probability": 19.74
   },
   {
     "Created on": "2026-06-24 09:53:19",
