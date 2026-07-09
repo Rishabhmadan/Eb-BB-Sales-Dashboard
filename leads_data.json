@@ -8764,7 +8764,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "AMREST ELECTRICALS LIMITED",
-    "Opportunity": "AMREST ELECTRICALS LIMITED's opportunity",
+    "Opportunity": "AMREST ELECTRICALS LIMITED",
     "Contact Name": false,
     "Email": "NA",
     "Phone": "+91 74092 08030",
@@ -8773,7 +8773,7 @@
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 10.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
+    "Expected Revenue": 300000.0,
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -8781,7 +8781,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 30.8
+    "Probability": 25.0
   },
   {
     "Created on": "2026-07-07 10:40:21",
@@ -9368,7 +9368,7 @@
     "Contact Name": "Nishanth Nedoumarane",
     "Email": "nishanth.n@canautomotion.com",
     "Phone": "+61 418 138 959",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 10.0,
@@ -9381,7 +9381,7 @@
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 44.84
+    "Probability": 42.63
   },
   {
     "Created on": "2026-07-07 04:03:57",
@@ -9392,7 +9392,7 @@
     "Contact Name": "Mangesh Pawar",
     "Email": "mangesh_pawar@patvin.co.in",
     "Phone": "+91 93205 34427",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Aadit Nair",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 6.0,
@@ -9405,7 +9405,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.88
+    "Probability": 6.33
   },
   {
     "Created on": "2026-07-06 12:08:31",
@@ -9728,7 +9728,7 @@
     "Contact Name": "Sn Dwivedi",
     "Email": "sndwivedi@elcomponics.com",
     "Phone": "+91 98110 36426",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 7.0,
@@ -9741,7 +9741,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 63.21
+    "Probability": 73.48
   },
   {
     "Created on": "2026-07-06 10:29:25",
@@ -46653,7 +46653,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 63.21
+    "Probability": 73.48
   },
   {
     "Created on": "2026-04-28 05:37:15",
@@ -50085,7 +50085,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 95.1
+    "Probability": 94.93
   },
   {
     "Created on": "2026-04-09 05:33:03",
