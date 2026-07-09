@@ -6696,6 +6696,30 @@
     "Probability": 73.23
   },
   {
+    "Created on": "2026-07-09 07:41:37",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "Prasha Technologies Ltd.",
+    "Opportunity": "Prasha Technologies Ltd.'s opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Power Electronics & Electrical",
+    "Revenue (Millions USD)": 19.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Haryana (IN)",
+    "City": "Faridabad",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 94.76
+  },
+  {
     "Created on": "2026-07-09 06:35:58",
     "Source": "Zoom Info",
     "RFQ Date": null,
@@ -8990,7 +9014,7 @@
     "Revenue (Millions USD)": 1300.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 400000.0,
-    "Stage": "Open",
+    "Stage": "Need Warm Intro",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
@@ -9776,7 +9800,7 @@
     "Contact Name": "Anant Sudhakar Pachpande",
     "Email": "anant.pachpande@spectrum-india.com",
     "Phone": "+91 88066 67081",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 30.0,
@@ -9789,7 +9813,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.88
+    "Probability": 6.33
   },
   {
     "Created on": "2026-07-06 10:15:28",
@@ -52454,14 +52478,14 @@
     "Revenue (Millions USD)": 0.39,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 39000.0,
-    "Stage": "Dropped",
+    "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Uttar Pradesh (IN)",
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 51.75
+    "Probability": 57.52
   },
   {
     "Created on": "2026-04-09 05:33:03",
