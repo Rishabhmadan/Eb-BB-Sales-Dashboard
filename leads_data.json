@@ -6917,9 +6917,9 @@
     "RFQ Date": null,
     "Company Name": "UNILAMP COMPANY LIMITED",
     "Opportunity": "UNILAMP COMPANY LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Deepanshu Biswas",
+    "Email": "deepanshu_b@unilamp.co.th",
+    "Phone": "+91 98711 35550",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -6933,7 +6933,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.61
+    "Probability": 74.86
   },
   {
     "Created on": "2026-07-09 11:18:02",
