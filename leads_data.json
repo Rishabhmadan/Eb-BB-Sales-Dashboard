@@ -7205,9 +7205,9 @@
     "RFQ Date": null,
     "Company Name": "LIGMAN",
     "Opportunity": "LIGMAN's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Nilesh G. Virkar",
+    "Email": "NA",
+    "Phone": "+91 93207 62406",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7221,7 +7221,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 97.17
+    "Probability": 65.13
   },
   {
     "Created on": "2026-07-09 09:34:19",
@@ -7229,9 +7229,9 @@
     "RFQ Date": null,
     "Company Name": "Green Surfer LED",
     "Opportunity": "Green Surfer LED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Rohit Manike",
+    "Email": "NA",
+    "Phone": "rohit_manike@greensurfer.in",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7245,7 +7245,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.54
+    "Probability": 40.43
   },
   {
     "Created on": "2026-07-09 09:30:10",
@@ -7253,9 +7253,9 @@
     "RFQ Date": null,
     "Company Name": "Lance Lighting",
     "Opportunity": "Lance Lighting's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Dhaval J. Shah",
+    "Email": "dhaval.shah@lance.lighting",
+    "Phone": "+91 99797 75593",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7269,7 +7269,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.19
+    "Probability": 60.94
   },
   {
     "Created on": "2026-07-09 09:27:02",
@@ -7277,9 +7277,9 @@
     "RFQ Date": null,
     "Company Name": "CORVI LED LIMITED",
     "Opportunity": "CORVI LED LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Vimal J. Soni",
+    "Email": "vimal.soni@corvi.com",
+    "Phone": "+91 98200 95200",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7293,7 +7293,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.54
+    "Probability": 12.42
   },
   {
     "Created on": "2026-07-09 09:19:21",
@@ -7301,9 +7301,9 @@
     "RFQ Date": null,
     "Company Name": "KGN lights",
     "Opportunity": "KGN lights's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Nawaz Ali",
+    "Email": "nawaz.ali@kgnlights.com",
+    "Phone": "+91 90911 59089",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7317,7 +7317,7 @@
     "City": "Vasai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.54
+    "Probability": 12.42
   },
   {
     "Created on": "2026-07-09 09:14:00",
@@ -7325,9 +7325,9 @@
     "RFQ Date": null,
     "Company Name": "Shakti Industries",
     "Opportunity": "Shakti Industries's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Kamal Bihari",
+    "Email": "kamal@shaktiindustries.in",
+    "Phone": "+91 96965 17191",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7341,7 +7341,7 @@
     "City": "Vadodara",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.19
+    "Probability": 60.94
   },
   {
     "Created on": "2026-07-09 07:59:56",
