@@ -6822,8 +6822,8 @@
     "Company Name": "TEJASLITE LIGHTING SOLUTIONS PRIVATE LIMITED",
     "Opportunity": "TEJASLITE LIGHTING SOLUTIONS PRIVATE LIMITED's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -6837,7 +6837,7 @@
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.19
+    "Probability": 88.19
   },
   {
     "Created on": "2026-07-09 11:42:07",
@@ -7877,9 +7877,9 @@
     "RFQ Date": null,
     "Company Name": "Durasol Energi (Intelenergi Global Pvt. Ltd.)",
     "Opportunity": "Durasol Energi (Intelenergi Global Pvt. Ltd.)'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Anant Agarwal",
+    "Email": "anant@intelenergi.com",
+    "Phone": "anant@intelenergi.com ",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -7893,7 +7893,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.85
+    "Probability": 97.86
   },
   {
     "Created on": "2026-07-08 13:02:22",
@@ -7903,7 +7903,7 @@
     "Opportunity": "SPEON SENSORS's opportunity",
     "Contact Name": false,
     "Email": "NA",
-    "Phone": false,
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -7917,7 +7917,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 50.81
+    "Probability": 65.94
   },
   {
     "Created on": "2026-07-08 12:55:34",
