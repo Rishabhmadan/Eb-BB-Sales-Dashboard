@@ -7757,9 +7757,9 @@
     "RFQ Date": null,
     "Company Name": "Alba Urmet Communication & Security Pvt. Ltd.",
     "Opportunity": "Alba Urmet Communication & Security Pvt. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Biju Varghese",
+    "Email": "biju@albaurmet.com",
+    "Phone": "+91 95994 85961",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
@@ -7773,7 +7773,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.85
+    "Probability": 75.43
   },
   {
     "Created on": "2026-07-09 04:38:56",
@@ -7805,9 +7805,9 @@
     "RFQ Date": null,
     "Company Name": "Ashapower India Pvt. Ltd.",
     "Opportunity": "Ashapower India Pvt. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Deepak Raj",
+    "Email": "deepak.raj@ashapower.in",
+    "Phone": "na",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -7821,7 +7821,7 @@
     "City": "Cochin",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 89.82
+    "Probability": 95.63
   },
   {
     "Created on": "2026-07-09 04:28:12",
@@ -7829,9 +7829,9 @@
     "RFQ Date": null,
     "Company Name": "Rohal Technologies Pvt. Ltd.",
     "Opportunity": "Rohal Technologies Pvt. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Nikhil Rohal",
+    "Email": "nikhil@rohaltechnologies.com",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -7845,7 +7845,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.7
+    "Probability": 97.8
   },
   {
     "Created on": "2026-07-09 04:19:34",
