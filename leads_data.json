@@ -7109,9 +7109,9 @@
     "RFQ Date": null,
     "Company Name": "CANQUA LIGHTING PRIVATE LIMITED",
     "Opportunity": "CANQUA LIGHTING PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Rahul Gupta",
+    "Email": "rahul@canquaindia.com",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7125,7 +7125,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.61
+    "Probability": 97.8
   },
   {
     "Created on": "2026-07-09 09:54:35",
@@ -7133,9 +7133,9 @@
     "RFQ Date": null,
     "Company Name": "LAFIT LIGHTING SOLUTIONS LLP",
     "Opportunity": "LAFIT LIGHTING SOLUTIONS LLP's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Dispal Sakaria",
+    "Email": "dispal@lafitlighting.com",
+    "Phone": "+91 98213 39550",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7149,7 +7149,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.54
+    "Probability": 12.42
   },
   {
     "Created on": "2026-07-09 09:49:02",
@@ -7157,9 +7157,9 @@
     "RFQ Date": null,
     "Company Name": "Ariao Solutions",
     "Opportunity": "Ariao Solutions's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Ronak Shah",
+    "Email": "ronak@ariao.in",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7168,12 +7168,12 @@
     "Expected Revenue": 0.0,
     "Stage": "Market Research",
     "Won/Lost": "Pending",
-    "Country": false,
-    "State": false,
-    "City": false,
+    "Country": "India",
+    "State": "Maharashtra (IN)",
+    "City": "Palghar",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.0
+    "Probability": 67.88
   },
   {
     "Created on": "2026-07-09 09:46:44",
@@ -7181,9 +7181,9 @@
     "RFQ Date": null,
     "Company Name": "FORUS ELECTRIC PRIVATE LIMITED",
     "Opportunity": "FORUS ELECTRIC PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Uttam Goyal",
+    "Email": "uttam@foruselectric.com",
+    "Phone": "+91 85276 52687",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7197,7 +7197,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.61
+    "Probability": 74.86
   },
   {
     "Created on": "2026-07-09 09:42:52",
