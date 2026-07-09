@@ -6989,9 +6989,9 @@
     "RFQ Date": null,
     "Company Name": "AURRO ELECTRICALS",
     "Opportunity": "AURRO ELECTRICALS's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Raghav Vyas",
+    "Email": "NA",
+    "Phone": "+91 73260 92197",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -7005,7 +7005,7 @@
     "City": "Surat",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.19
+    "Probability": 33.38
   },
   {
     "Created on": "2026-07-09 10:52:32",
@@ -7019,7 +7019,7 @@
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
-    "Revenue (Millions USD)": 28.5,
+    "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
     "Stage": "Market Research",
@@ -7061,9 +7061,9 @@
     "RFQ Date": null,
     "Company Name": "API METROLOGY INDIA",
     "Opportunity": "API METROLOGY INDIA's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Vikas Nain",
+    "Email": "vikas.nain@apimetrology.com",
+    "Phone": "+91 87500 56364",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
@@ -7077,7 +7077,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.54
+    "Probability": 12.42
   },
   {
     "Created on": "2026-07-09 09:59:45",
@@ -7085,9 +7085,9 @@
     "RFQ Date": null,
     "Company Name": "ARRAYSTORM LIGHTING PRIVATE LIMITED",
     "Opportunity": "ARRAYSTORM LIGHTING PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Pradyoth Raj Varma",
+    "Email": "NA",
+    "Phone": "+91 96324 66885",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7101,7 +7101,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 70.45
+    "Probability": 11.5
   },
   {
     "Created on": "2026-07-09 09:57:25",
