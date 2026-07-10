@@ -6696,6 +6696,30 @@
     "Probability": 73.23
   },
   {
+    "Created on": "2026-07-10 10:09:25",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "SENSINOVA INDIA",
+    "Opportunity": "SENSINOVA INDIA's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "IoT & Smart Devices",
+    "Revenue (Millions USD)": 0.0,
+    "Opportunity Type": "PCB Assembly",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Gujarat (IN)",
+    "City": "Vadodara",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 90.19
+  },
+  {
     "Created on": "2026-07-10 09:27:35",
     "Source": "Zoom Info",
     "RFQ Date": null,
@@ -10965,7 +10989,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 5.92
+    "Probability": 6.33
   },
   {
     "Created on": "2026-07-06 11:04:46",
@@ -13422,8 +13446,8 @@
     "Company Name": "J.S. AUTO PVT LTD",
     "Opportunity": "J.S. AUTO PVT LTD's opportunity",
     "Contact Name": "Shubhneek Puri",
-    "Email": "NA",
-    "Phone": "NA",
+    "Email": "shubhneek@jsauto.co.in",
+    "Phone": "+91 95591 76900",
     "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
@@ -13437,7 +13461,7 @@
     "City": "Kanpur",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 92.99
+    "Probability": 73.48
   },
   {
     "Created on": "2026-07-02 11:35:25",
@@ -14606,14 +14630,14 @@
     "Revenue (Millions USD)": 8.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 24.78
+    "Probability": 40.43
   },
   {
     "Created on": "2026-07-01 12:14:58",
@@ -30125,23 +30149,23 @@
     "RFQ Date": null,
     "Company Name": "Bhagwati Products Limited",
     "Opportunity": "Bhagwati Products Limited's opportunity",
-    "Contact Name": "Sanjeev Rathi",
-    "Email": "sanjeev.rathi@bhagwatiproductsltd.com",
-    "Phone": "+91 98712 35299",
+    "Contact Name": "Biranchi Kumar",
+    "Email": "biranchi.kumar@bhagwatiproductsltd.com",
+    "Phone": "+91 98213 95627",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 4.4,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 1000000.0,
-    "Stage": "Open",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 31.55
+    "Probability": 74.86
   },
   {
     "Created on": "2026-06-10 09:12:05",
@@ -45537,7 +45561,7 @@
     "Email": "deepak.rawat@tipl.com",
     "Phone": "+91 83067 88860",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-07-09",
+    "Next Follow up": "2026-07-10",
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 8.8,
     "Opportunity Type": "PCB Assembly",
