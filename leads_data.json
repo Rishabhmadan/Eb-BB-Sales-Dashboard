@@ -10981,8 +10981,8 @@
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Expected Revenue": 500000.0,
+    "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Telangana (IN)",
@@ -30366,8 +30366,8 @@
     "Company Name": "ANSCER Robotics",
     "Opportunity": "ANSCER Robotics's opportunity",
     "Contact Name": "Raj Mohan",
-    "Email": "NA",
-    "Phone": "+91 97394 99716",
+    "Email": "raj@anscer.com",
+    "Phone": "+91 74085 62562, 8075581971",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "Industrial Automation & Robotics",
@@ -30381,7 +30381,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 4.13
+    "Probability": 74.17
   },
   {
     "Created on": "2026-06-10 06:41:12",
