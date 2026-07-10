@@ -10309,7 +10309,7 @@
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 20.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
+    "Expected Revenue": 400000.0,
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -13422,8 +13422,8 @@
     "Company Name": "J.S. AUTO PVT LTD",
     "Opportunity": "J.S. AUTO PVT LTD's opportunity",
     "Contact Name": "Shubhneek Puri",
-    "Email": "shubhneek@jsauto.co.in",
-    "Phone": "+91 95591 76900",
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
@@ -13437,7 +13437,7 @@
     "City": "Kanpur",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 63.21
+    "Probability": 92.99
   },
   {
     "Created on": "2026-07-02 11:35:25",
@@ -13517,7 +13517,7 @@
     "RFQ Date": null,
     "Company Name": "NK E Bikes",
     "Opportunity": "NK E Bikes's opportunity",
-    "Contact Name": false,
+    "Contact Name": "Mayur Wagh",
     "Email": "NA",
     "Phone": "+91 93277 60278",
     "Salesperson": "Riya Gupta",
@@ -13533,7 +13533,7 @@
     "City": "Ahmednagar",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 1.46
+    "Probability": 2.12
   },
   {
     "Created on": "2026-07-02 11:18:39",
@@ -29541,7 +29541,7 @@
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 32.72
+    "Probability": 43.95
   },
   {
     "Created on": "2026-06-11 05:52:18",
