@@ -34685,9 +34685,9 @@
     "RFQ Date": null,
     "Company Name": "Reintech Electronics Pvt. Ltd.",
     "Opportunity": "Reintech Electronics Pvt. Ltd.'s opportunity",
-    "Contact Name": "Lalta Prasad",
+    "Contact Name": "Ram Gopal Prajapati",
     "Email": "ram@reintech.in",
-    "Phone": "+91 70551 18701",
+    "Phone": "+91 76830 45996",
     "Salesperson": "Aadit Nair",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -58145,11 +58145,11 @@
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Uttar Pradesh (IN)",
+    "State": false,
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.18
+    "Probability": 69.88
   },
   {
     "Created on": "2026-04-09 05:33:03",
