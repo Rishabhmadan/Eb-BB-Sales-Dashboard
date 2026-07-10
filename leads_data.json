@@ -30374,7 +30374,7 @@
     "Revenue (Millions USD)": 40.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 1000000.0,
-    "Stage": "Open",
+    "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
@@ -30510,8 +30510,8 @@
     "Company Name": "Zenergize",
     "Opportunity": "Zenergize's opportunity",
     "Contact Name": "Navneet Daga",
-    "Email": "NA",
-    "Phone": "+91 80542 26761",
+    "Email": "navneet@zenergize.in",
+    "Phone": "+91 95601 55772",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "Power Electronics & Electrical",
@@ -30525,7 +30525,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 23.77
+    "Probability": 59.39
   },
   {
     "Created on": "2026-06-10 05:54:12",
