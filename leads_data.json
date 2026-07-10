@@ -4670,7 +4670,7 @@
     "Revenue (Millions USD)": 4.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 67500.0,
-    "Stage": "RFQ Received",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Gujarat (IN)",
@@ -26430,8 +26430,8 @@
     "Company Name": "RCRS INNOVATIONS LIMITED",
     "Opportunity": "RCRS INNOVATIONS LIMITED's opportunity",
     "Contact Name": "Aayush Goyal",
-    "Email": "agoyal@rcrsinnovations.com",
-    "Phone": "+91 83870 11022",
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Aadit Nair",
     "Next Follow up": "2026-07-10",
     "Industry Segment": "Power Electronics & Electrical",
@@ -26445,7 +26445,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 73.48
+    "Probability": 92.99
   },
   {
     "Created on": "2026-06-17 07:07:27",
@@ -29253,7 +29253,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 92.42
+    "Probability": 99.66
   },
   {
     "Created on": "2026-06-10 10:02:52",
@@ -31382,7 +31382,7 @@
     "Revenue (Millions USD)": 1.11,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 100000.0,
-    "Stage": "RFQ Received",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
@@ -47654,7 +47654,7 @@
     "Revenue (Millions USD)": 2.6,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 50000.0,
-    "Stage": "RFQ Received",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
@@ -61022,14 +61022,14 @@
     "Revenue (Millions USD)": 37.8,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 3000000.0,
-    "Stage": "Follow Up Later",
+    "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 15.93
+    "Probability": 16.16
   },
   {
     "Created on": "2026-04-09 05:33:03",
