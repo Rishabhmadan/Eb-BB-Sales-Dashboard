@@ -49790,14 +49790,14 @@
     "Revenue (Millions USD)": 4.45,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 400000.0,
-    "Stage": "Follow Up Later",
+    "Stage": "RFQ Expected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 42.23
+    "Probability": 45.35
   },
   {
     "Created on": "2026-04-23 09:22:10",
