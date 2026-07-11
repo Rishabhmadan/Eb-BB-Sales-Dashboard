@@ -6966,7 +6966,7 @@
     "Company Name": "SENSINOVA INDIA",
     "Opportunity": "SENSINOVA INDIA's opportunity",
     "Contact Name": false,
-    "Email": false,
+    "Email": "NA",
     "Phone": false,
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
@@ -6981,7 +6981,7 @@
     "City": "Vadodara",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.19
+    "Probability": 79.64
   },
   {
     "Created on": "2026-07-10 09:27:35",
@@ -7014,7 +7014,7 @@
     "Company Name": "McCoy Appliances",
     "Opportunity": "McCoy Appliances's opportunity",
     "Contact Name": false,
-    "Email": false,
+    "Email": "NA",
     "Phone": false,
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
@@ -7029,7 +7029,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.54
+    "Probability": 26.23
   },
   {
     "Created on": "2026-07-10 07:52:00",
@@ -7038,7 +7038,7 @@
     "Company Name": "Grooves Audio & Lifestyle",
     "Opportunity": "Grooves Audio & Lifestyle's opportunity",
     "Contact Name": false,
-    "Email": false,
+    "Email": "NA",
     "Phone": false,
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
@@ -7053,7 +7053,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 97.17
+    "Probability": 93.58
   },
   {
     "Created on": "2026-07-10 07:39:16",
@@ -7062,7 +7062,7 @@
     "Company Name": "HOPPUP India",
     "Opportunity": "HOPPUP India's opportunity",
     "Contact Name": false,
-    "Email": false,
+    "Email": "NA",
     "Phone": false,
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
@@ -7077,7 +7077,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.61
+    "Probability": 88.19
   },
   {
     "Created on": "2026-07-10 07:26:03",
@@ -7110,7 +7110,7 @@
     "Company Name": "Vaku Luxos",
     "Opportunity": "Vaku Luxos's opportunity",
     "Contact Name": false,
-    "Email": false,
+    "Email": "NA",
     "Phone": false,
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
@@ -7125,7 +7125,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.61
+    "Probability": 88.19
   },
   {
     "Created on": "2026-07-10 06:46:43",
@@ -7158,7 +7158,7 @@
     "Company Name": "TEMPT SMART PRIVATE LIMITED",
     "Opportunity": "TEMPT SMART PRIVATE LIMITED's opportunity",
     "Contact Name": false,
-    "Email": false,
+    "Email": "NA",
     "Phone": false,
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
@@ -7173,7 +7173,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.61
+    "Probability": 88.19
   },
   {
     "Created on": "2026-07-10 06:36:39",
@@ -7182,7 +7182,7 @@
     "Company Name": "ACWO LIFESTYLE PRIVATE LIMITED",
     "Opportunity": "ACWO LIFESTYLE PRIVATE LIMITED's opportunity",
     "Contact Name": false,
-    "Email": false,
+    "Email": "NA",
     "Phone": false,
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
@@ -7197,7 +7197,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.54
+    "Probability": 26.23
   },
   {
     "Created on": "2026-07-10 06:23:31",
@@ -7254,7 +7254,7 @@
     "Company Name": "Shivam Electricals Pvt. Ltd.",
     "Opportunity": "Shivam Electricals Pvt. Ltd.'s opportunity",
     "Contact Name": false,
-    "Email": false,
+    "Email": "NA",
     "Phone": false,
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
@@ -7269,7 +7269,7 @@
     "City": "Thane",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.54
+    "Probability": 26.23
   },
   {
     "Created on": "2026-07-10 05:55:57",
@@ -7830,7 +7830,7 @@
     "Company Name": "GOURAV LUMINARIES PRIVATE LIMITED",
     "Opportunity": "GOURAV LUMINARIES PRIVATE LIMITED's opportunity",
     "Contact Name": false,
-    "Email": false,
+    "Email": "NA",
     "Phone": false,
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
@@ -7845,7 +7845,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.61
+    "Probability": 88.19
   },
   {
     "Created on": "2026-07-09 11:31:47",
@@ -11696,7 +11696,7 @@
     "Contact Name": "Dhruv Singhal",
     "Email": "dhruv@ambittransmissionproducts.com",
     "Phone": "+91 95822 76895",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 48.0,
@@ -11709,7 +11709,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 13.99
+    "Probability": 13.84
   },
   {
     "Created on": "2026-07-06 07:36:29",
