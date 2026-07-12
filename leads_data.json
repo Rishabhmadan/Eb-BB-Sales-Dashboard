@@ -23526,8 +23526,8 @@
     "Company Name": "Motvic Group",
     "Opportunity": "Motvic Group's opportunity",
     "Contact Name": "Sanjiv R. Vishwakarma",
-    "Email": "srv@motvic.co",
-    "Phone": "+91 81085 55021",
+    "Email": "NA",
+    "Phone": "+91 99203 12344",
     "Salesperson": "Aadit Nair",
     "Next Follow up": "2026-07-13",
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -23541,7 +23541,7 @@
     "City": "Thane",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 4.02
+    "Probability": 2.12
   },
   {
     "Created on": "2026-06-24 10:31:27",
@@ -34541,7 +34541,7 @@
     "RFQ Date": null,
     "Company Name": "OSI Systems India",
     "Opportunity": "OSI Systems India's opportunity",
-    "Contact Name": "Gireesh Namannavar",
+    "Contact Name": "OSI Systems India",
     "Email": "gireesh.namannavar@spacelabs.com",
     "Phone": "+91 40 3012 3600",
     "Salesperson": "Aadit Nair",
@@ -34557,7 +34557,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 4.24
+    "Probability": 6.33
   },
   {
     "Created on": "2026-06-04 10:27:18",
@@ -34574,14 +34574,14 @@
     "Revenue (Millions USD)": 14.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 1400000.0,
-    "Stage": "Open",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 32.74
+    "Probability": 60.93
   },
   {
     "Created on": "2026-06-04 09:54:02",
@@ -34598,14 +34598,14 @@
     "Revenue (Millions USD)": 33.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 10000.0,
-    "Stage": "Open",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 91.57
+    "Probability": 97.8
   },
   {
     "Created on": "2026-06-04 09:43:21",
@@ -40445,9 +40445,9 @@
     "RFQ Date": null,
     "Company Name": "Bluebird India",
     "Opportunity": "Bluebird India",
-    "Contact Name": "Varun Gopalakrishnan",
-    "Email": "varun.g@bluebirdcorp.com",
-    "Phone": false,
+    "Contact Name": "Menon Padmakumar",
+    "Email": "padmakumar@bluebirdcorp.com",
+    "Phone": "+91 98450 28644",
     "Salesperson": "Aadit Nair",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
@@ -40461,7 +40461,7 @@
     "City": "Bengaluru",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 60.05
+    "Probability": 16.15
   },
   {
     "Created on": "2026-05-19 05:13:18",
@@ -41241,19 +41241,19 @@
     "Email": "pallav.aggarwal@capuf.in",
     "Phone": "+91 99867 22624",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-07-13",
+    "Next Follow up": null,
     "Industry Segment": "EMS & Electronics Mfg",
     "Revenue (Millions USD)": 3.9,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 300000.0,
-    "Stage": "Connected",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 16.15
+    "Probability": 28.79
   },
   {
     "Created on": "2026-05-18 06:02:58",
@@ -47222,14 +47222,14 @@
     "Revenue (Millions USD)": 7.7,
     "Opportunity Type": "PCB fabrication",
     "Expected Revenue": 700000.0,
-    "Stage": "Connected",
+    "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Madhya Pradesh (IN)",
     "City": "Indore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 19.46
+    "Probability": 73.5
   },
   {
     "Created on": "2026-05-05 11:38:11",
@@ -48302,14 +48302,14 @@
     "Revenue (Millions USD)": 0.13,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 13000.0,
-    "Stage": "Connected",
+    "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 34.31
+    "Probability": 32.5
   },
   {
     "Created on": "2026-05-04 11:43:18",
@@ -49886,14 +49886,14 @@
     "Revenue (Millions USD)": 0.01,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 10000.0,
-    "Stage": "Open",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Uttar Pradesh (IN)",
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 63.21
+    "Probability": 85.32
   },
   {
     "Created on": "2026-04-23 09:09:34",
@@ -49982,14 +49982,14 @@
     "Revenue (Millions USD)": 1.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 100000.0,
-    "Stage": "Open",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 93.61
+    "Probability": 92.41
   },
   {
     "Created on": "2026-04-23 06:08:30",
@@ -50198,14 +50198,14 @@
     "Revenue (Millions USD)": 1.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 10000.0,
-    "Stage": "Open",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Andhra Pradesh (IN)",
     "City": "Nellore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 84.53
+    "Probability": 91.98
   },
   {
     "Created on": "2026-04-22 10:42:00",
@@ -52905,7 +52905,7 @@
     "Email": "NA",
     "Phone": "+91 99580 57556",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-07-13",
+    "Next Follow up": "2026-07-14",
     "Industry Segment": "Energy & CleanTech",
     "Revenue (Millions USD)": 15.0,
     "Opportunity Type": "Box Build",
@@ -56198,14 +56198,14 @@
     "Revenue (Millions USD)": 7.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 700000.0,
-    "Stage": "Follow Up Later",
+    "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": false,
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.37
+    "Probability": 94.07
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -61430,14 +61430,14 @@
     "Revenue (Millions USD)": 2825.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 100000.0,
-    "Stage": "Connected",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "Ireland",
     "State": false,
     "City": "Dublin",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 67.12
+    "Probability": 79.44
   },
   {
     "Created on": "2026-04-09 05:33:03",
