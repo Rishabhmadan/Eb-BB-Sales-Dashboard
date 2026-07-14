@@ -44102,7 +44102,7 @@
     "Revenue (Millions USD)": 0.31,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 30000.0,
-    "Stage": "RFQ Expected",
+    "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Chandigarh (IN)",
@@ -52310,14 +52310,14 @@
     "Revenue (Millions USD)": 4.45,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 400000.0,
-    "Stage": "RFQ Expected",
+    "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.35
+    "Probability": 42.65
   },
   {
     "Created on": "2026-04-23 09:22:10",
