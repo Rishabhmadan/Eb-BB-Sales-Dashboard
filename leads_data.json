@@ -6528,6 +6528,30 @@
     "Probability": 73.23
   },
   {
+    "Created on": "2026-07-14 12:49:08",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "True Power International Ltd.",
+    "Opportunity": "True Power International Ltd.'s opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Power Electronics & Electrical",
+    "Revenue (Millions USD)": 20.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Delhi (IN)",
+    "City": "Delhi",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 94.62
+  },
+  {
     "Created on": "2026-07-14 12:42:39",
     "Source": "Zoom Info",
     "RFQ Date": null,
@@ -17077,7 +17101,7 @@
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 120.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
+    "Expected Revenue": 400000.0,
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -17085,7 +17109,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 32.48
+    "Probability": 30.0
   },
   {
     "Created on": "2026-07-02 11:48:12",
