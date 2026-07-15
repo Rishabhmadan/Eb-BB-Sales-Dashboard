@@ -6534,8 +6534,8 @@
     "Company Name": "DSN Engineering",
     "Opportunity": "DSN Engineering's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -6549,7 +6549,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.52
+    "Probability": 93.34
   },
   {
     "Created on": "2026-07-15 12:43:00",
@@ -6606,8 +6606,8 @@
     "Company Name": "ZADASTAR Appliances (Iykot Hitech Toolroom Limited)",
     "Opportunity": "ZADASTAR Appliances (Iykot Hitech Toolroom Limited)'s opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -6621,7 +6621,7 @@
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 99.28
+    "Probability": 88.01
   },
   {
     "Created on": "2026-07-15 12:20:25",
@@ -6630,8 +6630,8 @@
     "Company Name": "STEVA (United Elements Limited)",
     "Opportunity": "STEVA (United Elements Limited)'s opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -6645,7 +6645,7 @@
     "City": "Faridabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.68
+    "Probability": 93.53
   },
   {
     "Created on": "2026-07-15 12:13:34",
@@ -6654,8 +6654,8 @@
     "Company Name": "Maharaja Whiteline Home Appliances Limited",
     "Opportunity": "Maharaja Whiteline Home Appliances Limited's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -6669,7 +6669,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.68
+    "Probability": 93.53
   },
   {
     "Created on": "2026-07-15 12:09:16",
@@ -6702,8 +6702,8 @@
     "Company Name": "POWERONIC INDIA",
     "Opportunity": "POWERONIC INDIA's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -6717,7 +6717,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.52
+    "Probability": 93.34
   },
   {
     "Created on": "2026-07-15 11:58:32",
@@ -6726,8 +6726,8 @@
     "Company Name": "PONMANI INDUSTRIES",
     "Opportunity": "PONMANI INDUSTRIES's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "+91 94433 32770",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -6741,7 +6741,7 @@
     "City": "Coimbatore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.04
+    "Probability": 33.91
   },
   {
     "Created on": "2026-07-15 11:44:41",
@@ -6749,9 +6749,9 @@
     "RFQ Date": null,
     "Company Name": "Shri & Sam",
     "Opportunity": "Shri & Sam's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Sam Sase",
+    "Email": "NA",
+    "Phone": "+91 95033 77172",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -6765,7 +6765,7 @@
     "City": "Sonipat",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.68
+    "Probability": 50.24
   },
   {
     "Created on": "2026-07-15 11:33:04",
@@ -6774,8 +6774,8 @@
     "Company Name": "Roxy India Appliances",
     "Opportunity": "Roxy India Appliances's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -6789,7 +6789,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.52
+    "Probability": 93.34
   },
   {
     "Created on": "2026-07-15 11:25:34",
@@ -6797,9 +6797,9 @@
     "RFQ Date": null,
     "Company Name": "Longway India",
     "Opportunity": "Longway India's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Ritish Garg",
+    "Email": "ritish.garg@longwayindia.com",
+    "Phone": "+91 93157 92617",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -6808,12 +6808,12 @@
     "Expected Revenue": 0.0,
     "Stage": "Market Research",
     "Won/Lost": "Pending",
-    "Country": false,
+    "Country": "India",
     "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.7
+    "Probability": 76.12
   },
   {
     "Created on": "2026-07-15 11:21:17",
@@ -6821,13 +6821,13 @@
     "RFQ Date": null,
     "Company Name": "SUNBLAZE APPLIANCES PRIVATE LIMITED",
     "Opportunity": "SUNBLAZE APPLIANCES PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Sandeep Spal",
+    "Email": "sandeep.spal@sunblaze.in",
+    "Phone": "+91 98117 98631",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
-    "Revenue (Millions USD)": 5.0,
+    "Revenue (Millions USD)": 10.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
     "Stage": "Market Research",
@@ -6837,7 +6837,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.52
+    "Probability": 76.12
   },
   {
     "Created on": "2026-07-15 11:15:47",
@@ -6845,9 +6845,9 @@
     "RFQ Date": null,
     "Company Name": "Blow Hot India",
     "Opportunity": "Blow Hot India's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Sanjeev Dayal",
+    "Email": "NA",
+    "Phone": "+91 98735 88668",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -6861,7 +6861,7 @@
     "City": "Indore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 99.0
+    "Probability": 84.95
   },
   {
     "Created on": "2026-07-15 11:10:47",
@@ -6869,9 +6869,9 @@
     "RFQ Date": null,
     "Company Name": "SOWBAGHYA ENTERPRISES PRIVATE LIMITED",
     "Opportunity": "SOWBAGHYA ENTERPRISES PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Praveen Kumar Athikesavan",
+    "Email": "NA",
+    "Phone": "+91 99449 09944",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -6885,7 +6885,7 @@
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.04
+    "Probability": 33.91
   },
   {
     "Created on": "2026-07-15 11:07:48",
@@ -6893,9 +6893,9 @@
     "RFQ Date": null,
     "Company Name": "FABIANO HOME APPLIANCES PRIVATE LIMITED",
     "Opportunity": "FABIANO HOME APPLIANCES PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Ankit Sharma",
+    "Email": "NA",
+    "Phone": "+91 99990 99173",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -6909,7 +6909,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.52
+    "Probability": 49.48
   },
   {
     "Created on": "2026-07-15 11:02:31",
@@ -6917,9 +6917,9 @@
     "RFQ Date": null,
     "Company Name": "Greenchef Appliances Limited",
     "Opportunity": "Greenchef Appliances Limited's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Abhay Kumar Jain",
+    "Email": "abhay@greenchef.in",
+    "Phone": "+91 80034 94116",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -6933,7 +6933,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 70.1
+    "Probability": 30.21
   },
   {
     "Created on": "2026-07-15 10:49:01",
@@ -6942,8 +6942,8 @@
     "Company Name": "PRANAAM ELECTRICALS INDIA PVT LTD",
     "Opportunity": "PRANAAM ELECTRICALS INDIA PVT LTD's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "+91 97278 82224",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -6957,7 +6957,7 @@
     "City": "Rajkot",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.04
+    "Probability": 33.91
   },
   {
     "Created on": "2026-07-15 10:29:54",
@@ -6965,9 +6965,9 @@
     "RFQ Date": null,
     "Company Name": "NORISYS TECHNOLOGY PRIVATE LIMITED",
     "Opportunity": "NORISYS TECHNOLOGY PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Sudeep Gupta",
+    "Email": "sudeep@norisys.com",
+    "Phone": "+91 98917 57858",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -6981,7 +6981,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.52
+    "Probability": 76.12
   },
   {
     "Created on": "2026-07-15 10:20:16",
@@ -6989,9 +6989,9 @@
     "RFQ Date": null,
     "Company Name": "Le-Figaro India",
     "Opportunity": "Le-Figaro India's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Astitva Bajaj",
+    "Email": "astitvabajaj@le-figaro.in",
+    "Phone": "+91 85868 14614",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -7005,7 +7005,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.52
+    "Probability": 76.12
   },
   {
     "Created on": "2026-07-15 10:14:52",
@@ -7013,9 +7013,9 @@
     "RFQ Date": null,
     "Company Name": "PAYAL ELECTRICS & ELECTRONICS",
     "Opportunity": "PAYAL ELECTRICS & ELECTRONICS's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Saanjjiv Guptaa",
+    "Email": "saanjjiv.guptaa@payallelectrics.com",
+    "Phone": "+91 98100 25839",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7029,7 +7029,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.52
+    "Probability": 76.12
   },
   {
     "Created on": "2026-07-15 10:06:41",
@@ -7038,8 +7038,8 @@
     "Company Name": "Enza Electric Pvt. Ltd.",
     "Opportunity": "Enza Electric Pvt. Ltd.'s opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -7053,7 +7053,7 @@
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.04
+    "Probability": 88.01
   },
   {
     "Created on": "2026-07-15 09:50:27",
@@ -7061,13 +7061,13 @@
     "RFQ Date": null,
     "Company Name": "ANALINEAR IMAGING SYSTEMS PRIVATE LIMITED",
     "Opportunity": "ANALINEAR IMAGING SYSTEMS PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "S. Hari",
+    "Email": "shari@analineartech.com",
+    "Phone": "+91 99007 28471",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Aerospace & Defense",
-    "Revenue (Millions USD)": 5.0,
+    "Revenue (Millions USD)": 6.7,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
     "Stage": "Market Research",
@@ -7077,7 +7077,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.11
+    "Probability": 13.18
   },
   {
     "Created on": "2026-07-15 09:37:52",
@@ -7085,9 +7085,9 @@
     "RFQ Date": null,
     "Company Name": "ChargET (EVer Fuels Pvt. Ltd.)",
     "Opportunity": "ChargET (EVer Fuels Pvt. Ltd.)'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Manya Kanoria",
+    "Email": "manya.kanoria@charget.in",
+    "Phone": "+91 98307 87510",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -7101,7 +7101,7 @@
     "City": "Kolkata",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.11
+    "Probability": 13.18
   },
   {
     "Created on": "2026-07-15 09:32:30",
@@ -7109,9 +7109,9 @@
     "RFQ Date": null,
     "Company Name": "Shaffer Energy Pvt. Ltd.",
     "Opportunity": "Shaffer Energy Pvt. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Amit Kumar",
+    "Email": "amit.kumar@shafferenergy.com",
+    "Phone": "+91 99101 55526",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7125,7 +7125,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.52
+    "Probability": 76.12
   },
   {
     "Created on": "2026-07-15 09:21:36",
@@ -7181,9 +7181,9 @@
     "RFQ Date": null,
     "Company Name": "Eetamax Energy Solutions Pvt. Ltd.",
     "Opportunity": "Eetamax Energy Solutions Pvt. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Yogesh Patwe",
+    "Email": "yogesh.patwe@eetamax.com",
+    "Phone": "+91 98509 97674, +91 95520 02173",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7197,7 +7197,7 @@
     "City": "Ahilyanagar",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.11
+    "Probability": 68.47
   },
   {
     "Created on": "2026-07-15 07:42:03",
@@ -7229,9 +7229,9 @@
     "RFQ Date": null,
     "Company Name": "GLO LED PRIVATE LIMITED",
     "Opportunity": "GLO LED PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Sambi Reddy Bontu",
+    "Email": "NA",
+    "Phone": "+91 94410 51844",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -7245,7 +7245,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.11
+    "Probability": 4.46
   },
   {
     "Created on": "2026-07-15 07:28:08",
@@ -7253,13 +7253,13 @@
     "RFQ Date": null,
     "Company Name": "Pharox Global Pvt. Ltd.",
     "Opportunity": "Pharox Global Pvt. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Priya Ranjan",
+    "Email": "NA",
+    "Phone": "+971 55 819 5692",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
-    "Revenue (Millions USD)": 5.0,
+    "Revenue (Millions USD)": 10.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
     "Stage": "Market Research",
@@ -7269,7 +7269,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 97.12
+    "Probability": 65.66
   },
   {
     "Created on": "2026-07-15 07:18:32",
@@ -7277,9 +7277,9 @@
     "RFQ Date": null,
     "Company Name": "Samudra Electronics System Private Limited",
     "Opportunity": "Samudra Electronics System Private Limited's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Prafulla M. Thote",
+    "Email": "prafullat@samudraled.com",
+    "Phone": "+91 94220 07923",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -7293,7 +7293,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.56
+    "Probability": 13.18
   },
   {
     "Created on": "2026-07-15 07:13:48",
@@ -7301,9 +7301,9 @@
     "RFQ Date": null,
     "Company Name": "Nessa Illumination Technologies Pvt. Ltd.",
     "Opportunity": "Nessa Illumination Technologies Pvt. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Shoeb Noorani",
+    "Email": "NA",
+    "Phone": "+91 98791 03814",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -7317,7 +7317,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.2
+    "Probability": 33.91
   },
   {
     "Created on": "2026-07-15 07:07:20",
@@ -7325,9 +7325,9 @@
     "RFQ Date": null,
     "Company Name": "Ideal Lighting Systems (ILS) Private Limited",
     "Opportunity": "Ideal Lighting Systems (ILS) Private Limited's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Anil Kumar Gupta",
+    "Email": "anil.gupta@ideallighting.in",
+    "Phone": "+91 78278 64835",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -7341,7 +7341,7 @@
     "City": "Bharuch",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.2
+    "Probability": 62.54
   },
   {
     "Created on": "2026-07-15 07:03:12",
@@ -7349,9 +7349,9 @@
     "RFQ Date": null,
     "Company Name": "OPTILUXX ELECTRICALS LLP",
     "Opportunity": "OPTILUXX ELECTRICALS LLP's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Aayush Narsaria",
+    "Email": "NA",
+    "Phone": "+91 99602 92210",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7365,7 +7365,7 @@
     "City": "Kolkata",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.56
+    "Probability": 4.46
   },
   {
     "Created on": "2026-07-15 06:57:23",
@@ -7373,9 +7373,9 @@
     "RFQ Date": null,
     "Company Name": "RUDAI LIGHTING PRIVATE LIMITED",
     "Opportunity": "RUDAI LIGHTING PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Kamal Sharma",
+    "Email": "NA",
+    "Phone": "+91 98109 01347",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7389,7 +7389,7 @@
     "City": "Jaipur",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.2
+    "Probability": 33.91
   },
   {
     "Created on": "2026-07-15 06:51:29",
@@ -7397,9 +7397,9 @@
     "RFQ Date": null,
     "Company Name": "HQ Lamps Manufacturing Co. Pvt. Ltd.",
     "Opportunity": "HQ Lamps Manufacturing Co. Pvt. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Agam Satsangi",
+    "Email": "NA",
+    "Phone": "+91 85273 15412",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7413,7 +7413,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 97.17
+    "Probability": 65.66
   },
   {
     "Created on": "2026-07-15 06:47:05",
@@ -7421,9 +7421,9 @@
     "RFQ Date": null,
     "Company Name": "D'Mak Energia Pvt. Ltd.",
     "Opportunity": "D'Mak Energia Pvt. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Dixit Patel",
+    "Email": "NA",
+    "Phone": "+91 80070 92231",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7437,7 +7437,7 @@
     "City": "Gandhinagar",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.2
+    "Probability": 33.91
   },
   {
     "Created on": "2026-07-15 06:44:06",
@@ -7445,9 +7445,9 @@
     "RFQ Date": null,
     "Company Name": "GANIT STAR ENGINEERING'S PRIVATE LIMITED",
     "Opportunity": "GANIT STAR ENGINEERING'S PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Nimit Badjatya",
+    "Email": "NA",
+    "Phone": "+91 97133 46991",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7461,7 +7461,7 @@
     "City": "Indore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 99.02
+    "Probability": 84.95
   },
   {
     "Created on": "2026-07-15 06:39:14",
@@ -7469,9 +7469,9 @@
     "RFQ Date": null,
     "Company Name": "PASOLITE ELECTRICALS PRIVATE LIMITED",
     "Opportunity": "PASOLITE ELECTRICALS PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Ashish Jain",
+    "Email": "ashishj@pasolite.in",
+    "Phone": "+91 98452 77595",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7485,7 +7485,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 70.47
+    "Probability": 30.21
   },
   {
     "Created on": "2026-07-15 06:36:27",
@@ -7493,9 +7493,9 @@
     "RFQ Date": null,
     "Company Name": "Turnpoint Technologies Pvt. Ltd.",
     "Opportunity": "Turnpoint Technologies Pvt. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Chandan Bhattacharjee",
+    "Email": "chandan@turnpoint-tech.com",
+    "Phone": "+91 98718 85511",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7509,7 +7509,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.77
+    "Probability": 76.66
   },
   {
     "Created on": "2026-07-15 06:30:50",
@@ -7518,8 +7518,8 @@
     "Company Name": "DIGISMART ELECTRICALS",
     "Opportunity": "DIGISMART ELECTRICALS's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7533,7 +7533,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.62
+    "Probability": 93.34
   },
   {
     "Created on": "2026-07-15 06:20:52",
@@ -7541,9 +7541,9 @@
     "RFQ Date": null,
     "Company Name": "Revour Consumer Pvt. Ltd.",
     "Opportunity": "Revour Consumer Pvt. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Manish Bathla",
+    "Email": "manish.bathla@revourconsumer.com",
+    "Phone": "+91 96903 25000",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7557,7 +7557,7 @@
     "City": "Navi Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.56
+    "Probability": 13.18
   },
   {
     "Created on": "2026-07-15 06:17:25",
@@ -7566,8 +7566,8 @@
     "Company Name": "TECH SPEED APPLIANCES INNOVATIVE ELECTRICALS PVT.LTD.",
     "Opportunity": "TECH SPEED APPLIANCES INNOVATIVE ELECTRICALS PVT.LTD.'s opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7581,7 +7581,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.77
+    "Probability": 93.53
   },
   {
     "Created on": "2026-07-15 06:07:49",
@@ -7589,9 +7589,9 @@
     "RFQ Date": null,
     "Company Name": "Rehoboth Enviro Systems Pvt. Ltd.",
     "Opportunity": "Rehoboth Enviro Systems Pvt. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Abhishek Jaiswal",
+    "Email": "NA",
+    "Phone": "+91 98186 88355",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -7605,7 +7605,7 @@
     "City": "Palghar",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.56
+    "Probability": 4.46
   },
   {
     "Created on": "2026-07-15 06:05:13",
@@ -7614,8 +7614,8 @@
     "Company Name": "CASILICA D- AIR PRIVATE LIMITED",
     "Opportunity": "CASILICA D- AIR PRIVATE LIMITED's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -7629,7 +7629,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.62
+    "Probability": 93.34
   },
   {
     "Created on": "2026-07-15 06:01:02",
@@ -7637,9 +7637,9 @@
     "RFQ Date": null,
     "Company Name": "BRY- AIR (ASIA) PRIVATE LIMITED",
     "Opportunity": "BRY- AIR (ASIA) PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Ashok Kumar Prusty",
+    "Email": "NA",
+    "Phone": "+91 98180 61826",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7653,7 +7653,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.77
+    "Probability": 50.24
   },
   {
     "Created on": "2026-07-15 05:35:04",
@@ -7662,8 +7662,8 @@
     "Company Name": "CELLUS TECH INDIA PRIVATE LIMITED",
     "Opportunity": "CELLUS TECH INDIA PRIVATE LIMITED's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7677,7 +7677,7 @@
     "City": "Alwar",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.2
+    "Probability": 88.01
   },
   {
     "Created on": "2026-07-15 05:19:39",
@@ -7709,9 +7709,9 @@
     "RFQ Date": null,
     "Company Name": "TRANSVOLT MOBILITY PRIVATE LIMITED",
     "Opportunity": "TRANSVOLT MOBILITY PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Hemant Velhankar",
+    "Email": "hemant.v@transvolt.in",
+    "Phone": "+91 99717 95445",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
@@ -7725,7 +7725,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.56
+    "Probability": 13.18
   },
   {
     "Created on": "2026-07-15 04:35:24",
@@ -7733,9 +7733,9 @@
     "RFQ Date": null,
     "Company Name": "PMV ELECTRIC PRIVATE LIMITED",
     "Opportunity": "PMV ELECTRIC PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Kalpit Patel",
+    "Email": "kalpit.patel@pmvelectric.com",
+    "Phone": "+91 80970 30800",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
@@ -7749,7 +7749,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.56
+    "Probability": 13.18
   },
   {
     "Created on": "2026-07-14 15:40:57",
@@ -7807,7 +7807,7 @@
     "Opportunity": "SGX Mobility's opportunity",
     "Contact Name": false,
     "Email": "NA",
-    "Phone": false,
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
@@ -7821,7 +7821,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 88.51
+    "Probability": 93.53
   },
   {
     "Created on": "2026-07-14 13:10:27",
