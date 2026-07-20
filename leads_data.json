@@ -6552,6 +6552,30 @@
     "Probability": 73.23
   },
   {
+    "Created on": "2026-07-20 05:03:19",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "Pontis EMC Products",
+    "Opportunity": "Pontis EMC Products's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "IoT & Smart Devices",
+    "Revenue (Millions USD)": 5.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Tamil Nadu (IN)",
+    "City": "Velur Namakkal",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 90.04
+  },
+  {
     "Created on": "2026-07-20 04:57:24",
     "Source": "Zoom Info",
     "RFQ Date": null,
@@ -40910,14 +40934,14 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 1000000.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 88.01
+    "Probability": 77.76
   },
   {
     "Created on": "2026-06-04 05:49:56",
