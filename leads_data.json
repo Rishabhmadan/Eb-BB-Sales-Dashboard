@@ -6552,6 +6552,30 @@
     "Probability": 73.23
   },
   {
+    "Created on": "2026-07-20 04:57:24",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "ALTOS COMPUTING (INDIA) PRIVATE LIMITED",
+    "Opportunity": "ALTOS COMPUTING (INDIA) PRIVATE LIMITED's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Power Electronics & Electrical",
+    "Revenue (Millions USD)": 30.0,
+    "Opportunity Type": "Box Build",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Karnataka (IN)",
+    "City": "Bangalore",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 70.1
+  },
+  {
     "Created on": "2026-07-18 03:26:29",
     "Source": "Zoom Info",
     "RFQ Date": null,
@@ -46710,8 +46734,8 @@
     "Company Name": "Toshi Automation Solutions Limited",
     "Opportunity": "Toshi Automation Solutions Limited",
     "Contact Name": "Kajal Thakur",
-    "Email": "kajal.thakur@toshiautomation.com",
-    "Phone": "+91 93159 50724",
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Aadit Nair",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -46725,7 +46749,7 @@
     "City": "Ghaziabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 76.93
+    "Probability": 96.47
   },
   {
     "Created on": "2026-05-18 11:01:52",
@@ -60942,7 +60966,7 @@
     "Company Name": "DREAM Aerospace",
     "Opportunity": "DREAM Aerospace",
     "Contact Name": "DREAM Aerospace",
-    "Email": false,
+    "Email": "NA",
     "Phone": "+91 94443 93449",
     "Salesperson": "Aadit Nair",
     "Next Follow up": null,
@@ -60950,14 +60974,14 @@
     "Revenue (Millions USD)": 0.85,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 100000.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": false,
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 63.66
+    "Probability": 25.95
   },
   {
     "Created on": "2026-04-09 05:33:03",
