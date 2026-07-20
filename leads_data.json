@@ -36750,8 +36750,8 @@
     "Company Name": "Aerpace Industries Ltd",
     "Opportunity": "Aerpace Industries Ltd's opportunity",
     "Contact Name": "Milan H. Shah",
-    "Email": "mshah@aerpace.com",
-    "Phone": "+91 83560 61211",
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Aadit Nair",
     "Next Follow up": "2026-07-20",
     "Industry Segment": "Automotive & EV",
@@ -36765,7 +36765,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.88
+    "Probability": 24.12
   },
   {
     "Created on": "2026-06-11 06:41:01",
@@ -37446,8 +37446,8 @@
     "Company Name": "Kaycee Industries Limited",
     "Opportunity": "Kaycee Industries Limited's opportunity",
     "Contact Name": "Tushar Kulkarni",
-    "Email": "tushar_kulkarni@kayceeindustries.com",
-    "Phone": "+91 93206 64888",
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Aadit Nair",
     "Next Follow up": "2026-07-20",
     "Industry Segment": "EMS & Electronics Mfg",
@@ -37461,7 +37461,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.88
+    "Probability": 24.12
   },
   {
     "Created on": "2026-06-10 09:17:02",
@@ -41502,8 +41502,8 @@
     "Company Name": "BioEnable Technologies",
     "Opportunity": "BioEnable Technologies's opportunity",
     "Contact Name": "Pradeep Bhatia",
-    "Email": "pk@bioenabletech.com",
-    "Phone": "+91 98222 18111",
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Aadit Nair",
     "Next Follow up": "2026-07-15",
     "Industry Segment": "IoT & Smart Devices",
@@ -41517,7 +41517,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 7.45
+    "Probability": 24.12
   },
   {
     "Created on": "2026-06-02 07:39:59",
@@ -51798,8 +51798,8 @@
     "Company Name": "Trueview (Warner Electronics)",
     "Opportunity": "Trueview (Warner Electronics): EB-09-EL-484-02-1773",
     "Contact Name": "Kiran Bhavsar",
-    "Email": "sagar@trueview.co.in",
-    "Phone": "+91 98230 06544",
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Aadit Nair",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
@@ -55518,8 +55518,8 @@
     "Company Name": "Visiontek",
     "Opportunity": "Visiontek",
     "Contact Name": "P. Preetam Raju",
-    "Email": "preetam@visiontek.co.in",
-    "Phone": "+91 97016 01332",
+    "Email": "info@visiontek.co.in",
+    "Phone": "+91 40 6638 8000",
     "Salesperson": "Aadit Nair",
     "Next Follow up": "2026-07-20",
     "Industry Segment": "EMS & Electronics Mfg",
@@ -55533,7 +55533,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.88
+    "Probability": 6.74
   },
   {
     "Created on": "2026-04-28 04:56:14",
@@ -61590,8 +61590,8 @@
     "Company Name": "6th Energy",
     "Opportunity": "6th Energy",
     "Contact Name": "Vijaya Kumar",
-    "Email": "vijayakumar@6thenergy.com",
-    "Phone": "+91 99001 08730",
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Aadit Nair",
     "Next Follow up": "2026-08-10",
     "Industry Segment": "Other",
@@ -61601,11 +61601,11 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Karnataka (IN)",
+    "State": false,
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 1.8
+    "Probability": 84.1
   },
   {
     "Created on": "2026-04-09 05:33:03",
