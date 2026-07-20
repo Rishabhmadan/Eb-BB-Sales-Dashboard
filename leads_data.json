@@ -8330,7 +8330,7 @@
   {
     "Created on": "2026-07-17 07:07:09",
     "Source": false,
-    "RFQ Date": "2026-07-15",
+    "RFQ Date": "2026-07-20",
     "Company Name": "Punetechtrol",
     "Opportunity": "Punetechtrol",
     "Contact Name": false,
@@ -38481,7 +38481,7 @@
     "Email": "ritesh@otekworld.com",
     "Phone": "+91 98220 41234",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-07-20",
+    "Next Follow up": "2026-07-21",
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 3.2,
     "Opportunity Type": "Component Sourcing",
@@ -40682,7 +40682,7 @@
   {
     "Created on": "2026-06-08 09:50:48",
     "Source": "Zoom Info",
-    "RFQ Date": "2026-07-17",
+    "RFQ Date": "2026-07-20",
     "Company Name": "Veego",
     "Opportunity": "Veego",
     "Contact Name": "Shweta Kalokhe",
@@ -46017,7 +46017,7 @@
     "Email": "siddharth@axlworld.com",
     "Phone": "+91 93150 78316",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-07-20",
+    "Next Follow up": "2026-07-21",
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 6.0,
     "Opportunity Type": "Component Sourcing",
@@ -46262,14 +46262,14 @@
     "Revenue (Millions USD)": 6.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 600000.0,
-    "Stage": "Connected",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 2.43
+    "Probability": 4.46
   },
   {
     "Created on": "2026-05-20 06:21:07",
