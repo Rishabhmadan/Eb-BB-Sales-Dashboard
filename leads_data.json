@@ -17205,7 +17205,7 @@
     "City": false,
     "Closed Date": null,
     "Expected Closing": "2026-07-15",
-    "Probability": 70.0
+    "Probability": 30.0
   },
   {
     "Created on": "2026-07-08 11:45:16",
@@ -18325,7 +18325,7 @@
     "Industry Segment": "Aerospace & Defense",
     "Revenue (Millions USD)": 3.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 140000000.0,
+    "Expected Revenue": 110000000.0,
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -37977,19 +37977,19 @@
     "Email": "NA",
     "Phone": "+91 93735 74756",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-07-20",
+    "Next Follow up": "2026-07-22",
     "Industry Segment": "Aerospace & Defense",
     "Revenue (Millions USD)": 14.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 1400000.0,
-    "Stage": "Connected",
+    "Stage": "RFQ Expected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 5.83
+    "Probability": 6.61
   },
   {
     "Created on": "2026-06-11 05:31:14",
@@ -44889,19 +44889,19 @@
     "Email": "laxman.sahoo@aadyah.com",
     "Phone": "+91 88267 20276",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-07-20",
+    "Next Follow up": "2026-07-21",
     "Industry Segment": "Aerospace & Defense",
     "Revenue (Millions USD)": 4.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 400000.0,
-    "Stage": "Connected",
+    "Stage": "RFQ Expected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 17.09
+    "Probability": 18.72
   },
   {
     "Created on": "2026-05-26 07:45:40",
