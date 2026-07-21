@@ -453,7 +453,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": "2026-07-31",
-    "Probability": 50.0
+    "Probability": 60.0
   },
   {
     "Created on": "2026-05-09 04:59:41",
@@ -9494,7 +9494,7 @@
     "Revenue (Millions USD)": 7.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 700000.0,
-    "Stage": "Open",
+    "Stage": "Need Warm Intro",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
@@ -54489,7 +54489,7 @@
     "Email": "arvind@aeronsystems.com",
     "Phone": "+91 79728 66211",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-07-20",
+    "Next Follow up": "2026-07-22",
     "Industry Segment": "IoT & Smart Devices",
     "Revenue (Millions USD)": 8.48,
     "Opportunity Type": "PCB Assembly",
@@ -56913,7 +56913,7 @@
     "Email": "bhavesh@firstouchkiosk.com",
     "Phone": "+91 99580 01780",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-07-20",
+    "Next Follow up": "2026-07-22",
     "Industry Segment": "IoT & Smart Devices",
     "Revenue (Millions USD)": 2.0,
     "Opportunity Type": "PCB Assembly",
@@ -56933,9 +56933,9 @@
     "RFQ Date": null,
     "Company Name": "Visiontek",
     "Opportunity": "Visiontek",
-    "Contact Name": "P. Preetam Raju",
-    "Email": "info@visiontek.co.in",
-    "Phone": "+91 40 6638 8000",
+    "Contact Name": "Kanakaraju Dammati",
+    "Email": "NA",
+    "Phone": "+91 97016 01377",
     "Salesperson": "Aadit Nair",
     "Next Follow up": "2026-07-20",
     "Industry Segment": "EMS & Electronics Mfg",
@@ -56949,7 +56949,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.74
+    "Probability": 2.17
   },
   {
     "Created on": "2026-04-28 04:56:14",
