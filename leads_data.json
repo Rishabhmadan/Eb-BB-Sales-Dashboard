@@ -861,7 +861,7 @@
     "City": "Gurgaon",
     "Closed Date": null,
     "Expected Closing": "2026-07-28",
-    "Probability": 70.7
+    "Probability": 50.0
   },
   {
     "Created on": "2026-07-20 06:54:20",
@@ -6357,7 +6357,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 63.37
+    "Probability": 35.37
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -6622,6 +6622,30 @@
     "Closed Date": null,
     "Expected Closing": "2026-11-29",
     "Probability": 73.23
+  },
+  {
+    "Created on": "2026-07-21 04:48:44",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "ON Semiconductor Corporation (Onsemi)",
+    "Opportunity": "ON Semiconductor Corporation (Onsemi)'s opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Power Electronics & Electrical",
+    "Revenue (Millions USD)": 0.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Karnataka (IN)",
+    "City": "Bangalore",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 70.1
   },
   {
     "Created on": "2026-07-20 13:28:21",
@@ -17198,14 +17222,14 @@
     "Revenue (Millions USD)": 0.01,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 250000.0,
-    "Stage": "RFQ Received",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": false,
     "State": false,
     "City": false,
     "Closed Date": null,
     "Expected Closing": "2026-07-15",
-    "Probability": 30.0
+    "Probability": 10.0
   },
   {
     "Created on": "2026-07-08 11:45:16",
