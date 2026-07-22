@@ -6726,8 +6726,8 @@
     "Company Name": "TILLID MOTORS PRIVATE LIMITED",
     "Opportunity": "TILLID MOTORS PRIVATE LIMITED's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
@@ -6741,7 +6741,7 @@
     "City": "Dharwad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 70.1
+    "Probability": 65.55
   },
   {
     "Created on": "2026-07-22 16:01:40",
@@ -6798,8 +6798,8 @@
     "Company Name": "INDOFAST SWAP ENERGY PRIVATE LIMITED",
     "Opportunity": "INDOFAST SWAP ENERGY PRIVATE LIMITED's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -6813,7 +6813,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 70.1
+    "Probability": 65.55
   },
   {
     "Created on": "2026-07-22 15:26:01",
@@ -6822,8 +6822,8 @@
     "Company Name": "CHARGEJET ENERGY PRIVATE LIMITED",
     "Opportunity": "CHARGEJET ENERGY PRIVATE LIMITED's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -6837,7 +6837,7 @@
     "City": "Jaipur",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.04
+    "Probability": 88.01
   },
   {
     "Created on": "2026-07-22 15:20:54",
@@ -6942,8 +6942,8 @@
     "Company Name": "Pure Bot India",
     "Opportunity": "Pure Bot India's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -6957,7 +6957,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.11
+    "Probability": 40.02
   },
   {
     "Created on": "2026-07-22 11:56:43",
@@ -7325,9 +7325,9 @@
     "RFQ Date": null,
     "Company Name": "WattPower Systems Pvt. Ltd.",
     "Opportunity": "WattPower Systems Pvt. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Shubham Agrawal Todi",
+    "Email": "s.todi@wattpower.in",
+    "Phone": "+91 93102 30035",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -7341,7 +7341,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.52
+    "Probability": 76.12
   },
   {
     "Created on": "2026-07-22 07:57:26",
@@ -7349,9 +7349,9 @@
     "RFQ Date": null,
     "Company Name": "TREX ENERGY PRIVATE LIMITED",
     "Opportunity": "TREX ENERGY PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Sanjeet Mane",
+    "Email": "sanjeet.mane@trexenergy.in",
+    "Phone": "+91 87936 62763",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -7365,7 +7365,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.11
+    "Probability": 13.18
   },
   {
     "Created on": "2026-07-22 07:48:40",
@@ -7374,8 +7374,8 @@
     "Company Name": "Greenamp Technos (OPC) Private Limited",
     "Opportunity": "Greenamp Technos (OPC) Private Limited's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "support@greenamp.in",
+    "Phone": "+91 96293 59108",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -7389,7 +7389,7 @@
     "City": "Coimbatore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.04
+    "Probability": 62.54
   },
   {
     "Created on": "2026-07-22 07:12:46",
@@ -7398,8 +7398,8 @@
     "Company Name": "Promax PlugUp EV Pvt. Ltd.",
     "Opportunity": "Promax PlugUp EV Pvt. Ltd.'s opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "+91 79734 70715",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -7413,7 +7413,7 @@
     "City": "Chandigarh",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 89.49
+    "Probability": 33.9
   },
   {
     "Created on": "2026-07-22 07:00:58",
@@ -7422,8 +7422,8 @@
     "Company Name": "Rimone Charging",
     "Opportunity": "Rimone Charging's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "info@rimonecharge.com",
+    "Phone": "+91 76960 72280",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -7437,7 +7437,7 @@
     "City": "Patiala",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 89.49
+    "Probability": 62.53
   },
   {
     "Created on": "2026-07-22 06:41:16",
@@ -7445,13 +7445,13 @@
     "RFQ Date": null,
     "Company Name": "MERAS Plugins Pvt. Ltd. (Plugzmart)",
     "Opportunity": "MERAS Plugins Pvt. Ltd. (operating as Plugzmart)'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Satheesh Venkatachalam",
+    "Email": "satheesh@plugzmart.com",
+    "Phone": "+91 98840 16983",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
-    "Revenue (Millions USD)": 8.0,
+    "Revenue (Millions USD)": 15.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
     "Stage": "Market Research",
@@ -7461,7 +7461,7 @@
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.04
+    "Probability": 62.53
   },
   {
     "Created on": "2026-07-22 06:17:52",
@@ -7469,9 +7469,9 @@
     "RFQ Date": null,
     "Company Name": "HIGHNESS MICROELECTRONICS LIMITED",
     "Opportunity": "HIGHNESS MICROELECTRONICS LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Kushal Vishwakarma",
+    "Email": "kushalvishwakarma@highnessmicro.com",
+    "Phone": "+91 96992 43003",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -7485,7 +7485,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.11
+    "Probability": 13.17
   },
   {
     "Created on": "2026-07-22 06:11:12",
@@ -7493,9 +7493,9 @@
     "RFQ Date": null,
     "Company Name": "SWELECT ENERGY SYSTEMS LIMITED",
     "Opportunity": "SWELECT ENERGY SYSTEMS LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Arul Shanmugasundram",
+    "Email": "arul@swelectes.com",
+    "Phone": "+91 99808 11128",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -7509,7 +7509,7 @@
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.04
+    "Probability": 62.53
   },
   {
     "Created on": "2026-07-22 06:06:46",
@@ -7518,8 +7518,8 @@
     "Company Name": "COLLAREV AUTO INDIA PRIVATE LIMITED",
     "Opportunity": "COLLAREV AUTO INDIA PRIVATE LIMITED's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "+91 87002 67021",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
@@ -7533,7 +7533,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 97.12
+    "Probability": 65.66
   },
   {
     "Created on": "2026-07-22 05:54:30",
@@ -7541,9 +7541,9 @@
     "RFQ Date": null,
     "Company Name": "CHHABI ELECTRICALS PRIVATE LIMITED",
     "Opportunity": "CHHABI ELECTRICALS PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Mohan J. Chaudhari",
+    "Email": "mohan.c@chhabi-india.com",
+    "Phone": "+91 94231 87209",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -7557,7 +7557,7 @@
     "City": "Jalgaon",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.11
+    "Probability": 13.17
   },
   {
     "Created on": "2026-07-22 05:51:27",
@@ -7565,9 +7565,9 @@
     "RFQ Date": null,
     "Company Name": "ULTRAFAST CHARGERS PRIVATE LIMITED",
     "Opportunity": "ULTRAFAST CHARGERS PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Abhilash Reddy Gandra",
+    "Email": "abhilashgandra@ultrafastchargers.com",
+    "Phone": "+91 98667 13333",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -7581,7 +7581,7 @@
     "City": "Rangareddy",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.11
+    "Probability": 13.17
   },
   {
     "Created on": "2026-07-22 05:22:56",
@@ -7590,8 +7590,8 @@
     "Company Name": "Sunfuel Electric Pvt. Ltd.",
     "Opportunity": "Sunfuel Electric Pvt. Ltd.'s opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "+91 90906 09069",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -7605,7 +7605,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.52
+    "Probability": 49.47
   },
   {
     "Created on": "2026-07-22 05:08:20",
@@ -7613,9 +7613,9 @@
     "RFQ Date": null,
     "Company Name": "Ksquare Energy Pvt. Ltd.",
     "Opportunity": "Ksquare Energy Pvt. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Kuldip Sorathiya",
+    "Email": "kuldip@ksquareenergy.com",
+    "Phone": "+91 94288 66620",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -7629,7 +7629,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.04
+    "Probability": 62.53
   },
   {
     "Created on": "2026-07-22 04:39:16",
@@ -7637,9 +7637,9 @@
     "RFQ Date": null,
     "Company Name": "SOUNCE PRIVATE LIMITED",
     "Opportunity": "SOUNCE PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Dhruvil Jain",
+    "Email": "dhruvil@sounce.com",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7653,7 +7653,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.11
+    "Probability": 68.46
   },
   {
     "Created on": "2026-07-22 04:31:19",
@@ -7661,9 +7661,9 @@
     "RFQ Date": null,
     "Company Name": "EPOS AUDIO INDIA PRIVATE LIMITED",
     "Opportunity": "EPOS AUDIO INDIA PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Sudeep Roy",
+    "Email": "NA",
+    "Phone": "+91 98455 69905",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7677,7 +7677,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 70.1
+    "Probability": 11.74
   },
   {
     "Created on": "2026-07-22 04:08:02",
@@ -7686,8 +7686,8 @@
     "Company Name": "DAICHI INTERNATIONAL",
     "Opportunity": "DAICHI INTERNATIONAL's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "+91 63566 35691",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7701,7 +7701,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.52
+    "Probability": 49.47
   },
   {
     "Created on": "2026-07-21 16:05:04",
