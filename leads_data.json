@@ -6439,7 +6439,7 @@
     "Opportunity": "RAVEL ELECTRONICS PRIVATE LIMITED",
     "Contact Name": "ABINESH",
     "Email": "NA",
-    "Phone": "+91 63826 96917",
+    "Phone": "+91 90030 99025",
     "Salesperson": "Aadit Nair",
     "Next Follow up": "2026-07-23",
     "Industry Segment": "EMS & Electronics Mfg",
@@ -6718,6 +6718,30 @@
     "Closed Date": null,
     "Expected Closing": "2026-11-29",
     "Probability": 73.23
+  },
+  {
+    "Created on": "2026-07-22 09:10:26",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "WattPower Systems Pvt. Ltd.",
+    "Opportunity": "WattPower Systems Pvt. Ltd.'s opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Power Electronics & Electrical",
+    "Revenue (Millions USD)": 50.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Delhi (IN)",
+    "City": "Delhi",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 94.52
   },
   {
     "Created on": "2026-07-22 07:57:26",
@@ -22900,7 +22924,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "Webasto Group",
-    "Opportunity": "Webasto Group's opportunity",
+    "Opportunity": "Webasto Group",
     "Contact Name": "George Thomas",
     "Email": "george.thomas@webasto.com",
     "Phone": "+91 98459 87110",
@@ -22917,7 +22941,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.74
+    "Probability": 30.0
   },
   {
     "Created on": "2026-07-02 11:05:11",
@@ -32525,11 +32549,11 @@
     "RFQ Date": null,
     "Company Name": "Fybros",
     "Opportunity": "Fybros's opportunity",
-    "Contact Name": "Rajiv Khandagale",
-    "Email": "NA",
-    "Phone": "+91 90961 15745",
+    "Contact Name": "Ashish Dixit",
+    "Email": "ashish@fybros.com",
+    "Phone": "+91 97110 02766",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-07-22",
+    "Next Follow up": "2026-07-23",
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 50.0,
     "Opportunity Type": "PCB Assembly",
@@ -32541,7 +32565,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 47.09
+    "Probability": 74.78
   },
   {
     "Created on": "2026-06-23 09:56:28",
@@ -32865,7 +32889,7 @@
     "Email": "sanchit.sehgal@alisan.co.in",
     "Phone": "+91 97183 85111",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-07-22",
+    "Next Follow up": "2026-07-23",
     "Industry Segment": "IoT & Smart Devices",
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Box Build",
@@ -43542,8 +43566,8 @@
     "Company Name": "Furukawa Electric India",
     "Opportunity": "Furukawa Electric India's opportunity",
     "Contact Name": "Indrasen Vishwakarma",
-    "Email": "rakesh.rajpoot@furukawaminda.com",
-    "Phone": "+91 96079 00957",
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Aadit Nair",
     "Next Follow up": "2026-07-22",
     "Industry Segment": "EMS & Electronics Mfg",
@@ -43557,7 +43581,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 58.66
+    "Probability": 86.97
   },
   {
     "Created on": "2026-06-02 06:45:42",
@@ -43646,14 +43670,14 @@
     "Revenue (Millions USD)": 20.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 2000000.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Telangana (IN)",
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 12.43
+    "Probability": 6.74
   },
   {
     "Created on": "2026-06-02 06:19:40",
@@ -46494,8 +46518,8 @@
     "Company Name": "DEFENDRON TECHNOLOGIES PRIVATE LIMITED",
     "Opportunity": "Defendron",
     "Contact Name": "Nikhil Salunke",
-    "Email": "nikhil.s@defendrontech.com",
-    "Phone": "+91 90752 57275",
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Aadit Nair",
     "Next Follow up": "2026-07-22",
     "Industry Segment": "Aerospace & Defense",
@@ -46509,7 +46533,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 68.52
+    "Probability": 90.54
   },
   {
     "Created on": "2026-05-25 05:51:55",
