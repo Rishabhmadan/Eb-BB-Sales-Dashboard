@@ -66806,14 +66806,14 @@
     "Revenue (Millions USD)": 5.1,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 500000.0,
-    "Stage": "Connected",
+    "Stage": "RFQ Expected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": false,
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 25.95
+    "Probability": 28.13
   },
   {
     "Created on": "2026-04-09 05:33:03",
