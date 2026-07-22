@@ -7013,9 +7013,9 @@
     "RFQ Date": null,
     "Company Name": "Next Automation",
     "Opportunity": "Next Automation's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Kiren Kaliannan",
+    "Email": "NA",
+    "Phone": "+91 96886 60409",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -7029,7 +7029,7 @@
     "City": "Tiruchengode",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.04
+    "Probability": 33.91
   },
   {
     "Created on": "2026-07-22 11:20:56",
@@ -7038,8 +7038,8 @@
     "Company Name": "GREENLEAP ROBOTICS PRIVATE LIMITED",
     "Opportunity": "GREENLEAP ROBOTICS PRIVATE LIMITED's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "contact@greenleaprobotics.com",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -7053,7 +7053,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 97.12
+    "Probability": 98.89
   },
   {
     "Created on": "2026-07-22 11:10:35",
@@ -7062,8 +7062,8 @@
     "Company Name": "Fabtru Innovation Pvt. Ltd.",
     "Opportunity": "Fabtru Innovation Pvt. Ltd.'s opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "info@fabtru.com",
+    "Phone": "+91 95400 07578",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -7077,7 +7077,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.68
+    "Probability": 76.66
   },
   {
     "Created on": "2026-07-22 11:03:09",
@@ -7085,9 +7085,9 @@
     "RFQ Date": null,
     "Company Name": "TAYPRO PRIVATE LIMITED",
     "Opportunity": "TAYPRO PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Tejas B. Memane",
+    "Email": "tejas.memane@taypro.in",
+    "Phone": "+91 77385 17615",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -7101,7 +7101,7 @@
     "City": "Navi Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.11
+    "Probability": 13.18
   },
   {
     "Created on": "2026-07-22 10:57:02",
@@ -7109,9 +7109,9 @@
     "RFQ Date": null,
     "Company Name": "SOLAVIO LABS PRIVATE LIMITED",
     "Opportunity": "SOLAVIO LABS PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Suraj Mohan",
+    "Email": "NA",
+    "Phone": "+91 6824 457 667",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -7125,7 +7125,7 @@
     "City": "Coimbatore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.04
+    "Probability": 33.91
   },
   {
     "Created on": "2026-07-22 10:35:43",
@@ -7133,9 +7133,9 @@
     "RFQ Date": null,
     "Company Name": "OSWAL SOLAR ENERGY PRIVATE LIMITED",
     "Opportunity": "OSWAL SOLAR ENERGY PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Prince Kalkhanday",
+    "Email": "prince.kalkhanday@oswalsolar.com",
+    "Phone": "+91 87558 15909",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -7149,7 +7149,7 @@
     "City": "Karnal",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.68
+    "Probability": 76.66
   },
   {
     "Created on": "2026-07-22 10:29:35",
