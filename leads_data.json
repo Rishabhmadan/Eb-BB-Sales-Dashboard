@@ -6869,9 +6869,9 @@
     "RFQ Date": null,
     "Company Name": "Ampvolts",
     "Opportunity": "Ampvolts's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Sharad Rastogi",
+    "Email": "sharad.rastogi@ampvolts.com",
+    "Phone": "+91 81286 91450",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
@@ -6885,7 +6885,7 @@
     "City": "Vadodara",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.04
+    "Probability": 62.54
   },
   {
     "Created on": "2026-07-22 13:00:19",
@@ -6893,9 +6893,9 @@
     "RFQ Date": null,
     "Company Name": "Intello Tech AMC Pvt. Ltd.",
     "Opportunity": "Intello Tech AMC Pvt. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Hitaksh Sachar",
+    "Email": "hitaksh@intello.co.in",
+    "Phone": "+91 98119 71111",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -6909,7 +6909,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.52
+    "Probability": 76.12
   },
   {
     "Created on": "2026-07-22 12:57:56",
@@ -6917,9 +6917,9 @@
     "RFQ Date": null,
     "Company Name": "SKILANCER SOLAR PRIVATE LIMITED",
     "Opportunity": "SKILANCER SOLAR PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Vijay Kumar Sappatti",
+    "Email": "NA",
+    "Phone": "+91 98497 46500",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -6933,7 +6933,7 @@
     "City": "Faridabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 97.69
+    "Probability": 70.58
   },
   {
     "Created on": "2026-07-22 12:05:16",
@@ -6965,9 +6965,9 @@
     "RFQ Date": null,
     "Company Name": "CLEANSTAR MACHINES",
     "Opportunity": "CLEANSTAR MACHINES's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Amol Funde",
+    "Email": "amol@cleanstarmachines.com",
+    "Phone": "+91 95959 31593",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -6981,7 +6981,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.11
+    "Probability": 13.18
   },
   {
     "Created on": "2026-07-22 11:51:25",
@@ -6990,8 +6990,8 @@
     "Company Name": "Mrobotics Pvt. Ltd.",
     "Opportunity": "Mrobotics Pvt. Ltd.'s opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "info@mrobotics.co.in",
+    "Phone": "+91 81408 28200",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -7005,7 +7005,7 @@
     "City": "Vadodara",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.04
+    "Probability": 62.54
   },
   {
     "Created on": "2026-07-22 11:30:22",
