@@ -877,15 +877,15 @@
     "Industry Segment": "EMS & Electronics Mfg",
     "Revenue (Millions USD)": 0.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 1000000.0,
-    "Stage": "RFQ Received",
-    "Won/Lost": "Pending",
+    "Expected Revenue": 1770000.0,
+    "Stage": "Won",
+    "Won/Lost": "Won",
     "Country": false,
     "State": false,
     "City": false,
-    "Closed Date": null,
+    "Closed Date": "2026-07-24 08:55:46",
     "Expected Closing": "2026-07-27",
-    "Probability": 77.7
+    "Probability": 100.0
   },
   {
     "Created on": "2026-07-23 11:53:44",
@@ -901,15 +901,15 @@
     "Industry Segment": "EMS & Electronics Mfg",
     "Revenue (Millions USD)": 0.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 2400000.0,
-    "Stage": "RFQ Received",
-    "Won/Lost": "Pending",
+    "Expected Revenue": 2132000.0,
+    "Stage": "Won",
+    "Won/Lost": "Won",
     "Country": false,
     "State": false,
     "City": false,
-    "Closed Date": null,
+    "Closed Date": "2026-07-24 08:57:07",
     "Expected Closing": "2026-07-27",
-    "Probability": 71.41
+    "Probability": 100.0
   },
   {
     "Created on": "2026-07-23 09:50:03",
