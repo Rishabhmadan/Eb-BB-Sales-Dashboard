@@ -24700,7 +24700,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "Salcomp India",
-    "Opportunity": "Salcomp India's opportunity",
+    "Opportunity": "Salcomp India",
     "Contact Name": "Ramesh Venu",
     "Email": "venu.ramesh@salcomp.com",
     "Phone": "+91 97909 50222",
@@ -24709,15 +24709,15 @@
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 700.0,
     "Opportunity Type": "PCB Assembly",
-    "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Expected Revenue": 700000.0,
+    "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Uttar Pradesh (IN)",
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 73.48
+    "Probability": 30.0
   },
   {
     "Created on": "2026-07-02 05:29:17",
