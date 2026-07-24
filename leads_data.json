@@ -974,14 +974,14 @@
     "Revenue (Millions USD)": 0.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 245000.0,
-    "Stage": "RFQ Received",
-    "Won/Lost": "Pending",
+    "Stage": "Won",
+    "Won/Lost": "Won",
     "Country": false,
     "State": false,
     "City": false,
-    "Closed Date": null,
+    "Closed Date": "2026-07-24 09:56:55",
     "Expected Closing": "2026-07-24",
-    "Probability": 71.41
+    "Probability": 100.0
   },
   {
     "Created on": "2026-07-16 05:35:59",
@@ -32582,7 +32582,7 @@
     "Revenue (Millions USD)": 40.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 200000.0,
-    "Stage": "Open",
+    "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Rajasthan (IN)",
