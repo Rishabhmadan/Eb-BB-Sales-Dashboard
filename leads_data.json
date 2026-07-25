@@ -63633,19 +63633,19 @@
     "Email": "harish@robotspace.in",
     "Phone": "+91 89190 24464",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-07-25",
+    "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 1.2,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 100000.0,
-    "Stage": "Follow Up Later",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 21.83
+    "Probability": 73.84
   },
   {
     "Created on": "2026-04-09 05:33:03",
