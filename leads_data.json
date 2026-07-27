@@ -4929,7 +4929,7 @@
     "Email": "electronics.lab@veego.in",
     "Phone": "+91 97737 24421",
     "Salesperson": "Ruchit Nambiar",
-    "Next Follow up": "2026-07-20",
+    "Next Follow up": "2026-07-27",
     "Industry Segment": "IoT & Smart Devices",
     "Revenue (Millions USD)": 7.3,
     "Opportunity Type": "Component Sourcing",
@@ -4940,7 +4940,7 @@
     "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
-    "Expected Closing": "2026-07-25",
+    "Expected Closing": "2026-07-31",
     "Probability": 50.0
   },
   {
@@ -6960,6 +6960,102 @@
     "Probability": 73.23
   },
   {
+    "Created on": "2026-07-27 11:46:47",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "BLINQ MOBILITY PRIVATE LIMITED",
+    "Opportunity": "BLINQ MOBILITY PRIVATE LIMITED's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Automotive & EV",
+    "Revenue (Millions USD)": 2.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Haryana (IN)",
+    "City": "Gurugram",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 93.99
+  },
+  {
+    "Created on": "2026-07-27 11:29:54",
+    "Source": false,
+    "RFQ Date": null,
+    "Company Name": "STAR ENGINEERS (INDIA) PRIVATE LIMITED",
+    "Opportunity": "STAR ENGINEERS (INDIA) PRIVATE LIMITED",
+    "Contact Name": "Yogesh Wani",
+    "Email": "yogesh.wani@starengineers.in",
+    "Phone": "+91 98600 05661",
+    "Salesperson": "Riya Gupta",
+    "Next Follow up": null,
+    "Industry Segment": "Automotive & EV",
+    "Revenue (Millions USD)": 0.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Follow Up Later",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Maharashtra (IN)",
+    "City": "Pune",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 17.79
+  },
+  {
+    "Created on": "2026-07-27 11:22:03",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "BonV",
+    "Opportunity": "BonV Technology Private Limited's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Aerospace & Defense",
+    "Revenue (Millions USD)": 2.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Karnataka (IN)",
+    "City": "Bangalore",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 67.31
+  },
+  {
+    "Created on": "2026-07-27 11:16:07",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "GARUDA AEROSPACE LIMITED",
+    "Opportunity": "GARUDA AEROSPACE LIMITED's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Aerospace & Defense",
+    "Revenue (Millions USD)": 30.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Tamil Nadu (IN)",
+    "City": "Chennai",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 88.82
+  },
+  {
     "Created on": "2026-07-27 10:44:13",
     "Source": "Zoom Info",
     "RFQ Date": null,
@@ -7209,19 +7305,19 @@
     "Email": "anji@varchasaeriospace.com",
     "Phone": "+91 94908 08517",
     "Salesperson": "Ruchit Nambiar",
-    "Next Follow up": null,
+    "Next Follow up": "2026-07-28",
     "Industry Segment": "Aerospace & Defense",
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "PCB Assembly",
-    "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Expected Revenue": 300000.0,
+    "Stage": "RFQ Expected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 36.91
+    "Probability": 30.0
   },
   {
     "Created on": "2026-07-27 06:21:45",
@@ -7256,7 +7352,7 @@
     "Contact Name": "Joseph Gladwin S",
     "Email": "josephgladwin@bigcatwireless.com",
     "Phone": "+91 94442 77802",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
     "Revenue (Millions USD)": 5.0,
@@ -7277,10 +7373,10 @@
     "RFQ Date": null,
     "Company Name": "AIOTY LABS",
     "Opportunity": "AIOTY LABS's opportunity",
-    "Contact Name": false,
-    "Email": "NA",
-    "Phone": "NA",
-    "Salesperson": "Kundan Pandey",
+    "Contact Name": "Mahesh Lakshmipathi",
+    "Email": "mahesh@aioty.ai",
+    "Phone": "+91 86680 69283",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
     "Revenue (Millions USD)": 2.0,
@@ -7293,7 +7389,7 @@
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 88.69
+    "Probability": 69.29
   },
   {
     "Created on": "2026-07-27 05:40:48",
@@ -7325,9 +7421,9 @@
     "RFQ Date": null,
     "Company Name": "NOVIGA AUTOMATION PRIVATE LIMITED",
     "Opportunity": "NOVIGA AUTOMATION PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Rahul Arora",
+    "Email": "rahul@noviga.tech",
+    "Phone": "+91 99724 21777",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
@@ -7341,7 +7437,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 56.16
+    "Probability": 23.03
   },
   {
     "Created on": "2026-07-27 05:02:35",
@@ -10472,7 +10568,7 @@
     "Contact Name": "Uma Nandakumar",
     "Email": "uma@sss-electric.com",
     "Phone": "+91 80 4646 7421",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 100.0,
@@ -10485,7 +10581,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 17.09
+    "Probability": 18.64
   },
   {
     "Created on": "2026-07-18 03:22:00",
@@ -10502,14 +10598,14 @@
     "Revenue (Millions USD)": 2.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Navi Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 24.12
+    "Probability": 36.96
   },
   {
     "Created on": "2026-07-18 03:10:19",
@@ -10520,7 +10616,7 @@
     "Contact Name": "Miraz Hossain",
     "Email": "NA",
     "Phone": "+91 75429 84754",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 5.0,
@@ -10533,7 +10629,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 31.82
+    "Probability": 31.46
   },
   {
     "Created on": "2026-07-18 03:05:03",
@@ -10544,7 +10640,7 @@
     "Contact Name": "Barathan Kuppusamy",
     "Email": "NA",
     "Phone": "+91 99430 55556",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 6.0,
@@ -10557,7 +10653,7 @@
     "City": "Karumathampatti",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 19.64
+    "Probability": 19.38
   },
   {
     "Created on": "2026-07-18 02:57:28",
@@ -10574,14 +10670,14 @@
     "Revenue (Millions USD)": 3.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 87.31
+    "Probability": 92.7
   },
   {
     "Created on": "2026-07-18 02:49:28",
@@ -10598,14 +10694,14 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Madhya Pradesh (IN)",
     "City": "Bhopal",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 97.47
+    "Probability": 98.61
   },
   {
     "Created on": "2026-07-18 02:40:51",
@@ -10616,7 +10712,7 @@
     "Contact Name": false,
     "Email": "contact@upciti.co.in",
     "Phone": "+91 96320 17510",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 2.0,
@@ -10629,7 +10725,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 17.09
+    "Probability": 18.64
   },
   {
     "Created on": "2026-07-18 02:33:51",
@@ -10640,10 +10736,10 @@
     "Contact Name": false,
     "Email": "reachus@siriem.com",
     "Phone": "+91 93267 88704",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
-    "Revenue (Millions USD)": 0.0,
+    "Revenue (Millions USD)": 0.12,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
     "Stage": "Open",
@@ -10653,7 +10749,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.74
+    "Probability": 7.44
   },
   {
     "Created on": "2026-07-17 16:05:06",
@@ -10664,7 +10760,7 @@
     "Contact Name": "Indra Kumar Bagri",
     "Email": "indra@shizenenergy.in",
     "Phone": "+91 88009 65458",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 4.0,
@@ -10677,7 +10773,7 @@
     "City": "Tiruvallur",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 44.3
+    "Probability": 46.92
   },
   {
     "Created on": "2026-07-17 15:39:03",
@@ -10688,7 +10784,7 @@
     "Contact Name": "Harry Bajaj",
     "Email": "harry@mobec.io",
     "Phone": "+91 97115 04123",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 5.0,
@@ -10701,7 +10797,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 74.78
+    "Probability": 76.71
   },
   {
     "Created on": "2026-07-17 15:33:53",
@@ -10718,14 +10814,14 @@
     "Revenue (Millions USD)": 9.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Kerala (IN)",
     "City": "Cochin",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 77.76
+    "Probability": 86.58
   },
   {
     "Created on": "2026-07-17 11:38:21",
@@ -10760,7 +10856,7 @@
     "Contact Name": "Yellai Prasad",
     "Email": "prasad@zero21.autos",
     "Phone": "NA",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 5.0,
@@ -10773,7 +10869,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 50.85
+    "Probability": 50.66
   },
   {
     "Created on": "2026-07-17 11:16:43",
@@ -10784,7 +10880,7 @@
     "Contact Name": false,
     "Email": "NA",
     "Phone": "+91 82200 20922",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 5.0,
@@ -10797,7 +10893,7 @@
     "City": "Palani",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 19.64
+    "Probability": 19.38
   },
   {
     "Created on": "2026-07-17 11:07:23",
@@ -10808,7 +10904,7 @@
     "Contact Name": "Brijesh Sujan",
     "Email": "brijesh.sujan@huse.co.in",
     "Phone": "+91 99201 27277",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 5.0,
@@ -10821,7 +10917,7 @@
     "City": "Thane",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.74
+    "Probability": 7.44
   },
   {
     "Created on": "2026-07-17 10:57:31",
@@ -10832,7 +10928,7 @@
     "Contact Name": false,
     "Email": "NA",
     "Phone": "+44 1244 052110",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 4.0,
@@ -10845,7 +10941,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 32.48
+    "Probability": 32.12
   },
   {
     "Created on": "2026-07-17 10:52:18",
@@ -10862,14 +10958,14 @@
     "Revenue (Millions USD)": 2.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
     "City": "Kurukshetra",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 87.31
+    "Probability": 92.7
   },
   {
     "Created on": "2026-07-17 10:45:44",
@@ -10880,7 +10976,7 @@
     "Contact Name": "Sumit Kumar Bagenia",
     "Email": "NA",
     "Phone": "+91 89520 63796",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 2.0,
@@ -10893,7 +10989,7 @@
     "City": "Jaipur",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 19.64
+    "Probability": 19.38
   },
   {
     "Created on": "2026-07-17 10:37:57",
@@ -10904,7 +11000,7 @@
     "Contact Name": false,
     "Email": "NA",
     "Phone": "+91 78880 01480",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 10.0,
@@ -10917,7 +11013,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 2.17
+    "Probability": 2.14
   },
   {
     "Created on": "2026-07-17 10:31:49",
@@ -10928,7 +11024,7 @@
     "Contact Name": "Nithul Nath",
     "Email": "nithul.nath@devotmotors.com",
     "Phone": "NA",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 5.0,
@@ -10941,7 +11037,7 @@
     "City": "Jodhpur",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 91.92
+    "Probability": 91.87
   },
   {
     "Created on": "2026-07-17 10:28:39",
@@ -10952,7 +11048,7 @@
     "Contact Name": "Praveenbalaji Devarajan",
     "Email": "NA",
     "Phone": "+91 96360 49000",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 10.0,
@@ -10965,7 +11061,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 2.17
+    "Probability": 2.14
   },
   {
     "Created on": "2026-07-17 10:26:02",
@@ -10976,7 +11072,7 @@
     "Contact Name": "Harshad Patel",
     "Email": "harshadpatel@a1sureja.in",
     "Phone": "NA",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 5.5,
@@ -10989,7 +11085,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 91.92
+    "Probability": 91.87
   },
   {
     "Created on": "2026-07-17 10:22:20",
@@ -11000,7 +11096,7 @@
     "Contact Name": "Parul Agarwal",
     "Email": "parul@bmrev.in",
     "Phone": "NA",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 2.0,
@@ -11013,7 +11109,7 @@
     "City": "Chittoor",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 91.47
+    "Probability": 91.41
   },
   {
     "Created on": "2026-07-17 10:17:44",
@@ -11024,7 +11120,7 @@
     "Contact Name": false,
     "Email": "contact@ezonev.com",
     "Phone": "+91 96865 76906",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 5.0,
@@ -11037,7 +11133,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 17.09
+    "Probability": 18.64
   },
   {
     "Created on": "2026-07-17 10:07:09",
@@ -11048,7 +11144,7 @@
     "Contact Name": "Umang Saraogi",
     "Email": "umang@e-went.com",
     "Phone": "+91 65961 16040",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 7.0,
@@ -11061,7 +11157,7 @@
     "City": "Kolkata",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.74
+    "Probability": 7.44
   },
   {
     "Created on": "2026-07-17 09:48:55",
@@ -11072,7 +11168,7 @@
     "Contact Name": "Arpit Agrawal",
     "Email": "arpit@wroley.com",
     "Phone": "NA",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 6.0,
@@ -11085,7 +11181,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 97.7
+    "Probability": 97.68
   },
   {
     "Created on": "2026-07-17 09:44:49",
@@ -11096,7 +11192,7 @@
     "Contact Name": false,
     "Email": "energyautomobile52@gmail.com",
     "Phone": "+91 80056 69870",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 2.0,
@@ -11109,7 +11205,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.74
+    "Probability": 7.44
   },
   {
     "Created on": "2026-07-17 09:40:39",
@@ -11144,7 +11240,7 @@
     "Contact Name": false,
     "Email": "cyborgxofficial@gmail.com",
     "Phone": "+91 96403 14669",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 8.0,
@@ -11157,7 +11253,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 74.78
+    "Probability": 76.71
   },
   {
     "Created on": "2026-07-17 09:34:12",
@@ -11168,7 +11264,7 @@
     "Contact Name": false,
     "Email": "NA",
     "Phone": "+91 82951 89600",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 2.0,
@@ -11181,7 +11277,7 @@
     "City": "Fatehgarh Sahib",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 18.72
+    "Probability": 19.38
   },
   {
     "Created on": "2026-07-17 09:26:56",
@@ -11192,7 +11288,7 @@
     "Contact Name": "Karthik Sagara",
     "Email": "NA",
     "Phone": "+91 90000 82180",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 6.0,
@@ -11205,7 +11301,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 2.17
+    "Probability": 2.14
   },
   {
     "Created on": "2026-07-17 09:23:34",
@@ -11216,7 +11312,7 @@
     "Contact Name": false,
     "Email": "eiferzenenergy@gmail.com",
     "Phone": "+91 89792 53776",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 5.0,
@@ -11229,7 +11325,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 74.78
+    "Probability": 76.71
   },
   {
     "Created on": "2026-07-17 09:07:20",
@@ -11240,7 +11336,7 @@
     "Contact Name": "Gitesh Mali",
     "Email": "gitesh@doparenergy.com",
     "Phone": "+91 98230 68988",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 2.0,
@@ -11253,7 +11349,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 44.3
+    "Probability": 46.92
   },
   {
     "Created on": "2026-07-17 08:59:21",
@@ -11817,11 +11913,11 @@
     "Email": "aditya.paranjpe@tor.ai",
     "Phone": "+91 95520 41377",
     "Salesperson": "Ruchit Nambiar",
-    "Next Follow up": "2026-07-23",
+    "Next Follow up": "2026-07-31",
     "Industry Segment": "IoT & Smart Devices",
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 250000.0,
+    "Expected Revenue": 2800000.0,
     "Stage": "RFQ Expected",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -11829,7 +11925,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 30.0
+    "Probability": 50.0
   },
   {
     "Created on": "2026-07-16 12:55:51",
@@ -22062,22 +22158,22 @@
     "Company Name": "Avcon Controls Pvt . Ltd.",
     "Opportunity": "Avcon Controls Pvt . Ltd.'s opportunity",
     "Contact Name": "Ashish R. Karnik",
-    "Email": "NA",
-    "Phone": "+91 97873 02809, +91 83909 02671",
+    "Email": "a.karnik@avconcontrols.com",
+    "Phone": "+91 98202 34976",
     "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 10.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Follow Up Later",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 22.76
+    "Probability": 14.43
   },
   {
     "Created on": "2026-07-06 11:53:05",
@@ -35145,7 +35241,7 @@
     "Email": "NA",
     "Phone": "+91 98101 20022",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-07-27",
+    "Next Follow up": "2026-07-29",
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 52.0,
     "Opportunity Type": "Box Build",
@@ -40622,14 +40718,14 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 600000.0,
-    "Stage": "Follow Up Later",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 45.62
+    "Probability": 64.97
   },
   {
     "Created on": "2026-06-11 05:52:18",
@@ -41510,7 +41606,7 @@
     "Revenue (Millions USD)": 900.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 1000000.0,
-    "Stage": "Need Warm Intro",
+    "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
@@ -66611,7 +66707,7 @@
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "Semiconductors & Embedded",
-    "Revenue (Millions USD)": 1.2,
+    "Revenue (Millions USD)": 8.6,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 500000.0,
     "Stage": "Follow Up Later",
