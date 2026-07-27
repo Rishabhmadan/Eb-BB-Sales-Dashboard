@@ -1046,14 +1046,14 @@
     "Revenue (Millions USD)": 0.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 15000000.0,
-    "Stage": "RFQ Received",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": false,
     "State": false,
     "City": false,
     "Closed Date": null,
     "Expected Closing": "2026-07-22",
-    "Probability": 71.41
+    "Probability": 82.21
   },
   {
     "Created on": "2026-07-03 06:37:08",
@@ -6958,6 +6958,30 @@
     "Closed Date": null,
     "Expected Closing": "2026-11-29",
     "Probability": 73.23
+  },
+  {
+    "Created on": "2026-07-27 05:57:04",
+    "Source": "SES Expo",
+    "RFQ Date": null,
+    "Company Name": "AIOTY LABS",
+    "Opportunity": "AIOTY LABS's opportunity",
+    "Contact Name": false,
+    "Email": "NA",
+    "Phone": "NA",
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "IoT & Smart Devices",
+    "Revenue (Millions USD)": 2.0,
+    "Opportunity Type": "PCB Assembly",
+    "Expected Revenue": 0.0,
+    "Stage": "Open",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Tamil Nadu (IN)",
+    "City": "Chennai",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 88.69
   },
   {
     "Created on": "2026-07-27 05:40:48",
@@ -63093,7 +63117,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 0.73
+    "Probability": 25.64
   },
   {
     "Created on": "2026-04-09 05:33:03",
