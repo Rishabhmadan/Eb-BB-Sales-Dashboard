@@ -1032,6 +1032,30 @@
     "Probability": 100.0
   },
   {
+    "Created on": "2026-07-16 13:03:29",
+    "Source": "Zoom Info",
+    "RFQ Date": "2026-07-27",
+    "Company Name": "TOR.AI LIMITED",
+    "Opportunity": "TOR.AI LIMITED",
+    "Contact Name": "Aditya Paranjpe",
+    "Email": "aditya.paranjpe@tor.ai",
+    "Phone": "+91 95520 41377",
+    "Salesperson": "Ruchit Nambiar",
+    "Next Follow up": "2026-07-28",
+    "Industry Segment": "IoT & Smart Devices",
+    "Revenue (Millions USD)": 5.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 2800000.0,
+    "Stage": "RFQ Expected",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Maharashtra (IN)",
+    "City": "Pune",
+    "Closed Date": null,
+    "Expected Closing": "2026-08-04",
+    "Probability": 50.0
+  },
+  {
     "Created on": "2026-07-16 05:35:59",
     "Source": false,
     "RFQ Date": "2026-07-13",
@@ -6960,6 +6984,30 @@
     "Probability": 73.23
   },
   {
+    "Created on": "2026-07-27 12:06:38",
+    "Source": "Zoom Info",
+    "RFQ Date": null,
+    "Company Name": "TORK MOTORS PRIVATE LIMITED",
+    "Opportunity": "TORK MOTORS PRIVATE LIMITED's opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Kundan Pandey",
+    "Next Follow up": null,
+    "Industry Segment": "Automotive & EV",
+    "Revenue (Millions USD)": 10.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 0.0,
+    "Stage": "Market Research",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Maharashtra (IN)",
+    "City": "Pune",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 41.93
+  },
+  {
     "Created on": "2026-07-27 11:46:47",
     "Source": "Zoom Info",
     "RFQ Date": null,
@@ -11216,7 +11264,7 @@
     "Contact Name": "Viswanath Kari",
     "Email": "NA",
     "Phone": "+91 90817 68004",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 5.0,
@@ -11229,7 +11277,7 @@
     "City": "Vizianagaram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 18.72
+    "Probability": 18.47
   },
   {
     "Created on": "2026-07-17 09:37:24",
@@ -11360,7 +11408,7 @@
     "Contact Name": "Rohan Nadkarni",
     "Email": "rohan@litairsolutions.com",
     "Phone": "+91 70200 29126",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 3.0,
@@ -11373,7 +11421,7 @@
     "City": "Ponda",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 42.84
+    "Probability": 45.45
   },
   {
     "Created on": "2026-07-17 07:45:36",
@@ -11384,7 +11432,7 @@
     "Contact Name": false,
     "Email": "NA",
     "Phone": "+91 98220 90494",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 2.0,
@@ -11397,7 +11445,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 32.48
+    "Probability": 32.12
   },
   {
     "Created on": "2026-07-17 07:41:30",
@@ -11408,7 +11456,7 @@
     "Contact Name": "Lata Negi",
     "Email": "NA",
     "Phone": "+91 82097 49309",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 3.0,
@@ -11421,7 +11469,7 @@
     "City": "Jaipur",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 19.64
+    "Probability": 19.38
   },
   {
     "Created on": "2026-07-17 07:30:32",
@@ -11432,7 +11480,7 @@
     "Contact Name": false,
     "Email": "NA",
     "Phone": "+91 1800 210 2676",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 10.0,
@@ -11445,7 +11493,7 @@
     "City": "Navi Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 2.17
+    "Probability": 2.14
   },
   {
     "Created on": "2026-07-17 07:25:10",
@@ -11504,7 +11552,7 @@
     "Contact Name": false,
     "Email": "NA",
     "Phone": "+91 40 2307 5441",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 120.0,
@@ -11517,7 +11565,7 @@
     "City": "Solan",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 18.72
+    "Probability": 18.47
   },
   {
     "Created on": "2026-07-17 06:40:32",
@@ -11528,7 +11576,7 @@
     "Contact Name": false,
     "Email": "NA",
     "Phone": "NA",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 5.0,
@@ -11541,7 +11589,7 @@
     "City": "Ghaziabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 92.88
+    "Probability": 91.97
   },
   {
     "Created on": "2026-07-17 06:35:05",
@@ -11576,7 +11624,7 @@
     "Contact Name": "Yogesh Kulkarni",
     "Email": "yogesh@sinoxpower.com",
     "Phone": "+91 73002 85084",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 5.0,
@@ -11589,7 +11637,7 @@
     "City": "Rajkot",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 44.3
+    "Probability": 46.92
   },
   {
     "Created on": "2026-07-17 06:00:47",
@@ -11600,7 +11648,7 @@
     "Contact Name": "Ganesh Sundararaj",
     "Email": "ganesh@haritasa.net",
     "Phone": "NA",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
     "Revenue (Millions USD)": 8.0,
@@ -11613,7 +11661,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 74.68
+    "Probability": 74.54
   },
   {
     "Created on": "2026-07-17 05:43:58",
@@ -11624,7 +11672,7 @@
     "Contact Name": "Shailendra Singh",
     "Email": "shailendra@yuktix.com",
     "Phone": "+91 88843 15300",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "AgriTech",
     "Revenue (Millions USD)": 2.0,
@@ -11637,7 +11685,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 17.09
+    "Probability": 18.64
   },
   {
     "Created on": "2026-07-17 05:28:43",
@@ -11648,7 +11696,7 @@
     "Contact Name": "Ghouse Ahmed",
     "Email": "ghouseahmed@iwavesystems.com",
     "Phone": "+91 94480 85776",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Semiconductors & Embedded",
     "Revenue (Millions USD)": 60.0,
@@ -11661,7 +11709,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 17.09
+    "Probability": 18.64
   },
   {
     "Created on": "2026-07-17 05:11:29",
@@ -11716,10 +11764,10 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "SnapUp",
-    "Opportunity": "SnapUp's opportunity",
+    "Opportunity": "SnapUp",
     "Contact Name": "Tushar Tekriwal",
-    "Email": "ashutosh.t@startronlife.com",
-    "Phone": "+91 98916 66891",
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -11733,7 +11781,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 61.01
+    "Probability": 85.81
   },
   {
     "Created on": "2026-07-16 14:48:03",
@@ -11904,30 +11952,6 @@
     "Probability": 30.0
   },
   {
-    "Created on": "2026-07-16 13:03:29",
-    "Source": "Zoom Info",
-    "RFQ Date": null,
-    "Company Name": "TOR.AI LIMITED",
-    "Opportunity": "TOR.AI LIMITED",
-    "Contact Name": "Aditya Paranjpe",
-    "Email": "aditya.paranjpe@tor.ai",
-    "Phone": "+91 95520 41377",
-    "Salesperson": "Ruchit Nambiar",
-    "Next Follow up": "2026-07-31",
-    "Industry Segment": "IoT & Smart Devices",
-    "Revenue (Millions USD)": 5.0,
-    "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 2800000.0,
-    "Stage": "RFQ Expected",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": "Maharashtra (IN)",
-    "City": "Pune",
-    "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 50.0
-  },
-  {
     "Created on": "2026-07-16 12:55:51",
     "Source": "Zoom Info",
     "RFQ Date": null,
@@ -11960,7 +11984,7 @@
     "Contact Name": false,
     "Email": "NA",
     "Phone": "NA",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
     "Revenue (Millions USD)": 5.2,
@@ -11973,7 +11997,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 47.55
+    "Probability": 44.34
   },
   {
     "Created on": "2026-07-16 11:57:03",
@@ -22569,19 +22593,19 @@
     "Email": "NA",
     "Phone": "+91 91753 00106",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-07-27",
+    "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 10.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 100000.0,
-    "Stage": "Connected",
+    "Expected Revenue": 1000.0,
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 2.17
+    "Probability": 4.39
   },
   {
     "Created on": "2026-07-06 09:40:42",
