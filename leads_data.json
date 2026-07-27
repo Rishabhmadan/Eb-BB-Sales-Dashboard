@@ -1166,14 +1166,14 @@
     "Revenue (Millions USD)": 0.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 300000.0,
-    "Stage": "RFQ Received",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": "2026-06-24",
-    "Probability": 61.17
+    "Probability": 72.73
   },
   {
     "Created on": "2026-06-18 12:10:12",
@@ -1190,14 +1190,14 @@
     "Revenue (Millions USD)": 0.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 10000000.0,
-    "Stage": "RFQ Received",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": "2026-06-25",
-    "Probability": 16.01
+    "Probability": 30.09
   },
   {
     "Created on": "2026-06-18 12:06:14",
@@ -1214,14 +1214,14 @@
     "Revenue (Millions USD)": 0.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 200000.0,
-    "Stage": "RFQ Received",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": "2026-06-25",
-    "Probability": 16.01
+    "Probability": 30.09
   },
   {
     "Created on": "2026-06-18 12:03:00",
@@ -1238,14 +1238,14 @@
     "Revenue (Millions USD)": 0.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 200000.0,
-    "Stage": "RFQ Received",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": "2026-06-24",
-    "Probability": 2.37
+    "Probability": 64.16
   },
   {
     "Created on": "2026-06-18 09:27:38",
@@ -1550,14 +1550,14 @@
     "Revenue (Millions USD)": 0.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 20000000.0,
-    "Stage": "RFQ Received",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": "2026-06-26",
-    "Probability": 0.13
+    "Probability": 64.16
   },
   {
     "Created on": "2026-06-10 07:35:48",
