@@ -873,7 +873,7 @@
     "Email": "NA",
     "Phone": "+91 98455 98085",
     "Salesperson": "Ruchit Nambiar",
-    "Next Follow up": "2026-07-21",
+    "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 262.0,
     "Opportunity Type": "Other/TBD",
@@ -1046,7 +1046,7 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 2800000.0,
-    "Stage": "RFQ Expected",
+    "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
@@ -11552,7 +11552,7 @@
     "Contact Name": false,
     "Email": "NA",
     "Phone": "NA",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 5.0,
@@ -11565,7 +11565,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 24.12
+    "Probability": 21.83
   },
   {
     "Created on": "2026-07-17 07:07:38",
@@ -11576,7 +11576,7 @@
     "Contact Name": false,
     "Email": "NA",
     "Phone": "+91 99660 04500",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 6.0,
@@ -11589,7 +11589,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 2.17
+    "Probability": 2.14
   },
   {
     "Created on": "2026-07-17 07:02:54",
@@ -11648,7 +11648,7 @@
     "Contact Name": false,
     "Email": "NA",
     "Phone": "+91 70165 15124",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 15.0,
@@ -11661,7 +11661,7 @@
     "City": "Gandhinagar",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 19.64
+    "Probability": 19.38
   },
   {
     "Created on": "2026-07-17 06:31:18",
@@ -11768,7 +11768,7 @@
     "Contact Name": "Kalyan Chakravarthy",
     "Email": "kalyan@anuvega.com",
     "Phone": "+91 85482 57289",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "EMS & Electronics Mfg",
     "Revenue (Millions USD)": 5.0,
@@ -11781,7 +11781,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.74
+    "Probability": 7.44
   },
   {
     "Created on": "2026-07-16 14:59:23",
@@ -61109,9 +61109,9 @@
     "RFQ Date": null,
     "Company Name": "Eka Mobility",
     "Opportunity": "Eka Mobility",
-    "Contact Name": "Ashish Sharma",
-    "Email": "ashish.s@ekamobility.com",
-    "Phone": "+91 99350 90501",
+    "Contact Name": "Vinod Shinde",
+    "Email": "vinod.s@ekamobility.com",
+    "Phone": "+91 99606 41969",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "Automotive & EV",
@@ -61125,7 +61125,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 3.91
+    "Probability": 7.82
   },
   {
     "Created on": "2026-04-15 06:39:06",
