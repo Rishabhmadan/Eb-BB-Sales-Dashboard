@@ -10804,7 +10804,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "Stumpp Schuele & Somappa Electric",
-    "Opportunity": "Stumpp Schuele & Somappa Electric's opportunity",
+    "Opportunity": "Stumpp Schuele & Somappa Electric",
     "Contact Name": "Uma Nandakumar",
     "Email": "uma@sss-electric.com",
     "Phone": "+91 80 4646 7421",
@@ -10813,7 +10813,7 @@
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 100.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
+    "Expected Revenue": 500000.0,
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -10821,7 +10821,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 18.64
+    "Probability": 30.0
   },
   {
     "Created on": "2026-07-18 03:22:00",
