@@ -7021,7 +7021,7 @@
     "Industry Segment": "EMS & Electronics Mfg",
     "Revenue (Millions USD)": 4.2,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
+    "Expected Revenue": 1300000.0,
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -7029,7 +7029,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 75.34
+    "Probability": 30.34
   },
   {
     "Created on": "2026-07-30 06:25:35",
