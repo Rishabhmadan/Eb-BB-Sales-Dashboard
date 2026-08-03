@@ -7541,9 +7541,9 @@
     "RFQ Date": null,
     "Company Name": "BLAZE AUTOMATION SERVICES PRIVATE LIMITED",
     "Opportunity": "BLAZE AUTOMATION SERVICES PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": "NA",
-    "Phone": "+91 80190 93330",
+    "Contact Name": "Sridhar Ponugupati",
+    "Email": "sridhar.p@blazeautomation.com",
+    "Phone": "+91 91009 62696",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
@@ -7557,7 +7557,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 4.38
+    "Probability": 14.43
   },
   {
     "Created on": "2026-07-31 10:19:19",
@@ -7565,9 +7565,9 @@
     "RFQ Date": null,
     "Company Name": "Envoys Electronics Pvt. Ltd.",
     "Opportunity": "Envoys Electronics Pvt. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Tejbir Singh Dhillon",
+    "Email": "tejbir@envoys.net",
+    "Phone": "+91 98712 29666",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -7581,7 +7581,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 93.98
+    "Probability": 78.49
   },
   {
     "Created on": "2026-07-31 10:14:41",
@@ -7589,9 +7589,9 @@
     "RFQ Date": null,
     "Company Name": "QUADRALUMEN PRIVATE LIMITED",
     "Opportunity": "QUADRALUMEN PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Rajashekar Adep",
+    "Email": "rajashekar.adep@quadralumen.com",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -7605,7 +7605,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 41.92
+    "Probability": 68.3
   },
   {
     "Created on": "2026-07-31 09:53:45",
@@ -28497,12 +28497,12 @@
     "Email": "vikas.chetwani@groz-tools.com",
     "Phone": "+91 98113 57772",
     "Salesperson": "Ruchit Nambiar",
-    "Next Follow up": null,
+    "Next Follow up": "2026-08-04",
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 500.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 400000.0,
-    "Stage": "Open",
+    "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
@@ -37012,7 +37012,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "XECH TECHNOLOGIES PRIVATE LIMITED",
-    "Opportunity": "XECH TECHNOLOGIES PRIVATE LIMITED's opportunity",
+    "Opportunity": "XECH TECHNOLOGIES PRIVATE LIMITED",
     "Contact Name": "Niranjan Shendge",
     "Email": "niranjan.s@xech.com",
     "Phone": "+91 80822 10918",
@@ -37021,7 +37021,7 @@
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 8.0,
     "Opportunity Type": "Box Build",
-    "Expected Revenue": 0.0,
+    "Expected Revenue": 400000.0,
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -37029,7 +37029,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.74
+    "Probability": 30.0
   },
   {
     "Created on": "2026-06-23 08:02:12",
