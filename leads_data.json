@@ -7469,8 +7469,8 @@
     "RFQ Date": null,
     "Company Name": "DIGILINE SYSTEMS",
     "Opportunity": "DIGILINE SYSTEMS's opportunity",
-    "Contact Name": false,
-    "Email": "NA",
+    "Contact Name": "Yogesh Kumar Verma",
+    "Email": "yogesh.verma@digilinesystems.com",
     "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
@@ -7485,7 +7485,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 92.49
+    "Probability": 97.84
   },
   {
     "Created on": "2026-07-31 11:40:36",
@@ -7493,9 +7493,9 @@
     "RFQ Date": null,
     "Company Name": "Tefal Inicio",
     "Opportunity": "Tefal Inicio's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Shubham Paliwal",
+    "Email": "NA",
+    "Phone": "+91 93809 07923",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -7509,7 +7509,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 93.98
+    "Probability": 49.82
   },
   {
     "Created on": "2026-07-31 10:40:29",
@@ -7517,9 +7517,9 @@
     "RFQ Date": null,
     "Company Name": "NSURE RELIABLE POWER SOLUTIONS PRIVATE LIMITED",
     "Opportunity": "NSURE RELIABLE POWER SOLUTIONS PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Mohamed Kalifa",
+    "Email": "kalifa@nsure.co.in",
+    "Phone": "+91 97429 15624",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -7533,7 +7533,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 67.3
+    "Probability": 32.47
   },
   {
     "Created on": "2026-07-31 10:25:45",
@@ -7542,8 +7542,8 @@
     "Company Name": "BLAZE AUTOMATION SERVICES PRIVATE LIMITED",
     "Opportunity": "BLAZE AUTOMATION SERVICES PRIVATE LIMITED's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "+91 80190 93330",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
@@ -7557,7 +7557,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 41.92
+    "Probability": 4.38
   },
   {
     "Created on": "2026-07-31 10:19:19",
