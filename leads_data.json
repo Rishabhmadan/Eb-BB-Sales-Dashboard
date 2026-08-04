@@ -840,6 +840,30 @@
     "Probability": 50.0
   },
   {
+    "Created on": "2026-08-04 09:11:43",
+    "Source": false,
+    "RFQ Date": "2026-08-04",
+    "Company Name": "Revinoxx Technologies",
+    "Opportunity": "Revinoxx Technologies -",
+    "Contact Name": "Amit",
+    "Email": "Amit.kumar@revvinoxtechnologies.com",
+    "Phone": "+91 85868 68018",
+    "Salesperson": "Rishabh Madan",
+    "Next Follow up": "2026-08-05",
+    "Industry Segment": "EMS & Electronics Mfg",
+    "Revenue (Millions USD)": 0.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 1300000.0,
+    "Stage": "RFQ Received",
+    "Won/Lost": "Pending",
+    "Country": false,
+    "State": false,
+    "City": false,
+    "Closed Date": null,
+    "Expected Closing": "2026-08-04",
+    "Probability": 75.89
+  },
+  {
     "Created on": "2026-07-31 18:55:41",
     "Source": "Other",
     "RFQ Date": "2026-07-31",
@@ -1052,7 +1076,7 @@
     "State": "Maharashtra (IN)",
     "City": "Pune",
     "Closed Date": null,
-    "Expected Closing": "2026-08-04",
+    "Expected Closing": "2026-08-08",
     "Probability": 50.0
   },
   {
@@ -4508,7 +4532,7 @@
     "State": "Maharashtra (IN)",
     "City": "Pune",
     "Closed Date": null,
-    "Expected Closing": "2026-08-05",
+    "Expected Closing": "2026-08-08",
     "Probability": 60.0
   },
   {
@@ -4556,7 +4580,7 @@
     "State": "Maharashtra (IN)",
     "City": "Pune",
     "Closed Date": null,
-    "Expected Closing": "2026-08-03",
+    "Expected Closing": "2026-08-08",
     "Probability": 50.0
   },
   {
@@ -12734,7 +12758,7 @@
     "Revenue (Millions USD)": 6.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 600000.0,
-    "Stage": "Connected",
+    "Stage": "RFQ Expected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
@@ -24295,7 +24319,7 @@
     "Opportunity": "EBRO ARMATUREN INDIA PRIVATE LIMITED",
     "Contact Name": "Paul Raj",
     "Email": "NA",
-    "Phone": "NA",
+    "Phone": "+91 80 4174 1554, +91 77609 77812",
     "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
