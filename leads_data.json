@@ -477,7 +477,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 50.0
+    "Probability": 20.0
   },
   {
     "Created on": "2026-05-07 12:25:36",
@@ -76013,9 +76013,9 @@
     "RFQ Date": null,
     "Company Name": "CP Plus",
     "Opportunity": "CP Plus",
-    "Contact Name": "Upendra Kumar Shukla",
-    "Email": "NA",
-    "Phone": "NA",
+    "Contact Name": "Lathesh Kumar",
+    "Email": "lathesh_kumar@adithyagroup.com",
+    "Phone": "+91 88600 76073",
     "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -76025,7 +76025,7 @@
     "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Uttar Pradesh (IN)",
+    "State": false,
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
