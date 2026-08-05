@@ -8765,9 +8765,9 @@
     "RFQ Date": null,
     "Company Name": "Fasmho Energy Systems Pvt. Ltd.",
     "Opportunity": "Fasmho Energy Systems Pvt. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Aqib Mastan",
+    "Email": "Chief Technology Officer",
+    "Phone": "+91 98440 10366",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -8781,7 +8781,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 67.3
+    "Probability": 11.74
   },
   {
     "Created on": "2026-07-28 10:34:08",
@@ -8790,8 +8790,8 @@
     "Company Name": "EMOBI MANUFACTURY PRIVATE LIMITED",
     "Opportunity": "EMOBI MANUFACTURY PRIVATE LIMITED's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -8805,7 +8805,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 67.3
+    "Probability": 62.13
   },
   {
     "Created on": "2026-07-28 10:25:16",
@@ -8813,9 +8813,9 @@
     "RFQ Date": null,
     "Company Name": "inGO Electric Pvt. Ltd.",
     "Opportunity": "inGO Electric Pvt. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Nikhil Gonsalves",
+    "Email": "nikhil.gonsalves@ingoelectric.com",
+    "Phone": "+91 80 4184 3869, +91 98450 17618",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -8829,7 +8829,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 67.3
+    "Probability": 86.23
   },
   {
     "Created on": "2026-07-28 10:09:47",
@@ -13293,7 +13293,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 47.25
+    "Probability": 47.66
   },
   {
     "Created on": "2026-07-17 09:44:49",
@@ -13758,8 +13758,8 @@
     "Company Name": "IWAVE SYSTEMS TECHNOLOGIES PRIVATE LIMITED",
     "Opportunity": "IWAVE SYSTEMS TECHNOLOGIES PRIVATE LIMITED's opportunity",
     "Contact Name": "Ghouse Ahmed",
-    "Email": "ghouseahmed@iwavesystems.com",
-    "Phone": "+91 94480 85776",
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Semiconductors & Embedded",
@@ -13773,7 +13773,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 18.64
+    "Probability": 43.87
   },
   {
     "Created on": "2026-07-17 05:11:29",
@@ -37328,10 +37328,10 @@
     "Contact Name": "Bhaskar R. Malladi",
     "Email": "bhaskar.malladi@agappe.in",
     "Phone": "+91 98206 06062",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Medical & HealthTech",
-    "Revenue (Millions USD)": 200.0,
+    "Revenue (Millions USD)": 61.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
     "Stage": "Open",
@@ -37341,7 +37341,7 @@
     "City": "Ernakulam",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 22.19
+    "Probability": 48.26
   },
   {
     "Created on": "2026-06-22 11:34:26",
@@ -37808,10 +37808,10 @@
     "Contact Name": "Anant Tilwalli",
     "Email": "anant@gururajengineers.com",
     "Phone": "+91 99250 26068, +91 731 512 1665",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
-    "Revenue (Millions USD)": 5.0,
+    "Revenue (Millions USD)": 4.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
     "Stage": "Open",
@@ -37821,7 +37821,7 @@
     "City": "Vadodara",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.41
+    "Probability": 92.01
   },
   {
     "Created on": "2026-06-22 06:51:08",
@@ -37832,7 +37832,7 @@
     "Contact Name": "Prasad Mh",
     "Email": "prasad.mh@deepseaelectronics.com",
     "Phone": "+91 99860 44333",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 54.3,
@@ -37845,7 +37845,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 4.24
+    "Probability": 7.82
   },
   {
     "Created on": "2026-06-22 06:12:26",
@@ -37856,7 +37856,7 @@
     "Contact Name": "Olivier Guedj",
     "Email": "NA",
     "Phone": "+91 95444 50477, (305) 661-9830",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 375.0,
@@ -37869,7 +37869,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 83.62
+    "Probability": 85.2
   },
   {
     "Created on": "2026-06-22 05:57:29",
@@ -42820,7 +42820,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "EMO.energy",
-    "Opportunity": "EMO.energy's opportunity",
+    "Opportunity": "EMO.energy",
     "Contact Name": "Gargi Chauhan",
     "Email": "gargi@emoenergy.in",
     "Phone": "+91 96300 43926",
