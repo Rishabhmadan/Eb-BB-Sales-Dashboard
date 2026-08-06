@@ -36152,7 +36152,7 @@
     "Contact Name": "Rahul Dhingra",
     "Email": "rahul@ahasmarthomes.com",
     "Phone": "+91 98196 72991",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
     "Revenue (Millions USD)": 5.0,
@@ -36165,7 +36165,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 4.24
+    "Probability": 10.43
   },
   {
     "Created on": "2026-06-23 09:47:36",
@@ -36176,7 +36176,7 @@
     "Contact Name": "Andurkar Vg",
     "Email": "andurkar.vg@gladiance.com",
     "Phone": "+91 94225 22500",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
     "Revenue (Millions USD)": 4.0,
@@ -36189,7 +36189,7 @@
     "City": "Kolhapur",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 4.24
+    "Probability": 10.43
   },
   {
     "Created on": "2026-06-23 09:43:50",
@@ -37208,10 +37208,10 @@
     "Contact Name": "Ramasamy Duraisamy",
     "Email": "rd@propelind.com",
     "Phone": "+91 95007 11668, +91 83909 03547",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
-    "Revenue (Millions USD)": 700.0,
+    "Revenue (Millions USD)": 200.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
     "Stage": "Open",
@@ -37221,7 +37221,7 @@
     "City": "Coimbatore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 91.57
+    "Probability": 99.41
   },
   {
     "Created on": "2026-06-22 11:48:06",
@@ -37808,7 +37808,7 @@
     "Contact Name": "Meera Kumar Chauhan",
     "Email": "chauhan@tricolite.com",
     "Phone": "+91 98180 99124",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 60.0,
@@ -37821,7 +37821,7 @@
     "City": "Ghaziabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 64.47
+    "Probability": 82.69
   },
   {
     "Created on": "2026-06-22 05:52:30",
@@ -37942,30 +37942,6 @@
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 93.37
-  },
-  {
-    "Created on": "2026-06-22 05:20:45",
-    "Source": "Zoom Info",
-    "RFQ Date": null,
-    "Company Name": "SAFT INDIA PRIVATE LIMITED",
-    "Opportunity": "SAFT INDIA PRIVATE LIMITED's opportunity",
-    "Contact Name": "Abhishek Ramdev",
-    "Email": "NA",
-    "Phone": "+91 96114 76777",
-    "Salesperson": "Kundan Pandey",
-    "Next Follow up": null,
-    "Industry Segment": "Power Electronics & Electrical",
-    "Revenue (Millions USD)": 1200.0,
-    "Opportunity Type": "Box Build",
-    "Expected Revenue": 0.0,
-    "Stage": "Open",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": "Karnataka (IN)",
-    "City": "Bangalore",
-    "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 3.01
   },
   {
     "Created on": "2026-06-22 05:03:16",
