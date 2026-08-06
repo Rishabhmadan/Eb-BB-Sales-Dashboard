@@ -4546,10 +4546,10 @@
     "Phone": "+91 86104 83307",
     "Salesperson": "Aadit Nair",
     "Next Follow up": null,
-    "Industry Segment": false,
+    "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 0.0,
-    "Opportunity Type": false,
-    "Expected Revenue": 0.0,
+    "Opportunity Type": "PCB fabrication",
+    "Expected Revenue": 250000.0,
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -4557,7 +4557,7 @@
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 76.33
+    "Probability": 97.24
   },
   {
     "Created on": "2026-07-31 09:56:08",
@@ -4741,8 +4741,8 @@
     "Industry Segment": "EMS & Electronics Mfg",
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 1000000.0,
-    "Stage": "RFQ Received",
+    "Expected Revenue": 10000.0,
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
@@ -4857,7 +4857,7 @@
     "Email": "purchase@sertelelectronics.com",
     "Phone": "+91 86104 83307",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-08-03",
+    "Next Follow up": "2026-08-10",
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 6.0,
     "Opportunity Type": "PCB fabrication",
@@ -5246,7 +5246,7 @@
     "Revenue (Millions USD)": 14.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 14000.0,
-    "Stage": "Dropped",
+    "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
@@ -8533,7 +8533,7 @@
     "Industry Segment": "EMS & Electronics Mfg",
     "Revenue (Millions USD)": 4.2,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 800000.0,
+    "Expected Revenue": 8000.0,
     "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -8904,62 +8904,14 @@
     "Probability": 86.23
   },
   {
-    "Created on": "2026-07-28 10:09:47",
-    "Source": "Zoom Info",
-    "RFQ Date": null,
-    "Company Name": "VIVITRON ENERGY PRIVATE LIMITED",
-    "Opportunity": "VIVITRON ENERGY PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
-    "Salesperson": "Kundan Pandey",
-    "Next Follow up": null,
-    "Industry Segment": "Power Electronics & Electrical",
-    "Revenue (Millions USD)": 5.0,
-    "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
-    "Stage": "Market Research",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": "Karnataka (IN)",
-    "City": "Bangalore",
-    "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 67.3
-  },
-  {
-    "Created on": "2026-07-28 10:02:58",
-    "Source": "Zoom Info",
-    "RFQ Date": null,
-    "Company Name": "BENTORK INDUSTRIES LLP",
-    "Opportunity": "BENTORK INDUSTRIES LLP's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
-    "Salesperson": "Kundan Pandey",
-    "Next Follow up": null,
-    "Industry Segment": "Power Electronics & Electrical",
-    "Revenue (Millions USD)": 2.0,
-    "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
-    "Stage": "Market Research",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": "Maharashtra (IN)",
-    "City": "Pune",
-    "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 41.92
-  },
-  {
     "Created on": "2026-07-28 07:34:57",
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "PRODOT EXPORTS PRIVATE LIMITED",
     "Opportunity": "PRODOT EXPORTS PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Pramod Rajpal",
+    "Email": "pramodrajpal@prodotgroup.com",
+    "Phone": "+91 98688 78787",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -8973,7 +8925,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 93.81
+    "Probability": 83.7
   },
   {
     "Created on": "2026-07-28 07:13:03",
@@ -8981,9 +8933,9 @@
     "RFQ Date": null,
     "Company Name": "EarthtronEV Charging",
     "Opportunity": "EarthtronEV Charging's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Atul Tisawar",
+    "Email": "atultisawar@earthtronev.com",
+    "Phone": "+91 93545 00972",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
@@ -8997,7 +8949,7 @@
     "City": "Faridabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 93.99
+    "Probability": 84.11
   },
   {
     "Created on": "2026-07-28 06:41:41",
@@ -9005,9 +8957,9 @@
     "RFQ Date": null,
     "Company Name": "Okos",
     "Opportunity": "Okos's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Pravin Babu Mani",
+    "Email": "pravin@okos.in",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
@@ -9021,7 +8973,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 96.73
+    "Probability": 99.17
   },
   {
     "Created on": "2026-07-28 06:34:24",
@@ -9030,8 +8982,8 @@
     "Company Name": "SMARTMESH TECHNOLOGIES PRIVATE LIMITED",
     "Opportunity": "SMARTMESH TECHNOLOGIES PRIVATE LIMITED's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
@@ -9045,31 +8997,7 @@
     "City": "Ghaziabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 96.73
-  },
-  {
-    "Created on": "2026-07-27 13:31:33",
-    "Source": "Zoom Info",
-    "RFQ Date": null,
-    "Company Name": "Star Batteries",
-    "Opportunity": "Star Batteries's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
-    "Salesperson": "Kundan Pandey",
-    "Next Follow up": null,
-    "Industry Segment": "Power Electronics & Electrical",
-    "Revenue (Millions USD)": 0.0,
-    "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
-    "Stage": "Market Research",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": "Tamil Nadu (IN)",
-    "City": "Coimbatore",
-    "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 88.82
+    "Probability": 96.8
   },
   {
     "Created on": "2026-07-27 13:12:36",
@@ -37598,14 +37526,14 @@
     "Revenue (Millions USD)": 6.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 300000.0,
-    "Stage": "RFQ Expected",
+    "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 20.0
+    "Probability": 40.0
   },
   {
     "Created on": "2026-06-22 09:42:43",
@@ -37917,7 +37845,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 85.2
+    "Probability": 88.06
   },
   {
     "Created on": "2026-06-22 05:57:29",
@@ -37952,7 +37880,7 @@
     "Contact Name": "Rajesh Bala",
     "Email": "rajesh@keus.in",
     "Phone": "+91 79896 42932",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
     "Revenue (Millions USD)": 8.4,
@@ -37965,7 +37893,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 4.24
+    "Probability": 10.43
   },
   {
     "Created on": "2026-06-22 05:36:32",
@@ -38000,7 +37928,7 @@
     "Contact Name": "Arko Chakraborty",
     "Email": "NA",
     "Phone": "+91 70165 03634",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 5.0,
@@ -38013,7 +37941,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 18.62
+    "Probability": 38.2
   },
   {
     "Created on": "2026-06-22 05:30:20",
@@ -38024,7 +37952,7 @@
     "Contact Name": "Dishant R. Soni",
     "Email": "dishant@everestinstruments.in",
     "Phone": "+91 93270 39479",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 16.8,
@@ -38037,7 +37965,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 22.19
+    "Probability": 56.16
   },
   {
     "Created on": "2026-06-22 05:27:13",
@@ -38120,7 +38048,7 @@
     "Contact Name": "Kosal Thiyagarajan",
     "Email": "kthiyagarajan@crestron.com",
     "Phone": "+91 99401 38391",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
     "Revenue (Millions USD)": 446.6,
@@ -38133,7 +38061,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.2
+    "Probability": 24.94
   },
   {
     "Created on": "2026-06-22 04:54:02",
@@ -38144,7 +38072,7 @@
     "Contact Name": "Shibaram Patra",
     "Email": "NA",
     "Phone": "+91 99380 69023",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 50.0,
@@ -38157,7 +38085,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 2.04
+    "Probability": 2.86
   },
   {
     "Created on": "2026-06-22 04:49:31",
@@ -39460,7 +39388,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "QORVO SEMICONDUCTOR PRIVATE LIMITED",
-    "Opportunity": "QORVO SEMICONDUCTOR PRIVATE LIMITED's opportunity",
+    "Opportunity": "QORVO SEMICONDUCTOR PRIVATE LIMITED",
     "Contact Name": "Akshay Shah",
     "Email": "NA",
     "Phone": "+91 72840 73546",
@@ -39469,7 +39397,7 @@
     "Industry Segment": "IoT & Smart Devices",
     "Revenue (Millions USD)": 3678.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
+    "Expected Revenue": 400000.0,
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -39477,7 +39405,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 5.96
+    "Probability": 30.0
   },
   {
     "Created on": "2026-06-17 07:58:43",
@@ -39750,8 +39678,8 @@
     "Company Name": "RCRS INNOVATIONS LIMITED",
     "Opportunity": "RCRS INNOVATIONS LIMITED's opportunity",
     "Contact Name": "Aayush Goyal",
-    "Email": "NA",
-    "Phone": "NA",
+    "Email": "agoyal@rcrsinnovations.com",
+    "Phone": "+91 83870 11022",
     "Salesperson": "Aadit Nair",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -39765,7 +39693,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 91.83
+    "Probability": 82.69
   },
   {
     "Created on": "2026-06-17 07:07:27",
@@ -50390,7 +50318,7 @@
     "Revenue (Millions USD)": 6.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 11000000.0,
-    "Stage": "RFQ Received",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "New Delhi (IN)",
