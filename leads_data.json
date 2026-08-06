@@ -24941,9 +24941,9 @@
     "RFQ Date": null,
     "Company Name": "Vrinda Nano Technologies - VNT",
     "Opportunity": "Vrinda Nano Technologies - VNT's opportunity",
-    "Contact Name": false,
-    "Email": "NA",
-    "Phone": "NA",
+    "Contact Name": "Brij Almadi",
+    "Email": "brij@vnt.in",
+    "Phone": "+91 98114 46777",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -24957,7 +24957,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.1
+    "Probability": 84.11
   },
   {
     "Created on": "2026-07-06 06:41:16",
@@ -37184,7 +37184,7 @@
     "Contact Name": "Preeti Bharti",
     "Email": "pbharti@lutron.com",
     "Phone": "+91 77019 98750",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 600.0,
@@ -37197,7 +37197,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 32.74
+    "Probability": 71.6
   },
   {
     "Created on": "2026-06-22 11:51:23",
@@ -37232,7 +37232,7 @@
     "Contact Name": "A Vijaya Bhaskar",
     "Email": "vj@nibavlifts.com",
     "Phone": "+91 78248 12121",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 5.0,
@@ -37245,7 +37245,7 @@
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 32.74
+    "Probability": 93.37
   },
   {
     "Created on": "2026-06-22 11:35:51",
