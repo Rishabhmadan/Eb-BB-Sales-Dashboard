@@ -9101,9 +9101,9 @@
     "RFQ Date": null,
     "Company Name": "BLINQ MOBILITY PRIVATE LIMITED",
     "Opportunity": "BLINQ MOBILITY PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Yashdeep Singh",
+    "Email": "yashdeep@blinqmobility.com",
+    "Phone": "+91 95485 57287",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
@@ -9117,7 +9117,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 93.99
+    "Probability": 84.11
   },
   {
     "Created on": "2026-07-27 11:29:54",
@@ -9147,11 +9147,11 @@
     "Created on": "2026-07-27 11:22:03",
     "Source": "Zoom Info",
     "RFQ Date": null,
-    "Company Name": "BonV",
+    "Company Name": "BonV Technology Private Limited",
     "Opportunity": "BonV Technology Private Limited's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Biswajit Garanayak",
+    "Email": "biswajit.g@bonvaero.com",
+    "Phone": "+91 76820 42025",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Aerospace & Defense",
@@ -9165,7 +9165,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 67.31
+    "Probability": 41.08
   },
   {
     "Created on": "2026-07-27 11:16:07",
@@ -9173,9 +9173,9 @@
     "RFQ Date": null,
     "Company Name": "GARUDA AEROSPACE LIMITED",
     "Opportunity": "GARUDA AEROSPACE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Rithika Mohan",
+    "Email": "rithikaagni@garudaaerospace.com",
+    "Phone": "+91 96200 03600",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Aerospace & Defense",
@@ -9189,7 +9189,7 @@
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 88.82
+    "Probability": 96.73
   },
   {
     "Created on": "2026-07-27 10:44:13",
@@ -9221,9 +9221,9 @@
     "RFQ Date": null,
     "Company Name": "NEXTLEAP AERONAUTICS PRIVATE LIMITED",
     "Opportunity": "NEXTLEAP AERONAUTICS PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Alvin Anthony",
+    "Email": "alvin.anthony@nextleap-aeronautics.com",
+    "Phone": "+91 89707 04042",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Aerospace & Defense",
@@ -9237,7 +9237,7 @@
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 88.82
+    "Probability": 96.73
   },
   {
     "Created on": "2026-07-27 10:34:08",
@@ -24893,9 +24893,9 @@
     "RFQ Date": null,
     "Company Name": "BELECTRIQ MOBILITY PRIVATE LIMITED",
     "Opportunity": "BELECTRIQ MOBILITY PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Rini Chordia",
+    "Email": "rini@belectriq.co",
+    "Phone": "+91 99712 30666",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
@@ -24909,7 +24909,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 95.91
+    "Probability": 90.93
   },
   {
     "Created on": "2026-07-06 06:53:48",
@@ -24917,9 +24917,9 @@
     "RFQ Date": null,
     "Company Name": "RMC SWITCHGEARS LIMITED",
     "Opportunity": "RMC SWITCHGEARS LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Sudhir Bishnoi",
+    "Email": "sudhir.bishnoi@rmcindia.in",
+    "Phone": "+91 80587 99807",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -24933,7 +24933,7 @@
     "City": "Jaipur",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.29
+    "Probability": 72.89
   },
   {
     "Created on": "2026-07-06 06:47:06",
@@ -24942,8 +24942,8 @@
     "Company Name": "Vrinda Nano Technologies - VNT",
     "Opportunity": "Vrinda Nano Technologies - VNT's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -24957,7 +24957,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 92.53
+    "Probability": 94.1
   },
   {
     "Created on": "2026-07-06 06:41:16",
@@ -36320,7 +36320,7 @@
     "Contact Name": "Vaibhav Thawale",
     "Email": "vaibhav@skromanglobal.com",
     "Phone": "+91 98500 14833",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
     "Revenue (Millions USD)": 5.5,
@@ -36333,7 +36333,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 4.24
+    "Probability": 10.43
   },
   {
     "Created on": "2026-06-23 09:21:47",
@@ -36886,30 +36886,6 @@
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 59.27
-  },
-  {
-    "Created on": "2026-06-23 07:38:19",
-    "Source": "Zoom Info",
-    "RFQ Date": null,
-    "Company Name": "NeoTokyo",
-    "Opportunity": "NeoTokyo's opportunity",
-    "Contact Name": "Ajay Joy",
-    "Email": "ajoy@neotokyo.in",
-    "Phone": "+91 95441 75686",
-    "Salesperson": "Kundan Pandey",
-    "Next Follow up": null,
-    "Industry Segment": "Consumer Electronics & Appliances",
-    "Revenue (Millions USD)": 7.3,
-    "Opportunity Type": "PCB Assembly",
-    "Expected Revenue": 0.0,
-    "Stage": "Open",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": "Kerala (IN)",
-    "City": "Ernakulam",
-    "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 22.19
   },
   {
     "Created on": "2026-06-23 07:33:08",
@@ -38264,7 +38240,7 @@
     "Contact Name": "Rahul Kr Maurya",
     "Email": "rahul@inevitableelectronics.com",
     "Phone": "+91 81309 01674",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "EMS & Electronics Mfg",
     "Revenue (Millions USD)": 4.0,
@@ -38277,7 +38253,7 @@
     "City": "Lucknow",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 66.82
+    "Probability": 82.69
   },
   {
     "Created on": "2026-06-18 12:19:39",
@@ -38408,7 +38384,7 @@
     "Contact Name": "Nishant Singh",
     "Email": "NA",
     "Phone": "+91 98077 77489",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 4.0,
@@ -38421,7 +38397,7 @@
     "City": "Jaisinghpura Shekhawatan",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 22.65
+    "Probability": 24.46
   },
   {
     "Created on": "2026-06-18 10:46:46",
@@ -38432,7 +38408,7 @@
     "Contact Name": "Roopsikha",
     "Email": "NA",
     "Phone": "+91 81063 63693",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 3.0,
@@ -38445,7 +38421,7 @@
     "City": "Faridabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 16.55
+    "Probability": 38.91
   },
   {
     "Created on": "2026-06-18 10:41:43",
@@ -38480,7 +38456,7 @@
     "Contact Name": "Ashish Gupta",
     "Email": "ashish.gupta@stefenelectric.com",
     "Phone": "+91 93502 37204",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 11.0,
@@ -38493,7 +38469,7 @@
     "City": "Faridabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 26.79
+    "Probability": 71.6
   },
   {
     "Created on": "2026-06-18 10:02:35",
