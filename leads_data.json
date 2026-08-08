@@ -37108,7 +37108,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "Agappe Diagnostics Ltd",
-    "Opportunity": "Agappe Diagnostics Ltd's opportunity",
+    "Opportunity": "Agappe Diagnostics Ltd.",
     "Contact Name": "Bhaskar R. Malladi",
     "Email": "bhaskar.malladi@agappe.in",
     "Phone": "+91 98206 06062",
@@ -38702,14 +38702,14 @@
     "Revenue (Millions USD)": 200.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Gujarat (IN)",
     "City": "Vadodara",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 48.26
+    "Probability": 61.32
   },
   {
     "Created on": "2026-06-18 04:03:33",
@@ -39392,7 +39392,7 @@
     "Contact Name": "Kunal Sharma",
     "Email": "kunal@idds.in",
     "Phone": "+91 93184 38355",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Aadit Nair",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
     "Revenue (Millions USD)": 36.0,
@@ -39405,7 +39405,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 35.07
+    "Probability": 75.17
   },
   {
     "Created on": "2026-06-17 06:30:34",
