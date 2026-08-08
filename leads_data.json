@@ -35606,7 +35606,7 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 500000.0,
-    "Stage": "Open",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
@@ -36172,7 +36172,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "Skroman Global",
-    "Opportunity": "Skroman Global's opportunity",
+    "Opportunity": "Skroman Global",
     "Contact Name": "Vaibhav Thawale",
     "Email": "vaibhav@skromanglobal.com",
     "Phone": "+91 98500 14833",
@@ -36181,7 +36181,7 @@
     "Industry Segment": "IoT & Smart Devices",
     "Revenue (Millions USD)": 5.5,
     "Opportunity Type": "PCB Assembly",
-    "Expected Revenue": 0.0,
+    "Expected Revenue": 500000.0,
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -36189,7 +36189,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 10.43
+    "Probability": 30.0
   },
   {
     "Created on": "2026-06-23 09:21:47",
