@@ -37109,9 +37109,9 @@
     "RFQ Date": null,
     "Company Name": "Agappe Diagnostics Ltd",
     "Opportunity": "Agappe Diagnostics Ltd.",
-    "Contact Name": "Bhaskar R. Malladi",
-    "Email": "bhaskar.malladi@agappe.in",
-    "Phone": "+91 98206 06062",
+    "Contact Name": "Sudhir Krishnan Nair",
+    "Email": "NA",
+    "Phone": "+91 80950 91231",
     "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Medical & HealthTech",
@@ -37125,7 +37125,7 @@
     "City": "Ernakulam",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 48.26
+    "Probability": 27.89
   },
   {
     "Created on": "2026-06-22 11:34:26",
@@ -39430,30 +39430,6 @@
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 66.82
-  },
-  {
-    "Created on": "2026-06-17 06:28:03",
-    "Source": "Zoom Info",
-    "RFQ Date": null,
-    "Company Name": "IDMC Limited",
-    "Opportunity": "IDMC Limited's opportunity",
-    "Contact Name": "Sudhanshu D. Srivastava",
-    "Email": "sudhanshu.s@idmc.com",
-    "Phone": "+91 72111 00413",
-    "Salesperson": "Kundan Pandey",
-    "Next Follow up": null,
-    "Industry Segment": "Industrial Automation & Robotics",
-    "Revenue (Millions USD)": 135.0,
-    "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
-    "Stage": "Open",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": "Haryana (IN)",
-    "City": "Gurugram",
-    "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 26.79
   },
   {
     "Created on": "2026-06-17 06:23:06",
