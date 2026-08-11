@@ -7640,7 +7640,7 @@
     "Contact Name": "Narayan Rathod",
     "Email": "NA",
     "Phone": "+91 96642 71100",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 5.0,
@@ -7653,7 +7653,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 4.45
+    "Probability": 7.66
   },
   {
     "Created on": "2026-08-03 11:56:37",
@@ -7704,30 +7704,6 @@
     "Probability": 68.3
   },
   {
-    "Created on": "2026-08-03 05:49:29",
-    "Source": "Zoom Info",
-    "RFQ Date": null,
-    "Company Name": "SSBRIGHT PRIVATE LIMITED",
-    "Opportunity": "SSBRIGHT PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": "NA",
-    "Phone": "NA",
-    "Salesperson": "Kundan Pandey",
-    "Next Follow up": null,
-    "Industry Segment": "Consumer Electronics & Appliances",
-    "Revenue (Millions USD)": 2.0,
-    "Opportunity Type": "PCB Assembly",
-    "Expected Revenue": 0.0,
-    "Stage": "Market Research",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": "Maharashtra (IN)",
-    "City": "Thane",
-    "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 36.95
-  },
-  {
     "Created on": "2026-08-03 05:36:40",
     "Source": "Zoom Info",
     "RFQ Date": null,
@@ -7736,20 +7712,20 @@
     "Contact Name": "Arbaz Khan",
     "Email": "NA",
     "Phone": "+91 87077 23640",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 33.53
+    "Probability": 82.7
   },
   {
     "Created on": "2026-08-03 05:22:30",
@@ -7760,20 +7736,20 @@
     "Contact Name": "Sivaprasad Sake",
     "Email": "sivaprasads@aosmith.com",
     "Phone": "+91 98795 12242, +91 99008 91242",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 70.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.0
+    "Probability": 84.21
   },
   {
     "Created on": "2026-07-31 12:58:23",
@@ -36806,14 +36782,14 @@
     "Revenue (Millions USD)": 14.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 0.0,
-    "Stage": "Follow Up Later",
+    "Stage": "RFQ Expected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bengaluru",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.17
+    "Probability": 11.18
   },
   {
     "Created on": "2026-06-23 06:53:44",
@@ -42134,14 +42110,14 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 1000000.0,
-    "Stage": "Follow Up Later",
+    "Stage": "RFQ Expected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 16.9
+    "Probability": 34.03
   },
   {
     "Created on": "2026-06-10 07:20:35",
@@ -51782,14 +51758,14 @@
     "Revenue (Millions USD)": 3.3,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 200000.0,
-    "Stage": "Follow Up Later",
+    "Stage": "RFQ Expected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 32.76
+    "Probability": 34.03
   },
   {
     "Created on": "2026-05-18 05:08:37",
@@ -53205,7 +53181,7 @@
     "City": "Ambad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 15.35
+    "Probability": 19.28
   },
   {
     "Created on": "2026-05-12 13:13:44",
