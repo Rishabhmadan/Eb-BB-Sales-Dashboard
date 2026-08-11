@@ -29862,8 +29862,8 @@
     "Company Name": "SAERA KETO EV PRIVATE LIMITED",
     "Opportunity": "SAERA KETO EV PRIVATE LIMITED's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
@@ -29877,7 +29877,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.29
+    "Probability": 94.93
   },
   {
     "Created on": "2026-06-30 04:23:21",
@@ -41437,15 +41437,15 @@
     "Industry Segment": "Aerospace & Defense",
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 500000.0,
-    "Stage": "RFQ Expected",
+    "Expected Revenue": 5000.0,
+    "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 20.37
+    "Probability": 41.69
   },
   {
     "Created on": "2026-06-11 06:17:12",
