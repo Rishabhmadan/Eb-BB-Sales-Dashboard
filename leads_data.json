@@ -733,7 +733,7 @@
     "Industry Segment": "Other",
     "Revenue (Millions USD)": 341.0,
     "Opportunity Type": "Box Build",
-    "Expected Revenue": 48000000.0,
+    "Expected Revenue": 45000000.0,
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -2374,30 +2374,6 @@
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 20.0
-  },
-  {
-    "Created on": "2026-04-27 12:24:50",
-    "Source": "Zoom Info",
-    "RFQ Date": null,
-    "Company Name": "Renovus Vision Automation Pvt. Ltd.",
-    "Opportunity": "Renovus Vision Automation Pvt. Ltd",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
-    "Salesperson": "Ruchit Nambiar",
-    "Next Follow up": null,
-    "Industry Segment": "Industrial Automation & Robotics",
-    "Revenue (Millions USD)": 2.1,
-    "Opportunity Type": "PCB Assembly",
-    "Expected Revenue": 400000.0,
-    "Stage": "Market Research",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": "Karnataka (IN)",
-    "City": "Bangalore",
-    "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 61.19
   },
   {
     "Created on": "2026-04-27 12:23:11",
@@ -26813,9 +26789,9 @@
     "RFQ Date": null,
     "Company Name": "TELAVERGE COMMUNICATIONS INDIA PRIVATE LIMITED",
     "Opportunity": "TELAVERGE COMMUNICATIONS INDIA PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
+    "Contact Name": "Ruchi Malik Singh",
     "Email": "NA",
-    "Phone": "NA",
+    "Phone": "+91 84518 46151",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Telecom & Networking",
@@ -26829,7 +26805,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 40.68
+    "Probability": 10.13
   },
   {
     "Created on": "2026-07-03 04:44:59",
@@ -26837,9 +26813,9 @@
     "RFQ Date": null,
     "Company Name": "CHARGEPOINT TECHNOLOGIES INDIA PRIVATE LIMITED",
     "Opportunity": "CHARGEPOINT TECHNOLOGIES INDIA PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Nivedita Tawade",
+    "Email": "nivedita.tawade@chargepoint.com",
+    "Phone": "+91 98806 41855",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
@@ -26853,7 +26829,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 92.53
+    "Probability": 88.03
   },
   {
     "Created on": "2026-07-03 04:32:43",
@@ -26885,9 +26861,9 @@
     "RFQ Date": null,
     "Company Name": "AVON CYCLES LIMITED",
     "Opportunity": "AVON CYCLES LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Vinayak Gupta",
+    "Email": "vinayak.gupta@avoncycles.com",
+    "Phone": "+91 98789 98639",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
@@ -26901,7 +26877,7 @@
     "City": "Ludhiana",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 83.82
+    "Probability": 78.9
   },
   {
     "Created on": "2026-07-02 12:14:38",
