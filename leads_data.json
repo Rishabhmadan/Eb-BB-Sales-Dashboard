@@ -27941,9 +27941,9 @@
     "RFQ Date": null,
     "Company Name": "DOL Group",
     "Opportunity": "DOL Group's opportunity",
-    "Contact Name": false,
-    "Email": "NA",
-    "Phone": "+91 22 2760 7542",
+    "Contact Name": "Rajesh Bhongade",
+    "Email": "rajesh.bhongade@dolgroup.in",
+    "Phone": "+91 98204 50263",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -27957,7 +27957,7 @@
     "City": "Navi Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 7.66
+    "Probability": 25.36
   },
   {
     "Created on": "2026-07-02 04:15:27",
@@ -27966,8 +27966,8 @@
     "Company Name": "Vecontrol (Shree Vishwakarma Electro Service)",
     "Opportunity": "Vecontrol (Shree Vishwakarma Electro Service)'s opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -27981,7 +27981,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.29
+    "Probability": 91.33
   },
   {
     "Created on": "2026-07-02 04:12:20",
