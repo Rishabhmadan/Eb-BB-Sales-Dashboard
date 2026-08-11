@@ -888,6 +888,30 @@
     "Probability": 50.0
   },
   {
+    "Created on": "2026-08-11 10:31:27",
+    "Source": false,
+    "RFQ Date": null,
+    "Company Name": "Karkhana-io",
+    "Opportunity": "Karkhana-io's opportunity",
+    "Contact Name": "Vishwanath",
+    "Email": "vishwanath@karkhana.io",
+    "Phone": "+91 98448 89525",
+    "Salesperson": "Rishabh Madan",
+    "Next Follow up": null,
+    "Industry Segment": false,
+    "Revenue (Millions USD)": 0.0,
+    "Opportunity Type": false,
+    "Expected Revenue": 0.0,
+    "Stage": "RFQ Received",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": false,
+    "City": "Mumbai",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 77.99
+  },
+  {
     "Created on": "2026-08-11 08:39:52",
     "Source": false,
     "RFQ Date": "2026-08-10",
@@ -28037,9 +28061,9 @@
     "RFQ Date": null,
     "Company Name": "QUALITRONICS (MADRAS) PRIVATE LIMITED",
     "Opportunity": "QUALITRONICS (MADRAS) PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "G. E. Rakesh",
+    "Email": "NA",
+    "Phone": "+91 81308 66440",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -28053,7 +28077,7 @@
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.29
+    "Probability": 90.6
   },
   {
     "Created on": "2026-07-02 03:44:47",
@@ -28061,9 +28085,9 @@
     "RFQ Date": null,
     "Company Name": "ORB ENERGY PRIVATE LIMITED",
     "Opportunity": "ORB ENERGY PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Ramesh P. Kalibhat",
+    "Email": "ramesh.k@orbenergy.com",
+    "Phone": "+91 93426 50153",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Energy & CleanTech",
@@ -28077,7 +28101,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 62.0
+    "Probability": 58.72
   },
   {
     "Created on": "2026-07-02 03:35:43",
@@ -28085,9 +28109,9 @@
     "RFQ Date": null,
     "Company Name": "Rashmi Rare Earth",
     "Opportunity": "Rashmi Rare Earth's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Partha Dey",
+    "Email": "partha.dey@rrel.co.in",
+    "Phone": "+91 98719 24556",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Telecom & Networking",
@@ -28101,7 +28125,7 @@
     "City": "Kolkata",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 36.39
+    "Probability": 25.25
   },
   {
     "Created on": "2026-07-01 12:43:32",
@@ -28901,9 +28925,9 @@
     "RFQ Date": null,
     "Company Name": "Agile Robots SE",
     "Opportunity": "Agile Robots SE's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Vignesh Kp",
+    "Email": "vignesh.premkumar@agile-robots.com",
+    "Phone": "+91 75488 43144",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -28917,7 +28941,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 62.0
+    "Probability": 58.72
   },
   {
     "Created on": "2026-07-01 06:32:45",
@@ -28925,9 +28949,9 @@
     "RFQ Date": null,
     "Company Name": "Eurotherm India Private Limited",
     "Opportunity": "Eurotherm India Private Limited's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "J. Prabhu",
+    "Email": "NA",
+    "Phone": "+91 89399 66822",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -28941,7 +28965,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 62.0
+    "Probability": 25.12
   },
   {
     "Created on": "2026-07-01 06:29:47",
@@ -28949,9 +28973,9 @@
     "RFQ Date": null,
     "Company Name": "KOMAX AUTOMATION INDIA PRIVATE LIMITED",
     "Opportunity": "KOMAX AUTOMATION INDIA PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Sahil Walia",
+    "Email": "sahil.walia@komaxgroup.com",
+    "Phone": "+91 98713 89478",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -28965,7 +28989,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 92.53
+    "Probability": 87.97
   },
   {
     "Created on": "2026-07-01 06:23:59",
@@ -28973,9 +28997,9 @@
     "RFQ Date": null,
     "Company Name": "KEBA Group",
     "Opportunity": "KEBA Group's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Hardiksinh Solanki",
+    "Email": "sol@keba.com",
+    "Phone": "+91 97249 61296",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -28989,7 +29013,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 36.39
+    "Probability": 25.25
   },
   {
     "Created on": "2026-07-01 06:17:39",
@@ -28997,9 +29021,9 @@
     "RFQ Date": null,
     "Company Name": "W. Gessmann GmbH",
     "Opportunity": "W. Gessmann GmbH's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Gopal Shastry",
+    "Email": "gopalshastry@gessmann.com",
+    "Phone": "+91 99459 19170, +91 80 2839 5340",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -29013,7 +29037,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 62.0
+    "Probability": 94.09
   },
   {
     "Created on": "2026-07-01 06:02:34",
@@ -29069,9 +29093,9 @@
     "RFQ Date": null,
     "Company Name": "ALTEEM TECH PRIVATE LIMITED",
     "Opportunity": "ALTEEM TECH PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Dhruval Patel",
+    "Email": "dhruval@alteem.com",
+    "Phone": "+91 84608 36400",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -29085,7 +29109,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.29
+    "Probability": 78.8
   },
   {
     "Created on": "2026-07-01 05:15:03",
