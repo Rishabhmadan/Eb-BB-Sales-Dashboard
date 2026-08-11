@@ -26693,9 +26693,9 @@
     "RFQ Date": null,
     "Company Name": "Danlaw Technologies India Ltd",
     "Opportunity": "Danlaw Technologies India Ltd's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Subramanian Rajendran",
+    "Email": "rajendrans@danlawtech.com",
+    "Phone": "+91 79044 89881",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
@@ -26709,7 +26709,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 36.39
+    "Probability": 25.36
   },
   {
     "Created on": "2026-07-03 05:27:22",
@@ -26717,9 +26717,9 @@
     "RFQ Date": null,
     "Company Name": "UNIK Batteries & Automation",
     "Opportunity": "UNIK Batteries & Automation's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Rajesh Natrajan Kailat",
+    "Email": "NA",
+    "Phone": "+91 98223 13331",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -26733,7 +26733,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 36.39
+    "Probability": 7.66
   },
   {
     "Created on": "2026-07-03 05:11:42",
@@ -26741,9 +26741,9 @@
     "RFQ Date": null,
     "Company Name": "ROSMERTA TECHNOLOGIES LIMITED",
     "Opportunity": "ROSMERTA TECHNOLOGIES LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Anurag Roy Chowdhury",
+    "Email": "anurag.chowdhury@rosmertatech.com",
+    "Phone": "+91 97161 99234",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
@@ -26757,7 +26757,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 92.53
+    "Probability": 88.03
   },
   {
     "Created on": "2026-07-03 04:52:12",
@@ -26765,9 +26765,9 @@
     "RFQ Date": null,
     "Company Name": "ODITI HOME APPLIANCES PRIVATE LIMITED",
     "Opportunity": "ODITI HOME APPLIANCES PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": "NA",
-    "Phone": "NA",
+    "Contact Name": "Rajan Jha",
+    "Email": "rajan@omenelectric.com",
+    "Phone": "+91 92124 63033",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
@@ -26781,7 +26781,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 85.2
+    "Probability": 77.27
   },
   {
     "Created on": "2026-07-03 04:49:13",
@@ -26789,9 +26789,9 @@
     "RFQ Date": null,
     "Company Name": "ISKRAEMECO INDIA TECHNOLOGY DEVELOPMENT CENTRE PRIVATE LIMITED",
     "Opportunity": "ISKRAEMECO INDIA TECHNOLOGY DEVELOPMENT CENTRE PRIVATE LIMITED's opportunity",
-    "Contact Name": "Praveen Kumar Khargwanshi",
-    "Email": "NA",
-    "Phone": "NA",
+    "Contact Name": "Priyashree Das",
+    "Email": "priyashree.das@iskraemeco.com",
+    "Phone": "+91 98741 60895",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Telecom & Networking",
@@ -26805,7 +26805,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 95.55
+    "Probability": 90.89
   },
   {
     "Created on": "2026-07-03 04:47:29",
@@ -51813,7 +51813,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 15.93
+    "Probability": 32.76
   },
   {
     "Created on": "2026-05-18 05:08:37",
