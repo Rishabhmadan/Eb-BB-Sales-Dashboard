@@ -30006,8 +30006,8 @@
     "Company Name": "NP GREEN ELECTRIC VEHICLES PRIVATE LIMITED",
     "Opportunity": "NP GREEN ELECTRIC VEHICLES PRIVATE LIMITED's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
@@ -30021,7 +30021,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 92.53
+    "Probability": 95.07
   },
   {
     "Created on": "2026-06-30 04:06:20",
