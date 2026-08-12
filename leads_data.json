@@ -30029,9 +30029,9 @@
     "RFQ Date": null,
     "Company Name": "GEGADYNE ENERGY LABS PRIVATE LIMITED",
     "Opportunity": "GEGADYNE ENERGY LABS PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Jubin Varghese",
+    "Email": "jubin@gegadyne.com",
+    "Phone": "+91 81694 04383",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Energy & CleanTech",
@@ -30045,7 +30045,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 36.83
+    "Probability": 25.25
   },
   {
     "Created on": "2026-06-29 13:00:30",
@@ -30053,9 +30053,9 @@
     "RFQ Date": null,
     "Company Name": "iVOOMi Energy",
     "Opportunity": "iVOOMi Energy's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Ankit Bhardwaj",
+    "Email": "ankit.bhardwaj@ivoomiindia.com",
+    "Phone": "+91 93358 28282",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
@@ -30069,7 +30069,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.51
+    "Probability": 87.65
   },
   {
     "Created on": "2026-06-29 12:48:08",
@@ -30078,8 +30078,8 @@
     "Company Name": "B24 ROKET-EV PRIVATE LIMITED",
     "Opportunity": "B24 ROKET-EV PRIVATE LIMITED's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
@@ -30093,7 +30093,7 @@
     "City": "Ludhiana",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 84.08
+    "Probability": 90.75
   },
   {
     "Created on": "2026-06-29 12:45:39",
@@ -30101,9 +30101,9 @@
     "RFQ Date": null,
     "Company Name": "Yobykes India",
     "Opportunity": "Yobykes India's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Mridul Sharma",
+    "Email": "mridul.sharma@yobykes.com",
+    "Phone": "+91 63570 00701",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
@@ -30117,7 +30117,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 99.2
+    "Probability": 78.8
   },
   {
     "Created on": "2026-06-29 12:41:04",
