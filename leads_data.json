@@ -1069,7 +1069,7 @@
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 5.5,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 750000.0,
+    "Expected Revenue": 753788.0,
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -1077,7 +1077,7 @@
     "City": "Gurgaon",
     "Closed Date": null,
     "Expected Closing": "2026-08-12",
-    "Probability": 70.0
+    "Probability": 90.0
   },
   {
     "Created on": "2026-08-05 06:30:01",
@@ -1990,30 +1990,6 @@
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 50.0
-  },
-  {
-    "Created on": "2026-06-09 12:22:01",
-    "Source": "Zoom Info",
-    "RFQ Date": "2026-06-27",
-    "Company Name": "Enord",
-    "Opportunity": "Enord: EB-38-ML-487-02-1777",
-    "Contact Name": "Abdul",
-    "Email": "abdul@enord.co",
-    "Phone": "+91 74173 30988",
-    "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-08-10",
-    "Industry Segment": "Aerospace & Defense",
-    "Revenue (Millions USD)": 0.1,
-    "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 10643.0,
-    "Stage": "Won",
-    "Won/Lost": "Won",
-    "Country": "India",
-    "State": "Delhi (IN)",
-    "City": "Delhi",
-    "Closed Date": "2026-07-07 10:41:26",
-    "Expected Closing": "2026-07-03",
-    "Probability": 100.0
   },
   {
     "Created on": "2026-06-09 06:54:21",
@@ -5472,6 +5448,30 @@
     "Probability": 30.79
   },
   {
+    "Created on": "2026-06-09 12:22:01",
+    "Source": "Zoom Info",
+    "RFQ Date": "2026-06-27",
+    "Company Name": "Enord",
+    "Opportunity": "Enord: EB-38-ML-487-02-1777",
+    "Contact Name": "Abdul",
+    "Email": "abdul@enord.co",
+    "Phone": "+91 74173 30988",
+    "Salesperson": "Aadit Nair",
+    "Next Follow up": "2026-08-10",
+    "Industry Segment": "Aerospace & Defense",
+    "Revenue (Millions USD)": 0.1,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 10643.0,
+    "Stage": "Won",
+    "Won/Lost": "Won",
+    "Country": "India",
+    "State": "Delhi (IN)",
+    "City": "Delhi",
+    "Closed Date": "2026-07-07 10:41:26",
+    "Expected Closing": "2026-07-03",
+    "Probability": 100.0
+  },
+  {
     "Created on": "2026-06-08 11:39:26",
     "Source": "Zoom Info",
     "RFQ Date": "2026-06-08",
@@ -7622,7 +7622,7 @@
     "Revenue (Millions USD)": 2.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 30000.0,
-    "Stage": "RFQ Received",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
@@ -8336,20 +8336,20 @@
     "Contact Name": "Yogesh Kumar Verma",
     "Email": "yogesh.verma@digilinesystems.com",
     "Phone": "NA",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Aadit Nair",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 3.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 97.84
+    "Probability": 97.07
   },
   {
     "Created on": "2026-07-31 11:40:36",
@@ -8384,20 +8384,20 @@
     "Contact Name": "Mohamed Kalifa",
     "Email": "kalifa@nsure.co.in",
     "Phone": "+91 97429 15624",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 10.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 32.47
+    "Probability": 37.29
   },
   {
     "Created on": "2026-07-31 10:19:19",
@@ -8462,7 +8462,7 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Uttar Pradesh (IN)",
@@ -8504,20 +8504,20 @@
     "Contact Name": "Sachin Gupta",
     "Email": "sachingupta@zpowerbatteries.com",
     "Phone": "+91 95178 03301",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 15.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Punjab (IN)",
     "City": "Zirakpur",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 64.97
+    "Probability": 60.84
   },
   {
     "Created on": "2026-07-31 08:52:20",
@@ -8648,20 +8648,20 @@
     "Contact Name": "Satyakam Basu",
     "Email": "satyakam@sugslloyds.com",
     "Phone": "+91 98218 72278",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 36.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 77.97
+    "Probability": 74.78
   },
   {
     "Created on": "2026-07-31 06:31:05",
@@ -8766,22 +8766,22 @@
     "Company Name": "Harvested Robotics",
     "Opportunity": "Harvested Robotics's opportunity",
     "Contact Name": "Nishith Mehta",
-    "Email": "nishith@harvestedlabs.com",
+    "Email": "NA",
     "Phone": "NA",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "AgriTech",
     "Revenue (Millions USD)": 2.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Telangana (IN)",
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 68.71
+    "Probability": 27.15
   },
   {
     "Created on": "2026-07-31 05:28:11",
@@ -14382,8 +14382,8 @@
     "Company Name": "IWAVE SYSTEMS TECHNOLOGIES PRIVATE LIMITED",
     "Opportunity": "IWAVE SYSTEMS TECHNOLOGIES PRIVATE LIMITED's opportunity",
     "Contact Name": "Ghouse Ahmed",
-    "Email": "NA",
-    "Phone": "NA",
+    "Email": "ghouseahmed@iwavesystems.com",
+    "Phone": "+91 94480 85776",
     "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Semiconductors & Embedded",
@@ -14397,7 +14397,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 43.87
+    "Probability": 37.29
   },
   {
     "Created on": "2026-07-17 05:11:29",
@@ -23886,8 +23886,8 @@
     "Company Name": "T POWER TRANSFORMER AND SWITCHGEAR PVT LTD",
     "Opportunity": "T POWER TRANSFORMER AND SWITCHGEAR PVT LTD's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -23901,7 +23901,7 @@
     "City": "Jaipur",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 91.0
+    "Probability": 89.59
   },
   {
     "Created on": "2026-07-07 12:23:08",
@@ -23958,8 +23958,8 @@
     "Company Name": "STURDY VOLT PRIVATE LIMITED",
     "Opportunity": "STURDY VOLT PRIVATE LIMITED's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -23973,7 +23973,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 47.9
+    "Probability": 43.89
   },
   {
     "Created on": "2026-07-07 12:13:03",
@@ -24246,8 +24246,8 @@
     "Company Name": "SigmaVizin Electronics Pvt. Ltd.",
     "Opportunity": "SigmaVizin Electronics Pvt. Ltd.'s opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -24261,7 +24261,7 @@
     "City": "Sonipat",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 92.53
+    "Probability": 95.17
   },
   {
     "Created on": "2026-07-07 09:52:19",
@@ -30461,9 +30461,9 @@
     "RFQ Date": null,
     "Company Name": "Livoltek India",
     "Opportunity": "Livoltek India's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Rita Liu",
+    "Email": "rita.liu@livoltek.com",
+    "Phone": "+86 181 7087 3016",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -30477,7 +30477,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.51
+    "Probability": 86.16
   },
   {
     "Created on": "2026-06-29 12:18:36",
@@ -30485,9 +30485,9 @@
     "RFQ Date": null,
     "Company Name": "ERD GLOBAL INDIA",
     "Opportunity": "ERD GLOBAL INDIA's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Sumit Bhardwaj",
+    "Email": "NA",
+    "Phone": "+91 98100 39519",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -30501,7 +30501,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 95.98
+    "Probability": 74.14
   },
   {
     "Created on": "2026-06-29 12:15:39",
@@ -30510,8 +30510,8 @@
     "Company Name": "YC ELECTRIC VEHICLE LLP",
     "Opportunity": "YC ELECTRIC VEHICLE LLP's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
@@ -30525,7 +30525,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.51
+    "Probability": 94.26
   },
   {
     "Created on": "2026-06-29 12:11:41",
@@ -30533,9 +30533,9 @@
     "RFQ Date": null,
     "Company Name": "Pilot Industries Ltd.",
     "Opportunity": "Pilot Industries Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Sandip Dasgupta",
+    "Email": "sandip.d@pilotindustries.co.in",
+    "Phone": "+91 95606 08459",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -30549,7 +30549,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.51
+    "Probability": 86.16
   },
   {
     "Created on": "2026-06-29 12:08:50",
@@ -30557,9 +30557,9 @@
     "RFQ Date": null,
     "Company Name": "Phylion Battery Co. Ltd.",
     "Opportunity": "Phylion Battery Co. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Qin Wang",
+    "Email": "bridget.wang@phylion.com",
+    "Phone": "+86 186 2611 0614",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -30573,7 +30573,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 92.66
+    "Probability": 88.19
   },
   {
     "Created on": "2026-06-29 12:02:06",
@@ -30582,8 +30582,8 @@
     "Company Name": "TOYO ROBOTICS",
     "Opportunity": "TOYO ROBOTICS's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -30597,7 +30597,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 36.83
+    "Probability": 43.89
   },
   {
     "Created on": "2026-06-29 11:57:37",
@@ -30606,8 +30606,8 @@
     "Company Name": "Nakamura-Tome Precision Industry Co.,Ltd.",
     "Opportunity": "Nakamura-Tome Precision Industry Co.,Ltd.'s opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "+91 63619 97713",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -30621,31 +30621,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 62.44
-  },
-  {
-    "Created on": "2026-06-29 11:50:54",
-    "Source": "Zoom Info",
-    "RFQ Date": null,
-    "Company Name": "ISRA VISION INDIA PRIVATE LIMITED",
-    "Opportunity": "ISRA VISION INDIA PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
-    "Salesperson": "Kundan Pandey",
-    "Next Follow up": null,
-    "Industry Segment": "Industrial Automation & Robotics",
-    "Revenue (Millions USD)": 200.0,
-    "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
-    "Stage": "Market Research",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": "Maharashtra (IN)",
-    "City": "Mumbai",
-    "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 36.83
+    "Probability": 22.74
   },
   {
     "Created on": "2026-06-29 11:37:51",
@@ -30653,9 +30629,9 @@
     "RFQ Date": null,
     "Company Name": "MAGDUM TECHNOLOGIES PRIVATE LIMITED",
     "Opportunity": "MAGDUM TECHNOLOGIES PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Prashant Dnyandev Magadum",
+    "Email": "prashant@magdumtechnologies.com",
+    "Phone": "+91 99756 52610",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -30669,7 +30645,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 36.83
+    "Probability": 22.87
   },
   {
     "Created on": "2026-06-29 11:29:32",
@@ -30677,9 +30653,9 @@
     "RFQ Date": null,
     "Company Name": "ACS Engitech Pvt. Ltd.",
     "Opportunity": "ACS Engitech Pvt. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Shakti Vasava",
+    "Email": "shakti@acsengitech.com",
+    "Phone": "+91 98252 54695",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -30693,7 +30669,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.51
+    "Probability": 76.53
   },
   {
     "Created on": "2026-06-29 11:27:00",
@@ -30701,9 +30677,9 @@
     "RFQ Date": null,
     "Company Name": "Wisdom Techno Solutions",
     "Opportunity": "Wisdom Techno Solutions's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Gaurav Shukla",
+    "Email": "gaurav@wisdomtechnosolutions.com",
+    "Phone": "+91 84601 79954",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "EMS & Electronics Mfg",
@@ -30713,11 +30689,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Gujarat (IN)",
-    "City": "Kamrol",
+    "State": false,
+    "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.51
+    "Probability": 78.42
   },
   {
     "Created on": "2026-06-29 11:22:49",
@@ -30725,9 +30701,9 @@
     "RFQ Date": null,
     "Company Name": "DNYAN AUTOMATION PRIVATE LIMITED",
     "Opportunity": "DNYAN AUTOMATION PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Nitin Jain",
+    "Email": "nitin.jain@dnyan.co.in",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -30741,55 +30717,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 36.83
-  },
-  {
-    "Created on": "2026-06-29 11:13:48",
-    "Source": "Zoom Info",
-    "RFQ Date": null,
-    "Company Name": "KOSO INDIA PRIVATE LIMITED",
-    "Opportunity": "KOSO INDIA PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
-    "Salesperson": "Kundan Pandey",
-    "Next Follow up": null,
-    "Industry Segment": "Industrial Automation & Robotics",
-    "Revenue (Millions USD)": 80.0,
-    "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
-    "Stage": "Market Research",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": "Maharashtra (IN)",
-    "City": "Nashik",
-    "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 36.83
-  },
-  {
-    "Created on": "2026-06-29 11:09:34",
-    "Source": "Zoom Info",
-    "RFQ Date": null,
-    "Company Name": "Jendamark Automation",
-    "Opportunity": "Jendamark Automation's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
-    "Salesperson": "Kundan Pandey",
-    "Next Follow up": null,
-    "Industry Segment": "Industrial Automation & Robotics",
-    "Revenue (Millions USD)": 20.0,
-    "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
-    "Stage": "Market Research",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": "Maharashtra (IN)",
-    "City": "Pune",
-    "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 36.83
+    "Probability": 76.83
   },
   {
     "Created on": "2026-06-29 10:47:51",
@@ -30797,9 +30725,9 @@
     "RFQ Date": null,
     "Company Name": "KAWASAKI ROBOTICS INDIA PRIVATE LIMITED",
     "Opportunity": "KAWASAKI ROBOTICS INDIA PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Ram Chitra Sharma",
+    "Email": "ramsharma@kawasakirobotics.com",
+    "Phone": "+91 88267 25777",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -30813,31 +30741,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.51
-  },
-  {
-    "Created on": "2026-06-29 10:33:47",
-    "Source": "Zoom Info",
-    "RFQ Date": null,
-    "Company Name": "Zeco Aircon Limited",
-    "Opportunity": "Zeco Aircon Limited's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
-    "Salesperson": "Kundan Pandey",
-    "Next Follow up": null,
-    "Industry Segment": "Industrial Automation & Robotics",
-    "Revenue (Millions USD)": 40.0,
-    "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
-    "Stage": "Market Research",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": "Haryana (IN)",
-    "City": "Gurugram",
-    "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 92.66
+    "Probability": 86.16
   },
   {
     "Created on": "2026-06-29 10:23:47",
@@ -30846,8 +30750,8 @@
     "Company Name": "Upton Automation",
     "Opportunity": "Upton Automation's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -30861,31 +30765,7 @@
     "City": "Thane",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 36.83
-  },
-  {
-    "Created on": "2026-06-29 10:11:19",
-    "Source": "Zoom Info",
-    "RFQ Date": null,
-    "Company Name": "Avasarala Technologies Limited",
-    "Opportunity": "Avasarala Technologies Limited's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
-    "Salesperson": "Kundan Pandey",
-    "Next Follow up": null,
-    "Industry Segment": "Industrial Automation & Robotics",
-    "Revenue (Millions USD)": 130.0,
-    "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
-    "Stage": "Market Research",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": "Karnataka (IN)",
-    "City": "Bangalore",
-    "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 62.44
+    "Probability": 43.89
   },
   {
     "Created on": "2026-06-29 10:06:11",
@@ -30894,8 +30774,8 @@
     "Company Name": "KNS AIR SYSTEMS PRIVATE LIMITED",
     "Opportunity": "KNS AIR SYSTEMS PRIVATE LIMITED's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -30909,79 +30789,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.51
-  },
-  {
-    "Created on": "2026-06-29 10:00:31",
-    "Source": "Zoom Info",
-    "RFQ Date": null,
-    "Company Name": "KOBELCO CONSTRUCTION EQUIPMENT INDIA PRIVATE LIMITED",
-    "Opportunity": "KOBELCO CONSTRUCTION EQUIPMENT INDIA PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
-    "Salesperson": "Kundan Pandey",
-    "Next Follow up": null,
-    "Industry Segment": "Industrial Automation & Robotics",
-    "Revenue (Millions USD)": 70.0,
-    "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
-    "Stage": "Market Research",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": "Uttar Pradesh (IN)",
-    "City": "Noida",
-    "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 95.98
-  },
-  {
-    "Created on": "2026-06-29 09:35:36",
-    "Source": "Zoom Info",
-    "RFQ Date": null,
-    "Company Name": "Boldrocchi Group",
-    "Opportunity": "Boldrocchi Group's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
-    "Salesperson": "Kundan Pandey",
-    "Next Follow up": null,
-    "Industry Segment": "Industrial Automation & Robotics",
-    "Revenue (Millions USD)": 50.0,
-    "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
-    "Stage": "Market Research",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": "Haryana (IN)",
-    "City": "Gurugram",
-    "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 92.66
-  },
-  {
-    "Created on": "2026-06-29 09:26:12",
-    "Source": "Zoom Info",
-    "RFQ Date": null,
-    "Company Name": "Taro Pumps (A Texmo Industries brand)",
-    "Opportunity": "Taro Pumps (A Texmo Industries brand)'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
-    "Salesperson": "Kundan Pandey",
-    "Next Follow up": null,
-    "Industry Segment": "Industrial Automation & Robotics",
-    "Revenue (Millions USD)": 120.0,
-    "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
-    "Stage": "Market Research",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": "Tamil Nadu (IN)",
-    "City": "Coimbatore",
-    "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 86.51
+    "Probability": 94.26
   },
   {
     "Created on": "2026-06-29 09:18:34",
@@ -30990,8 +30798,8 @@
     "Company Name": "HollySys Automation Technologies",
     "Opportunity": "HollySys Automation Technologies's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -31005,31 +30813,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 95.98
-  },
-  {
-    "Created on": "2026-06-29 09:09:24",
-    "Source": "Zoom Info",
-    "RFQ Date": null,
-    "Company Name": "JCB Air Tech",
-    "Opportunity": "JCB Air Tech's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
-    "Salesperson": "Kundan Pandey",
-    "Next Follow up": null,
-    "Industry Segment": "Industrial Automation & Robotics",
-    "Revenue (Millions USD)": 1000.0,
-    "Opportunity Type": "PCB Assembly",
-    "Expected Revenue": 0.0,
-    "Stage": "Market Research",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": "Maharashtra (IN)",
-    "City": "Pune",
-    "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 36.83
+    "Probability": 96.98
   },
   {
     "Created on": "2026-06-29 07:51:14",
@@ -31037,9 +30821,9 @@
     "RFQ Date": null,
     "Company Name": "Spartan Engineering Industries Pvt. Ltd.",
     "Opportunity": "Spartan Engineering Industries Pvt. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Sandesh Nighot",
+    "Email": "NA",
+    "Phone": "+91 93208 68675",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -31053,7 +30837,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 36.83
+    "Probability": 6.54
   },
   {
     "Created on": "2026-06-29 07:42:05",
@@ -31061,9 +30845,9 @@
     "RFQ Date": null,
     "Company Name": "L.T. ELEVATOR PRIVATE LIMITED",
     "Opportunity": "L.T. ELEVATOR PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Hitesh Kumar",
+    "Email": "NA",
+    "Phone": "+91 84276 21519",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -31077,7 +30861,7 @@
     "City": "Kolkata",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 36.83
+    "Probability": 6.54
   },
   {
     "Created on": "2026-06-29 07:37:49",
@@ -31085,9 +30869,9 @@
     "RFQ Date": null,
     "Company Name": "Eros Group Elevators",
     "Opportunity": "Eros Group Elevators's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Vipul Rai",
+    "Email": "vipul.rai@eroselevators.com",
+    "Phone": "+91 93248 00166",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -31101,7 +30885,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 36.83
+    "Probability": 22.87
   },
   {
     "Created on": "2026-06-29 07:32:34",
@@ -31109,9 +30893,9 @@
     "RFQ Date": null,
     "Company Name": "Reliable Lifts India Pvt Ltd",
     "Opportunity": "Reliable Lifts India Pvt Ltd's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Amit Tate",
+    "Email": "amit@reliablelifts.in",
+    "Phone": "+91 70280 12898",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -31125,7 +30909,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 36.83
+    "Probability": 22.87
   },
   {
     "Created on": "2026-06-29 07:26:19",
@@ -31134,8 +30918,8 @@
     "Company Name": "Infra Elevators India Pvt Ltd",
     "Opportunity": "Infra Elevators India Pvt Ltd's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "+91 92495 33533",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -31149,7 +30933,7 @@
     "City": "Kochi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 84.08
+    "Probability": 43.48
   },
   {
     "Created on": "2026-06-29 07:23:08",
@@ -31157,9 +30941,9 @@
     "RFQ Date": null,
     "Company Name": "EXPEDITE AUTOMATION LLP",
     "Opportunity": "EXPEDITE AUTOMATION LLP's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Nisha Kumari",
+    "Email": "NA",
+    "Phone": "+91 99879 70091",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -31173,7 +30957,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.51
+    "Probability": 59.49
   },
   {
     "Created on": "2026-06-29 07:18:32",
@@ -31181,9 +30965,9 @@
     "RFQ Date": null,
     "Company Name": "Orbis Elevator Co. Ltd.",
     "Opportunity": "Orbis Elevator Co. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Shaileshkumar Shrivastava",
+    "Email": "NA",
+    "Phone": "+91 99245 84257",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -31197,7 +30981,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.51
+    "Probability": 43.48
   },
   {
     "Created on": "2026-06-29 07:16:54",
@@ -31205,9 +30989,9 @@
     "RFQ Date": null,
     "Company Name": "CIBES LIFT INDIA PRIVATE LIMITED",
     "Opportunity": "CIBES LIFT INDIA PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Er. Pintu Mahto",
+    "Email": "pintu.mahto@cibeslift.com",
+    "Phone": "+91 93116 28553",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -31221,7 +31005,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 92.66
+    "Probability": 88.19
   },
   {
     "Created on": "2026-06-29 07:02:07",
@@ -31230,8 +31014,8 @@
     "Company Name": "TUNWAL E-MOTORS LIMITED",
     "Opportunity": "TUNWAL E-MOTORS LIMITED's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "+91 84484 48763",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
@@ -31245,7 +31029,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 36.83
+    "Probability": 6.54
   },
   {
     "Created on": "2026-06-29 06:01:53",
@@ -31253,9 +31037,9 @@
     "RFQ Date": null,
     "Company Name": "SUNGREEN POWER & RENEWABLE ENERGY PRIVATE LIMITED",
     "Opportunity": "SUNGREEN POWER & RENEWABLE ENERGY PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Vijay Kumar Patodia",
+    "Email": "vkpatodia@sungreenpower.net",
+    "Phone": "+91 98360 03924",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -31269,7 +31053,7 @@
     "City": "Kolkata",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 36.83
+    "Probability": 22.87
   },
   {
     "Created on": "2026-06-29 05:55:18",
@@ -31301,9 +31085,9 @@
     "RFQ Date": null,
     "Company Name": "AMEC TECHNOLOGY PRIVATE LIMITED",
     "Opportunity": "AMEC TECHNOLOGY PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Angela Eunjae Chung",
+    "Email": "angela@amectechnologies.com.au",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -31317,7 +31101,7 @@
     "City": "Nagpur",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 36.83
+    "Probability": 76.83
   },
   {
     "Created on": "2026-06-29 05:42:35",
@@ -31350,8 +31134,8 @@
     "Company Name": "BATTFIT TECHNOLOGIES PRIVATE LIMITED",
     "Opportunity": "BATTFIT TECHNOLOGIES PRIVATE LIMITED's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -31365,7 +31149,7 @@
     "City": "Jaipur",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.51
+    "Probability": 89.59
   },
   {
     "Created on": "2026-06-29 05:31:02",
@@ -31398,8 +31182,8 @@
     "Company Name": "Geevok Elevators & Escalators",
     "Opportunity": "Geevok Elevators & Escalators's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -31413,7 +31197,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.51
+    "Probability": 94.26
   },
   {
     "Created on": "2026-06-29 05:15:40",
@@ -31421,9 +31205,9 @@
     "RFQ Date": null,
     "Company Name": "TERRANOVA GREEN ENERGY PRIVATE LIMITED",
     "Opportunity": "TERRANOVA GREEN ENERGY PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Anirudh Kota",
+    "Email": "anirudh@terranovagreenenergy.com",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -31437,7 +31221,7 @@
     "City": "Nellore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 84.08
+    "Probability": 97.33
   },
   {
     "Created on": "2026-06-29 05:06:54",
@@ -31446,8 +31230,8 @@
     "Company Name": "RECELLS TECHNOLOGY",
     "Opportunity": "RECELLS TECHNOLOGY's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -31461,7 +31245,7 @@
     "City": "Surat",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.51
+    "Probability": 89.59
   },
   {
     "Created on": "2026-06-29 04:45:18",
@@ -31470,8 +31254,8 @@
     "Company Name": "AVINYA BATTERIES LIMITED",
     "Opportunity": "AVINYA BATTERIES LIMITED's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -31485,7 +31269,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 95.98
+    "Probability": 96.98
   },
   {
     "Created on": "2026-06-28 18:17:00",
@@ -31493,9 +31277,9 @@
     "RFQ Date": null,
     "Company Name": "Jackvolt Battery",
     "Opportunity": "Jackvolt Battery's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Manish Bhardwaj",
+    "Email": "manish@shaftenergies.com",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -31509,7 +31293,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 95.98
+    "Probability": 99.27
   },
   {
     "Created on": "2026-06-28 18:04:04",
@@ -31517,9 +31301,9 @@
     "RFQ Date": null,
     "Company Name": "Yukinova (Yuki Electric India Private Limited)",
     "Opportunity": "Yukinova (Yuki Electric India Private Limited)'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Surender Kumar",
+    "Email": "surender.kumar@yukinova.com",
+    "Phone": "+91 99999 40755",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -31533,7 +31317,7 @@
     "City": "Ghaziabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 95.98
+    "Probability": 92.4
   },
   {
     "Created on": "2026-06-28 18:01:16",
@@ -31542,8 +31326,8 @@
     "Company Name": "ENERGENIC BATTERIES LLP",
     "Opportunity": "ENERGENIC BATTERIES LLP's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -31557,7 +31341,7 @@
     "City": "Faridabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 92.66
+    "Probability": 95.17
   },
   {
     "Created on": "2026-06-28 17:53:17",
@@ -31566,8 +31350,8 @@
     "Company Name": "Cooper Elevators India Pvt. Ltd.",
     "Opportunity": "Cooper Elevators India Pvt. Ltd.'s opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "+91 93809 02467",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -31581,7 +31365,7 @@
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.51
+    "Probability": 89.43
   },
   {
     "Created on": "2026-06-28 17:50:52",
@@ -31589,9 +31373,9 @@
     "RFQ Date": null,
     "Company Name": "AEGIS Elevator Pvt Ltd",
     "Opportunity": "AEGIS Elevator Pvt Ltd's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Goverdhanlal Makani",
+    "Email": "NA",
+    "Phone": "+91 98253 09607",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -31605,7 +31389,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.51
+    "Probability": 43.48
   },
   {
     "Created on": "2026-06-27 12:04:56",
@@ -31613,9 +31397,9 @@
     "RFQ Date": null,
     "Company Name": "ESCON Elevators",
     "Opportunity": "ESCON Elevators's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Kennedy Gomes",
+    "Email": "NA",
+    "Phone": "+91 7178 258 639",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -31629,7 +31413,7 @@
     "City": "Navi Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 36.83
+    "Probability": 6.54
   },
   {
     "Created on": "2026-06-27 11:43:51",
@@ -31638,8 +31422,8 @@
     "Company Name": "BRIO ELEVATORS LLP",
     "Opportunity": "BRIO ELEVATORS LLP's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -31653,7 +31437,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 36.83
+    "Probability": 43.89
   },
   {
     "Created on": "2026-06-27 11:29:14",
@@ -31662,8 +31446,8 @@
     "Company Name": "SUPCON",
     "Opportunity": "SUPCON's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -31677,7 +31461,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 64.68
+    "Probability": 76.71
   },
   {
     "Created on": "2026-06-27 11:23:49",
@@ -31685,9 +31469,9 @@
     "RFQ Date": null,
     "Company Name": "ICON AUTOMATION",
     "Opportunity": "ICON AUTOMATION's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Saravanan",
+    "Email": "saravanan@iconatm.com",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -31701,7 +31485,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 64.68
+    "Probability": 93.32
   },
   {
     "Created on": "2026-06-27 11:19:52",
@@ -31710,8 +31494,8 @@
     "Company Name": "BRIXAT AUTOMATION AND SOLUTIONS LLP",
     "Opportunity": "BRIXAT AUTOMATION AND SOLUTIONS LLP's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -31725,7 +31509,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 39.1
+    "Probability": 43.89
   },
   {
     "Created on": "2026-06-27 11:13:09",
@@ -31733,9 +31517,9 @@
     "RFQ Date": null,
     "Company Name": "Velox Automation Pvt. Ltd.",
     "Opportunity": "Velox Automation Pvt. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Santosh Nanavati",
+    "Email": "santosh@veloxautomation.com",
+    "Phone": "+91 99090 42323, +91 98791 13833 ",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -31749,7 +31533,7 @@
     "City": "Surat",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 87.6
+    "Probability": 97.33
   },
   {
     "Created on": "2026-06-27 11:09:21",
@@ -31757,9 +31541,9 @@
     "RFQ Date": null,
     "Company Name": "Ingeteam CZ",
     "Opportunity": "Ingeteam CZ's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Durai Murugan",
+    "Email": "duraimurugan.chinnadurai@ingeteam.com",
+    "Phone": "+91 70943 34556",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -31773,7 +31557,7 @@
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 87.6
+    "Probability": 97.29
   },
   {
     "Created on": "2026-06-27 11:06:05",
@@ -31782,8 +31566,8 @@
     "Company Name": "Mechatron System",
     "Opportunity": "Mechatron System's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -31797,7 +31581,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 87.6
+    "Probability": 89.59
   },
   {
     "Created on": "2026-06-27 10:59:16",
@@ -31806,8 +31590,8 @@
     "Company Name": "NIKMAG ENGINEERING",
     "Opportunity": "NIKMAG ENGINEERING's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -31821,7 +31605,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 39.1
+    "Probability": 43.89
   },
   {
     "Created on": "2026-06-27 10:54:21",
@@ -31830,8 +31614,8 @@
     "Company Name": "KEB Automation India",
     "Opportunity": "KEB Automation India's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -31845,7 +31629,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 39.1
+    "Probability": 43.89
   },
   {
     "Created on": "2026-06-27 10:50:37",
@@ -31854,8 +31638,8 @@
     "Company Name": "Krause Automation",
     "Opportunity": "Krause Automation's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -31869,7 +31653,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 87.6
+    "Probability": 94.26
   },
   {
     "Created on": "2026-06-27 10:44:52",
@@ -31878,8 +31662,8 @@
     "Company Name": "Onetouch Controls",
     "Opportunity": "Onetouch Controls's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -31893,7 +31677,7 @@
     "City": "Navi Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 39.1
+    "Probability": 43.89
   },
   {
     "Created on": "2026-06-27 10:40:20",
@@ -31901,9 +31685,9 @@
     "RFQ Date": null,
     "Company Name": "HYBON ELEVATORS AND ESCALATORS PRIVATE LIMITED",
     "Opportunity": "HYBON ELEVATORS AND ESCALATORS PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Ratan Sehgal",
+    "Email": "NA",
+    "Phone": "+91 98717 27397",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -31917,7 +31701,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 87.6
+    "Probability": 59.49
   },
   {
     "Created on": "2026-06-27 10:35:48",
@@ -31925,9 +31709,9 @@
     "RFQ Date": null,
     "Company Name": "Solvo Elevators Pvt. Ltd.",
     "Opportunity": "Solvo Elevators Pvt. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Ruchir J. Oza",
+    "Email": "NA",
+    "Phone": "+91 84608 68758",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -31941,7 +31725,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 87.6
+    "Probability": 43.48
   },
   {
     "Created on": "2026-06-27 10:29:09",
@@ -31949,9 +31733,9 @@
     "RFQ Date": null,
     "Company Name": "PARKIT SYSTEMS PRIVATE LIMITED",
     "Opportunity": "PARKIT SYSTEMS PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Vidhii Pandit",
+    "Email": "vidhi@parkit.biz",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -31965,7 +31749,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 39.1
+    "Probability": 76.83
   },
   {
     "Created on": "2026-06-27 10:17:15",
@@ -31973,9 +31757,9 @@
     "RFQ Date": null,
     "Company Name": "INVOTEC AUTOMATION PRIVATE LIMITED",
     "Opportunity": "INVOTEC AUTOMATION PRIVATE LIMITED's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Sunil Kangane",
+    "Email": "sunil.kangane@invotec.in",
+    "Phone": "+91 90206 55772, +91 98206 55772",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -31989,7 +31773,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 39.1
+    "Probability": 76.83
   },
   {
     "Created on": "2026-06-27 10:04:08",
@@ -31997,9 +31781,9 @@
     "RFQ Date": null,
     "Company Name": "GridXenergy",
     "Opportunity": "GridXenergy's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Paridhi Sinha",
+    "Email": "paridhi@gridxenergy.in",
+    "Phone": "+91 96676 63464",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Energy & CleanTech",
@@ -32013,7 +31797,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 92.07
+    "Probability": 88.19
   },
   {
     "Created on": "2026-06-27 09:59:05",
@@ -32022,8 +31806,8 @@
     "Company Name": "IVW TECHNOLOGY SOLUTIONS PRIVATE LIMITED",
     "Opportunity": "IVW TECHNOLOGY SOLUTIONS PRIVATE LIMITED's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Energy & CleanTech",
@@ -32037,7 +31821,7 @@
     "City": "Kancheepuram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 87.6
+    "Probability": 98.95
   },
   {
     "Created on": "2026-06-27 09:55:30",
@@ -32045,9 +31829,9 @@
     "RFQ Date": null,
     "Company Name": "Comuti Energy Pvt Ltd",
     "Opportunity": "Comuti Energy Pvt Ltd's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Badrinath Chitrala",
+    "Email": "badri@comuti.in",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Energy & CleanTech",
@@ -32061,7 +31845,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 39.1
+    "Probability": 76.83
   },
   {
     "Created on": "2026-06-27 09:48:18",
@@ -32069,9 +31853,9 @@
     "RFQ Date": null,
     "Company Name": "Wardwizard Innovations & Mobility Ltd",
     "Opportunity": "Wardwizard Innovations & Mobility Ltd's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Vijey Makvana",
+    "Email": "vijey@wardwizard.in",
+    "Phone": "+91 63589 99499",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
@@ -32085,7 +31869,7 @@
     "City": "Vadodara",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 87.6
+    "Probability": 76.53
   },
   {
     "Created on": "2026-06-27 09:43:02",
@@ -32093,9 +31877,9 @@
     "RFQ Date": null,
     "Company Name": "Likraft Batteries Pvt. Ltd.",
     "Opportunity": "Likraft Batteries Pvt. Ltd.'s opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Anit Chawla",
+    "Email": "anit@likraft.com",
+    "Phone": "+91 94246 04672",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Energy & CleanTech",
@@ -32109,7 +31893,7 @@
     "City": "Sonipat",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 92.07
+    "Probability": 88.19
   },
   {
     "Created on": "2026-06-27 09:39:07",
@@ -32117,9 +31901,9 @@
     "RFQ Date": null,
     "Company Name": "ADVANTEX BATTERY LLP",
     "Opportunity": "ADVANTEX BATTERY LLP's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Prateek Patodia",
+    "Email": "prateek@advantexbattery.com",
+    "Phone": "+91 99030 33936",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Energy & CleanTech",
@@ -32133,7 +31917,7 @@
     "City": "Kolkata",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 39.1
+    "Probability": 22.87
   },
   {
     "Created on": "2026-06-27 09:34:57",
@@ -32142,8 +31926,8 @@
     "Company Name": "IB Energy",
     "Opportunity": "IB Energy's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Energy & CleanTech",
@@ -32157,7 +31941,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 96.34
+    "Probability": 96.98
   },
   {
     "Created on": "2026-06-27 09:28:21",
@@ -32165,9 +31949,9 @@
     "RFQ Date": null,
     "Company Name": "SOLANCE INDUSTRIES",
     "Opportunity": "SOLANCE INDUSTRIES's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Hardik Kotadia",
+    "Email": "hardik@solance.in",
+    "Phone": "+91 99256 83535",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Energy & CleanTech",
@@ -32181,7 +31965,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 87.6
+    "Probability": 76.53
   },
   {
     "Created on": "2026-06-27 09:18:24",
@@ -32189,9 +31973,9 @@
     "RFQ Date": null,
     "Company Name": "TECTRONICS TECHWORLD PVT LTD",
     "Opportunity": "TECTRONICS TECHWORLD PVT LTD's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Sharvik Dudhat",
+    "Email": "sdudhat@tectronicsindia.com",
+    "Phone": "+91 85111 05058",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -32205,7 +31989,7 @@
     "City": "Rajkot",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 87.6
+    "Probability": 76.53
   },
   {
     "Created on": "2026-06-27 07:50:14",
@@ -32309,9 +32093,9 @@
     "RFQ Date": null,
     "Company Name": "Fujitec Express Private Limited",
     "Opportunity": "Fujitec Express Private Limited's opportunity",
-    "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Contact Name": "Deeraj Dhar",
+    "Email": "deeraj.dhar@in.fujitec.com",
+    "Phone": "+91 77383 56478",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -32325,7 +32109,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 87.6
+    "Probability": 76.53
   },
   {
     "Created on": "2026-06-27 07:25:52",
@@ -38790,8 +38574,8 @@
     "Company Name": "TARASVAT INDUSTRIAL ELECTRONICS",
     "Opportunity": "TARASVAT INDUSTRIAL ELECTRONICS's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -38805,7 +38589,7 @@
     "City": "Surat",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 91.71
+    "Probability": 89.59
   },
   {
     "Created on": "2026-06-18 07:59:07",
@@ -38814,8 +38598,8 @@
     "Company Name": "TRANSCORE MAGNATEK",
     "Opportunity": "TRANSCORE MAGNATEK's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -38829,7 +38613,7 @@
     "City": "Gandhinagar",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 91.71
+    "Probability": 89.59
   },
   {
     "Created on": "2026-06-18 07:51:03",
@@ -38838,8 +38622,8 @@
     "Company Name": "Linaks Micro Electronics Ltd.",
     "Opportunity": "Linaks Micro Electronics Ltd.'s opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "EMS & Electronics Mfg",
@@ -38853,7 +38637,7 @@
     "City": "Lucknow",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 99.02
+    "Probability": 96.98
   },
   {
     "Created on": "2026-06-18 07:47:35",
@@ -38862,8 +38646,8 @@
     "Company Name": "OSTRON ELECTRONICS PRIVATE LIMITED",
     "Opportunity": "OSTRON ELECTRONICS PRIVATE LIMITED's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
@@ -38877,7 +38661,7 @@
     "City": "Lucknow",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 99.02
+    "Probability": 96.98
   },
   {
     "Created on": "2026-06-18 05:40:47",
@@ -42870,8 +42654,8 @@
     "Company Name": "Techscan Solutions",
     "Opportunity": "Techscan Solutions's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -42885,7 +42669,7 @@
     "City": "Dahiyar",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 99.43
+    "Probability": 96.98
   },
   {
     "Created on": "2026-06-09 12:41:05",
@@ -42966,8 +42750,8 @@
     "Company Name": "Acural Solutions Pvt Ltd",
     "Opportunity": "Acural Solutions Pvt Ltd's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -42981,7 +42765,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 99.43
+    "Probability": 96.98
   },
   {
     "Created on": "2026-06-09 12:04:33",
@@ -43206,8 +42990,8 @@
     "Company Name": "Altra Waves Solutions",
     "Opportunity": "Altra Waves Solutions's opportunity",
     "Contact Name": false,
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -43221,7 +43005,7 @@
     "City": "Coimbatore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 98.41
+    "Probability": 98.95
   },
   {
     "Created on": "2026-06-09 11:18:24",
@@ -43279,7 +43063,7 @@
     "Opportunity": "Rioo Enterprises's opportunity",
     "Contact Name": false,
     "Email": "NA",
-    "Phone": "NA",
+    "Phone": "+91 70459 46220",
     "Salesperson": "Kundan Pandey",
     "Next Follow up": null,
     "Industry Segment": false,
@@ -43293,7 +43077,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 75.59
+    "Probability": 9.42
   },
   {
     "Created on": "2026-06-09 09:01:28",
@@ -68814,8 +68598,8 @@
     "Company Name": "Wisdom Techno Solutions",
     "Opportunity": "Wisdom Techno Solutions",
     "Contact Name": "Gaurav",
-    "Email": false,
-    "Phone": false,
+    "Email": "NA",
+    "Phone": "+91 80002 29727",
     "Salesperson": false,
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
@@ -68829,7 +68613,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 83.05
+    "Probability": 0.49
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -74697,7 +74481,7 @@
     "Email": "NA",
     "Phone": "9818023919",
     "Salesperson": "Aadit Nair",
-    "Next Follow up": "2026-08-11",
+    "Next Follow up": "2026-08-14",
     "Industry Segment": "EMS & Electronics Mfg",
     "Revenue (Millions USD)": 19.8,
     "Opportunity Type": "Component Sourcing",
