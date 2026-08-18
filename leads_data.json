@@ -5509,15 +5509,15 @@
     "Industry Segment": "IoT & Smart Devices",
     "Revenue (Millions USD)": 7.3,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 110000.0,
-    "Stage": "RFQ Received",
-    "Won/Lost": "Pending",
+    "Expected Revenue": 5500.0,
+    "Stage": "Won",
+    "Won/Lost": "Won",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Mumbai",
-    "Closed Date": null,
+    "Closed Date": "2026-08-18 07:24:04",
     "Expected Closing": "2026-07-31",
-    "Probability": 70.0
+    "Probability": 100.0
   },
   {
     "Created on": "2026-06-05 06:25:24",
