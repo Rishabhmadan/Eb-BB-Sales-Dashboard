@@ -853,15 +853,15 @@
     "Industry Segment": "Energy & CleanTech",
     "Revenue (Millions USD)": 3.0,
     "Opportunity Type": "PCB Assembly",
-    "Expected Revenue": 618000.0,
-    "Stage": "RFQ Received",
-    "Won/Lost": "Pending",
+    "Expected Revenue": 611000.0,
+    "Stage": "Won",
+    "Won/Lost": "Won",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
-    "Closed Date": null,
+    "Closed Date": "2026-08-18 04:22:58",
     "Expected Closing": "2026-08-31",
-    "Probability": 75.0
+    "Probability": 100.0
   },
   {
     "Created on": "2026-04-09 05:33:03",
