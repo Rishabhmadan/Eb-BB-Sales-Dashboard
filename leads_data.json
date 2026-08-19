@@ -8524,7 +8524,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "Asiatic Electrical Pvt. Ltd.",
-    "Opportunity": "Asiatic Electrical Pvt. Ltd.'s opportunity",
+    "Opportunity": "Asiatic Electrical Pvt. Ltd.",
     "Contact Name": "Vishal Sikka",
     "Email": "vishalsikka@asiatic-india.com",
     "Phone": "+91 98182 14728",
@@ -8533,7 +8533,7 @@
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 15.7,
     "Opportunity Type": "PCB Assembly",
-    "Expected Revenue": 0.0,
+    "Expected Revenue": 400000.0,
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -8541,7 +8541,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 78.06
+    "Probability": 30.0
   },
   {
     "Created on": "2026-07-31 09:00:51",
