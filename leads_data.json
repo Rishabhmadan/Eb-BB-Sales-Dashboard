@@ -1070,14 +1070,14 @@
     "Revenue (Millions USD)": 5.5,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 753788.0,
-    "Stage": "RFQ Received",
-    "Won/Lost": "Pending",
+    "Stage": "Won",
+    "Won/Lost": "Won",
     "Country": "India",
     "State": false,
     "City": "Gurgaon",
-    "Closed Date": null,
+    "Closed Date": "2026-08-19 02:48:47",
     "Expected Closing": "2026-08-12",
-    "Probability": 90.0
+    "Probability": 100.0
   },
   {
     "Created on": "2026-08-05 06:30:01",
