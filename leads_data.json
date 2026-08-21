@@ -37,7 +37,7 @@
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 270.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 1949774.0,
+    "Expected Revenue": 1749774.0,
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -45,7 +45,7 @@
     "City": "Bengaluru",
     "Closed Date": null,
     "Expected Closing": "2026-08-21",
-    "Probability": 65.0
+    "Probability": 75.0
   },
   {
     "Created on": "2026-08-07 09:25:57",
@@ -182,14 +182,14 @@
     "Revenue (Millions USD)": 0.1,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 28798720.0,
-    "Stage": "RFQ Received",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Kerala (IN)",
     "City": "Palakkad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 97.08
+    "Probability": 98.15
   },
   {
     "Created on": "2026-06-13 06:46:46",
@@ -757,7 +757,7 @@
     "Industry Segment": "Other",
     "Revenue (Millions USD)": 341.0,
     "Opportunity Type": "Box Build",
-    "Expected Revenue": 45000000.0,
+    "Expected Revenue": 40000000.0,
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -901,15 +901,15 @@
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 262.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 150000.0,
-    "Stage": "RFQ Received",
-    "Won/Lost": "Pending",
+    "Expected Revenue": 195000.0,
+    "Stage": "Won",
+    "Won/Lost": "Won",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
-    "Closed Date": null,
+    "Closed Date": "2026-08-21 09:32:09",
     "Expected Closing": "2026-08-28",
-    "Probability": 60.0
+    "Probability": 100.0
   },
   {
     "Created on": "2026-08-19 05:30:51",
@@ -926,14 +926,14 @@
     "Revenue (Millions USD)": 0.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 800000.0,
-    "Stage": "Won",
-    "Won/Lost": "Won",
+    "Stage": "Dropped",
+    "Won/Lost": "Pending",
     "Country": false,
     "State": false,
     "City": false,
-    "Closed Date": "2026-08-19 05:30:51",
+    "Closed Date": null,
     "Expected Closing": "2026-08-17",
-    "Probability": 100.0
+    "Probability": 87.36
   },
   {
     "Created on": "2026-08-19 04:51:26",
@@ -1694,14 +1694,14 @@
     "Revenue (Millions USD)": 0.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 500000.0,
-    "Stage": "RFQ Received",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": "2026-06-29",
-    "Probability": 75.78
+    "Probability": 93.01
   },
   {
     "Created on": "2026-06-17 15:32:48",
@@ -1742,14 +1742,14 @@
     "Revenue (Millions USD)": 6.1,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 3234455.91,
-    "Stage": "RFQ Received",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 93.49
+    "Probability": 99.37
   },
   {
     "Created on": "2026-06-17 04:24:29",
@@ -1886,7 +1886,7 @@
     "Revenue (Millions USD)": 12.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 1100000.0,
-    "Stage": "RFQ Received",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Uttar Pradesh (IN)",
@@ -4814,14 +4814,14 @@
     "Revenue (Millions USD)": 3.0,
     "Opportunity Type": "PCB fabrication",
     "Expected Revenue": 581000.0,
-    "Stage": "RFQ Received",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": "2026-08-28",
-    "Probability": 40.24
+    "Probability": 20.0
   },
   {
     "Created on": "2026-07-31 09:56:08",
@@ -4910,7 +4910,7 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 300000.0,
-    "Stage": "Connected",
+    "Stage": "RFQ Expected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
@@ -5294,7 +5294,7 @@
     "Revenue (Millions USD)": 12.0,
     "Opportunity Type": "Other/TBD",
     "Expected Revenue": 115922.84,
-    "Stage": "RFQ Received",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
@@ -5318,7 +5318,7 @@
     "Revenue (Millions USD)": 12.0,
     "Opportunity Type": "PCB fabrication",
     "Expected Revenue": 462291.36,
-    "Stage": "RFQ Received",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
@@ -32126,14 +32126,14 @@
     "Revenue (Millions USD)": 1.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "RFQ Received",
-    "Won/Lost": "Pending",
+    "Stage": "Won",
+    "Won/Lost": "Won",
     "Country": "India",
     "State": false,
     "City": "Palakkad",
-    "Closed Date": null,
+    "Closed Date": "2026-08-21 04:16:13",
     "Expected Closing": null,
-    "Probability": 70.0
+    "Probability": 100.0
   },
   {
     "Created on": "2026-06-27 07:34:15",
@@ -41390,14 +41390,14 @@
     "Revenue (Millions USD)": 28.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Follow Up Later",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Uttar Pradesh (IN)",
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 74.91
+    "Probability": 93.53
   },
   {
     "Created on": "2026-06-11 07:26:20",
