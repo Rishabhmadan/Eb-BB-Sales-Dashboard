@@ -1478,14 +1478,14 @@
     "Revenue (Millions USD)": 0.0,
     "Opportunity Type": "PCB fabrication",
     "Expected Revenue": 30000000.0,
-    "Stage": "RFQ Received",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": "2026-07-09",
-    "Probability": 38.27
+    "Probability": 76.53
   },
   {
     "Created on": "2026-06-26 13:42:16",
