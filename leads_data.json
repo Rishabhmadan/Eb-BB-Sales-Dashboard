@@ -1118,14 +1118,14 @@
     "Revenue (Millions USD)": 0.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "RFQ Received",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": false,
     "State": false,
     "City": false,
     "Closed Date": null,
     "Expected Closing": "2026-08-13",
-    "Probability": 77.7
+    "Probability": 87.19
   },
   {
     "Created on": "2026-08-08 07:49:36",
@@ -62237,9 +62237,9 @@
     "RFQ Date": null,
     "Company Name": "Innolia Energy",
     "Opportunity": "Innolia Energy",
-    "Contact Name": "Sachin Sharma",
+    "Contact Name": "Sujay",
     "Email": "NA",
-    "Phone": "NA",
+    "Phone": "+91 97480 32390",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-08-03",
     "Industry Segment": "Energy & CleanTech",
@@ -62253,7 +62253,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 83.41
+    "Probability": 47.77
   },
   {
     "Created on": "2026-04-13 11:37:03",
