@@ -6633,7 +6633,7 @@
     "Email": "psr@sensel.in",
     "Phone": "+91 98451 97006",
     "Salesperson": "Ruchit Nambiar",
-    "Next Follow up": "2026-08-12",
+    "Next Follow up": "2026-08-24",
     "Industry Segment": "IoT & Smart Devices",
     "Revenue (Millions USD)": 6.0,
     "Opportunity Type": "Box Build",
@@ -8740,7 +8740,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "SUGS LLOYD LIMITED",
-    "Opportunity": "SUGS LLOYD LIMITED's opportunity",
+    "Opportunity": "SUGS LLOYD LIMITED",
     "Contact Name": "Satyakam Basu",
     "Email": "satyakam@sugslloyds.com",
     "Phone": "+91 98218 72278",
@@ -8749,7 +8749,7 @@
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 36.0,
     "Opportunity Type": "PCB Assembly",
-    "Expected Revenue": 0.0,
+    "Expected Revenue": 400000.0,
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -8757,7 +8757,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 74.78
+    "Probability": 30.0
   },
   {
     "Created on": "2026-07-31 06:31:05",
