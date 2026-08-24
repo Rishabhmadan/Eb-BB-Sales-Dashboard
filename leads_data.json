@@ -8630,7 +8630,7 @@
     "Revenue (Millions USD)": 20.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 300000.0,
-    "Stage": "Open",
+    "Stage": "Need Warm Intro",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
@@ -8716,7 +8716,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "Chetas Control Systems Pvt. Ltd.",
-    "Opportunity": "Chetas Control Systems Pvt. Ltd.'s opportunity",
+    "Opportunity": "Chetas Control Systems Pvt. Ltd.",
     "Contact Name": "Mahesh S. Deshmukh",
     "Email": "maheshdeshmukh@chetascontrol.com",
     "Phone": "+91 99106 66319, +91 79 4050 2100",
@@ -8725,7 +8725,7 @@
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 8.0,
     "Opportunity Type": "PCB Assembly",
-    "Expected Revenue": 0.0,
+    "Expected Revenue": 500000.0,
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -8733,7 +8733,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 61.24
+    "Probability": 30.0
   },
   {
     "Created on": "2026-07-31 06:49:47",
