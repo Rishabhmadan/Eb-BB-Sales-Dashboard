@@ -56653,15 +56653,15 @@
     "Industry Segment": "Other",
     "Revenue (Millions USD)": 40.0,
     "Opportunity Type": "Box Build",
-    "Expected Revenue": 4000000.0,
-    "Stage": "Follow Up Later",
+    "Expected Revenue": 0.0,
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bengaluru",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 53.7
+    "Probability": 69.76
   },
   {
     "Created on": "2026-05-07 11:13:31",
