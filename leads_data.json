@@ -38,7 +38,7 @@
     "Revenue (Millions USD)": 5.5,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 3900000.0,
-    "Stage": "RFQ Received",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": false,
@@ -110,7 +110,7 @@
     "Revenue (Millions USD)": 5.5,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 35000000.0,
-    "Stage": "RFQ Received",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": false,
@@ -502,6 +502,30 @@
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 20.0
+  },
+  {
+    "Created on": "2026-05-18 07:18:52",
+    "Source": "Zoom Info",
+    "RFQ Date": "2026-08-11",
+    "Company Name": "MV Electrosystems Ltd",
+    "Opportunity": "MV Electrosystems Limited - EB-42-ML-520-02-1878",
+    "Contact Name": "Prashant",
+    "Email": "prashant@mvelectrosystems.com",
+    "Phone": "+91 88788 96662",
+    "Salesperson": "Riya Gupta",
+    "Next Follow up": "2026-06-15",
+    "Industry Segment": "Power Electronics & Electrical",
+    "Revenue (Millions USD)": 6.0,
+    "Opportunity Type": "Component Sourcing",
+    "Expected Revenue": 20000000.0,
+    "Stage": "RFQ Received",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "New Delhi (IN)",
+    "City": "Palwal",
+    "Closed Date": null,
+    "Expected Closing": "2026-09-01",
+    "Probability": 40.0
   },
   {
     "Created on": "2026-05-18 05:23:50",
@@ -2352,30 +2376,6 @@
     "Probability": 50.0
   },
   {
-    "Created on": "2026-05-18 07:18:52",
-    "Source": "Zoom Info",
-    "RFQ Date": "2026-08-11",
-    "Company Name": "MV Electrosystems Ltd",
-    "Opportunity": "MV Electrosystems Limited - EB-42-ML-520-02-1878",
-    "Contact Name": "Mukund",
-    "Email": "mt@mvelectrosystems.com",
-    "Phone": "+91 87960 99595",
-    "Salesperson": "Riya Gupta",
-    "Next Follow up": "2026-06-15",
-    "Industry Segment": "Power Electronics & Electrical",
-    "Revenue (Millions USD)": 6.0,
-    "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 2000000.0,
-    "Stage": "RFQ Received",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": "New Delhi (IN)",
-    "City": "Palwal",
-    "Closed Date": null,
-    "Expected Closing": "2026-08-26",
-    "Probability": 40.0
-  },
-  {
     "Created on": "2026-05-14 08:37:17",
     "Source": "IEW Expo",
     "RFQ Date": null,
@@ -3725,8 +3725,8 @@
     "RFQ Date": null,
     "Company Name": "SmarDen Automation",
     "Opportunity": "SmarDen Automation",
-    "Contact Name": "Pramod Mehta",
-    "Email": "pramod@smarden.in",
+    "Contact Name": "Abhay Yadav",
+    "Email": "abhay@smarden.in",
     "Phone": false,
     "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
@@ -3737,11 +3737,11 @@
     "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Karnataka (IN)",
+    "State": false,
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 11.04
+    "Probability": 93.98
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -5934,8 +5934,8 @@
     "Company Name": "Rapid Radio",
     "Opportunity": "Rapid Radio",
     "Contact Name": "Dushyant Upadhyay",
-    "Email": "dushyant@rapidradio.co.in",
-    "Phone": "+91 98247 94709",
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Ruchit Nambiar",
     "Next Follow up": "2026-06-17",
     "Industry Segment": "Power Electronics & Electrical",
@@ -7704,6 +7704,30 @@
     "Probability": 73.23
   },
   {
+    "Created on": "2026-08-31 12:08:55",
+    "Source": false,
+    "RFQ Date": null,
+    "Company Name": "SERTEL ELECTRONICS PRIVATE LIMITED",
+    "Opportunity": "SERTEL ELECTRONICS PRIVATE LIMITED",
+    "Contact Name": "Partha Sarathy",
+    "Email": "purchase@sertelelectronics.com",
+    "Phone": "+91 86104 83307",
+    "Salesperson": "Ruchit Nambiar",
+    "Next Follow up": null,
+    "Industry Segment": false,
+    "Revenue (Millions USD)": 4.0,
+    "Opportunity Type": false,
+    "Expected Revenue": 200000.0,
+    "Stage": "RFQ Expected",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Tamil Nadu (IN)",
+    "City": "Chennai",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 30.0
+  },
+  {
     "Created on": "2026-08-25 03:36:03",
     "Source": false,
     "RFQ Date": "2026-08-24",
@@ -8143,7 +8167,7 @@
     "Opportunity": "AMONICS TECHNOLOGIES LLP's opportunity",
     "Contact Name": false,
     "Email": "NA",
-    "Phone": "+91 95099 24868 (Aman) (Technical department), +91 98758 24868 ",
+    "Phone": "+91 95099 24868, +91 98758 24868 ",
     "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
@@ -8414,14 +8438,14 @@
     "Revenue (Millions USD)": 7.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 0.0,
-    "Stage": "Connected",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 56.28
+    "Probability": 72.98
   },
   {
     "Created on": "2026-07-31 12:44:19",
@@ -8431,7 +8455,7 @@
     "Opportunity": "Volt Control System's opportunity",
     "Contact Name": "Shruti Kshirsagar",
     "Email": "NA",
-    "Phone": "+91 98348 16500 (Director) Abhay",
+    "Phone": "+91 98348 16500",
     "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -8445,7 +8469,7 @@
     "City": "Pimpri-Chinchwad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.6
+    "Probability": 40.27
   },
   {
     "Created on": "2026-07-31 12:37:36",
@@ -8670,8 +8694,8 @@
     "Company Name": "Z-power Batteries",
     "Opportunity": "Z-power Batteries's opportunity",
     "Contact Name": "Sachin Gupta",
-    "Email": "NA",
-    "Phone": "+91 81958 00139",
+    "Email": "sachingupta@zpowerbatteries.com",
+    "Phone": "+91 95178 03301",
     "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -8685,7 +8709,7 @@
     "City": "Zirakpur",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 40.27
+    "Probability": 63.58
   },
   {
     "Created on": "2026-07-31 08:52:20",
@@ -10166,14 +10190,14 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
-    "Stage": "Connected",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 69.29
+    "Probability": 98.28
   },
   {
     "Created on": "2026-07-27 07:38:49",
@@ -10190,14 +10214,14 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Connected",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Telangana (IN)",
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 17.02
+    "Probability": 32.01
   },
   {
     "Created on": "2026-07-27 06:21:45",
@@ -10214,14 +10238,14 @@
     "Revenue (Millions USD)": 6.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Connected",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 36.91
+    "Probability": 76.53
   },
   {
     "Created on": "2026-07-27 06:09:39",
@@ -10238,14 +10262,14 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
-    "Stage": "Connected",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 46.92
+    "Probability": 97.58
   },
   {
     "Created on": "2026-07-27 05:57:04",
@@ -10262,14 +10286,14 @@
     "Revenue (Millions USD)": 2.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
-    "Stage": "Connected",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 69.29
+    "Probability": 98.28
   },
   {
     "Created on": "2026-07-27 05:10:41",
@@ -13550,14 +13574,14 @@
     "Revenue (Millions USD)": 2.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Connected",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 37.76
+    "Probability": 69.76
   },
   {
     "Created on": "2026-07-18 02:33:51",
@@ -13574,14 +13598,14 @@
     "Revenue (Millions USD)": 0.12,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Connected",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 7.44
+    "Probability": 78.56
   },
   {
     "Created on": "2026-07-17 16:05:06",
@@ -13622,14 +13646,14 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Connected",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Uttar Pradesh (IN)",
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 47.25
+    "Probability": 84.06
   },
   {
     "Created on": "2026-07-17 15:33:53",
@@ -13694,14 +13718,14 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Connected",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Telangana (IN)",
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 2.14
+    "Probability": 11.4
   },
   {
     "Created on": "2026-07-17 11:16:43",
@@ -14550,22 +14574,22 @@
     "Company Name": "SnapUp",
     "Opportunity": "SnapUp",
     "Contact Name": "Tushar Tekriwal",
-    "Email": "ashutosh.t@startronlife.com",
-    "Phone": "+91 98916 66891",
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 24.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 0.0,
-    "Stage": "Connected",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 63.49
+    "Probability": 97.89
   },
   {
     "Created on": "2026-07-16 14:48:03",
@@ -14974,6 +14998,30 @@
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 33.91
+  },
+  {
+    "Created on": "2026-07-16 10:57:21",
+    "Source": "Other",
+    "RFQ Date": null,
+    "Company Name": "REGENT LIGHTING ASIA PRIVATE LIMITED",
+    "Opportunity": "REGENT LIGHTING ASIA PRIVATE LIMITED's opportunity",
+    "Contact Name": "Lav",
+    "Email": "NA",
+    "Phone": "+91 88600 56136",
+    "Salesperson": "Riya Gupta",
+    "Next Follow up": null,
+    "Industry Segment": "Consumer Electronics & Appliances",
+    "Revenue (Millions USD)": 10.0,
+    "Opportunity Type": "Box Build",
+    "Expected Revenue": 0.0,
+    "Stage": "RFQ Expected",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Uttar Pradesh (IN)",
+    "City": "Noida",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 84.0
   },
   {
     "Created on": "2026-07-16 10:52:39",
@@ -19253,9 +19301,9 @@
     "RFQ Date": null,
     "Company Name": "EKKAA ELECTRONICS INDUSTRIES PRIVATE LIMITED",
     "Opportunity": "EKKAA ELECTRONICS INDUSTRIES PRIVATE LIMITED",
-    "Contact Name": "Praveen Goyal",
-    "Email": "pg@ekkaa.com",
-    "Phone": "+91 99901 81447",
+    "Contact Name": "Abhinandan Pandey",
+    "Email": "abhinandan@ekkaa.com",
+    "Phone": "+91 85888 21874",
     "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -19269,7 +19317,7 @@
     "City": "Sonipat",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 59.41
+    "Probability": 79.99
   },
   {
     "Created on": "2026-07-13 04:52:59",
@@ -35534,7 +35582,7 @@
     "Revenue (Millions USD)": 4.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 400000.0,
-    "Stage": "Connected",
+    "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Uttar Pradesh (IN)",
@@ -51152,7 +51200,7 @@
     "Contact Name": "Sankalp Subhedar",
     "Email": "sankalp.subhedar@solaredge.com",
     "Phone": "+91 98606 80628",
-    "Salesperson": "Manav",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Energy & CleanTech",
     "Revenue (Millions USD)": 3.0,
@@ -51165,7 +51213,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.18
+    "Probability": 52.36
   },
   {
     "Created on": "2026-05-18 11:43:55",
@@ -51581,9 +51629,9 @@
     "RFQ Date": null,
     "Company Name": "Nisiki India Pvt Ltd",
     "Opportunity": "NISIKI INDIA PVT LTD",
-    "Contact Name": "Tejas Gholva",
-    "Email": "NA",
-    "Phone": "+91 77386 17065",
+    "Contact Name": "Nitin Ghadle",
+    "Email": "nitin@nisiki.net.in",
+    "Phone": "+91 99676 60257",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "Other",
@@ -51594,10 +51642,10 @@
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bangalore",
+    "City": "Bengaluru",
     "Closed Date": null,
     "Expected Closing": "2026-06-17",
-    "Probability": 3.07
+    "Probability": 53.7
   },
   {
     "Created on": "2026-05-18 07:13:50",
@@ -51728,7 +51776,7 @@
     "Contact Name": "Arun Kumar",
     "Email": "arun.kumar@exorint.com",
     "Phone": "+91 81694 51189, +91 22 2784 0422",
-    "Salesperson": "Manav",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 4.0,
@@ -51741,7 +51789,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.13
+    "Probability": 94.01
   },
   {
     "Created on": "2026-05-18 06:35:50",
@@ -51917,9 +51965,9 @@
     "RFQ Date": null,
     "Company Name": "DELOPT (Deepti Electronics & Electro-Optics Pvt. Ltd.)",
     "Opportunity": "DELOPT (Deepti Electronics & Electro-Optics Pvt. Ltd.)",
-    "Contact Name": "Vivek Karuppaiyan",
-    "Email": "vivek.k@delopt.co.in",
-    "Phone": "+91 97914 02404",
+    "Contact Name": "Shrenik B S",
+    "Email": "shrenik@delopt.co.in",
+    "Phone": "+91 99458 07089",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "Aerospace & Defense",
@@ -51933,7 +51981,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 34.03
+    "Probability": 55.11
   },
   {
     "Created on": "2026-05-18 05:08:37",
@@ -53022,9 +53070,9 @@
     "Company Name": "RapidRadio Solutions Pvt. Ltd.",
     "Opportunity": "RapidRadio Solutions Pvt. Ltd.",
     "Contact Name": "Dushyant Upadhyay",
-    "Email": "dushyant@rapidradio.co.in",
-    "Phone": "+91 98247 94709",
-    "Salesperson": "Manav",
+    "Email": "NA",
+    "Phone": "NA",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Telecom & Networking",
     "Revenue (Millions USD)": 5.0,
@@ -53037,7 +53085,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 73.8
+    "Probability": 93.16
   },
   {
     "Created on": "2026-05-14 08:31:37",
@@ -53118,9 +53166,9 @@
     "Company Name": "RIGOL TECHNOLOGIES INDIA PVT LTD",
     "Opportunity": "Rigol",
     "Contact Name": "Rajan K. Rai",
-    "Email": "rajan.rai@rigol.com",
-    "Phone": "+917836000216",
-    "Salesperson": "Manav",
+    "Email": "NA",
+    "Phone": "NA",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Other",
     "Revenue (Millions USD)": 120.0,
@@ -53133,31 +53181,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 74.62
-  },
-  {
-    "Created on": "2026-05-14 06:42:34",
-    "Source": "IEW Expo",
-    "RFQ Date": null,
-    "Company Name": "System Level Solutions (I) Pvt. Ltd.",
-    "Opportunity": "System Level Solutions Pvt. Ltd.",
-    "Contact Name": "Vimal Patel",
-    "Email": "NA",
-    "Phone": "NA",
-    "Salesperson": "Manav",
-    "Next Follow up": null,
-    "Industry Segment": "EMS & Electronics Mfg",
-    "Revenue (Millions USD)": 3.6,
-    "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
-    "Stage": "Open",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": "Gujarat (IN)",
-    "City": "Vitthal Udyognagar INA",
-    "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 93.16
+    "Probability": 89.55
   },
   {
     "Created on": "2026-05-14 06:36:42",
@@ -53168,7 +53192,7 @@
     "Contact Name": "SUDEESH MANI",
     "Email": "sales@staticsystem.com",
     "Phone": "+91 98809 55473",
-    "Salesperson": "Manav",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Other",
     "Revenue (Millions USD)": 10.0,
@@ -53181,7 +53205,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 74.62
+    "Probability": 60.84
   },
   {
     "Created on": "2026-05-14 06:31:57",
@@ -53205,7 +53229,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 74.62
+    "Probability": 60.84
   },
   {
     "Created on": "2026-05-14 06:16:06",
@@ -53520,30 +53544,6 @@
     "Probability": 51.35
   },
   {
-    "Created on": "2026-05-12 11:27:56",
-    "Source": "Zoom Info",
-    "RFQ Date": null,
-    "Company Name": "Teachmint",
-    "Opportunity": "Teachmint",
-    "Contact Name": "Divyansh Bordia",
-    "Email": "divyanshbordia@teachmint.com",
-    "Phone": "+91 63991 56060",
-    "Salesperson": "Manav",
-    "Next Follow up": null,
-    "Industry Segment": "IoT & Smart Devices",
-    "Revenue (Millions USD)": 9.0,
-    "Opportunity Type": "PCB Assembly",
-    "Expected Revenue": 0.0,
-    "Stage": "Open",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": "Karnataka (IN)",
-    "City": "Bangalore",
-    "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 6.18
-  },
-  {
     "Created on": "2026-05-12 11:16:22",
     "Source": "Zoom Info",
     "RFQ Date": null,
@@ -53568,30 +53568,6 @@
     "Probability": 92.22
   },
   {
-    "Created on": "2026-05-12 11:10:45",
-    "Source": "Zoom Info",
-    "RFQ Date": null,
-    "Company Name": "Cybernetyx",
-    "Opportunity": "Cybernetyx",
-    "Contact Name": "Prashant Singh",
-    "Email": "prashant.singh@cybernetyx.com",
-    "Phone": "+91 90244 67386",
-    "Salesperson": "Manav",
-    "Next Follow up": null,
-    "Industry Segment": "IoT & Smart Devices",
-    "Revenue (Millions USD)": 10.0,
-    "Opportunity Type": "Box Build",
-    "Expected Revenue": 0.0,
-    "Stage": "Open",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": "Karnataka (IN)",
-    "City": "Bangalore",
-    "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 38.52
-  },
-  {
     "Created on": "2026-05-12 11:04:25",
     "Source": "Zoom Info",
     "RFQ Date": null,
@@ -53600,7 +53576,7 @@
     "Contact Name": "Binil Paul",
     "Email": "binil.p@specktron.com",
     "Phone": "+91 63641 43535",
-    "Salesperson": "Manav",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
     "Revenue (Millions USD)": 2.0,
@@ -53613,7 +53589,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.18
+    "Probability": 52.36
   },
   {
     "Created on": "2026-05-12 10:58:59",
@@ -54654,8 +54630,8 @@
     "Company Name": "Trident Pneumatics",
     "Opportunity": "Trident Pneumatics",
     "Contact Name": "Yogesh",
-    "Email": "NA",
-    "Phone": "NA",
+    "Email": "yogesh.d@tridentpneumatics.com",
+    "Phone": "+91 90474 51346",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "Industrial Automation & Robotics",
@@ -54669,7 +54645,7 @@
     "City": "Coimbatore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 99.07
+    "Probability": 95.05
   },
   {
     "Created on": "2026-05-11 06:09:41",
@@ -56547,11 +56523,11 @@
     "Created on": "2026-05-07 11:39:53",
     "Source": "Zoom Info",
     "RFQ Date": null,
-    "Company Name": "Posiflex Technologies Indi",
+    "Company Name": "POSIFLEX TECHNOLOGIES INDIA PRIVATE LIMITED",
     "Opportunity": "Posiflex Technologies India",
     "Contact Name": "Aneesh Balakrishnan",
     "Email": "NA",
-    "Phone": "NA",
+    "Phone": "+91 98800 42714",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "IoT & Smart Devices",
@@ -56565,7 +56541,7 @@
     "City": "Bengaluru",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 66.25
+    "Probability": 29.8
   },
   {
     "Created on": "2026-05-07 11:32:28",
@@ -69082,18 +69058,18 @@
     "Phone": "+91 99924 67676",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-07-29",
-    "Industry Segment": "Energy & CleanTech",
+    "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 21.72,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 210000.0,
-    "Stage": "Connected",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": false,
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 59.03
+    "Probability": 74.69
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -69854,14 +69830,14 @@
     "Revenue (Millions USD)": 2.93,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 200000.0,
-    "Stage": "Connected",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Bihar (IN)",
     "City": "Patna",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 97.5
+    "Probability": 99.21
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -71403,11 +71379,11 @@
     "Created on": "2026-04-09 05:33:03",
     "Source": "Other",
     "RFQ Date": null,
-    "Company Name": "Sharad Kumar Dubey",
+    "Company Name": "Neenja Electric",
     "Opportunity": "Neenjas Electric Pvt Ltd.",
-    "Contact Name": "Rohit",
+    "Contact Name": "Sharad Kumar Dubey",
     "Email": "NA",
-    "Phone": "+91 95822 69256",
+    "Phone": "+91 99264 99258",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "Automotive & EV",
@@ -71417,8 +71393,8 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "New Delhi (IN)",
-    "City": "Noida",
+    "State": false,
+    "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 65.0
@@ -74558,7 +74534,7 @@
     "Revenue (Millions USD)": 19.8,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 200000.0,
-    "Stage": "Connected",
+    "Stage": "RFQ Expected",
     "Won/Lost": "Pending",
     "Country": "Denmark",
     "State": false,
