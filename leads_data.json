@@ -20,8 +20,8 @@
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
-    "Expected Closing": "2026-08-28",
-    "Probability": 71.51
+    "Expected Closing": "2026-09-04",
+    "Probability": 70.0
   },
   {
     "Created on": "2026-08-19 04:51:26",
@@ -68,7 +68,7 @@
     "State": "Karnataka (IN)",
     "City": "Bengaluru",
     "Closed Date": null,
-    "Expected Closing": "2026-08-25",
+    "Expected Closing": "2026-09-02",
     "Probability": 80.0
   },
   {
@@ -92,8 +92,8 @@
     "State": "Karnataka (IN)",
     "City": "Bengaluru",
     "Closed Date": null,
-    "Expected Closing": "2026-08-28",
-    "Probability": 60.0
+    "Expected Closing": "2026-09-07",
+    "Probability": 50.0
   },
   {
     "Created on": "2026-07-20 11:36:14",
@@ -4848,6 +4848,30 @@
     "Probability": 20.0
   },
   {
+    "Created on": "2026-08-25 03:36:03",
+    "Source": false,
+    "RFQ Date": "2026-08-24",
+    "Company Name": "The Energy Company",
+    "Opportunity": "The Energy Company - EB-19-PL-425-02-1909",
+    "Contact Name": "Rahul Lamba",
+    "Email": "rahul.lamba@energycompany.in",
+    "Phone": "+91 89010 01523",
+    "Salesperson": "Ruchit Nambiar",
+    "Next Follow up": "2026-08-29",
+    "Industry Segment": false,
+    "Revenue (Millions USD)": 3.0,
+    "Opportunity Type": false,
+    "Expected Revenue": 150000.0,
+    "Stage": "RFQ Received",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": false,
+    "City": "Bangalore",
+    "Closed Date": null,
+    "Expected Closing": "2026-09-02",
+    "Probability": 50.0
+  },
+  {
     "Created on": "2026-08-06 04:38:26",
     "Source": false,
     "RFQ Date": "2026-08-01",
@@ -7726,30 +7750,6 @@
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 30.0
-  },
-  {
-    "Created on": "2026-08-25 03:36:03",
-    "Source": false,
-    "RFQ Date": "2026-08-24",
-    "Company Name": "The Energy Company",
-    "Opportunity": "The Energy Company - EB-19-PL-425-02-1909",
-    "Contact Name": "Rahul Lamba",
-    "Email": "rahul.lamba@energycompany.in",
-    "Phone": "+91 89010 01523",
-    "Salesperson": "Ruchit Nambiar",
-    "Next Follow up": "2026-08-29",
-    "Industry Segment": false,
-    "Revenue (Millions USD)": 3.0,
-    "Opportunity Type": false,
-    "Expected Revenue": 50000.0,
-    "Stage": "RFQ Received",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": false,
-    "City": "Bangalore",
-    "Closed Date": null,
-    "Expected Closing": "2026-09-01",
-    "Probability": 50.0
   },
   {
     "Created on": "2026-08-12 12:28:32",
