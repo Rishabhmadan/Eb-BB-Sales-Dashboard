@@ -14414,14 +14414,14 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Uttar Pradesh (IN)",
     "City": "Ghaziabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 96.0
+    "Probability": 97.13
   },
   {
     "Created on": "2026-07-17 06:35:05",
@@ -37262,7 +37262,7 @@
     "Revenue (Millions USD)": 600.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 800000.0,
-    "Stage": "Open",
+    "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
@@ -38092,7 +38092,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "SONE INDIA GROUP OF INDUSTRIES",
-    "Opportunity": "SONE INDIA GROUP OF INDUSTRIES's opportunity",
+    "Opportunity": "SONE INDIA GROUP OF INDUSTRIES",
     "Contact Name": "Kiran Bala",
     "Email": "NA",
     "Phone": "+91 731 407 4757",
@@ -38836,10 +38836,10 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "M-TECH INNOVATIONS LIMITED",
-    "Opportunity": "M-TECH INNOVATIONS LIMITED's opportunity",
-    "Contact Name": "Sujit Gandhi",
-    "Email": "sujit@m-techindia.com",
-    "Phone": "+91 98220 71495",
+    "Opportunity": "M-TECH INNOVATIONS LIMITED",
+    "Contact Name": "V. M. Gandhi",
+    "Email": "vmgandhi@m-techindia.com",
+    "Phone": "+91 84709 95993",
     "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -38853,7 +38853,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 7.82
+    "Probability": 63.51
   },
   {
     "Created on": "2026-06-18 05:32:42",
@@ -41030,14 +41030,14 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
     "City": "Coimbatore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 96.73
+    "Probability": 98.88
   },
   {
     "Created on": "2026-06-15 07:29:21",
