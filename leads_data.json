@@ -14558,7 +14558,7 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 400000.0,
-    "Stage": "Open",
+    "Stage": "Need Warm Intro",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Telangana (IN)",
@@ -66453,7 +66453,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.57
+    "Probability": 20.0
   },
   {
     "Created on": "2026-04-09 05:33:03",
