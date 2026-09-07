@@ -837,7 +837,7 @@
     "City": "Gurgaon",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 30.0
+    "Probability": 10.0
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -19706,7 +19706,7 @@
   {
     "Created on": "2026-07-11 11:02:59",
     "Source": "Zoom Info",
-    "RFQ Date": null,
+    "RFQ Date": "2026-09-07",
     "Company Name": "QWR INTERACTIVE SOLUTIONS PRIVATE LIMITED",
     "Opportunity": "QWR INTERACTIVE SOLUTIONS PRIVATE LIMITED",
     "Contact Name": "Shubhajit Chatterjee",
@@ -19718,7 +19718,7 @@
     "Revenue (Millions USD)": 8.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 800000.0,
-    "Stage": "RFQ Expected",
+    "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
