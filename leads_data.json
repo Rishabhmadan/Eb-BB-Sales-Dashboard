@@ -8936,20 +8936,20 @@
     "Contact Name": "Avani Kumar Shukla",
     "Email": "avanishukla@eapro.in",
     "Phone": "+91 98297 15346",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 15.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Uttarakhand (IN)",
     "City": "Roorkee",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 63.62
+    "Probability": 70.03
   },
   {
     "Created on": "2026-07-31 05:58:50",
@@ -35654,7 +35654,7 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 200000.0,
-    "Stage": "Connected",
+    "Stage": "RFQ Expected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
@@ -69093,7 +69093,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 47.65
+    "Probability": 30.0
   },
   {
     "Created on": "2026-04-09 05:33:03",
