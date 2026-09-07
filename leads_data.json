@@ -20,8 +20,8 @@
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
-    "Expected Closing": "2026-09-04",
-    "Probability": 70.0
+    "Expected Closing": "2026-09-11",
+    "Probability": 40.0
   },
   {
     "Created on": "2026-08-19 04:51:26",
@@ -92,7 +92,7 @@
     "State": "Karnataka (IN)",
     "City": "Bengaluru",
     "Closed Date": null,
-    "Expected Closing": "2026-09-07",
+    "Expected Closing": "2026-09-10",
     "Probability": 50.0
   },
   {
@@ -4796,8 +4796,8 @@
     "State": false,
     "City": "Bangalore",
     "Closed Date": null,
-    "Expected Closing": "2026-09-11",
-    "Probability": 30.0
+    "Expected Closing": "2026-09-12",
+    "Probability": 60.0
   },
   {
     "Created on": "2026-08-25 03:36:03",
