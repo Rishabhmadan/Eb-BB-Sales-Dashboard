@@ -71406,8 +71406,8 @@
     "Company Name": "Marelli",
     "Opportunity": "Marelli",
     "Contact Name": "Ashish Gupta",
-    "Email": "ashishgupta@marelli.com",
-    "Phone": "+91 989150054",
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Rishabh Madan",
     "Next Follow up": "2026-04-20",
     "Industry Segment": "Automotive & EV",
@@ -71416,12 +71416,12 @@
     "Expected Revenue": 0.0,
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
-    "Country": "India",
-    "State": "Karnataka (IN)",
-    "City": "Bangalore",
+    "Country": "Japan",
+    "State": false,
+    "City": "Gurgaon",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 97.39
+    "Probability": 96.09
   },
   {
     "Created on": "2026-04-09 05:33:03",
