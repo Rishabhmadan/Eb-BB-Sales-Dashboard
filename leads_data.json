@@ -892,7 +892,7 @@
     "Source": false,
     "RFQ Date": "2026-09-08",
     "Company Name": "Trontek Electronics Ltd",
-    "Opportunity": "Trontek Electronics Ltd",
+    "Opportunity": "Trontek Electronics - EB-01-ML-513-02-1837",
     "Contact Name": "Chaterpal",
     "Email": "Chattarpal@trontek.com",
     "Phone": "+91 92054 30413",
@@ -2637,7 +2637,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 97.27
+    "Probability": 30.0
   },
   {
     "Created on": "2026-04-27 06:55:59",
@@ -2835,7 +2835,7 @@
     "Created on": "2026-04-23 09:41:32",
     "Source": "Zoom Info",
     "RFQ Date": null,
-    "Company Name": "Edall System",
+    "Company Name": "Vijay Raghavan",
     "Opportunity": "Edall System",
     "Contact Name": "Vijay Raghavan",
     "Email": "vijay.r@edallsystems.com",
@@ -2853,7 +2853,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 39.28
+    "Probability": 30.0
   },
   {
     "Created on": "2026-04-21 20:46:13",
@@ -3075,11 +3075,11 @@
     "Created on": "2026-04-17 12:09:34",
     "Source": "Zoom Info",
     "RFQ Date": null,
-    "Company Name": "Pixxel Space",
+    "Company Name": "Awais Ahmed",
     "Opportunity": "Pixxel Space",
-    "Contact Name": "Awais Ahmed",
-    "Email": "awais@pixxel.space",
-    "Phone": "+91 3237 135 115",
+    "Contact Name": "Kshitij Gokul Khandelwal",
+    "Email": "kshitij@pixxel.space",
+    "Phone": "+91 94218 81230",
     "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Aerospace & Defense",
@@ -3093,7 +3093,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 39.28
+    "Probability": 30.0
   },
   {
     "Created on": "2026-04-17 12:02:12",
@@ -3141,7 +3141,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 39.28
+    "Probability": 30.0
   },
   {
     "Created on": "2026-04-14 05:35:26",
@@ -3233,11 +3233,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Karnataka (IN)",
+    "State": false,
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 31.05
+    "Probability": 30.0
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -3654,7 +3654,7 @@
     "Company Name": "Thermosen Technologies",
     "Opportunity": "Thermosen Technologies",
     "Contact Name": "Pankaj Sharma",
-    "Email": "-pankaj@thermosensetechnologies.com",
+    "Email": "pankaj@thermosensetechnologies.com",
     "Phone": "+91 7327844227",
     "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
@@ -3665,11 +3665,11 @@
     "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Karnataka (IN)",
+    "State": false,
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 5.55
+    "Probability": 30.0
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -3677,9 +3677,9 @@
     "RFQ Date": null,
     "Company Name": "SmarDen Automation",
     "Opportunity": "SmarDen Automation",
-    "Contact Name": "Abhay Yadav",
-    "Email": "abhay@smarden.in",
-    "Phone": false,
+    "Contact Name": "Shrey",
+    "Email": "pramod@smarden.in",
+    "Phone": "+91 89508 66908 / +91 81040 43970 / +91 85698 06458",
     "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "IoT & Smart Devices",
@@ -3693,7 +3693,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 93.98
+    "Probability": 30.0
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -3713,11 +3713,11 @@
     "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Karnataka (IN)",
+    "State": false,
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 38.98
+    "Probability": 88.37
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -3733,15 +3733,15 @@
     "Industry Segment": "Aerospace & Defense",
     "Revenue (Millions USD)": 24.0,
     "Opportunity Type": "PCB Assembly",
-    "Expected Revenue": 185000.0,
+    "Expected Revenue": 500000.0,
     "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Karnataka (IN)",
+    "State": false,
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 5.55
+    "Probability": 30.0
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -3861,7 +3861,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 4.32
+    "Probability": 30.0
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -3933,7 +3933,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 17.26
+    "Probability": 30.0
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -3977,11 +3977,11 @@
     "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Karnataka (IN)",
+    "State": false,
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 5.55
+    "Probability": 30.0
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -4349,9 +4349,9 @@
     "RFQ Date": null,
     "Company Name": "General Aeronautics",
     "Opportunity": "General Aeronautics",
-    "Contact Name": "Rakesh Sarma",
-    "Email": false,
-    "Phone": "+91 63763 88807",
+    "Contact Name": "Gunjan Dubey",
+    "Email": "gunjan.dubey@generalaeronautics.com",
+    "Phone": "+91 75071 80332",
     "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Aerospace & Defense",
@@ -4361,11 +4361,11 @@
     "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Karnataka (IN)",
+    "State": false,
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 74.45
+    "Probability": 30.0
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -4389,7 +4389,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.3
+    "Probability": 30.0
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -4485,7 +4485,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 81.52
+    "Probability": 30.0
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -4732,7 +4732,7 @@
     "Source": "Zoom Info",
     "RFQ Date": "2026-07-29",
     "Company Name": "Trontek Electronics Ltd",
-    "Opportunity": "Trontek Electronics Ltd - EB-01-ML-513-02-1837",
+    "Opportunity": "Trontek Electronics Ltd",
     "Contact Name": "Chaterpal",
     "Email": "Chattarpal@trontek.com",
     "Phone": "+91 92054 30413",
@@ -5931,13 +5931,13 @@
     "Created on": "2026-05-21 07:36:52",
     "Source": "IEW Expo",
     "RFQ Date": null,
-    "Company Name": "Rapid Radio",
+    "Company Name": "RAPIDRADIO SOLUTIONS PRIVATE LIMITED",
     "Opportunity": "Rapid Radio",
     "Contact Name": "Dushyant Upadhyay",
-    "Email": "NA",
-    "Phone": "NA",
+    "Email": "dushyant@rapidradio.co.in",
+    "Phone": "+91 98247 94709",
     "Salesperson": "Ruchit Nambiar",
-    "Next Follow up": "2026-06-17",
+    "Next Follow up": "2026-09-16",
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 3.0,
     "Opportunity Type": "Component Sourcing",
@@ -7214,7 +7214,7 @@
     "Revenue (Millions USD)": 2.4,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 250000.0,
-    "Stage": "Connected",
+    "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": false,
@@ -8332,7 +8332,7 @@
     "Source": false,
     "RFQ Date": null,
     "Company Name": "Dr. Prasad Ramanathan",
-    "Opportunity": "IIT Bombay's opportunity",
+    "Opportunity": "IIT Bombay",
     "Contact Name": "Swapneel Kochikar",
     "Email": "cto@tihiitb.org",
     "Phone": "+91 77009 91201",
@@ -8678,14 +8678,14 @@
     "Revenue (Millions USD)": 10.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 52.36
+    "Probability": 73.34
   },
   {
     "Created on": "2026-07-31 10:19:19",
@@ -9774,8 +9774,8 @@
     "Company Name": "inGO Electric Pvt. Ltd.",
     "Opportunity": "inGO Electric Pvt. Ltd.'s opportunity",
     "Contact Name": "Nikhil Gonsalves",
-    "Email": "nikhil.gonsalves@ingoelectric.com",
-    "Phone": "+91 80 4184 3869, +91 98450 17618",
+    "Email": "NA",
+    "Phone": "+91 70199 08703",
     "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -9789,7 +9789,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 94.8
+    "Probability": 32.98
   },
   {
     "Created on": "2026-07-28 07:34:57",
@@ -10230,8 +10230,8 @@
     "Company Name": "TOPSUN ENERGY LIMITED",
     "Opportunity": "TOPSUN ENERGY LIMITED's opportunity",
     "Contact Name": "Kesul C. Patel",
-    "Email": "NA",
-    "Phone": "NA",
+    "Email": "kcpatel@topsunenergy.com",
+    "Phone": "+91 90997 77176",
     "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -10245,7 +10245,7 @@
     "City": "Gandhinagar",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.09
+    "Probability": 63.51
   },
   {
     "Created on": "2026-07-27 09:29:32",
@@ -12557,9 +12557,9 @@
     "RFQ Date": null,
     "Company Name": "ON Semiconductor Corporation (Onsemi)",
     "Opportunity": "ON Semiconductor Corporation (Onsemi)'s opportunity",
-    "Contact Name": "Raghavendra Rao",
-    "Email": "raghavendra.s@onsemi.com",
-    "Phone": "+91 80 4277 4100, +91 98807 30420",
+    "Contact Name": "Karan Gohil",
+    "Email": "karan.gohil@onsemi.com",
+    "Phone": "+91 79 6170 1485",
     "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -12573,7 +12573,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.41
+    "Probability": 56.72
   },
   {
     "Created on": "2026-07-20 13:28:21",
@@ -14654,14 +14654,14 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 5.96
+    "Probability": 50.81
   },
   {
     "Created on": "2026-07-16 14:54:45",
@@ -14798,7 +14798,7 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 10000.0,
-    "Stage": "Open",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
@@ -24198,8 +24198,8 @@
     "Company Name": "VOLTHERM TECHNOLOGIES LLP",
     "Opportunity": "VOLTHERM TECHNOLOGIES LLP's opportunity",
     "Contact Name": "Hardik Shrimali",
-    "Email": "NA",
-    "Phone": "+91 74859 18169",
+    "Email": "hardik@volthermtechnologies.com",
+    "Phone": "+91 96241 39613",
     "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -24213,7 +24213,7 @@
     "City": "Gandhinagar",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 19.27
+    "Probability": 63.51
   },
   {
     "Created on": "2026-07-07 12:15:40",
@@ -24797,9 +24797,9 @@
     "RFQ Date": null,
     "Company Name": "POLAR ELEKTRIC LIMITED",
     "Opportunity": "POLAR ELEKTRIC LIMITED",
-    "Contact Name": "Sukanta De",
+    "Contact Name": "Manish Gupta",
     "Email": "NA",
-    "Phone": "+91 90519 02478",
+    "Phone": "+91 93343 92205",
     "Salesperson": "Ruchit Nambiar",
     "Next Follow up": "2026-07-25",
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -35284,7 +35284,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "Hynetic Electronics Pvt. Ltd",
-    "Opportunity": "Hynetic Electronics Pvt. Ltd's opportunity",
+    "Opportunity": "Hynetic Electronics Pvt. Ltd",
     "Contact Name": "Mahesh Babu",
     "Email": "mahesh@hynetic.com",
     "Phone": "+91 89041 41824",
@@ -35294,14 +35294,14 @@
     "Revenue (Millions USD)": 6.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 600000.0,
-    "Stage": "Follow Up Later",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 50.0
+    "Probability": 73.34
   },
   {
     "Created on": "2026-06-24 11:13:18",
@@ -38789,9 +38789,9 @@
     "RFQ Date": null,
     "Company Name": "SPAN Inspection Systems Pvt. Ltd.",
     "Opportunity": "SPAN Inspection Systems Pvt. Ltd.",
-    "Contact Name": "Nishit Acharya",
+    "Contact Name": "Smit Thakkar",
     "Email": "NA",
-    "Phone": "+91 94275 49314",
+    "Phone": "+91 97376 96319",
     "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -38812,7 +38812,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "JEKSON VISION PRIVATE LIMITED",
-    "Opportunity": "JEKSON VISION PRIVATE LIMITED's opportunity",
+    "Opportunity": "JEKSON VISION PRIVATE LIMITED",
     "Contact Name": "Rakesh Mathur",
     "Email": "rakesh.mathur@jeksonvision.com",
     "Phone": "+91 93770 12413",
@@ -38821,7 +38821,7 @@
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 70.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
+    "Expected Revenue": 300000.0,
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -38829,7 +38829,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 48.26
+    "Probability": 30.0
   },
   {
     "Created on": "2026-06-18 09:02:25",
@@ -39100,24 +39100,24 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "Sinexcel India",
-    "Opportunity": "Sinexcel's opportunity",
+    "Opportunity": "Sinexcel",
     "Contact Name": "Henry Cheung",
     "Email": "henry_cheung@sinexcel.com",
     "Phone": "+91 81874 78687",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 120.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Expected Revenue": 400000.0,
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
     "City": "Panchkula",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 77.8
+    "Probability": 30.0
   },
   {
     "Created on": "2026-06-17 10:29:08",
@@ -39992,7 +39992,7 @@
     "Contact Name": "Pragya Tripathi",
     "Email": "NA",
     "Phone": "+91 99992 86098",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Aerospace & Defense",
     "Revenue (Millions USD)": 2.0,
@@ -40005,7 +40005,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 22.65
+    "Probability": 55.51
   },
   {
     "Created on": "2026-06-16 10:35:16",
@@ -40040,7 +40040,7 @@
     "Contact Name": "Arun Veerabomma",
     "Email": "arun.veerabomma@hcrobo.com",
     "Phone": "+91 99852 22161",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Aerospace & Defense",
     "Revenue (Millions USD)": 4.0,
@@ -40053,7 +40053,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 4.68
+    "Probability": 13.66
   },
   {
     "Created on": "2026-06-16 10:25:57",
@@ -42559,7 +42559,7 @@
     "Opportunity": "ANSCER Robotics",
     "Contact Name": "Raj Mohan",
     "Email": "raj@anscer.com",
-    "Phone": "+91 74085 62562, 8075581971",
+    "Phone": "+91 80755 81971",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "Industrial Automation & Robotics",
@@ -42573,7 +42573,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 74.54
+    "Probability": 56.72
   },
   {
     "Created on": "2026-06-10 06:41:12",
@@ -42798,7 +42798,7 @@
     "Company Name": "Tirex Chargers  (Tirex Transmission Pvt. Ltd.)",
     "Opportunity": "Tirex Chargers  (Tirex Transmission Pvt. Ltd.)'s opportunity",
     "Contact Name": "Arth S. Patel",
-    "Email": "a.patel@tirexchargers.com",
+    "Email": "NA",
     "Phone": "+91 98981 50311",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-15",
@@ -42813,7 +42813,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 42.65
+    "Probability": 39.52
   },
   {
     "Created on": "2026-06-10 05:20:03",
@@ -43590,22 +43590,22 @@
     "Company Name": "Intellistride Technologies",
     "Opportunity": "Intellistride Technologies's opportunity",
     "Contact Name": "Narasimha Kandade",
-    "Email": "NA",
-    "Phone": "NA",
+    "Email": "narasimha.kandade@intellistride.com",
+    "Phone": "+91 96196 63435",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 4.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 1000000.0,
-    "Stage": "Connected",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 41.14
+    "Probability": 73.34
   },
   {
     "Created on": "2026-06-09 06:45:01",
@@ -49533,7 +49533,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 54.46
+    "Probability": 62.32
   },
   {
     "Created on": "2026-05-25 05:16:38",
@@ -50774,14 +50774,14 @@
     "Revenue (Millions USD)": 45.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 1000000.0,
-    "Stage": "Connected",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 16.15
+    "Probability": 73.34
   },
   {
     "Created on": "2026-05-19 07:32:47",
@@ -53174,14 +53174,14 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Gujarat (IN)",
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 93.16
+    "Probability": 92.78
   },
   {
     "Created on": "2026-05-14 08:31:37",
@@ -53414,14 +53414,14 @@
     "Revenue (Millions USD)": 2.5,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 300000.0,
-    "Stage": "Connected",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 60.84
+    "Probability": 79.54
   },
   {
     "Created on": "2026-05-14 05:23:59",
@@ -53990,14 +53990,14 @@
     "Revenue (Millions USD)": 7.4,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 4000000.0,
-    "Stage": "Connected",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 38.52
+    "Probability": 73.34
   },
   {
     "Created on": "2026-05-12 07:04:37",
@@ -55550,14 +55550,14 @@
     "Revenue (Millions USD)": 23.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 3000000.0,
-    "Stage": "Connected",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 2.8
+    "Probability": 50.81
   },
   {
     "Created on": "2026-05-09 06:47:59",
@@ -57941,23 +57941,23 @@
     "RFQ Date": null,
     "Company Name": "Ohmium India",
     "Opportunity": "Ohmium India",
-    "Contact Name": "Ashwin Varma",
-    "Email": "ashwin.varma@ohmium.com",
-    "Phone": "(408) 456-1835",
+    "Contact Name": "Pradeep Ng",
+    "Email": "pradeep.ng@ohmium.com",
+    "Phone": "+91 98790 68308",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "Energy & CleanTech",
     "Revenue (Millions USD)": 35.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 2000000.0,
-    "Stage": "Connected",
+    "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
-    "City": "Bangalore",
+    "City": false,
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.13
+    "Probability": 58.04
   },
   {
     "Created on": "2026-05-05 11:22:47",
@@ -58334,14 +58334,14 @@
     "Revenue (Millions USD)": 11.2,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 300000.0,
-    "Stage": "Open",
+    "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Gujarat (IN)",
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 82.67
+    "Probability": 96.03
   },
   {
     "Created on": "2026-05-05 10:04:37",
@@ -62318,14 +62318,14 @@
     "Revenue (Millions USD)": 1.54,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 154000.0,
-    "Stage": "Follow Up Later",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": false,
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 47.77
+    "Probability": 64.81
   },
   {
     "Created on": "2026-04-13 11:37:03",
@@ -63294,7 +63294,7 @@
     "Company Name": "PVblink Technology Pvt Ltd",
     "Opportunity": "PVblink Technology Pvt Ltd",
     "Contact Name": "Yash Mineshkumar Darji",
-    "Email": false,
+    "Email": "yash@pvblink.com",
     "Phone": "+91 76001 26444",
     "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
@@ -63309,7 +63309,7 @@
     "City": "Gandhinagar",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 99.81
+    "Probability": 72.19
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -66062,14 +66062,14 @@
     "Revenue (Millions USD)": 6.6,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 600000.0,
-    "Stage": "Follow Up Later",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": false,
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 75.9
+    "Probability": 94.14
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -66710,14 +66710,14 @@
     "Revenue (Millions USD)": 7.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 700000.0,
-    "Stage": "Open",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": false,
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 35.47
+    "Probability": 53.57
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -67502,14 +67502,14 @@
     "Revenue (Millions USD)": 5.2,
     "Opportunity Type": "PCB fabrication",
     "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.78
+    "Probability": 96.0
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -70310,14 +70310,14 @@
     "Revenue (Millions USD)": 198.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 55.35
+    "Probability": 75.1
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -70785,7 +70785,7 @@
     "Email": "prasad.telikepalli@matter.in",
     "Phone": "+91 95661 02377",
     "Salesperson": "Ruchit Nambiar",
-    "Next Follow up": "2026-05-12",
+    "Next Follow up": "2026-09-09",
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 5.6,
     "Opportunity Type": "PCB Assembly",
@@ -70797,7 +70797,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 70.63
+    "Probability": 30.0
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -71417,8 +71417,8 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": false,
-    "City": "Bangalore",
+    "State": "Uttar Pradesh (IN)",
+    "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 65.0
@@ -75089,11 +75089,11 @@
     "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Karnataka (IN)",
-    "City": "Bangalore",
+    "State": "Uttar Pradesh (IN)",
+    "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 62.98
+    "Probability": 92.75
   },
   {
     "Created on": "2026-04-09 05:33:03",
