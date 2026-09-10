@@ -39196,7 +39196,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "RENU FACTORY AUTOMATION PRIVATE LIMITED",
-    "Opportunity": "RENU FACTORY AUTOMATION PRIVATE LIMITED's opportunity",
+    "Opportunity": "RENU FACTORY AUTOMATION PRIVATE LIMITED",
     "Contact Name": "Abhijit Bhagwat",
     "Email": "abhijitb@renuelectronics.com",
     "Phone": "+91 96046 02660",
@@ -39205,7 +39205,7 @@
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 60.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
+    "Expected Revenue": 600000.0,
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -39213,7 +39213,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 12.6
+    "Probability": 30.0
   },
   {
     "Created on": "2026-06-17 09:53:13",
