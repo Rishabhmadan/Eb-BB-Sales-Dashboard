@@ -8534,14 +8534,14 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 56.28
+    "Probability": 72.36
   },
   {
     "Created on": "2026-07-31 12:47:05",
@@ -8870,14 +8870,14 @@
     "Revenue (Millions USD)": 20.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 39.52
+    "Probability": 57.83
   },
   {
     "Created on": "2026-07-31 07:13:05",
@@ -9038,14 +9038,14 @@
     "Revenue (Millions USD)": 15.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Uttarakhand (IN)",
     "City": "Roorkee",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 70.03
+    "Probability": 83.07
   },
   {
     "Created on": "2026-07-31 05:58:50",
@@ -38966,7 +38966,7 @@
     "Revenue (Millions USD)": 50.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 400000.0,
-    "Stage": "Open",
+    "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
