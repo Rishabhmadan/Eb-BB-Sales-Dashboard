@@ -9077,9 +9077,9 @@
     "RFQ Date": null,
     "Company Name": "Harvested Robotics",
     "Opportunity": "Harvested Robotics",
-    "Contact Name": "Nishith Mehta",
-    "Email": "nishith@harvestedlabs.com",
-    "Phone": "NA",
+    "Contact Name": "Rahul Arepaka",
+    "Email": "rahul@harvestedlabs.com",
+    "Phone": "+91 89196 62296",
     "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "AgriTech",
@@ -25733,9 +25733,9 @@
     "RFQ Date": null,
     "Company Name": "Sécheron Hasler Group India",
     "Opportunity": "Sécheron Hasler Group",
-    "Contact Name": "Mahesh T. Ahuja",
-    "Email": "NA",
-    "Phone": "+91 95822 24650",
+    "Contact Name": "Bhaskar Bhattamisra",
+    "Email": "bhaskar.bhattamisra@secheron.com",
+    "Phone": "+91 88570 93210",
     "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -29381,9 +29381,9 @@
     "RFQ Date": null,
     "Company Name": "Jaewoo Machines Pvt Ltd",
     "Opportunity": "Jaewoo Machines Pvt Ltd",
-    "Contact Name": "Manish Kumar Das",
+    "Contact Name": "Sachin Puri",
     "Email": "NA",
-    "Phone": "+91 98150 89000",
+    "Phone": "+91 97263 69555",
     "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -38229,7 +38229,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 59.23
+    "Probability": 70.89
   },
   {
     "Created on": "2026-06-22 04:41:17",
@@ -38692,7 +38692,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "Trijal ElectriKals Pvt. Ltd.",
-    "Opportunity": "Trijal ElectriKals Pvt. Ltd.'s opportunity",
+    "Opportunity": "Trijal ElectriKals Pvt. Ltd.",
     "Contact Name": "Apoorva Yadav",
     "Email": "NA",
     "Phone": "+91 96430 01250",
@@ -38701,7 +38701,7 @@
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 12.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
+    "Expected Revenue": 400000.0,
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -38709,7 +38709,7 @@
     "City": "Faridabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 32.47
+    "Probability": 30.0
   },
   {
     "Created on": "2026-06-18 09:48:27",
@@ -38965,7 +38965,7 @@
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 50.0,
     "Opportunity Type": "PCB Assembly",
-    "Expected Revenue": 0.0,
+    "Expected Revenue": 400000.0,
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -38973,7 +38973,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 63.51
+    "Probability": 30.0
   },
   {
     "Created on": "2026-06-18 05:32:42",
