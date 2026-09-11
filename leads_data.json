@@ -925,15 +925,15 @@
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 0.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 500000.0,
-    "Stage": "RFQ Received",
-    "Won/Lost": "Pending",
+    "Expected Revenue": 830000.0,
+    "Stage": "Won",
+    "Won/Lost": "Won",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bengaluru",
-    "Closed Date": null,
+    "Closed Date": "2026-09-11 07:28:20",
     "Expected Closing": "2026-09-14",
-    "Probability": 92.91
+    "Probability": 100.0
   },
   {
     "Created on": "2026-09-08 11:31:54",
