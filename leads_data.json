@@ -2717,9 +2717,9 @@
     "RFQ Date": null,
     "Company Name": "Mukul Mittal",
     "Opportunity": "Ultrahuman",
-    "Contact Name": "Mohit Kumar",
-    "Email": "Mohit@ultrahuman.com",
-    "Phone": "+91 99029 26311",
+    "Contact Name": "Vatsal Singhal",
+    "Email": "vatsalsinghal88@gmail.com",
+    "Phone": "+91 96865 77080",
     "Salesperson": "Ruchit Nambiar",
     "Next Follow up": "2026-05-27",
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -4694,7 +4694,7 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 1500000.0,
-    "Stage": "Dropped",
+    "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
@@ -35133,7 +35133,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 24.26
+    "Probability": 67.63
   },
   {
     "Created on": "2026-06-25 06:08:50",
