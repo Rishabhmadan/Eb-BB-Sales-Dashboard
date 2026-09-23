@@ -84,6 +84,9 @@ def sync_leads_from_odoo():
         uid = common.authenticate(ODOO_DB, ODOO_USER, ODOO_API_KEY, {})
         if not uid:
             print("[ERROR] Authentication failed. Please check your credentials.")
+            print(f"        Attempted with DB: '{ODOO_DB}', USER: '{ODOO_USER}'")
+            print("        Note: If 2FA is enabled or your password changed, generate an API Key in Odoo")
+            print("        (User Preferences -> Account Security -> API Keys) and update ODOO_API_KEY in .env.")
             return
         print(f"Authentication successful! (User UID: {uid})")
 
