@@ -7872,6 +7872,54 @@
     "Probability": 73.23
   },
   {
+    "Created on": "2026-09-23 07:07:32",
+    "Source": false,
+    "RFQ Date": null,
+    "Company Name": "TUBE INVESTMENTS OF INDIA LIMITED",
+    "Opportunity": "TUBE INVESTMENTS OF INDIA LIMITED's opportunity",
+    "Contact Name": false,
+    "Email": "NA",
+    "Phone": "NA",
+    "Salesperson": "Rishabh Madan",
+    "Next Follow up": null,
+    "Industry Segment": false,
+    "Revenue (Millions USD)": 0.0,
+    "Opportunity Type": false,
+    "Expected Revenue": 0.0,
+    "Stage": "Open",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Tamil Nadu (IN)",
+    "City": "Chennai",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 99.6
+  },
+  {
+    "Created on": "2026-09-23 06:58:58",
+    "Source": false,
+    "RFQ Date": null,
+    "Company Name": "Blackfrog Technologies Pvt. Ltd.",
+    "Opportunity": "Blackfrog Technologies Pvt. Ltd.'s opportunity",
+    "Contact Name": false,
+    "Email": false,
+    "Phone": false,
+    "Salesperson": "Rishabh Madan",
+    "Next Follow up": null,
+    "Industry Segment": false,
+    "Revenue (Millions USD)": 0.0,
+    "Opportunity Type": false,
+    "Expected Revenue": 0.0,
+    "Stage": "Open",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Karnataka (IN)",
+    "City": "Manipal",
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 82.72
+  },
+  {
     "Created on": "2026-09-23 06:10:18",
     "Source": false,
     "RFQ Date": null,
@@ -8517,7 +8565,7 @@
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 42.46
+    "Probability": 30.0
   },
   {
     "Created on": "2026-08-03 12:07:48",
@@ -10852,7 +10900,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "Xtragen Technologies Pvt. Ltd.",
-    "Opportunity": "Xtragen Technologies Pvt. Ltd.'s opportunity",
+    "Opportunity": "Xtragen Technologies Pvt. Ltd.",
     "Contact Name": "Ritu Wangnoo",
     "Email": "NA",
     "Phone": "+91 99000 85491",
@@ -10861,7 +10909,7 @@
     "Industry Segment": "Aerospace & Defense",
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
+    "Expected Revenue": 400000.0,
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -10869,14 +10917,14 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 44.43
+    "Probability": 30.0
   },
   {
     "Created on": "2026-07-23 09:19:43",
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "V3Novus",
-    "Opportunity": "V3Novus's opportunity",
+    "Opportunity": "V3Novus",
     "Contact Name": "Manasa Mc",
     "Email": "manasa.mc@v3novus.com",
     "Phone": "+91 82176 90085",
@@ -10885,7 +10933,7 @@
     "Industry Segment": "Aerospace & Defense",
     "Revenue (Millions USD)": 7.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
+    "Expected Revenue": 700000.0,
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -10893,7 +10941,7 @@
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 59.06
+    "Probability": 30.0
   },
   {
     "Created on": "2026-07-23 09:17:04",
@@ -11812,7 +11860,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "Vsole Solar Energy Pvt. Ltd.",
-    "Opportunity": "Vsole Solar Energy Pvt. Ltd.'s opportunity",
+    "Opportunity": "Vsole Solar Energy Pvt. Ltd.",
     "Contact Name": false,
     "Email": "info@vsolesolar.com",
     "Phone": "+91 75758 81414",
@@ -11821,7 +11869,7 @@
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 20.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 0.0,
+    "Expected Revenue": 400000.0,
     "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
@@ -11829,7 +11877,7 @@
     "City": "Surat",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 65.21
+    "Probability": 30.0
   },
   {
     "Created on": "2026-07-22 09:39:36",
@@ -24965,9 +25013,9 @@
     "RFQ Date": null,
     "Company Name": "POLAR ELEKTRIC LIMITED",
     "Opportunity": "POLAR ELEKTRIC LIMITED",
-    "Contact Name": "Indrajit Sur",
-    "Email": "indrajit.sur@polarelectric.in",
-    "Phone": "+91 91633 23504",
+    "Contact Name": "Manish Gupta",
+    "Email": "NA",
+    "Phone": "+91 93343 92205",
     "Salesperson": "Ruchit Nambiar",
     "Next Follow up": "2026-07-25",
     "Industry Segment": "Consumer Electronics & Appliances",
@@ -35990,7 +36038,7 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 300000.0,
-    "Stage": "Connected",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
@@ -36676,7 +36724,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "LOGGIN DIGITAL PRIVATE LIMITED",
-    "Opportunity": "LOGGIN DIGITAL PRIVATE LIMITED's opportunity",
+    "Opportunity": "LOGGIN DIGITAL PRIVATE LIMITED",
     "Contact Name": "Vinay Kumar",
     "Email": "vinay@loggindigital.com",
     "Phone": "+91 97009 10040",
@@ -36693,7 +36741,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 14.54
+    "Probability": 30.0
   },
   {
     "Created on": "2026-06-23 09:18:13",
@@ -37996,10 +38044,10 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "Vision World Tech Pvt.Ltd.",
-    "Opportunity": "Vision World Tech Pvt.Ltd.'s opportunity",
+    "Opportunity": "Vision World Tech Pvt.Ltd.",
     "Contact Name": "Janak Suthar",
     "Email": "NA",
-    "Phone": "+91 77427 15000",
+    "Phone": "+91 82380 20743",
     "Salesperson": "Ruchit Nambiar",
     "Next Follow up": "2026-07-29",
     "Industry Segment": "Industrial Automation & Robotics",
@@ -38013,7 +38061,7 @@
     "City": "Jaipur",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 28.05
+    "Probability": 50.27
   },
   {
     "Created on": "2026-06-22 07:31:46",
@@ -38990,7 +39038,7 @@
     "Revenue (Millions USD)": 70.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 300000.0,
-    "Stage": "Connected",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Gujarat (IN)",
@@ -39854,7 +39902,7 @@
     "Revenue (Millions USD)": 36.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 400000.0,
-    "Stage": "Connected",
+    "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Delhi (IN)",
@@ -39902,7 +39950,7 @@
     "Revenue (Millions USD)": 10.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 500000.0,
-    "Stage": "Connected",
+    "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Kerala (IN)",
@@ -57837,7 +57885,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 65.18
+    "Probability": 30.0
   },
   {
     "Created on": "2026-05-06 05:52:32",
@@ -58761,7 +58809,7 @@
     "Email": "vkapoor@bpee.com",
     "Phone": "+91 95570 50050",
     "Salesperson": "Ruchit Nambiar",
-    "Next Follow up": "2026-08-03",
+    "Next Follow up": "2026-09-23",
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 37.0,
     "Opportunity Type": "PCB Assembly",
@@ -58773,7 +58821,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 87.47
+    "Probability": 30.0
   },
   {
     "Created on": "2026-05-05 09:12:02",
@@ -60213,7 +60261,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 87.47
+    "Probability": 30.0
   },
   {
     "Created on": "2026-04-28 05:37:15",
@@ -62241,7 +62289,7 @@
     "Email": "NA",
     "Phone": "+91 91674 47337",
     "Salesperson": "Ruchit Nambiar",
-    "Next Follow up": "2026-07-27",
+    "Next Follow up": "2026-09-23",
     "Industry Segment": "Semiconductors & Embedded",
     "Revenue (Millions USD)": 2.25,
     "Opportunity Type": "PCB fabrication",
@@ -62270,7 +62318,7 @@
     "Revenue (Millions USD)": 6.02,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 700000.0,
-    "Stage": "Connected",
+    "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
@@ -67972,7 +68020,7 @@
     "Source": "Cold Call",
     "RFQ Date": null,
     "Company Name": "Arnav  Kaura(Business Unit Head)",
-    "Opportunity": "Bergen Systems Pvt",
+    "Opportunity": "Bergen Systems Pvt Ltd.",
     "Contact Name": "Arnav  Kaura(Business Unit Head), Pradeep  Kaura(Mananging Director)",
     "Email": "NA",
     "Phone": "NA",
@@ -73688,7 +73736,7 @@
     "Contact Name": "Kotteeswaran Sigamani",
     "Email": "kottee@royalenfield.com",
     "Phone": "+91 98189 16769",
-    "Salesperson": false,
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 750.0,
@@ -73701,7 +73749,7 @@
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 5.54
+    "Probability": 95.37
   },
   {
     "Created on": "2026-04-09 05:33:03",
