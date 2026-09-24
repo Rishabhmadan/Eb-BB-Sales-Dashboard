@@ -15350,14 +15350,14 @@
     "Revenue (Millions USD)": 60.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Connected",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bangalore",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 56.72
+    "Probability": 77.52
   },
   {
     "Created on": "2026-07-17 05:11:29",
@@ -37742,14 +37742,14 @@
     "Revenue (Millions USD)": 52.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 520000.0,
-    "Stage": "Connected",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Uttar Pradesh (IN)",
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 59.23
+    "Probability": 88.78
   },
   {
     "Created on": "2026-06-23 07:41:36",
@@ -67214,7 +67214,7 @@
     "Revenue (Millions USD)": 12.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 1400000.0,
-    "Stage": "Connected",
+    "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": false,
