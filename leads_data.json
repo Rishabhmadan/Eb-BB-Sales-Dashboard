@@ -38030,14 +38030,14 @@
     "Revenue (Millions USD)": 14.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 0.0,
-    "Stage": "Follow Up Later",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Bengaluru",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 30.94
+    "Probability": 65.03
   },
   {
     "Created on": "2026-06-23 06:53:44",
@@ -38462,14 +38462,14 @@
     "Revenue (Millions USD)": 7.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 700000.0,
-    "Stage": "Follow Up Later",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 79.04
+    "Probability": 88.25
   },
   {
     "Created on": "2026-06-22 10:18:55",
@@ -42845,23 +42845,23 @@
     "RFQ Date": null,
     "Company Name": "GX Group",
     "Opportunity": "GX Group's opportunity",
-    "Contact Name": "Raghavendra Bn",
-    "Email": "raghavendra.bn@gxgroup.com",
-    "Phone": "+91 81975 69262",
+    "Contact Name": "Saurabh Jagia",
+    "Email": "NA",
+    "Phone": "+91 90684 13645",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "Telecom & Networking",
     "Revenue (Millions USD)": 17.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 1000000.0,
-    "Stage": "Follow Up Later",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 62.28
+    "Probability": 82.93
   },
   {
     "Created on": "2026-06-10 10:55:55",
