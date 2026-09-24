@@ -68369,11 +68369,11 @@
     "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
-    "State": "Gujarat (IN)",
+    "State": false,
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 69.88
+    "Probability": 58.34
   },
   {
     "Created on": "2026-04-09 05:33:03",
