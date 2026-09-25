@@ -1704,6 +1704,30 @@
     "Probability": 76.53
   },
   {
+    "Created on": "2026-06-30 06:35:35",
+    "Source": "Zoom Info",
+    "RFQ Date": "2026-09-25",
+    "Company Name": "Havells India",
+    "Opportunity": "Havells India - Eb-20-EL-469-02-1986",
+    "Contact Name": "Abhishek Rastogi",
+    "Email": "abhishek.rastogi@havells.com",
+    "Phone": "+91 78757 58468",
+    "Salesperson": "Rishabh Madan",
+    "Next Follow up": "2026-09-29",
+    "Industry Segment": "Consumer Electronics & Appliances",
+    "Revenue (Millions USD)": 2500.0,
+    "Opportunity Type": "Box Build",
+    "Expected Revenue": 900000.0,
+    "Stage": "RFQ Received",
+    "Won/Lost": "Pending",
+    "Country": "India",
+    "State": "Rajasthan (IN)",
+    "City": "Neemrana",
+    "Closed Date": null,
+    "Expected Closing": "2026-10-14",
+    "Probability": 30.0
+  },
+  {
     "Created on": "2026-06-26 13:42:16",
     "Source": false,
     "RFQ Date": "2026-06-26",
@@ -31030,30 +31054,6 @@
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 61.32
-  },
-  {
-    "Created on": "2026-06-30 06:35:35",
-    "Source": "Zoom Info",
-    "RFQ Date": null,
-    "Company Name": "Havells India",
-    "Opportunity": "Havells India - Eb-20-EL-469-02-1986",
-    "Contact Name": "Abhishek Rastogi",
-    "Email": "abhishek.rastogi@havells.com",
-    "Phone": "+91 78757 58468",
-    "Salesperson": "Rishabh Madan",
-    "Next Follow up": null,
-    "Industry Segment": "Consumer Electronics & Appliances",
-    "Revenue (Millions USD)": 2500.0,
-    "Opportunity Type": "Box Build",
-    "Expected Revenue": 900000.0,
-    "Stage": "RFQ Received",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": "Rajasthan (IN)",
-    "City": "Neemrana",
-    "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 30.0
   },
   {
     "Created on": "2026-06-30 06:20:50",
@@ -70821,7 +70821,7 @@
     "City": "Foshan",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 93.22
+    "Probability": 30.0
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -71001,19 +71001,19 @@
     "Email": "shaunik@palas-india.com",
     "Phone": "+91 98113 22052",
     "Salesperson": "Ruchit Nambiar",
-    "Next Follow up": "2026-04-11",
+    "Next Follow up": "2026-09-25",
     "Industry Segment": "Other",
     "Revenue (Millions USD)": 0.45,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 450000.0,
-    "Stage": "Follow Up Later",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 70.63
+    "Probability": 30.0
   },
   {
     "Created on": "2026-04-09 05:33:03",
