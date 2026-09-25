@@ -12776,7 +12776,7 @@
     "Contact Name": "Sanjeet Mane",
     "Email": "sanjeet.mane@trexenergy.in",
     "Phone": "+91 87936 62763",
-    "Salesperson": "Kundan Pandey",
+    "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 15.0,
@@ -12789,7 +12789,7 @@
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 13.18
+    "Probability": 26.34
   },
   {
     "Created on": "2026-07-22 07:48:40",
@@ -12838,30 +12838,6 @@
     "Closed Date": null,
     "Expected Closing": null,
     "Probability": 50.27
-  },
-  {
-    "Created on": "2026-07-22 07:00:58",
-    "Source": "Zoom Info",
-    "RFQ Date": null,
-    "Company Name": "Rimone Charging",
-    "Opportunity": "Rimone Charging's opportunity",
-    "Contact Name": false,
-    "Email": "info@rimonecharge.com",
-    "Phone": "+91 76960 72280",
-    "Salesperson": "Kundan Pandey",
-    "Next Follow up": null,
-    "Industry Segment": "Power Electronics & Electrical",
-    "Revenue (Millions USD)": 2.0,
-    "Opportunity Type": "PCB Assembly",
-    "Expected Revenue": 0.0,
-    "Stage": "Market Research",
-    "Won/Lost": "Pending",
-    "Country": "India",
-    "State": "Punjab (IN)",
-    "City": "Patiala",
-    "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 62.53
   },
   {
     "Created on": "2026-07-22 06:41:16",
@@ -70737,7 +70713,7 @@
     "Email": "banpreet.singh@spironet.com",
     "Phone": "+91 99993 09245",
     "Salesperson": "Ruchit Nambiar",
-    "Next Follow up": "2026-07-16",
+    "Next Follow up": "2026-09-25",
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 24.0,
     "Opportunity Type": "PCB Assembly",
@@ -70749,7 +70725,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 17.94
+    "Probability": 30.0
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -70809,7 +70785,7 @@
     "Email": "vinesh.goel@midea-group.com",
     "Phone": "+91 89206 27609",
     "Salesperson": "Ruchit Nambiar",
-    "Next Follow up": "2026-04-11",
+    "Next Follow up": "2026-09-25",
     "Industry Segment": "Consumer Electronics & Appliances",
     "Revenue (Millions USD)": 61720.0,
     "Opportunity Type": "PCB Assembly",
