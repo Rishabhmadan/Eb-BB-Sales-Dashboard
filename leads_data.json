@@ -182,14 +182,14 @@
     "Revenue (Millions USD)": 10.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Connected",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 60.29
+    "Probability": 88.25
   },
   {
     "Created on": "2026-06-25 07:38:02",
@@ -9614,14 +9614,14 @@
     "Revenue (Millions USD)": 7.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
-    "Stage": "Connected",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Pimpri-Chinchwad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 40.27
+    "Probability": 67.97
   },
   {
     "Created on": "2026-07-31 12:37:36",
@@ -9854,14 +9854,14 @@
     "Revenue (Millions USD)": 15.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
-    "Stage": "Connected",
+    "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Punjab (IN)",
     "City": "Zirakpur",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 63.58
+    "Probability": 66.42
   },
   {
     "Created on": "2026-07-31 08:52:20",
@@ -11126,14 +11126,14 @@
     "Revenue (Millions USD)": 2.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Connected",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 95.04
+    "Probability": 97.74
   },
   {
     "Created on": "2026-07-27 10:34:08",
@@ -11198,14 +11198,14 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
-    "Stage": "Connected",
+    "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 59.95
+    "Probability": 70.96
   },
   {
     "Created on": "2026-07-27 09:59:31",
@@ -11246,14 +11246,14 @@
     "Revenue (Millions USD)": 20.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
-    "Stage": "Connected",
+    "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Gujarat (IN)",
     "City": "Gandhinagar",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 63.51
+    "Probability": 66.42
   },
   {
     "Created on": "2026-07-27 09:29:32",
@@ -14853,7 +14853,7 @@
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 61.23
+    "Probability": 70.96
   },
   {
     "Created on": "2026-07-17 10:52:18",
