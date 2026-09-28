@@ -9326,14 +9326,14 @@
     "Revenue (Millions USD)": 7.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 0.0,
-    "Stage": "Connected",
+    "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Rajasthan (IN)",
     "City": "Ajmer",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 90.6
+    "Probability": 95.03
   },
   {
     "Created on": "2026-08-07 06:06:45",
@@ -15246,8 +15246,8 @@
     "Company Name": "DOPAR ENERGY PRIVATE LIMITED",
     "Opportunity": "DOPAR ENERGY PRIVATE LIMITED",
     "Contact Name": "Gitesh Mali",
-    "Email": "gitesh@doparenergy.com",
-    "Phone": "+91 98230 68988",
+    "Email": "NA",
+    "Phone": "+91 96894 91546 Ganesh",
     "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
@@ -15261,7 +15261,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 63.51
+    "Probability": 94.77
   },
   {
     "Created on": "2026-07-17 08:59:21",
@@ -66878,14 +66878,14 @@
     "Revenue (Millions USD)": 8.64,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 800000.0,
-    "Stage": "Follow Up Later",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 38.52
+    "Probability": 64.37
   },
   {
     "Created on": "2026-04-09 05:33:03",
