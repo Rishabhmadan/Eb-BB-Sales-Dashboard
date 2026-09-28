@@ -8905,7 +8905,7 @@
   },
   {
     "Created on": "2026-08-12 12:28:32",
-    "Source": false,
+    "Source": "Other",
     "RFQ Date": null,
     "Company Name": "REGENT LIGHTING ASIA PRIVATE LIMITED",
     "Opportunity": "REGENT LIGHTING ASIA PRIVATE LIMITED",
@@ -35934,7 +35934,7 @@
     "Company Name": "BURAK Metering Pvt Ltd",
     "Opportunity": "BURAK Metering Pvt Ltd",
     "Contact Name": "Sayyed Sajid",
-    "Email": "NA",
+    "Email": "saeed.lanjekar@burak.in",
     "Phone": "+91 86555 87403",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-08-03",
@@ -35949,7 +35949,7 @@
     "City": "Thane",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 29.15
+    "Probability": 66.42
   },
   {
     "Created on": "2026-06-25 06:20:21",
@@ -55926,22 +55926,22 @@
     "Company Name": "KUKA India",
     "Opportunity": "KUKA India",
     "Contact Name": "Akash Kumar",
-    "Email": "akumar@kuka-at.com",
-    "Phone": "+91 89505 11826",
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 26.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 3000000.0,
-    "Stage": "Follow Up Later",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": false,
     "State": "Karnataka (IN)",
     "City": false,
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 20.02
+    "Probability": 97.14
   },
   {
     "Created on": "2026-05-09 12:09:09",
@@ -72870,8 +72870,8 @@
     "Company Name": "Mitatronics",
     "Opportunity": "Mitatronics",
     "Contact Name": "Amit Shah",
-    "Email": "NA",
-    "Phone": "NA",
+    "Email": "amitshah@mitatronics.com",
+    "Phone": "+91 98200 01082",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-04-13",
     "Industry Segment": "EMS & Electronics Mfg",
@@ -72885,7 +72885,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 97.75
+    "Probability": 81.81
   },
   {
     "Created on": "2026-04-09 05:33:03",
