@@ -1,29 +1,5 @@
 [
   {
-    "Created on": "2026-09-24 07:25:56",
-    "Source": false,
-    "RFQ Date": null,
-    "Company Name": "Renesas electronics",
-    "Opportunity": "Renesas electronics",
-    "Contact Name": false,
-    "Email": "NA",
-    "Phone": "NA",
-    "Salesperson": "Riya Gupta",
-    "Next Follow up": null,
-    "Industry Segment": false,
-    "Revenue (Millions USD)": 0.0,
-    "Opportunity Type": false,
-    "Expected Revenue": 0.0,
-    "Stage": "Open",
-    "Won/Lost": "Pending",
-    "Country": false,
-    "State": false,
-    "City": false,
-    "Closed Date": null,
-    "Expected Closing": null,
-    "Probability": 97.09
-  },
-  {
     "Created on": "2026-09-23 06:10:18",
     "Source": false,
     "RFQ Date": null,
@@ -8270,14 +8246,38 @@
     "Revenue (Millions USD)": 0.0,
     "Opportunity Type": false,
     "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Stage": "Need Warm Intro",
     "Won/Lost": "Pending",
     "Country": false,
     "State": false,
     "City": false,
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 77.54
+    "Probability": 78.46
+  },
+  {
+    "Created on": "2026-09-24 07:25:56",
+    "Source": false,
+    "RFQ Date": null,
+    "Company Name": "Renesas electronics",
+    "Opportunity": "Renesas electronics",
+    "Contact Name": false,
+    "Email": "NA",
+    "Phone": "NA",
+    "Salesperson": "Riya Gupta",
+    "Next Follow up": null,
+    "Industry Segment": false,
+    "Revenue (Millions USD)": 0.0,
+    "Opportunity Type": false,
+    "Expected Revenue": 0.0,
+    "Stage": "Need Warm Intro",
+    "Won/Lost": "Pending",
+    "Country": false,
+    "State": false,
+    "City": false,
+    "Closed Date": null,
+    "Expected Closing": null,
+    "Probability": 97.24
   },
   {
     "Created on": "2026-09-24 05:42:06",
@@ -8573,23 +8573,23 @@
     "RFQ Date": null,
     "Company Name": "ONYX COMPONENTS AND SYSTEMS PRIVATE LIMITED",
     "Opportunity": "ONYX COMPONENTS AND SYSTEMS PRIVATE LIMITED",
-    "Contact Name": "Rahamatulla",
-    "Email": "rahamatulla@onyxindia.com",
-    "Phone": "+91 81430 45888",
+    "Contact Name": "Udaya Venkata Kumar",
+    "Email": "uday@onyxindia.com",
+    "Phone": "+91 93913 43435, +91 40 2323 7230",
     "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": false,
     "Revenue (Millions USD)": 0.0,
     "Opportunity Type": false,
     "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Telangana (IN)",
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 17.47
+    "Probability": 88.85
   },
   {
     "Created on": "2026-09-23 08:47:18",
@@ -25022,14 +25022,14 @@
     "Revenue (Millions USD)": 6.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Stage": "Need Warm Intro",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 91.72
+    "Probability": 99.74
   },
   {
     "Created on": "2026-07-07 12:37:46",
@@ -25814,14 +25814,14 @@
     "Revenue (Millions USD)": 10.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Need Warm Intro",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 97.33
+    "Probability": 97.19
   },
   {
     "Created on": "2026-07-07 06:31:13",
@@ -37670,14 +37670,14 @@
     "Revenue (Millions USD)": 50.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Stage": "Need Warm Intro",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Kerala (IN)",
     "City": "Kochi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 77.76
+    "Probability": 95.03
   },
   {
     "Created on": "2026-06-23 08:42:54",
@@ -37718,14 +37718,14 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Stage": "Need Warm Intro",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Telangana (IN)",
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 50.66
+    "Probability": 76.33
   },
   {
     "Created on": "2026-06-23 08:34:48",
@@ -37862,14 +37862,14 @@
     "Revenue (Millions USD)": 20.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Stage": "Need Warm Intro",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 86.97
+    "Probability": 97.33
   },
   {
     "Created on": "2026-06-23 07:52:12",
@@ -42854,14 +42854,14 @@
     "Revenue (Millions USD)": 4.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 1000000.0,
-    "Stage": "Open",
+    "Stage": "Need Warm Intro",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Telangana (IN)",
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 21.25
+    "Probability": 63.49
   },
   {
     "Created on": "2026-06-10 11:50:19",
@@ -43886,14 +43886,14 @@
     "Revenue (Millions USD)": 6.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 1000000.0,
-    "Stage": "Open",
+    "Stage": "Need Warm Intro",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 74.81
+    "Probability": 99.53
   },
   {
     "Created on": "2026-06-09 12:08:45",
@@ -44366,14 +44366,14 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 1000000.0,
-    "Stage": "Open",
+    "Stage": "Need Warm Intro",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Tamil Nadu (IN)",
     "City": "Chennai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 72.95
+    "Probability": 99.53
   },
   {
     "Created on": "2026-06-09 07:44:20",
@@ -45926,14 +45926,14 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 200000.0,
-    "Stage": "Open",
+    "Stage": "Need Warm Intro",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 83.89
+    "Probability": 97.77
   },
   {
     "Created on": "2026-06-04 12:17:31",
@@ -47270,14 +47270,14 @@
     "Revenue (Millions USD)": 3.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 1000000.0,
-    "Stage": "Open",
+    "Stage": "Need Warm Intro",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 34.97
+    "Probability": 90.85
   },
   {
     "Created on": "2026-06-02 07:22:09",
@@ -51374,14 +51374,14 @@
     "Revenue (Millions USD)": 0.3,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 1000000.0,
-    "Stage": "Open",
+    "Stage": "Need Warm Intro",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 92.22
+    "Probability": 97.26
   },
   {
     "Created on": "2026-05-20 04:08:31",
@@ -57614,14 +57614,14 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 200000.0,
-    "Stage": "Open",
+    "Stage": "Need Warm Intro",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 70.23
+    "Probability": 90.85
   },
   {
     "Created on": "2026-05-07 11:23:32",
@@ -57998,14 +57998,14 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Stage": "Need Warm Intro",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 31.61
+    "Probability": 95.03
   },
   {
     "Created on": "2026-05-07 10:00:48",
@@ -58022,14 +58022,14 @@
     "Revenue (Millions USD)": 1.3,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 0.0,
-    "Stage": "Open",
+    "Stage": "Need Warm Intro",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Navi Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 69.63
+    "Probability": 95.03
   },
   {
     "Created on": "2026-05-07 09:58:43",
@@ -65342,14 +65342,14 @@
     "Revenue (Millions USD)": 11.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 5000000.0,
-    "Stage": "Follow Up Later",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Uttar Pradesh (IN)",
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 82.64
+    "Probability": 88.48
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -66398,14 +66398,14 @@
     "Revenue (Millions USD)": 2.5,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 200000.0,
-    "Stage": "Open",
+    "Stage": "Need Warm Intro",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": false,
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 81.5
+    "Probability": 93.58
   },
   {
     "Created on": "2026-04-09 05:33:03",
@@ -67118,14 +67118,14 @@
     "Revenue (Millions USD)": 24.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 200000.0,
-    "Stage": "Open",
+    "Stage": "Need Warm Intro",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": false,
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 5.3
+    "Probability": 44.84
   },
   {
     "Created on": "2026-04-09 05:33:03",
