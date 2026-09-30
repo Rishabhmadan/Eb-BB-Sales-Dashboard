@@ -43612,7 +43612,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "Zenergize",
-    "Opportunity": "Zenergize's opportunity",
+    "Opportunity": "Zenergize",
     "Contact Name": "Nikhhat Anssari",
     "Email": "NA",
     "Phone": "+91 98204 24808",
@@ -43622,14 +43622,14 @@
     "Revenue (Millions USD)": 7.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 1000000.0,
-    "Stage": "Connected",
+    "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 60.69
+    "Probability": 70.96
   },
   {
     "Created on": "2026-06-10 05:54:12",
@@ -43766,14 +43766,14 @@
     "Revenue (Millions USD)": 8.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 1000000.0,
-    "Stage": "Connected",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.33
+    "Probability": 79.73
   },
   {
     "Created on": "2026-06-09 12:57:13",
@@ -43950,8 +43950,8 @@
     "Company Name": "RPL Automation Pvt Ltd",
     "Opportunity": "RPL Automation Pvt Ltd's opportunity",
     "Contact Name": "Vinod Pandey",
-    "Email": "vkp@rpl.in",
-    "Phone": "+91 98110 07100",
+    "Email": "NA",
+    "Phone": "+91 120 413 6300",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "Industrial Automation & Robotics",
@@ -43965,7 +43965,7 @@
     "City": "Ghaziabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 61.37
+    "Probability": 79.03
   },
   {
     "Created on": "2026-06-09 11:55:36",
@@ -46468,7 +46468,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "Rhombus Systems",
-    "Opportunity": "Rhombus Systems's opportunity",
+    "Opportunity": "Rhombus Systems",
     "Contact Name": "Viren Dubaria",
     "Email": "viren@rhombus.co.in",
     "Phone": "+91 98209 94796",
@@ -46478,14 +46478,14 @@
     "Revenue (Millions USD)": 40.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 1000000.0,
-    "Stage": "Connected",
+    "Stage": "Follow Up Later",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Telangana (IN)",
     "City": "Hyderabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 3.73
+    "Probability": 15.24
   },
   {
     "Created on": "2026-06-04 06:49:38",
@@ -65334,22 +65334,22 @@
     "Company Name": "Statcon Energiaa",
     "Opportunity": "Statcon Energiaa",
     "Contact Name": "Nisha Joshi",
-    "Email": "purchase.noida@energiaa.in",
-    "Phone": "+91 97204 98645",
+    "Email": "NA",
+    "Phone": "NA",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 11.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 5000000.0,
-    "Stage": "Market Research",
+    "Stage": "Connected",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Uttar Pradesh (IN)",
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 88.48
+    "Probability": 97.25
   },
   {
     "Created on": "2026-04-09 05:33:03",
