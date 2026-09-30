@@ -26308,7 +26308,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "Elcomponics Sales Pvt Ltd",
-    "Opportunity": "Elcomponics Sales Pvt Ltd's opportunity",
+    "Opportunity": "Elcomponics Sales Pvt Ltd's",
     "Contact Name": "Sn Dwivedi",
     "Email": "sndwivedi@elcomponics.com",
     "Phone": "+91 98110 36426",
@@ -26318,14 +26318,14 @@
     "Revenue (Millions USD)": 7.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Connected",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Uttar Pradesh (IN)",
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 74.78
+    "Probability": 93.62
   },
   {
     "Created on": "2026-07-06 10:29:25",
@@ -28526,14 +28526,14 @@
     "Revenue (Millions USD)": 500.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Connected",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 6.74
+    "Probability": 79.73
   },
   {
     "Created on": "2026-07-02 11:39:37",
@@ -35990,14 +35990,14 @@
     "Revenue (Millions USD)": 25.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Connected",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 67.63
+    "Probability": 82.93
   },
   {
     "Created on": "2026-06-25 06:08:50",
@@ -36141,7 +36141,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 58.65
+    "Probability": 78.16
   },
   {
     "Created on": "2026-06-24 11:45:41",
@@ -36173,23 +36173,23 @@
     "RFQ Date": null,
     "Company Name": "ADWIN POWER TECHNOLOGY",
     "Opportunity": "ADWIN POWER TECHNOLOGY's opportunity",
-    "Contact Name": "Dheeraj Kumar Dhiman",
+    "Contact Name": "Manu Vijay Singh",
     "Email": "NA",
-    "Phone": "+91 72062 24334",
+    "Phone": "+91 97185 94906",
     "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 6.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 0.0,
-    "Stage": "Connected",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
     "City": "Yamunanagar",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 31.96
+    "Probability": 82.93
   },
   {
     "Created on": "2026-06-24 11:29:22",
@@ -36676,7 +36676,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "ZEPCO TECHNOLOGIES PRIVATE LIMITED",
-    "Opportunity": "ZEPCO TECHNOLOGIES PRIVATE LIMITED's opportunity",
+    "Opportunity": "ZEPCO TECHNOLOGIES PRIVATE LIMITED",
     "Contact Name": "Bhaskar Shivalingaiah",
     "Email": "bhaskar.shivalingaiah@zepcotek.com",
     "Phone": "+91 80 4906 4800",
@@ -36693,7 +36693,7 @@
     "City": "Bengaluru",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 37.76
+    "Probability": 62.17
   },
   {
     "Created on": "2026-06-24 07:40:02",
@@ -42508,7 +42508,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "Bharati Robotic Systems",
-    "Opportunity": "Bharati Robotic Systems's opportunity",
+    "Opportunity": "Bharati Robotic Systems",
     "Contact Name": "Adarsh Tiloda",
     "Email": "adarsh@brsindia.com",
     "Phone": "+91 97687 69941",
@@ -42518,14 +42518,14 @@
     "Revenue (Millions USD)": 5.0,
     "Opportunity Type": "Box Build",
     "Expected Revenue": 1000000.0,
-    "Stage": "Connected",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 63.51
+    "Probability": 79.73
   },
   {
     "Created on": "2026-06-11 07:14:57",
@@ -42604,7 +42604,7 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "Sisir Radar",
-    "Opportunity": "Sisir Radar's opportunity",
+    "Opportunity": "Sisir Radar",
     "Contact Name": "Prakul Sardana",
     "Email": "prakul@sisirradar.com",
     "Phone": "+91 96545 04086",
@@ -42621,7 +42621,7 @@
     "City": "Kolkata",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 13.7
+    "Probability": 14.56
   },
   {
     "Created on": "2026-06-11 06:29:15",
@@ -43084,10 +43084,10 @@
     "Source": "Zoom Info",
     "RFQ Date": null,
     "Company Name": "Mahati Industries",
-    "Opportunity": "Mahati Industries's opportunity",
-    "Contact Name": "Sujay Uday Shah",
-    "Email": "NA",
-    "Phone": "NA",
+    "Opportunity": "Mahati Industries",
+    "Contact Name": "Vikas L",
+    "Email": "vikas@mahati.com",
+    "Phone": "+91 95525 33756",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "Power Electronics & Electrical",
@@ -43101,7 +43101,7 @@
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 19.69
+    "Probability": 65.21
   },
   {
     "Created on": "2026-06-10 09:47:35",
@@ -43430,14 +43430,14 @@
     "Revenue (Millions USD)": 20.3,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 200000.0,
-    "Stage": "Connected",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 78.14
+    "Probability": 88.25
   },
   {
     "Created on": "2026-06-10 07:10:41",
