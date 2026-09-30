@@ -39943,14 +39943,14 @@
     "Opportunity": "A-1 Fence Products Company Pvt. Ltd.",
     "Contact Name": "Sachin Palkar",
     "Email": "NA",
-    "Phone": "+91 99694 23775",
+    "Phone": "NA ",
     "Salesperson": "Ruchit Nambiar",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
     "Revenue (Millions USD)": 298.0,
     "Opportunity Type": "PCB Assembly",
     "Expected Revenue": 300000.0,
-    "Stage": "Market Research",
+    "Stage": "Open",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
@@ -52718,14 +52718,14 @@
     "Revenue (Millions USD)": 3.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 1000000.0,
-    "Stage": "Connected",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Kerala (IN)",
     "City": "Thiruvananthapuram",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 40.69
+    "Probability": 67.97
   },
   {
     "Created on": "2026-05-18 06:58:10",
@@ -53046,22 +53046,22 @@
     "Company Name": "Aczet Private Limited",
     "Opportunity": "Aczet Private Limited",
     "Contact Name": "Chandrakant Sonar",
-    "Email": "NA",
-    "Phone": "NA",
+    "Email": "chandrakant.s@aczet.com",
+    "Phone": "+91 93200 88966",
     "Salesperson": "Riya Gupta",
     "Next Follow up": "2026-06-15",
     "Industry Segment": "Other",
     "Revenue (Millions USD)": 18.4,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 400000.0,
-    "Stage": "Connected",
+    "Stage": "Market Research",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Mumbai",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 31.61
+    "Probability": 79.73
   },
   {
     "Created on": "2026-05-18 04:41:47",
@@ -53198,14 +53198,14 @@
     "Revenue (Millions USD)": 0.34,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 50000.0,
-    "Stage": "Connected",
+    "Stage": "Need Warm Intro",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Delhi (IN)",
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 46.95
+    "Probability": 79.06
   },
   {
     "Created on": "2026-05-15 11:34:32",
@@ -54075,11 +54075,11 @@
     "Created on": "2026-05-14 08:45:23",
     "Source": "IEW Expo",
     "RFQ Date": null,
-    "Company Name": "RapidRadio Solutions Pvt. Ltd.",
+    "Company Name": "RAPIDRADIO SOLUTIONS PRIVATE LIMITED",
     "Opportunity": "RapidRadio Solutions Pvt. Ltd.",
     "Contact Name": "Dushyant Upadhyay",
-    "Email": "NA",
-    "Phone": "NA",
+    "Email": "dushyant@rapidradio.co.in",
+    "Phone": "+91 98247 94709",
     "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Telecom & Networking",
@@ -54093,7 +54093,7 @@
     "City": "Ahmedabad",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 92.78
+    "Probability": 69.96
   },
   {
     "Created on": "2026-05-14 08:31:37",
@@ -66381,7 +66381,7 @@
     "City": "Noida",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 44.84
+    "Probability": 30.0
   },
   {
     "Created on": "2026-04-09 05:33:03",
