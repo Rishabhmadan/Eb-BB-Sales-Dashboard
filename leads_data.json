@@ -26126,14 +26126,14 @@
     "Revenue (Millions USD)": 30.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 0.0,
-    "Stage": "Connected",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Maharashtra (IN)",
     "City": "Pune",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 65.21
+    "Probability": 80.54
   },
   {
     "Created on": "2026-07-06 10:48:27",
@@ -36029,9 +36029,9 @@
     "RFQ Date": null,
     "Company Name": "MAXWELL INDUSTRIAL CORPORATION",
     "Opportunity": "MAXWELL INDUSTRIAL CORPORATION's opportunity",
-    "Contact Name": "Inderpratap",
-    "Email": "inder.pratap@maxwelltips.com",
-    "Phone": "+91 99997 50525",
+    "Contact Name": "Kuljeet Singh",
+    "Email": "NA",
+    "Phone": "+91 70398 06422",
     "Salesperson": "Riya Gupta",
     "Next Follow up": null,
     "Industry Segment": "Industrial Automation & Robotics",
@@ -36045,7 +36045,7 @@
     "City": "Delhi",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 78.16
+    "Probability": 67.6
   },
   {
     "Created on": "2026-06-24 11:45:41",
