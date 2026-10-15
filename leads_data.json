@@ -965,15 +965,15 @@
     "RFQ Date": "2026-09-24",
     "Company Name": "Marelli",
     "Opportunity": "Marelli - EB-18-EL-534-02-1975",
-    "Contact Name": "Ashish Gupta",
-    "Email": "NA",
-    "Phone": "NA",
+    "Contact Name": "Gaurav Vedi",
+    "Email": "gaurav.vedi@marelli.com",
+    "Phone": "+91 95604 92621",
     "Salesperson": "Rishabh Madan",
     "Next Follow up": "2026-04-20",
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 10.0,
     "Opportunity Type": "PCB Assembly",
-    "Expected Revenue": 0.0,
+    "Expected Revenue": 21600000.0,
     "Stage": "RFQ Received",
     "Won/Lost": "Pending",
     "Country": "Japan",
@@ -981,7 +981,7 @@
     "City": "Gurgaon",
     "Closed Date": null,
     "Expected Closing": "2026-09-29",
-    "Probability": 98.27
+    "Probability": 85.62
   },
   {
     "Created on": "2026-10-13 10:59:43",
