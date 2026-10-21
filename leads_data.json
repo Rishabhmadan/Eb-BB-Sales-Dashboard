@@ -973,15 +973,15 @@
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 10.0,
     "Opportunity Type": "PCB Assembly",
-    "Expected Revenue": 21600000.0,
-    "Stage": "RFQ Received",
-    "Won/Lost": "Pending",
+    "Expected Revenue": 25600000.0,
+    "Stage": "Won",
+    "Won/Lost": "Won",
     "Country": "Japan",
     "State": false,
     "City": "Gurgaon",
-    "Closed Date": null,
+    "Closed Date": "2026-10-21 09:14:54",
     "Expected Closing": "2026-09-29",
-    "Probability": 85.62
+    "Probability": 100.0
   },
   {
     "Created on": "2026-10-13 10:59:43",
