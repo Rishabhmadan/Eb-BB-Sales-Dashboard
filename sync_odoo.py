@@ -1,7 +1,17 @@
 import os
+import sys
 import json
+import socket
+import signal
 import xmlrpc.client
 from datetime import datetime
+
+# =====================================================================
+# NETWORK TIMEOUT SETTINGS
+# =====================================================================
+# Set global socket timeout (seconds) so network operations never hang indefinitely
+SOCKET_TIMEOUT = 60
+socket.setdefaulttimeout(SOCKET_TIMEOUT)
 
 # =====================================================================
 # LOAD ENVIRONMENT VARIABLES FROM .ENV
@@ -75,7 +85,15 @@ def sync_leads_from_odoo():
     
     if ODOO_URL == "https://your-company.odoo.com" or ODOO_API_KEY == "your-api-key-or-password":
         print("[ERROR] Please update Odoo connection details in sync_odoo.py first.")
-        return
+        sys.exit(1)
+
+    # Set 3-minute hard watchdog alarm on Unix/macOS to guarantee script never hangs
+    def timeout_handler(signum, frame):
+        raise TimeoutError("Odoo sync exceeded maximum runtime limit (180s) and was terminated.")
+
+    if hasattr(signal, "SIGALRM"):
+        signal.signal(signal.SIGALRM, timeout_handler)
+        signal.alarm(180)
 
     try:
         # 1. Authenticate with Odoo
@@ -87,7 +105,7 @@ def sync_leads_from_odoo():
             print(f"        Attempted with DB: '{ODOO_DB}', USER: '{ODOO_USER}'")
             print("        Note: If 2FA is enabled or your password changed, generate an API Key in Odoo")
             print("        (User Preferences -> Account Security -> API Keys) and update ODOO_API_KEY in .env.")
-            return
+            sys.exit(1)
         print(f"Authentication successful! (User UID: {uid})")
 
         # 2. Fetch records from crm.lead
@@ -137,8 +155,15 @@ def sync_leads_from_odoo():
             
         print(f"Success: Processed {len(processed_leads)} records and updated {output_file}!")
 
+        # Cancel watchdog alarm on success
+        if hasattr(signal, "SIGALRM"):
+            signal.alarm(0)
+
     except Exception as e:
+        if hasattr(signal, "SIGALRM"):
+            signal.alarm(0)
         print(f"[ERROR] Sync failed: {e}")
+        sys.exit(1)
 
 if __name__ == "__main__":
     sync_leads_from_odoo()
