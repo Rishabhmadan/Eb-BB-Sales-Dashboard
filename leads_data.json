@@ -8222,14 +8222,14 @@
     "Revenue (Millions USD)": 0.0,
     "Opportunity Type": false,
     "Expected Revenue": 196000.0,
-    "Stage": "RFQ Received",
-    "Won/Lost": "Pending",
+    "Stage": "Won",
+    "Won/Lost": "Won",
     "Country": false,
     "State": false,
     "City": false,
-    "Closed Date": null,
+    "Closed Date": "2026-10-27 05:06:11",
     "Expected Closing": null,
-    "Probability": 82.91
+    "Probability": 100.0
   },
   {
     "Created on": "2026-10-25 20:54:53",
@@ -8269,15 +8269,15 @@
     "Industry Segment": false,
     "Revenue (Millions USD)": 0.0,
     "Opportunity Type": false,
-    "Expected Revenue": 0.0,
-    "Stage": "RFQ Received",
+    "Expected Revenue": 50000.0,
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
     "City": "Manipal",
     "Closed Date": null,
     "Expected Closing": null,
-    "Probability": 56.85
+    "Probability": 67.51
   },
   {
     "Created on": "2026-10-07 07:53:37",
@@ -11653,8 +11653,8 @@
     "Industry Segment": "Power Electronics & Electrical",
     "Revenue (Millions USD)": 45482.0,
     "Opportunity Type": "Box Build",
-    "Expected Revenue": 45000000.0,
-    "Stage": "RFQ Received",
+    "Expected Revenue": 0.0,
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Karnataka (IN)",
