@@ -2702,14 +2702,14 @@
     "Revenue (Millions USD)": 0.0,
     "Opportunity Type": "Component Sourcing",
     "Expected Revenue": 1200000.0,
-    "Stage": "Follow Up Later",
+    "Stage": "Dropped",
     "Won/Lost": "Pending",
     "Country": "India",
     "State": "Haryana (IN)",
     "City": "Gurugram",
     "Closed Date": null,
     "Expected Closing": "2026-06-04",
-    "Probability": 88.72
+    "Probability": 94.28
   },
   {
     "Created on": "2026-05-25 06:08:30",
