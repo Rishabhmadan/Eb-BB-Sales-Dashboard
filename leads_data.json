@@ -13,15 +13,15 @@
     "Industry Segment": "Automotive & EV",
     "Revenue (Millions USD)": 0.0,
     "Opportunity Type": "Component Sourcing",
-    "Expected Revenue": 5500000.0,
-    "Stage": "RFQ Received",
-    "Won/Lost": "Pending",
+    "Expected Revenue": 6372000.0,
+    "Stage": "Won",
+    "Won/Lost": "Won",
     "Country": "India",
     "State": false,
     "City": "Mumbai",
-    "Closed Date": null,
+    "Closed Date": "2026-11-23 07:37:21",
     "Expected Closing": "2026-11-24",
-    "Probability": 83.79
+    "Probability": 100.0
   },
   {
     "Created on": "2026-11-06 06:06:24",
